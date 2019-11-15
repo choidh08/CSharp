@@ -1,0 +1,489 @@
+﻿<UserControl x:Class="coinBlock.Views.AlarmMyPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"             
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+             xmlns:dxgt="http://schemas.devexpress.com/winfx/2008/xaml/grid/themekeys"
+             xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts"
+             xmlns:dxet="http://schemas.devexpress.com/winfx/2008/xaml/editors/themekeys"
+             xmlns:ViewModels="clr-namespace:coinBlock.ViewModels"
+             xmlns:localization="clr-namespace:coinBlock.Localization"
+             xmlns:common="clr-namespace:coinBlock.Utility"
+             mc:Ignorable="d"
+             DataContext="{dxmvvm:ViewModelSource Type=ViewModels:AlarmMyPageViewModel}"
+             d:DesignHeight="600" d:DesignWidth="1010">
+    <dxmvvm:Interaction.Behaviors>
+        <dxmvvm:DispatcherService DispatcherPriority="Normal"  />
+        <dxmvvm:EventToCommand EventName="Loaded" Command="{Binding LoadedCommand}"/>
+        <dxmvvm:EventToCommand EventName="Unloaded" Command="{Binding UnLoadedCommand}"/>
+    </dxmvvm:Interaction.Behaviors>
+    <dx:LoadingDecorator IsSplashScreenShown="{Binding IsBusy}" OwnerLock="InputOnly" dx:ThemeManager.ThemeName="MetropolisLight">
+        <dx:LoadingDecorator.SplashScreenTemplate>
+            <DataTemplate>
+                <dx:WaitIndicator DeferedVisibility="True" Content="Requesting data transfer.."/>
+            </DataTemplate>
+        </dx:LoadingDecorator.SplashScreenTemplate>
+        <dxlc:LayoutControl>
+            <Grid Background="White" Margin="-10,-8,-10,-10">
+                <dxlc:LayoutGroup >
+                    <dx:DXTabControl>
+                        <dx:DXTabItem Header="{x:Static localization:Resource.AlramMyPage_1_1}">
+                            <dx:DXTabItem.Style>
+                                <Style TargetType="{x:Type dx:DXTabItem}">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type dx:DXTabItem}">
+                                                <Border x:Name="border1" BorderBrush="#BBBBBB" BorderThickness="1,1,1,0" Height="22">
+                                                    <Grid>
+                                                        <Grid>
+                                                            <Border x:Name="border2" Background="#f5f5f5"/>
+                                                        </Grid>
+                                                        <ContentPresenter ContentSource="Header" HorizontalAlignment="Center" VerticalAlignment= "Center" Margin="10,0,10,0"/>
+                                                    </Grid>
+                                                </Border>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsSelected" Value="True">
+                                                        <Setter TargetName="border2" Property="Background" Value="White"/>
+                                                        <Setter TargetName="border1" Property="BorderThickness" Value="0,2,0,0"/>
+                                                        <Setter TargetName="border1" Property="BorderBrush" Value="#0090d5"/>
+                                                        <Setter Property="TextBlock.Foreground" Value="#666" />
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </dx:DXTabItem.Style>
+                            <dxlc:LayoutGroup Margin="-7" Orientation="Vertical">
+                                <dxg:GridControl ItemsSource="{Binding AlarmList}" dx:ThemeManager.Theme="Office2013LightGray">
+                                    <dxg:GridControl.Resources>
+                                        <Style TargetType="{x:Type dxg:GridColumn}">
+                                            <Setter Property="HorizontalHeaderContentAlignment" Value="Center"/>
+                                        </Style>
+                                    </dxg:GridControl.Resources>
+                                    <dxg:GridControl.View>
+                                        <dxg:TableView RowMinHeight="22" HeaderPanelMinHeight="22" VerticalScrollbarVisibility="Auto" HorizontalScrollbarVisibility="Auto" AllowPerPixelScrolling="True" ShowTotalSummary="False" ShowGroupPanel="False" AllowColumnFiltering="False" AllowFilterEditor="False" AllowColumnMoving="False" AllowEditing="False" AllowGrouping="False" AllowMoveColumnToDropArea="False" ShowAutoFilterRow="False" AutoWidth="True" ShowIndicator="False" AllowSorting="False"/>
+                                    </dxg:GridControl.View>
+                                    <dxg:GridColumn FieldName="rowNo" Header="No" Width="30">
+                                        <dxg:GridColumn.EditSettings>
+                                            <dxe:TextEditSettings HorizontalContentAlignment="Center" />
+                                        </dxg:GridColumn.EditSettings>
+                                    </dxg:GridColumn>
+                                    <dxg:GridColumn FieldName="pushType" Header="{x:Static localization:Resource.AlramMyPage_1_2}" Width="50">
+                                        <dxg:GridColumn.EditSettings>
+                                            <dxe:TextEditSettings HorizontalContentAlignment="Center" DisplayTextConverter="{StaticResource PushListToResourceConverter}" />
+                                        </dxg:GridColumn.EditSettings>
+                                    </dxg:GridColumn>
+                                    <dxg:GridColumn FieldName="regDt" Header="{x:Static localization:Resource.AlramMyPage_1_3}" Width="70"/>
+                                    <dxg:GridColumn FieldName="cntnsMsg" Header="{x:Static localization:Resource.AlramMyPage_1_4}" Width="160"/>
+                                    <dxg:GridColumn Header=" " Width="40">
+                                        <dxg:GridColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <StackPanel>
+                                                    <dxe:HyperlinkEdit Text="{x:Static localization:Resource.AlramMyPage_1_5}" Visibility="{Binding RowData.Row.contentVisible}" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center"  Command="{Binding DataContext.CmdMyPageMoveCommand ,RelativeSource={RelativeSource Mode=FindAncestor ,AncestorType=UserControl}}" CommandParameter="{Binding RowData.Row.pushType}"/>
+                                                </StackPanel>
+                                            </DataTemplate>
+                                        </dxg:GridColumn.CellTemplate>
+                                    </dxg:GridColumn>
+                                </dxg:GridControl>
+                                <Button Width="81" Height="28" Cursor="Hand" HorizontalAlignment="Right" Margin="0,0,5,3" Command="{Binding CmdMoreListCommand}">
+                                    <Button.Style>
+                                        <Style TargetType="{x:Type Button}">
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="{x:Type Button}">
+                                                        <Grid>
+                                                            <Image Name="btnImg" Source="{Binding btn_more, TargetNullValue={x:Null}}"/>
+                                                        </Grid>
+                                                        <ControlTemplate.Triggers>
+                                                            <Trigger Property="IsMouseOver" Value="True">
+                                                                <Setter Property="Source" TargetName="btnImg" Value="{Binding btn_more_on}"/>
+                                                            </Trigger>
+                                                        </ControlTemplate.Triggers>
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </Button.Style>
+                                </Button>
+                            </dxlc:LayoutGroup>
+                        </dx:DXTabItem>
+                        <dx:DXTabItem Header="{x:Static localization:Resource.AlramMyPage_2_1}">
+                            <dx:DXTabItem.Style>
+                                <Style TargetType="{x:Type dx:DXTabItem}">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type dx:DXTabItem}">
+                                                <Border x:Name="border1" BorderBrush="#BBBBBB" BorderThickness="1,1,1,0" Height="22">
+                                                    <Grid>
+                                                        <Grid>
+                                                            <Border x:Name="border2" Background="#f5f5f5"/>
+                                                        </Grid>
+                                                        <ContentPresenter ContentSource="Header" HorizontalAlignment="Center" VerticalAlignment= "Center" Margin="10,0,10,0"/>
+                                                    </Grid>
+                                                </Border>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsSelected" Value="True">
+                                                        <Setter TargetName="border2" Property="Background" Value="White"/>
+                                                        <Setter TargetName="border1" Property="BorderThickness" Value="0,2,0,0"/>
+                                                        <Setter TargetName="border1" Property="BorderBrush" Value="#0090d5"/>
+                                                        <Setter Property="TextBlock.Foreground" Value="#666" />
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </dx:DXTabItem.Style>
+                            <dxlc:LayoutGroup Orientation="Vertical" Margin="-7">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="4*"/>
+                                        <RowDefinition Height="4*"/>
+                                        <RowDefinition Height="1*"/>
+                                    </Grid.RowDefinitions>
+                                    <dxlc:LayoutGroup Grid.Row="0" Orientation="Vertical">
+                                        <Border Height="30">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,5,0,0">
+                                                <TextBlock Text="{x:Static localization:Resource.AlramMyPage_Common_1}" FontSize="15" Foreground="#333"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                                                <dxe:ToggleSwitchEdit Grid.Column="1" Width="48" Margin="0,0,0,0" CheckedStateContent="ON" UncheckedStateContent="OFF" HorizontalAlignment="Left" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ContentPlacement="Inside" IsChecked="{Binding basicCheck}" Command="{Binding CmdBasicCheckCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}, Path=IsChecked}" />
+                                            </StackPanel>
+                                        </Border>
+                                        <Grid IsEnabled="{Binding basicEnabled}">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="125"/>
+                                                <ColumnDefinition />
+                                            </Grid.ColumnDefinitions>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="33"/>
+                                                <RowDefinition Height="33"/>
+                                                <RowDefinition Height="33"/>
+                                            </Grid.RowDefinitions>
+                                            <Border Grid.Column="0" Grid.Row="0" BorderBrush="#e5e5e5" Background="#f5f5f5" BorderThickness="1">
+                                                <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_2}" FontSize="12" Foreground="#666" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" />
+                                            </Border>
+                                            <Border Grid.Column="1" Grid.Row="0" BorderBrush="#e5e5e5" BorderThickness="1">
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                    <dxe:CheckEdit Content="{x:Static localization:Resource.AlramMyPage_2_2_1}" IsChecked="{Binding bLogin}" Foreground="#333" Margin="5,0,0,0"/>
+                                                    <dxe:CheckEdit Content="{x:Static localization:Resource.AlramMyPage_2_2_2}" IsChecked="{Binding bNotice}" Foreground="#333" Margin="15,0,0,0" />
+                                                    <dxe:CheckEdit Content="{x:Static localization:Resource.AlramMyPage_2_2_3}" IsChecked="{Binding bAdditional}" Foreground="#333" Margin="15,0,0,0" />
+                                                    <dxe:CheckEdit Content="{x:Static localization:Resource.AlramMyPage_2_2_4}" IsChecked="{Binding bQna}" Foreground="#333" Margin="15,0,0,0" />
+                                                </StackPanel>
+                                            </Border>
+                                            <Border Grid.Column="0" Grid.Row="1" BorderBrush="#e5e5e5" Background="#f5f5f5" BorderThickness="1">
+                                                <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_3}" FontSize="12" Foreground="#666" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" />
+                                            </Border>
+                                            <Border Grid.Column="1" Grid.Row="1" BorderBrush="#e5e5e5" BorderThickness="1">
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                    <dxe:CheckEdit Content="{x:Static localization:Resource.AlramMyPage_2_3_1}" IsChecked="{Binding bBuyOrder}" Foreground="#333" Margin="5,0,0,0"/>
+                                                    <dxe:CheckEdit Content="{x:Static localization:Resource.AlramMyPage_2_3_2}" IsChecked="{Binding bBuyComp}" Foreground="#333" Margin="15,0,0,0" />
+                                                    <dxe:CheckEdit Content="{x:Static localization:Resource.AlramMyPage_2_3_3}" IsChecked="{Binding bSellOrder}" Foreground="#333" Margin="15,0,0,0" />
+                                                    <dxe:CheckEdit Content="{x:Static localization:Resource.AlramMyPage_2_3_4}" IsChecked="{Binding bSellComp}" Foreground="#333" Margin="15,0,0,0" />
+                                                </StackPanel>
+                                            </Border>
+                                            <Border Grid.Column="0" Grid.Row="2" BorderBrush="#e5e5e5" Background="#f5f5f5" BorderThickness="1">
+                                                <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_4}" FontSize="12" Foreground="#666" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" />
+                                            </Border>
+                                            <Border Grid.Column="1" Grid.Row="2" BorderBrush="#e5e5e5" BorderThickness="1">
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                    <dxe:CheckEdit Content="{x:Static localization:Resource.AlramMyPage_2_4_1}" IsChecked="{Binding bCoinDeposit}" Foreground="#333" Margin="5,0,0,0"/>
+                                                    <dxe:CheckEdit Content="{x:Static localization:Resource.AlramMyPage_2_4_2}" IsChecked="{Binding bCoinTrasnfer}" Foreground="#333" Margin="15,0,0,0" />                                                    
+                                                    <!--<dxe:CheckEdit Content="{Binding SC, StringFormat={x:Static localization:Resource.AlramMyPage_2_4_3}}" IsChecked="{Binding bRecharge}" Foreground="#333" Margin="15,0,0,0" />
+                                                    <dxe:CheckEdit Content="{Binding SC, StringFormat={x:Static localization:Resource.AlramMyPage_2_4_4}}" IsChecked="{Binding bWithdrawl}" Foreground="#333" Margin="15,0,0,0" />-->
+                                                    <dxe:CheckEdit Content="{Binding depositTxt}" IsChecked="{Binding bRecharge}" Foreground="#333" Margin="15,0,0,0" />
+                                                    <dxe:CheckEdit Content="{Binding withdrawTxt}" IsChecked="{Binding bWithdrawl}" Foreground="#333" Margin="15,0,0,0" />
+                                                </StackPanel>
+                                            </Border>
+                                        </Grid>
+                                    </dxlc:LayoutGroup>
+                                    <dxlc:LayoutGroup Grid.Row="1" Orientation="Vertical">
+                                        <Border Height="30">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,5,0,0">
+                                                <TextBlock Text="{x:Static localization:Resource.AlramMyPage_Common_2}" FontSize="15" Foreground="#333"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                                                <dxe:ToggleSwitchEdit Grid.Column="1" Width="48"  CheckedStateContent="ON" UncheckedStateContent="OFF" HorizontalAlignment="Left" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ContentPlacement="Inside" IsChecked="{Binding timeCheck}" Command="{Binding CmdTimeCheckCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}, Path=IsChecked}" Margin="0,0,5,0"/>
+                                                <TextBlock Text="(" FontSize="15" Foreground="#333"  HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                                                <TextBlock Text="{Binding SC}" FontSize="15" Foreground="#333"  HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                                                <TextBlock Text=" Market " FontSize="15" Foreground="#333"  HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                                                <TextBlock Text="{x:Static localization:Resource.Common_Alert_21}" FontSize="15" Foreground="#333"  HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                                                <TextBlock Text=")" FontSize="15" Foreground="#333"  HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <Grid IsEnabled="{Binding timeEnabled}">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="125"/>
+                                                <ColumnDefinition />
+                                                <ColumnDefinition Width="125"/>
+                                                <ColumnDefinition />
+                                            </Grid.ColumnDefinitions>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="33"/>
+                                                <RowDefinition Height="33"/>
+                                            </Grid.RowDefinitions>
+                                            <Border Grid.Column="0" Grid.Row="0" BorderBrush="#e5e5e5" Background="#f5f5f5" BorderThickness="1">
+                                                <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_5}" FontSize="12" Foreground="#666" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" />
+                                            </Border>
+                                            <Border Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" BorderBrush="#e5e5e5" BorderThickness="1">
+                                                <WrapPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0">
+                                                    <dxe:CheckEdit Content="BTC" IsChecked="{Binding tBTC}" Foreground="#333"/>
+                                                    <dxe:CheckEdit Content="ETH" IsChecked="{Binding tETH}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="BCH" IsChecked="{Binding tBCH}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="XRP" IsChecked="{Binding tXRP}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="ERB" IsChecked="{Binding tERB}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <!--<dxe:CheckEdit Content="QTUM" IsChecked="{Binding tQTUM}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="BTG" IsChecked="{Binding tBTG}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="DASH" IsChecked="{Binding tDASH}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="LTC" IsChecked="{Binding tLTC}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="SGC" IsChecked="{Binding tSGC}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="SECRET" IsChecked="{Binding tSECRET}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="HDAC" IsChecked="{Binding tHDAC}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="VSTC" IsChecked="{Binding tVSTC}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="ADM" IsChecked="{Binding tADM}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="BSV" IsChecked="{Binding tBSV}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="TRX" IsChecked="{Binding tTRX}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="XLM" IsChecked="{Binding tXLM}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="WAVES" IsChecked="{Binding tWAVES}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="POLY" IsChecked="{Binding tPOLY}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="OMG" IsChecked="{Binding tOMG}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="MITH" IsChecked="{Binding tMITH}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="ICX" IsChecked="{Binding tICX}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="XEM" IsChecked="{Binding tXEM}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="PAN" IsChecked="{Binding tPAN}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="XLAB" IsChecked="{Binding tXLAB}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="HEC" IsChecked="{Binding tHEC}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="GIFO" IsChecked="{Binding tGIFO}" Foreground="#333" Margin="14,0,0,0" />
+                                                    <dxe:CheckEdit Content="HAMA" IsChecked="{Binding tHAMA}" Foreground="#333" Margin="14,0,0,0" />-->
+                                                    
+                                                </WrapPanel>
+                                            </Border>
+                                            <Border Grid.Column="0" Grid.Row="1" BorderBrush="#e5e5e5" Background="#f5f5f5" BorderThickness="1">
+                                                <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_6}" FontSize="12" Foreground="#666" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" />
+                                            </Border>
+                                            <Border Grid.Column="1" Grid.Row="1" BorderBrush="#e5e5e5" BorderThickness="1">
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="5,0,0,0">
+                                                    <dxe:ComboBoxEdit Width="60" Height="26" ItemsSource="{Binding FromTime}" SelectedItem="{Binding SelFrom}" DisplayMember="Name" ValueMember="Value"/>
+                                                    <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_6_1}" Foreground="#333" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                                                    <dxe:ComboBoxEdit Width="60" Height="26" ItemsSource="{Binding ToTime}" SelectedItem="{Binding SelTo}" DisplayMember="Name" ValueMember="Value"/>
+                                                    <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_6_2}" Foreground="#333" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <Border Grid.Column="2" Grid.Row="1" BorderBrush="#e5e5e5" Background="#f5f5f5" BorderThickness="1">
+                                                <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_7}" FontSize="12" Foreground="#666" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                                            </Border>
+                                            <Border Grid.Column="3" Grid.Row="1" BorderBrush="#e5e5e5" BorderThickness="1">
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="5,0,0,0">
+                                                    <dxe:ComboBoxEdit Width="60" Height="26" ItemsSource="{Binding IntervalTime}" SelectedItem="{Binding SelInterval}" DisplayMember="Name" ValueMember="Value" />
+                                                    <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_7_1}" Foreground="#333" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                                                </StackPanel>
+                                            </Border>
+                                        </Grid>
+                                    </dxlc:LayoutGroup>
+                                    <!--<dxlc:LayoutGroup Grid.Row="2" Orientation="Vertical">
+                                    <Border Height="30">
+                                         <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,5,0,0">
+                                            <TextBlock Text="{x:Static localization:Resource.AlramMyPage_Common_3}" FontSize="14" Foreground="#333"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                                            <dxe:ToggleSwitchEdit Grid.Column="1" Width="48"  CheckedStateContent="ON" UncheckedStateContent="OFF" HorizontalAlignment="Left" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ContentPlacement="Inside" IsChecked="{Binding costCheck}" Command="{Binding CmdCostCheckCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}, Path=IsChecked}"/>
+                                        </StackPanel>
+                                    </Border>
+                                    <Grid IsEnabled="{Binding costEnabled}">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="125"/>
+                                            <ColumnDefinition />
+                                            <ColumnDefinition Width="125"/>
+                                            <ColumnDefinition />
+                                            <ColumnDefinition Width="125"/>
+                                            <ColumnDefinition />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="33"/>
+                                            <RowDefinition Height="33"/>
+                                            <RowDefinition Height="33"/>
+                                            <RowDefinition Height="33"/>
+                                            <RowDefinition Height="33"/>
+                                        </Grid.RowDefinitions>
+                                        -->
+                                    <!-- 0 row -->
+                                    <!--
+                                        <Border Grid.Column="0" Grid.Row="0" BorderBrush="#e5e5e5" Background="#f5f5f5" BorderThickness="1">
+                                            <TextBlock Text="BTC" FontSize="12" Foreground="#666" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" />
+                                        </Border>
+                                        <Border Grid.Column="1" Grid.Row="0" BorderBrush="#e5e5e5" BorderThickness="1">
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,10,0">
+                                                <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_8_1}" Foreground="#333" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                                                <TextBlock Text="{Binding btcPrc}" Foreground="#333" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                                                <TextBlock Text="{Binding SC, StringFormat={x:Static localization:Resource.Common_Alert_4}}" Foreground="#333" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Column="2" Grid.Row="0" BorderBrush="#e5e5e5" Background="#f5f5f5" BorderThickness="1">
+                                            <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_8_3}" FontSize="12" Foreground="#666" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" />
+                                        </Border>
+                                        <Border Grid.Column="3" Grid.Row="0" BorderBrush="#e5e5e5" BorderThickness="1">
+                                            <StackPanel Orientation="Horizontal" Margin="5,0,0,0">
+                                                <dxe:TextEdit Text="{Binding cBtcHighPrc}" MaskType="Numeric" Mask="###,###,###,##0;" HorizontalContentAlignment="Right" Width="125" Height="26"/>
+                                                <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_8_4}" Foreground="#333" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Column="4" Grid.Row="0" BorderBrush="#e5e5e5" Background="#f5f5f5" BorderThickness="1">
+                                            <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_8_5}" FontSize="12" Foreground="#666" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" />
+                                        </Border>
+                                        <Border Grid.Column="5" Grid.Row="0" BorderBrush="#e5e5e5" BorderThickness="1">
+                                            <StackPanel Orientation="Horizontal" Margin="5,0,0,0">
+                                                <dxe:TextEdit Text="{Binding cBtcLowPrc}" MaskType="Numeric" Mask="###,###,###,##0;" HorizontalContentAlignment="Right" Width="125" Height="26"/>
+                                                <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_8_6}" Foreground="#333" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Border>
+
+                                        -->
+                                    <!-- 1 row -->
+                                    <!--
+                                        <Border Grid.Column="0" Grid.Row="1" BorderBrush="#e5e5e5" Background="#f5f5f5" BorderThickness="1">
+                                            <TextBlock Text="ETH" FontSize="12" Foreground="#666" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" />
+                                        </Border>
+                                        <Border Grid.Column="1" Grid.Row="1" BorderBrush="#e5e5e5" BorderThickness="1">
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,10,0">
+                                                <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_8_1}" Foreground="#333" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                                                <TextBlock Text="{Binding ethPrc}" Foreground="#333" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                                                <TextBlock Text="{Binding SC, StringFormat={x:Static localization:Resource.Common_Alert_4}}" Foreground="#333" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Column="2" Grid.Row="1" BorderBrush="#e5e5e5" Background="#f5f5f5" BorderThickness="1">
+                                            <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_8_3}" FontSize="12" Foreground="#666" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" />
+                                        </Border>
+                                        <Border Grid.Column="3" Grid.Row="1" BorderBrush="#e5e5e5" BorderThickness="1">
+                                            <StackPanel Orientation="Horizontal" Margin="5,0,0,0">
+                                                <dxe:TextEdit Text="{Binding cEthHighPrc}" MaskType="Numeric" Mask="###,###,###,##0;" HorizontalContentAlignment="Right" Width="125" Height="26"/>
+                                                <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_8_4}" Foreground="#333" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Column="4" Grid.Row="1" BorderBrush="#e5e5e5" Background="#f5f5f5" BorderThickness="1">
+                                            <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_8_5}" FontSize="12" Foreground="#666" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" />
+                                        </Border>
+                                        <Border Grid.Column="5" Grid.Row="1" BorderBrush="#e5e5e5" BorderThickness="1">
+                                            <StackPanel Orientation="Horizontal" Margin="5,0,0,0">
+                                                <dxe:TextEdit Text="{Binding cEthLowPrc}" MaskType="Numeric" Mask="###,###,###,##0;" HorizontalContentAlignment="Right" Width="125" Height="26"/>
+                                                <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_8_6}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Border>
+
+                                        -->
+                                    <!-- 2 row -->
+                                    <!--
+                                        <Border Grid.Column="0" Grid.Row="2" BorderBrush="#e5e5e5" Background="#f5f5f5" BorderThickness="1">
+                                            <TextBlock Text="BCH" FontSize="12" Foreground="#666" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" />
+                                        </Border>
+                                        <Border Grid.Column="1" Grid.Row="2" BorderBrush="#e5e5e5" BorderThickness="1">
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,10,0">
+                                                <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_8_1}" Foreground="#333" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                                                <TextBlock Text="{Binding bchPrc}" Foreground="#333" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                                                <TextBlock Text="{Binding SC, StringFormat={x:Static localization:Resource.Common_Alert_4}}" Foreground="#333" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Column="2" Grid.Row="2" BorderBrush="#e5e5e5" Background="#f5f5f5" BorderThickness="1">
+                                            <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_8_3}" FontSize="12" Foreground="#666" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" />
+                                        </Border>
+                                        <Border Grid.Column="3" Grid.Row="2" BorderBrush="#e5e5e5" BorderThickness="1">
+                                            <StackPanel Orientation="Horizontal" Margin="5,0,0,0">
+                                                <dxe:TextEdit Text="{Binding cBchHighPrc}" MaskType="Numeric" Mask="###,###,###,##0;" HorizontalContentAlignment="Right" Width="125" Height="26"/>
+                                                <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_8_4}" Foreground="#333" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Column="4" Grid.Row="2" BorderBrush="#e5e5e5" Background="#f5f5f5" BorderThickness="1">
+                                            <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_8_5}" FontSize="12" Foreground="#666" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" />
+                                        </Border>
+                                        <Border Grid.Column="5" Grid.Row="2" BorderBrush="#e5e5e5" BorderThickness="1">
+                                            <StackPanel Orientation="Horizontal" Margin="5,0,0,0">
+                                                <dxe:TextEdit Text="{Binding cBchLowPrc}" MaskType="Numeric" Mask="###,###,###,##0;" HorizontalContentAlignment="Right" Width="125" Height="26"/>
+                                                <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_8_6}" Foreground="#333" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Border>
+
+                                        -->
+                                    <!-- 3 row -->
+                                    <!--
+                                        <Border Grid.Column="0" Grid.Row="3" BorderBrush="#e5e5e5" Background="#f5f5f5" BorderThickness="1">
+                                            <TextBlock Text="XRP" FontSize="12" Foreground="#666" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" />
+                                        </Border>
+                                        <Border Grid.Column="1" Grid.Row="3" BorderBrush="#e5e5e5" BorderThickness="1">
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,10,0">
+                                                <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_8_1}" Foreground="#333" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                                                <TextBlock Text="{Binding xrpPrc}" Foreground="#333" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                                                <TextBlock Text="{Binding SC, StringFormat={x:Static localization:Resource.Common_Alert_4}}" Foreground="#333" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Column="2" Grid.Row="3" BorderBrush="#e5e5e5" Background="#f5f5f5" BorderThickness="1">
+                                            <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_8_3}" FontSize="12" Foreground="#666" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" />
+                                        </Border>
+                                        <Border Grid.Column="3" Grid.Row="3" BorderBrush="#e5e5e5" BorderThickness="1">
+                                            <StackPanel Orientation="Horizontal" Margin="5,0,0,0">
+                                                <dxe:TextEdit Text="{Binding cXrpHighPrc}" MaskType="Numeric" Mask="###,###,###,##0;" HorizontalContentAlignment="Right" Width="125" Height="26"/>
+                                                <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_8_4}" Foreground="#333" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Column="4" Grid.Row="3" BorderBrush="#e5e5e5" Background="#f5f5f5" BorderThickness="1">
+                                            <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_8_5}" FontSize="12" Foreground="#666" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" />
+                                        </Border>
+                                        <Border Grid.Column="5" Grid.Row="3" BorderBrush="#e5e5e5" BorderThickness="1">
+                                            <StackPanel Orientation="Horizontal" Margin="5,0,0,0">
+                                                <dxe:TextEdit Text="{Binding cXrpLowPrc}" MaskType="Numeric" Mask="###,###,###,##0;" HorizontalContentAlignment="Right" Width="125" Height="26"/>
+                                                <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_8_6}" Foreground="#333" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Border>
+
+                                        -->
+                                    <!-- 4 row -->
+                                    <!--
+                                        <Border Grid.Column="0" Grid.Row="4" BorderBrush="#e5e5e5" Background="#f5f5f5" BorderThickness="1">
+                                            <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_8_7}" FontSize="12" Foreground="#666" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" />
+                                        </Border>
+                                        <Border Grid.Column="1" Grid.Row="4" BorderBrush="#e5e5e5" BorderThickness="1" Margin="10,0,0,0">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                                <RadioButton Content="{x:Static localization:Resource.AlramMyPage_2_8_8}" IsChecked="{Binding cOneTime}" Foreground="#333"/>
+                                                <RadioButton Content="{x:Static localization:Resource.AlramMyPage_2_8_9}" IsChecked="{Binding cRepeatTime}" Margin="10,0,0,0" Foreground="#333"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Column="2" Grid.Row="4" BorderBrush="#e5e5e5" Background="#f5f5f5" BorderThickness="1">
+                                            <TextBlock Text="{x:Static localization:Resource.AlramMyPage_2_8_10}" FontSize="12" Foreground="#666" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" />
+                                        </Border>
+                                        <Border Grid.Column="3" Grid.Row="4" Grid.ColumnSpan="3" BorderBrush="#e5e5e5" BorderThickness="1" Margin="10,0,0,0">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                                <RadioButton Content="{x:Static localization:Resource.AlramMyPage_2_8_11}" IsChecked="{Binding cHalfTime}" Foreground="#333"/>
+                                                <RadioButton Content="{x:Static localization:Resource.AlramMyPage_2_8_12}" IsChecked="{Binding cHourTime}" Margin="10,0,0,0" Foreground="#333" />
+                                            </StackPanel>
+                                        </Border>
+                                    </Grid>
+                                </dxlc:LayoutGroup>-->
+                                    <dxlc:LayoutGroup Grid.Row="2" Orientation="Vertical" Margin="0,10,0,0">
+                                        <Button Width="167" Height="26" Cursor="Hand" Command="{Binding CmdAlarmSettingCommand}">
+                                            <Button.Style>
+                                                <Style TargetType="{x:Type Button}">
+                                                    <Setter Property="Template">
+                                                        <Setter.Value>
+                                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                                <Grid>
+                                                                    <Image Name="btnImg" Source="{Binding btn_alarm_save, TargetNullValue={x:Null}}"/>
+                                                                </Grid>
+                                                                <ControlTemplate.Triggers>
+                                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                                        <Setter Property="Source" TargetName="btnImg" Value="{Binding btn_alarm_save_on}"/>
+                                                                    </Trigger>
+                                                                </ControlTemplate.Triggers>
+                                                            </ControlTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </Button.Style>
+                                        </Button>
+                                    </dxlc:LayoutGroup>
+                                </Grid>
+                            </dxlc:LayoutGroup>
+                        </dx:DXTabItem>
+                    </dx:DXTabControl>
+                </dxlc:LayoutGroup>
+            </Grid>
+        </dxlc:LayoutControl>
+    </dx:LoadingDecorator>
+</UserControl>

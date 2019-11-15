@@ -1,0 +1,5140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Alert_1" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="Alert_2" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="Alert_3" xml:space="preserve">
+    <value>はい</value>
+  </data>
+  <data name="Alert_4" xml:space="preserve">
+    <value>いいえ</value>
+  </data>
+  <data name="AlramMyPage_1_1" xml:space="preserve">
+    <value>通知履歴</value>
+  </data>
+  <data name="AlramMyPage_1_2" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="AlramMyPage_1_2_1" xml:space="preserve">
+    <value>金額別</value>
+  </data>
+  <data name="AlramMyPage_1_2_10" xml:space="preserve">
+    <value>自動取引登録</value>
+  </data>
+  <data name="AlramMyPage_1_2_11" xml:space="preserve">
+    <value>IPプロパティ</value>
+  </data>
+  <data name="AlramMyPage_1_2_12" xml:space="preserve">
+    <value>アカウントのロックアウト</value>
+  </data>
+  <data name="AlramMyPage_1_2_13" xml:space="preserve">
+    <value>コインの交換自動取引の実行</value>
+  </data>
+  <data name="AlramMyPage_1_2_2" xml:space="preserve">
+    <value>時間代別</value>
+  </data>
+  <data name="AlramMyPage_1_2_3" xml:space="preserve">
+    <value>1:1お問い合わせ</value>
+  </data>
+  <data name="AlramMyPage_1_2_4" xml:space="preserve">
+    <value>付加サービス</value>
+  </data>
+  <data name="AlramMyPage_1_2_5" xml:space="preserve">
+    <value>入出金</value>
+  </data>
+  <data name="AlramMyPage_1_2_6" xml:space="preserve">
+    <value>購入/販売</value>
+  </data>
+  <data name="AlramMyPage_1_2_7" xml:space="preserve">
+    <value>お知らせ</value>
+  </data>
+  <data name="AlramMyPage_1_2_8" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="AlramMyPage_1_2_9" xml:space="preserve">
+    <value>その他</value>
+  </data>
+  <data name="AlramMyPage_1_3" xml:space="preserve">
+    <value>日時</value>
+  </data>
+  <data name="AlramMyPage_1_4" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="AlramMyPage_1_5" xml:space="preserve">
+    <value>詳細を見る</value>
+  </data>
+  <data name="AlramMyPage_2_1" xml:space="preserve">
+    <value>通知設定</value>
+  </data>
+  <data name="AlramMyPage_2_2" xml:space="preserve">
+    <value>基本</value>
+  </data>
+  <data name="AlramMyPage_2_2_1" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="AlramMyPage_2_2_2" xml:space="preserve">
+    <value>お知らせ</value>
+  </data>
+  <data name="AlramMyPage_2_2_3" xml:space="preserve">
+    <value>付加サービス申請</value>
+  </data>
+  <data name="AlramMyPage_2_2_4" xml:space="preserve">
+    <value>1:1お問い合わせ</value>
+  </data>
+  <data name="AlramMyPage_2_3" xml:space="preserve">
+    <value>購入/販売</value>
+  </data>
+  <data name="AlramMyPage_2_3_1" xml:space="preserve">
+    <value>購入注文</value>
+  </data>
+  <data name="AlramMyPage_2_3_2" xml:space="preserve">
+    <value>購入締結</value>
+  </data>
+  <data name="AlramMyPage_2_3_3" xml:space="preserve">
+    <value>販売注文</value>
+  </data>
+  <data name="AlramMyPage_2_3_4" xml:space="preserve">
+    <value>販売締結</value>
+  </data>
+  <data name="AlramMyPage_2_4" xml:space="preserve">
+    <value>入出金</value>
+  </data>
+  <data name="AlramMyPage_2_4_1" xml:space="preserve">
+    <value>コイン入金</value>
+  </data>
+  <data name="AlramMyPage_2_4_2" xml:space="preserve">
+    <value>コイン送金</value>
+  </data>
+  <data name="AlramMyPage_2_5" xml:space="preserve">
+    <value>選択コイン</value>
+  </data>
+  <data name="AlramMyPage_2_6" xml:space="preserve">
+    <value>通知時間</value>
+  </data>
+  <data name="AlramMyPage_2_6_1" xml:space="preserve">
+    <value>時</value>
+  </data>
+  <data name="AlramMyPage_2_6_2" xml:space="preserve">
+    <value>時まで</value>
+  </data>
+  <data name="AlramMyPage_2_7" xml:space="preserve">
+    <value>通知周期</value>
+  </data>
+  <data name="AlramMyPage_2_7_1" xml:space="preserve">
+    <value>時間ごとに通知を受ける</value>
+  </data>
+  <data name="AlramMyPage_2_8_1" xml:space="preserve">
+    <value>現在の相場: </value>
+  </data>
+  <data name="AlramMyPage_2_8_10" xml:space="preserve">
+    <value>繰り返し通知</value>
+  </data>
+  <data name="AlramMyPage_2_8_11" xml:space="preserve">
+    <value>30分毎に通知</value>
+  </data>
+  <data name="AlramMyPage_2_8_12" xml:space="preserve">
+    <value>1時間毎に通知</value>
+  </data>
+  <data name="AlramMyPage_2_8_3" xml:space="preserve">
+    <value>最高値</value>
+  </data>
+  <data name="AlramMyPage_2_8_4" xml:space="preserve">
+    <value> KRW以上</value>
+  </data>
+  <data name="AlramMyPage_2_8_5" xml:space="preserve">
+    <value>最低値</value>
+  </data>
+  <data name="AlramMyPage_2_8_6" xml:space="preserve">
+    <value> KRW以下</value>
+  </data>
+  <data name="AlramMyPage_2_8_7" xml:space="preserve">
+    <value>繰り返し設定</value>
+  </data>
+  <data name="AlramMyPage_2_8_8" xml:space="preserve">
+    <value>一回のみ通知</value>
+  </data>
+  <data name="AlramMyPage_2_8_9" xml:space="preserve">
+    <value>繰り返し通知</value>
+  </data>
+  <data name="AlramMyPage_Alert_1" xml:space="preserve">
+    <value>終了時間を、開始時間と同じか高く指定してください。</value>
+  </data>
+  <data name="AlramMyPage_Alert_2" xml:space="preserve">
+    <value>通知周期時間を、通知時間の長さよりも低く指定してください。</value>
+  </data>
+  <data name="AlramMyPage_Common_1" xml:space="preserve">
+    <value>デフォルトの通知</value>
+  </data>
+  <data name="AlramMyPage_Common_2" xml:space="preserve">
+    <value>時間帯別相場の通知設定</value>
+  </data>
+  <data name="AlramMyPage_Common_3" xml:space="preserve">
+    <value>金額別相場通知設定</value>
+  </data>
+  <data name="AssetsMyPage_1" xml:space="preserve">
+    <value>電子ウォレットアドレス</value>
+  </data>
+  <data name="AssetsMyPage_1_1" xml:space="preserve">
+    <value>電子ウォレットアドレスのクリエーションは</value>
+  </data>
+  <data name="AssetsMyPage_1_2" xml:space="preserve">
+    <value>電子ウォレットアドレスは、[HTS、MTS&gt;入出金管理&gt;コイン入金]</value>
+  </data>
+  <data name="AssetsMyPage_1_3" xml:space="preserve">
+    <value>で作成することができます。</value>
+  </data>
+  <data name="AssetsMyPage_2" xml:space="preserve">
+    <value>資産現況</value>
+  </data>
+  <data name="AssetsMyPage_2_1" xml:space="preserve">
+    <value>コイン資産</value>
+  </data>
+  <data name="AssetsMyPage_2_2" xml:space="preserve">
+    <value>総資産</value>
+  </data>
+  <data name="AssetsMyPage_3_1" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="AssetsMyPage_3_2" xml:space="preserve">
+    <value>取引可能</value>
+  </data>
+  <data name="AssetsMyPage_3_3" xml:space="preserve">
+    <value>取引可能</value>
+  </data>
+  <data name="AssetsMyPage_3_4" xml:space="preserve">
+    <value>取引中</value>
+  </data>
+  <data name="AssetsMyPage_3_5" xml:space="preserve">
+    <value>合計</value>
+  </data>
+  <data name="AssetsMyPage_4" xml:space="preserve">
+    <value>相場差益</value>
+  </data>
+  <data name="AssetsMyPage_4_1" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="AssetsMyPage_4_2" xml:space="preserve">
+    <value>保有数量</value>
+  </data>
+  <data name="AssetsMyPage_4_3" xml:space="preserve">
+    <value>購入平均価</value>
+  </data>
+  <data name="AssetsMyPage_4_4" xml:space="preserve">
+    <value>購入額</value>
+  </data>
+  <data name="AssetsMyPage_4_5" xml:space="preserve">
+    <value>現在の相場</value>
+  </data>
+  <data name="AssetsMyPage_4_6" xml:space="preserve">
+    <value>評価金額</value>
+  </data>
+  <data name="AssetsMyPage_4_7" xml:space="preserve">
+    <value>評価損益</value>
+  </data>
+  <data name="AssetsMyPage_4_8" xml:space="preserve">
+    <value>収益率</value>
+  </data>
+  <data name="AssetsMyPage_4_9" xml:space="preserve">
+    <value>合計</value>
+  </data>
+  <data name="AssetsMyPage_5" xml:space="preserve">
+    <value>期間別相場差益</value>
+  </data>
+  <data name="AssetsMyPage_5_1" xml:space="preserve">
+    <value>期間</value>
+  </data>
+  <data name="AssetsMyPage_5_10" xml:space="preserve">
+    <value>収益率</value>
+  </data>
+  <data name="AssetsMyPage_5_11" xml:space="preserve">
+    <value>現在の相場</value>
+  </data>
+  <data name="AssetsMyPage_5_12" xml:space="preserve">
+    <value>合計</value>
+  </data>
+  <data name="AssetsMyPage_5_2" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="AssetsMyPage_5_3" xml:space="preserve">
+    <value>購入数量</value>
+  </data>
+  <data name="AssetsMyPage_5_4" xml:space="preserve">
+    <value>購入平均価</value>
+  </data>
+  <data name="AssetsMyPage_5_5" xml:space="preserve">
+    <value>購入総額</value>
+  </data>
+  <data name="AssetsMyPage_5_6" xml:space="preserve">
+    <value>販売数量</value>
+  </data>
+  <data name="AssetsMyPage_5_7" xml:space="preserve">
+    <value>販売平均価</value>
+  </data>
+  <data name="AssetsMyPage_5_8" xml:space="preserve">
+    <value>販売総額</value>
+  </data>
+  <data name="AssetsMyPage_5_9" xml:space="preserve">
+    <value>差益</value>
+  </data>
+  <data name="AssetsMyPage_6" xml:space="preserve">
+    <value>コイン資産</value>
+  </data>
+  <data name="AssetsMyPage_6_1" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="AssetsMyPage_6_2" xml:space="preserve">
+    <value>ビットコイン</value>
+  </data>
+  <data name="AssetsMyPage_6_3" xml:space="preserve">
+    <value>イーサリアム(ETH)</value>
+  </data>
+  <data name="AssetsMyPage_6_4" xml:space="preserve">
+    <value>ビットコインキャッシュ(BCH)</value>
+  </data>
+  <data name="AssetsMyPage_6_5" xml:space="preserve">
+    <value> リップル(XRP)</value>
+  </data>
+  <data name="AssetsMyPage_6_6" xml:space="preserve">
+    <value>取引可能</value>
+  </data>
+  <data name="AssetsMyPage_6_7" xml:space="preserve">
+    <value>取引中</value>
+  </data>
+  <data name="AssetsMyPage_6_8" xml:space="preserve">
+    <value>合計</value>
+  </data>
+  <data name="AutoTradingAdditional_1" xml:space="preserve">
+    <value>1. 自動取引</value>
+  </data>
+  <data name="AutoTradingAdditional_1_1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AutoTradingAdditional_1_10" xml:space="preserve">
+    <value>できます。</value>
+  </data>
+  <data name="AutoTradingAdditional_1_2" xml:space="preserve">
+    <value>ㆍ自動取引はCoinBlock</value>
+  </data>
+  <data name="AutoTradingAdditional_1_3" xml:space="preserve">
+    <value>のみ提供される唯一の機能により、</value>
+  </data>
+  <data name="AutoTradingAdditional_1_4" xml:space="preserve">
+    <value>ㆍ自動取引は利益と損失のために準備のために同時にご注文可能取引です。</value>
+  </data>
+  <data name="AutoTradingAdditional_1_5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AutoTradingAdditional_1_6" xml:space="preserve">
+    <value>ㆍ自動取引は、購入が/販売を設定して、その価格に達するたびに市場が締結されます。</value>
+  </data>
+  <data name="AutoTradingAdditional_1_7" xml:space="preserve">
+    <value>ㆍ損切り自動取引は販売下落時の損害を最小限に抑えるための金額を設定します。</value>
+  </data>
+  <data name="AutoTradingAdditional_1_8" xml:space="preserve">
+    <value>ㆍこのサービスは、付加サービスであり、[HTS、MTS、WEB &gt;コイン購入/販売]メニューの自動購入/販売、損切り自動取引で設定することができます。</value>
+  </data>
+  <data name="AutoTradingAdditional_1_9" xml:space="preserve">
+    <value>ただし、自動的に設定された購入/販売は、PC所にログインする必要があり（つまり、HTSが実行中）締結されます。</value>
+  </data>
+  <data name="AutoTradingAdditional_2" xml:space="preserve">
+    <value>コイン交換自動取引</value>
+  </data>
+  <data name="AutoTradingAdditional_2_1" xml:space="preserve">
+    <value>コイン交換自動取引は保有なコインと交換コインの変動率を設定し、設定した変動率以上の場合、プッシュで知らせる機能です。</value>
+  </data>
+  <data name="AutoTradingAdditional_2_2" xml:space="preserve">
+    <value>ㆍ自動取引機能は[HTS&gt;取引所&gt;コイン交換自動取引]についての'コイン交換自動取引'で設定後、取引の実行は、[HTS、MTS&gt;購入・販売&gt;コイン交換自動取引】で取引することができます。</value>
+  </data>
+  <data name="AutoTradingAdditional_3" xml:space="preserve">
+    <value>自動取引申し込み状態</value>
+  </data>
+  <data name="AutoTradingAdditional_3_1" xml:space="preserve">
+    <value>未申請</value>
+  </data>
+  <data name="AutoTradingAdditional_3_10" xml:space="preserve">
+    <value>で、</value>
+  </data>
+  <data name="AutoTradingAdditional_3_12" xml:space="preserve">
+    <value>です。</value>
+  </data>
+  <data name="AutoTradingAdditional_3_2" xml:space="preserve">
+    <value>申し込み</value>
+  </data>
+  <data name="AutoTradingAdditional_3_3" xml:space="preserve">
+    <value>決済種類</value>
+  </data>
+  <data name="AutoTradingAdditional_3_4" xml:space="preserve">
+    <value>1ヶ月(30日)</value>
+  </data>
+  <data name="AutoTradingAdditional_3_5" xml:space="preserve">
+    <value>自自動取引は</value>
+  </data>
+  <data name="AutoTradingAdditional_3_6" xml:space="preserve">
+    <value>有料サービス</value>
+  </data>
+  <data name="Bookmark_1" xml:space="preserve">
+    <value>全体クイックメニュー</value>
+  </data>
+  <data name="Bookmark_2" xml:space="preserve">
+    <value>選択されたクイックメニュー</value>
+  </data>
+  <data name="Bookmark_3" xml:space="preserve">
+    <value>全体</value>
+  </data>
+  <data name="Bookmark_4" xml:space="preserve">
+    <value>* 順序は、Drag And Drop</value>
+  </data>
+  <data name="Bookmark_5" xml:space="preserve">
+    <value>で変更することができます。</value>
+  </data>
+  <data name="Bookmark_6" xml:space="preserve">
+    <value>クイックメニューは1つ以上選択してください。</value>
+  </data>
+  <data name="Bookmark_7" xml:space="preserve">
+    <value>お気に入り</value>
+  </data>
+  <data name="Bookmark_8" xml:space="preserve">
+    <value>お気に入り設定</value>
+  </data>
+  <data name="CertificationDataSubmit_1" xml:space="preserve">
+    <value>入金事実証明</value>
+  </data>
+  <data name="CertificationDataSubmit_1_2" xml:space="preserve">
+    <value>入金事実証明メール</value>
+  </data>
+  <data name="CertificationDataSubmit_1_3" xml:space="preserve">
+    <value>を送ってください。</value>
+  </data>
+  <data name="CertificationDataSubmit_1_5" xml:space="preserve">
+    <value>・メールアドレス：help@coinblock.kr</value>
+  </data>
+  <data name="CertificationDataSubmit_1_6" xml:space="preserve">
+    <value>・メールのタイトル：’入金事実証明の書類提出’の入金証明メール様式</value>
+  </data>
+  <data name="CertificationDataSubmit_1_7" xml:space="preserve">
+    <value>入金証明Eメール様式</value>
+  </data>
+  <data name="CertificationDataSubmit_2" xml:space="preserve">
+    <value>本人認証</value>
+  </data>
+  <data name="CertificationDataSubmit_2_2" xml:space="preserve">
+    <value>本人認証Eメール様式</value>
+  </data>
+  <data name="CertificationDataSubmit_2_3" xml:space="preserve">
+    <value>・メールアドレス：help@coinblock.kr</value>
+  </data>
+  <data name="CertificationDataSubmit_2_4" xml:space="preserve">
+    <value>・メールのタイトル：本人の認証の書類提出</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1" xml:space="preserve">
+    <value>身分証明書の写真</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1_1" xml:space="preserve">
+    <value>身分証明書の写真</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1_2" xml:space="preserve">
+    <value>運転免許証番号、パスワードコードは全部隠してください。</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1_3" xml:space="preserve">
+    <value>認証目的、認証電話番号、認証Eメール、要請日のメモと個人情報を隠した身分証明書を取った写真を添付してください。</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1_4" xml:space="preserve">
+    <value>(認証可能身分証明書 : 住民登録証、運転免許証、パスワード)</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_2" xml:space="preserve">
+    <value>身分証明書を持っている本人の写真</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_2_1" xml:space="preserve">
+    <value>非対面本人認証のために使用されます。身分証明書に認証目的、認証電話番号、認証Eメール、要請日のメモを貼って一緒に撮影してください。身元証明の文字(メモを含む)は判読できるものでなければ無効になります。</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_2_2" xml:space="preserve">
+    <value>添付した写真は、その要請に対する非対面実名確認用途以外には使用しません。</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_3" xml:space="preserve">
+    <value>取引履歴コピー</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_3_1" xml:space="preserve">
+    <value>受取人、金額、日時が表示された取引履歴コピーをお送りください。</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_3_2" xml:space="preserve">
+    <value>通帳コピーかモバイルバンキングの取引履歴画面をキャプチャーまたは撮影したものも使用可能です。</value>
+  </data>
+  <data name="CertifyMyPage_1" xml:space="preserve">
+    <value>メール認証</value>
+  </data>
+  <data name="CertifyMyPage_1_1" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="CertifyMyPage_2" xml:space="preserve">
+    <value>携帯電話本人認証</value>
+  </data>
+  <data name="CertifyMyPage_2_1" xml:space="preserve">
+    <value>氏名</value>
+  </data>
+  <data name="CertifyMyPage_2_1_1" xml:space="preserve">
+    <value>名前を書いてください。</value>
+  </data>
+  <data name="CertifyMyPage_2_2" xml:space="preserve">
+    <value>国籍</value>
+  </data>
+  <data name="CertifyMyPage_2_3" xml:space="preserve">
+    <value>生年月日</value>
+  </data>
+  <data name="CertifyMyPage_2_3_1" xml:space="preserve">
+    <value>EX) 19960101</value>
+  </data>
+  <data name="CertifyMyPage_2_4" xml:space="preserve">
+    <value>性別</value>
+  </data>
+  <data name="CertifyMyPage_2_4_1" xml:space="preserve">
+    <value>男性</value>
+  </data>
+  <data name="CertifyMyPage_2_4_2" xml:space="preserve">
+    <value>女性</value>
+  </data>
+  <data name="CertifyMyPage_2_5" xml:space="preserve">
+    <value>携帯電話番号</value>
+  </data>
+  <data name="CertifyMyPage_2_5_1" xml:space="preserve">
+    <value>EX) 01012345679</value>
+  </data>
+  <data name="CertifyMyPage_2_6" xml:space="preserve">
+    <value>認証コード</value>
+  </data>
+  <data name="CertifyMyPage_3" xml:space="preserve">
+    <value>口座認証</value>
+  </data>
+  <data name="CertifyMyPage_3_1" xml:space="preserve">
+    <value>口座</value>
+  </data>
+  <data name="CertifyMyPage_3_2" xml:space="preserve">
+    <value>口座番号</value>
+  </data>
+  <data name="CertifyMyPage_4" xml:space="preserve">
+    <value>Google OTP</value>
+  </data>
+  <data name="CertifyMyPage_4_1" xml:space="preserve">
+    <value>グーグルOTPを設定する方法</value>
+  </data>
+  <data name="CertifyMyPage_4_2" xml:space="preserve">
+    <value> 携帯電話のアプリストアから、’Google OTP’アプリをインストールしてください。</value>
+  </data>
+  <data name="CertifyMyPage_4_3" xml:space="preserve">
+    <value> ’Google OTP’アプリを実行した後に’バーコードスキャン’選択します。</value>
+  </data>
+  <data name="CertifyMyPage_4_4" xml:space="preserve">
+    <value>横のQRコードをスキャンしてください。</value>
+  </data>
+  <data name="CertifyMyPage_4_5" xml:space="preserve">
+    <value>’Google OTP’アプリで見えるOTP番号を、下の欄に入力してください。</value>
+  </data>
+  <data name="CertifyMyPage_4_6" xml:space="preserve">
+    <value>OTP</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_1" xml:space="preserve">
+    <value>ㆍコイン交換自動取引設定は、PC取引所でのみ可能であり、取引の実行はPC取引所およびモバイルAPPで可能です。</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_10" xml:space="preserve">
+    <value>販売数量</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_11" xml:space="preserve">
+    <value>状態</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_12" xml:space="preserve">
+    <value>を、次の条件以上のときに販売</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_12_1" xml:space="preserve">
+    <value>現在の相場: </value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_13" xml:space="preserve">
+    <value> 設定相場:</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_14_1" xml:space="preserve">
+    <value>(使用可能数量 :</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_14_2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CoinExchangeReservationTrading_1_15_1" xml:space="preserve">
+    <value>通知予約</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_15_2" xml:space="preserve">
+    <value>通知キャンセル</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_16" xml:space="preserve">
+    <value>交換コイン変動率</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_17" xml:space="preserve">
+    <value>交換予想金額</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_18" xml:space="preserve">
+    <value>予約日</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_19" xml:space="preserve">
+    <value>を以下の条件以上のときに購入</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_2" xml:space="preserve">
+    <value>ㆍ保有コインと交換コインの設定変更率以上の場合、PC取引所およびモバイルAPPに通知が送信されます。</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_20" xml:space="preserve">
+    <value> 設定相場:</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_21" xml:space="preserve">
+    <value>通知予約</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_22" xml:space="preserve">
+    <value>通知キャンセル</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_3" xml:space="preserve">
+    <value>ㆍ取引実行時に設定した数量よりも少ない場合、残りの保有コインの残高分のみ取引されます。</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_4" xml:space="preserve">
+    <value>ㆍ[コイン交換自動取引設定]画面で設定した後に使用が可能になります。</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_5" xml:space="preserve">
+    <value>ㆍ照会日と取引実行日が異なる場合、取引金額に差が生じることがあります。</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_6" xml:space="preserve">
+    <value>ㆍ取引実行時に手数料が請求されます。</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_7" xml:space="preserve">
+    <value>ㆍ取引実行後、[コイン交換自動取引設定]画面で再設定してください。</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_8" xml:space="preserve">
+    <value>コイン交換自動取引設定</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_9" xml:space="preserve">
+    <value>保有コイン変動率</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_1" xml:space="preserve">
+    <value>コイン交換取引の実行</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_10" xml:space="preserve">
+    <value>取引実行</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_11" xml:space="preserve">
+    <value>(設定変動率 =</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_12" xml:space="preserve">
+    <value>%以上)</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_13" xml:space="preserve">
+    <value>(使用可能残高 :</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_14" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CoinExchangeReservationTrading_2_2" xml:space="preserve">
+    <value>保有コインの基準相場</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_3" xml:space="preserve">
+    <value>保有コインの現在の相場</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_4" xml:space="preserve">
+    <value>販売数量</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_5" xml:space="preserve">
+    <value>設定変動率</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_6" xml:space="preserve">
+    <value>使用可能残高</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_7" xml:space="preserve">
+    <value>交換コインの基準相場</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_8" xml:space="preserve">
+    <value>交換コインの現在の相場</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_9" xml:space="preserve">
+    <value>交換予想金額</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_Alert_1" xml:space="preserve">
+    <value>保有コインと同じコインで交換することはできません。</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_Alert_2" xml:space="preserve">
+    <value>使用可能数量を超過しました。</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_Alert_3" xml:space="preserve">
+    <value>100％以上に設定することはできません。</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_Alert_4" xml:space="preserve">
+    <value>コイン交換自動取引実行お知らせ</value>
+  </data>
+  <data name="CoinInfo_1" xml:space="preserve">
+    <value>最初の発行</value>
+  </data>
+  <data name="CoinInfo_2" xml:space="preserve">
+    <value>発行方式</value>
+  </data>
+  <data name="CoinInfo_3" xml:space="preserve">
+    <value>時価総額</value>
+  </data>
+  <data name="CoinInfo_4" xml:space="preserve">
+    <value>現在の総発行量</value>
+  </data>
+  <data name="CoinInfo_5" xml:space="preserve">
+    <value>最大発行量</value>
+  </data>
+  <data name="CoinInfo_6" xml:space="preserve">
+    <value>公式ウェブサイト</value>
+  </data>
+  <data name="CoinInfo_7" xml:space="preserve">
+    <value>コインのご紹介</value>
+  </data>
+  <data name="CoinInfo_8" xml:space="preserve">
+    <value>コインの特徴</value>
+  </data>
+  <data name="CoinTrading_1" xml:space="preserve">
+    <value>指し値取引</value>
+  </data>
+  <data name="CoinTrading_1_1" xml:space="preserve">
+    <value>指し値購入</value>
+  </data>
+  <data name="CoinTrading_1_1_1" xml:space="preserve">
+    <value>買受(購入)価格</value>
+  </data>
+  <data name="CoinTrading_1_1_2" xml:space="preserve">
+    <value>買受(購入)数量</value>
+  </data>
+  <data name="CoinTrading_1_1_3" xml:space="preserve">
+    <value>買受(購入)金額</value>
+  </data>
+  <data name="CoinTrading_1_1_4" xml:space="preserve">
+    <value>(買受可能:</value>
+  </data>
+  <data name="CoinTrading_1_1_5" xml:space="preserve">
+    <value>)</value>
+  </data>
+  <data name="CoinTrading_1_2" xml:space="preserve">
+    <value>指し値販売</value>
+  </data>
+  <data name="CoinTrading_1_2_1" xml:space="preserve">
+    <value>売渡(販売)価格</value>
+  </data>
+  <data name="CoinTrading_1_2_2" xml:space="preserve">
+    <value>売渡(販売)数量</value>
+  </data>
+  <data name="CoinTrading_1_2_3" xml:space="preserve">
+    <value>売渡(販売)金額</value>
+  </data>
+  <data name="CoinTrading_1_2_4" xml:space="preserve">
+    <value>(売渡可能:</value>
+  </data>
+  <data name="CoinTrading_1_2_5" xml:space="preserve">
+    <value>)</value>
+  </data>
+  <data name="CoinTrading_1_3" xml:space="preserve">
+    <value>*手数料は締結時に計算されます。</value>
+  </data>
+  <data name="CoinTrading_1_4" xml:space="preserve">
+    <value>*購入注文価格: 未締結注文売値の最低金額以上に設定すると、成行で締結されます。</value>
+  </data>
+  <data name="CoinTrading_1_5" xml:space="preserve">
+    <value>*販売注文価格: 未締結注文買値の最高金額以下に設定すると、成行で締結されます。</value>
+  </data>
+  <data name="CoinTrading_2" xml:space="preserve">
+    <value>成行取引</value>
+  </data>
+  <data name="CoinTrading_2_1" xml:space="preserve">
+    <value>成行購入</value>
+  </data>
+  <data name="CoinTrading_2_1_1" xml:space="preserve">
+    <value>買受(購入)価格</value>
+  </data>
+  <data name="CoinTrading_2_1_2" xml:space="preserve">
+    <value>買受(購入)予想数量</value>
+  </data>
+  <data name="CoinTrading_2_1_3" xml:space="preserve">
+    <value>(買受可能:</value>
+  </data>
+  <data name="CoinTrading_2_1_4" xml:space="preserve">
+    <value>)</value>
+  </data>
+  <data name="CoinTrading_2_2" xml:space="preserve">
+    <value>成行販売</value>
+  </data>
+  <data name="CoinTrading_2_2_1" xml:space="preserve">
+    <value>売渡(販売)数量</value>
+  </data>
+  <data name="CoinTrading_2_2_2" xml:space="preserve">
+    <value>売渡(販売)予想受領額</value>
+  </data>
+  <data name="CoinTrading_2_2_3" xml:space="preserve">
+    <value>(売渡可能:</value>
+  </data>
+  <data name="CoinTrading_2_2_4" xml:space="preserve">
+    <value>)</value>
+  </data>
+  <data name="CoinTrading_2_3" xml:space="preserve">
+    <value>*成行購入は未締結販売申請金額が低い順に購入され、</value>
+  </data>
+  <data name="CoinTrading_2_4" xml:space="preserve">
+    <value>実際の受領量は購入額に応じて変動することがあります。</value>
+  </data>
+  <data name="CoinTrading_2_5" xml:space="preserve">
+    <value>*成行販売は未締結購入申請金額が高い順に販売され、</value>
+  </data>
+  <data name="CoinTrading_2_6" xml:space="preserve">
+    <value>実際の受領額は販売量に応じて変動することがあります。</value>
+  </data>
+  <data name="CoinTrading_3" xml:space="preserve">
+    <value>自動取引</value>
+  </data>
+  <data name="CoinTrading_3_1" xml:space="preserve">
+    <value>自動取引</value>
+  </data>
+  <data name="CoinTrading_3_1_1" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="CoinTrading_3_1_1_1" xml:space="preserve">
+    <value> 自動購入</value>
+  </data>
+  <data name="CoinTrading_3_1_1_2" xml:space="preserve">
+    <value>自動販売</value>
+  </data>
+  <data name="CoinTrading_3_1_1_3" xml:space="preserve">
+    <value>損切販売</value>
+  </data>
+  <data name="CoinTrading_3_1_2" xml:space="preserve">
+    <value>1順位</value>
+  </data>
+  <data name="CoinTrading_3_1_3" xml:space="preserve">
+    <value>2順位</value>
+  </data>
+  <data name="CoinTrading_3_1_4" xml:space="preserve">
+    <value>3順位</value>
+  </data>
+  <data name="CoinTrading_3_1_5" xml:space="preserve">
+    <value>購入可能額</value>
+  </data>
+  <data name="CoinTrading_3_1_6" xml:space="preserve">
+    <value>販売可能額</value>
+  </data>
+  <data name="CoinTrading_3_2" xml:space="preserve">
+    <value>損切自動取引</value>
+  </data>
+  <data name="CoinTrading_4" xml:space="preserve">
+    <value>全体未締結履歴</value>
+  </data>
+  <data name="CoinTrading_4_1" xml:space="preserve">
+    <value>呼び値</value>
+  </data>
+  <data name="CoinTrading_4_2" xml:space="preserve">
+    <value>売値(売渡)注文量</value>
+  </data>
+  <data name="CoinTrading_4_3" xml:space="preserve">
+    <value>買値(買受)注文量</value>
+  </data>
+  <data name="CoinTrading_4_4" xml:space="preserve">
+    <value>締結価</value>
+  </data>
+  <data name="CoinTrading_4_5" xml:space="preserve">
+    <value>取引量</value>
+  </data>
+  <data name="CoinTrading_4_6_1" xml:space="preserve">
+    <value>現在の時価</value>
+  </data>
+  <data name="CoinTrading_4_6_2" xml:space="preserve">
+    <value>前日終値</value>
+  </data>
+  <data name="CoinTrading_4_6_3" xml:space="preserve">
+    <value>当日最高値</value>
+  </data>
+  <data name="CoinTrading_4_6_4" xml:space="preserve">
+    <value>当日最低値</value>
+  </data>
+  <data name="CoinTrading_4_6_5" xml:space="preserve">
+    <value>本日の総取引量</value>
+  </data>
+  <data name="CoinTrading_4_6_6" xml:space="preserve">
+    <value>前日総取引量</value>
+  </data>
+  <data name="CoinTrading_4_6_7" xml:space="preserve">
+    <value>現在取引代金</value>
+  </data>
+  <data name="CoinTrading_4_6_8" xml:space="preserve">
+    <value>前日取引代金</value>
+  </data>
+  <data name="CoinTrading_5" xml:space="preserve">
+    <value>チャート</value>
+  </data>
+  <data name="CoinTrading_6" xml:space="preserve">
+    <value>マイ未締結注文</value>
+  </data>
+  <data name="CoinTrading_6_1" xml:space="preserve">
+    <value>種類</value>
+  </data>
+  <data name="CoinTrading_6_1_1" xml:space="preserve">
+    <value>購入</value>
+  </data>
+  <data name="CoinTrading_6_1_2" xml:space="preserve">
+    <value>販売</value>
+  </data>
+  <data name="CoinTrading_6_2" xml:space="preserve">
+    <value>コイン名</value>
+  </data>
+  <data name="CoinTrading_6_3" xml:space="preserve">
+    <value>注文時間</value>
+  </data>
+  <data name="CoinTrading_6_4" xml:space="preserve">
+    <value>注文量</value>
+  </data>
+  <data name="CoinTrading_6_5" xml:space="preserve">
+    <value>注文価</value>
+  </data>
+  <data name="CoinTrading_6_6" xml:space="preserve">
+    <value>締結量</value>
+  </data>
+  <data name="CoinTrading_6_7" xml:space="preserve">
+    <value>平均締結価</value>
+  </data>
+  <data name="CoinTrading_6_8" xml:space="preserve">
+    <value>部分締結有無</value>
+  </data>
+  <data name="CoinTrading_6_9" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="CoinTrading_7" xml:space="preserve">
+    <value>最近の私の取引履歴</value>
+  </data>
+  <data name="CoinTrading_7_1" xml:space="preserve">
+    <value>種類</value>
+  </data>
+  <data name="CoinTrading_7_1_1" xml:space="preserve">
+    <value>購入</value>
+  </data>
+  <data name="CoinTrading_7_1_2" xml:space="preserve">
+    <value>販売</value>
+  </data>
+  <data name="CoinTrading_7_2" xml:space="preserve">
+    <value>締結時刻</value>
+  </data>
+  <data name="CoinTrading_7_3" xml:space="preserve">
+    <value>締結量</value>
+  </data>
+  <data name="CoinTrading_7_4" xml:space="preserve">
+    <value>締結価</value>
+  </data>
+  <data name="CoinTrading_7_5" xml:space="preserve">
+    <value>締結金額</value>
+  </data>
+  <data name="CoinTrading_7_6" xml:space="preserve">
+    <value>手数料</value>
+  </data>
+  <data name="CoinTrading_8" xml:space="preserve">
+    <value>自動取引設定履歴</value>
+  </data>
+  <data name="CoinTrading_8_1" xml:space="preserve">
+    <value>コイン</value>
+  </data>
+  <data name="CoinTrading_8_2" xml:space="preserve">
+    <value>購入/販売</value>
+  </data>
+  <data name="CoinTrading_8_2_1" xml:space="preserve">
+    <value>購入</value>
+  </data>
+  <data name="CoinTrading_8_2_2" xml:space="preserve">
+    <value>販売</value>
+  </data>
+  <data name="CoinTrading_8_3" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="CoinTrading_8_3_1" xml:space="preserve">
+    <value> 自動購入</value>
+  </data>
+  <data name="CoinTrading_8_3_2" xml:space="preserve">
+    <value>自動販売</value>
+  </data>
+  <data name="CoinTrading_8_3_3" xml:space="preserve">
+    <value>損切販売</value>
+  </data>
+  <data name="CoinTrading_8_4" xml:space="preserve">
+    <value>順位</value>
+  </data>
+  <data name="CoinTrading_8_5" xml:space="preserve">
+    <value>金額</value>
+  </data>
+  <data name="CoinTrading_8_6" xml:space="preserve">
+    <value>誤差率</value>
+  </data>
+  <data name="CoinTrading_8_7" xml:space="preserve">
+    <value>ストップ安</value>
+  </data>
+  <data name="CoinTrading_8_8" xml:space="preserve">
+    <value>ストップ高</value>
+  </data>
+  <data name="CoinTrading_8_9" xml:space="preserve">
+    <value>個数</value>
+  </data>
+  <data name="CoinTrading_Alert_1" xml:space="preserve">
+    <value>購入しますか？</value>
+  </data>
+  <data name="CoinTrading_Alert_10" xml:space="preserve">
+    <value>最低入力数量は[10]個です。</value>
+  </data>
+  <data name="CoinTrading_Alert_11" xml:space="preserve">
+    <value>最低使用金額は[{0}] {1}です。</value>
+  </data>
+  <data name="CoinTrading_Alert_15" xml:space="preserve">
+    <value>注文可能な{0}を超過しました。</value>
+  </data>
+  <data name="CoinTrading_Alert_16_1" xml:space="preserve">
+    <value>接続量が多くてアップロードが遅延しています。</value>
+  </data>
+  <data name="CoinTrading_Alert_16_2" xml:space="preserve">
+    <value>必ず[私の取引内訳]を確認してから再登録してください。</value>
+  </data>
+  <data name="CoinTrading_Alert_17" xml:space="preserve">
+    <value>購入額が購入可能額を超過しました。</value>
+  </data>
+  <data name="CoinTrading_Alert_18" xml:space="preserve">
+    <value>注文価格を入力してください。</value>
+  </data>
+  <data name="CoinTrading_Alert_19" xml:space="preserve">
+    <value>販売可能数量を確認してください。</value>
+  </data>
+  <data name="CoinTrading_Alert_2" xml:space="preserve">
+    <value>販売しますか？</value>
+  </data>
+  <data name="CoinTrading_Alert_20" xml:space="preserve">
+    <value>販売可能数量を超過しました。</value>
+  </data>
+  <data name="CoinTrading_Alert_21" xml:space="preserve">
+    <value>注文可能なコイン個数を超過しました。</value>
+  </data>
+  <data name="CoinTrading_Alert_22" xml:space="preserve">
+    <value>購入コインが購入可能コインを超過しました。</value>
+  </data>
+  <data name="CoinTrading_Alert_23" xml:space="preserve">
+    <value>損切自動取引設定を解除した後に、自動取引を設定することができます。</value>
+  </data>
+  <data name="CoinTrading_Alert_24" xml:space="preserve">
+    <value>自動取引設定を解除した後に、損切自動取引を設定することができます。</value>
+  </data>
+  <data name="CoinTrading_Alert_25" xml:space="preserve">
+    <value>自動取引を設定しますか？</value>
+  </data>
+  <data name="CoinTrading_Alert_26" xml:space="preserve">
+    <value>自動取引設定に失敗</value>
+  </data>
+  <data name="CoinTrading_Alert_27" xml:space="preserve">
+    <value>自動取引設定をキャンセルしますか？</value>
+  </data>
+  <data name="CoinTrading_Alert_28" xml:space="preserve">
+    <value>自動取引設定キャンセル失敗</value>
+  </data>
+  <data name="CoinTrading_Alert_29" xml:space="preserve">
+    <value>損切販売を設定しますか？</value>
+  </data>
+  <data name="CoinTrading_Alert_3" xml:space="preserve">
+    <value>未締結購入リストがありません。</value>
+  </data>
+  <data name="CoinTrading_Alert_30" xml:space="preserve">
+    <value>損切販売設定に失敗</value>
+  </data>
+  <data name="CoinTrading_Alert_31" xml:space="preserve">
+    <value>損切販売設定をキャンセルしますか？</value>
+  </data>
+  <data name="CoinTrading_Alert_32" xml:space="preserve">
+    <value>損切販売設定キャンセルに失敗</value>
+  </data>
+  <data name="CoinTrading_Alert_33" xml:space="preserve">
+    <value>自動購入{0}順位誤差率を選択してください。</value>
+  </data>
+  <data name="CoinTrading_Alert_34" xml:space="preserve">
+    <value>自動販売{0}順位誤差率を選択してください。</value>
+  </data>
+  <data name="CoinTrading_Alert_35" xml:space="preserve">
+    <value>損切販売{0}順位誤差率を選択してください。</value>
+  </data>
+  <data name="CoinTrading_Alert_36" xml:space="preserve">
+    <value>現在の購入価格より低く設定する必要があります。</value>
+  </data>
+  <data name="CoinTrading_Alert_37" xml:space="preserve">
+    <value>現在の販売価格よりも高く設定する必要があります。</value>
+  </data>
+  <data name="CoinTrading_Alert_38" xml:space="preserve">
+    <value>{0}順位より高い金額を入力してください。</value>
+  </data>
+  <data name="CoinTrading_Alert_39" xml:space="preserve">
+    <value>{0}順位より低い金額を入力してください。</value>
+  </data>
+  <data name="CoinTrading_Alert_4" xml:space="preserve">
+    <value>未締結販売リストがありません。</value>
+  </data>
+  <data name="CoinTrading_Alert_40" xml:space="preserve">
+    <value>{0}順位を設定してください。</value>
+  </data>
+  <data name="CoinTrading_Alert_41" xml:space="preserve">
+    <value>{0}順位誤差範囲内の金額を設定することはできません。</value>
+  </data>
+  <data name="CoinTrading_Alert_42" xml:space="preserve">
+    <value>{0}順位誤差ストップ高を超過しました。</value>
+  </data>
+  <data name="CoinTrading_Alert_43" xml:space="preserve">
+    <value>{0}順位誤差ストップ安を超過しました。</value>
+  </data>
+  <data name="CoinTrading_Alert_44" xml:space="preserve">
+    <value>自動購入{0}順位個数を入力してください。</value>
+  </data>
+  <data name="CoinTrading_Alert_45" xml:space="preserve">
+    <value>自動販売{0}順位個数を入力してください。</value>
+  </data>
+  <data name="CoinTrading_Alert_46" xml:space="preserve">
+    <value>損切販売{0}順位個数を入力してください。</value>
+  </data>
+  <data name="CoinTrading_Alert_6" xml:space="preserve">
+    <value>注文をキャンセルしますか？</value>
+  </data>
+  <data name="CoinTrading_Alert_7" xml:space="preserve">
+    <value>注文キャンセル完了</value>
+  </data>
+  <data name="CoinTrading_Alert_8" xml:space="preserve">
+    <value>最低入力数量は[{0}]個です。</value>
+  </data>
+  <data name="CoinTrading_Alert_9" xml:space="preserve">
+    <value>最低入力数量は[0.01]個です。</value>
+  </data>
+  <data name="CoinTrading_BL_T1" xml:space="preserve">
+    <value>自動購入登録とは?</value>
+  </data>
+  <data name="CoinTrading_BL_T10" xml:space="preserve">
+    <value>いる間は、設定金額到達時に継続的に締結されます。</value>
+  </data>
+  <data name="CoinTrading_BL_T2" xml:space="preserve">
+    <value>*自動購入の場合、未締結最高買値よりも低く価格を指定すると、</value>
+  </data>
+  <data name="CoinTrading_BL_T3" xml:space="preserve">
+    <value>その注文価格に到達(誤差範囲内)す</value>
+  </data>
+  <data name="CoinTrading_BL_T4" xml:space="preserve">
+    <value>るたびに成行で締結されます。</value>
+  </data>
+  <data name="CoinTrading_BL_T5" xml:space="preserve">
+    <value>*ご注文金額より残っている金額が少ない場合、</value>
+  </data>
+  <data name="CoinTrading_BL_T6" xml:space="preserve">
+    <value>残りの金額を締結します。</value>
+  </data>
+  <data name="CoinTrading_BL_T7" xml:space="preserve">
+    <value>*(自動取引キャンセル)ボタンでキャンセルすることができます。</value>
+  </data>
+  <data name="CoinTrading_BL_T8" xml:space="preserve">
+    <value>*自動取引は、PC取引所にログインしていなければ締結されません。</value>
+  </data>
+  <data name="CoinTrading_BL_T9" xml:space="preserve">
+    <value>1順位設定金額から締結され、設定され</value>
+  </data>
+  <data name="CoinTrading_SH_T1" xml:space="preserve">
+    <value>損切販売登録とは?</value>
+  </data>
+  <data name="CoinTrading_SH_T10" xml:space="preserve">
+    <value>*自動取引は、PC取引所にログインしていなければ締結されません。</value>
+  </data>
+  <data name="CoinTrading_SH_T11" xml:space="preserve">
+    <value>1順位設定金額から締結され、設定されている間は設定金額到達したときに継続的に締結されます。</value>
+  </data>
+  <data name="CoinTrading_SH_T12" xml:space="preserve">
+    <value>設定されている間は、設定金額到達時に継続的に締結されます。</value>
+  </data>
+  <data name="CoinTrading_SH_T2" xml:space="preserve">
+    <value>*損切販売の場合、</value>
+  </data>
+  <data name="CoinTrading_SH_T3" xml:space="preserve">
+    <value>販売が下落したときの損害を最小限に抑えるための金額を設定します。</value>
+  </data>
+  <data name="CoinTrading_SH_T4" xml:space="preserve">
+    <value>*未締結最高買値よりも低く価格を指定すると、</value>
+  </data>
+  <data name="CoinTrading_SH_T5" xml:space="preserve">
+    <value>その注文価格に到達(誤差範囲内)する時に、</value>
+  </data>
+  <data name="CoinTrading_SH_T6" xml:space="preserve">
+    <value>成行で締結されます。</value>
+  </data>
+  <data name="CoinTrading_SH_T7" xml:space="preserve">
+    <value>*注文数量より残っている数量が少ない場合、</value>
+  </data>
+  <data name="CoinTrading_SH_T8" xml:space="preserve">
+    <value>残りの数量だけ締結されます。</value>
+  </data>
+  <data name="CoinTrading_SH_T9" xml:space="preserve">
+    <value>*{損切キャンセル}ボタンでキャンセルすることができます。</value>
+  </data>
+  <data name="CoinTrading_SL_T1" xml:space="preserve">
+    <value>自動販売登録とは?</value>
+  </data>
+  <data name="CoinTrading_SL_T10" xml:space="preserve">
+    <value>設定されている間は、設定金額到達時に継続的に締結されます。</value>
+  </data>
+  <data name="CoinTrading_SL_T2" xml:space="preserve">
+    <value>*販売の場合、未締結最低売値よりも高く価格を指定すると、</value>
+  </data>
+  <data name="CoinTrading_SL_T3" xml:space="preserve">
+    <value>その注文価格に到達(誤差範囲内)するたびに、</value>
+  </data>
+  <data name="CoinTrading_SL_T4" xml:space="preserve">
+    <value>成行で締結されます。</value>
+  </data>
+  <data name="CoinTrading_SL_T5" xml:space="preserve">
+    <value>*注文数量よりも残りのコイン数量が少ない場合、</value>
+  </data>
+  <data name="CoinTrading_SL_T6" xml:space="preserve">
+    <value>残りの数量分のみ締結されます。</value>
+  </data>
+  <data name="CoinTrading_SL_T7" xml:space="preserve">
+    <value>*(自動取引キャンセル)ボタンでキャンセルすることができます。</value>
+  </data>
+  <data name="CoinTrading_SL_T8" xml:space="preserve">
+    <value>*自動取引は、PC取引所にログインしていなければ締結されません。</value>
+  </data>
+  <data name="CoinTrading_SL_T9" xml:space="preserve">
+    <value>1順位設定金額から締結され</value>
+  </data>
+  <data name="Common_Alert_1" xml:space="preserve">
+    <value>サービス準備中です。</value>
+  </data>
+  <data name="Common_Alert_10" xml:space="preserve">
+    <value>投稿がありません。</value>
+  </data>
+  <data name="Common_Alert_2" xml:space="preserve">
+    <value>保存されました。</value>
+  </data>
+  <data name="Common_Alert_3" xml:space="preserve">
+    <value>[HTS&gt;認証センター]で認証完了後に、正常にご利用いただけます。</value>
+  </data>
+  <data name="Common_Alert_5" xml:space="preserve">
+    <value>HTSプログラムが既に実行中です。</value>
+  </data>
+  <data name="Common_Alert_6" xml:space="preserve">
+    <value>キャンセルしますか？</value>
+  </data>
+  <data name="Common_Alert_7" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Common_Alert_8" xml:space="preserve">
+    <value>チャージ金額を入力してください。</value>
+  </data>
+  <data name="Common_Alert_9" xml:space="preserve">
+    <value>最近の取引履歴</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_1" xml:space="preserve">
+    <value>最近の取引履歴</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_2" xml:space="preserve">
+    <value>日付</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_3" xml:space="preserve">
+    <value>コイン個数</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_4" xml:space="preserve">
+    <value>進行状態</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_4_1" xml:space="preserve">
+    <value>完了</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_4_2" xml:space="preserve">
+    <value>送信中</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_5" xml:space="preserve">
+    <value>完了日時</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_6" xml:space="preserve">
+    <value>種類</value>
+  </data>
+  <data name="DepositDepositWithdraw_Top_1_1" xml:space="preserve">
+    <value>新規加入した会員は、アドレスを作成するボタンをクリックしなければ、固有の電子ウォレットアドレスが発行されません。</value>
+  </data>
+  <data name="DepositDepositWithdraw_Top_1_2" xml:space="preserve">
+    <value>進行は、ブロックチェーン上で承認後、そのコイン入出金ウォレットに反映されます。入金は、約10分~30分間進行されます。</value>
+  </data>
+  <data name="ExchangeChartDashboard_1" xml:space="preserve">
+    <value>取引所チャート</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_1" xml:space="preserve">
+    <value>取引所のコインの現在価格</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_2" xml:space="preserve">
+    <value>コイン</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_3" xml:space="preserve">
+    <value>現在価格</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_4_1" xml:space="preserve">
+    <value>対比</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_4_2" xml:space="preserve">
+    <value>騰落</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_5" xml:space="preserve">
+    <value>取引量</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_6" xml:space="preserve">
+    <value>取引金額</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_7" xml:space="preserve">
+    <value>購入/販売</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_8" xml:space="preserve">
+    <value>時間</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_3_1" xml:space="preserve">
+    <value>全体注文履歴</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_3_2" xml:space="preserve">
+    <value>注文量</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_3_3" xml:space="preserve">
+    <value>買値(買受)</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_3_4" xml:space="preserve">
+    <value>売値(売渡)</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_3_5" xml:space="preserve">
+    <value>注文量</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_4_1" xml:space="preserve">
+    <value>全体締結履歴</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_4_2" xml:space="preserve">
+    <value>締結時刻</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_4_3" xml:space="preserve">
+    <value>1コイン価格</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_4_4" xml:space="preserve">
+    <value>金額</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_4_5" xml:space="preserve">
+    <value>締結数量</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_ComboboxTime_1_1" xml:space="preserve">
+    <value>24時間</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_ComboboxTime_1_2" xml:space="preserve">
+    <value>12時間</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_ComboboxTime_1_3" xml:space="preserve">
+    <value>1時間</value>
+  </data>
+  <data name="Faq_1" xml:space="preserve">
+    <value>全体</value>
+  </data>
+  <data name="Faq_2" xml:space="preserve">
+    <value>購入/販売</value>
+  </data>
+  <data name="Faq_3" xml:space="preserve">
+    <value>入金/出金/送金</value>
+  </data>
+  <data name="Faq_4" xml:space="preserve">
+    <value>会員案内</value>
+  </data>
+  <data name="Faq_5" xml:space="preserve">
+    <value>その他</value>
+  </data>
+  <data name="Faq_7" xml:space="preserve">
+    <value>タイトル</value>
+  </data>
+  <data name="Faq_8" xml:space="preserve">
+    <value>作成日</value>
+  </data>
+  <data name="Fee_1" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="Fee_10" xml:space="preserve">
+    <value>出金限度</value>
+  </data>
+  <data name="Fee_11" xml:space="preserve">
+    <value>1回</value>
+  </data>
+  <data name="Fee_12" xml:space="preserve">
+    <value>1日</value>
+  </data>
+  <data name="Fee_13" xml:space="preserve">
+    <value>0月</value>
+  </data>
+  <data name="Fee_14" xml:space="preserve">
+    <value>0ワィン</value>
+  </data>
+  <data name="Fee_15" xml:space="preserve">
+    <value>注文最小数量</value>
+  </data>
+  <data name="Fee_16" xml:space="preserve">
+    <value>認証の現況</value>
+  </data>
+  <data name="Fee_17" xml:space="preserve">
+    <value>認証完了</value>
+  </data>
+  <data name="Fee_18" xml:space="preserve">
+    <value>認証する</value>
+  </data>
+  <data name="Fee_2" xml:space="preserve">
+    <value>認証のする方法</value>
+  </data>
+  <data name="Fee_3" xml:space="preserve">
+    <value>メール認証</value>
+  </data>
+  <data name="Fee_4" xml:space="preserve">
+    <value>Google OTP</value>
+  </data>
+  <data name="Fee_5" xml:space="preserve">
+    <value>KYC Authentication</value>
+  </data>
+  <data name="Fee_6" xml:space="preserve">
+    <value>入金限度</value>
+  </data>
+  <data name="Fee_7" xml:space="preserve">
+    <value>全ての貨幣</value>
+  </data>
+  <data name="Fee_8" xml:space="preserve">
+    <value>コイン</value>
+  </data>
+  <data name="Fee_9" xml:space="preserve">
+    <value>無制限</value>
+  </data>
+  <data name="IP_Registration_1_1" xml:space="preserve">
+    <value>現在使用中のPCは、最初のログイン時に、</value>
+  </data>
+  <data name="IP_Registration_1_2" xml:space="preserve">
+    <value>該当IP情報が自動的に登録されます。登録しますか？</value>
+  </data>
+  <data name="IP_Registration_1_3" xml:space="preserve">
+    <value>IP 登録しなければ、HTSログインすることができません。</value>
+  </data>
+  <data name="IP_Registration_2_1" xml:space="preserve">
+    <value>該当PCIPが、正常に登録されました。</value>
+  </data>
+  <data name="IP_Registration_2_2" xml:space="preserve">
+    <value>登録情報は、[マイページ&gt;アクセス情報&gt; HTS IP登録]</value>
+  </data>
+  <data name="IP_Registration_2_3" xml:space="preserve">
+    <value>で確認することができます。</value>
+  </data>
+  <data name="IP_Registration_3_1" xml:space="preserve">
+    <value>IPが登録されていないPCでログインしました。</value>
+  </data>
+  <data name="IP_Registration_3_2" xml:space="preserve">
+    <value>IP 登録画面に移動するには、確認ボタンを押してください。</value>
+  </data>
+  <data name="IP_Registration_3_3" xml:space="preserve">
+    <value>登録されたIPのみ、HTSログインすることができます。</value>
+  </data>
+  <data name="IP_Registration_4_1" xml:space="preserve">
+    <value>*IPが登録されたPCのみHTSの利用が可能であり、登録時に別途Eメール認証が必要になります。</value>
+  </data>
+  <data name="IP_Registration_4_10" xml:space="preserve">
+    <value>Email認証</value>
+  </data>
+  <data name="IP_Registration_4_11" xml:space="preserve">
+    <value>認証完了</value>
+  </data>
+  <data name="IP_Registration_4_12" xml:space="preserve">
+    <value>登録されたEメールに認証番号が送信されました。10分以内に入力してください。</value>
+  </data>
+  <data name="IP_Registration_4_13" xml:space="preserve">
+    <value>認証が完了しました。</value>
+  </data>
+  <data name="IP_Registration_4_14" xml:space="preserve">
+    <value>認証番号を再送信しました。</value>
+  </data>
+  <data name="IP_Registration_4_15" xml:space="preserve">
+    <value>Email認証をしなければ、IPが登録されません。</value>
+  </data>
+  <data name="IP_Registration_4_16_1" xml:space="preserve">
+    <value>送信された認証番号ではありません。</value>
+  </data>
+  <data name="IP_Registration_4_16_2" xml:space="preserve">
+    <value>入力された認証番号をご確認ください。</value>
+  </data>
+  <data name="IP_Registration_4_17_1" xml:space="preserve">
+    <value>入力時間3分を超過しました。</value>
+  </data>
+  <data name="IP_Registration_4_17_2" xml:space="preserve">
+    <value>{再送信}ボタンを押した後に、再送信してください。</value>
+  </data>
+  <data name="IP_Registration_4_18" xml:space="preserve">
+    <value>使用期間を選択してください。</value>
+  </data>
+  <data name="IP_Registration_4_2" xml:space="preserve">
+    <value>* 臨時でIPを登録する場合、下の「期間指定」を使用すると、指定した期間のみ登録したIPでログインすることができます。</value>
+  </data>
+  <data name="IP_Registration_4_3" xml:space="preserve">
+    <value>* 登録状況は、[マイページ&gt;アクセス情報の{HTS IP 登録情報}で確認することができます。</value>
+  </data>
+  <data name="IP_Registration_4_4" xml:space="preserve">
+    <value>アクセス IP</value>
+  </data>
+  <data name="IP_Registration_4_5" xml:space="preserve">
+    <value>位置</value>
+  </data>
+  <data name="IP_Registration_4_6" xml:space="preserve">
+    <value>使用期間</value>
+  </data>
+  <data name="IP_Registration_4_7" xml:space="preserve">
+    <value>期間指定</value>
+  </data>
+  <data name="IP_Registration_4_8" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="IP_Registration_4_9" xml:space="preserve">
+    <value>時間</value>
+  </data>
+  <data name="IP_Registration_Common_1" xml:space="preserve">
+    <value>HTS IP登録のご案内</value>
+  </data>
+  <data name="IP_Registration_Common_2" xml:space="preserve">
+    <value>IP未登録PC案内</value>
+  </data>
+  <data name="LoginHistory_1" xml:space="preserve">
+    <value>アクセス情報</value>
+  </data>
+  <data name="LoginHistory_1_1" xml:space="preserve">
+    <value>期間</value>
+  </data>
+  <data name="LoginHistory_1_2" xml:space="preserve">
+    <value>日時</value>
+  </data>
+  <data name="LoginHistory_1_3" xml:space="preserve">
+    <value>機種</value>
+  </data>
+  <data name="LoginHistory_1_4" xml:space="preserve">
+    <value>サービス利用</value>
+  </data>
+  <data name="LoginHistory_1_5" xml:space="preserve">
+    <value>位置</value>
+  </data>
+  <data name="LoginHistory_1_6" xml:space="preserve">
+    <value>結果</value>
+  </data>
+  <data name="LoginHistory_2" xml:space="preserve">
+    <value>HTS IP 登録情報</value>
+  </data>
+  <data name="LoginHistory_2_1" xml:space="preserve">
+    <value>登録されたIPを使用しない場合は、以下の{登録解除}ボタンを押してください。</value>
+  </data>
+  <data name="LoginHistory_2_2" xml:space="preserve">
+    <value>使用期間</value>
+  </data>
+  <data name="LoginHistory_2_3" xml:space="preserve">
+    <value>最近接続付</value>
+  </data>
+  <data name="LoginHistory_2_4" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="LoginHistory_2_5" xml:space="preserve">
+    <value>登録解除</value>
+  </data>
+  <data name="Login_1" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="Login_10" xml:space="preserve">
+    <value>*CoinCapitalにアクセスしました。</value>
+  </data>
+  <data name="Login_11" xml:space="preserve">
+    <value>ユーザーのメールアドレスを入力してください。</value>
+  </data>
+  <data name="Login_12" xml:space="preserve">
+    <value>ユーザーパスワードを入力してください。</value>
+  </data>
+  <data name="Login_13" xml:space="preserve">
+    <value>存在しないメールアドレスです。</value>
+  </data>
+  <data name="Login_14" xml:space="preserve">
+    <value>パスワードが一致しません。</value>
+  </data>
+  <data name="Login_15" xml:space="preserve">
+    <value>登録されていないIPです。</value>
+  </data>
+  <data name="Login_16" xml:space="preserve">
+    <value>使用不可処理されたIDです。</value>
+  </data>
+  <data name="Login_17" xml:space="preserve">
+    <value>アクセス量が多く、ログインが遅れています。</value>
+  </data>
+  <data name="Login_18" xml:space="preserve">
+    <value>該当アカウントは、顧客の要請によりアカウントロックされました。</value>
+  </data>
+  <data name="Login_19" xml:space="preserve">
+    <value>認証メールが電子メールで送信されますので、認証メールの手順に従ってパスワードをリセットした後にログインしてください。</value>
+  </data>
+  <data name="Login_2" xml:space="preserve">
+    <value>ID保存</value>
+  </data>
+  <data name="Login_20" xml:space="preserve">
+    <value>アカウントロック案内</value>
+  </data>
+  <data name="Login_3" xml:space="preserve">
+    <value>ログアウトしますか？</value>
+  </data>
+  <data name="Login_4" xml:space="preserve">
+    <value>ログインに5回以上失敗してブロック処理されたIDです。</value>
+  </data>
+  <data name="Login_5" xml:space="preserve">
+    <value>IDを確認してください。</value>
+  </data>
+  <data name="Login_6" xml:space="preserve">
+    <value>パスワードを確認してください。</value>
+  </data>
+  <data name="Login_7" xml:space="preserve">
+    <value>IDが存在しないか、パスワードが正しくありません。</value>
+  </data>
+  <data name="Login_8" xml:space="preserve">
+    <value>システムエラー</value>
+  </data>
+  <data name="Login_9" xml:space="preserve">
+    <value>ログインエラーが発生しました。</value>
+  </data>
+  <data name="Main_Head_1" xml:space="preserve">
+    <value>コイン総資産</value>
+  </data>
+  <data name="Main_Head_2" xml:space="preserve">
+    <value>取引可能</value>
+  </data>
+  <data name="Main_Head_3" xml:space="preserve">
+    <value>取引中</value>
+  </data>
+  <data name="Main_Head_5" xml:space="preserve">
+    <value>現在価格</value>
+  </data>
+  <data name="Main_Menu_1" xml:space="preserve">
+    <value>メイン</value>
+  </data>
+  <data name="Main_Menu_1_1" xml:space="preserve">
+    <value>取引所の現況</value>
+  </data>
+  <data name="Main_Menu_2" xml:space="preserve">
+    <value>コイン購入/販売</value>
+  </data>
+  <data name="Main_Menu_2_1" xml:space="preserve">
+    <value>ビットコイン</value>
+  </data>
+  <data name="Main_Menu_2_2" xml:space="preserve">
+    <value>イーサリアム</value>
+  </data>
+  <data name="Main_Menu_2_3" xml:space="preserve">
+    <value>ビットコインキャッシュ</value>
+  </data>
+  <data name="Main_Menu_2_4" xml:space="preserve">
+    <value>リップル</value>
+  </data>
+  <data name="Main_Menu_2_5" xml:space="preserve">
+    <value>コイン交換自動取引</value>
+  </data>
+  <data name="Main_Menu_2_6" xml:space="preserve">
+    <value>全体取引現況</value>
+  </data>
+  <data name="Main_Menu_3" xml:space="preserve">
+    <value>入出金管理</value>
+  </data>
+  <data name="Main_Menu_3_2" xml:space="preserve">
+    <value>コイン入金/電子ウォレット</value>
+  </data>
+  <data name="Main_Menu_3_4" xml:space="preserve">
+    <value>コイン送金</value>
+  </data>
+  <data name="Main_Menu_4" xml:space="preserve">
+    <value>付加サービス</value>
+  </data>
+  <data name="Main_Menu_4_1" xml:space="preserve">
+    <value>定額クーポン</value>
+  </data>
+  <data name="Main_Menu_4_2" xml:space="preserve">
+    <value>相場通知</value>
+  </data>
+  <data name="Main_Menu_4_3" xml:space="preserve">
+    <value>自動取引</value>
+  </data>
+  <data name="Main_Menu_5" xml:space="preserve">
+    <value>お客様センター</value>
+  </data>
+  <data name="Main_Menu_5_1" xml:space="preserve">
+    <value>お知らせ</value>
+  </data>
+  <data name="Main_Menu_5_2" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="Main_Menu_5_3" xml:space="preserve">
+    <value>1:1お問い合わせ</value>
+  </data>
+  <data name="Main_Menu_5_4" xml:space="preserve">
+    <value>手数料および入出金限度</value>
+  </data>
+  <data name="Main_Menu_5_5" xml:space="preserve">
+    <value>Market Cap</value>
+  </data>
+  <data name="Main_Menu_5_7" xml:space="preserve">
+    <value>認証資料提出</value>
+  </data>
+  <data name="Main_Menu_5_8" xml:space="preserve">
+    <value>暗号通貨情報</value>
+  </data>
+  <data name="Main_Menu_6" xml:space="preserve">
+    <value>マイページ</value>
+  </data>
+  <data name="Main_Menu_6_1" xml:space="preserve">
+    <value>会員情報管理</value>
+  </data>
+  <data name="Main_Menu_6_2" xml:space="preserve">
+    <value>認証センター</value>
+  </data>
+  <data name="Main_Menu_6_3" xml:space="preserve">
+    <value>アクセス情報</value>
+  </data>
+  <data name="Main_Menu_6_4" xml:space="preserve">
+    <value>資産現況</value>
+  </data>
+  <data name="Main_Menu_6_5" xml:space="preserve">
+    <value>私の取引履歴</value>
+  </data>
+  <data name="Main_Menu_6_6" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="Main_QuickMenu_10" xml:space="preserve">
+    <value>資産現況</value>
+  </data>
+  <data name="Main_QuickMenu_11" xml:space="preserve">
+    <value>入出金履歴</value>
+  </data>
+  <data name="Main_QuickMenu_12" xml:space="preserve">
+    <value>1:1お問い合わせ</value>
+  </data>
+  <data name="Main_QuickMenu_13" xml:space="preserve">
+    <value>お気に入り</value>
+  </data>
+  <data name="Main_QuickMenu_7" xml:space="preserve">
+    <value>コイン入金</value>
+  </data>
+  <data name="Main_QuickMenu_8" xml:space="preserve">
+    <value>コイン送金</value>
+  </data>
+  <data name="Main_QuickMenu_9" xml:space="preserve">
+    <value>私の取引履歴</value>
+  </data>
+  <data name="MemberInfo_2_1" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="MemberInfo_2_2" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="MemberInfo_2_3" xml:space="preserve">
+    <value>推薦人のコード</value>
+  </data>
+  <data name="MemberInfo_2_4" xml:space="preserve">
+    <value>パスワード変更</value>
+  </data>
+  <data name="MemberInfo_3_1" xml:space="preserve">
+    <value>退会関連</value>
+  </data>
+  <data name="MemberInfo_3_10" xml:space="preserve">
+    <value>３.退会要請方法</value>
+  </data>
+  <data name="MemberInfo_3_11" xml:space="preserve">
+    <value>退会要請は顧客センターに連絡お願いします。</value>
+  </data>
+  <data name="MemberInfo_3_2" xml:space="preserve">
+    <value>退会前に、以下の内容を確認してください。</value>
+  </data>
+  <data name="MemberInfo_3_3" xml:space="preserve">
+    <value>１.退会申請不可事由</value>
+  </data>
+  <data name="MemberInfo_3_4" xml:space="preserve">
+    <value>以下の事項のいずれかに該当する場合、退会が不可となります。</value>
+  </data>
+  <data name="MemberInfo_3_5" xml:space="preserve">
+    <value>残高が残っているか、進行中の取引がある場合</value>
+  </data>
+  <data name="MemberInfo_3_6" xml:space="preserve">
+    <value>2.会員の情報削除</value>
+  </data>
+  <data name="MemberInfo_3_7" xml:space="preserve">
+    <value>退会と同時に取引所に登録された会員の個人情報はすべて削除、廃棄処理され、復旧されません。</value>
+  </data>
+  <data name="MemberInfo_3_8" xml:space="preserve">
+    <value>ただし、商法、電子商取引などにおける消費者保護に関する法律など、関係法令の規定により保存必要がある場合、</value>
+  </data>
+  <data name="MemberInfo_3_9" xml:space="preserve">
+    <value>会社は関係法令で決められた期間は会員情報を保管します。この場合、会社は保管情報をその保管の目的範囲内で利用しており、保管期間は5年です。</value>
+  </data>
+  <data name="NoticePopup_1" xml:space="preserve">
+    <value>お知らせ</value>
+  </data>
+  <data name="NoticePopup_2" xml:space="preserve">
+    <value>KRWチャージの注意事項</value>
+  </data>
+  <data name="NoticePopup_3" xml:space="preserve">
+    <value>HTS IP登録案内</value>
+  </data>
+  <data name="NoticePopup_4" xml:space="preserve">
+    <value>IP未登録PC案内</value>
+  </data>
+  <data name="Notice_1" xml:space="preserve">
+    <value>タイトル</value>
+  </data>
+  <data name="Notice_2" xml:space="preserve">
+    <value>作成日</value>
+  </data>
+  <data name="QnaWrite_1" xml:space="preserve">
+    <value>会員様がお問い合わせいただいた内容は、担当者が確認して連絡差し上げるようにします。</value>
+  </data>
+  <data name="QnaWrite_2" xml:space="preserve">
+    <value>お問い合わせの種類</value>
+  </data>
+  <data name="QnaWrite_3" xml:space="preserve">
+    <value>氏名</value>
+  </data>
+  <data name="QnaWrite_4" xml:space="preserve">
+    <value>タイトル</value>
+  </data>
+  <data name="QnaWrite_5" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="QnaWrite_6" xml:space="preserve">
+    <value>通話可能電話番号</value>
+  </data>
+  <data name="Qna_1" xml:space="preserve">
+    <value>日付照会</value>
+  </data>
+  <data name="Qna_2" xml:space="preserve">
+    <value>お問い合わせの種類</value>
+  </data>
+  <data name="Qna_3" xml:space="preserve">
+    <value>タイトル</value>
+  </data>
+  <data name="Qna_4" xml:space="preserve">
+    <value>作成日</value>
+  </data>
+  <data name="Qna_5" xml:space="preserve">
+    <value>回答確認</value>
+  </data>
+  <data name="Qna_6" xml:space="preserve">
+    <value>回答待機</value>
+  </data>
+  <data name="Qna_7" xml:space="preserve">
+    <value>回答完了</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_1" xml:space="preserve">
+    <value> KRWチャージ</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_10" xml:space="preserve">
+    <value>入金銀行</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_11" xml:space="preserve">
+    <value>口座番号</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_12" xml:space="preserve">
+    <value>口座名義人</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_13" xml:space="preserve">
+    <value>受取人通帳摘要</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_14" xml:space="preserve">
+    <value>完了日時</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_15" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_15_1" xml:space="preserve">
+    <value>口座振込</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_15_2" xml:space="preserve">
+    <value>電子商品券</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_16" xml:space="preserve">
+    <value>チャージ金額</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_17" xml:space="preserve">
+    <value>進行状態</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_17_1" xml:space="preserve">
+    <value>完了</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_17_2" xml:space="preserve">
+    <value>未完了</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_2" xml:space="preserve">
+    <value>2.口座入金後反映まで約2分〜30分程度かかります。（銀行点検、電算網の障害などの緊急発生時の例外）</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_4" xml:space="preserve">
+    <value>3. 以下の場合は、入金が確認されません。[顧客サポート&gt;認証資料提出]の入金事実証明の資料を提出をしていただくと、入金が完了します。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_5" xml:space="preserve">
+    <value>ㆍ認証口座で登録した本人口座から入金しない場合</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_6" xml:space="preserve">
+    <value>ㆍ認証口座から入金するが、入金者名(摘要)を変更して送金する場合</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_6_1" xml:space="preserve">
+    <value>摘要 : 以下の「入金者名」に表示された内容で入金する場合、通帳摘要に入力</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_7" xml:space="preserve">
+    <value>ㆍ高額を入金する場合、</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_8" xml:space="preserve">
+    <value>必ず認証口座に登録した本人口座から入金してください。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_9" xml:space="preserve">
+    <value>出金口座から入金した場合でも、異なる入金者名で入金すると、チャージが確認されないことがありますのでご注意ください。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_1" xml:space="preserve">
+    <value>受取人通帳摘要</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_2" xml:space="preserve">
+    <value>以下の場合は、入金が確認されません。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_3" xml:space="preserve">
+    <value>ㆍ認証口座で登録した本人口座から入金しない場合</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_4" xml:space="preserve">
+    <value>ㆍ認証口座から入金するが、入金者名(摘要)を変更して送金する場合</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_5" xml:space="preserve">
+    <value>送金する場合</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_6" xml:space="preserve">
+    <value>確認されない場合、[顧客サポート &gt;認証資料提出]の入金事実証明の資料をEメール</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_7" xml:space="preserve">
+    <value>入金事実証明の資料を認証の資料提出に要請しなければ入金が完了されます。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_8" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TradeHistoryTrading_1_1" xml:space="preserve">
+    <value>ビットコイン</value>
+  </data>
+  <data name="TradeHistoryTrading_1_10" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="TradeHistoryTrading_1_11" xml:space="preserve">
+    <value>注文価格</value>
+  </data>
+  <data name="TradeHistoryTrading_1_12" xml:space="preserve">
+    <value>締結時刻</value>
+  </data>
+  <data name="TradeHistoryTrading_1_13" xml:space="preserve">
+    <value>相場</value>
+  </data>
+  <data name="TradeHistoryTrading_1_14" xml:space="preserve">
+    <value>取引量</value>
+  </data>
+  <data name="TradeHistoryTrading_1_15" xml:space="preserve">
+    <value>締結金額</value>
+  </data>
+  <data name="TradeHistoryTrading_1_16" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="TradeHistoryTrading_1_2" xml:space="preserve">
+    <value>イーサリアム</value>
+  </data>
+  <data name="TradeHistoryTrading_1_3" xml:space="preserve">
+    <value>ビットコインキャッシュ</value>
+  </data>
+  <data name="TradeHistoryTrading_1_4" xml:space="preserve">
+    <value>リップル</value>
+  </data>
+  <data name="TradeHistoryTrading_1_5" xml:space="preserve">
+    <value>全体未締結購入</value>
+  </data>
+  <data name="TradeHistoryTrading_1_6" xml:space="preserve">
+    <value>全体未締結販売</value>
+  </data>
+  <data name="TradeHistoryTrading_1_7" xml:space="preserve">
+    <value>全体締結(取引完了)</value>
+  </data>
+  <data name="TradeHistoryTrading_1_8" xml:space="preserve">
+    <value>詳細を見る</value>
+  </data>
+  <data name="TradeHistoryTrading_1_9" xml:space="preserve">
+    <value>累積数量</value>
+  </data>
+  <data name="TradingCommonTooltip_1_1" xml:space="preserve">
+    <value>指し値購入(買受)とは、希望する買値(注文価格)を未締結売値の最低金額未満で登録することを意味します。
+未締結売値の最低金額以上で注文価格を指定すると、即時締結されます。</value>
+  </data>
+  <data name="TradingCommonTooltip_1_2" xml:space="preserve">
+    <value>指し値販売(売渡)とは、希望する売値(注文価格)を未締結買値の最高金額を超過する登録することを意味します。
+未締結買値の最高金額以下で注文価格を指定すると、即時締結されます。</value>
+  </data>
+  <data name="TradingCommonTooltip_1_3" xml:space="preserve">
+    <value>成行購入(買受)とは、右の「全体未締結履歴」未締結販売の最上位の価格から即時締結され、実際の受領量は購入額に応じて変動することがあります。</value>
+  </data>
+  <data name="TradingCommonTooltip_1_4" xml:space="preserve">
+    <value>成行販売(売渡)とは右の「全体未締結履歴」未締結購入の最上位の価格から即時締結され、実際受領額は販売数量に応じて変動することがあります。</value>
+  </data>
+  <data name="TradingCommonTooltip_1_5" xml:space="preserve">
+    <value>全体未締結履歴は、指し値購入/販売で登録する全体履歴の中で締結されていない履歴です。
+未締結販売(売渡)リストは売値基準昇順、未締結購入(買受)リストは買値基準降順に整列されます。</value>
+  </data>
+  <data name="TradingHistory_1_1" xml:space="preserve">
+    <value>全体</value>
+  </data>
+  <data name="TradingHistory_1_2" xml:space="preserve">
+    <value>充電</value>
+  </data>
+  <data name="TradingHistory_1_3" xml:space="preserve">
+    <value>購買</value>
+  </data>
+  <data name="TradingHistory_1_4" xml:space="preserve">
+    <value>販売</value>
+  </data>
+  <data name="TradingHistory_1_5" xml:space="preserve">
+    <value>出金</value>
+  </data>
+  <data name="TradingHistory_1_6" xml:space="preserve">
+    <value>送金</value>
+  </data>
+  <data name="TradingHistory_1_7" xml:space="preserve">
+    <value>入金</value>
+  </data>
+  <data name="TradingHistory_1_8" xml:space="preserve">
+    <value>その他</value>
+  </data>
+  <data name="TradingHistory_2_1" xml:space="preserve">
+    <value>期間</value>
+  </data>
+  <data name="TradingHistory_2_2" xml:space="preserve">
+    <value>通貨</value>
+  </data>
+  <data name="TradingHistory_2_3" xml:space="preserve">
+    <value>状態</value>
+  </data>
+  <data name="TradingHistory_2_3_1" xml:space="preserve">
+    <value>完了</value>
+  </data>
+  <data name="TradingHistory_2_3_2" xml:space="preserve">
+    <value>処理中</value>
+  </data>
+  <data name="TradingHistory_3_1" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="TradingHistory_3_2" xml:space="preserve">
+    <value>完了日時</value>
+  </data>
+  <data name="TradingHistory_3_3" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="TradingHistory_3_4" xml:space="preserve">
+    <value>通貨</value>
+  </data>
+  <data name="TradingHistory_3_5" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="TradingHistory_3_6" xml:space="preserve">
+    <value>金額</value>
+  </data>
+  <data name="TradingHistory_3_7" xml:space="preserve">
+    <value>手数料</value>
+  </data>
+  <data name="TradingHistory_3_8" xml:space="preserve">
+    <value>備考</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_1" xml:space="preserve">
+    <value>1回送金限度は{0}~ {1}です。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_10" xml:space="preserve">
+    <value>有効なアドレスではありません。確認後に入力してください。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_11" xml:space="preserve">
+    <value>送金失敗。管理者にお問い合わせください。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_12" xml:space="preserve">
+    <value>送金の失敗。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_2" xml:space="preserve">
+    <value>送金可能コイン数を超過しました。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_3" xml:space="preserve">
+    <value>電子ウォレットアドレスを確認してください。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_4" xml:space="preserve">
+    <value>{0}を確認してください。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_5" xml:space="preserve">
+    <value>Email認証が完了していません。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_6" xml:space="preserve">
+    <value>OTP番号を確認してください。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_7" xml:space="preserve">
+    <value>同意にチェックがされていません。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_8" xml:space="preserve">
+    <value>送金が完了しました。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_9" xml:space="preserve">
+    <value>無制限</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_1" xml:space="preserve">
+    <value>送金コード</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_2" xml:space="preserve">
+    <value>申請日</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_3" xml:space="preserve">
+    <value>送金額</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_4" xml:space="preserve">
+    <value>手数料</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5" xml:space="preserve">
+    <value>状態</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5_1" xml:space="preserve">
+    <value>承認待機</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5_2" xml:space="preserve">
+    <value>承認中</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5_3" xml:space="preserve">
+    <value>承認完了</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5_4" xml:space="preserve">
+    <value>送金完了</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5_5" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5_6" xml:space="preserve">
+    <value>承認キャンセル</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5_7" xml:space="preserve">
+    <value>送金に失敗</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_6" xml:space="preserve">
+    <value>送金完了日</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_7" xml:space="preserve">
+    <value>取引内容</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_10" xml:space="preserve">
+    <value>手取り金 (手数料は除く)</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_11" xml:space="preserve">
+    <value>銀行名</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_12" xml:space="preserve">
+    <value>Email認証</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_13" xml:space="preserve">
+    <value>認証要請</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_14" xml:space="preserve">
+    <value>口座番号</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_15" xml:space="preserve">
+    <value>OTP認証</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_16" xml:space="preserve">
+    <value>口座名義人</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_17" xml:space="preserve">
+    <value>サーバーでの作業が進行中である場合、反映が遅れることがあります。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_18" xml:space="preserve">
+    <value>銀行の点検時間には申請することができません。(23:30 ~ 01:00)</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_19" xml:space="preserve">
+    <value>すべての出金は、管理者の確認後に行われます。 </value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_2" xml:space="preserve">
+    <value>出金は、本人名義の口座のみ可能です。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_21" xml:space="preserve">
+    <value>出金申請日時</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_22" xml:space="preserve">
+    <value>出金額</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23" xml:space="preserve">
+    <value>状態</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_1" xml:space="preserve">
+    <value>承認待機</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_2" xml:space="preserve">
+    <value>承認中</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_3" xml:space="preserve">
+    <value>承認完了</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_4" xml:space="preserve">
+    <value>承認キャンセル</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_5" xml:space="preserve">
+    <value>出金待機</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_6" xml:space="preserve">
+    <value>出金完了</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_24" xml:space="preserve">
+    <value>承認完了日</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_25" xml:space="preserve">
+    <value>出金日</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_26" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_27" xml:space="preserve">
+    <value>OTP登録されていない場合、[認証センター&gt; OTP登録]で登録した後に出金することができます。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_5" xml:space="preserve">
+    <value>手数料</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_6" xml:space="preserve">
+    <value>出金最低金額</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_7" xml:space="preserve">
+    <value>出金最大金額</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_9" xml:space="preserve">
+    <value>出金申請金額</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_1" xml:space="preserve">
+    <value>口座情報がありません。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_10" xml:space="preserve">
+    <value>OTP認証に失敗しました。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_11" xml:space="preserve">
+    <value>OTP認証番号を入力してください。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_12" xml:space="preserve">
+    <value>出金最大金額以下で入力してください。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_2" xml:space="preserve">
+    <value>出金申請金額を入力してください。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_3" xml:space="preserve">
+    <value>受領額が、出金最低金額より少ないです。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_4" xml:space="preserve">
+    <value>Email認証が完了していません。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_5" xml:space="preserve">
+    <value>OTP番号を確認してください。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_6" xml:space="preserve">
+    <value>保有額を超える出金申請をすることはできません。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_7" xml:space="preserve">
+    <value>出金申請が完了しました。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_8" xml:space="preserve">
+    <value>OTP認証が完了しました。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_9" xml:space="preserve">
+    <value>OTP登録されていません。</value>
+  </data>
+  <data name="Qna_10" xml:space="preserve">
+    <value>入金/出金/送金</value>
+  </data>
+  <data name="Qna_11" xml:space="preserve">
+    <value>会員案内</value>
+  </data>
+  <data name="Qna_12" xml:space="preserve">
+    <value>その他</value>
+  </data>
+  <data name="Qna_8" xml:space="preserve">
+    <value>全体</value>
+  </data>
+  <data name="Qna_9" xml:space="preserve">
+    <value>購入/販売</value>
+  </data>
+  <data name="CoinDayPirce_1" xml:space="preserve">
+    <value>取引所の日別の相場</value>
+  </data>
+  <data name="CoinDayPirce_2" xml:space="preserve">
+    <value>日子照会</value>
+  </data>
+  <data name="CoinDayPirce_3" xml:space="preserve">
+    <value>日時</value>
+  </data>
+  <data name="CoinDayPirce_4" xml:space="preserve">
+    <value>開始値</value>
+  </data>
+  <data name="CoinDayPirce_5" xml:space="preserve">
+    <value>最低値</value>
+  </data>
+  <data name="CoinDayPirce_6" xml:space="preserve">
+    <value>最高値</value>
+  </data>
+  <data name="CoinDayPirce_7" xml:space="preserve">
+    <value>終値</value>
+  </data>
+  <data name="CoinDayPirce_8" xml:space="preserve">
+    <value>全日比</value>
+  </data>
+  <data name="CoinDayPirce_9" xml:space="preserve">
+    <value>取引量</value>
+  </data>
+  <data name="Faq_6" xml:space="preserve">
+    <value>認証資料提出</value>
+  </data>
+  <data name="Qna_13" xml:space="preserve">
+    <value>認証資料提出</value>
+  </data>
+  <data name="Fee_19" xml:space="preserve">
+    <value>出金最小数量</value>
+  </data>
+  <data name="Main_Menu_5_6" xml:space="preserve">
+    <value>コイン動向</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_1" xml:space="preserve">
+    <value>自動取引の決済</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_2_1" xml:space="preserve">
+    <value>決済金額</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_2_2" xml:space="preserve">
+    <value>決済予想数量</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_3" xml:space="preserve">
+    <value>決済種類</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_4" xml:space="preserve">
+    <value>1ヶ月(30日)</value>
+  </data>
+  <data name="CertifyMyPage_4_7" xml:space="preserve">
+    <value>[登録完了]</value>
+  </data>
+  <data name="CertifyMyPage_Alert_1" xml:space="preserve">
+    <value>生年月日を入力してください。</value>
+  </data>
+  <data name="CertifyMyPage_Alert_2" xml:space="preserve">
+    <value>生年月日を形式に合うように入力してください。</value>
+  </data>
+  <data name="CertifyMyPage_Alert_3" xml:space="preserve">
+    <value>携帯電話の番号を入力してください。</value>
+  </data>
+  <data name="CertifyMyPage_Alert_4" xml:space="preserve">
+    <value>口座番号を入力してください。</value>
+  </data>
+  <data name="CertifyMyPage_Alert_5" xml:space="preserve">
+    <value>OTP番号を入力してください。</value>
+  </data>
+  <data name="Common_Alert_11" xml:space="preserve">
+    <value>末生成</value>
+  </data>
+  <data name="MemberInfo_2_5" xml:space="preserve">
+    <value>補助メール</value>
+  </data>
+  <data name="MemberInfo_2_5_1" xml:space="preserve">
+    <value>補助メールの案内</value>
+  </data>
+  <data name="MemberInfo_2_5_2" xml:space="preserve">
+    <value>当IDでメールが来ないとき補助メールでメールを受けることができます。</value>
+  </data>
+  <data name="MemberInfo_2_5_3" xml:space="preserve">
+    <value>顧客センターの問い合わせ後生成することができます。</value>
+  </data>
+  <data name="Common_Alert_12" xml:space="preserve">
+    <value>コイン交換自動取引は[賦課サービス＞自動取引]で申し込み後、ご利用ができます。</value>
+  </data>
+  <data name="Common_Alert_13" xml:space="preserve">
+    <value>交換自動取引は[賦課サービス＞自動取引]で申し込み後、ご利用ができます。</value>
+  </data>
+  <data name="LevelPopup_1" xml:space="preserve">
+    <value>現在LV.1(Eメール認証)ステップです。</value>
+  </data>
+  <data name="LevelPopup_2" xml:space="preserve">
+    <value>携帯電話の認証後、ご利用ができます。</value>
+  </data>
+  <data name="MemberInfo_Pop_1" xml:space="preserve">
+    <value>該当Eメールにパスワードの変更メールが送信されます。送信されたメールの手順に従って、24時間内にパスワードを設定してください。</value>
+  </data>
+  <data name="MemberInfo_Pop_2" xml:space="preserve">
+    <value>Eメール送信</value>
+  </data>
+  <data name="MemberInfo_Pop_3" xml:space="preserve">
+    <value>Eメールでパスワード設定メールが送信されました。</value>
+  </data>
+  <data name="CoinTrading_2_7" xml:space="preserve">
+    <value>現在の相場</value>
+  </data>
+  <data name="Faq_9" xml:space="preserve">
+    <value>お問い合わせの種類</value>
+  </data>
+  <data name="MemberInfo_Pop_4" xml:space="preserve">
+    <value>満19歳以上のみ認証が可能です。</value>
+  </data>
+  <data name="Common_Alert_14" xml:space="preserve">
+    <value>削除しますか？</value>
+  </data>
+  <data name="Common_Alert_15" xml:space="preserve">
+    <value>削除された。</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_5" xml:space="preserve">
+    <value>相場がいないです。他の通貨で決済してください。</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_6" xml:space="preserve">
+    <value>十分な支払いがありません。</value>
+  </data>
+  <data name="IP_Registration_4_7_1" xml:space="preserve">
+    <value>末指定</value>
+  </data>
+  <data name="IP_Registration_4_7_2" xml:space="preserve">
+    <value>指定</value>
+  </data>
+  <data name="LoginHistory_2_6" xml:space="preserve">
+    <value>Ipが解除されました</value>
+  </data>
+  <data name="Main_Head_6" xml:space="preserve">
+    <value>残るコインがないです。</value>
+  </data>
+  <data name="CertifyMyPage_5" xml:space="preserve">
+    <value>KYC認証</value>
+  </data>
+  <data name="CertifyMyPage_5_1" xml:space="preserve">
+    <value>アップロード前[マイページ&gt;会員情報]の名前、生年月日、国籍を正確に入力した後、アップロードしてください。 アップロードされた写真と異なる場合、認証が拒否されます。</value>
+  </data>
+  <data name="CertifyMyPage_5_10" xml:space="preserve">
+    <value>認証要請</value>
+  </data>
+  <data name="CertifyMyPage_5_11" xml:space="preserve">
+    <value>管理者確認中</value>
+  </data>
+  <data name="CertifyMyPage_5_12" xml:space="preserve">
+    <value>認証完了</value>
+  </data>
+  <data name="CertifyMyPage_5_2" xml:space="preserve">
+    <value>身分証アップロード</value>
+  </data>
+  <data name="CertifyMyPage_5_3" xml:space="preserve">
+    <value>身分証の運転免許証番号、パスポート番号はいずれも隠れてください。</value>
+  </data>
+  <data name="CertifyMyPage_5_4" xml:space="preserve">
+    <value>認証目的、認証の電話番号、認証のEメール、要請の日付のメモと個人情報を隠した身分証を撮った写真を添付してください。</value>
+  </data>
+  <data name="CertifyMyPage_5_5" xml:space="preserve">
+    <value>(認証可能身分証:運転免許証、パスポート)</value>
+  </data>
+  <data name="CertifyMyPage_5_6" xml:space="preserve">
+    <value>ファイルをアップロードしてください。</value>
+  </data>
+  <data name="CertifyMyPage_5_7" xml:space="preserve">
+    <value>ファイルのアップロード</value>
+  </data>
+  <data name="CertifyMyPage_5_8" xml:space="preserve">
+    <value>の身分証を持っている本人イメージアップロード</value>
+  </data>
+  <data name="CertifyMyPage_5_9" xml:space="preserve">
+    <value>身分証に認証目的、認証の電話番号、認証Eメール、要請の日付メモを貼り付けて撮影してください。身分証文字(メモを含む)を読むことができなければなりません。 もらった写真は当該要請に対する非対面実名確認の用途のみに使用します。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_19" xml:space="preserve">
+    <value>入金額</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_20" xml:space="preserve">
+    <value>入金通貨</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_21" xml:space="preserve">
+    <value>為替レート（1KRW)</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_22" xml:space="preserve">
+    <value>充電通貨</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_28" xml:space="preserve">
+    <value>為替レート（1KRW)</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_29" xml:space="preserve">
+    <value>手取り金</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_30" xml:space="preserve">
+    <value>出金申請通貨</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_31" xml:space="preserve">
+    <value>手数料</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_32" xml:space="preserve">
+    <value>為替レート（1KRW)</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_33" xml:space="preserve">
+    <value>手取り金</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_34" xml:space="preserve">
+    <value>出金通貨</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_14" xml:space="preserve">
+    <value>出金しますか。</value>
+  </data>
+  <data name="CertifyMyPage_6_1" xml:space="preserve">
+    <value>ファイルをアップロードしてください。</value>
+  </data>
+  <data name="CertifyMyPage_6_2" xml:space="preserve">
+    <value>認証要請が完了しました。</value>
+  </data>
+  <data name="Paging_1" xml:space="preserve">
+    <value>最初のページです。</value>
+  </data>
+  <data name="Paging_2" xml:space="preserve">
+    <value>最後のページです。</value>
+  </data>
+  <data name="CertifyMyPage_6_3" xml:space="preserve">
+    <value>2MBの以下のパイルだけアップロードができます。</value>
+  </data>
+  <data name="AssetsMyPage_6_9" xml:space="preserve">
+    <value>スターグラムコイン(SGC)</value>
+  </data>
+  <data name="TradeHistoryTrading_1_17" xml:space="preserve">
+    <value>スターグラムコイン</value>
+  </data>
+  <data name="Fee_20" xml:space="preserve">
+    <value>入出金切り</value>
+  </data>
+  <data name="Fee_21" xml:space="preserve">
+    <value>手数料案内</value>
+  </data>
+  <data name="Fee_22" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="Fee_23" xml:space="preserve">
+    <value>手数料</value>
+  </data>
+  <data name="Fee_24" xml:space="preserve">
+    <value>取引(購入・販売)</value>
+  </data>
+  <data name="Fee_25" xml:space="preserve">
+    <value>(すべてのコイン手数料同一)</value>
+  </data>
+  <data name="Fee_27" xml:space="preserve">
+    <value>件当たり</value>
+  </data>
+  <data name="Fee_28" xml:space="preserve">
+    <value>コイン送金</value>
+  </data>
+  <data name="AlramMyPage_1_2_14" xml:space="preserve">
+    <value>取引登録失敗</value>
+  </data>
+  <data name="Login_21" xml:space="preserve">
+    <value>パスワード設定後ログインしてください。</value>
+  </data>
+  <data name="Login_22" xml:space="preserve">
+    <value>メール再送</value>
+  </data>
+  <data name="Login_23" xml:space="preserve">
+    <value>Eメールでパスワード設定メールが送信されました。</value>
+  </data>
+  <data name="CertifyMyPage_Alert_6" xml:space="preserve">
+    <value>銀行を選んでください。</value>
+  </data>
+  <data name="CertifyMyPage_Alert_7" xml:space="preserve">
+    <value>イメージのファイル形式を確認してください。(.jpg .jpeg, .gif, .bmp, .png)</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1" xml:space="preserve">
+    <value>プリペイドカード充電</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1" xml:space="preserve">
+    <value>プリペイドカード申請及び状態</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1_1" xml:space="preserve">
+    <value>プリペイドカード申請及び使用方</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1_4" xml:space="preserve">
+    <value>*1人、最大5個まで作ることができます 。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1_5" xml:space="preserve">
+    <value>*カードを作った後、住所あるいはオフラインの加盟店からもらって下段{カード登録}ボタンを押してカードを登録後使用することができます。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1" xml:space="preserve">
+    <value>プリペイドカード申し込み </value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_1" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_10" xml:space="preserve">
+    <value>オフラインの加盟店でもらう</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_11" xml:space="preserve">
+    <value>申請費用</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_12" xml:space="preserve">
+    <value>入金方法</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_13" xml:space="preserve">
+    <value>振込み</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_14" xml:space="preserve">
+    <value>入金人(摘要)</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_2" xml:space="preserve">
+    <value>生年月日</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_3" xml:space="preserve">
+    <value>携帯電話番号</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_4" xml:space="preserve">
+    <value>住所*</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_5" xml:space="preserve">
+    <value>郵便番号</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_6" xml:space="preserve">
+    <value>住所</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_7" xml:space="preserve">
+    <value>住所番号</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_8" xml:space="preserve">
+    <value>カードもらう方</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_9" xml:space="preserve">
+    <value>記録した住所でもらう</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_3_1" xml:space="preserve">
+    <value>申請費用の入金注意事項</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_3_2" xml:space="preserve">
+    <value>1. カードの受領方法を'オフラインの加盟店受領'選択時に近い加盟店を訪問してカードを受領したらいいです。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_3_3" xml:space="preserve">
+    <value>3.プリペイドカードは、発送完了の処理と、配送先の変更や申込の取消ができません。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_3_4" xml:space="preserve">
+    <value>4.本プリペイドカードは、1人1カードとして、他のアカウントに申請しても使用することができません。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_3_5" xml:space="preserve">
+    <value>5.カードの発送は申請日から約2週間ほどかかります。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_2" xml:space="preserve">
+    <value>申請日</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3" xml:space="preserve">
+    <value>申請の状態</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_1" xml:space="preserve">
+    <value>申請完了</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_2" xml:space="preserve">
+    <value>発送完了</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_3" xml:space="preserve">
+    <value>登録完了</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_4" xml:space="preserve">
+    <value>キャンセル日時</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_4" xml:space="preserve">
+    <value>発送の時期</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_5" xml:space="preserve">
+    <value>カード番号</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_6" xml:space="preserve">
+    <value>登録日時</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_7" xml:space="preserve">
+    <value>解約日時</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_1" xml:space="preserve">
+    <value>*プリペイド・カード充電時に入力した決済金額で手数料5%が支払われます。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_10" xml:space="preserve">
+    <value>チャージ金額</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_2" xml:space="preserve">
+    <value>プリペイド・カード選択</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_3" xml:space="preserve">
+    <value>有効期間</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_3_1" xml:space="preserve">
+    <value>(月)</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_3_2" xml:space="preserve">
+    <value>(年)</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_4" xml:space="preserve">
+    <value>CVC番号</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_5" xml:space="preserve">
+    <value>カードパスワード</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_6" xml:space="preserve">
+    <value>カードの残高</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_7" xml:space="preserve">
+    <value>決済金額</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_8" xml:space="preserve">
+    <value>手数料</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_9" xml:space="preserve">
+    <value>為替(1KRW)</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_2" xml:space="preserve">
+    <value>完了日時</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_3" xml:space="preserve">
+    <value>プリペイド・カード番号</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_4" xml:space="preserve">
+    <value>決済金額</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_5" xml:space="preserve">
+    <value>決済通貨</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_6" xml:space="preserve">
+    <value>手数料</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_7" xml:space="preserve">
+    <value>為替(1KRW)</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_8" xml:space="preserve">
+    <value>チャージ金額</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_9" xml:space="preserve">
+    <value>チャージ通貨</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_1" xml:space="preserve">
+    <value>プリペイド・カード充電内容</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_1" xml:space="preserve">
+    <value>プリペイド・カード申請の内容</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_13" xml:space="preserve">
+    <value>国籍が韓国人会員だけを申請可能です</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_1" xml:space="preserve">
+    <value>郵便住所を入力してください。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_10" xml:space="preserve">
+    <value>カード申請が完了しました。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_11" xml:space="preserve">
+    <value>電子メールを確認してください。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_12" xml:space="preserve">
+    <value>カード番号を確認してください。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_2" xml:space="preserve">
+    <value>住所を入力をしてください。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_3" xml:space="preserve">
+    <value>住所番号を入力してください。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_4" xml:space="preserve">
+    <value>その他のエラーが発生したんです。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_5" xml:space="preserve">
+    <value>確認されていないメールです。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_6" xml:space="preserve">
+    <value>確認されていない郵便番号です。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_7" xml:space="preserve">
+    <value>確認されない住所です。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_8" xml:space="preserve">
+    <value>確認されない住所番号です。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_9" xml:space="preserve">
+    <value>プリペイド・カードは最大1個まで申請ができです。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_15" xml:space="preserve">
+    <value>プリペイド・カードを選択してください。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_16" xml:space="preserve">
+    <value>カードの暗証番号を入力してください</value>
+  </data>
+  <data name="Common_Alert_16" xml:space="preserve">
+    <value>選んでください。</value>
+  </data>
+  <data name="Common_Alert_17" xml:space="preserve">
+    <value>受付されました。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_17" xml:space="preserve">
+    <value>出金するプリペイドカードを選択してください。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_3" xml:space="preserve">
+    <value>有効期間(月)を入力してください。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_4" xml:space="preserve">
+    <value>有効期間(年)を入力してください。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_5" xml:space="preserve">
+    <value>CVC番号を入力してください。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_6" xml:space="preserve">
+    <value>カードのパスワードを入力してください。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_7" xml:space="preserve">
+    <value>カードの残高が不足します。 もう一度確認してください。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_8" xml:space="preserve">
+    <value>充電しますか。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_9" xml:space="preserve">
+    <value>充電が完了しました。</value>
+  </data>
+  <data name="TradingHistory_1_11" xml:space="preserve">
+    <value>取引内容</value>
+  </data>
+  <data name="TradingHistory_1_12" xml:space="preserve">
+    <value>口座の出金</value>
+  </data>
+  <data name="TradingHistory_1_13" xml:space="preserve">
+    <value>口座充電</value>
+  </data>
+  <data name="TradingHistory_1_14" xml:space="preserve">
+    <value>カード充電</value>
+  </data>
+  <data name="TradingHistory_Common_1" xml:space="preserve">
+    <value>カード出金</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_7" xml:space="preserve">
+    <value>出金完了</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_8" xml:space="preserve">
+    <value>出金拒絶</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_35" xml:space="preserve">
+    <value>プリペイド・カード番号</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_36" xml:space="preserve">
+    <value>出金申請金額</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_37" xml:space="preserve">
+    <value>出金申請通貨</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_38" xml:space="preserve">
+    <value>プリペイド・カード選択</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_39" xml:space="preserve">
+    <value>プリペイドカード出金</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_40" xml:space="preserve">
+    <value>プリペイド・カード出金の内容</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_10" xml:space="preserve">
+    <value>充電するプリペイドカードを選択してください。</value>
+  </data>
+  <data name="CertifyMyPage_Alert_8" xml:space="preserve">
+    <value>グーグルOTPを登録してください</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_11" xml:space="preserve">
+    <value>現場現金払い</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_12" xml:space="preserve">
+    <value>カード情報を確認してください。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_13" xml:space="preserve">
+    <value>メールを確認ができません。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_14" xml:space="preserve">
+    <value>充填金額がいないです。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_15" xml:space="preserve">
+    <value>カード番号がありません。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_16" xml:space="preserve">
+    <value>カードパスワードがありません。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_17" xml:space="preserve">
+    <value>カードCVC番号がありません。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_18" xml:space="preserve">
+    <value>カードの有効期間がありません。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_19" xml:space="preserve">
+    <value>カード会社のAPIの不具です。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_20" xml:space="preserve">
+    <value>会員様のカードの情報がありません。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_18" xml:space="preserve">
+    <value>メールを確認ができません。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_19" xml:space="preserve">
+    <value>出金額がありません。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_20" xml:space="preserve">
+    <value>出金手数料がありません。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_21" xml:space="preserve">
+    <value>IPを確認ができません。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_22" xml:space="preserve">
+    <value>出金区分を確認ができません。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_23" xml:space="preserve">
+    <value>テストID出金不可。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_24" xml:space="preserve">
+    <value>最小、送金金額が少ないです。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_25" xml:space="preserve">
+    <value>1回の最高送金を超えました。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_26" xml:space="preserve">
+    <value>会員様のカードがありません。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_27" xml:space="preserve">
+    <value>その他のエラーです。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_5" xml:space="preserve">
+    <value>入金完了</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_14" xml:space="preserve">
+    <value>カード申請後、登録してください。</value>
+  </data>
+  <data name="TradingHistory_Common_2" xml:space="preserve">
+    <value>拒絶理由</value>
+  </data>
+  <data name="AutoTradingAdditional_Pop_1" xml:space="preserve">
+    <value>*自動取引はPC取引所がログインしなければ締結が可能です。
+1順位の設定金額から締結されて設定されている間は設定金額 到達したらずっと締結されます。</value>
+  </data>
+  <data name="CertificationDataSubmit_1_1" xml:space="preserve">
+    <value>入金の処理がなされていない場合[認証資料の提出]タブで入金証明書類を提出してください。</value>
+  </data>
+  <data name="CertificationDataSubmit_1_4" xml:space="preserve">
+    <value>入金証明提出方法</value>
+  </data>
+  <data name="CertificationDataSubmit_2_1" xml:space="preserve">
+    <value>本人確認が別途に必要な場合、[認証資料の提出]タブで本人認証書類を提出してください。</value>
+  </data>
+  <data name="CertificationDataSubmit_2_5" xml:space="preserve">
+    <value>本人認証提出方法</value>
+  </data>
+  <data name="CertificationDataSubmit_3" xml:space="preserve">
+    <value>認証資料提出</value>
+  </data>
+  <data name="CertificationDataSubmit_3_1" xml:space="preserve">
+    <value>個人情報の変更要請</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10" xml:space="preserve">
+    <value>認証資料提出の内訳</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_1" xml:space="preserve">
+    <value>申請日時</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_2" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_3" xml:space="preserve">
+    <value>詳細区分</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_4" xml:space="preserve">
+    <value>状態</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_5" xml:space="preserve">
+    <value>失敗の理由</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_6" xml:space="preserve">
+    <value>完了日時</value>
+  </data>
+  <data name="CertificationDataSubmit_3_2" xml:space="preserve">
+    <value>アップロード前,会員情報を正確に入力した後、アップロードしてください。 アップロードされた写真と異なる場合、認証が拒否されます。</value>
+  </data>
+  <data name="CertificationDataSubmit_3_3" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="CertificationDataSubmit_3_4" xml:space="preserve">
+    <value>ID(メール)*</value>
+  </data>
+  <data name="CertificationDataSubmit_3_5" xml:space="preserve">
+    <value>携帯電話番号*</value>
+  </data>
+  <data name="CertificationDataSubmit_3_6" xml:space="preserve">
+    <value>要請事項</value>
+  </data>
+  <data name="CertificationDataSubmit_3_7" xml:space="preserve">
+    <value>身分証アップロード</value>
+  </data>
+  <data name="CertificationDataSubmit_3_7_1" xml:space="preserve">
+    <value>認証目的、認証の電話番号、認証メール、要請の日付のメモと個人情報を隠した身分証明書を取った写真を添付してください。
+(認証可能身分証明書 : 住民登録証、運転免許証、パスワード)</value>
+  </data>
+  <data name="CertificationDataSubmit_3_8" xml:space="preserve">
+    <value>身分証明書を持っている本人の写真</value>
+  </data>
+  <data name="CertificationDataSubmit_3_8_1" xml:space="preserve">
+    <value>非対面本人認証のために使用されます。身分証明書に認証目的、認証電話番号、 認証Eメール、要請日のメモを貼って一緒に撮影してください。
+身元証明の文字 (メモを含む)は判読できるものでなければ無効になります。 添付した写真は、その要請に対する非対面実名確認用途以外には使用しません。</value>
+  </data>
+  <data name="CertificationDataSubmit_3_9" xml:space="preserve">
+    <value>その他の追加書類</value>
+  </data>
+  <data name="CertificationDataSubmit_3_9_1" xml:space="preserve">
+    <value>改名した場合、確認可能な書類をアップロードしてください。</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000000905" xml:space="preserve">
+    <value>個人情報の変更の要請</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000000906" xml:space="preserve">
+    <value>補助メール登録要請 </value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000000907" xml:space="preserve">
+    <value>アカウントロック/解除要請</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000000908" xml:space="preserve">
+    <value>会員脱退</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000000909" xml:space="preserve">
+    <value>入金事実証明</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000000910" xml:space="preserve">
+    <value>出金禁止事実証明</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMP00000000142" xml:space="preserve">
+    <value>本人認証</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMP00000000143" xml:space="preserve">
+    <value>会員脱退を要求</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMP00000000144" xml:space="preserve">
+    <value>入/出金事実証明</value>
+  </data>
+  <data name="CertificationDataSubmit_Pop_1" xml:space="preserve">
+    <value>認証の要請が完了しました。 管理者確認した後、認証が完了されます。</value>
+  </data>
+  <data name="CertificationDataSubmit_Pop_2" xml:space="preserve">
+    <value>詳細区分を選んでください。</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_4_1" xml:space="preserve">
+    <value>認証完了</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_4_2" xml:space="preserve">
+    <value>認証失敗</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_4_3" xml:space="preserve">
+    <value>管理者確認中</value>
+  </data>
+  <data name="CertificationDataSubmit_Pop_3" xml:space="preserve">
+    <value>[500字以内で作成してください]</value>
+  </data>
+  <data name="QnaWrite_Pop_1" xml:space="preserve">
+    <value>タイトルを入力してください。</value>
+  </data>
+  <data name="QnaWrite_Pop_2" xml:space="preserve">
+    <value>お問い合わせ内容を入力してください。</value>
+  </data>
+  <data name="CertifyMyPage_Alert_9" xml:space="preserve">
+    <value>OTP番号を再入力してください。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_8" xml:space="preserve">
+    <value>入金の処理日市</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_13" xml:space="preserve">
+    <value>1回の送金限度</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_12_1" xml:space="preserve">
+    <value>カード決済</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_12_2" xml:space="preserve">
+    <value>仮想口座</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_6" xml:space="preserve">
+    <value>入金大気</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_7" xml:space="preserve">
+    <value>決済を取り消す</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_8" xml:space="preserve">
+    <value>決済失敗</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_21" xml:space="preserve">
+    <value>プリペイド・カードを申請しますか。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_28" xml:space="preserve">
+    <value>プリペイド・カード出金限度は1日2,000,000ウォンです。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_29" xml:space="preserve">
+    <value>会員様本人カード情報がありません。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_30" xml:space="preserve">
+    <value>1回カード出金限度超過しました。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_31" xml:space="preserve">
+    <value>1日、カード出金限度超過しました。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_32" xml:space="preserve">
+    <value>充填金額がありません。</value>
+  </data>
+  <data name="IP_Registration_4_19" xml:space="preserve">
+    <value>登録されたEメールに認証番号が送信されました。</value>
+  </data>
+  <data name="MemberInfo_Pop_5" xml:space="preserve">
+    <value>すでに登録されている電話番号です。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_14" xml:space="preserve">
+    <value>少なくとも、送金の限度未満は送金できません。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_15" xml:space="preserve">
+    <value>1回、送金の限度を超過しました。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_16" xml:space="preserve">
+    <value>1日、送金の限度を超過しました。</value>
+  </data>
+  <data name="Main_Menu_3_5" xml:space="preserve">
+    <value>プリペイドカード</value>
+  </data>
+  <data name="CertifyMyPage_Alert_10" xml:space="preserve">
+    <value>OPTの変更は6月29日から可能です。</value>
+  </data>
+  <data name="Login_24" xml:space="preserve">
+    <value>パスワード{0}回ミスです。</value>
+  </data>
+  <data name="Login_25" xml:space="preserve">
+    <value>パスワード5回ミス時ログインが制限されます。</value>
+  </data>
+  <data name="CertifyMyPage_Alert_11" xml:space="preserve">
+    <value>KYC認証後OTPの変更が可能です。</value>
+  </data>
+  <data name="CertifyMyPage_Alert_12" xml:space="preserve">
+    <value>「顧客サポート＞認証資料提出&gt;認証資料の提出」メニューでOTPの変更を申請してください。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_33" xml:space="preserve">
+    <value>プリペイドカードに入金後、48時間以内には出金ができませんから、この部分を確認してください。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_34" xml:space="preserve">
+    <value>プリペイドカードに入金後、48時間以内には出金ができません。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_35" xml:space="preserve">
+    <value>為替相場はapilayer.comで提供される相場で適用され、国内相場情報と差があり得ます。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_23" xml:space="preserve">
+    <value>プリペイドカード充電の反映は10~20分以降確認されます。</value>
+  </data>
+  <data name="AlramMyPage_1_2_15" xml:space="preserve">
+    <value>プリペイドカード</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_36" xml:space="preserve">
+    <value>カードの出金可能な金額を超過しました。</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000000986" xml:space="preserve">
+    <value>OTPリセット</value>
+  </data>
+  <data name="AlramMyPage_1_2_16" xml:space="preserve">
+    <value>認証資料提出</value>
+  </data>
+  <data name="MemberInfo_Pop_6" xml:space="preserve">
+    <value>推薦人国家を選択してください</value>
+  </data>
+  <data name="MemberInfo_Pop_7" xml:space="preserve">
+    <value>推薦人地点を選択してください</value>
+  </data>
+  <data name="MemberInfo_Pop_8" xml:space="preserve">
+    <value>推薦人を選択してください</value>
+  </data>
+  <data name="MemberInfo_2_6" xml:space="preserve">
+    <value>推薦人登録</value>
+  </data>
+  <data name="MemberInfo_2_7" xml:space="preserve">
+    <value>推薦人国家</value>
+  </data>
+  <data name="MemberInfo_2_8" xml:space="preserve">
+    <value>支店</value>
+  </data>
+  <data name="MemberInfo_2_9" xml:space="preserve">
+    <value>推薦人</value>
+  </data>
+  <data name="Common_Alert_18" xml:space="preserve">
+    <value>選択</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_24" xml:space="preserve">
+    <value>(プロモーション)</value>
+  </data>
+  <data name="MemberInfo_Pop_10" xml:space="preserve">
+    <value>保存しますか。</value>
+  </data>
+  <data name="MemberInfo_Pop_9" xml:space="preserve">
+    <value>口座番号が登録されませんでした。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_25" xml:space="preserve">
+    <value>[マイページ&gt;会員情報管理]で口座番号と携帯電話番号を 登録してください。</value>
+  </data>
+  <data name="MemberInfo_2_10" xml:space="preserve">
+    <value>メール/プッシュ言語</value>
+  </data>
+  <data name="TradingHistory_2_4" xml:space="preserve">
+    <value>Market</value>
+  </data>
+  <data name="CoinTrading_Alert_18_1" xml:space="preserve">
+    <value>注文金額を入力してください。</value>
+  </data>
+  <data name="TradingHistory_3_9" xml:space="preserve">
+    <value>取引</value>
+  </data>
+  <data name="Main_Menu_2_7" xml:space="preserve">
+    <value>指し値取引</value>
+  </data>
+  <data name="Main_QuickMenu_20" xml:space="preserve">
+    <value>指し値取引</value>
+  </data>
+  <data name="MemberInfo_Pop_11" xml:space="preserve">
+    <value>認証番号を登録された該当携帯に転送しました。 確認後認証番号を入力してください。</value>
+  </data>
+  <data name="MemberInfo_Pop_12" xml:space="preserve">
+    <value>電話番号を確認できません。</value>
+  </data>
+  <data name="MemberInfo_Pop_13" xml:space="preserve">
+    <value>SMS配信に失敗しました。 後ほど改めてしてください。</value>
+  </data>
+  <data name="Common_Alert_19" xml:space="preserve">
+    <value>SMS認証が完了していません。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_26" xml:space="preserve">
+    <value>プリペイドカード充電方法</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_27" xml:space="preserve">
+    <value>[moacardホームページ（</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_28" xml:space="preserve">
+    <value>）&gt;保有カード]で充電方法を確認することができます。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1_7" xml:space="preserve">
+    <value>*1人1枚のカードの申請が可能です。</value>
+  </data>
+  <data name="Common_Alert_20" xml:space="preserve">
+    <value>マイページ&gt;オススメ登録]でポイントと推薦人を変更してください。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_15" xml:space="preserve">
+    <value>The commission rate can not be used during readjustment.</value>
+  </data>
+  <data name="Common_Alert_21" xml:space="preserve">
+    <value>基準</value>
+  </data>
+  <data name="TradingHistory_7_1" xml:space="preserve">
+    <value>(指し値)</value>
+  </data>
+  <data name="TradingHistory_7_2" xml:space="preserve">
+    <value>(成行)</value>
+  </data>
+  <data name="AssetsMyPage_7" xml:space="preserve">
+    <value>資産</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_16" xml:space="preserve">
+    <value>カード受領後に、登録してください。</value>
+  </data>
+  <data name="CoinTrading_2_8" xml:space="preserve">
+    <value>最小注文金額</value>
+  </data>
+  <data name="CoinTrading_2_9" xml:space="preserve">
+    <value>手数料</value>
+  </data>
+  <data name="Common_Alert_22" xml:space="preserve">
+    <value>詳細はありません</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_17" xml:space="preserve">
+    <value>同じ名前と電話番号と既にカードが登録されています。プリペイドカードは、1人1カードとして他のアカウントに申し込むことができません。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_18" xml:space="preserve">
+    <value>プリペイドカードを申請しますか？</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_19" xml:space="preserve">
+    <value>プリペイドカードは、[ソウル江南区]または[ソウル宣陵]の時点で受領可能です。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_20" xml:space="preserve">
+    <value>ポイントの場所は、顧客センター&gt;加盟店のご案内を介して確認してください。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_21" xml:space="preserve">
+    <value>プリペイドカードは、入力された配送先に約2週間以内に発送されます。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_22" xml:space="preserve">
+    <value>カードの申請をキャンセルしますか？</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_23" xml:space="preserve">
+    <value>キャンセルが完了しました。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_24" xml:space="preserve">
+    <value>状態が[申し込み完了]、[入金待ち]の場合のみキャンセルが可能です。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_9" xml:space="preserve">
+    <value>申し込みキャンセル</value>
+  </data>
+  <data name="AtmPwdSetting_1" xml:space="preserve">
+    <value>PTMのパスワード登録</value>
+  </data>
+  <data name="AtmPwdSetting_10" xml:space="preserve">
+    <value>登録</value>
+  </data>
+  <data name="AtmPwdSetting_11" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="AtmPwdSetting_12" xml:space="preserve">
+    <value>パスワードは4桁の数字のみが可能です。</value>
+  </data>
+  <data name="AtmPwdSetting_2" xml:space="preserve">
+    <value>PTMパスワードはカードの使用パスワードとは別に、無人預け払い機で入金/出金時に使用するパスワードです。</value>
+  </data>
+  <data name="AtmPwdSetting_3" xml:space="preserve">
+    <value>未登録時PTM機器の入金/出金を使用することができません。
+* PTMはCoinBlock Teller Machineです。</value>
+  </data>
+  <data name="AtmPwdSetting_4" xml:space="preserve">
+    <value>カード番号</value>
+  </data>
+  <data name="AtmPwdSetting_5" xml:space="preserve">
+    <value>パスワード入力</value>
+  </data>
+  <data name="AtmPwdSetting_6" xml:space="preserve">
+    <value>パスワードの確認</value>
+  </data>
+  <data name="AtmPwdSetting_7" xml:space="preserve">
+    <value>PTMパスワードをすでに登録しました。</value>
+  </data>
+  <data name="AtmPwdSetting_8" xml:space="preserve">
+    <value>パスワード紛失時の顧客センターにお問い合わせください。</value>
+  </data>
+  <data name="AtmPwdSetting_9" xml:space="preserve">
+    <value>数字4桁を入力</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000001146" xml:space="preserve">
+    <value>PTMパスワード</value>
+  </data>
+  <data name="AtmPwdSetting_13" xml:space="preserve">
+    <value>パスワードを入力してください。</value>
+  </data>
+  <data name="AtmPwdSetting_14" xml:space="preserve">
+    <value>登録されたカードがありません。カード登録後ご利用ください。</value>
+  </data>
+  <data name="AtmPwdSetting_15" xml:space="preserve">
+    <value>PTMのパスワードを登録しますか？</value>
+  </data>
+  <data name="AtmPwdSetting_16" xml:space="preserve">
+    <value>PTMのパスワードの登録が完了しました。</value>
+  </data>
+  <data name="AtmPwdSetting_17" xml:space="preserve">
+    <value>PTMのパスワード復号化エラーが発生しました。</value>
+  </data>
+  <data name="AtmPwdSetting_18" xml:space="preserve">
+    <value>すでにPTMパスワードが登録されています。</value>
+  </data>
+  <data name="AtmPwdSetting_19" xml:space="preserve">
+    <value>カードのパスワードがありません。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_25" xml:space="preserve">
+    <value>登録されたカードがありません。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_29" xml:space="preserve">
+    <value>1回の充電の上限は{0} {1}です。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_30" xml:space="preserve">
+    <value>1日の充電上限は{0} {1}です。</value>
+  </data>
+  <data name="CoinTrading_Alert_47" xml:space="preserve">
+    <value>自動取引設定が変更されました。</value>
+  </data>
+  <data name="Fee_29" xml:space="preserve">
+    <value>PTM出金</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_41" xml:space="preserve">
+    <value>出金可能額</value>
+  </data>
+  <data name="MemberInfo_2_11" xml:space="preserve">
+    <value>PIN番号の初期化</value>
+  </data>
+  <data name="MemberInfo_Pop_14" xml:space="preserve">
+    <value>PIN番号を初期化しますか？</value>
+  </data>
+  <data name="MemberInfo_Pop_15" xml:space="preserve">
+    <value>初期化する場合は、携帯電話からのログイン後
+PIN番号をリセットしてください。</value>
+  </data>
+  <data name="MemberInfo_Pop_16" xml:space="preserve">
+    <value>PIN番号が初期化されています。</value>
+  </data>
+  <data name="MemberInfo_Pop_17" xml:space="preserve">
+    <value>携帯電話でログイン後
+PIN番号をリセットしてください。</value>
+  </data>
+  <data name="MemberInfo_Pop_18" xml:space="preserve">
+    <value>設定されたPIN番号がありません。</value>
+  </data>
+  <data name="MemberInfo_Pop_19" xml:space="preserve">
+    <value>PIN番号が初期化されました</value>
+  </data>
+  <data name="MemberInfo_Pop_20" xml:space="preserve">
+    <value>初期化PIN番号が失敗しました。</value>
+  </data>
+  <data name="CoinTrading_1_6" xml:space="preserve">
+    <value>現在{0}相場</value>
+  </data>
+  <data name="CoinTrading_Alert_48" xml:space="preserve">
+    <value>1回{0} {1}以下のみ登録可能です。</value>
+  </data>
+  <data name="CoinTrading_Alert_49" xml:space="preserve">
+    <value>1日{0} {1}以下のみ登録可能です。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_3_6" xml:space="preserve">
+    <value>2. 「入力住所に受領」を選択した後決済時に登録された電子メールでカード情報が記載されたセキュアなメールが送信されます。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_17" xml:space="preserve">
+    <value>System maintenance is in progress. Please check the notice.</value>
+  </data>
+  <data name="TradingHistory_1_15" xml:space="preserve">
+    <value>端末決済</value>
+  </data>
+  <data name="TradingHistory_Common_3" xml:space="preserve">
+    <value>端末番号</value>
+  </data>
+  <data name="CoinTrading_Alert_50" xml:space="preserve">
+    <value>お客様は、販売を利用することができません。</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000001326" xml:space="preserve">
+    <value>SMS認証を解除要請</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_42" xml:space="preserve">
+    <value>SMS認証</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_43" xml:space="preserve">
+    <value>SMS送信</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_44" xml:space="preserve">
+    <value>SMS認証が必要です。
+[マイページ&gt;会員情報]で携帯電話番号を登録してください。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_45" xml:space="preserve">
+    <value>SMS認証番号が送信されます。
+SMS認証が正常にされない場合は、[クライアントセンター&gt;認証資料提出&gt;本人認証&gt; SMS認証解除要求]を使用して、本人確認要求を受け付けてください。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_18" xml:space="preserve">
+    <value>SMS認証が完了していません。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_37" xml:space="preserve">
+    <value>SMS認証が完了していません。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_19" xml:space="preserve">
+    <value>お客様は出金を利用することができません。</value>
+  </data>
+  <data name="Main_Menu_4_4" xml:space="preserve">
+    <value>トラストの申請</value>
+  </data>
+  <data name="TrustRequest_1_1" xml:space="preserve">
+    <value>TRUSTは取引所に自分が保有しているパスワード貨幣のコインの信頼を進行するコインで指定されたパスワード貨幣の一部を受託することが場合、投資したパスワード貨幣の利子を暗号通貨で支払われる商品です。</value>
+  </data>
+  <data name="TrustRequest_1_10" xml:space="preserve">
+    <value>申請日</value>
+  </data>
+  <data name="TrustRequest_1_11" xml:space="preserve">
+    <value>有効期限</value>
+  </data>
+  <data name="TrustRequest_1_12" xml:space="preserve">
+    <value>利用規約</value>
+  </data>
+  <data name="TrustRequest_1_12_1" xml:space="preserve">
+    <value>利用規約[必須]</value>
+  </data>
+  <data name="TrustRequest_1_2" xml:space="preserve">
+    <value>通貨</value>
+  </data>
+  <data name="TrustRequest_1_3" xml:space="preserve">
+    <value>最小の申請数量</value>
+  </data>
+  <data name="TrustRequest_1_4" xml:space="preserve">
+    <value>保有コイン</value>
+  </data>
+  <data name="TrustRequest_1_5" xml:space="preserve">
+    <value>申请状态</value>
+  </data>
+  <data name="TrustRequest_1_6" xml:space="preserve">
+    <value>期間を選択</value>
+  </data>
+  <data name="TrustRequest_1_7" xml:space="preserve">
+    <value>金利</value>
+  </data>
+  <data name="TrustRequest_1_8" xml:space="preserve">
+    <value>予想な利子</value>
+  </data>
+  <data name="TrustRequest_1_9" xml:space="preserve">
+    <value>総支給額（利息を含む）</value>
+  </data>
+  <data name="TrustRequest_2" xml:space="preserve">
+    <value>トラストの申請内容</value>
+  </data>
+  <data name="TrustRequest_Alert_1" xml:space="preserve">
+    <value>申請期間を選択してください。</value>
+  </data>
+  <data name="TrustRequest_Alert_2" xml:space="preserve">
+    <value>申し込み数量を入力してください。</value>
+  </data>
+  <data name="TrustRequest_Alert_3" xml:space="preserve">
+    <value>保有コインより多ければ申請することができません。</value>
+  </data>
+  <data name="TrustRequest_Alert_4" xml:space="preserve">
+    <value>申請時の取引と出金が制限されます。申し込みしますか？</value>
+  </data>
+  <data name="TrustRequest_Alert_5" xml:space="preserve">
+    <value>満期前解約時利払いがありません。解約しますか？</value>
+  </data>
+  <data name="TrustRequest_1_6_1" xml:space="preserve">
+    <value>{0}ヶ月</value>
+  </data>
+  <data name="TrustRequest_2_1" xml:space="preserve">
+    <value>申請日</value>
+  </data>
+  <data name="TrustRequest_2_2" xml:space="preserve">
+    <value>有効期限</value>
+  </data>
+  <data name="TrustRequest_2_3" xml:space="preserve">
+    <value>通貨</value>
+  </data>
+  <data name="TrustRequest_2_4" xml:space="preserve">
+    <value>量</value>
+  </data>
+  <data name="TrustRequest_2_5" xml:space="preserve">
+    <value>インタレスト</value>
+  </data>
+  <data name="TrustRequest_2_6" xml:space="preserve">
+    <value>総支給額</value>
+  </data>
+  <data name="TrustRequest_2_7" xml:space="preserve">
+    <value>解約日</value>
+  </data>
+  <data name="TrustRequest_2_8" xml:space="preserve">
+    <value>申请状态</value>
+  </data>
+  <data name="TrustRequest_2_8_1" xml:space="preserve">
+    <value>満期</value>
+  </data>
+  <data name="TrustRequest_2_8_2" xml:space="preserve">
+    <value>申し込み完了</value>
+  </data>
+  <data name="TrustRequest_2_9" xml:space="preserve">
+    <value>備考</value>
+  </data>
+  <data name="TrustRequest_2_9_1" xml:space="preserve">
+    <value>終了する</value>
+  </data>
+  <data name="TrustRequest_2_8_3" xml:space="preserve">
+    <value>解約</value>
+  </data>
+  <data name="TrustRequest_Alert_6" xml:space="preserve">
+    <value>最小の申請数量より少なく申請することができません。</value>
+  </data>
+  <data name="TrustRequest_Alert_7" xml:space="preserve">
+    <value>TRUSTの申請が完了しました。</value>
+  </data>
+  <data name="TrustRequest_Alert_8" xml:space="preserve">
+    <value>終了しました。</value>
+  </data>
+  <data name="TrustRequest_Alert_9" xml:space="preserve">
+    <value>利用規約に同意のチェックがされていません。</value>
+  </data>
+  <data name="AssetsMyPage_3_6" xml:space="preserve">
+    <value>トラスト</value>
+  </data>
+  <data name="TrustRequest_1_9_1" xml:space="preserve">
+    <value>利用規約を確認した後、申請してください。</value>
+  </data>
+  <data name="DepositDepositWithdraw_Alert_1" xml:space="preserve">
+    <value>アドレスがクリップボードにコピーされました。</value>
+  </data>
+  <data name="TradingHistory_1_16" xml:space="preserve">
+    <value>トラスト</value>
+  </data>
+  <data name="TradingHistory_Common_4" xml:space="preserve">
+    <value>同時に入金</value>
+  </data>
+  <data name="TradingHistory_Common_5" xml:space="preserve">
+    <value>申請日</value>
+  </data>
+  <data name="AssetsMyPage_3_7" xml:space="preserve">
+    <value>取引制限</value>
+  </data>
+  <data name="TradingHistory_1_17" xml:space="preserve">
+    <value>コイン入金</value>
+  </data>
+  <data name="TradingHistory_1_17_1" xml:space="preserve">
+    <value>取引制限</value>
+  </data>
+  <data name="TradingHistory_1_17_2" xml:space="preserve">
+    <value>入金</value>
+  </data>
+  <data name="Lending_1" xml:space="preserve">
+    <value>申し込み</value>
+  </data>
+  <data name="Lending_1_1" xml:space="preserve">
+    <value>Lending適用</value>
+  </data>
+  <data name="Lending_1_10" xml:space="preserve">
+    <value>予想であり、</value>
+  </data>
+  <data name="Lending_1_11" xml:space="preserve">
+    <value>総返済額</value>
+  </data>
+  <data name="Lending_1_12" xml:space="preserve">
+    <value>申請日</value>
+  </data>
+  <data name="Lending_1_13" xml:space="preserve">
+    <value>有効期限</value>
+  </data>
+  <data name="Lending_1_14" xml:space="preserve">
+    <value>利用規約</value>
+  </data>
+  <data name="Lending_1_14_1" xml:space="preserve">
+    <value>利用規約[必須]</value>
+  </data>
+  <data name="Lending_1_15" xml:space="preserve">
+    <value>Lending適用内訳</value>
+  </data>
+  <data name="Lending_1_2" xml:space="preserve">
+    <value>Lending Serviceは取引所で使用できるように、パスワード貨幣貸付をしてくれるサービスです。</value>
+  </data>
+  <data name="Lending_1_3" xml:space="preserve">
+    <value>ローン元金と利子をすべて返済しなければなら出金が可能です。償還までは、購入/販売取引を除くすべての出金ができません。</value>
+  </data>
+  <data name="Lending_1_4" xml:space="preserve">
+    <value>ローンの利子は毎月返済されます。</value>
+  </data>
+  <data name="Lending_1_5" xml:space="preserve">
+    <value>通貨</value>
+  </data>
+  <data name="Lending_1_6" xml:space="preserve">
+    <value>最小の申請数量</value>
+  </data>
+  <data name="Lending_1_7" xml:space="preserve">
+    <value>期間</value>
+  </data>
+  <data name="Lending_1_7_1" xml:space="preserve">
+    <value>{0}ヶ月</value>
+  </data>
+  <data name="Lending_1_8" xml:space="preserve">
+    <value>申し込み数量</value>
+  </data>
+  <data name="Lending_1_9" xml:space="preserve">
+    <value>金利</value>
+  </data>
+  <data name="Lending_1_9_1" xml:space="preserve">
+    <value>{0}％（月）</value>
+  </data>
+  <data name="Lending_Grid_1" xml:space="preserve">
+    <value>申請日</value>
+  </data>
+  <data name="Lending_Grid_10" xml:space="preserve">
+    <value>償還日時</value>
+  </data>
+  <data name="Lending_Grid_11" xml:space="preserve">
+    <value>延滞かどうか</value>
+  </data>
+  <data name="Lending_Grid_11_1" xml:space="preserve">
+    <value>米延滞</value>
+  </data>
+  <data name="Lending_Grid_11_2" xml:space="preserve">
+    <value>延滞</value>
+  </data>
+  <data name="Lending_Grid_12" xml:space="preserve">
+    <value>備考</value>
+  </data>
+  <data name="Lending_Grid_12_1" xml:space="preserve">
+    <value>返済する</value>
+  </data>
+  <data name="Lending_Grid_12_2" xml:space="preserve">
+    <value>延長する</value>
+  </data>
+  <data name="Lending_Grid_2" xml:space="preserve">
+    <value>延長日</value>
+  </data>
+  <data name="Lending_Grid_3" xml:space="preserve">
+    <value>有効期限</value>
+  </data>
+  <data name="Lending_Grid_4" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="Lending_Grid_4_1" xml:space="preserve">
+    <value>延長</value>
+  </data>
+  <data name="Lending_Grid_4_2" xml:space="preserve">
+    <value>一般</value>
+  </data>
+  <data name="Lending_Grid_5" xml:space="preserve">
+    <value>申し込み状況</value>
+  </data>
+  <data name="Lending_Grid_5_1" xml:space="preserve">
+    <value>中途償還</value>
+  </data>
+  <data name="Lending_Grid_5_2" xml:space="preserve">
+    <value>申し込み完了</value>
+  </data>
+  <data name="Lending_Grid_5_3" xml:space="preserve">
+    <value>満期</value>
+  </data>
+  <data name="Lending_Grid_6" xml:space="preserve">
+    <value>通貨</value>
+  </data>
+  <data name="Lending_Grid_7" xml:space="preserve">
+    <value>申し込み数量</value>
+  </data>
+  <data name="Lending_Grid_8" xml:space="preserve">
+    <value>利子（月）</value>
+  </data>
+  <data name="Lending_Grid_9" xml:space="preserve">
+    <value>総返済額</value>
+  </data>
+  <data name="Main_Menu_4_5" xml:space="preserve">
+    <value>Lending</value>
+  </data>
+  <data name="Lending_2" xml:space="preserve">
+    <value>返済内訳</value>
+  </data>
+  <data name="Lending_2_1" xml:space="preserve">
+    <value>適用内訳</value>
+  </data>
+  <data name="Lending_2_10" xml:space="preserve">
+    <value>延滞かどうか</value>
+  </data>
+  <data name="Lending_2_10_1" xml:space="preserve">
+    <value>米延滞</value>
+  </data>
+  <data name="Lending_2_10_2" xml:space="preserve">
+    <value>延滞</value>
+  </data>
+  <data name="Lending_2_11" xml:space="preserve">
+    <value>延長日</value>
+  </data>
+  <data name="Lending_2_11_1" xml:space="preserve">
+    <value>延長する</value>
+  </data>
+  <data name="Lending_2_12" xml:space="preserve">
+    <value>有効期限</value>
+  </data>
+  <data name="Lending_2_13" xml:space="preserve">
+    <value>Lending返済内訳</value>
+  </data>
+  <data name="Lending_2_2" xml:space="preserve">
+    <value>申請日</value>
+  </data>
+  <data name="Lending_2_3" xml:space="preserve">
+    <value>期間</value>
+  </data>
+  <data name="Lending_2_3_1" xml:space="preserve">
+    <value>{0}ヶ月</value>
+  </data>
+  <data name="Lending_2_4" xml:space="preserve">
+    <value>状態</value>
+  </data>
+  <data name="Lending_2_4_1" xml:space="preserve">
+    <value>中途償還</value>
+  </data>
+  <data name="Lending_2_4_2" xml:space="preserve">
+    <value>申し込み完了</value>
+  </data>
+  <data name="Lending_2_4_3" xml:space="preserve">
+    <value>満期</value>
+  </data>
+  <data name="Lending_2_5" xml:space="preserve">
+    <value>申し込み数量</value>
+  </data>
+  <data name="Lending_2_6" xml:space="preserve">
+    <value>金利</value>
+  </data>
+  <data name="Lending_2_6_1" xml:space="preserve">
+    <value>{0}％（月）</value>
+  </data>
+  <data name="Lending_2_7" xml:space="preserve">
+    <value>利息の合計数量</value>
+  </data>
+  <data name="Lending_2_8" xml:space="preserve">
+    <value>総返済額</value>
+  </data>
+  <data name="Lending_2_9" xml:space="preserve">
+    <value>元金償還日</value>
+  </data>
+  <data name="Lending_2_9_1" xml:space="preserve">
+    <value>返済する</value>
+  </data>
+  <data name="Lending_Grid2_1" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="Lending_Grid2_1_1" xml:space="preserve">
+    <value>延長</value>
+  </data>
+  <data name="Lending_Grid2_1_2" xml:space="preserve">
+    <value>一般</value>
+  </data>
+  <data name="Lending_Grid2_2" xml:space="preserve">
+    <value>償還日時</value>
+  </data>
+  <data name="Lending_Grid2_3" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="Lending_Grid2_3_1" xml:space="preserve">
+    <value>元金償還</value>
+  </data>
+  <data name="Lending_Grid2_3_2" xml:space="preserve">
+    <value>利息返済</value>
+  </data>
+  <data name="Lending_Grid2_4" xml:space="preserve">
+    <value>回送</value>
+  </data>
+  <data name="Lending_Grid2_4_1" xml:space="preserve">
+    <value>{0}回</value>
+  </data>
+  <data name="Lending_Grid2_5" xml:space="preserve">
+    <value>返済額</value>
+  </data>
+  <data name="Lending_Grid2_6" xml:space="preserve">
+    <value>延滞利息</value>
+  </data>
+  <data name="Lending_Grid2_7" xml:space="preserve">
+    <value>総返済額</value>
+  </data>
+  <data name="Lending_Grid2_8" xml:space="preserve">
+    <value>返済かどうか</value>
+  </data>
+  <data name="Lending_Grid2_8_1" xml:space="preserve">
+    <value>延滞</value>
+  </data>
+  <data name="Lending_Grid2_8_2" xml:space="preserve">
+    <value>通常の</value>
+  </data>
+  <data name="Lending_Grid2_8_3" xml:space="preserve">
+    <value>待機</value>
+  </data>
+  <data name="Lending_Grid2_9" xml:space="preserve">
+    <value>備考</value>
+  </data>
+  <data name="TradingHistory_1_18" xml:space="preserve">
+    <value>自動取引</value>
+  </data>
+  <data name="TradingHistory_Common_6" xml:space="preserve">
+    <value>詳細を見る</value>
+  </data>
+  <data name="TradingHistory_Common_7" xml:space="preserve">
+    <value>取引番号</value>
+  </data>
+  <data name="TradingHistory_Common_8" xml:space="preserve">
+    <value>アドレス</value>
+  </data>
+  <data name="TradingHistory_Common_9" xml:space="preserve">
+    <value>金額</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_46" xml:space="preserve">
+    <value>出金は1万ウォン単位でのみ申請が可能であり、申込金額は手数料が含まれた金額で、実際の支給額を確認してください。</value>
+  </data>
+  <data name="Lending_Alert_1" xml:space="preserve">
+    <value>延長する</value>
+  </data>
+  <data name="Lending_Alert_1_1" xml:space="preserve">
+    <value>コインLending1回に限り延長することが可能です。
+コインLending期間を延長しますか？</value>
+  </data>
+  <data name="Lending_Alert_1_2" xml:space="preserve">
+    <value>延長金利：{0}％（月）</value>
+  </data>
+  <data name="Lending_Alert_1_3" xml:space="preserve">
+    <value>有効期限</value>
+  </data>
+  <data name="Lending_Alert_2" xml:space="preserve">
+    <value>返済する</value>
+  </data>
+  <data name="Lending_Alert_2_1" xml:space="preserve">
+    <value>元金</value>
+  </data>
+  <data name="Lending_Alert_2_2" xml:space="preserve">
+    <value>残り利</value>
+  </data>
+  <data name="Lending_Alert_2_3" xml:space="preserve">
+    <value>総返済額</value>
+  </data>
+  <data name="Lending_Alert_2_4" xml:space="preserve">
+    <value>償還日時</value>
+  </data>
+  <data name="Login_26" xml:space="preserve">
+    <value>We are currently undergoing an emergency system maintenance to provide a more stable system.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_20" xml:space="preserve">
+    <value>送金限度</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_47" xml:space="preserve">
+    <value>出金限度</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_21" xml:space="preserve">
+    <value>最小送金</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1_5" xml:space="preserve">
+    <value>*身分証明書個人情報の場合は、直接選別いただきます。</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1_6" xml:space="preserve">
+    <value>*リクエストのメモの場合、手で作成が求められます。</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1_7" xml:space="preserve">
+    <value>*ペイント、フォトショップのような編集過程を経る場合、処理ができません。</value>
+  </data>
+  <data name="CertifyMyPage_5_13" xml:space="preserve">
+    <value>*身分証明書個人情報の場合は、直接選別いただきます。</value>
+  </data>
+  <data name="CertifyMyPage_5_14" xml:space="preserve">
+    <value>*リクエストのメモの場合、手で作成が求められます。</value>
+  </data>
+  <data name="CertifyMyPage_5_15" xml:space="preserve">
+    <value>*ペイント、フォトショップのような編集過程を経る場合、処理ができません。</value>
+  </data>
+  <data name="MemberInfo_Pop_21" xml:space="preserve">
+    <value>携帯電話本人認証が完了しました。</value>
+  </data>
+  <data name="MemberInfo_Pop_22" xml:space="preserve">
+    <value>携帯電話本人認証を確認してください。</value>
+  </data>
+  <data name="MemberInfo_Pop_23" xml:space="preserve">
+    <value>銀行口座が確認されません。</value>
+  </data>
+  <data name="MemberInfo_Pop_24" xml:space="preserve">
+    <value>本人口座認証を進めてください。</value>
+  </data>
+  <data name="MemberInfo_Pop_25" xml:space="preserve">
+    <value>口座確認が完了しました。</value>
+  </data>
+  <data name="MemberInfo_Pop_26" xml:space="preserve">
+    <value>電話番号を入力してください。</value>
+  </data>
+  <data name="MemberInfo_Pop_27" xml:space="preserve">
+    <value>銀行を選択してください。</value>
+  </data>
+  <data name="MemberInfo_Pop_28" xml:space="preserve">
+    <value>口座番号を入力してください。</value>
+  </data>
+  <data name="MemberInfo_Pop_29" xml:space="preserve">
+    <value>口座番号をフォーマットに合わせて入力してください。</value>
+  </data>
+  <data name="MemberInfo_Pop_30" xml:space="preserve">
+    <value>ユーザー名が存在しません。</value>
+  </data>
+  <data name="MemberInfo_Pop_31" xml:space="preserve">
+    <value>口座名義人とユーザー名が一致しません。</value>
+  </data>
+  <data name="MemberInfo_Pop_32" xml:space="preserve">
+    <value>銀行検査中です。</value>
+  </data>
+  <data name="Common_Alert_23" xml:space="preserve">
+    <value>携帯電話本人認証は、WebまたはMTSで可能です。</value>
+  </data>
+  <data name="Lending_Alert_10" xml:space="preserve">
+    <value>申し込み数量を確認することができません。</value>
+  </data>
+  <data name="Lending_Alert_11" xml:space="preserve">
+    <value>月数を確認することができません。</value>
+  </data>
+  <data name="Lending_Alert_12" xml:space="preserve">
+    <value>すでにトレンドを申請したメンバーです。</value>
+  </data>
+  <data name="Lending_Alert_13" xml:space="preserve">
+    <value>トレンドの申請に失敗しました。</value>
+  </data>
+  <data name="Lending_Alert_14" xml:space="preserve">
+    <value>延長しますか？</value>
+  </data>
+  <data name="Lending_Alert_15" xml:space="preserve">
+    <value>返済しますか？</value>
+  </data>
+  <data name="Lending_Alert_3" xml:space="preserve">
+    <value>コインLendingの申請数量を入力してください。</value>
+  </data>
+  <data name="Lending_Alert_4" xml:space="preserve">
+    <value>最小申し込み可能数量より少なくは申請できません。</value>
+  </data>
+  <data name="Lending_Alert_5" xml:space="preserve">
+    <value>最大申し込み可能数量より多くて申請することができません。</value>
+  </data>
+  <data name="Lending_Alert_6" xml:space="preserve">
+    <value>申請時にすべての出金が制限されます。申し込みしますか？</value>
+  </data>
+  <data name="Lending_Alert_7" xml:space="preserve">
+    <value>メールを確認することができません。</value>
+  </data>
+  <data name="Lending_Alert_8" xml:space="preserve">
+    <value>通貨コードを確認することができません。</value>
+  </data>
+  <data name="Lending_Alert_9" xml:space="preserve">
+    <value>申請日を確認することができません。</value>
+  </data>
+  <data name="Common_Alert_24" xml:space="preserve">
+    <value>申請が完了しました。</value>
+  </data>
+  <data name="MemberInfo_Pop_33" xml:space="preserve">
+    <value>銀行口座が確認されません。</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_7" xml:space="preserve">
+    <value>自動取引決済後は、キャンセルと返金ができません。</value>
+  </data>
+  <data name="Common_Alert_25" xml:space="preserve">
+    <value>注意事項に同意してください。</value>
+  </data>
+  <data name="MemberInfo_Pop_34" xml:space="preserve">
+    <value>[顧客のセンター&gt;認証資料提出&gt;本人認証&gt;個人情報の変更要求]で認証要求した後の完了時に変更が可能です。
+</value>
+  </data>
+  <data name="MemberInfo_Pop_35" xml:space="preserve">
+    <value>パスワードが一致しません。</value>
+  </data>
+  <data name="MemberInfo_Pop_36" xml:space="preserve">
+    <value>再度確認してください。</value>
+  </data>
+  <data name="MemberInfo_Pop_37" xml:space="preserve">
+    <value>PIN番号の初期化のために会員ID、パスワードを入力してください。</value>
+  </data>
+  <data name="Lending_Grid2_3_3" xml:space="preserve">
+    <value>延長元金償還</value>
+  </data>
+  <data name="Lending_Grid2_3_4" xml:space="preserve">
+    <value>延長であり、返済</value>
+  </data>
+  <data name="TradingHistory_1_19" xml:space="preserve">
+    <value>手数料報酬</value>
+  </data>
+  <data name="CoinTrading_Alert_51" xml:space="preserve">
+    <value>値段が{0} {1}から変更されました。</value>
+  </data>
+  <data name="TradingHistory_1_20" xml:space="preserve">
+    <value>ラッキーボックスイベント</value>
+  </data>
+  <data name="MemberInfo_1" xml:space="preserve">
+    <value>一度登録した内容は、変更ができません。</value>
+  </data>
+  <data name="MemberInfo_1_1" xml:space="preserve">
+    <value>[顧客センター &gt; 認証資料の提出]でリクエストしてください。</value>
+  </data>
+  <data name="DepositDepositWithdraw_Common_1" xml:space="preserve">
+    <value>{0} 電子ウォレットアドレス</value>
+  </data>
+  <data name="DepositDepositWithdraw_Common_2" xml:space="preserve">
+    <value>上記のアドレスは、入金専用アドレスです。</value>
+  </data>
+  <data name="DepositDepositWithdraw_Common_3" xml:space="preserve">
+    <value>保有 {0}</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_1" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_10" xml:space="preserve">
+    <value>Email認証</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_11" xml:space="preserve">
+    <value>{0}送金時の注意事項</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_12" xml:space="preserve">
+    <value>上記の内容を確認しました。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_2" xml:space="preserve">
+    <value>すべての送金は、管理者の確認後に実行されます。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_3" xml:space="preserve">
+    <value>送金可能コイン</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_4" xml:space="preserve">
+    <value>1日の送金限度</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_5" xml:space="preserve">
+    <value>送金するアドレス</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_6" xml:space="preserve">
+    <value>送金申請金額</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_7" xml:space="preserve">
+    <value>{0}手数料</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_8" xml:space="preserve">
+    <value>実際の出金総額</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_9" xml:space="preserve">
+    <value>OTP認証番号</value>
+  </data>
+  <data name="Common_Alert_26" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="AlramMyPage_2_4_3" xml:space="preserve">
+    <value>{0}チャージ</value>
+  </data>
+  <data name="AlramMyPage_2_4_4" xml:space="preserve">
+    <value>{0}出金</value>
+  </data>
+  <data name="AssetsMyPage_Common_1" xml:space="preserve">
+    <value>{0}マーケット目安です。</value>
+  </data>
+  <data name="AutoTradingAdditional_3_11" xml:space="preserve">
+    <value>(30日)基準で10,000{0}</value>
+  </data>
+  <data name="Common_Alert_4" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="Fee_26" xml:space="preserve">
+    <value>{0}出金</value>
+  </data>
+  <data name="Main_Head_4" xml:space="preserve">
+    <value>合計({0})</value>
+  </data>
+  <data name="Main_Menu_3_1" xml:space="preserve">
+    <value>{0} チャージ</value>
+  </data>
+  <data name="Main_Menu_3_3" xml:space="preserve">
+    <value>{0} 出金</value>
+  </data>
+  <data name="Main_QuickMenu_1" xml:space="preserve">
+    <value>{0} チャージ</value>
+  </data>
+  <data name="Main_QuickMenu_2" xml:space="preserve">
+    <value>{0} 出金</value>
+  </data>
+  <data name="Main_QuickMenu_ToolTip_11" xml:space="preserve">
+    <value>{0} チャージ</value>
+  </data>
+  <data name="Main_QuickMenu_ToolTip_12" xml:space="preserve">
+    <value>{0} 出金</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1_2" xml:space="preserve">
+    <value>*プリペイドカードは{0}チャージと出金をご利用することができるカードです。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1_3" xml:space="preserve">
+    <value>*プリペイドカード出金は1回2,000,000万{0}、1日100,000,000万{0}限度です。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1_6" xml:space="preserve">
+    <value>*カード作る費用は、国内用カード1回10,000{0}です</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_15" xml:space="preserve">
+    <value>（送料：{0} {1}）</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_1" xml:space="preserve">
+    <value>{0}充電案内と注意事項</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_22" xml:space="preserve">
+    <value>最小入金金額は5,000{0}です。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_18" xml:space="preserve">
+    <value>1. {0}チャージは、ペイパルまたは口座振込でご利用いただけます。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_8" xml:space="preserve">
+    <value>保有{0}</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_13" xml:space="preserve">
+    <value>{0}出金申請時の注意事項</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_2" xml:space="preserve">
+    <value>{0}充電注意事項</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_7" xml:space="preserve">
+    <value>取引内容</value>
+  </data>
+  <data name="AlramMyPage_1_2_17" xml:space="preserve">
+    <value>OTP</value>
+  </data>
+  <data name="AlramMyPage_1_2_18" xml:space="preserve">
+    <value>携帯電話本人認証</value>
+  </data>
+  <data name="AlramMyPage_1_2_19" xml:space="preserve">
+    <value>口座本人認証</value>
+  </data>
+  <data name="Login_27" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Login_28" xml:space="preserve">
+    <value>PassWord</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_39" xml:space="preserve">
+    <value>1日の最高送金を超えました。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_22" xml:space="preserve">
+    <value>パンゲアトークンの出金は、5月27日(月)から可能です。</value>
+  </data>
+  <data name="TrustRequest_Alert_10" xml:space="preserve">
+    <value>満期前解約時利払いがされず、利子の150％が違約金として発生します。
+解約しますか？</value>
+  </data>
+  <data name="TrustRequest_Alert_11" xml:space="preserve">
+    <value>トラスト利払いが完了しました。</value>
+  </data>
+  <data name="TrustRequest_3" xml:space="preserve">
+    <value>利払い内訳</value>
+  </data>
+  <data name="TrustRequest_3_1" xml:space="preserve">
+    <value>利払い</value>
+  </data>
+  <data name="TrustRequest_3_2" xml:space="preserve">
+    <value>申請日</value>
+  </data>
+  <data name="TrustRequest_3_3" xml:space="preserve">
+    <value>有効期限</value>
+  </data>
+  <data name="TrustRequest_3_4" xml:space="preserve">
+    <value>利息支払日</value>
+  </data>
+  <data name="TrustRequest_3_5" xml:space="preserve">
+    <value>通貨</value>
+  </data>
+  <data name="TrustRequest_3_6" xml:space="preserve">
+    <value>量</value>
+  </data>
+  <data name="TrustRequest_3_7" xml:space="preserve">
+    <value>インタレスト</value>
+  </data>
+  <data name="TrustRequest_3_8" xml:space="preserve">
+    <value>総支給額</value>
+  </data>
+  <data name="TrustRequest_3_9" xml:space="preserve">
+    <value>申请状态</value>
+  </data>
+  <data name="TrustRequest_3_9_1" xml:space="preserve">
+    <value>満期</value>
+  </data>
+  <data name="TrustRequest_3_9_2" xml:space="preserve">
+    <value>申し込み完了</value>
+  </data>
+  <data name="TrustRequest_3_9_3" xml:space="preserve">
+    <value>解約</value>
+  </data>
+  <data name="TradingHistory_1_21" xml:space="preserve">
+    <value>Air Drop</value>
+  </data>
+  <data name="TrustRequest_Alert_12" xml:space="preserve">
+    <value>HECのイベント期間には、解約することができません。</value>
+  </data>
+  <data name="TrustRequest_Alert_13" xml:space="preserve">
+    <value>（解約不可期間：2019.07.01 ~ 2019.07.08 18:00)</value>
+  </data>
+  <data name="CoinTrading_Alert_52" xml:space="preserve">
+    <value>50 {0}以下は、購買(買収)できません。</value>
+  </data>
+  <data name="CoinTrading_Alert_53" xml:space="preserve">
+    <value>50 {0}以下は販売(売り渡し)できません。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_1" xml:space="preserve">
+    <value>{0}送金</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_10" xml:space="preserve">
+    <value>会員メール</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_11" xml:space="preserve">
+    <value>電話番号</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_12" xml:space="preserve">
+    <value>受けるが</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_13" xml:space="preserve">
+    <value>送金数量</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_14" xml:space="preserve">
+    <value>SMS認証</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_15" xml:space="preserve">
+    <value>送金申込日時</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_16" xml:space="preserve">
+    <value>会員ID</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_17" xml:space="preserve">
+    <value>会員名</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_18" xml:space="preserve">
+    <value>電話番号</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_19" xml:space="preserve">
+    <value>送金数量</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_2" xml:space="preserve">
+    <value>{0}取引所内送金注意事項</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_20" xml:space="preserve">
+    <value>状態</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_21" xml:space="preserve">
+    <value>送金日</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_3" xml:space="preserve">
+    <value>送金は、本人の会員資産で取引内のメンバーに送信がされます。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_4" xml:space="preserve">
+    <value>{0}入金受け会員は約30分間取引不可となります。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_5" xml:space="preserve">
+    <value>会員が誤って送金した場合所では責任を負いません。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_6" xml:space="preserve">
+    <value>保有{0}</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_7" xml:space="preserve">
+    <value>送金最低額</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_8" xml:space="preserve">
+    <value>送金限度</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_9" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_1" xml:space="preserve">
+    <value>会員が誤って送金した場合所では責任を負いません。
+当該会員に送金進行をしますか？</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_2" xml:space="preserve">
+    <value>確認がされてい</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_3" xml:space="preserve">
+    <value>会員が存在しません。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_4" xml:space="preserve">
+    <value>受けるがを入力してください</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_5" xml:space="preserve">
+    <value>SMS認証を完了してください</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_6" xml:space="preserve">
+    <value>残高が不足して</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_7" xml:space="preserve">
+    <value>{0}入金を受け取っ30分されず、送金ができません。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_8" xml:space="preserve">
+    <value>しばらくして、もう一度試してください。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_9" xml:space="preserve">
+    <value>受けるこれを確認してください。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_40" xml:space="preserve">
+    <value>銀行サービス時間ではありません。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_41" xml:space="preserve">
+    <value>(出国禁止のサービス不可時間:23:30~00:30)</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_42" xml:space="preserve">
+    <value>銀行サービス不可時間には出金ができません。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_43" xml:space="preserve">
+    <value>ボイスフィッシング詐欺といった変な出国禁止の防止に向けて3時間以内連続3回以上出国禁止申請時3時間後、出国禁止申請が可能です。</value>
+  </data>
+  <data name="ArbitrageRequestPop_1" xml:space="preserve">
+    <value>Arbitrage決済</value>
+  </data>
+  <data name="ArbitrageRequestPop_2" xml:space="preserve">
+    <value>Arbitrage決済後はキャンセル及び払い戻しができません。</value>
+  </data>
+  <data name="ArbitrageRequest_1" xml:space="preserve">
+    <value>Arbitrage</value>
+  </data>
+  <data name="ArbitrageRequest_1_1" xml:space="preserve">
+    <value>ㆍArbitrage は取引所に自身が保有している暗号化肺の一部を相場差益が一番多く出る他取引所の相場と比べて自由に取引できる取引です。</value>
+  </data>
+  <data name="ArbitrageRequest_1_2" xml:space="preserve">
+    <value>ㆍArbitrageは購買/販売を選択してリアルタイムで各取引所内の最高相場と最低相場による差益を見て取引をします。</value>
+  </data>
+  <data name="ArbitrageRequest_1_3" xml:space="preserve">
+    <value>ㆍ当該サービスは付加サービスであり,"HTS"付加サービス"Arbitrage"で取引を進めます。</value>
+  </data>
+  <data name="ArbitrageRequest_2_1" xml:space="preserve">
+    <value>Arbitrage 申請状態</value>
+  </data>
+  <data name="ArbitrageRequest_2_2" xml:space="preserve">
+    <value>Arbitrage</value>
+  </data>
+  <data name="ArbitrageRequest_2_3" xml:space="preserve">
+    <value>30日基準100,000 {0}</value>
+  </data>
+  <data name="Arbitrage_1" xml:space="preserve">
+    <value>Arbitrage (財政取引)</value>
+  </data>
+  <data name="Arbitrage_1_1" xml:space="preserve">
+    <value>ㆍArbitrageは,取引所に自身が保有している暗号化廃(BTC,ETH,PANGAEA)のうち,一部を相場差益が最も多い他取引所の相場と比べて自由に取引できる取引です。</value>
+  </data>
+  <data name="Arbitrage_1_2" xml:space="preserve">
+    <value>ㆍArbitrageは購買/販売を選択し,リアルタイムで各取引所内の最高相場と最低相場による差益を見て取引します。</value>
+  </data>
+  <data name="Arbitrage_1_3" xml:space="preserve">
+    <value>ㆍ当該サービスは付加サービスであり,"HTS &gt; 付加サービス &gt; Arbitrage"にて取引を進めます。</value>
+  </data>
+  <data name="Arbitrage_2" xml:space="preserve">
+    <value>取引選択</value>
+  </data>
+  <data name="Arbitrage_2_1" xml:space="preserve">
+    <value>購買</value>
+  </data>
+  <data name="Arbitrage_2_2" xml:space="preserve">
+    <value>販売</value>
+  </data>
+  <data name="Arbitrage_3_1" xml:space="preserve">
+    <value>取引所</value>
+  </data>
+  <data name="Arbitrage_3_2" xml:space="preserve">
+    <value>コインミョン</value>
+  </data>
+  <data name="Arbitrage_3_3" xml:space="preserve">
+    <value>保有{0}</value>
+  </data>
+  <data name="Arbitrage_3_4" xml:space="preserve">
+    <value>現在相場</value>
+  </data>
+  <data name="Arbitrage_3_5" xml:space="preserve">
+    <value>差益</value>
+  </data>
+  <data name="Arbitrage_4" xml:space="preserve">
+    <value>ㆍArbitrage 利用時注意事項</value>
+  </data>
+  <data name="Arbitrage_4_1" xml:space="preserve">
+    <value>ㆍArbitrage購買の場合,最も高い相場と最も低い相場の取引所が出力され,両取引所間の差益が出力されます。</value>
+  </data>
+  <data name="Arbitrage_4_2" xml:space="preserve">
+    <value>ㆍ最も低い相場の取引所としてArbitrage 購買が進んでおり,高い相場の取引所は比較参考用としてご利用ください。</value>
+  </data>
+  <data name="Arbitrage_4_3" xml:space="preserve">
+    <value>ㆍログインした取引所の相場とログインした取引所基準で相場差益が多く出る取引所が出力されます。</value>
+  </data>
+  <data name="Arbitrage_4_4" xml:space="preserve">
+    <value>ㆍ新しい場合,取引所は変更し続けることがありますので,該当取引所内の資産に留意して取引を進行してください。</value>
+  </data>
+  <data name="Arbitrage_4_5" xml:space="preserve">
+    <value>ㆍ該当事項を違反した場合に発生する不利益は取引所で責任を負いません。 取引前に必ず確認して進めてください。</value>
+  </data>
+  <data name="Arbitrage_5_1" xml:space="preserve">
+    <value>上記の内容を確認しました。</value>
+  </data>
+  <data name="Arbitrage_6_1" xml:space="preserve">
+    <value>種類</value>
+  </data>
+  <data name="Arbitrage_6_2" xml:space="preserve">
+    <value>取引所名</value>
+  </data>
+  <data name="Arbitrage_6_3" xml:space="preserve">
+    <value>締結時刻</value>
+  </data>
+  <data name="Arbitrage_6_4" xml:space="preserve">
+    <value>締結家</value>
+  </data>
+  <data name="Arbitrage_6_5" xml:space="preserve">
+    <value>締結金額</value>
+  </data>
+  <data name="Arbitrage_6_6" xml:space="preserve">
+    <value>手数料</value>
+  </data>
+  <data name="Arbitrage_SetMainExchange_1" xml:space="preserve">
+    <value>主取引所設定</value>
+  </data>
+  <data name="Arbitrage_SetMainExchange_1_1" xml:space="preserve">
+    <value>メイン取引所の設定とは?</value>
+  </data>
+  <data name="Arbitrage_SetMainExchange_1_2" xml:space="preserve">
+    <value>Arbitrage取引により発生した収益を指定取引所に自動振込みし,自由に出金できるようにするために設定する機能です。 ログインした取引所ではなく,他の取引所に主取引所の設定が可能です。</value>
+  </data>
+  <data name="Arbitrage_SetMainExchange_1_3" xml:space="preserve">
+    <value>主取引所</value>
+  </data>
+  <data name="Arbitrage_SetMainExchange_1_4" xml:space="preserve">
+    <value>ㆍ留意事項:主取引所未設定の際,ログインした取引所に主取引所が設定され,最初に登録後には変更できませんので,慎重に登録してください。</value>
+  </data>
+  <data name="Arbitrage_SetMainExchange_Alert_1" xml:space="preserve">
+    <value>主取引所の設定が完了しました。</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_1" xml:space="preserve">
+    <value>統合取引所への会員加入</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_1_1" xml:space="preserve">
+    <value>アビトリッジ統合取引所への加入</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_1_2" xml:space="preserve">
+    <value>取引所名</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_1_3" xml:space="preserve">
+    <value>加入可否</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_2_1" xml:space="preserve">
+    <value>ㆍ統合会員に加入すると,登録されたすべての取引所の相場別差益比較を通じてアビトリッジ機能を利用することができます。</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_2_2" xml:space="preserve">
+    <value>ログインしたIDで加入が処理されます。</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_2_3" xml:space="preserve">
+    <value>利用約款[必須]</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_Alert_1" xml:space="preserve">
+    <value>Arbitrageは有料サービスです。 
+付加サービスの申請を通じてアビトリッジへの加入を申請してください</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_Alert_2" xml:space="preserve">
+    <value>統合会員としてArbitrage 利用可能なすべての取引所に自動加入されます。 ログインしたIDで加入処理され,各サイトにログイン時のパスワードの設定および認証が必要です。 加入を進行しますか?</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_Alert_3" xml:space="preserve">
+    <value>会員加入を取り消しますか。 
+統合取引所の会員加入を進めない場合は,Arbitrage機能を正常に利用できません。</value>
+  </data>
+  <data name="Arbitrage_TradePop_1" xml:space="preserve">
+    <value>Arbitrage 実行</value>
+  </data>
+  <data name="Arbitrage_TradePop_1_1" xml:space="preserve">
+    <value>資産選択</value>
+  </data>
+  <data name="Arbitrage_TradePop_1_1_1" xml:space="preserve">
+    <value>現取引所</value>
+  </data>
+  <data name="Arbitrage_TradePop_1_1_2" xml:space="preserve">
+    <value>全体取引所</value>
+  </data>
+  <data name="Arbitrage_TradePop_1_2" xml:space="preserve">
+    <value>保有金額</value>
+  </data>
+  <data name="Arbitrage_TradePop_1_3" xml:space="preserve">
+    <value>取引所</value>
+  </data>
+  <data name="Arbitrage_TradePop_1_4" xml:space="preserve">
+    <value>現在相場</value>
+  </data>
+  <data name="Arbitrage_TradePop_1_5" xml:space="preserve">
+    <value>時</value>
+  </data>
+  <data name="Arbitrage_TradePop_2_1" xml:space="preserve">
+    <value>ㆍ保有金額すべてを利用して取引が行われます。</value>
+  </data>
+  <data name="Arbitrage_TradePop_2_2" xml:space="preserve">
+    <value>ㆍ取引収益はリアルタイムでの相場変化によって予想収益と異なる場合があります。</value>
+  </data>
+  <data name="Arbitrage_TradePop_2_3" xml:space="preserve">
+    <value>ㆍ取引を進行しますか。</value>
+  </data>
+  <data name="Arbitrage_TradePop_3_1" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="Arbitrage_TradePop_Alert_1" xml:space="preserve">
+    <value>取引を進行しますか。 
+一度取引された後に発生する不利益は取引所で責任を負いません。</value>
+  </data>
+  <data name="ArbitrageRequestPop_Alert_1" xml:space="preserve">
+    <value>決済手段を選択してください。</value>
+  </data>
+  <data name="ArbitrageRequestPop_Alert_2" xml:space="preserve">
+    <value>決済金額が不足します。</value>
+  </data>
+  <data name="ArbitrageRequestPop_Alert_3" xml:space="preserve">
+    <value>Arbitrage申請失敗しました。</value>
+  </data>
+  <data name="ArbitrageRequestPop_Alert_4" xml:space="preserve">
+    <value>Arbitrageを申請したメンバーです。</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_1_3_1" xml:space="preserve">
+    <value>登録</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_1_3_2" xml:space="preserve">
+    <value>未加入</value>
+  </data>
+  <data name="Arbitrage_Alert_1" xml:space="preserve">
+    <value>統合取引所に加入してください。</value>
+  </data>
+  <data name="Arbitrage_Term_1" xml:space="preserve">
+    <value>Arbitrage サービス利用約款</value>
+  </data>
+  <data name="Arbitrage_Term_10" xml:space="preserve">
+    <value>会員様が改正約款の適用に同意しないと明示した場合,取引所は改訂約款の内容を適用することはできず,その場合,会員は利用契約を解約することができます。 ただし,既存の約款を適用できない特別な事情がある場合には,取引所は利用契約を解約することができます。</value>
+  </data>
+  <data name="Arbitrage_Term_100" xml:space="preserve">
+    <value>解除条件</value>
+  </data>
+  <data name="Arbitrage_Term_101" xml:space="preserve">
+    <value>静止効力</value>
+  </data>
+  <data name="Arbitrage_Term_102" xml:space="preserve">
+    <value>サービス制限ログイン他サービス利用不可</value>
+  </data>
+  <data name="Arbitrage_Term_103" xml:space="preserve">
+    <value>-ID未確認</value>
+  </data>
+  <data name="Arbitrage_Term_104" xml:space="preserve">
+    <value>-ハッキング/詐欺事故の発生</value>
+  </data>
+  <data name="Arbitrage_Term_105" xml:space="preserve">
+    <value>-事故会員関連者(連絡先及び個人情報一致)</value>
+  </data>
+  <data name="Arbitrage_Term_106" xml:space="preserve">
+    <value>-サービス解約申請</value>
+  </data>
+  <data name="Arbitrage_Term_107" xml:space="preserve">
+    <value>-その他:管理者判断(正常なサービス進行に深刻な障害誘発時)</value>
+  </data>
+  <data name="Arbitrage_Term_108" xml:space="preserve">
+    <value>-停止事由の解決</value>
+  </data>
+  <data name="Arbitrage_Term_109" xml:space="preserve">
+    <value>ログイン以外の取引不可</value>
+  </data>
+  <data name="Arbitrage_Term_11" xml:space="preserve">
+    <value>第3条 (約款のほか準則) </value>
+  </data>
+  <data name="Arbitrage_Term_110" xml:space="preserve">
+    <value>ログイン制限</value>
+  </data>
+  <data name="Arbitrage_Term_111" xml:space="preserve">
+    <value>-パスワード連続エラー</value>
+  </data>
+  <data name="Arbitrage_Term_112" xml:space="preserve">
+    <value>-名義盗用と疑われる場合</value>
+  </data>
+  <data name="Arbitrage_Term_113" xml:space="preserve">
+    <value>-その他:管理者判断</value>
+  </data>
+  <data name="Arbitrage_Term_114" xml:space="preserve">
+    <value>-停止事由の解決</value>
+  </data>
+  <data name="Arbitrage_Term_115" xml:space="preserve">
+    <value>ログイン不可</value>
+  </data>
+  <data name="Arbitrage_Term_116" xml:space="preserve">
+    <value>●一部サービス制限</value>
+  </data>
+  <data name="Arbitrage_Term_117" xml:space="preserve">
+    <value>判断によって特定サービス以外の利用は問題ないと判断される場合,部分制限で処理することができる。</value>
+  </data>
+  <data name="Arbitrage_Term_118" xml:space="preserve">
+    <value>停止事由の解決</value>
+  </data>
+  <data name="Arbitrage_Term_119" xml:space="preserve">
+    <value>●特定サービス利用不可</value>
+  </data>
+  <data name="Arbitrage_Term_12" xml:space="preserve">
+    <value>取引所はサービスについて,この約款のほか,別途の告知事項,個別約款,個別同意事項,利用案内,運営政策,細部指針など(以下あわせて"細部指針"といいます)を定め,これを会員様に知らせるか,同意を得ることができ,"細部指針"の中で会員の同意を得た内容がこの約款と衝突する場合は,"細部指針"が優先的に適用されます。</value>
+  </data>
+  <data name="Arbitrage_Term_120" xml:space="preserve">
+    <value>第6章個人情報保護</value>
+  </data>
+  <data name="Arbitrage_Term_121" xml:space="preserve">
+    <value>第14条(個人情報の保護)</value>
+  </data>
+  <data name="Arbitrage_Term_122" xml:space="preserve">
+    <value>取引所は関係法令が定めるところにより,会員の個人情報を保護するために努めます。 会員様の個人情報はサービスの円滑な提供のため,会員が同意した目的と範囲内でのみ利用されます。 取引所は法令によったり会員が別途に同意しない限り、会員の個人情報を第3者に提供しない、これに対する詳しい事項は取引所の個人情報の処理方針で決めます。</value>
+  </data>
+  <data name="Arbitrage_Term_123" xml:space="preserve">
+    <value>第7枚損害賠償、免責条項および払い戻し方針</value>
+  </data>
+  <data name="Arbitrage_Term_124" xml:space="preserve">
+    <value>第15条(取引所の損害賠償責任)</value>
+  </data>
+  <data name="Arbitrage_Term_125" xml:space="preserve">
+    <value>取引所は,本約款に違反した取引を通じて発生した一切の事故に対して責任を負わず,取引所の故意または重大な過失がない限り,会員の過失により生じた紛争に対して責任を負いません。</value>
+  </data>
+  <data name="Arbitrage_Term_126" xml:space="preserve">
+    <value>第3者が権限なしに会員のアカウントを利用できることを知っていたり、容易に知ることができたのにもかかわらず、会員が、これを直ちに会社に知らせずに放置するか漏えい又は露出して損失が発生した部分について責任を負いません。</value>
+  </data>
+  <data name="Arbitrage_Term_127" xml:space="preserve">
+    <value>取引所が保安強化のために要求する追加的な保安措置を会員が正当な理由なく拒否し,発生した損害に対して取引所は責任を負いません。</value>
+  </data>
+  <data name="Arbitrage_Term_128" xml:space="preserve">
+    <value>取引所は会員の暗号化弊取引に一切関与しませんので,会員がArbitrageサービスを通じて得た投資上の損失に対して責任を負いません。</value>
+  </data>
+  <data name="Arbitrage_Term_129" xml:space="preserve">
+    <value>·会員は,アビトリッジサービスに利用する取引が投資収益を担保できないことを理解しており,取引所は会員がArbitrageサービスを通じて得た投資上の損失に対して責任を負いません。</value>
+  </data>
+  <data name="Arbitrage_Term_13" xml:space="preserve">
+    <value>本約款で定められない事項や解釈については,"細部指針"および関連法令または慣例によります。</value>
+  </data>
+  <data name="Arbitrage_Term_130" xml:space="preserve">
+    <value>取引所は会員様が特定の暗号化廃取引の使用可否や使用時点,使用頻度などの選択に一切関与せず,これによって得た投資上の損失に対して責任を負いません。</value>
+  </data>
+  <data name="Arbitrage_Term_131" xml:space="preserve">
+    <value>·会員はバグやエラーなどにより,取引不発,取引遅延などArbitrageサービスに瑕疵がある場合にも,その瑕疵により投資に収益が発生する場合と損失が生じる場合が全て発生しかねないことを理解しており,取引所はアビトリッジサービスの瑕疵により発生した投資損失に対して責任を負いません。</value>
+  </data>
+  <data name="Arbitrage_Term_132" xml:space="preserve">
+    <value>取引所は故意または重大な過失がない限り,本約款で定める売買規則を逸した取引を通じて発生した事故および会員の過失により会員間で発生した紛争に対して責任を負いません。</value>
+  </data>
+  <data name="Arbitrage_Term_133" xml:space="preserve">
+    <value>第16条(免責条項)</value>
+  </data>
+  <data name="Arbitrage_Term_134" xml:space="preserve">
+    <value>取引所が善良な管理者の注意義務を果たしたにもかかわらず,サービスを提供する当時,科学技術のレベルにアビトリッジサービスに生じた欠陥の存在を発見できない場合には,これにより生じた損害に対して責任を負わず,次の各号に該当する場合にも責任を負いません。</value>
+  </data>
+  <data name="Arbitrage_Term_135" xml:space="preserve">
+    <value>①展示、事変、天災地変またはこれに準ずる国家非常事態など、不可抗力的な場合</value>
+  </data>
+  <data name="Arbitrage_Term_136" xml:space="preserve">
+    <value>②会員の故意あるいは過失によりより損害が発生した場合</value>
+  </data>
+  <data name="Arbitrage_Term_137" xml:space="preserve">
+    <value>③電気通信事業法による乗って基幹通信事業者が提供する電気通信サービスに障害による場合</value>
+  </data>
+  <data name="Arbitrage_Term_138" xml:space="preserve">
+    <value>④取引所が直接提供するサービスではなく、提携会社などの第3者を利用して提供するサービスの場合、提携会社などの第3者の故意あるいは過失による場合、取引所は会員自身の帰責事由でサービスを利用しない場合には責任を支持できません。</value>
+  </data>
+  <data name="Arbitrage_Term_139" xml:space="preserve">
+    <value>取引所は故意又は重大な過失がない限り、メンバーの本約款および関連法令違反行為により、第3者に生じた損害については責任を支持できません。</value>
+  </data>
+  <data name="Arbitrage_Term_14" xml:space="preserve">
+    <value>第2枚サービス利用申込み及び承諾</value>
+  </data>
+  <data name="Arbitrage_Term_140" xml:space="preserve">
+    <value>第17条(代理及び保証の夫人)</value>
+  </data>
+  <data name="Arbitrage_Term_141" xml:space="preserve">
+    <value>取引所を通じて提供するデータ及び分析資料は,情報提供を目的とするものであり,暗号化廃取引を目的としません。</value>
+  </data>
+  <data name="Arbitrage_Term_142" xml:space="preserve">
+    <value>取引所は,暗号化廃取引に関する市場情報の適時性および正確性の維持のために常に最善を尽くしていますが,不可避な情報の誤りや漏れ,遅延の可能性があり得ます。</value>
+  </data>
+  <data name="Arbitrage_Term_143" xml:space="preserve">
+    <value>取引所は暗号化廃を販売したり購買しようとする会員を代理する権限を持っておらず,取引所のいかなる行為も会員の暗号化弊取引のための代理行為とはみなされません。</value>
+  </data>
+  <data name="Arbitrage_Term_144" xml:space="preserve">
+    <value>取引所は、会員間または会員と第3者間の紛争に関与する法的義務がなく、これと関連して、どのような責任も負いません。 ただし,これらの紛争の発生が取引所の帰責事由により生じた場合を除きます。</value>
+  </data>
+  <data name="Arbitrage_Term_145" xml:space="preserve">
+    <value>第18条(管轄裁判所や準拠法)</value>
+  </data>
+  <data name="Arbitrage_Term_146" xml:space="preserve">
+    <value>取引所と会員間で発生した紛争に関する訴訟は,提訴当時の会員の住所により,住所がない場合,居所を管轄する地方裁判所の専属管轄とします。 但し,提訴当時,会員の住所または居所が明確でない場合の管轄裁判所はソウル中央地方裁判所とします。</value>
+  </data>
+  <data name="Arbitrage_Term_147" xml:space="preserve">
+    <value>海外に住所や居所のある会員の場合,取引所と会員間で発生した紛争に関する訴訟は前項にもかかわらず,大韓民国ソウル中央地方裁判所を管轄裁判所とします。</value>
+  </data>
+  <data name="Arbitrage_Term_148" xml:space="preserve">
+    <value>サービス利用に関して,取引所と会員との間の訴訟には大韓民国法を適用します。</value>
+  </data>
+  <data name="Arbitrage_Term_149" xml:space="preserve">
+    <value>本約款は2019年07月15日から適用されます。</value>
+  </data>
+  <data name="Arbitrage_Term_15" xml:space="preserve">
+    <value>第4条 (利用契約の成立) </value>
+  </data>
+  <data name="Arbitrage_Term_16" xml:space="preserve">
+    <value>サービス加入を希望する利用者(以下"サービス申請者"という。)は,本約款の内容に同意した上で,サービスを受けることができます。 約款に同意することで,取引所と会員間の利用契約が締結されます。</value>
+  </data>
+  <data name="Arbitrage_Term_17" xml:space="preserve">
+    <value>取引所はサービス申請者の申請を受け入れることを原則とするが,下記の場合,取引所はサービス申請者のサービス申請を断ることができます。</value>
+  </data>
+  <data name="Arbitrage_Term_18" xml:space="preserve">
+    <value>1) 他人のメールアドレス、電話番号などの個人情報を利用してサービス申請をする場合</value>
+  </data>
+  <data name="Arbitrage_Term_19" xml:space="preserve">
+    <value>2) 虚偽の情報を記載したり、取引所が要求する会員情報をすべて記載していない場合</value>
+  </data>
+  <data name="Arbitrage_Term_2" xml:space="preserve">
+    <value>第1章総則</value>
+  </data>
+  <data name="Arbitrage_Term_20" xml:space="preserve">
+    <value>3) サービス申請者が満19歳未満の場合</value>
+  </data>
+  <data name="Arbitrage_Term_21" xml:space="preserve">
+    <value>4) の資金洗浄や犯罪収益隠匿など不当な目的でのサービスを利用しようとすることが、合理的に疑われる場合</value>
+  </data>
+  <data name="Arbitrage_Term_22" xml:space="preserve">
+    <value>5) 取引所の設備の不足、技術的問題の発生、その他の取引所の都合によりこれ以上の利用契約締結が会員にならないものと判断される場合</value>
+  </data>
+  <data name="Arbitrage_Term_23" xml:space="preserve">
+    <value>6) その他社会の安寧秩序またはコンソヤンの中を害する目的でのサービス申請をする場合</value>
+  </data>
+  <data name="Arbitrage_Term_24" xml:space="preserve">
+    <value>取引所は本人確認に必要な場合,関係法令に基づき,サービス申請者に専門機関による実名確認および本人認証を要請することができます。 取引所は,この際,個別サービスの利用度合いによって,サービス申請者に要求する個人情報提供および本人認証手段の程度およびレベルを異にすることができます。</value>
+  </data>
+  <data name="Arbitrage_Term_25" xml:space="preserve">
+    <value>サービス申請者が本条各号の要請に対する情報提供及び本人認証手続きを拒否して発生する不利益に対して,取引所は責任を負いません。</value>
+  </data>
+  <data name="Arbitrage_Term_26" xml:space="preserve">
+    <value>第5条 (サービス利用申込み及び承諾) </value>
+  </data>
+  <data name="Arbitrage_Term_27" xml:space="preserve">
+    <value>会員は,サービスの利用のために,取引暗証番号の設定など会社が要求する手続きに応じることにより,サービスの全部または一部に対する利用を申請することができます。 この際,取引所は会員様に対し,当該サービス利用のための追加的な本人確認手段を要求することができます。</value>
+  </data>
+  <data name="Arbitrage_Term_28" xml:space="preserve">
+    <value>取引所が会員の個別サービス利用を承諾した後も,本約款の違背する行為をする場合,会員のサービス全体または一部の利用を永久的または一時的に制限することができます。</value>
+  </data>
+  <data name="Arbitrage_Term_29" xml:space="preserve">
+    <value>第6条 (利用契約の解除、解約) </value>
+  </data>
+  <data name="Arbitrage_Term_3" xml:space="preserve">
+    <value>第1条 (目的) </value>
+  </data>
+  <data name="Arbitrage_Term_30" xml:space="preserve">
+    <value>会員は,いつでも取引所の顧客センターを通じて利用契約の解約を申し込むことができ,取引所は関係法令等が定めるところにより,直ちに処理しなければなりません。 但し,取引所は次の場合のいずれかに該当する場合,これを解決するために必要な最小の時間分のサービス解約手続きを遅延させることができます。</value>
+  </data>
+  <data name="Arbitrage_Term_31" xml:space="preserve">
+    <value>1) 現在の取引が進行中の場合</value>
+  </data>
+  <data name="Arbitrage_Term_32" xml:space="preserve">
+    <value>2) 捜査機関の要請または以上取引の探知を向け、サービス解約の手続きを迅速に処理することが困難な場合</value>
+  </data>
+  <data name="Arbitrage_Term_33" xml:space="preserve">
+    <value>3) 本条各号事由により取引所の損害賠償額を算定する必要があったり、これと関連した捜査機関を含めた規制監督機関の資料要請に備える必要がある場合</value>
+  </data>
+  <data name="Arbitrage_Term_34" xml:space="preserve">
+    <value>取引所は、第1項但書条項によりサービス解約の手続きを遅延する場合にも会員のログイン等を含めたアカウントの使用を中止(以下"アカウント停止")することができます。</value>
+  </data>
+  <data name="Arbitrage_Term_35" xml:space="preserve">
+    <value>取引所は次の各号に該当する場合,会員との利用契約を解約することができます。 ただし、第8号の場合、取引所が会員に7日の期間を定め、違反行為の是正を要求できる、それでもかかわらず、是正しない場合、契約を解約することができます。</value>
+  </data>
+  <data name="Arbitrage_Term_36" xml:space="preserve">
+    <value>1) 名前、携帯電話番号、銀行口座など他人の個人情報を盗用、使用して加入する場合</value>
+  </data>
+  <data name="Arbitrage_Term_37" xml:space="preserve">
+    <value>2) 他人のハンドルネーム (ID) 、暗証番号などを盗用、または貸与した場合</value>
+  </data>
+  <data name="Arbitrage_Term_38" xml:space="preserve">
+    <value>3) その他の加入した会員の会員情報と実際のアカウントを利用する人の個人情報が異なる場合</value>
+  </data>
+  <data name="Arbitrage_Term_39" xml:space="preserve">
+    <value>4) 1人の会員が複数のアカウントを使用する場合</value>
+  </data>
+  <data name="Arbitrage_Term_4" xml:space="preserve">
+    <value>本約款は,株式会社ファクグローバルで(以下取引所)提供するArbitrage関連諸サービス(以下:サービス)の利用条件および手続きに関する取引所と会員間の権利義務および責任事項,その他必要な事項を規定することを目的とします。</value>
+  </data>
+  <data name="Arbitrage_Term_40" xml:space="preserve">
+    <value>5) 会員が満19歳未満の場合</value>
+  </data>
+  <data name="Arbitrage_Term_41" xml:space="preserve">
+    <value>6) 不法資金洗浄や犯罪収益隠匿など不当な目的でのサービスを利用する場合</value>
+  </data>
+  <data name="Arbitrage_Term_42" xml:space="preserve">
+    <value>7) Arbitrageを利用して犯罪に値する行為をする場合</value>
+  </data>
+  <data name="Arbitrage_Term_43" xml:space="preserve">
+    <value>8) サービス利用時、第3者のアカウントを代わりに運営する行為、または広報行為をする場合</value>
+  </data>
+  <data name="Arbitrage_Term_44" xml:space="preserve">
+    <value>9) 会員が第8条を違反して取引所、または第3者に財産上の損害をかけるようにする場合</value>
+  </data>
+  <data name="Arbitrage_Term_45" xml:space="preserve">
+    <value>10) 取引所、または第3者の知的財産権を侵害する場合</value>
+  </data>
+  <data name="Arbitrage_Term_46" xml:space="preserve">
+    <value>11) 政府及び関係機関の方針、暗号通貨取引を規律する法令の変更,又はこれを遵守するために必要な取引所のサービス政策の変更によって該当メンバーが会員としての資格要件を順守しないようになったケース</value>
+  </data>
+  <data name="Arbitrage_Term_47" xml:space="preserve">
+    <value>第7条 (サービスの拒否及び有報) </value>
+  </data>
+  <data name="Arbitrage_Term_48" xml:space="preserve">
+    <value>取引所は下記のような場合,お客様のサービス申請を承諾しない場合があり,特に未成年者または制限能力者はサービスを申し込むことができません。</value>
+  </data>
+  <data name="Arbitrage_Term_49" xml:space="preserve">
+    <value>1) 取引所が、会員のアカウントを削除した場合</value>
+  </data>
+  <data name="Arbitrage_Term_5" xml:space="preserve">
+    <value>第2条 (約款の明示、説明と改訂) </value>
+  </data>
+  <data name="Arbitrage_Term_50" xml:space="preserve">
+    <value>2) 会員が他人の名義やメールアドレスなど個人情報を利用してアカウントを生成しようとする場合</value>
+  </data>
+  <data name="Arbitrage_Term_51" xml:space="preserve">
+    <value>3) サービス申請時に必要な情報を入力しなかったり、虚偽の情報を入力した場合</value>
+  </data>
+  <data name="Arbitrage_Term_52" xml:space="preserve">
+    <value>4) 会員の居住地で効力がある大韓民国のほかの法律によって、本サービスの利用行為が該当法律の違反を構成したり、構成する顕著な危険がある場合</value>
+  </data>
+  <data name="Arbitrage_Term_53" xml:space="preserve">
+    <value>5) 未成年者または制限能力者がサービス申請したことが確認される場合</value>
+  </data>
+  <data name="Arbitrage_Term_54" xml:space="preserve">
+    <value>6) 会員がサービスを利用する過程で大韓民国の法令を違反したことが確認された場合</value>
+  </data>
+  <data name="Arbitrage_Term_55" xml:space="preserve">
+    <value>7) 電気通信金融詐欺などの道具として活用されたり、電気通信金融詐欺などによる被害禁苑が振込、または出国禁止になったことが確認された場合</value>
+  </data>
+  <data name="Arbitrage_Term_56" xml:space="preserve">
+    <value>8) 会員の申請に伴うサービス申請となったにもかかわらず脱退を申請したり,退会処理が完了したにもかかわらず同一の勘定を申請するなどの場合</value>
+  </data>
+  <data name="Arbitrage_Term_57" xml:space="preserve">
+    <value>9) 会員の個人情報が流出されたり、流出されたものと判断される場合</value>
+  </data>
+  <data name="Arbitrage_Term_58" xml:space="preserve">
+    <value>10) 会員がサービスを利用する過程で発生した会員の不法行為により、取引所に損害が発生した場合</value>
+  </data>
+  <data name="Arbitrage_Term_59" xml:space="preserve">
+    <value>11) 大韓民国政府及び傘下機関の政策の新設、変更、廃止などによって取引所が新規サービスを受けることができない場合</value>
+  </data>
+  <data name="Arbitrage_Term_6" xml:space="preserve">
+    <value>本約款の内容は,取引所のサービス申請関連サイトに掲示したり,その他の方法で利用者に告知したり,利用者がサービスを申し込んだりしながら,この約款に同意することによって効力が発生します。</value>
+  </data>
+  <data name="Arbitrage_Term_60" xml:space="preserve">
+    <value>12) 会員のサービス申請を承諾する取引所の行為が大韓民国の法律違反行為と認識されるほどの顕著な恐れがある場合</value>
+  </data>
+  <data name="Arbitrage_Term_61" xml:space="preserve">
+    <value>会員が第1項各号のいずれかに違反してサービス申請したものと判明されたときは、取引所は直ちに会員のサービス利用を中断するなどの適切な制限をすることができます。</value>
+  </data>
+  <data name="Arbitrage_Term_62" xml:space="preserve">
+    <value>取引所は下記の場合,会員様のサービス申請にもかかわらず,会員様のサービス申請を留保することができます。</value>
+  </data>
+  <data name="Arbitrage_Term_63" xml:space="preserve">
+    <value>1) 提供サービス設備容量に現実的な余裕がない場合</value>
+  </data>
+  <data name="Arbitrage_Term_64" xml:space="preserve">
+    <value>2) サービス提供のための技術的な部分に問題があると判断される場合</value>
+  </data>
+  <data name="Arbitrage_Term_65" xml:space="preserve">
+    <value>3) その他の取引所が財政的・技術的に留保が必要と認める場合</value>
+  </data>
+  <data name="Arbitrage_Term_66" xml:space="preserve">
+    <value>第3枚の会員の義務</value>
+  </data>
+  <data name="Arbitrage_Term_67" xml:space="preserve">
+    <value>第8条 (会員ID及びパスワード管理に対する会員の義務) </value>
+  </data>
+  <data name="Arbitrage_Term_68" xml:space="preserve">
+    <value>1) 会員は自分のハンドルネーム (IDと暗証番号などを他人が知り、容易に推測できないように管理する責任があります。 取引所に故意または重大な過失がない限り,会員に付与されたIDとパスワード管理ホール,不正使用によって発生する結果に対する責任は会員様にあります。</value>
+  </data>
+  <data name="Arbitrage_Term_69" xml:space="preserve">
+    <value>2) 会員は自分のアカウント、ハンドルネーム (ID) 、暗証番号、他の個人情報が不正に使用された事実を知りうる場合は必ず取引所にその事実を通知して取引所の案内に従わなければなりません。</value>
+  </data>
+  <data name="Arbitrage_Term_7" xml:space="preserve">
+    <value>取引所は"約款の規制に関する法律","情報通信網利用促進及び情報保護などに関する法律"など関連法に違反しない範囲でこの約款を改正することができます。</value>
+  </data>
+  <data name="Arbitrage_Term_70" xml:space="preserve">
+    <value>第2項の場合に該当メンバーが取引所にその事実を通知しなかったり、通知した場合にも取引所の案内に従わず、発生した不利益について取引所は責任を負わないです。</value>
+  </data>
+  <data name="Arbitrage_Term_71" xml:space="preserve">
+    <value>第9条 (Arbitrage利用に対する会員の義務) </value>
+  </data>
+  <data name="Arbitrage_Term_72" xml:space="preserve">
+    <value>会員は,Arbitrageの利用において,本約款を含む取引所の細部指針,関係法令及び/又はその他の公序良俗に反する行為をしてはいけません。</value>
+  </data>
+  <data name="Arbitrage_Term_73" xml:space="preserve">
+    <value>第10条 (譲渡及び質権設定の禁止) </value>
+  </data>
+  <data name="Arbitrage_Term_74" xml:space="preserve">
+    <value>会員は自分の勘定を他人に譲渡したり,それに基づいて取引所に対して有する権利を他人に譲渡することはできません。</value>
+  </data>
+  <data name="Arbitrage_Term_75" xml:space="preserve">
+    <value>会員は,取引所の同意なくして,その勘定,それに基づいて取引所に対して有する権利について質権を設定することはできません。</value>
+  </data>
+  <data name="Arbitrage_Term_76" xml:space="preserve">
+    <value>第4枚サービス利用総則</value>
+  </data>
+  <data name="Arbitrage_Term_77" xml:space="preserve">
+    <value>第11条 (サービスの種類) </value>
+  </data>
+  <data name="Arbitrage_Term_78" xml:space="preserve">
+    <value>取引所は会員様にArbitrage関連(取引所相場確認,Arbitrage関連サービスなど)サービスを提供します。 但し,取引所が提供するサービスの種類は取引所の事情により随時変更されることがあり,提供されるサービスに対する著作権および知的財産権は取引所に帰属されます。</value>
+  </data>
+  <data name="Arbitrage_Term_79" xml:space="preserve">
+    <value>取引所はサービスに関して会員様に取引所が定めた利用条件に従ってArbitrageシステムサービス利用ツールだけを付与し,これを活用した類似サービス提供及び商業的活動をすることができません。</value>
+  </data>
+  <data name="Arbitrage_Term_8" xml:space="preserve">
+    <value>取引所が約款を改正する場合には適用日及び改正の理由を明示して現行の約款とともに取引所サイトの初期画面やポップアップ画面または公示事項とその適用日7日以前から告知します。 </value>
+  </data>
+  <data name="Arbitrage_Term_80" xml:space="preserve">
+    <value>取引所は利用者に下記のようなコンテンツ利用サービスを提供します。</value>
+  </data>
+  <data name="Arbitrage_Term_81" xml:space="preserve">
+    <value>1) Arbitrageシステム</value>
+  </data>
+  <data name="Arbitrage_Term_82" xml:space="preserve">
+    <value>2) Arbitrage関連サービス (住居レソの選択など) </value>
+  </data>
+  <data name="Arbitrage_Term_83" xml:space="preserve">
+    <value>3) その他の取引所が独自開発したり違うんレソとの協力を通じて提供するコンテンツ</value>
+  </data>
+  <data name="Arbitrage_Term_84" xml:space="preserve">
+    <value>4) 各取引所別統合の会員加入処理機能</value>
+  </data>
+  <data name="Arbitrage_Term_85" xml:space="preserve">
+    <value>第5枚Arbitrage関連サービス利用</value>
+  </data>
+  <data name="Arbitrage_Term_86" xml:space="preserve">
+    <value>第12条 (暗号通貨Arbitrageなど) </value>
+  </data>
+  <data name="Arbitrage_Term_87" xml:space="preserve">
+    <value>取引所は暗号通貨 Arbitrage に関して次のようなサービスを提供します。</value>
+  </data>
+  <data name="Arbitrage_Term_88" xml:space="preserve">
+    <value>時勢確認サービス</value>
+  </data>
+  <data name="Arbitrage_Term_89" xml:space="preserve">
+    <value>Arbitrage 買収,売り込みサービス</value>
+  </data>
+  <data name="Arbitrage_Term_9" xml:space="preserve">
+    <value>取引所が前項により改正約款を発表し、会員に7日間の期間内に意思表示をしなければ意思表示が表明されたものと見なすという意味を扱う別の通知及び明確に告知したことも会員が明示的に拒否の意思表示をしない場合、会員が開廷約款に同意したものとみなします。</value>
+  </data>
+  <data name="Arbitrage_Term_90" xml:space="preserve">
+    <value>取引内訳照会サービス</value>
+  </data>
+  <data name="Arbitrage_Term_91" xml:space="preserve">
+    <value>その他上記サービスに関するサービス</value>
+  </data>
+  <data name="Arbitrage_Term_92" xml:space="preserve">
+    <value>1) 取引所が提供するArbitrageサービスを通じて、暗号通貨を売りまたは買収しようとする会員は取引所が提供する有料サービスを利用して取引をしなければなりません。 決済コスト:10万PTCまたはこれに相応する取引所で取引されている (BTC、ETH、BCH、XRP) コインで決済可能</value>
+  </data>
+  <data name="Arbitrage_Term_93" xml:space="preserve">
+    <value>2) 取引所は会員と会員の間の取引を仲介せず、会員が取引所で他人と暗号通貨をArbitrageできるようにするサービスのみを提供します。 取引所は,会員がサービスを利用する取引所での暗号化弊取引の具体的な内容について,会員が設定した項目以外には知りえず,当該取引を変更したり,キャンセルすることはできません。</value>
+  </data>
+  <data name="Arbitrage_Term_94" xml:space="preserve">
+    <value>3) 会員は取引所の案内に従って、自分がアカウントを保有している取引所でサービスを実行できます。 会員様がサービスを行っているところにつきましては,取引所が取引所の案内に従っていません。</value>
+  </data>
+  <data name="Arbitrage_Term_95" xml:space="preserve">
+    <value>4) 暗号通貨Arbitrageは取引が起きた後には変更したり、キャンセルできません。</value>
+  </data>
+  <data name="Arbitrage_Term_96" xml:space="preserve">
+    <value>5) 会員は各取引所別統合会員加入が完了されていないArbitrage取引が可能です。</value>
+  </data>
+  <data name="Arbitrage_Term_97" xml:space="preserve">
+    <value>第13条 (サービスの利用制限) </value>
+  </data>
+  <data name="Arbitrage_Term_98" xml:space="preserve">
+    <value>分類</value>
+  </data>
+  <data name="Arbitrage_Term_99" xml:space="preserve">
+    <value>事由を停止する。</value>
+  </data>
+  <data name="Arbitrage_TradePop_Alert_2" xml:space="preserve">
+    <value>保有金額がありません。</value>
+  </data>
+  <data name="Arbitrage_TradePop_Alert_3" xml:space="preserve">
+    <value>保有数量がありません。</value>
+  </data>
+  <data name="CertifyMyPage_4_8" xml:space="preserve">
+    <value>QRスキャン</value>
+  </data>
+  <data name="CertifyMyPage_4_9" xml:space="preserve">
+    <value>直接入力</value>
+  </data>
+  <data name="MemberInfo_2_12" xml:space="preserve">
+    <value>形式選択</value>
+  </data>
+  <data name="MemberInfo_2_13" xml:space="preserve">
+    <value>国家選択</value>
+  </data>
+  <data name="MemberInfo_Pop_38" xml:space="preserve">
+    <value>生年月日の形式を選んでください。</value>
+  </data>
+  <data name="ArbitrageRequest_2_4" xml:space="preserve">
+    <value>使用中</value>
+  </data>
+  <data name="ArbitrageRequest_2_5" xml:space="preserve">
+    <value>利用期間</value>
+  </data>
+  <data name="Arbitrage_6_7" xml:space="preserve">
+    <value>差益(手数料込み)</value>
+  </data>
+  <data name="Arbitrage_3_6" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="Arbitrage_4_6" xml:space="preserve">
+    <value>ㆍ統合会員加入後,相場と差益出力は直ちに適用されないことがあります。</value>
+  </data>
+  <data name="Arbitrage_4_7" xml:space="preserve">
+    <value>ㆍ買収,売りも進行時,締結完了後に出力されますが,多少時間がかかることがあります。 プシが来ているか必ず確認してください。</value>
+  </data>
+  <data name="Arbitrage_4_8" xml:space="preserve">
+    <value>ㆍArbitrageの買収,売りも取引時に完了していない買収,売り渡しの場合,買い取り,売りも行った取引所に未締結で取引が完了していない状態で残っています。</value>
+  </data>
+  <data name="Arbitrage_1_4" xml:space="preserve">
+    <value>ㆍArbitrageサービスは有料サービスですので,より慎重に考えてから進行してください。</value>
+  </data>
+  <data name="Arbitrage_Alert_2" xml:space="preserve">
+    <value>Arbitrage取引が行われました。</value>
+  </data>
+  <data name="Arbitrage_Alert_3" xml:space="preserve">
+    <value>Arbitrage取引が締結完了されました。
+下段のArbitrage内訳で締結された内訳を確認してください。</value>
+  </data>
+  <data name="Arbitrage_Alert_4" xml:space="preserve">
+    <value>Arbitrage取引が実行されましたが、該当の相場で締結量が足りなくて取引が完了していません。</value>
+  </data>
+  <data name="Arbitrage_Alert_5" xml:space="preserve">
+    <value>Arbitrage取引がに部分締結で取引されました。
+完了した内訳は下段のArbitrage内訳をご参考ください。
+締結されていない一部金額はにてご確認ください。</value>
+  </data>
+  <data name="Arbitrage_Alert_6" xml:space="preserve">
+    <value>Arbitrage取引が実行されましたが、該当の相場で締結量が足りなくて取引が完了していません。</value>
+  </data>
+  <data name="Arbitrage_Alert_7" xml:space="preserve">
+    <value>会員様はアビトゥリジ取り引きが不可能です。
+お客様センターにお問い合わせください。</value>
+  </data>
+</root>

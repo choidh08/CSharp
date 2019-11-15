@@ -1,0 +1,471 @@
+﻿<UserControl x:Class="coinBlock.Views.MyPage.CertifyMyPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"              
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
+             xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+             xmlns:localization="clr-namespace:coinBlock.Localization"
+             xmlns:ViewModels="clr-namespace:coinBlock.ViewModels.MyPage"
+             mc:Ignorable="d"
+             DataContext="{dxmvvm:ViewModelSource Type=ViewModels:CertifyMyPageViewModel}"
+             d:DesignHeight="1300" d:DesignWidth="1010">
+    <dxmvvm:Interaction.Behaviors>
+        <dxmvvm:DispatcherService DispatcherPriority="Normal"  />
+        <dxmvvm:EventToCommand EventName="Loaded" Command="{Binding LoadedCommand}"/>
+        <dxmvvm:EventToCommand EventName="Unloaded" Command="{Binding UnLoadedCommand}"/>
+    </dxmvvm:Interaction.Behaviors>
+    <dx:LoadingDecorator IsSplashScreenShown="{Binding IsBusy}" OwnerLock="InputOnly" dx:ThemeManager.ThemeName="MetropolisLight">
+        <dx:LoadingDecorator.SplashScreenTemplate>
+            <DataTemplate>
+                <dx:WaitIndicator DeferedVisibility="True" Content="Requesting data transfer.."/>
+            </DataTemplate>
+        </dx:LoadingDecorator.SplashScreenTemplate>
+        <ScrollViewer>
+            <dxlc:LayoutControl Orientation="Vertical" ScrollViewer.VerticalScrollBarVisibility="Visible" StretchContentVertically="False" Margin="-9" ScrollBars="None">
+                <dxlc:LayoutGroup VerticalAlignment="Top" Margin="0,5,0,0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Border Grid.Row="0">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Lv. 1" Style="{StaticResource Header_3}" Foreground="#0090d5"/>
+                                <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_1}" Style="{StaticResource Header_3}" />
+                            </StackPanel>
+                        </Border>
+                        <Border Grid.Row="1" Margin="0,10,0,20" BorderBrush="#c3c3e3" BorderThickness="0.5" Height="30">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="135"/>
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Border Grid.Column="0" Style="{StaticResource Border_Line_2_R}">
+                                    <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_1_1}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="1" Style="{StaticResource Border_Line_1}">
+                                    <TextBlock Text="{Binding userEmail}" Style="{StaticResource Content_L}" />
+                                </Border>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </dxlc:LayoutGroup>
+
+                <!-- Google OTP-->
+                <dxlc:LayoutGroup VerticalAlignment="Top" Margin="0,10,0,0" Orientation="Vertical">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Border  Grid.Row="0">
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
+                                <TextBlock Text="Lv. 2" Style="{StaticResource Header_3}" Foreground="#0090d5"/>
+                                <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_4}" Style="{StaticResource Header_3}" />
+                            </StackPanel>
+                        </Border>
+                        <Border Grid.Row="1" Margin="0,10,0,0" BorderBrush="#c3c3e3" BorderThickness="0.5" Height="184">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition Width="157"/>
+                                </Grid.ColumnDefinitions>
+                                <Border Grid.Column="0" Background="#ececec">
+                                    <StackPanel Margin="15,15,0,15" VerticalAlignment="Center">
+                                        <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_4_1}" Style="{StaticResource Content_L}" Margin="0,0,0,5"/>
+                                        <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_4_2}" Style="{StaticResource Content_L}" Margin="0,0,0,2"/>
+                                        <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_4_3}" Style="{StaticResource Content_L}"  Margin="0,0,0,2"/>
+                                        <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_4_4}" Style="{StaticResource Content_L}"  Margin="0,0,0,2"/>
+                                        <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_4_5}" Style="{StaticResource Content_L}"  Margin="0,0,0,5"/>
+                                        <TextBlock Text="{x:Static localization:Resource.Common_Alert_26}" Style="{StaticResource Header_3}" Visibility="{Binding useYn}"/>
+                                        <StackPanel Orientation="Horizontal" Visibility="{Binding certifyStep2Visible}">
+                                            <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_4_6}" Style="{StaticResource Content_L}" Margin="0,0,10,0" />
+                                            <dxe:TextEdit Text="{Binding otpNumber}" Width ="135" Height="23"/>
+                                            <Button Width="80" Height="25" Cursor="Hand" HorizontalAlignment="Center" Command="{Binding CmdSetGoogleOTPCommand}" Margin="5,0,0,0">
+                                                <Button.Style>
+                                                    <Style TargetType="{x:Type Button}">
+                                                        <Setter Property="Template">
+                                                            <Setter.Value>
+                                                                <ControlTemplate TargetType="{x:Type Button}">
+                                                                    <Grid>
+                                                                        <Image Name="btnImg" Source="{Binding btn_regist_otp, TargetNullValue={x:Null}}"/>
+                                                                    </Grid>
+                                                                    <ControlTemplate.Triggers>
+                                                                        <Trigger Property="IsMouseOver" Value="True">
+                                                                            <Setter Property="Source" TargetName="btnImg" Value="{Binding btn_regist_otp_on}"/>
+                                                                        </Trigger>
+                                                                    </ControlTemplate.Triggers>
+                                                                </ControlTemplate>
+                                                            </Setter.Value>
+                                                        </Setter>
+                                                    </Style>
+                                                </Button.Style>
+                                            </Button>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" Visibility="{Binding changeStep2Visible}">
+                                            <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_4_7}" Style="{StaticResource Content_L}"/>
+                                            <Button Width="75" Height="24" Cursor="Hand" HorizontalAlignment="Center" Command="{Binding CmdEditGoogleOtpCommand}" Margin="5,0,0,0">
+                                                <Button.Style>
+                                                    <Style TargetType="{x:Type Button}">
+                                                        <Setter Property="Template">
+                                                            <Setter.Value>
+                                                                <ControlTemplate TargetType="{x:Type Button}">
+                                                                    <Grid>
+                                                                        <Image Name="btnImg" Source="{Binding btn_cert_change, TargetNullValue={x:Null}}"/>
+                                                                    </Grid>
+                                                                    <ControlTemplate.Triggers>
+                                                                        <Trigger Property="IsMouseOver" Value="True">
+                                                                            <Setter Property="Source" TargetName="btnImg" Value="{Binding btn_cert_change_on}"/>
+                                                                        </Trigger>
+                                                                    </ControlTemplate.Triggers>
+                                                                </ControlTemplate>
+                                                            </Setter.Value>
+                                                        </Setter>
+                                                    </Style>
+                                                </Button.Style>
+                                            </Button>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" Visibility="{Binding emailCertVisible}" Margin="0,5,0,0">
+                                            <TextBlock Text="{x:Static localization:Resource.WithdrawDepositWithdraw_1_12}" Style="{StaticResource Content_L}" Margin="0,0,10,0" />
+                                            <dxe:TextEdit Text="{Binding emailNumber}" Width ="135" Height="23"/>
+                                            <StackPanel Orientation="Horizontal" Margin="5,0,0,0" Visibility="{Binding emailGoCertVisible}">
+                                                <Button Width="104" Height="23" Cursor="Hand" HorizontalAlignment="Center" Command="{Binding CmdEditEmailCommand}">
+                                                    <Button.Style>
+                                                        <Style TargetType="{x:Type Button}">
+                                                            <Setter Property="Template">
+                                                                <Setter.Value>
+                                                                    <ControlTemplate TargetType="{x:Type Button}">
+                                                                        <Grid>
+                                                                            <Image Name="btnImg" Source="{Binding btn_cert_request_color, TargetNullValue={x:Null}}"/>
+                                                                        </Grid>
+                                                                        <ControlTemplate.Triggers>
+                                                                            <Trigger Property="IsMouseOver" Value="True">
+                                                                                <Setter Property="Source" TargetName="btnImg" Value="{Binding btn_cert_request_color_on}"/>
+                                                                            </Trigger>
+                                                                        </ControlTemplate.Triggers>
+                                                                    </ControlTemplate>
+                                                                </Setter.Value>
+                                                            </Setter>
+                                                        </Style>
+                                                    </Button.Style>
+                                                </Button>
+                                            </StackPanel>
+
+                                            <StackPanel Orientation="Horizontal" Visibility="{Binding emailReCertVisible}">
+                                                <Button Width="90" Height="23" Cursor="Hand" HorizontalAlignment="Center" Command="{Binding CmdSendEmailCommand}" Margin="5,0,0,0">
+                                                    <Button.Style>
+                                                        <Style TargetType="{x:Type Button}">
+                                                            <Setter Property="Template">
+                                                                <Setter.Value>
+                                                                    <ControlTemplate TargetType="{x:Type Button}">
+                                                                        <Grid>
+                                                                            <Image Name="btnImg" Source="{Binding btn_cert_resend_color, TargetNullValue={x:Null}}"/>
+                                                                        </Grid>
+                                                                        <ControlTemplate.Triggers>
+                                                                            <Trigger Property="IsMouseOver" Value="True">
+                                                                                <Setter Property="Source" TargetName="btnImg" Value="{Binding btn_cert_resend_color_on}"/>
+                                                                            </Trigger>
+                                                                        </ControlTemplate.Triggers>
+                                                                    </ControlTemplate>
+                                                                </Setter.Value>
+                                                            </Setter>
+                                                        </Style>
+                                                    </Button.Style>
+                                                </Button>
+                                                <Button Width="100" Height="23" Cursor="Hand" HorizontalAlignment="Center" Command="{Binding CmdCertEmailCommand}" Margin="5,0,0,0">
+                                                    <Button.Style>
+                                                        <Style TargetType="{x:Type Button}">
+                                                            <Setter Property="Template">
+                                                                <Setter.Value>
+                                                                    <ControlTemplate TargetType="{x:Type Button}">
+                                                                        <Grid>
+                                                                            <Image Name="btnImg" Source="{Binding btn_cert_confirm_color, TargetNullValue={x:Null}}"/>
+                                                                        </Grid>
+                                                                        <ControlTemplate.Triggers>
+                                                                            <Trigger Property="IsMouseOver" Value="True">
+                                                                                <Setter Property="Source" TargetName="btnImg" Value="{Binding btn_cert_confirm_color_on}"/>
+                                                                            </Trigger>
+                                                                        </ControlTemplate.Triggers>
+                                                                    </ControlTemplate>
+                                                                </Setter.Value>
+                                                            </Setter>
+                                                        </Style>
+                                                    </Button.Style>
+                                                </Button>
+                                            </StackPanel>
+
+                                        </StackPanel>
+                                    </StackPanel>
+
+                                </Border>
+                                <Border Grid.Column="1" Background="#ececec" >
+                                    <Grid Visibility="{Binding certifyStep2Visible}">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="25"/>
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                            <RadioButton IsChecked="{Binding bQrCode}" Command="{Binding CmdChangeOtpCertifyCommand}" Content="{x:Static localization:Resource.CertifyMyPage_4_8}" Margin="0,0,10,0"/>
+                                            <RadioButton IsChecked="{Binding bDirectWrite}" Command="{Binding CmdChangeOtpCertifyCommand}" Content="{x:Static localization:Resource.CertifyMyPage_4_9}" />
+                                        </StackPanel>
+                                        <Image Grid.Row="1" Source="{Binding qrCodeUrl}" Visibility="{Binding qrCodeVisible}" Width="152" Height="152" HorizontalAlignment="Left"/>
+                                        <TextBlock Grid.Row="1" Text="{Binding encodeKey}" Visibility="{Binding encodeKeyVisible}" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="14" TextWrapping="Wrap"/>
+                                    </Grid>
+                                </Border>
+                            </Grid>
+                        </Border>
+                    </Grid>
+
+                    <Border BorderBrush="#d8d8d8" BorderThickness="1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50"/>
+                                <RowDefinition Height='205'/>
+                                <RowDefinition Height="50"/>
+                            </Grid.RowDefinitions>
+                            <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4">
+                                <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_4_1}" Style="{StaticResource Content_L}"/>
+                            </Border>
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Image Source="{Binding opt_img01}" Width="187" Height="187" VerticalAlignment="Top"/>
+                            </Border>
+                            <Border Grid.Column="1" Grid.Row="1">
+                                <Image Source="{Binding opt_img02}" Width="187" Height="187" VerticalAlignment="Top"/>
+                            </Border>
+                            <Border Grid.Column="2" Grid.Row="1">
+                                <Image Source="{Binding opt_img03}" Width="187" Height="187" VerticalAlignment="Top"/>
+                            </Border>
+                            <Border Grid.Column="3" Grid.Row="1">
+                                <Image Source="{Binding opt_img04}" Width="187" Height="187" VerticalAlignment="Top"/>
+                            </Border>
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Grid Margin="10,0,10,0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="18"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Border Grid.Column="0">
+                                        <Image Source="/Images/img_num_1.png" VerticalAlignment="Top"/>
+                                    </Border>
+                                    <Border Grid.Column="1">
+                                        <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_4_2}" Style="{StaticResource Content_L}" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                    </Border>
+                                </Grid>
+                            </Border>
+                            <Border Grid.Column="1" Grid.Row="2">
+                                <Grid Margin="10,0,10,0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="18"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Border Grid.Column="0">
+                                        <Image Source="/Images/img_num_2.png" VerticalAlignment="Top"/>
+                                    </Border>
+                                    <Border Grid.Column="1">
+                                        <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_4_3}" Style="{StaticResource Content_L}" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                    </Border>
+                                </Grid>
+                            </Border>
+                            <Border Grid.Column="2" Grid.Row="2">
+                                <Grid Margin="10,0,10,0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="18"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Border Grid.Column="0">
+                                        <Image Source="/Images/img_num_3.png" VerticalAlignment="Top"/>
+                                    </Border>
+                                    <Border Grid.Column="1">
+                                        <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_4_4}" Style="{StaticResource Content_L}" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                    </Border>
+                                </Grid>
+                            </Border>
+                            <Border Grid.Column="3" Grid.Row="2">
+                                <Grid Margin="10,0,10,0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="18"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Border Grid.Column="0">
+                                        <Image Source="/Images/img_num_4.png" VerticalAlignment="Top"/>
+                                    </Border>
+                                    <Border Grid.Column="1">
+                                        <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_4_5}" Style="{StaticResource Content_L}" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                                    </Border>
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </Border>
+                </dxlc:LayoutGroup>
+
+                <dxlc:LayoutGroup VerticalAlignment="Top" Margin="0,30,0,0" Orientation="Vertical">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Border  Grid.Row="0">
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
+                                <TextBlock Text="Lv. 3" Style="{StaticResource Header_3}" Foreground="#0090d5"/>
+                                <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_5}" Style="{StaticResource Header_3}" />
+                            </StackPanel>
+                        </Border>
+                        <Border Grid.Row="1" Margin="0,10,0,0">
+                            <StackPanel Orientation="Vertical">
+                                <!--    <TextBlock Text="{Binding Message}" Style="{StaticResource Content_L}"/>
+                            <Button Grid.Column="1" Command="{Binding CmdPageMoveCommand}" CommandParameter="Add" Height="25" Cursor="Hand" VerticalAlignment="Bottom" Margin="15,0,0,0">
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="{x:Type Button}">
+                                                    <Border Name="border" Background="#4a5a71" BorderThickness="1" BorderBrush="#c6c6c6">
+                                                        <TextBlock Text="{x:Static localization:Resource.AlramMyPage_1_5}" Foreground="#fff" FontSize="12" TextAlignment="Center"  VerticalAlignment="Center" Margin="10,0,10,0"/>
+                                                    </Border>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </Button.Style>
+                            </Button>-->
+                                <Border BorderBrush="#ececec" Background="#ececec" Height="40" Margin="0,0,0,15">
+                                    <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_5_1}" Style="{StaticResource Content_L}"/>
+                                </Border>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1.5*"/>
+                                        <ColumnDefinition Width="1.5*"/>
+                                        <ColumnDefinition Width="1*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="330"/>
+                                        <RowDefinition Height="30"/>
+                                        <RowDefinition />
+                                        <RowDefinition Height="30"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Column="0" Grid.Row="0">
+                                        <Image Source="{Binding certified_img01}" Margin="15,0,15,0" />
+                                    </Border>
+                                    <Border Grid.Column="0" Grid.Row="1">
+                                        <StackPanel Orientation="Horizontal" Margin="15,0,15,0">
+                                            <Image Source="/Images/img_num_1.png" Height="18" Width="18" />
+                                            <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_5_2}" Style="{StaticResource ResourceKey=Header_1}" Margin="5,0,0,0" />
+                                        </StackPanel>
+                                    </Border>
+                                    <Border Grid.Column="0" Grid.Row="2">
+                                        <StackPanel Orientation="Vertical" Margin="15,0,15,0">
+                                            <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_5_3}" Style="{StaticResource Content_L}" TextWrapping="Wrap"/>
+                                            <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_5_4}" Style="{StaticResource Content_L}" FontWeight="Bold" TextWrapping="Wrap"/>
+                                            <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_5_5}" Style="{StaticResource Content_L}" TextWrapping="Wrap"/>
+                                            <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_5_13}" Style="{StaticResource Content_L}" Foreground="Red" TextWrapping="Wrap"/>
+                                            <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_5_14}" Style="{StaticResource Content_L}" Foreground="Red" TextWrapping="Wrap"/>
+                                            <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_5_15}" Style="{StaticResource Content_L}" Foreground="Red" TextWrapping="Wrap"/>
+                                        </StackPanel>
+                                    </Border>
+                                    <Border Grid.Column="0" Grid.Row="3" Visibility="{Binding AuthVisible}">
+                                        <StackPanel Orientation="Horizontal">
+                                            <dxe:TextEdit Text="{Binding sFileName1}" NullText="{x:Static localization:Resource.CertifyMyPage_5_6}" MinWidth="203" MaxWidth="203" Height="25" IsReadOnly="True" Margin="10,0,0,0"/>
+                                            <Button Width="100" Height="25" Cursor="Hand" HorizontalAlignment="Center" Command="{Binding CmdFileUploadCommand}" CommandParameter="1" Margin="5,0,0,0">
+                                                <Button.Style>
+                                                    <Style TargetType="{x:Type Button}">
+                                                        <Setter Property="Template">
+                                                            <Setter.Value>
+                                                                <ControlTemplate TargetType="{x:Type Button}">
+                                                                    <Grid>
+                                                                        <Image Name="btnImg" Source="{Binding btn_file_upload, TargetNullValue={x:Null}}"/>
+                                                                    </Grid>
+                                                                    <ControlTemplate.Triggers>
+                                                                        <Trigger Property="IsMouseOver" Value="True">
+                                                                            <Setter Property="Source" TargetName="btnImg" Value="{Binding btn_file_upload_on}"/>
+                                                                        </Trigger>
+                                                                    </ControlTemplate.Triggers>
+                                                                </ControlTemplate>
+                                                            </Setter.Value>
+                                                        </Setter>
+                                                    </Style>
+                                                </Button.Style>
+                                            </Button>
+                                        </StackPanel>
+                                    </Border>
+
+                                    <Border Grid.Column="1" Grid.Row="0">
+                                        <Image Source="{Binding certified_img02}" Margin="15,0,15,0" />
+                                    </Border>
+                                    <Border Grid.Column="1" Grid.Row="1">
+                                        <StackPanel Orientation="Horizontal" Margin="15,0,15,0">
+                                            <Image Source="/Images/img_num_2.png" Height="18" Width="18" />
+                                            <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_5_8}" Style="{StaticResource ResourceKey=Header_1}" Margin="5,0,0,0" />
+                                        </StackPanel>
+                                    </Border>
+                                    <Border Grid.Column="1" Grid.Row="2">
+                                        <StackPanel Orientation="Vertical" Margin="15,0,15,0">
+                                            <TextBlock Text="{x:Static localization:Resource.CertifyMyPage_5_9}" Style="{StaticResource Content_L}" TextWrapping="Wrap"/>
+                                        </StackPanel>
+                                    </Border>
+                                    <Border Grid.Column="1" Grid.Row="3" Visibility="{Binding AuthVisible}">
+                                        <StackPanel Orientation="Horizontal">
+                                            <dxe:TextEdit Text="{Binding sFileName2}" NullText="{x:Static localization:Resource.CertifyMyPage_5_6}" MinWidth="203" MaxWidth="203" Height="25" IsReadOnly="True" Margin="10,0,0,0"/>
+                                            <Button Width="100" Height="25" Cursor="Hand" HorizontalAlignment="Center" Command="{Binding CmdFileUploadCommand}" CommandParameter="2" Margin="5,0,0,0">
+                                                <Button.Style>
+                                                    <Style TargetType="{x:Type Button}">
+                                                        <Setter Property="Template">
+                                                            <Setter.Value>
+                                                                <ControlTemplate TargetType="{x:Type Button}">
+                                                                    <Grid>
+                                                                        <Image Name="btnImg" Source="{Binding btn_file_upload, TargetNullValue={x:Null}}"/>
+                                                                    </Grid>
+                                                                    <ControlTemplate.Triggers>
+                                                                        <Trigger Property="IsMouseOver" Value="True">
+                                                                            <Setter Property="Source" TargetName="btnImg" Value="{Binding btn_file_upload_on}"/>
+                                                                        </Trigger>
+                                                                    </ControlTemplate.Triggers>
+                                                                </ControlTemplate>
+                                                            </Setter.Value>
+                                                        </Setter>
+                                                    </Style>
+                                                </Button.Style>
+                                            </Button>
+                                        </StackPanel>
+                                    </Border>
+                                </Grid>
+
+                                <Button Width="172" Height="25" Cursor="Hand" HorizontalAlignment="Center" Command="{Binding CmdKYCAuthCommand}" IsEnabled="{Binding AuthEnabled}" Margin="0,20,0,20">
+                                    <Button.Style>
+                                        <Style TargetType="{x:Type Button}">
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="{x:Type Button}">
+                                                        <Grid>
+                                                            <Image Name="btnImg" Source="{Binding btn_kyc_cert_status, TargetNullValue={x:Null}}"/>
+                                                        </Grid>
+                                                        <ControlTemplate.Triggers>
+                                                            <Trigger Property="IsMouseOver" Value="True">
+                                                                <Setter Property="Source" TargetName="btnImg" Value="{Binding btn_kyc_cert_status_on}"/>
+                                                            </Trigger>
+                                                        </ControlTemplate.Triggers>
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </Button.Style>
+                                </Button>
+
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                </dxlc:LayoutGroup>
+            </dxlc:LayoutControl>
+        </ScrollViewer>
+    </dx:LoadingDecorator>
+</UserControl>

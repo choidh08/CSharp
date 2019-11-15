@@ -1,0 +1,130 @@
+﻿<Window x:Class="coinBlock.Views.AdditionalService.Popup.AutoTradingPopAdditionalService"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" 
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             xmlns:localization="clr-namespace:coinBlock.Localization"
+             xmlns:ViewModels="clr-namespace:coinBlock.ViewModels.AdditionalService.Popup"
+             Icon="/Images/blueshell.ico"
+             mc:Ignorable="d"
+             DataContext="{dxmvvm:ViewModelSource Type=ViewModels:AutoTradingPopAdditionalServiceViewModel}"
+             Height="300" Width="400" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <dxmvvm:Interaction.Behaviors>
+        <dxmvvm:CurrentWindowService />
+        <dxmvvm:EventToCommand EventName="Loaded" Command="{Binding LoadedCommand}"/>
+        <dxmvvm:EventToCommand EventName="Unloaded" Command="{Binding UnLoadedCommand}"/>
+    </dxmvvm:Interaction.Behaviors>
+    <dx:LoadingDecorator IsSplashScreenShown="{Binding IsBusy}" OwnerLock="InputOnly" dx:ThemeManager.ThemeName="MetropolisLight">
+        <dx:LoadingDecorator.SplashScreenTemplate>
+            <DataTemplate>
+                <dx:WaitIndicator DeferedVisibility="True" Content="Requesting data transfer.."/>
+            </DataTemplate>
+        </dx:LoadingDecorator.SplashScreenTemplate>
+        <Border BorderBrush="#999" BorderThickness="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="33"/>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="40"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="#0090d5">
+                    <TextBlock Text="{x:Static localization:Resource.AutoTradingAdditionalPop_1}" FontSize="14" Foreground="White"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="1">
+                    <Button Click="uiExit_Click" Width="20" Height="20">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Name="border">
+                                                <Border.Background>
+                                                    <ImageBrush ImageSource="/Images/btn_screen_close.png"/>
+                                                </Border.Background>
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" TargetName="border">
+                                                        <Setter.Value>
+                                                            <ImageBrush ImageSource="/Images/btn_screen_close_on.png" />
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition Height="70"/>
+                            <RowDefinition Height="50"/>
+                        </Grid.RowDefinitions>
+                        <Border Grid.Row="0">
+                            <ItemsControl Margin="10,5,10,0" ItemsSource="{Binding coinList}">
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <UniformGrid Columns="5" />
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <RadioButton IsChecked="{Binding isCheck}" Content="{Binding coinNm}"  Command="{Binding DataContext.CmdGetPrcCommand, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}" CommandParameter="{Binding coinCd}" Margin="0,0,5,0"/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>                 
+                        </Border>
+                        <Border Grid.Row="1">
+                            <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <TextBlock Text="{Binding PayTitle}" />
+                                    <TextBlock Text=":" Style="{StaticResource Content_C}" Margin="5,0,5,0" />
+                                    <TextBlock Text="{Binding PayPrc}"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <TextBlock Text="{x:Static localization:Resource.AutoTradingAdditionalPop_3}" Style="{StaticResource Content_C}"/>
+                                    <TextBlock Text=":" Style="{StaticResource Content_C}" Margin="5,0,5,0" />
+                                    <TextBlock Text="{x:Static localization:Resource.AutoTradingAdditionalPop_4}" Style="{StaticResource Content_C}"/>                                    
+                                </StackPanel>
+                                <TextBlock Text="{x:Static localization:Resource.AutoTradingAdditionalPop_7}" Style="{StaticResource Content_C}" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Grid.Row="2">
+                            <!--<Button Width="97" Height="30" Cursor="Hand" HorizontalAlignment="Center" Click="uiConfirm_Click" Margin="0,0,3,0">-->
+                            <Button Width="97" Height="30" Cursor="Hand" HorizontalAlignment="Center" Command="{Binding CmdPaymentCommand}" Margin="0,0,3,0">
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="{x:Type Button}">
+                                                    <Grid>
+                                                        <Image Name="btnimg" Source="{Binding btn_popup_pay, TargetNullValue={x:Null}}"/>
+                                                    </Grid>
+                                                    <ControlTemplate.Triggers>
+                                                        <Trigger Property="IsMouseOver" Value="True">
+                                                            <Setter Property="Source" TargetName="btnimg" Value="{Binding btn_popup_pay_on}"/>
+                                                        </Trigger>
+                                                    </ControlTemplate.Triggers>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </Button.Style>
+                            </Button>
+                        </Border>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Border>
+    </dx:LoadingDecorator>
+</Window>

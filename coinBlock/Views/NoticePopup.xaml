@@ -1,0 +1,418 @@
+﻿<Window x:Class="coinBlock.Views.NoticePopup"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" 
+             xmlns:ViewModels="clr-namespace:coinBlock.Views"
+             xmlns:localization="clr-namespace:coinBlock.Localization"  
+             Icon="/Images/blueshell.ico"
+             mc:Ignorable="d" WindowStyle="None" WindowStartupLocation="CenterScreen"
+             DataContext="{dxmvvm:ViewModelSource Type=ViewModels:NoticePopupViewModel}"
+             Width="605" Height="380" Topmost="True" ResizeMode="NoResize" AllowsTransparency="False">
+    <Border BorderThickness="1" BorderBrush="Black">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            
+            <Grid x:Name="Notice" Grid.Row="0" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="60"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="#666">
+                    
+                </Border>
+                <Border Grid.Row="0" Grid.Column="1">
+                    <Button Click="uiExit_Click" Width="40" Height="40">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Name="border">
+                                                <Border.Background>
+                                                    <ImageBrush ImageSource="/Images/btn_screen_close.png"/>
+                                                </Border.Background>
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" TargetName="border">
+                                                        <Setter.Value>
+                                                            <ImageBrush ImageSource="/Images/btn_screen_close_on.png" />
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </Border>
+                <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Vertical" Margin="30,20,30,0">
+                    <TextBlock FontSize="18" Foreground="#333" FontWeight="Bold" Text="오픈베타 테스트 공지사항" />
+                    <TextBlock FontSize="15" Foreground="#333" Text="1. 기간 : 01/02 오후 2시 ~" Margin="0,10,0,0"/>
+                    <TextBlock FontSize="15" Foreground="#333" Text="2. 기능 : 일부기능 제외" Margin="0,7,0,0"/>
+                    <TextBlock FontSize="15" Foreground="#333" Text="3. 주의 사항" Margin="0,7,0,0"/>
+                    <TextBlock FontSize="15" Foreground="#333" Text="- 오픈베타는 사전 신청하신 고객에 한해 사용가능합니다." Margin="0,7,0,0"/>
+                    <TextBlock FontSize="15" Foreground="#333" Text="- 처음 사용하시는 고객은 아래 '사용자가이드 다운로드'를 클릭한 후 가이드를" Margin="0,7,0,0"/>
+                    <TextBlock FontSize="15" Foreground="#333" Text="  참고하시기 바랍니다. " Margin="0,7,0,0"/>
+                    <TextBlock FontSize="15" Foreground="#333" Text="- 코인송금 및 원화출금은 OPEN BETA 기간이 끝난 후 가능합니다." Margin="0,7,0,0"/>
+                    <StackPanel Margin="0,7,0,0" Orientation="Horizontal">
+                        <TextBlock FontSize="15" Foreground="#333" Text="- 사용중 불편사항 및 문의사항은 " />
+                        <TextBlock FontSize="15" Text="help@coinblock.kr" Foreground="#0093cf"/>
+                        <TextBlock FontSize="15" Foreground="#333" Text=" 로 메일 보내주시기 바랍니다." />
+                    </StackPanel>
+
+                    <Border Background="#666" HorizontalAlignment="Center" Width="250" Height="40" Margin="0,20,0,0" CornerRadius="3">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <!--<Image Source="/coinBlock;component/Image/downbtn.png" Margin="5"/>-->
+                            <dxe:HyperlinkEdit Text="사용자가이드 다운로드" FontWeight="Bold" Foreground="White" RequestNavigation="HyperlinkEdit_RequestNavigation" AllowAutoNavigate="True" FontSize="16" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </Grid>
+
+
+            <Grid x:Name="ReCharge" Grid.Row="0" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="33"/>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="40"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="#0090d5">
+                    <TextBlock Text="{Binding SC, StringFormat={x:Static localization:Resource.RechargeDepositWithdraw_Common_2}}" FontSize="14" Foreground="White"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="1">
+                    <Button Click="uiExit_Click" Width="20" Height="20">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Name="border">
+                                                <Border.Background>
+                                                    <ImageBrush ImageSource="/Images/btn_screen_close.png"/>
+                                                </Border.Background>
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" TargetName="border">
+                                                        <Setter.Value>
+                                                            <ImageBrush ImageSource="/Images/btn_screen_close_on.png" />
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </Border>
+                <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Vertical" Margin="25,25,25,0">
+                    <Grid Height="40">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="140"/>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0" Background="#f5f5f5" BorderBrush="#e5e5e5" BorderThickness="1">
+                            <TextBlock  FontSize="13" Foreground="#333" Text="{x:Static localization:Resource.RechargeDepositWithdraw_Pop_1}" VerticalAlignment="Center" Margin="15,0,0,0"/>
+                        </Border>
+                        <Border Grid.Column="1" BorderBrush="#e5e5e5" BorderThickness="1">
+                            <TextBlock  FontSize="13" Foreground="#333" Text="{Binding DepositNm}" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,15,0"/>
+                        </Border>
+                    </Grid>
+                    <TextBlock FontSize="13" Foreground="#333" Text="{x:Static localization:Resource.RechargeDepositWithdraw_Pop_2}" Margin="0,20,0,0" TextWrapping="Wrap"/>
+                    <TextBlock FontSize="13" Foreground="#333" Text="{x:Static localization:Resource.RechargeDepositWithdraw_Pop_3}" Margin="0,7,0,0" TextWrapping="Wrap"/>
+                    <StackPanel Orientation="Horizontal" Margin="0,7,0,0">
+                        <TextBlock FontSize="13" Foreground="#333" Text="{x:Static localization:Resource.RechargeDepositWithdraw_Pop_4}" Margin="0,0,5,0" TextWrapping="Wrap"/>
+                        <TextBlock FontSize="13" Foreground="#333" Text="{x:Static localization:Resource.RechargeDepositWithdraw_Pop_5}" TextWrapping="Wrap"/>
+                    </StackPanel>
+                    <TextBlock FontSize="13" Foreground="#333" Text="{x:Static localization:Resource.RechargeDepositWithdraw_Pop_6}" Margin="0,20,0,0" TextWrapping="Wrap"/>
+                    <TextBlock FontSize="13" Foreground="#333" Text="{x:Static localization:Resource.RechargeDepositWithdraw_Pop_7}" Margin="0,7,0,0" TextWrapping="Wrap"/>
+                    <!--<TextBlock FontSize="13" Foreground="#333" Text="{x:Static localization:Resource.RechargeDepositWithdraw_Pop_8}" Margin="0,7,0,0"/>-->
+                    <Button Width="97" Height="30" Cursor="Hand" HorizontalAlignment="Center" Click="uiExit_Click" Margin="0,20,0,0">
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Grid>
+                                                <Image Name="btnImg" Source="{Binding btn_popup_confirm, TargetNullValue={x:Null}}"/>
+                                            </Grid>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Source" TargetName="btnImg" Value="{Binding btn_popup_confirm_on}"/>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </StackPanel>
+            </Grid>
+
+            <Grid x:Name="HTS_IP_CHECK_1" Grid.Row="0" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="33"/>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="40"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="#0090d5">
+                    <TextBlock Text="{x:Static localization:Resource.IP_Registration_Common_1}" FontSize="14" Foreground="White"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="1">
+                    <Button Click="uiExit_Click" Width="20" Height="20">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Name="border">
+                                                <Border.Background>
+                                                    <ImageBrush ImageSource="/Images/btn_screen_close.png"/>
+                                                </Border.Background>
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" TargetName="border">
+                                                        <Setter.Value>
+                                                            <ImageBrush ImageSource="/Images/btn_screen_close_on.png" />
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </Border>
+                <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Vertical" Margin="25,25,25,20">
+                    <TextBlock FontSize="13" Foreground="#333" Text="{x:Static localization:Resource.IP_Registration_1_1}"/>
+                    <TextBlock FontSize="13" Foreground="#333" Text="{x:Static localization:Resource.IP_Registration_1_2}" Margin="0,7,0,0"/>
+                    <TextBlock FontSize="13" Foreground="#333" Text="{x:Static localization:Resource.IP_Registration_1_3}" Margin="0,15,0,15"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Width="97" Height="30" Cursor="Hand" HorizontalAlignment="Center" Click="uiConfirm_Click" Margin="0,0,3,0">
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                <Grid>
+                                                    <Image Name="btnImg" Source="{Binding btn_popup_confirm_color, TargetNullValue={x:Null}}"/>
+                                                </Grid>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Source" TargetName="btnImg" Value="{Binding btn_popup_confirm_color_on}"/>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                        <Button Width="97" Height="30" Cursor="Hand" HorizontalAlignment="Center" Click="uiExit_Click">
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                <Grid>
+                                                    <Image Name="btnImg" Source="{Binding btn_popup_cancel, TargetNullValue={x:Null}}"/>
+                                                </Grid>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Source" TargetName="btnImg" Value="{Binding btn_popup_cancel_on}"/>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+
+            <Grid x:Name="HTS_IP_CHECK_2" Grid.Row="0" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="33"/>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="40"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="#0090d5">
+                    <TextBlock Text="{x:Static localization:Resource.IP_Registration_Common_1}" FontSize="14" Foreground="White"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="1">
+                    <Button Click="uiExit_Click" Width="20" Height="20">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Name="border">
+                                                <Border.Background>
+                                                    <ImageBrush ImageSource="/Images/btn_screen_close.png"/>
+                                                </Border.Background>
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" TargetName="border">
+                                                        <Setter.Value>
+                                                            <ImageBrush ImageSource="/Images/btn_screen_close_on.png" />
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </Border>
+                <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Vertical" Margin="25,25,25,20">
+                    <TextBlock FontSize="13" Foreground="#333" Text="{x:Static localization:Resource.IP_Registration_2_1}"/>
+                    <TextBlock FontSize="13" Foreground="#333" Text="{x:Static localization:Resource.IP_Registration_2_2}" Margin="0,15,0,0"/>
+                    <TextBlock FontSize="13" Foreground="#333" Text="{x:Static localization:Resource.IP_Registration_2_3}" Margin="0,7,0,15"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Width="97" Height="30" Cursor="Hand" HorizontalAlignment="Center" Click="uiExit_Click" Margin="0,0,3,0">
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                <Grid>
+                                                    <Image Name="btnImg" Source="{Binding btn_popup_confirm, TargetNullValue={x:Null}}"/>
+                                                </Grid>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Source" TargetName="btnImg" Value="{Binding btn_popup_confirm_on}"/>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Button.Style>
+                        </Button>                      
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+
+            <Grid x:Name="HTS_IP_NOT_CHECK_1" Grid.Row="0" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="33"/>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="40"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="#0090d5">
+                    <TextBlock Text="{x:Static localization:Resource.IP_Registration_Common_2}" FontSize="14" Foreground="White"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="1">
+                    <Button Click="uiExit_Click" Width="20" Height="20">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Name="border">
+                                                <Border.Background>
+                                                    <ImageBrush ImageSource="/Images/btn_screen_close.png"/>
+                                                </Border.Background>
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" TargetName="border">
+                                                        <Setter.Value>
+                                                            <ImageBrush ImageSource="/Images/btn_screen_close_on.png" />
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </Border>
+                <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Vertical" Margin="25,25,25,20">
+                    <TextBlock FontSize="13" Foreground="#333" Text="{x:Static localization:Resource.IP_Registration_3_1}"/>
+                    <TextBlock FontSize="13" Foreground="#333" Text="{x:Static localization:Resource.IP_Registration_3_2}" Margin="0,5,0,0"/>
+                    <TextBlock FontSize="13" Foreground="#333" Text="{x:Static localization:Resource.IP_Registration_3_3}" Margin="0,5,0,27"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Width="97" Height="30" Cursor="Hand" HorizontalAlignment="Center" Margin="0,0,3,0" Click="uiConfirm_Click">
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                <Grid>
+                                                    <Image Name="btnImg" Source="{Binding btn_popup_confirm_color, TargetNullValue={x:Null}}"/>
+                                                </Grid>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Source" TargetName="btnImg" Value="{Binding btn_popup_confirm_color_on}"/>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                        <Button Width="97" Height="30" Cursor="Hand" HorizontalAlignment="Center" Click="uiExit_Click">
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                <Grid>
+                                                    <Image Name="btnImg" Source="{Binding btn_popup_cancel, TargetNullValue={x:Null}}"/>
+                                                </Grid>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Source" TargetName="btnImg" Value="{Binding btn_popup_cancel_on}"/>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>            
+        </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,5161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Alert_1" xml:space="preserve">
+    <value>알림</value>
+  </data>
+  <data name="Alert_2" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="Alert_3" xml:space="preserve">
+    <value>예</value>
+  </data>
+  <data name="Alert_4" xml:space="preserve">
+    <value>아니오</value>
+  </data>
+  <data name="AlramMyPage_1_1" xml:space="preserve">
+    <value>알림내역</value>
+  </data>
+  <data name="AlramMyPage_1_2" xml:space="preserve">
+    <value>구분</value>
+  </data>
+  <data name="AlramMyPage_1_2_1" xml:space="preserve">
+    <value>금액별</value>
+  </data>
+  <data name="AlramMyPage_1_2_10" xml:space="preserve">
+    <value>자동거래등록</value>
+  </data>
+  <data name="AlramMyPage_1_2_11" xml:space="preserve">
+    <value>IP등록정보</value>
+  </data>
+  <data name="AlramMyPage_1_2_12" xml:space="preserve">
+    <value>계정잠금</value>
+  </data>
+  <data name="AlramMyPage_1_2_13" xml:space="preserve">
+    <value>코인교환자동거래실행</value>
+  </data>
+  <data name="AlramMyPage_1_2_2" xml:space="preserve">
+    <value>시간대별</value>
+  </data>
+  <data name="AlramMyPage_1_2_3" xml:space="preserve">
+    <value>1:1문의</value>
+  </data>
+  <data name="AlramMyPage_1_2_4" xml:space="preserve">
+    <value>부가서비스</value>
+  </data>
+  <data name="AlramMyPage_1_2_5" xml:space="preserve">
+    <value>입출금</value>
+  </data>
+  <data name="AlramMyPage_1_2_6" xml:space="preserve">
+    <value>구매/판매</value>
+  </data>
+  <data name="AlramMyPage_1_2_7" xml:space="preserve">
+    <value>공지사항</value>
+  </data>
+  <data name="AlramMyPage_1_2_8" xml:space="preserve">
+    <value>로그인</value>
+  </data>
+  <data name="AlramMyPage_1_2_9" xml:space="preserve">
+    <value>기타</value>
+  </data>
+  <data name="AlramMyPage_1_3" xml:space="preserve">
+    <value>일시</value>
+  </data>
+  <data name="AlramMyPage_1_4" xml:space="preserve">
+    <value>내용</value>
+  </data>
+  <data name="AlramMyPage_1_5" xml:space="preserve">
+    <value>자세히 보기</value>
+  </data>
+  <data name="AlramMyPage_2_1" xml:space="preserve">
+    <value>알림설정</value>
+  </data>
+  <data name="AlramMyPage_2_2" xml:space="preserve">
+    <value>기본</value>
+  </data>
+  <data name="AlramMyPage_2_2_1" xml:space="preserve">
+    <value>로그인</value>
+  </data>
+  <data name="AlramMyPage_2_2_2" xml:space="preserve">
+    <value>공지사항</value>
+  </data>
+  <data name="AlramMyPage_2_2_3" xml:space="preserve">
+    <value>부가서비스 신청</value>
+  </data>
+  <data name="AlramMyPage_2_2_4" xml:space="preserve">
+    <value>1:1문의</value>
+  </data>
+  <data name="AlramMyPage_2_3" xml:space="preserve">
+    <value>구매/판매</value>
+  </data>
+  <data name="AlramMyPage_2_3_1" xml:space="preserve">
+    <value>구매주문</value>
+  </data>
+  <data name="AlramMyPage_2_3_2" xml:space="preserve">
+    <value>구매체결</value>
+  </data>
+  <data name="AlramMyPage_2_3_3" xml:space="preserve">
+    <value>판매주문</value>
+  </data>
+  <data name="AlramMyPage_2_3_4" xml:space="preserve">
+    <value>판매체결</value>
+  </data>
+  <data name="AlramMyPage_2_4" xml:space="preserve">
+    <value>입출금</value>
+  </data>
+  <data name="AlramMyPage_2_4_1" xml:space="preserve">
+    <value>코인입금</value>
+  </data>
+  <data name="AlramMyPage_2_4_2" xml:space="preserve">
+    <value>코인송금</value>
+  </data>
+  <data name="AlramMyPage_2_5" xml:space="preserve">
+    <value>선택코인</value>
+  </data>
+  <data name="AlramMyPage_2_6" xml:space="preserve">
+    <value>알림시간</value>
+  </data>
+  <data name="AlramMyPage_2_6_1" xml:space="preserve">
+    <value>시 ~</value>
+  </data>
+  <data name="AlramMyPage_2_6_2" xml:space="preserve">
+    <value>시 까지</value>
+  </data>
+  <data name="AlramMyPage_2_7" xml:space="preserve">
+    <value>알림간격</value>
+  </data>
+  <data name="AlramMyPage_2_7_1" xml:space="preserve">
+    <value>시간마다 알림받기</value>
+  </data>
+  <data name="AlramMyPage_2_8_1" xml:space="preserve">
+    <value>현재 시세 : </value>
+  </data>
+  <data name="AlramMyPage_2_8_10" xml:space="preserve">
+    <value>반복알림</value>
+  </data>
+  <data name="AlramMyPage_2_8_11" xml:space="preserve">
+    <value>30분마다 알림</value>
+  </data>
+  <data name="AlramMyPage_2_8_12" xml:space="preserve">
+    <value>1시간마다 알림</value>
+  </data>
+  <data name="AlramMyPage_2_8_3" xml:space="preserve">
+    <value>최고가</value>
+  </data>
+  <data name="AlramMyPage_2_8_4" xml:space="preserve">
+    <value> 원 이상</value>
+  </data>
+  <data name="AlramMyPage_2_8_5" xml:space="preserve">
+    <value>최저가</value>
+  </data>
+  <data name="AlramMyPage_2_8_6" xml:space="preserve">
+    <value> 원 이하</value>
+  </data>
+  <data name="AlramMyPage_2_8_7" xml:space="preserve">
+    <value>반복설정</value>
+  </data>
+  <data name="AlramMyPage_2_8_8" xml:space="preserve">
+    <value>한 번만 알림</value>
+  </data>
+  <data name="AlramMyPage_2_8_9" xml:space="preserve">
+    <value>반복 알림</value>
+  </data>
+  <data name="AlramMyPage_Alert_1" xml:space="preserve">
+    <value>종료 시간을 시작 시간보다 같거나 높게 지정해주세요.</value>
+  </data>
+  <data name="AlramMyPage_Alert_2" xml:space="preserve">
+    <value>알림 간격 시간을 알림 시간 길이보다 낮게 지정해주세요.</value>
+  </data>
+  <data name="AlramMyPage_Common_1" xml:space="preserve">
+    <value>기본 알림</value>
+  </data>
+  <data name="AlramMyPage_Common_2" xml:space="preserve">
+    <value>시간대별 시세알림 설정</value>
+  </data>
+  <data name="AlramMyPage_Common_3" xml:space="preserve">
+    <value>금액별 시세알림 설정</value>
+  </data>
+  <data name="AutoTradingAdditional_1" xml:space="preserve">
+    <value>자동거래</value>
+  </data>
+  <data name="AutoTradingAdditional_1_1" xml:space="preserve">
+    <value>ㆍ자동거래는 CoinBlock 에서만</value>
+  </data>
+  <data name="AutoTradingAdditional_1_10" xml:space="preserve">
+    <value>됩니다.</value>
+  </data>
+  <data name="AutoTradingAdditional_1_2" xml:space="preserve">
+    <value>제공하는 유일한 기능</value>
+  </data>
+  <data name="AutoTradingAdditional_1_3" xml:space="preserve">
+    <value>으로써,</value>
+  </data>
+  <data name="AutoTradingAdditional_1_4" xml:space="preserve">
+    <value>ㆍ자동거래는 이익과 손실에 대한 대비를 위해 동시에 주문 가능한 거래입니다.</value>
+  </data>
+  <data name="AutoTradingAdditional_1_5" xml:space="preserve">
+    <value>입니다.</value>
+  </data>
+  <data name="AutoTradingAdditional_1_6" xml:space="preserve">
+    <value>ㆍ자동거래는 구매가/판매가를 설정하여 해당 가격 도달 시마다 시장가 체결됩니다.</value>
+  </data>
+  <data name="AutoTradingAdditional_1_7" xml:space="preserve">
+    <value>ㆍ손절 자동거래는 판매가 하락 시 손해를 최소화하기 위한 금액을 설정합니다.</value>
+  </data>
+  <data name="AutoTradingAdditional_1_8" xml:space="preserve">
+    <value>ㆍ해당 서비스는 부가서비스이며, [HTS, MTS, WEB &gt;코인 구매/판매] 메뉴의 자동구매/판매, 손절 자동거래에서 설정할 수 있습니다.</value>
+  </data>
+  <data name="AutoTradingAdditional_1_9" xml:space="preserve">
+    <value>단, 자동으로 설정된 구매/판매는 PC거래소에 로그인되어 있어야 (즉, HTS가 실행중에) 체결</value>
+  </data>
+  <data name="AutoTradingAdditional_2" xml:space="preserve">
+    <value>코인교환자동거래</value>
+  </data>
+  <data name="AutoTradingAdditional_2_1" xml:space="preserve">
+    <value>ㆍ코인교환자동거래는 보유코인과 교환코인의 변동률을 설정하고, 설정한 변동률 이상일 경우 푸쉬알림으로 알려드리며 즉시거래 할 수 있는 기능입니다.</value>
+  </data>
+  <data name="AutoTradingAdditional_2_2" xml:space="preserve">
+    <value>ㆍ자동거래 기능은 [HTS &gt; 거래소 &gt; 코인교환자동거래] 의 '코인교환자동거래'에서 설정 후 거래실행은 [HTS, MTS &gt; 구매/판매 &gt; 코인교환자동거래]에서 거래하실 수 있습니다.</value>
+  </data>
+  <data name="AutoTradingAdditional_3" xml:space="preserve">
+    <value>자동거래 신청 상태</value>
+  </data>
+  <data name="AutoTradingAdditional_3_1" xml:space="preserve">
+    <value>미신청</value>
+  </data>
+  <data name="AutoTradingAdditional_3_10" xml:space="preserve">
+    <value>이며,</value>
+  </data>
+  <data name="AutoTradingAdditional_3_12" xml:space="preserve">
+    <value>입니다.</value>
+  </data>
+  <data name="AutoTradingAdditional_3_2" xml:space="preserve">
+    <value>신청</value>
+  </data>
+  <data name="AutoTradingAdditional_3_3" xml:space="preserve">
+    <value>결제 종류</value>
+  </data>
+  <data name="AutoTradingAdditional_3_4" xml:space="preserve">
+    <value>1개월(30일) :</value>
+  </data>
+  <data name="AutoTradingAdditional_3_5" xml:space="preserve">
+    <value>자동거래는</value>
+  </data>
+  <data name="AutoTradingAdditional_3_6" xml:space="preserve">
+    <value>유료서비스</value>
+  </data>
+  <data name="Bookmark_1" xml:space="preserve">
+    <value>전체 빠른 메뉴</value>
+  </data>
+  <data name="Bookmark_2" xml:space="preserve">
+    <value>선택된 빠른 메뉴</value>
+  </data>
+  <data name="Bookmark_3" xml:space="preserve">
+    <value>전체</value>
+  </data>
+  <data name="Bookmark_4" xml:space="preserve">
+    <value>* 순서는 Drag And Drop으로</value>
+  </data>
+  <data name="Bookmark_5" xml:space="preserve">
+    <value>  변경할 수 있습니다.</value>
+  </data>
+  <data name="Bookmark_6" xml:space="preserve">
+    <value>빠른 메뉴는 1개이상 선택 되어야 합니다.</value>
+  </data>
+  <data name="Bookmark_7" xml:space="preserve">
+    <value>즐겨찾기</value>
+  </data>
+  <data name="Bookmark_8" xml:space="preserve">
+    <value>즐겨찾기 설정</value>
+  </data>
+  <data name="CertificationDataSubmit_1" xml:space="preserve">
+    <value>입금사실증명</value>
+  </data>
+  <data name="CertificationDataSubmit_1_1" xml:space="preserve">
+    <value>입금 처리가 되지 않은 경우 [인증자료제출]탭에서 입금증명 서류를 제출해주시기 바랍니다.</value>
+  </data>
+  <data name="CertificationDataSubmit_1_2" xml:space="preserve">
+    <value>입금 사실 증명 이메일</value>
+  </data>
+  <data name="CertificationDataSubmit_1_3" xml:space="preserve">
+    <value>을 보내주세요.</value>
+  </data>
+  <data name="CertificationDataSubmit_1_4" xml:space="preserve">
+    <value>입금 증명 제출 방법</value>
+  </data>
+  <data name="CertificationDataSubmit_1_5" xml:space="preserve">
+    <value>ㆍ이메일 보낼 주소 : help@coinblock.kr</value>
+  </data>
+  <data name="CertificationDataSubmit_1_6" xml:space="preserve">
+    <value>ㆍ이메일 제목 : '입금사실증명 서류 제출' 입금 증명 이메일 양식</value>
+  </data>
+  <data name="CertificationDataSubmit_1_7" xml:space="preserve">
+    <value>입금 증명 이메일 양식</value>
+  </data>
+  <data name="CertificationDataSubmit_2" xml:space="preserve">
+    <value>본인인증</value>
+  </data>
+  <data name="CertificationDataSubmit_2_1" xml:space="preserve">
+    <value>본인확인이 별도로 필요한 경우 [인증자료제출]탭에서 본인인증 서류를 제출해주시기 바랍니다.</value>
+  </data>
+  <data name="CertificationDataSubmit_2_2" xml:space="preserve">
+    <value>본인인증 이메일 양식</value>
+  </data>
+  <data name="CertificationDataSubmit_2_3" xml:space="preserve">
+    <value>ㆍ이메일 보낼 주소 : help@coinblock.kr</value>
+  </data>
+  <data name="CertificationDataSubmit_2_4" xml:space="preserve">
+    <value>ㆍ이메일 제목 : 본인인증 서류 제출</value>
+  </data>
+  <data name="CertificationDataSubmit_2_5" xml:space="preserve">
+    <value>본인인증 제출 방법</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1" xml:space="preserve">
+    <value>신분증 사진</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1_1" xml:space="preserve">
+    <value>신분증에 주민등록번호 뒤 7자리와 '동' 이후의 주소 (ex 서울특별시 역삼로 이후 주소 가림),</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1_2" xml:space="preserve">
+    <value>운전면허번호, 여권번호는 모두 가려주세요.</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1_3" xml:space="preserve">
+    <value>인증목적, 인증전화번호, 인증이메일, 요청날짜 메모와 개인정보를 가린 신분증을 찍은 사진을 첨부해주세요.</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1_4" xml:space="preserve">
+    <value>(인증가능 신분증 : 주민등록증, 운전면허증, 여권)</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_2" xml:space="preserve">
+    <value>신분증을 들고 있는 본인 사진</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_2_1" xml:space="preserve">
+    <value>비대면 본인인증을 위해 사용됩니다. 신분증에 인증목적, 인증전화번호, 인증이메일, 요청날짜 메모를 부착해서 촬영해주세요. 신분증 글자(메모포함)를 읽을 수 있어야 합니다.</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_2_2" xml:space="preserve">
+    <value>받은 사진은 해당 요청에 대한 비대면 실명 확인 용도로만 사용합니다.</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_3" xml:space="preserve">
+    <value>거래 내역 사본</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_3_1" xml:space="preserve">
+    <value>받은 사람, 금액, 일시가 표시된 거래내역 사본을 보내주세요.</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_3_2" xml:space="preserve">
+    <value>통장사본 또는 모바일 뱅킹의 거래내역 화면을 캡쳐 또는 촬영본도 가능합니다.</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_1" xml:space="preserve">
+    <value>ㆍ코인교환자동거래 설정은 PC거래소에서만 가능하고 거래실행은 PC거래소 및 모바일APP에서 가능합니다.</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_10" xml:space="preserve">
+    <value>판매 수량</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_11" xml:space="preserve">
+    <value>상태</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_12" xml:space="preserve">
+    <value>를 아래의 조건 이상일때 판매</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_12_1" xml:space="preserve">
+    <value>현재 시세 : </value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_13" xml:space="preserve">
+    <value> 설정시세 :</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_14_1" xml:space="preserve">
+    <value>(사용가능 수량 :</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_14_2" xml:space="preserve">
+    <value>)</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_15_1" xml:space="preserve">
+    <value>알림예약</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_15_2" xml:space="preserve">
+    <value>알람 취소</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_16" xml:space="preserve">
+    <value>교환 코인 변동률</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_17" xml:space="preserve">
+    <value>교환 예상금액</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_18" xml:space="preserve">
+    <value>예약일</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_19" xml:space="preserve">
+    <value>를 아래의 조건 이상일때 구매</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_2" xml:space="preserve">
+    <value>ㆍ보유코인과 교환 코인의 설정변경률 이상일 경우 PC거래소 및 모바일APP으로 알림이 발송됩니다.</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_20" xml:space="preserve">
+    <value> 설정시세 :</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_21" xml:space="preserve">
+    <value>알림 예약</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_22" xml:space="preserve">
+    <value>알림 취소</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_3" xml:space="preserve">
+    <value>ㆍ거래실행 시 설정한 수량보다 적을 경우 남아있는 보유코인의 잔액만큼 거래가 됩니다.</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_4" xml:space="preserve">
+    <value>ㆍ[코인교환자동거래 설정]화면에서 설정하신 후 사용가능합니다.</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_5" xml:space="preserve">
+    <value>ㆍ조회일시와 거래실행일시가 다를 경우 거래금액에 차이가 있을 수 있습니다.</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_6" xml:space="preserve">
+    <value>ㆍ거래실행 시 수수료가 결제됩니다,</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_7" xml:space="preserve">
+    <value>ㆍ거래실행 후 [코인교환자동거래 설정]화면에서 다시 설정하시기 바랍니다.</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_8" xml:space="preserve">
+    <value>코인교환자동거래 설정</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_9" xml:space="preserve">
+    <value>보유 코인 변동률</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_1" xml:space="preserve">
+    <value>코인교환거래 실행</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_10" xml:space="preserve">
+    <value>거래 실행</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_11" xml:space="preserve">
+    <value>(설정 변동률 =</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_12" xml:space="preserve">
+    <value>% 이상)</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_13" xml:space="preserve">
+    <value>(사용가능 잔액 :</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_14" xml:space="preserve">
+    <value>)</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_2" xml:space="preserve">
+    <value>보유 코인 기준 시세</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_3" xml:space="preserve">
+    <value>보유 코인 현재 시세</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_4" xml:space="preserve">
+    <value>판매 수량</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_5" xml:space="preserve">
+    <value>설정 변동률</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_6" xml:space="preserve">
+    <value>사용가능 잔액</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_7" xml:space="preserve">
+    <value>교환 코인 기준 시세</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_8" xml:space="preserve">
+    <value>교환 코인 현재 시세</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_9" xml:space="preserve">
+    <value>교환 예상 금액</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_Alert_1" xml:space="preserve">
+    <value>보유코인과 교환코인은 같을 수 없습니다.</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_Alert_2" xml:space="preserve">
+    <value>사용가능 수량을 초과하였습니다.</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_Alert_3" xml:space="preserve">
+    <value>100% 이상 설정할 수 없습니다.</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_Alert_4" xml:space="preserve">
+    <value>코인교환자동거래 실행 알림.</value>
+  </data>
+  <data name="CoinTrading_1" xml:space="preserve">
+    <value>구매/판매</value>
+  </data>
+  <data name="CoinTrading_1_1" xml:space="preserve">
+    <value>구매</value>
+  </data>
+  <data name="CoinTrading_1_1_1" xml:space="preserve">
+    <value>구매 가격</value>
+  </data>
+  <data name="CoinTrading_1_1_2" xml:space="preserve">
+    <value>구매 수량</value>
+  </data>
+  <data name="CoinTrading_1_1_3" xml:space="preserve">
+    <value>구매 금액</value>
+  </data>
+  <data name="CoinTrading_1_1_4" xml:space="preserve">
+    <value>(매수가능 :</value>
+  </data>
+  <data name="CoinTrading_1_1_5" xml:space="preserve">
+    <value>)</value>
+  </data>
+  <data name="CoinTrading_1_2" xml:space="preserve">
+    <value>판매</value>
+  </data>
+  <data name="CoinTrading_1_2_1" xml:space="preserve">
+    <value>판매 가격</value>
+  </data>
+  <data name="CoinTrading_1_2_2" xml:space="preserve">
+    <value>판매 수량</value>
+  </data>
+  <data name="CoinTrading_1_2_3" xml:space="preserve">
+    <value>판매 금액</value>
+  </data>
+  <data name="CoinTrading_1_2_4" xml:space="preserve">
+    <value>(매도가능 :</value>
+  </data>
+  <data name="CoinTrading_1_2_5" xml:space="preserve">
+    <value>)</value>
+  </data>
+  <data name="CoinTrading_1_3" xml:space="preserve">
+    <value>*수수료는 체결 시 계산됩니다.</value>
+  </data>
+  <data name="CoinTrading_1_4" xml:space="preserve">
+    <value>*구매주문가격 : 미체결주문 판매가의 최저금액 이상으로 설정 시 시장가로 체결됩니다.</value>
+  </data>
+  <data name="CoinTrading_1_5" xml:space="preserve">
+    <value>*판매주문가격 : 미체결주문 구매가의 최고금액 이하으로 설정 시 시장가로 체결됩니다.</value>
+  </data>
+  <data name="CoinTrading_2" xml:space="preserve">
+    <value>시장가 거래</value>
+  </data>
+  <data name="CoinTrading_2_1" xml:space="preserve">
+    <value>시장가 구매</value>
+  </data>
+  <data name="CoinTrading_2_1_1" xml:space="preserve">
+    <value>매수(구매)가격</value>
+  </data>
+  <data name="CoinTrading_2_1_2" xml:space="preserve">
+    <value>매수(구매)예상수량</value>
+  </data>
+  <data name="CoinTrading_2_1_3" xml:space="preserve">
+    <value>(매수가능 :</value>
+  </data>
+  <data name="CoinTrading_2_1_4" xml:space="preserve">
+    <value>)</value>
+  </data>
+  <data name="CoinTrading_2_2" xml:space="preserve">
+    <value>시장가 판매</value>
+  </data>
+  <data name="CoinTrading_2_2_1" xml:space="preserve">
+    <value>매도(판매)수량</value>
+  </data>
+  <data name="CoinTrading_2_2_2" xml:space="preserve">
+    <value>매도(판매)예상수령액</value>
+  </data>
+  <data name="CoinTrading_2_2_3" xml:space="preserve">
+    <value>(매도가능 :</value>
+  </data>
+  <data name="CoinTrading_2_2_4" xml:space="preserve">
+    <value>)</value>
+  </data>
+  <data name="CoinTrading_2_3" xml:space="preserve">
+    <value>*시장가 구매는 미체결 판매 신청 금액이 낮은 순서대로 구매되며,</value>
+  </data>
+  <data name="CoinTrading_2_4" xml:space="preserve">
+    <value>  실제 수령량은 구매금액에 따라 변동될 수 있습니다.</value>
+  </data>
+  <data name="CoinTrading_2_5" xml:space="preserve">
+    <value>*시장가 판매는 미체결 구매 신청 금액이 높은 순서대로 판매되며,</value>
+  </data>
+  <data name="CoinTrading_2_6" xml:space="preserve">
+    <value>  실제 수령액은 판매량에 따라 변동될 수 있습니다.</value>
+  </data>
+  <data name="CoinTrading_3" xml:space="preserve">
+    <value>자동 거래</value>
+  </data>
+  <data name="CoinTrading_3_1" xml:space="preserve">
+    <value>자동 거래</value>
+  </data>
+  <data name="CoinTrading_3_1_1" xml:space="preserve">
+    <value>구분</value>
+  </data>
+  <data name="CoinTrading_3_1_1_1" xml:space="preserve">
+    <value>자동 구매</value>
+  </data>
+  <data name="CoinTrading_3_1_1_2" xml:space="preserve">
+    <value>자동 판매</value>
+  </data>
+  <data name="CoinTrading_3_1_1_3" xml:space="preserve">
+    <value>손절 판매</value>
+  </data>
+  <data name="CoinTrading_3_1_2" xml:space="preserve">
+    <value>1순위</value>
+  </data>
+  <data name="CoinTrading_3_1_3" xml:space="preserve">
+    <value>2순위</value>
+  </data>
+  <data name="CoinTrading_3_1_4" xml:space="preserve">
+    <value>3순위</value>
+  </data>
+  <data name="CoinTrading_3_1_5" xml:space="preserve">
+    <value>구매가능금액</value>
+  </data>
+  <data name="CoinTrading_3_1_6" xml:space="preserve">
+    <value>판매가능금액</value>
+  </data>
+  <data name="CoinTrading_3_2" xml:space="preserve">
+    <value>손절 자동 거래</value>
+  </data>
+  <data name="CoinTrading_4" xml:space="preserve">
+    <value>전체 미체결 내역</value>
+  </data>
+  <data name="CoinTrading_4_1" xml:space="preserve">
+    <value>호가</value>
+  </data>
+  <data name="CoinTrading_4_2" xml:space="preserve">
+    <value>판매가(매도) 주문량</value>
+  </data>
+  <data name="CoinTrading_4_3" xml:space="preserve">
+    <value>구매가(매수) 주문량</value>
+  </data>
+  <data name="CoinTrading_4_4" xml:space="preserve">
+    <value>체결가</value>
+  </data>
+  <data name="CoinTrading_4_5" xml:space="preserve">
+    <value>거래량</value>
+  </data>
+  <data name="CoinTrading_4_6_1" xml:space="preserve">
+    <value>현재 시가</value>
+  </data>
+  <data name="CoinTrading_4_6_2" xml:space="preserve">
+    <value>전일 종가</value>
+  </data>
+  <data name="CoinTrading_4_6_3" xml:space="preserve">
+    <value>당일 최고가</value>
+  </data>
+  <data name="CoinTrading_4_6_4" xml:space="preserve">
+    <value>당일 최저가</value>
+  </data>
+  <data name="CoinTrading_4_6_5" xml:space="preserve">
+    <value>금일 총 거래량</value>
+  </data>
+  <data name="CoinTrading_4_6_6" xml:space="preserve">
+    <value>전일 총 거래량</value>
+  </data>
+  <data name="CoinTrading_4_6_7" xml:space="preserve">
+    <value>금일 거래대금</value>
+  </data>
+  <data name="CoinTrading_4_6_8" xml:space="preserve">
+    <value>전일 거래대금</value>
+  </data>
+  <data name="CoinTrading_5" xml:space="preserve">
+    <value>차트</value>
+  </data>
+  <data name="CoinTrading_6" xml:space="preserve">
+    <value>내 미체결 주문</value>
+  </data>
+  <data name="CoinTrading_6_1" xml:space="preserve">
+    <value>종류</value>
+  </data>
+  <data name="CoinTrading_6_1_1" xml:space="preserve">
+    <value>구매</value>
+  </data>
+  <data name="CoinTrading_6_1_2" xml:space="preserve">
+    <value>판매</value>
+  </data>
+  <data name="CoinTrading_6_2" xml:space="preserve">
+    <value>코인명</value>
+  </data>
+  <data name="CoinTrading_6_3" xml:space="preserve">
+    <value>주문시각</value>
+  </data>
+  <data name="CoinTrading_6_4" xml:space="preserve">
+    <value>주문량</value>
+  </data>
+  <data name="CoinTrading_6_5" xml:space="preserve">
+    <value>주문가</value>
+  </data>
+  <data name="CoinTrading_6_6" xml:space="preserve">
+    <value>체결량</value>
+  </data>
+  <data name="CoinTrading_6_7" xml:space="preserve">
+    <value>평균체결가</value>
+  </data>
+  <data name="CoinTrading_6_8" xml:space="preserve">
+    <value>부분체결여부</value>
+  </data>
+  <data name="CoinTrading_6_9" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="CoinTrading_7" xml:space="preserve">
+    <value>최근 내 거래 내역</value>
+  </data>
+  <data name="CoinTrading_7_1" xml:space="preserve">
+    <value>종류</value>
+  </data>
+  <data name="CoinTrading_7_1_1" xml:space="preserve">
+    <value>구매</value>
+  </data>
+  <data name="CoinTrading_7_1_2" xml:space="preserve">
+    <value>판매</value>
+  </data>
+  <data name="CoinTrading_7_2" xml:space="preserve">
+    <value>체결시각</value>
+  </data>
+  <data name="CoinTrading_7_3" xml:space="preserve">
+    <value>체결량</value>
+  </data>
+  <data name="CoinTrading_7_4" xml:space="preserve">
+    <value>체결가</value>
+  </data>
+  <data name="CoinTrading_7_5" xml:space="preserve">
+    <value>체결금액</value>
+  </data>
+  <data name="CoinTrading_7_6" xml:space="preserve">
+    <value>수수료</value>
+  </data>
+  <data name="CoinTrading_8" xml:space="preserve">
+    <value>자동거래 설정 내역</value>
+  </data>
+  <data name="CoinTrading_8_1" xml:space="preserve">
+    <value>코인</value>
+  </data>
+  <data name="CoinTrading_8_2" xml:space="preserve">
+    <value>구매/판매</value>
+  </data>
+  <data name="CoinTrading_8_2_1" xml:space="preserve">
+    <value>구매</value>
+  </data>
+  <data name="CoinTrading_8_2_2" xml:space="preserve">
+    <value>판매</value>
+  </data>
+  <data name="CoinTrading_8_3" xml:space="preserve">
+    <value>구분</value>
+  </data>
+  <data name="CoinTrading_8_3_1" xml:space="preserve">
+    <value>자동 구매</value>
+  </data>
+  <data name="CoinTrading_8_3_2" xml:space="preserve">
+    <value>자동 판매</value>
+  </data>
+  <data name="CoinTrading_8_3_3" xml:space="preserve">
+    <value>손절 판매</value>
+  </data>
+  <data name="CoinTrading_8_4" xml:space="preserve">
+    <value>순위</value>
+  </data>
+  <data name="CoinTrading_8_5" xml:space="preserve">
+    <value>금액</value>
+  </data>
+  <data name="CoinTrading_8_6" xml:space="preserve">
+    <value>오차율</value>
+  </data>
+  <data name="CoinTrading_8_7" xml:space="preserve">
+    <value>하한가</value>
+  </data>
+  <data name="CoinTrading_8_8" xml:space="preserve">
+    <value>상한가</value>
+  </data>
+  <data name="CoinTrading_8_9" xml:space="preserve">
+    <value>갯수</value>
+  </data>
+  <data name="CoinTrading_Alert_1" xml:space="preserve">
+    <value>구매 하시겠습니까?</value>
+  </data>
+  <data name="CoinTrading_Alert_10" xml:space="preserve">
+    <value>최소 입력 수량은 [10]개 입니다.</value>
+  </data>
+  <data name="CoinTrading_Alert_11" xml:space="preserve">
+    <value>최소 사용금액은 [{0}] {1} 입니다.</value>
+  </data>
+  <data name="CoinTrading_Alert_15" xml:space="preserve">
+    <value>주문가능한 {0}를 초과하였습니다.</value>
+  </data>
+  <data name="CoinTrading_Alert_16_1" xml:space="preserve">
+    <value>접속량이 많아 등록이 지연되고 있습니다.</value>
+  </data>
+  <data name="CoinTrading_Alert_16_2" xml:space="preserve">
+    <value>반드시 [내 거래내역]을 확인 후 재 등록해주시기 바랍니다.</value>
+  </data>
+  <data name="CoinTrading_Alert_17" xml:space="preserve">
+    <value>구매금액이 구매가능금액을 초과하였습니다.</value>
+  </data>
+  <data name="CoinTrading_Alert_18" xml:space="preserve">
+    <value>주문가격을 입력해주세요.</value>
+  </data>
+  <data name="CoinTrading_Alert_19" xml:space="preserve">
+    <value>판매가능수량을 확인해주세요.</value>
+  </data>
+  <data name="CoinTrading_Alert_2" xml:space="preserve">
+    <value>판매 하시겠습니까?</value>
+  </data>
+  <data name="CoinTrading_Alert_20" xml:space="preserve">
+    <value>판매가능수량을 초과하였습니다.</value>
+  </data>
+  <data name="CoinTrading_Alert_21" xml:space="preserve">
+    <value>주문가능한 코인갯수를 초과하였습니다.</value>
+  </data>
+  <data name="CoinTrading_Alert_22" xml:space="preserve">
+    <value>구매코인이 구매가능코인을 초과하였습니다.</value>
+  </data>
+  <data name="CoinTrading_Alert_23" xml:space="preserve">
+    <value>손절자동거래 설정을 취소 후 자동거래설정이 가능합니다.</value>
+  </data>
+  <data name="CoinTrading_Alert_24" xml:space="preserve">
+    <value>자동거래 설정을 취소 후 손절자동거래설정이 가능합니다.</value>
+  </data>
+  <data name="CoinTrading_Alert_25" xml:space="preserve">
+    <value>자동거래 설정 하시겠습니까?</value>
+  </data>
+  <data name="CoinTrading_Alert_26" xml:space="preserve">
+    <value>자동거래 설정 실패</value>
+  </data>
+  <data name="CoinTrading_Alert_27" xml:space="preserve">
+    <value>자동거래 설정을 취소 하시겠습니까?</value>
+  </data>
+  <data name="CoinTrading_Alert_28" xml:space="preserve">
+    <value>자동거래 설정 취소 실패</value>
+  </data>
+  <data name="CoinTrading_Alert_29" xml:space="preserve">
+    <value>손절 판매 설정 하시겠습니까?</value>
+  </data>
+  <data name="CoinTrading_Alert_3" xml:space="preserve">
+    <value>미체결 구매 리스트가 없습니다.</value>
+  </data>
+  <data name="CoinTrading_Alert_30" xml:space="preserve">
+    <value>손절 판매 설정 실패</value>
+  </data>
+  <data name="CoinTrading_Alert_31" xml:space="preserve">
+    <value>손절판매 설정을 취소 하시겠습니까?</value>
+  </data>
+  <data name="CoinTrading_Alert_32" xml:space="preserve">
+    <value>손절 판매 설정 취소 실패</value>
+  </data>
+  <data name="CoinTrading_Alert_33" xml:space="preserve">
+    <value>자동 구매 {0}순위 오차율을 선택해주세요.</value>
+  </data>
+  <data name="CoinTrading_Alert_34" xml:space="preserve">
+    <value>자동 판매 {0}순위 오차율을 선택해주세요.</value>
+  </data>
+  <data name="CoinTrading_Alert_35" xml:space="preserve">
+    <value>손절 판매 {0}순위 오차율을 선택해주세요.</value>
+  </data>
+  <data name="CoinTrading_Alert_36" xml:space="preserve">
+    <value>현재 구매 시세보다 낮게 설정되어야 합니다.</value>
+  </data>
+  <data name="CoinTrading_Alert_37" xml:space="preserve">
+    <value>현재 판매 시세보다 높게 설정되어야 합니다.</value>
+  </data>
+  <data name="CoinTrading_Alert_38" xml:space="preserve">
+    <value>{0}순위 보다 높은 금액을 입력하세요.</value>
+  </data>
+  <data name="CoinTrading_Alert_39" xml:space="preserve">
+    <value>{0}순위 보다 낮은 금액을 입력하세요.</value>
+  </data>
+  <data name="CoinTrading_Alert_4" xml:space="preserve">
+    <value>미체결 판매 리스트가 없습니다.</value>
+  </data>
+  <data name="CoinTrading_Alert_40" xml:space="preserve">
+    <value>{0}순위가 설정이 되어야 합니다.</value>
+  </data>
+  <data name="CoinTrading_Alert_41" xml:space="preserve">
+    <value>{0}순위 오차범위 내에 금액을 설정 할 수 없습니다.</value>
+  </data>
+  <data name="CoinTrading_Alert_42" xml:space="preserve">
+    <value>{0}순위 오차상한값을 초과하였습니다.</value>
+  </data>
+  <data name="CoinTrading_Alert_43" xml:space="preserve">
+    <value>{0}순위 오차하한값을 초과하였습니다.</value>
+  </data>
+  <data name="CoinTrading_Alert_44" xml:space="preserve">
+    <value>자동 구매 {0}순위 개수를 입력해주세요.</value>
+  </data>
+  <data name="CoinTrading_Alert_45" xml:space="preserve">
+    <value>자동 판매 {0}순위 개수를 입력해주세요.</value>
+  </data>
+  <data name="CoinTrading_Alert_46" xml:space="preserve">
+    <value>손절 판매 {0}순위 개수를 입력해주세요.</value>
+  </data>
+  <data name="CoinTrading_Alert_6" xml:space="preserve">
+    <value>주문을 취소 하시겠습니까?</value>
+  </data>
+  <data name="CoinTrading_Alert_7" xml:space="preserve">
+    <value>주문 취소 완료</value>
+  </data>
+  <data name="CoinTrading_Alert_8" xml:space="preserve">
+    <value>최소 입력 수량은 [{0}]개 입니다.</value>
+  </data>
+  <data name="CoinTrading_Alert_9" xml:space="preserve">
+    <value>최소 입력 수량은 [0.01]개 입니다.</value>
+  </data>
+  <data name="CoinTrading_BL_T1" xml:space="preserve">
+    <value>자동구매 등록이란?</value>
+  </data>
+  <data name="CoinTrading_BL_T10" xml:space="preserve">
+    <value>있는 동안은 설정금액 도달 시 계속 체결됩니다.</value>
+  </data>
+  <data name="CoinTrading_BL_T2" xml:space="preserve">
+    <value>*자동구매의 경우 미체결 최고구매가보다 낮게 가격을</value>
+  </data>
+  <data name="CoinTrading_BL_T3" xml:space="preserve">
+    <value>지정하면 해당 주문가격 도달(오차범위 내) 시마다</value>
+  </data>
+  <data name="CoinTrading_BL_T4" xml:space="preserve">
+    <value>시장가로 체결됩니다.</value>
+  </data>
+  <data name="CoinTrading_BL_T5" xml:space="preserve">
+    <value>*주문금액보다 남아있는 금액이 적을 경우</value>
+  </data>
+  <data name="CoinTrading_BL_T6" xml:space="preserve">
+    <value> 남아있는 금액만큼 체결됩니다.</value>
+  </data>
+  <data name="CoinTrading_BL_T7" xml:space="preserve">
+    <value>*(자동거래취소)버튼으로 취소가 가능합니다.</value>
+  </data>
+  <data name="CoinTrading_BL_T8" xml:space="preserve">
+    <value>*자동거래는 PC거래소가 로그인되어 있어야 체결이</value>
+  </data>
+  <data name="CoinTrading_BL_T9" xml:space="preserve">
+    <value>가능합니다. 1순위 설정 금액부터 체결되고 설정되어</value>
+  </data>
+  <data name="CoinTrading_SH_T1" xml:space="preserve">
+    <value>손절판매 등록이란?</value>
+  </data>
+  <data name="CoinTrading_SH_T10" xml:space="preserve">
+    <value>*자동거래는 PC거래소가 로그인되어 있어야</value>
+  </data>
+  <data name="CoinTrading_SH_T11" xml:space="preserve">
+    <value>체결이 가능합니다. 1순위 설정 금액부터 체결되고</value>
+  </data>
+  <data name="CoinTrading_SH_T12" xml:space="preserve">
+    <value>설정되어 있는 동안은 설정금액 도달 시 계속 체결됩니다.</value>
+  </data>
+  <data name="CoinTrading_SH_T2" xml:space="preserve">
+    <value>*손절판매의 경우 판매가 하락시 손해를</value>
+  </data>
+  <data name="CoinTrading_SH_T3" xml:space="preserve">
+    <value>최소화하기 위한 금액을 설정합니다.</value>
+  </data>
+  <data name="CoinTrading_SH_T4" xml:space="preserve">
+    <value>*미체결 최고 구매가보다 낮게 가격을 지정하면</value>
+  </data>
+  <data name="CoinTrading_SH_T5" xml:space="preserve">
+    <value>해당 주문가격 도달 (오차범위 내) 시마다 시장가로</value>
+  </data>
+  <data name="CoinTrading_SH_T6" xml:space="preserve">
+    <value>체결됩니다.</value>
+  </data>
+  <data name="CoinTrading_SH_T7" xml:space="preserve">
+    <value>*주문수량보다 남아있는 수량이 적을 경우</value>
+  </data>
+  <data name="CoinTrading_SH_T8" xml:space="preserve">
+    <value>남아있는 수량만큼 체결됩니다.</value>
+  </data>
+  <data name="CoinTrading_SH_T9" xml:space="preserve">
+    <value>*{손절취소}버튼으로 취소가 가능합니다.</value>
+  </data>
+  <data name="CoinTrading_SL_T1" xml:space="preserve">
+    <value>자동판매 등록이란?</value>
+  </data>
+  <data name="CoinTrading_SL_T10" xml:space="preserve">
+    <value>설정되어 있는 동안은 설정금액 도달 시 계속 체결됩니다.</value>
+  </data>
+  <data name="CoinTrading_SL_T2" xml:space="preserve">
+    <value>*판매의 경우 미체결 최저 판매가보다 높게 가격을</value>
+  </data>
+  <data name="CoinTrading_SL_T3" xml:space="preserve">
+    <value>지정하면 해당 주문가격 도달 (오차범위 내) 시마다</value>
+  </data>
+  <data name="CoinTrading_SL_T4" xml:space="preserve">
+    <value>시장가로 체결됩니다.</value>
+  </data>
+  <data name="CoinTrading_SL_T5" xml:space="preserve">
+    <value>*주문수량보다 남아있는 수량이 적을 경우</value>
+  </data>
+  <data name="CoinTrading_SL_T6" xml:space="preserve">
+    <value>남아있는 수량만큼 체결됩니다.</value>
+  </data>
+  <data name="CoinTrading_SL_T7" xml:space="preserve">
+    <value>*(자동거래취소)버튼으로 취소가 가능합니다.</value>
+  </data>
+  <data name="CoinTrading_SL_T8" xml:space="preserve">
+    <value>*자동거래는 PC거래소가 로그인되어 있어야 체결이</value>
+  </data>
+  <data name="CoinTrading_SL_T9" xml:space="preserve">
+    <value>가능합니다. 1순위 설정 금액부터 체결되고</value>
+  </data>
+  <data name="Common_Alert_1" xml:space="preserve">
+    <value>서비스 준비중 입니다.</value>
+  </data>
+  <data name="Common_Alert_2" xml:space="preserve">
+    <value>저장되었습니다.</value>
+  </data>
+  <data name="Common_Alert_3" xml:space="preserve">
+    <value>[HTS&gt;인증센타]에서 인증완료 후 정상적으로 이용이 가능합니다.</value>
+  </data>
+  <data name="Common_Alert_5" xml:space="preserve">
+    <value>HTS 프로그램이 이미 실행 중입니다.</value>
+  </data>
+  <data name="Common_Alert_6" xml:space="preserve">
+    <value>취소하시겠습니까?</value>
+  </data>
+  <data name="Common_Alert_7" xml:space="preserve">
+    <value>새로고침</value>
+  </data>
+  <data name="Common_Alert_8" xml:space="preserve">
+    <value>충전 금액을 입력하세요.</value>
+  </data>
+  <data name="Common_Alert_9" xml:space="preserve">
+    <value>최근 거래 내역</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_1" xml:space="preserve">
+    <value>최근거래내역</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_2" xml:space="preserve">
+    <value>일자</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_3" xml:space="preserve">
+    <value>코인 개수</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_4" xml:space="preserve">
+    <value>진행 상태</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_4_1" xml:space="preserve">
+    <value>완료</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_4_2" xml:space="preserve">
+    <value>전송중</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_5" xml:space="preserve">
+    <value>완료일자</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_6" xml:space="preserve">
+    <value>종류</value>
+  </data>
+  <data name="DepositDepositWithdraw_Top_1_1" xml:space="preserve">
+    <value>신규 가입하신 회원님께서는 주소 생성하기 버튼을 클릭하셔야 고유 전자지갑주소가 발급 됩니다.</value>
+  </data>
+  <data name="DepositDepositWithdraw_Top_1_2" xml:space="preserve">
+    <value>진행은 블록체인상에서 승인 이후 해당 코인 입출금 지갑에 반영됩니다. 입금은 약 10분~ 30분동안 진행됩니다.</value>
+  </data>
+  <data name="ExchangeChartDashboard_1" xml:space="preserve">
+    <value>거래소 차트</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_1" xml:space="preserve">
+    <value>거래소 코인 현재가</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_2" xml:space="preserve">
+    <value>코인</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_3" xml:space="preserve">
+    <value>현재가</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_4_1" xml:space="preserve">
+    <value>대비</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_4_2" xml:space="preserve">
+    <value>등락</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_5" xml:space="preserve">
+    <value>거래량</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_6" xml:space="preserve">
+    <value>거래금액</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_7" xml:space="preserve">
+    <value>구매/판매</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_8" xml:space="preserve">
+    <value>시간</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_3_1" xml:space="preserve">
+    <value>전체 주문내역</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_3_2" xml:space="preserve">
+    <value>주문량</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_3_3" xml:space="preserve">
+    <value>구매가(매수)</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_3_4" xml:space="preserve">
+    <value>판매가(매도)</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_3_5" xml:space="preserve">
+    <value>주문량</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_4_1" xml:space="preserve">
+    <value>전체 체결내역</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_4_2" xml:space="preserve">
+    <value>체결시각</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_4_3" xml:space="preserve">
+    <value>1코인가격</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_4_4" xml:space="preserve">
+    <value>금액</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_4_5" xml:space="preserve">
+    <value>체결수량</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_ComboboxTime_1_1" xml:space="preserve">
+    <value>24시간</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_ComboboxTime_1_2" xml:space="preserve">
+    <value>12시간</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_ComboboxTime_1_3" xml:space="preserve">
+    <value>1시간</value>
+  </data>
+  <data name="IP_Registration_1_1" xml:space="preserve">
+    <value>현재 사용하시는 PC는 최초 로그인 시,</value>
+  </data>
+  <data name="IP_Registration_1_2" xml:space="preserve">
+    <value>해당 IP정보가 자동 등록 됩니다. 등록하시겠습니까?</value>
+  </data>
+  <data name="IP_Registration_1_3" xml:space="preserve">
+    <value>IP 등록을 해야 HTS로그인이 가능합니다.</value>
+  </data>
+  <data name="IP_Registration_2_1" xml:space="preserve">
+    <value>해당 PC IP가 정상 등록 되었습니다.</value>
+  </data>
+  <data name="IP_Registration_2_2" xml:space="preserve">
+    <value>등록 정보는[마이페이지&gt;접속정보 &gt; HTS IP등록]에서</value>
+  </data>
+  <data name="IP_Registration_2_3" xml:space="preserve">
+    <value>확인 가능합니다.</value>
+  </data>
+  <data name="IP_Registration_3_1" xml:space="preserve">
+    <value>IP가 등록되지 않은 PC에서 로그인하셨습니다.</value>
+  </data>
+  <data name="IP_Registration_3_2" xml:space="preserve">
+    <value>IP 등록 화면으로 이동하시려면 확인버튼을 눌러주세요.</value>
+  </data>
+  <data name="IP_Registration_3_3" xml:space="preserve">
+    <value>등록된 IP만 HTS로그인이 가능합니다.</value>
+  </data>
+  <data name="IP_Registration_4_1" xml:space="preserve">
+    <value>*IP가 등록된 PC만 HTS 이용가능하며, 등록 시 별도 이메일 인증이 필요합니다</value>
+  </data>
+  <data name="IP_Registration_4_10" xml:space="preserve">
+    <value>Email 인증</value>
+  </data>
+  <data name="IP_Registration_4_11" xml:space="preserve">
+    <value>인증완료</value>
+  </data>
+  <data name="IP_Registration_4_12" xml:space="preserve">
+    <value>등록된 이메일로 인증번호가 발송되었습니다. 10분안에 입력해 주시기바랍니다</value>
+  </data>
+  <data name="IP_Registration_4_13" xml:space="preserve">
+    <value>인증이 완료되었습니다.</value>
+  </data>
+  <data name="IP_Registration_4_14" xml:space="preserve">
+    <value>인증번호를 재발송했습니다.</value>
+  </data>
+  <data name="IP_Registration_4_15" xml:space="preserve">
+    <value>Email 인증을 해야 IP등록이 됩니다.</value>
+  </data>
+  <data name="IP_Registration_4_16_1" xml:space="preserve">
+    <value>전송된 인증번호가 아닙니다.</value>
+  </data>
+  <data name="IP_Registration_4_16_2" xml:space="preserve">
+    <value>입력하신 인증번호를 확인해주시기 바랍니다.</value>
+  </data>
+  <data name="IP_Registration_4_17_1" xml:space="preserve">
+    <value>입력시간 3분이 초과되었습니다.</value>
+  </data>
+  <data name="IP_Registration_4_17_2" xml:space="preserve">
+    <value>{재발송}버튼을 누른 후 다시 발송하시기 바랍니다.</value>
+  </data>
+  <data name="IP_Registration_4_18" xml:space="preserve">
+    <value>사용기간을 선택해주세요.</value>
+  </data>
+  <data name="IP_Registration_4_2" xml:space="preserve">
+    <value>* 임시로 IP를 등록하시려면 아래 '기간지정'을 하시면 지정한 기간 동안만 등록한 IP로 로그인이 가능합니다.</value>
+  </data>
+  <data name="IP_Registration_4_3" xml:space="preserve">
+    <value>* 등록 현황은 [마이페이지&gt;접속정보의 {HTS IP 등록정보}에서 확인이 가능합니다.</value>
+  </data>
+  <data name="IP_Registration_4_4" xml:space="preserve">
+    <value>접속 IP</value>
+  </data>
+  <data name="IP_Registration_4_5" xml:space="preserve">
+    <value>위치</value>
+  </data>
+  <data name="IP_Registration_4_6" xml:space="preserve">
+    <value>사용기간</value>
+  </data>
+  <data name="IP_Registration_4_7_1" xml:space="preserve">
+    <value>미지정</value>
+  </data>
+  <data name="IP_Registration_4_8" xml:space="preserve">
+    <value>일</value>
+  </data>
+  <data name="IP_Registration_4_9" xml:space="preserve">
+    <value>시간</value>
+  </data>
+  <data name="IP_Registration_Common_1" xml:space="preserve">
+    <value>HTS IP등록 안내</value>
+  </data>
+  <data name="IP_Registration_Common_2" xml:space="preserve">
+    <value>IP 미등록 PC 안내</value>
+  </data>
+  <data name="Login_1" xml:space="preserve">
+    <value>로그인</value>
+  </data>
+  <data name="Login_10" xml:space="preserve">
+    <value>*CoinBlock 접속 하셨습니다.</value>
+  </data>
+  <data name="Login_11" xml:space="preserve">
+    <value>사용자 이메일이 누락되었습니다.</value>
+  </data>
+  <data name="Login_12" xml:space="preserve">
+    <value>사용자 비밀번호가 누락되었습니다.</value>
+  </data>
+  <data name="Login_13" xml:space="preserve">
+    <value>이메일이 존재하지 않습니다.</value>
+  </data>
+  <data name="Login_14" xml:space="preserve">
+    <value>비밀번호가 일치하지 않습니다.</value>
+  </data>
+  <data name="Login_15" xml:space="preserve">
+    <value>등록되지 않은 IP입니다.</value>
+  </data>
+  <data name="Login_16" xml:space="preserve">
+    <value>사용불가 처리된 아이디입니다.</value>
+  </data>
+  <data name="Login_17" xml:space="preserve">
+    <value>접속량이 많아, 로그인이 지연되고 있습니다.</value>
+  </data>
+  <data name="Login_18" xml:space="preserve">
+    <value>해당 계정은 고객님의 요청으로 계정 잠금이 되었습니다.</value>
+  </data>
+  <data name="Login_19" xml:space="preserve">
+    <value>인증 메일이 해당 이메일로 발송되니 인증 메일 절차에 따라 비밀번호 재설정 후 로그인 해주세요.</value>
+  </data>
+  <data name="Login_2" xml:space="preserve">
+    <value>아이디 저장</value>
+  </data>
+  <data name="Login_20" xml:space="preserve">
+    <value>계정 잠금 안내</value>
+  </data>
+  <data name="Login_3" xml:space="preserve">
+    <value>로그아웃 하시겠습니까?</value>
+  </data>
+  <data name="Login_4" xml:space="preserve">
+    <value>로그인에 5회이상 실패하여 블록처리된 아이디입니다.</value>
+  </data>
+  <data name="Login_5" xml:space="preserve">
+    <value>아이디를 확인하세요.</value>
+  </data>
+  <data name="Login_6" xml:space="preserve">
+    <value>비밀번호를 확인하세요.</value>
+  </data>
+  <data name="Login_7" xml:space="preserve">
+    <value>아이디가 없거나 비밀번호가 맞지 않습니다.</value>
+  </data>
+  <data name="Login_8" xml:space="preserve">
+    <value>시스템 오류</value>
+  </data>
+  <data name="Login_9" xml:space="preserve">
+    <value>로그인 오류가 발생 하였습니다.</value>
+  </data>
+  <data name="Main_Head_1" xml:space="preserve">
+    <value>코인 총자산</value>
+  </data>
+  <data name="Main_Head_2" xml:space="preserve">
+    <value>거래가능</value>
+  </data>
+  <data name="Main_Head_3" xml:space="preserve">
+    <value>거래중</value>
+  </data>
+  <data name="Main_Head_5" xml:space="preserve">
+    <value>현재가</value>
+  </data>
+  <data name="Main_Menu_1" xml:space="preserve">
+    <value>메인</value>
+  </data>
+  <data name="Main_Menu_1_1" xml:space="preserve">
+    <value>거래소현황</value>
+  </data>
+  <data name="Main_Menu_2" xml:space="preserve">
+    <value>코인 구매/판매</value>
+  </data>
+  <data name="Main_Menu_2_1" xml:space="preserve">
+    <value>비트코인</value>
+  </data>
+  <data name="Main_Menu_2_2" xml:space="preserve">
+    <value>이더리움</value>
+  </data>
+  <data name="Main_Menu_2_3" xml:space="preserve">
+    <value>비트코인캐쉬</value>
+  </data>
+  <data name="Main_Menu_2_4" xml:space="preserve">
+    <value>리플</value>
+  </data>
+  <data name="Main_Menu_2_5" xml:space="preserve">
+    <value>코인교환자동거래</value>
+  </data>
+  <data name="Main_Menu_2_6" xml:space="preserve">
+    <value>전체 거래현황</value>
+  </data>
+  <data name="Main_Menu_3" xml:space="preserve">
+    <value>입출금관리</value>
+  </data>
+  <data name="Main_Menu_3_2" xml:space="preserve">
+    <value>코인입금/전자지갑</value>
+  </data>
+  <data name="Main_Menu_3_4" xml:space="preserve">
+    <value>코인송금</value>
+  </data>
+  <data name="Main_Menu_4" xml:space="preserve">
+    <value>부가서비스</value>
+  </data>
+  <data name="Main_Menu_4_1" xml:space="preserve">
+    <value>정액쿠폰</value>
+  </data>
+  <data name="Main_Menu_4_2" xml:space="preserve">
+    <value>시세알림</value>
+  </data>
+  <data name="Main_Menu_4_3" xml:space="preserve">
+    <value>자동거래</value>
+  </data>
+  <data name="Main_Menu_5" xml:space="preserve">
+    <value>고객센터</value>
+  </data>
+  <data name="Main_Menu_5_1" xml:space="preserve">
+    <value>공지사항</value>
+  </data>
+  <data name="Main_Menu_5_2" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="Main_Menu_5_3" xml:space="preserve">
+    <value>1:1문의</value>
+  </data>
+  <data name="Main_Menu_5_4" xml:space="preserve">
+    <value>수수료 및 입출금 한도</value>
+  </data>
+  <data name="Main_Menu_5_5" xml:space="preserve">
+    <value>Market Cap</value>
+  </data>
+  <data name="Main_Menu_5_7" xml:space="preserve">
+    <value>인증자료제출</value>
+  </data>
+  <data name="Main_Menu_5_8" xml:space="preserve">
+    <value>암호화폐 정보</value>
+  </data>
+  <data name="Main_Menu_6" xml:space="preserve">
+    <value>마이페이지</value>
+  </data>
+  <data name="Main_Menu_6_1" xml:space="preserve">
+    <value>회원정보관리</value>
+  </data>
+  <data name="Main_Menu_6_2" xml:space="preserve">
+    <value>인증센터</value>
+  </data>
+  <data name="Main_Menu_6_3" xml:space="preserve">
+    <value>접속정보</value>
+  </data>
+  <data name="Main_Menu_6_4" xml:space="preserve">
+    <value>자산현황</value>
+  </data>
+  <data name="Main_Menu_6_5" xml:space="preserve">
+    <value>내거래내역</value>
+  </data>
+  <data name="Main_Menu_6_6" xml:space="preserve">
+    <value>알림</value>
+  </data>
+  <data name="Main_QuickMenu_10" xml:space="preserve">
+    <value>자산현황</value>
+  </data>
+  <data name="Main_QuickMenu_11" xml:space="preserve">
+    <value>입출금내역</value>
+  </data>
+  <data name="Main_QuickMenu_12" xml:space="preserve">
+    <value>1:1문의하기</value>
+  </data>
+  <data name="Main_QuickMenu_13" xml:space="preserve">
+    <value>즐겨찾기</value>
+  </data>
+  <data name="Main_QuickMenu_7" xml:space="preserve">
+    <value>코인입금</value>
+  </data>
+  <data name="Main_QuickMenu_8" xml:space="preserve">
+    <value>코인송금</value>
+  </data>
+  <data name="Main_QuickMenu_9" xml:space="preserve">
+    <value>내 거래내역</value>
+  </data>
+  <data name="NoticePopup_1" xml:space="preserve">
+    <value>공지사항</value>
+  </data>
+  <data name="NoticePopup_2" xml:space="preserve">
+    <value>{0} 충전 주의사항</value>
+  </data>
+  <data name="NoticePopup_3" xml:space="preserve">
+    <value>HTS IP 등록 안내</value>
+  </data>
+  <data name="NoticePopup_4" xml:space="preserve">
+    <value>IP 미등록 PC 안내</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_1" xml:space="preserve">
+    <value>{0} 충전</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_10" xml:space="preserve">
+    <value>입금은행</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_11" xml:space="preserve">
+    <value>계좌번호</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_12" xml:space="preserve">
+    <value>예금주</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_13" xml:space="preserve">
+    <value>받는사람 통장 적요</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_14" xml:space="preserve">
+    <value>완료일자</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_15" xml:space="preserve">
+    <value>구분</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_15_1" xml:space="preserve">
+    <value>계좌이체</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_15_2" xml:space="preserve">
+    <value>전자상품권</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_16" xml:space="preserve">
+    <value>충전금액</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_17" xml:space="preserve">
+    <value>진행상태</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_17_1" xml:space="preserve">
+    <value>완료</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_17_2" xml:space="preserve">
+    <value>미완료</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_2" xml:space="preserve">
+    <value>2. 계좌 입금 후 반영까지 약 2분 ~ 30분정도가 소요됩니다. (은행 점검, 전산망 장애 등 긴급 상황 발생시 예외)</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_4" xml:space="preserve">
+    <value>3. 아래와 같은 경우 입금이 확인되지 않습니다. [고객지원&gt;인증자료제출]의 입금사실증명의 자료제출을 해주셔야 입금이 완료됩니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_5" xml:space="preserve">
+    <value>ㆍ인증계좌로 등록한 본인 계좌에서 입금 하지 않을 경우</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_6" xml:space="preserve">
+    <value>ㆍ인증계좌에서 입금하더라도 입금자명(적요)을 변경하여 송금할 경우</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_6_1" xml:space="preserve">
+    <value>적요 : 아래 '입금자명'에 표시된 내용으로 입금 시 통장 적요에 입력</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_7" xml:space="preserve">
+    <value>ㆍ고액을 입금할 경우</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_8" xml:space="preserve">
+    <value>반드시 인증계좌로 등록한 본인 계좌에서 입금하세요.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_9" xml:space="preserve">
+    <value>출금계좌에서 입금 하더라도 입금자명을 다르게 입금하면 충전이 안될 수 있으니 유의해주시기 바랍니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_1" xml:space="preserve">
+    <value>받는사람 통장 적요</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_2" xml:space="preserve">
+    <value>아래와 같은 경우 입금이 확인되지 않습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_3" xml:space="preserve">
+    <value>- 인증계좌로 등록한 본인 계좌에서 입금하지 않은 경우</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_4" xml:space="preserve">
+    <value>- 인증계좌에서 입금하더라도 받는 사람 통장 적요를 변경하여</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_5" xml:space="preserve">
+    <value>송금할 경우</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_6" xml:space="preserve">
+    <value>확인이 되지 않았을 경우 [고객지원 &gt; 인증자료제출]의</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_7" xml:space="preserve">
+    <value>입금 사실 증명의 자료를 인증 자료 제출로 요청하셔야 입금이 완료됩니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_8" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TradeHistoryTrading_1_1" xml:space="preserve">
+    <value>비트코인</value>
+  </data>
+  <data name="TradeHistoryTrading_1_10" xml:space="preserve">
+    <value>수량</value>
+  </data>
+  <data name="TradeHistoryTrading_1_11" xml:space="preserve">
+    <value>주문가격</value>
+  </data>
+  <data name="TradeHistoryTrading_1_12" xml:space="preserve">
+    <value>체결시각</value>
+  </data>
+  <data name="TradeHistoryTrading_1_13" xml:space="preserve">
+    <value>시세</value>
+  </data>
+  <data name="TradeHistoryTrading_1_14" xml:space="preserve">
+    <value>거래량</value>
+  </data>
+  <data name="TradeHistoryTrading_1_15" xml:space="preserve">
+    <value>체결금액</value>
+  </data>
+  <data name="TradeHistoryTrading_1_16" xml:space="preserve">
+    <value>새로고침</value>
+  </data>
+  <data name="TradeHistoryTrading_1_2" xml:space="preserve">
+    <value>이더리움</value>
+  </data>
+  <data name="TradeHistoryTrading_1_3" xml:space="preserve">
+    <value>비트코인캐쉬</value>
+  </data>
+  <data name="TradeHistoryTrading_1_4" xml:space="preserve">
+    <value>리플</value>
+  </data>
+  <data name="TradeHistoryTrading_1_5" xml:space="preserve">
+    <value>전체 미체결 구매</value>
+  </data>
+  <data name="TradeHistoryTrading_1_6" xml:space="preserve">
+    <value>전체 미체결 판매</value>
+  </data>
+  <data name="TradeHistoryTrading_1_7" xml:space="preserve">
+    <value>전체 체결(거래완료)</value>
+  </data>
+  <data name="TradeHistoryTrading_1_8" xml:space="preserve">
+    <value>더보기</value>
+  </data>
+  <data name="TradeHistoryTrading_1_9" xml:space="preserve">
+    <value>누적수량</value>
+  </data>
+  <data name="TradingCommonTooltip_1_1" xml:space="preserve">
+    <value>지정가구매(매수)란 원하는 구매가(주문가격)를 미체결판매가의 최저금액 미만으로 등록하는 것을 말합니다.
+미체결판매가의 최저금액 이상으로 주문가격을 지정 시 즉시 체결됩니다.</value>
+  </data>
+  <data name="TradingCommonTooltip_1_2" xml:space="preserve">
+    <value>지정가판매(매도)란 원하는 판매가(주문가격)를 미체결구매가의 최고금액을 초과하여 등록하는 것을 말합니다.
+미체결구매가의 최고금액 이하로 주문가격을 지정 시 즉시 체결됩니다.</value>
+  </data>
+  <data name="TradingCommonTooltip_1_3" xml:space="preserve">
+    <value>시장가구매(매수)란 오른쪽 ‘전체 미체결내역’ 미체결판매의 맨 위의 가격부터 즉시 체결되며, 실제 수령량은 구매금액에 따라 변동될 수 있습니다.</value>
+  </data>
+  <data name="TradingCommonTooltip_1_4" xml:space="preserve">
+    <value>시장가판매(매도)란 오른쪽 ‘전체 미체결내역’ 미체결구매의 맨 위의 가격부터 즉시 체결되며, 실제 수령액은 판매수량에 따라 변동될 수 있습니다.</value>
+  </data>
+  <data name="TradingCommonTooltip_1_5" xml:space="preserve">
+    <value>전체 미체결내역은 지정가 구매/판매로 등록한 전체 내역 중 체결되지 않은 내역입니다.
+미체결판매(매도) 리스트는 판매가 기준 오름차순으로
+미체결구매(매수) 리스트는 구매가 기준 내림차순으로 정렬됩니다.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_1" xml:space="preserve">
+    <value>1회 송금 한도는 {0} ~ {1} 입니다.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_10" xml:space="preserve">
+    <value>유효한 주소가 아닙니다. 확인 후 입력하세요.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_11" xml:space="preserve">
+    <value>관리자에게 문의주시기 바랍니다.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_12" xml:space="preserve">
+    <value>송금실패. </value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_2" xml:space="preserve">
+    <value>송금 가능 코인 수를 초과하였습니다.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_3" xml:space="preserve">
+    <value>전자지갑주소를 확인해주세요.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_4" xml:space="preserve">
+    <value>{0}를 확인해주세요.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_5" xml:space="preserve">
+    <value>Email인증이 완료되지 않았습니다.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_6" xml:space="preserve">
+    <value>OTP번호를 확인해주세요.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_7" xml:space="preserve">
+    <value>동의 체크가 되어 있지 않습니다.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_8" xml:space="preserve">
+    <value>송금이 완료되었습니다.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_9" xml:space="preserve">
+    <value>무제한</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_1" xml:space="preserve">
+    <value>송금코드</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_2" xml:space="preserve">
+    <value>신청일시</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_3" xml:space="preserve">
+    <value>송금액</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_4" xml:space="preserve">
+    <value>수수료</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5" xml:space="preserve">
+    <value>상태</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5_1" xml:space="preserve">
+    <value>승인대기</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5_2" xml:space="preserve">
+    <value>승인중</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5_3" xml:space="preserve">
+    <value>승인완료</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5_4" xml:space="preserve">
+    <value>송금완료</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5_5" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5_6" xml:space="preserve">
+    <value>승인취소</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5_7" xml:space="preserve">
+    <value>송금실패</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_6" xml:space="preserve">
+    <value>송금완료일</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_7" xml:space="preserve">
+    <value>거래내용</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_10" xml:space="preserve">
+    <value>수령액(수수료 제외)</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_11" xml:space="preserve">
+    <value>은행명</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_12" xml:space="preserve">
+    <value>Email 인증</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_13" xml:space="preserve">
+    <value>인증요청</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_14" xml:space="preserve">
+    <value>계좌번호</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_15" xml:space="preserve">
+    <value>OTP 인증</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_16" xml:space="preserve">
+    <value>예금주</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_17" xml:space="preserve">
+    <value>시스템 업데이트 시 반영이 지연 될 수 있습니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_18" xml:space="preserve">
+    <value>은행점검시간 동안에는 신청 할 수 없습니다. (23:30 ~ 01:00)</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_19" xml:space="preserve">
+    <value>모든 출금은 관리자 확인 후 진행됩니다.  </value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_2" xml:space="preserve">
+    <value>출금은 본인 명의의 계좌로만 가능합니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_21" xml:space="preserve">
+    <value>출금신청일시</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_22" xml:space="preserve">
+    <value>출금액</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23" xml:space="preserve">
+    <value>상태</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_1" xml:space="preserve">
+    <value>승인대기</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_2" xml:space="preserve">
+    <value>승인중</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_3" xml:space="preserve">
+    <value>승인완료</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_4" xml:space="preserve">
+    <value>승인취소</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_5" xml:space="preserve">
+    <value>출금대기</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_6" xml:space="preserve">
+    <value>출금완료</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_24" xml:space="preserve">
+    <value>승인완료일</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_25" xml:space="preserve">
+    <value>출금일</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_26" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_27" xml:space="preserve">
+    <value>OTP 등록이 되어 있지 않은 경우, [인증센터 &gt; OTP등록]에서 등록하셔야 출금이 가능합니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_5" xml:space="preserve">
+    <value>수수료</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_6" xml:space="preserve">
+    <value>출금 최소 금액</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_7" xml:space="preserve">
+    <value>출금 최대 금액</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_9" xml:space="preserve">
+    <value>출금 신청 금액</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_1" xml:space="preserve">
+    <value>계좌정보가 없습니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_10" xml:space="preserve">
+    <value>OTP 인증에 실패하였습니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_11" xml:space="preserve">
+    <value>OTP 인증번호를 입력하세요.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_12" xml:space="preserve">
+    <value>출금최대 금액 이하로 입력해주세요.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_2" xml:space="preserve">
+    <value>출금 신청 금액을 입력하세요.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_3" xml:space="preserve">
+    <value>수령액이 출금 최소 금액보다 낮습니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_4" xml:space="preserve">
+    <value>Email 인증이 완료되지 않았습니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_5" xml:space="preserve">
+    <value>OTP번호를 확인해주세요.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_6" xml:space="preserve">
+    <value>보유한 금액보다 높게 출금신청 할 수 없습니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_7" xml:space="preserve">
+    <value>출금 신청이 완료되었습니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_8" xml:space="preserve">
+    <value>OTP인증이 완료되었습니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_9" xml:space="preserve">
+    <value>OTP 등록이 되어있지 않습니다.</value>
+  </data>
+  <data name="AssetsMyPage_1" xml:space="preserve">
+    <value>전자지갑주소</value>
+  </data>
+  <data name="AssetsMyPage_1_1" xml:space="preserve">
+    <value>전자지갑주소 생성은</value>
+  </data>
+  <data name="AssetsMyPage_1_2" xml:space="preserve">
+    <value>[HTS, MTS &gt; 입출금관리 &gt; 코인입금]</value>
+  </data>
+  <data name="AssetsMyPage_1_3" xml:space="preserve">
+    <value>에서 생성하실 수 있습니다.</value>
+  </data>
+  <data name="AssetsMyPage_2" xml:space="preserve">
+    <value>자산현황</value>
+  </data>
+  <data name="AssetsMyPage_2_1" xml:space="preserve">
+    <value>코인자산</value>
+  </data>
+  <data name="AssetsMyPage_2_2" xml:space="preserve">
+    <value>총자산</value>
+  </data>
+  <data name="AssetsMyPage_3_1" xml:space="preserve">
+    <value>구분</value>
+  </data>
+  <data name="AssetsMyPage_3_2" xml:space="preserve">
+    <value>거래가능</value>
+  </data>
+  <data name="AssetsMyPage_3_3" xml:space="preserve">
+    <value>거래가능</value>
+  </data>
+  <data name="AssetsMyPage_3_4" xml:space="preserve">
+    <value>거래중</value>
+  </data>
+  <data name="AssetsMyPage_3_5" xml:space="preserve">
+    <value>합계</value>
+  </data>
+  <data name="AssetsMyPage_4" xml:space="preserve">
+    <value>시세차익</value>
+  </data>
+  <data name="AssetsMyPage_4_1" xml:space="preserve">
+    <value>구분</value>
+  </data>
+  <data name="AssetsMyPage_4_2" xml:space="preserve">
+    <value>보유 수량</value>
+  </data>
+  <data name="AssetsMyPage_4_3" xml:space="preserve">
+    <value>구매평균가</value>
+  </data>
+  <data name="AssetsMyPage_4_4" xml:space="preserve">
+    <value>구매금액</value>
+  </data>
+  <data name="AssetsMyPage_4_5" xml:space="preserve">
+    <value>현재시세</value>
+  </data>
+  <data name="AssetsMyPage_4_6" xml:space="preserve">
+    <value>평가금액</value>
+  </data>
+  <data name="AssetsMyPage_4_7" xml:space="preserve">
+    <value>평가손익</value>
+  </data>
+  <data name="AssetsMyPage_4_8" xml:space="preserve">
+    <value>수익률</value>
+  </data>
+  <data name="AssetsMyPage_4_9" xml:space="preserve">
+    <value>합계</value>
+  </data>
+  <data name="AssetsMyPage_5" xml:space="preserve">
+    <value>기간별 시세차익</value>
+  </data>
+  <data name="AssetsMyPage_5_1" xml:space="preserve">
+    <value>기간</value>
+  </data>
+  <data name="AssetsMyPage_5_10" xml:space="preserve">
+    <value>수익률</value>
+  </data>
+  <data name="AssetsMyPage_5_11" xml:space="preserve">
+    <value>현재시세</value>
+  </data>
+  <data name="AssetsMyPage_5_12" xml:space="preserve">
+    <value>합계</value>
+  </data>
+  <data name="AssetsMyPage_5_2" xml:space="preserve">
+    <value>구분</value>
+  </data>
+  <data name="AssetsMyPage_5_3" xml:space="preserve">
+    <value>구매수량</value>
+  </data>
+  <data name="AssetsMyPage_5_4" xml:space="preserve">
+    <value>구매평균가</value>
+  </data>
+  <data name="AssetsMyPage_5_5" xml:space="preserve">
+    <value>구매총액</value>
+  </data>
+  <data name="AssetsMyPage_5_6" xml:space="preserve">
+    <value>판매수량</value>
+  </data>
+  <data name="AssetsMyPage_5_7" xml:space="preserve">
+    <value>판매평균가</value>
+  </data>
+  <data name="AssetsMyPage_5_8" xml:space="preserve">
+    <value>판매총액</value>
+  </data>
+  <data name="AssetsMyPage_5_9" xml:space="preserve">
+    <value>차익</value>
+  </data>
+  <data name="AssetsMyPage_6" xml:space="preserve">
+    <value>코인자산</value>
+  </data>
+  <data name="AssetsMyPage_6_1" xml:space="preserve">
+    <value>구분</value>
+  </data>
+  <data name="AssetsMyPage_6_2" xml:space="preserve">
+    <value>비트코인(BTC)</value>
+  </data>
+  <data name="AssetsMyPage_6_3" xml:space="preserve">
+    <value>이더리움(ETH)</value>
+  </data>
+  <data name="AssetsMyPage_6_4" xml:space="preserve">
+    <value>비트코인캐시(BCH)</value>
+  </data>
+  <data name="AssetsMyPage_6_5" xml:space="preserve">
+    <value>리플(XRP)</value>
+  </data>
+  <data name="AssetsMyPage_6_6" xml:space="preserve">
+    <value>거래가능</value>
+  </data>
+  <data name="AssetsMyPage_6_7" xml:space="preserve">
+    <value>거래중</value>
+  </data>
+  <data name="AssetsMyPage_6_8" xml:space="preserve">
+    <value>합계</value>
+  </data>
+  <data name="CoinInfo_1" xml:space="preserve">
+    <value>최초발행</value>
+  </data>
+  <data name="CoinInfo_2" xml:space="preserve">
+    <value>발행방식</value>
+  </data>
+  <data name="CoinInfo_3" xml:space="preserve">
+    <value>시가총액</value>
+  </data>
+  <data name="CoinInfo_4" xml:space="preserve">
+    <value>현재 총 발행량</value>
+  </data>
+  <data name="CoinInfo_5" xml:space="preserve">
+    <value>최대 발행량</value>
+  </data>
+  <data name="CoinInfo_6" xml:space="preserve">
+    <value>공식 웹 사이트</value>
+  </data>
+  <data name="CoinInfo_7" xml:space="preserve">
+    <value>코인소개</value>
+  </data>
+  <data name="CoinInfo_8" xml:space="preserve">
+    <value>코인특징</value>
+  </data>
+  <data name="Common_Alert_10" xml:space="preserve">
+    <value>게시글이 없습니다.</value>
+  </data>
+  <data name="Faq_1" xml:space="preserve">
+    <value>전체</value>
+  </data>
+  <data name="Faq_2" xml:space="preserve">
+    <value>구매/판매</value>
+  </data>
+  <data name="Faq_3" xml:space="preserve">
+    <value>입금/출금/송금</value>
+  </data>
+  <data name="Faq_4" xml:space="preserve">
+    <value>회원안내</value>
+  </data>
+  <data name="Faq_5" xml:space="preserve">
+    <value>기타</value>
+  </data>
+  <data name="Faq_7" xml:space="preserve">
+    <value>제목</value>
+  </data>
+  <data name="Faq_8" xml:space="preserve">
+    <value>작성일</value>
+  </data>
+  <data name="Fee_1" xml:space="preserve">
+    <value>구분</value>
+  </data>
+  <data name="Fee_10" xml:space="preserve">
+    <value>출금한도</value>
+  </data>
+  <data name="Fee_11" xml:space="preserve">
+    <value>1회</value>
+  </data>
+  <data name="Fee_12" xml:space="preserve">
+    <value>1일</value>
+  </data>
+  <data name="Fee_13" xml:space="preserve">
+    <value>0월</value>
+  </data>
+  <data name="Fee_14" xml:space="preserve">
+    <value>0원</value>
+  </data>
+  <data name="Fee_15" xml:space="preserve">
+    <value>주문 최소수량</value>
+  </data>
+  <data name="Fee_16" xml:space="preserve">
+    <value>인증현황</value>
+  </data>
+  <data name="Fee_17" xml:space="preserve">
+    <value>인증완료</value>
+  </data>
+  <data name="Fee_18" xml:space="preserve">
+    <value>인증하기</value>
+  </data>
+  <data name="Fee_2" xml:space="preserve">
+    <value>인증방법</value>
+  </data>
+  <data name="Fee_3" xml:space="preserve">
+    <value>이메일 인증</value>
+  </data>
+  <data name="Fee_4" xml:space="preserve">
+    <value>구글OTP</value>
+  </data>
+  <data name="Fee_5" xml:space="preserve">
+    <value>KYC인증</value>
+  </data>
+  <data name="Fee_6" xml:space="preserve">
+    <value>입금한도</value>
+  </data>
+  <data name="Fee_7" xml:space="preserve">
+    <value>모든 화폐</value>
+  </data>
+  <data name="Fee_8" xml:space="preserve">
+    <value>코인</value>
+  </data>
+  <data name="Fee_9" xml:space="preserve">
+    <value>무제한</value>
+  </data>
+  <data name="Notice_1" xml:space="preserve">
+    <value>제목</value>
+  </data>
+  <data name="Notice_2" xml:space="preserve">
+    <value>작성일</value>
+  </data>
+  <data name="QnaWrite_1" xml:space="preserve">
+    <value>회원님께서 문의 하신 내용은 관리자가 확인 후 연락 드리도록 하겠습니다.</value>
+  </data>
+  <data name="QnaWrite_2" xml:space="preserve">
+    <value>문의유형</value>
+  </data>
+  <data name="QnaWrite_3" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="QnaWrite_4" xml:space="preserve">
+    <value>제목</value>
+  </data>
+  <data name="QnaWrite_5" xml:space="preserve">
+    <value>내용</value>
+  </data>
+  <data name="QnaWrite_6" xml:space="preserve">
+    <value>통화가능번호</value>
+  </data>
+  <data name="Qna_1" xml:space="preserve">
+    <value>날짜조회</value>
+  </data>
+  <data name="Qna_2" xml:space="preserve">
+    <value>문의유형</value>
+  </data>
+  <data name="Qna_3" xml:space="preserve">
+    <value>제목</value>
+  </data>
+  <data name="Qna_4" xml:space="preserve">
+    <value>작성일</value>
+  </data>
+  <data name="Qna_5" xml:space="preserve">
+    <value>답변여부</value>
+  </data>
+  <data name="Qna_6" xml:space="preserve">
+    <value>답변대기</value>
+  </data>
+  <data name="Qna_7" xml:space="preserve">
+    <value>답변완료</value>
+  </data>
+  <data name="CertifyMyPage_1" xml:space="preserve">
+    <value>이메일 인증</value>
+  </data>
+  <data name="CertifyMyPage_1_1" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="CertifyMyPage_2" xml:space="preserve">
+    <value>휴대폰 본인인증</value>
+  </data>
+  <data name="CertifyMyPage_2_1" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="CertifyMyPage_2_1_1" xml:space="preserve">
+    <value>실명을 입력해주세요.</value>
+  </data>
+  <data name="CertifyMyPage_2_2" xml:space="preserve">
+    <value>국적</value>
+  </data>
+  <data name="CertifyMyPage_2_3" xml:space="preserve">
+    <value>생년월일</value>
+  </data>
+  <data name="CertifyMyPage_2_3_1" xml:space="preserve">
+    <value>예) 19960101</value>
+  </data>
+  <data name="CertifyMyPage_2_4" xml:space="preserve">
+    <value>성별</value>
+  </data>
+  <data name="CertifyMyPage_2_4_1" xml:space="preserve">
+    <value>남성</value>
+  </data>
+  <data name="CertifyMyPage_2_4_2" xml:space="preserve">
+    <value>여성</value>
+  </data>
+  <data name="CertifyMyPage_2_5" xml:space="preserve">
+    <value>휴대번호</value>
+  </data>
+  <data name="CertifyMyPage_2_5_1" xml:space="preserve">
+    <value>예) 01012345678</value>
+  </data>
+  <data name="CertifyMyPage_2_6" xml:space="preserve">
+    <value>인증코드</value>
+  </data>
+  <data name="CertifyMyPage_3" xml:space="preserve">
+    <value>계좌인증</value>
+  </data>
+  <data name="CertifyMyPage_3_1" xml:space="preserve">
+    <value>계좌</value>
+  </data>
+  <data name="CertifyMyPage_3_2" xml:space="preserve">
+    <value>계좌번호</value>
+  </data>
+  <data name="CertifyMyPage_4" xml:space="preserve">
+    <value>Google OTP</value>
+  </data>
+  <data name="CertifyMyPage_4_1" xml:space="preserve">
+    <value>구글 OTP 설정하는 방법</value>
+  </data>
+  <data name="CertifyMyPage_4_2" xml:space="preserve">
+    <value>휴대폰 스토어에서 'Google OTP'앱을 설치하시기 바랍니다.</value>
+  </data>
+  <data name="CertifyMyPage_4_3" xml:space="preserve">
+    <value>Google OTP'앱을 실행한 후 '바코드 스캔'을 선택합니다.</value>
+  </data>
+  <data name="CertifyMyPage_4_4" xml:space="preserve">
+    <value>옆의 QR 코드를 스캔하시기 바랍니다.</value>
+  </data>
+  <data name="CertifyMyPage_4_5" xml:space="preserve">
+    <value>'Google OTP'앱에서 보이는 OTP번호를 아래에 입력하시기 바랍니다.</value>
+  </data>
+  <data name="CertifyMyPage_4_6" xml:space="preserve">
+    <value>OTP</value>
+  </data>
+  <data name="LoginHistory_1" xml:space="preserve">
+    <value>접속정보</value>
+  </data>
+  <data name="LoginHistory_1_1" xml:space="preserve">
+    <value>기간</value>
+  </data>
+  <data name="LoginHistory_1_2" xml:space="preserve">
+    <value>일시</value>
+  </data>
+  <data name="LoginHistory_1_3" xml:space="preserve">
+    <value>기종</value>
+  </data>
+  <data name="LoginHistory_1_4" xml:space="preserve">
+    <value>서비스이용</value>
+  </data>
+  <data name="LoginHistory_1_5" xml:space="preserve">
+    <value>위치</value>
+  </data>
+  <data name="LoginHistory_1_6" xml:space="preserve">
+    <value>결과</value>
+  </data>
+  <data name="LoginHistory_2" xml:space="preserve">
+    <value>HTS IP 등록정보</value>
+  </data>
+  <data name="LoginHistory_2_1" xml:space="preserve">
+    <value>등록된 IP를 사용하지 않으려면 아래 [등록해제]버튼을 누르면 됩니다.</value>
+  </data>
+  <data name="LoginHistory_2_2" xml:space="preserve">
+    <value>사용기간</value>
+  </data>
+  <data name="LoginHistory_2_3" xml:space="preserve">
+    <value>최근접속일자</value>
+  </data>
+  <data name="LoginHistory_2_4" xml:space="preserve">
+    <value>아이피</value>
+  </data>
+  <data name="LoginHistory_2_5" xml:space="preserve">
+    <value>등록해제</value>
+  </data>
+  <data name="MemberInfo_2_1" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="MemberInfo_2_2" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="MemberInfo_2_3" xml:space="preserve">
+    <value>추천인코드</value>
+  </data>
+  <data name="MemberInfo_2_4" xml:space="preserve">
+    <value>비밀번호변경</value>
+  </data>
+  <data name="MemberInfo_3_1" xml:space="preserve">
+    <value>회원 탈퇴 관련</value>
+  </data>
+  <data name="MemberInfo_3_10" xml:space="preserve">
+    <value>3. 회원 탈퇴 요청 방법</value>
+  </data>
+  <data name="MemberInfo_3_11" xml:space="preserve">
+    <value>회원 탈퇴 요청은 고객센타로 전화주시기 바랍니다.</value>
+  </data>
+  <data name="MemberInfo_3_2" xml:space="preserve">
+    <value>회원탈퇴 전, 아래의 내용을 확인해주시기 바랍니다.</value>
+  </data>
+  <data name="MemberInfo_3_3" xml:space="preserve">
+    <value>1. 회원 탈퇴 신청 불가 사유</value>
+  </data>
+  <data name="MemberInfo_3_4" xml:space="preserve">
+    <value>아래의 사항 중 하나 이상 해당할 경우 회원 탈퇴가 불가능합니다.</value>
+  </data>
+  <data name="MemberInfo_3_5" xml:space="preserve">
+    <value>잔고가 남아 있거나 진행중인 거래가 있을 경우</value>
+  </data>
+  <data name="MemberInfo_3_6" xml:space="preserve">
+    <value>2. 회원 정보 삭제</value>
+  </data>
+  <data name="MemberInfo_3_7" xml:space="preserve">
+    <value>회원 탈퇴와 함께 거래소에 등록된 회원님의 개인정보는 모두 삭제, 폐기처리 되며 복구되지 않습니다.</value>
+  </data>
+  <data name="MemberInfo_3_8" xml:space="preserve">
+    <value>단, 상법, 전자상거래 등에서의 소비자보호에 관한 법률 등 관계법령의 규정에 의거하여 보존할 필요가 있는 경우,</value>
+  </data>
+  <data name="MemberInfo_3_9" xml:space="preserve">
+    <value>회사는 관계법령에서 정한 일정한 기간동안 회원정보를 보관합니다. 이 경우 회사는 보관하는 정보를 그 보관의 목적으로만 이용하며 보존기간은 5년입니다.</value>
+  </data>
+  <data name="TradingHistory_1_1" xml:space="preserve">
+    <value>전체</value>
+  </data>
+  <data name="TradingHistory_1_2" xml:space="preserve">
+    <value>충전</value>
+  </data>
+  <data name="TradingHistory_1_3" xml:space="preserve">
+    <value>구매</value>
+  </data>
+  <data name="TradingHistory_1_4" xml:space="preserve">
+    <value>판매</value>
+  </data>
+  <data name="TradingHistory_1_5" xml:space="preserve">
+    <value>출금</value>
+  </data>
+  <data name="TradingHistory_1_6" xml:space="preserve">
+    <value>송금</value>
+  </data>
+  <data name="TradingHistory_1_7" xml:space="preserve">
+    <value>입금</value>
+  </data>
+  <data name="TradingHistory_1_8" xml:space="preserve">
+    <value>기타</value>
+  </data>
+  <data name="TradingHistory_2_1" xml:space="preserve">
+    <value>기간</value>
+  </data>
+  <data name="TradingHistory_2_2" xml:space="preserve">
+    <value>통화</value>
+  </data>
+  <data name="TradingHistory_2_3" xml:space="preserve">
+    <value>상태</value>
+  </data>
+  <data name="TradingHistory_2_3_1" xml:space="preserve">
+    <value>완료</value>
+  </data>
+  <data name="TradingHistory_2_3_2" xml:space="preserve">
+    <value>처리중</value>
+  </data>
+  <data name="TradingHistory_3_1" xml:space="preserve">
+    <value>구분</value>
+  </data>
+  <data name="TradingHistory_3_2" xml:space="preserve">
+    <value>완료일</value>
+  </data>
+  <data name="TradingHistory_3_3" xml:space="preserve">
+    <value>내용</value>
+  </data>
+  <data name="TradingHistory_3_4" xml:space="preserve">
+    <value>통화</value>
+  </data>
+  <data name="TradingHistory_3_5" xml:space="preserve">
+    <value>수량</value>
+  </data>
+  <data name="TradingHistory_3_6" xml:space="preserve">
+    <value>금액</value>
+  </data>
+  <data name="TradingHistory_3_7" xml:space="preserve">
+    <value>수수료</value>
+  </data>
+  <data name="TradingHistory_3_8" xml:space="preserve">
+    <value>비고</value>
+  </data>
+  <data name="Qna_10" xml:space="preserve">
+    <value>입금/출금/송금</value>
+  </data>
+  <data name="Qna_11" xml:space="preserve">
+    <value>회원안내</value>
+  </data>
+  <data name="Qna_12" xml:space="preserve">
+    <value>기타</value>
+  </data>
+  <data name="Qna_8" xml:space="preserve">
+    <value>전체</value>
+  </data>
+  <data name="Qna_9" xml:space="preserve">
+    <value>구매/판매</value>
+  </data>
+  <data name="CoinDayPirce_1" xml:space="preserve">
+    <value>거래소 일별시세</value>
+  </data>
+  <data name="CoinDayPirce_2" xml:space="preserve">
+    <value>날짜조회</value>
+  </data>
+  <data name="CoinDayPirce_3" xml:space="preserve">
+    <value>일자</value>
+  </data>
+  <data name="CoinDayPirce_4" xml:space="preserve">
+    <value>오픈가</value>
+  </data>
+  <data name="CoinDayPirce_5" xml:space="preserve">
+    <value>최저가</value>
+  </data>
+  <data name="CoinDayPirce_6" xml:space="preserve">
+    <value>최고가</value>
+  </data>
+  <data name="CoinDayPirce_7" xml:space="preserve">
+    <value>종가</value>
+  </data>
+  <data name="CoinDayPirce_8" xml:space="preserve">
+    <value>전일대비</value>
+  </data>
+  <data name="CoinDayPirce_9" xml:space="preserve">
+    <value>거래량</value>
+  </data>
+  <data name="Faq_6" xml:space="preserve">
+    <value>인증자료제출</value>
+  </data>
+  <data name="Qna_13" xml:space="preserve">
+    <value>인증자료제출</value>
+  </data>
+  <data name="Fee_19" xml:space="preserve">
+    <value>출금 최소수량</value>
+  </data>
+  <data name="Main_Menu_5_6" xml:space="preserve">
+    <value>코인동향</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_1" xml:space="preserve">
+    <value>자동거래 결제</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_2_1" xml:space="preserve">
+    <value>결제금액</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_2_2" xml:space="preserve">
+    <value>결제 예상수량</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_3" xml:space="preserve">
+    <value>결제 종류</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_4" xml:space="preserve">
+    <value>1개월(30일)</value>
+  </data>
+  <data name="CertifyMyPage_4_7" xml:space="preserve">
+    <value>[등록완료]</value>
+  </data>
+  <data name="CertifyMyPage_Alert_1" xml:space="preserve">
+    <value>생년월일을 입력해주세요.</value>
+  </data>
+  <data name="CertifyMyPage_Alert_2" xml:space="preserve">
+    <value>생년월일을 형식에 맞게 입력해주세요.</value>
+  </data>
+  <data name="CertifyMyPage_Alert_3" xml:space="preserve">
+    <value>휴대폰 번호를 입력해주세요.</value>
+  </data>
+  <data name="CertifyMyPage_Alert_4" xml:space="preserve">
+    <value>계좌번호를 입력하세요.</value>
+  </data>
+  <data name="CertifyMyPage_Alert_5" xml:space="preserve">
+    <value>OTP 번호를 입력해주세요.</value>
+  </data>
+  <data name="Common_Alert_11" xml:space="preserve">
+    <value>미생성</value>
+  </data>
+  <data name="MemberInfo_2_5" xml:space="preserve">
+    <value>보조이메일</value>
+  </data>
+  <data name="MemberInfo_2_5_1" xml:space="preserve">
+    <value>보조이메일 안내</value>
+  </data>
+  <data name="MemberInfo_2_5_2" xml:space="preserve">
+    <value>해당 ID로 이메일이 오지 않을 때 보조이메일로 메일을 받을 수 있습니다.</value>
+  </data>
+  <data name="MemberInfo_2_5_3" xml:space="preserve">
+    <value>고객센터 문의 후 생성하실 수 있습니다.</value>
+  </data>
+  <data name="Common_Alert_12" xml:space="preserve">
+    <value>코인교환자동거래는 [부가서비스 &gt;자동거래]에서 신청 후 이용하실 수 있습니다.</value>
+  </data>
+  <data name="Common_Alert_13" xml:space="preserve">
+    <value>자동거래는 [부가서비스 &gt;자동거래]에서 신청 후 이용하실 수 있습니다.</value>
+  </data>
+  <data name="LevelPopup_1" xml:space="preserve">
+    <value>현재 LV.1(이메일 인증) 단계입니다.</value>
+  </data>
+  <data name="LevelPopup_2" xml:space="preserve">
+    <value>휴대폰 인증 후 이용하실 수 있습니다.</value>
+  </data>
+  <data name="MemberInfo_Pop_1" xml:space="preserve">
+    <value>해당 이메일로 비밀번호 변경 이메일이 발송됩니다. 받으신 이메일의 절차에 따라 24시간 내에 비밀번호를 설정해주세요.</value>
+  </data>
+  <data name="MemberInfo_Pop_2" xml:space="preserve">
+    <value>이메일 발송</value>
+  </data>
+  <data name="MemberInfo_Pop_3" xml:space="preserve">
+    <value>이메일로 비밀번호 설정 메일이 발송되었습니다.</value>
+  </data>
+  <data name="CoinTrading_2_7" xml:space="preserve">
+    <value>현재 시세</value>
+  </data>
+  <data name="Faq_9" xml:space="preserve">
+    <value>문의유형</value>
+  </data>
+  <data name="MemberInfo_Pop_4" xml:space="preserve">
+    <value>만 19세이상만 인증이 가능합니다.</value>
+  </data>
+  <data name="Common_Alert_14" xml:space="preserve">
+    <value>삭제하시겠습니까?</value>
+  </data>
+  <data name="Common_Alert_15" xml:space="preserve">
+    <value>삭제되었습니다.</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_5" xml:space="preserve">
+    <value>시세가 없습니다. 다른 통화로 결제해주세요.</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_6" xml:space="preserve">
+    <value>결제금액이 부족합니다.</value>
+  </data>
+  <data name="IP_Registration_4_7_2" xml:space="preserve">
+    <value>지정</value>
+  </data>
+  <data name="IP_Registration_4_7" xml:space="preserve">
+    <value>기간지정</value>
+  </data>
+  <data name="LoginHistory_2_6" xml:space="preserve">
+    <value>IP등록이 해재되었습니다.</value>
+  </data>
+  <data name="Main_Head_6" xml:space="preserve">
+    <value>코인 잔액이 없습니다.</value>
+  </data>
+  <data name="CertifyMyPage_5" xml:space="preserve">
+    <value>KYC 인증</value>
+  </data>
+  <data name="CertifyMyPage_5_1" xml:space="preserve">
+    <value>업로드 전 [마이페이지 &gt; 회원정보] 의 이름, 생년월일, 국적을 정확히 입력 후 업로드해주세요. 업로드 된 사진과 다를 시 인증이 거부됩니다</value>
+  </data>
+  <data name="CertifyMyPage_5_10" xml:space="preserve">
+    <value>인증요청</value>
+  </data>
+  <data name="CertifyMyPage_5_11" xml:space="preserve">
+    <value>관리자 확인중</value>
+  </data>
+  <data name="CertifyMyPage_5_12" xml:space="preserve">
+    <value>인증완료</value>
+  </data>
+  <data name="CertifyMyPage_5_2" xml:space="preserve">
+    <value>신분증 업로드</value>
+  </data>
+  <data name="CertifyMyPage_5_3" xml:space="preserve">
+    <value>신분증에 주민등록번호 뒤 7자리, '동'이후의 주소 (예: 서울특별시 역삼로 이후 주소 가림), 운전면허증번호, 여권번호는 모두가려주세요.</value>
+  </data>
+  <data name="CertifyMyPage_5_4" xml:space="preserve">
+    <value>인증목적, 인증전화번호, 인증이메일, 요청날짜 메모와 개인정보를 가린 신분증을 찍은사진을 첨부해주세요.</value>
+  </data>
+  <data name="CertifyMyPage_5_5" xml:space="preserve">
+    <value>(인증 가능 신분증 : 주민등록증, 운전면허증, 여권)</value>
+  </data>
+  <data name="CertifyMyPage_5_6" xml:space="preserve">
+    <value>파일을 업로드 해주세요.</value>
+  </data>
+  <data name="CertifyMyPage_5_7" xml:space="preserve">
+    <value>파일업로드</value>
+  </data>
+  <data name="CertifyMyPage_5_8" xml:space="preserve">
+    <value>신분증을 들고 있는 본인 이미지 업로드</value>
+  </data>
+  <data name="CertifyMyPage_5_9" xml:space="preserve">
+    <value>신분증에 인증목적, 인증전화번호, 인증이메일, 요청날짜 메모를 부착해서 촬영해주세요.신분증 글자(메모포함)를 읽을 수 있어야 합니다. 받은 사진은 해당 요청에 대한 비대면 실명 확인 용도로만 사용합니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_19" xml:space="preserve">
+    <value>입금금액</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_20" xml:space="preserve">
+    <value>입금통화</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_21" xml:space="preserve">
+    <value>환율(1KRW)</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_22" xml:space="preserve">
+    <value>충전통화</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_28" xml:space="preserve">
+    <value>환율(1KRW)</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_29" xml:space="preserve">
+    <value>실제수령액</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_30" xml:space="preserve">
+    <value>출금신청 통화</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_31" xml:space="preserve">
+    <value>수수료</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_32" xml:space="preserve">
+    <value>환율(1KRW)</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_33" xml:space="preserve">
+    <value>실제수령액</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_34" xml:space="preserve">
+    <value>출금통화</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_14" xml:space="preserve">
+    <value>출금하시겠습니까?</value>
+  </data>
+  <data name="CertifyMyPage_6_1" xml:space="preserve">
+    <value>파일을 업로드 해주세요.</value>
+  </data>
+  <data name="CertifyMyPage_6_2" xml:space="preserve">
+    <value>인증요청이 완료되었습니다.</value>
+  </data>
+  <data name="Paging_1" xml:space="preserve">
+    <value>첫번째 페이지입니다.</value>
+  </data>
+  <data name="Paging_2" xml:space="preserve">
+    <value>마지막 페이지입니다.</value>
+  </data>
+  <data name="CertifyMyPage_6_3" xml:space="preserve">
+    <value>2MB 이하의 파일만 업로드가 가능합니다.</value>
+  </data>
+  <data name="AssetsMyPage_6_9" xml:space="preserve">
+    <value>스타그램(SGC)</value>
+  </data>
+  <data name="TradeHistoryTrading_1_17" xml:space="preserve">
+    <value>스타그램</value>
+  </data>
+  <data name="Fee_20" xml:space="preserve">
+    <value>입출금 한도</value>
+  </data>
+  <data name="Fee_21" xml:space="preserve">
+    <value>수수료 안내</value>
+  </data>
+  <data name="Fee_22" xml:space="preserve">
+    <value>구분</value>
+  </data>
+  <data name="Fee_23" xml:space="preserve">
+    <value>수수료</value>
+  </data>
+  <data name="Fee_24" xml:space="preserve">
+    <value>거래 (구매/판매)</value>
+  </data>
+  <data name="Fee_25" xml:space="preserve">
+    <value>(모든 코인 수수료 동일)</value>
+  </data>
+  <data name="Fee_27" xml:space="preserve">
+    <value>건당</value>
+  </data>
+  <data name="Fee_28" xml:space="preserve">
+    <value>코인 송금</value>
+  </data>
+  <data name="AlramMyPage_1_2_14" xml:space="preserve">
+    <value>거래등록 실패</value>
+  </data>
+  <data name="Login_21" xml:space="preserve">
+    <value>비밀번호 설정후 로그인해주세요.</value>
+  </data>
+  <data name="Login_22" xml:space="preserve">
+    <value>이메일 재발송</value>
+  </data>
+  <data name="Login_23" xml:space="preserve">
+    <value>이메일로 비밀번호 설정 메일이 발송되었습니다.</value>
+  </data>
+  <data name="CertifyMyPage_Alert_6" xml:space="preserve">
+    <value>은행을 선택해주세요.</value>
+  </data>
+  <data name="CertifyMyPage_Alert_7" xml:space="preserve">
+    <value>이미지의 확장자를 확인 해 주세요. (.jpg .jpeg, .gif, .bmp, .png)</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1" xml:space="preserve">
+    <value>선불카드 충전</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1" xml:space="preserve">
+    <value>선불카드 신청 및 현황</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1_1" xml:space="preserve">
+    <value>선불카드 신청 및 사용 방법</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1_4" xml:space="preserve">
+    <value>*1인 최대 5개까지 신청 하실수 있습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1_5" xml:space="preserve">
+    <value>*카드 발급 후 주소지 혹은 오프라인 가맹점에서 수령하여 하단 {카드등록} 버튼을 눌러 카드를 등록 후 사용하실 수 있습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1" xml:space="preserve">
+    <value>선불카드 신청</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_1" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_10" xml:space="preserve">
+    <value>오프라인 가맹점 수령</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_11" xml:space="preserve">
+    <value>신청 비용</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_12" xml:space="preserve">
+    <value>입금방법</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_13" xml:space="preserve">
+    <value>계좌이체</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_14" xml:space="preserve">
+    <value>입금자명(적요)</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_2" xml:space="preserve">
+    <value>생년월일*</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_3" xml:space="preserve">
+    <value>휴대폰번호*</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_4" xml:space="preserve">
+    <value>주소*</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_5" xml:space="preserve">
+    <value>우편주소</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_6" xml:space="preserve">
+    <value>주소</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_7" xml:space="preserve">
+    <value>나머지주소</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_8" xml:space="preserve">
+    <value>카드 수령 방법</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_9" xml:space="preserve">
+    <value>입력 주소지로 수령</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_3_1" xml:space="preserve">
+    <value>신청비용 입금 주의사항</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_3_2" xml:space="preserve">
+    <value>1. 카드 수령 방법을 '오프라인 가맹점 수령' 선택 시 가까운 가맹점을 방문하셔서 카드를 수령하시면 됩니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_3_3" xml:space="preserve">
+    <value>3. 선불카드는 발송 완료 처리되면 배송지 변경 및 신청 취소가 가능하지 않습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_3_4" xml:space="preserve">
+    <value>4. 본 선불카드는 1인 1카드로써, 타 계정으로 신청하더라도 사용할 수 없습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_3_5" xml:space="preserve">
+    <value>5. 카드 배송은 신청일로부터 약 2주 정도 소요됩니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_1" xml:space="preserve">
+    <value>선불카드 신청 내역</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_2" xml:space="preserve">
+    <value>신청일</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3" xml:space="preserve">
+    <value>신청상태</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_1" xml:space="preserve">
+    <value>신청완료</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_2" xml:space="preserve">
+    <value>발송완료</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_3" xml:space="preserve">
+    <value>등록완료</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_4" xml:space="preserve">
+    <value>해지완료</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_4" xml:space="preserve">
+    <value>발송일시</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_5" xml:space="preserve">
+    <value>카드번호</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_6" xml:space="preserve">
+    <value>등록일시</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_7" xml:space="preserve">
+    <value>해지일시</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_1" xml:space="preserve">
+    <value>*선불카드 충전 시 입력한 결제금액에서 수수료 5%가 부과됩니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_10" xml:space="preserve">
+    <value>충전금액</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_2" xml:space="preserve">
+    <value>선불카드 선택</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_3" xml:space="preserve">
+    <value>유효기간</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_3_1" xml:space="preserve">
+    <value>(월)</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_3_2" xml:space="preserve">
+    <value>(년)</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_4" xml:space="preserve">
+    <value>CVC번호</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_5" xml:space="preserve">
+    <value>카드 비밀번호</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_6" xml:space="preserve">
+    <value>카드 잔액</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_7" xml:space="preserve">
+    <value>결제금액</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_8" xml:space="preserve">
+    <value>수수료</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_9" xml:space="preserve">
+    <value>환율 (1KRW)</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_1" xml:space="preserve">
+    <value>선불카드 충전내역</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_2" xml:space="preserve">
+    <value>완료일자</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_3" xml:space="preserve">
+    <value>선불카드번호</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_4" xml:space="preserve">
+    <value>결제금액</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_5" xml:space="preserve">
+    <value>결제통화</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_6" xml:space="preserve">
+    <value>수수료</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_7" xml:space="preserve">
+    <value>환율 (1KRW)</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_8" xml:space="preserve">
+    <value>충전금액</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_9" xml:space="preserve">
+    <value>충전통화</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_1" xml:space="preserve">
+    <value>우편주소를 입력해주세요.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_10" xml:space="preserve">
+    <value>카드 신청이 완료되었습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_11" xml:space="preserve">
+    <value>이메일을 확인하세요.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_12" xml:space="preserve">
+    <value>카드번호를 확인하세요.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_13" xml:space="preserve">
+    <value>국적이 한국인 회원만 신청가능합니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_2" xml:space="preserve">
+    <value>주소를 입력해주세요.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_3" xml:space="preserve">
+    <value>나머지주소를 입력해주세요.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_4" xml:space="preserve">
+    <value>기타 오류가 발생하였습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_5" xml:space="preserve">
+    <value>확인되지 않은 이메일입니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_6" xml:space="preserve">
+    <value>확인되지 않은 우편번호입니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_7" xml:space="preserve">
+    <value>확인되지 않은 주소입니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_8" xml:space="preserve">
+    <value>확인되지 않은 나머지주소입니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_9" xml:space="preserve">
+    <value>선불카드는 최대 1개까지 발급 가능합니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_15" xml:space="preserve">
+    <value>선불카드를 선택하세요.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_16" xml:space="preserve">
+    <value>카드비밀번호를 입력하세요</value>
+  </data>
+  <data name="Common_Alert_16" xml:space="preserve">
+    <value>선택하세요.</value>
+  </data>
+  <data name="Common_Alert_17" xml:space="preserve">
+    <value>접수되었습니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_17" xml:space="preserve">
+    <value>출금 하실 선불카드를 선택해주세요.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_3" xml:space="preserve">
+    <value>유효기간 (월)을 입력해주세요.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_4" xml:space="preserve">
+    <value>유효기간 (년)을 입력해주세요.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_5" xml:space="preserve">
+    <value>CVC번호를 입력해주세요.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_6" xml:space="preserve">
+    <value>카드 비밀번호를 입력해주세요.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_7" xml:space="preserve">
+    <value>카드잔액이 부족합니다. 다시 확인해주세요.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_8" xml:space="preserve">
+    <value>충전하시겠습니까?</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_9" xml:space="preserve">
+    <value>충전이 완료되었습니다.</value>
+  </data>
+  <data name="TradingHistory_1_10" xml:space="preserve">
+    <value>계좌출금/ 카드출금</value>
+  </data>
+  <data name="TradingHistory_1_11" xml:space="preserve">
+    <value>계좌출금</value>
+  </data>
+  <data name="TradingHistory_1_12" xml:space="preserve">
+    <value>계좌충전</value>
+  </data>
+  <data name="TradingHistory_1_13" xml:space="preserve">
+    <value>카드충전</value>
+  </data>
+  <data name="TradingHistory_1_14" xml:space="preserve">
+    <value>카드출금</value>
+  </data>
+  <data name="TradingHistory_1_9" xml:space="preserve">
+    <value>계좌충전/ 카드충전 </value>
+  </data>
+  <data name="TradingHistory_Common_1" xml:space="preserve">
+    <value>거래내용</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_7" xml:space="preserve">
+    <value>출금완료</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_8" xml:space="preserve">
+    <value>출금거절</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_35" xml:space="preserve">
+    <value>선불카드번호</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_36" xml:space="preserve">
+    <value>출금 신청 금액</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_37" xml:space="preserve">
+    <value>출금 신청 통화</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_38" xml:space="preserve">
+    <value>선불카드 선택</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_39" xml:space="preserve">
+    <value>선불카드 출금</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_40" xml:space="preserve">
+    <value>선불카드 출금내역</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_10" xml:space="preserve">
+    <value>충전 하실 선불카드를 선택해주세요.</value>
+  </data>
+  <data name="CertifyMyPage_Alert_8" xml:space="preserve">
+    <value>OTP 인증 후 이용해 주세요.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_11" xml:space="preserve">
+    <value>현장 현금 지불</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_12" xml:space="preserve">
+    <value>카드정보를 확인 해 주세요.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_13" xml:space="preserve">
+    <value>이메일을 확인할 수 없습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_14" xml:space="preserve">
+    <value>충전금액이 없습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_15" xml:space="preserve">
+    <value>카드번호가 없습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_16" xml:space="preserve">
+    <value>카드 비밀번호가 없습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_17" xml:space="preserve">
+    <value>카드 CVC번호가 없습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_18" xml:space="preserve">
+    <value>카드 유효기간이 없습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_19" xml:space="preserve">
+    <value>카드사 API의 오류가 발생하였습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_20" xml:space="preserve">
+    <value>회원본인카드의 정보가 아닙니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_18" xml:space="preserve">
+    <value>이메일을 확인할 수 없습니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_19" xml:space="preserve">
+    <value>출금금액이 없습니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_20" xml:space="preserve">
+    <value>출금수수료가 없습니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_21" xml:space="preserve">
+    <value>아이피를 확인할 수 없습니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_22" xml:space="preserve">
+    <value>출금구분을 확인할 수 없습니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_23" xml:space="preserve">
+    <value>테스트계정 출금불가.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_24" xml:space="preserve">
+    <value>최소 송금금액이 적습니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_25" xml:space="preserve">
+    <value>1회 최고 송금액을 초과하였습니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_26" xml:space="preserve">
+    <value>회원 본인카드가 아닙니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_27" xml:space="preserve">
+    <value>기타 오류가 발생하였습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_5" xml:space="preserve">
+    <value>입금완료</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_14" xml:space="preserve">
+    <value>카드신청 후 등록 해 주시기 바랍니다.</value>
+  </data>
+  <data name="TradingHistory_Common_2" xml:space="preserve">
+    <value>거절사유</value>
+  </data>
+  <data name="AutoTradingAdditional_Pop_1" xml:space="preserve">
+    <value>* 자동 거래는 PC 거래소가 로그인되어 있어야 체결이 가능합니다.
+1순위 설정 금액부터 체결되고 설정되어 있는 동안은 설정 금액 도달 시 계속 체결됩니다.</value>
+  </data>
+  <data name="CertificationDataSubmit_3" xml:space="preserve">
+    <value>인증자료제출</value>
+  </data>
+  <data name="CertificationDataSubmit_3_1" xml:space="preserve">
+    <value>개인정보 변경 요청</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10" xml:space="preserve">
+    <value>인증자료제출내역</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_1" xml:space="preserve">
+    <value>신청일</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_2" xml:space="preserve">
+    <value>구분</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_3" xml:space="preserve">
+    <value>상세구분</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_4" xml:space="preserve">
+    <value>상태</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_5" xml:space="preserve">
+    <value>실패사유</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_6" xml:space="preserve">
+    <value>완료일자</value>
+  </data>
+  <data name="CertificationDataSubmit_3_2" xml:space="preserve">
+    <value>업로드 전 회원정보를 정확히 입력 후 업로드해주세요. 업로드 된 사진과 다를 시 인증이 거부됩니다.</value>
+  </data>
+  <data name="CertificationDataSubmit_3_3" xml:space="preserve">
+    <value>구분</value>
+  </data>
+  <data name="CertificationDataSubmit_3_4" xml:space="preserve">
+    <value>ID(이메일)*</value>
+  </data>
+  <data name="CertificationDataSubmit_3_5" xml:space="preserve">
+    <value>휴대폰번호*</value>
+  </data>
+  <data name="CertificationDataSubmit_3_6" xml:space="preserve">
+    <value>요청사항</value>
+  </data>
+  <data name="CertificationDataSubmit_3_7" xml:space="preserve">
+    <value>신분증 업로드</value>
+  </data>
+  <data name="CertificationDataSubmit_3_7_1" xml:space="preserve">
+    <value>신분증에 주민등록번호 뒤 7자리와 '동' 이후의 주소 (ex 서울특별시 역삼로 이후 주소 가림), 운전면허증번호, 여권번호는 가려주세요.
+인증목적, 인증전화번호, 인증이메일, 요청날짜 메모와 개인정보를 가린 신분증 사진을 첨부해 주세요.
+(인증 가능 신분증 : 주민등록증, 운전면허증, 여권)</value>
+  </data>
+  <data name="CertificationDataSubmit_3_8" xml:space="preserve">
+    <value>신분증을 들고 있는 본인 이미지 업로드</value>
+  </data>
+  <data name="CertificationDataSubmit_3_8_1" xml:space="preserve">
+    <value>신분증에 인증목적, 인증전화번호, 인증이메일, 요청날짜 메모를 부착해서 촬영해주세요.
+신분증 글자(메모포함)을 읽을 수 있어야만 합니다.
+받은 사진은 해당 요청에 비대면 실명 확인 용도로만 사용합니다.</value>
+  </data>
+  <data name="CertificationDataSubmit_3_9" xml:space="preserve">
+    <value>기타 추가서류</value>
+  </data>
+  <data name="CertificationDataSubmit_3_9_1" xml:space="preserve">
+    <value>개명 시 기본증명서 혹은 주민등록 초본을 업로드 해주세요.</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000000905" xml:space="preserve">
+    <value>개인정보변경요청</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000000906" xml:space="preserve">
+    <value>보조 이메일 등록 요청</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000000907" xml:space="preserve">
+    <value>계정잠금/해제 요청</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000000908" xml:space="preserve">
+    <value>회원탈퇴</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000000909" xml:space="preserve">
+    <value>입금사실증명</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000000910" xml:space="preserve">
+    <value>출금사실증명</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMP00000000142" xml:space="preserve">
+    <value>본인인증</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMP00000000143" xml:space="preserve">
+    <value>회원탈퇴요청</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMP00000000144" xml:space="preserve">
+    <value>입출금 사실 증명</value>
+  </data>
+  <data name="CertificationDataSubmit_Pop_1" xml:space="preserve">
+    <value>인증요청이 완료되었습니다. 관리자 확인 후 인증이 완료됩니다.</value>
+  </data>
+  <data name="CertificationDataSubmit_Pop_2" xml:space="preserve">
+    <value>상세 구분을 선택해주세요.</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_4_1" xml:space="preserve">
+    <value>인증완료</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_4_2" xml:space="preserve">
+    <value>인증실패</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_4_3" xml:space="preserve">
+    <value>관리자확인중</value>
+  </data>
+  <data name="CertificationDataSubmit_Pop_3" xml:space="preserve">
+    <value>[500자 이내로 작성 해 주세요]</value>
+  </data>
+  <data name="QnaWrite_Pop_1" xml:space="preserve">
+    <value>제목을 입력해주세요</value>
+  </data>
+  <data name="QnaWrite_Pop_2" xml:space="preserve">
+    <value>문의할 내용을 입력해 주세요.</value>
+  </data>
+  <data name="CertifyMyPage_Alert_9" xml:space="preserve">
+    <value>OTP번호를 다시 입력해주시기 바랍니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_8" xml:space="preserve">
+    <value>입금처리일시</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_13" xml:space="preserve">
+    <value>1회 송금 한도</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_12_1" xml:space="preserve">
+    <value>카드결제</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_12_2" xml:space="preserve">
+    <value>가상계좌</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_6" xml:space="preserve">
+    <value>입금대기</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_7" xml:space="preserve">
+    <value>결제취소</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_8" xml:space="preserve">
+    <value>결제실패</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_21" xml:space="preserve">
+    <value>선불카드를 신청하시겠습니까?</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_28" xml:space="preserve">
+    <value>선불카드 출금한도는 1일 2,000,000원 입니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_29" xml:space="preserve">
+    <value>회원본인카드정보가 아닙니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_30" xml:space="preserve">
+    <value>1회 카드출금한도 초과되었습니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_31" xml:space="preserve">
+    <value>1일 카드출금한도 초과되었습니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_32" xml:space="preserve">
+    <value>충전금액이 없습니다.</value>
+  </data>
+  <data name="IP_Registration_4_19" xml:space="preserve">
+    <value>등록된 이메일로 인증번호가 발송되었습니다.</value>
+  </data>
+  <data name="MemberInfo_Pop_5" xml:space="preserve">
+    <value>이미 등록되어있는 전화번호 입니다.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_14" xml:space="preserve">
+    <value>최소 송금한도 미만은 송금할 수 없습니다.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_15" xml:space="preserve">
+    <value>1회 송금한도를 초과하였습니다.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_16" xml:space="preserve">
+    <value>1일 송금한도를 초과하였습니다.</value>
+  </data>
+  <data name="Main_Menu_3_5" xml:space="preserve">
+    <value>선불카드</value>
+  </data>
+  <data name="CertifyMyPage_Alert_10" xml:space="preserve">
+    <value>OPT변경은 6월 29일 이후부터 가능합니다.</value>
+  </data>
+  <data name="Login_24" xml:space="preserve">
+    <value>비밀번호 {0}회 오류입니다.</value>
+  </data>
+  <data name="Login_25" xml:space="preserve">
+    <value>비밀번호 5회 오류 시 로그인이 제한됩니다.</value>
+  </data>
+  <data name="CertifyMyPage_Alert_11" xml:space="preserve">
+    <value>KYC인증 후 OTP 변경이 가능합니다.</value>
+  </data>
+  <data name="CertifyMyPage_Alert_12" xml:space="preserve">
+    <value>[고객센터&gt;인증자료제출]메뉴에서 OTP변경을 신청해 주세요.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_33" xml:space="preserve">
+    <value>선불카드 입금 후 48시간 이내에는 출금이 어려우니 이 점 참고 해 주시기 바랍니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_34" xml:space="preserve">
+    <value>선불카드 입금 후 48시간 이내에는 출금이 되지 않습니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_35" xml:space="preserve">
+    <value>환율시세는 apilayer.com에서 제공되는 시세로 적용되며 국내 시세 정보와 차이가 있을 수 있습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_23" xml:space="preserve">
+    <value>선불카드 충전 반영은 10~20분 이후 반영됩니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_36" xml:space="preserve">
+    <value>카드출금 가능금액을 초과하였습니다.</value>
+  </data>
+  <data name="AlramMyPage_1_2_15" xml:space="preserve">
+    <value>선불카드</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000000986" xml:space="preserve">
+    <value>OTP초기화</value>
+  </data>
+  <data name="AlramMyPage_1_2_16" xml:space="preserve">
+    <value>인증자료제출</value>
+  </data>
+  <data name="MemberInfo_Pop_6" xml:space="preserve">
+    <value>추천인 국가를 선택해 주세요.</value>
+  </data>
+  <data name="MemberInfo_Pop_7" xml:space="preserve">
+    <value>추천인 지점을 선택해 주세요.</value>
+  </data>
+  <data name="MemberInfo_Pop_8" xml:space="preserve">
+    <value>추천인을 선택해 주세요.</value>
+  </data>
+  <data name="MemberInfo_2_6" xml:space="preserve">
+    <value>추천인 등록</value>
+  </data>
+  <data name="MemberInfo_2_7" xml:space="preserve">
+    <value>추천인 국가</value>
+  </data>
+  <data name="MemberInfo_2_8" xml:space="preserve">
+    <value>지점</value>
+  </data>
+  <data name="MemberInfo_2_9" xml:space="preserve">
+    <value>추천인</value>
+  </data>
+  <data name="Common_Alert_18" xml:space="preserve">
+    <value>선택</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_24" xml:space="preserve">
+    <value>(프로모션)</value>
+  </data>
+  <data name="MemberInfo_Pop_10" xml:space="preserve">
+    <value>저장하시겠습니까?</value>
+  </data>
+  <data name="MemberInfo_Pop_9" xml:space="preserve">
+    <value>계좌번호가 등록되지 않았습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_25" xml:space="preserve">
+    <value>[마이페이지 &gt; 회원정보관리]에서 계좌번호와 휴대폰번호를 등록 해 주시기 바랍니다.</value>
+  </data>
+  <data name="MemberInfo_2_10" xml:space="preserve">
+    <value>메일/푸시언어</value>
+  </data>
+  <data name="TradingHistory_2_4" xml:space="preserve">
+    <value>마켓</value>
+  </data>
+  <data name="CoinTrading_Alert_18_1" xml:space="preserve">
+    <value>주문금액을 입력해주세요.</value>
+  </data>
+  <data name="TradingHistory_3_9" xml:space="preserve">
+    <value>거래가</value>
+  </data>
+  <data name="Main_Menu_2_7" xml:space="preserve">
+    <value>구매/판매</value>
+  </data>
+  <data name="Main_QuickMenu_20" xml:space="preserve">
+    <value>구매/판매</value>
+  </data>
+  <data name="MemberInfo_Pop_11" xml:space="preserve">
+    <value>인증 번호를 등록된 해당 휴대폰으로 전송했습니다. 확인 후 인증번호를 입력하시기 바랍니다.</value>
+  </data>
+  <data name="MemberInfo_Pop_12" xml:space="preserve">
+    <value>전화번호를 확인할 수 없습니다.</value>
+  </data>
+  <data name="MemberInfo_Pop_13" xml:space="preserve">
+    <value>SMS 전송에 실패했습니다. 잠시 후에 다시 시도해 주세요.</value>
+  </data>
+  <data name="Common_Alert_19" xml:space="preserve">
+    <value>SMS 인증이 완료되지 않았습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_26" xml:space="preserve">
+    <value>선불카드 충전방법</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_27" xml:space="preserve">
+    <value>[모아선불카드 홈페이지 (</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_28" xml:space="preserve">
+    <value>) &gt; 보유카드]에서 충전 방법을 확인 하실 수 있습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1_7" xml:space="preserve">
+    <value>*1인 1개의 카드 신청이 가능합니다.</value>
+  </data>
+  <data name="Common_Alert_20" xml:space="preserve">
+    <value>[마이페이지 &gt; 추천인 등록]에서 지점 및 추천인을 변경 해 주세요.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_15" xml:space="preserve">
+    <value>수수료율 재조정 중으로 사용할 수 업습니다.</value>
+  </data>
+  <data name="Common_Alert_21" xml:space="preserve">
+    <value>기준</value>
+  </data>
+  <data name="TradingHistory_7_1" xml:space="preserve">
+    <value>(지정가)</value>
+  </data>
+  <data name="TradingHistory_7_2" xml:space="preserve">
+    <value>(시장가)</value>
+  </data>
+  <data name="AssetsMyPage_7" xml:space="preserve">
+    <value>자산</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_16" xml:space="preserve">
+    <value>카드수령 후 등록 해 주시기 바랍니다.</value>
+  </data>
+  <data name="CoinTrading_2_8" xml:space="preserve">
+    <value>최소주문금액</value>
+  </data>
+  <data name="CoinTrading_2_9" xml:space="preserve">
+    <value>수수료</value>
+  </data>
+  <data name="Common_Alert_22" xml:space="preserve">
+    <value>내 거래 내역이 없습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_17" xml:space="preserve">
+    <value>동일이름과 전화번호로 이미 카드가 등록되어 있습니다. 선불카드는 1인1카드로써 타계정으로 신청할 수 없습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_18" xml:space="preserve">
+    <value>선불카드를 신청하시겠습니까?</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_19" xml:space="preserve">
+    <value>선불카드는 [서울 강남구] 또는 [서울 선릉] 지점에서 수령 가능합니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_20" xml:space="preserve">
+    <value>지점 위치는 고객센터 &gt; 가맹점 안내를 통해 확인해 주시기 바랍니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_21" xml:space="preserve">
+    <value>선불카드는 입력한 배송지로 약 2주 이내 배송됩니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_22" xml:space="preserve">
+    <value>카드신청을 취소 하시겠습니까?</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_23" xml:space="preserve">
+    <value>취소가 완료되었습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_24" xml:space="preserve">
+    <value>상태가 [신청완료], [입금대기] 경우만  취소 가능합니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_9" xml:space="preserve">
+    <value>신청취소</value>
+  </data>
+  <data name="AtmPwdSetting_1" xml:space="preserve">
+    <value>PTM 비밀번호 등록</value>
+  </data>
+  <data name="AtmPwdSetting_10" xml:space="preserve">
+    <value>등록</value>
+  </data>
+  <data name="AtmPwdSetting_11" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="AtmPwdSetting_12" xml:space="preserve">
+    <value>비밀번호는 4자리 숫자만 가능합니다.</value>
+  </data>
+  <data name="AtmPwdSetting_2" xml:space="preserve">
+    <value>PTM 비밀번호는 카드사용비밀번호와는 별개로 무인입출금기에서 입/출금 시 사용하는 비밀번호 입니다.</value>
+  </data>
+  <data name="AtmPwdSetting_3" xml:space="preserve">
+    <value>미등록 시 PTM 입/출금을 이용하실 수 없습니다
+*PTM은 CoinBlock 전용 무인입출금기입니다.</value>
+  </data>
+  <data name="AtmPwdSetting_4" xml:space="preserve">
+    <value>카드번호</value>
+  </data>
+  <data name="AtmPwdSetting_5" xml:space="preserve">
+    <value>비밀번호 입력</value>
+  </data>
+  <data name="AtmPwdSetting_6" xml:space="preserve">
+    <value>비밀번호 확인</value>
+  </data>
+  <data name="AtmPwdSetting_7" xml:space="preserve">
+    <value>PTM 비밀번호를 이미 등록하셨습니다. </value>
+  </data>
+  <data name="AtmPwdSetting_8" xml:space="preserve">
+    <value>비밀번호 분실 시 고객센터로 문의하시기 바랍니다.</value>
+  </data>
+  <data name="AtmPwdSetting_9" xml:space="preserve">
+    <value>숫자 4자리 입력</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000001146" xml:space="preserve">
+    <value>PTM 비밀번호 초기화</value>
+  </data>
+  <data name="AtmPwdSetting_13" xml:space="preserve">
+    <value>비밀번호를 입력해주세요.</value>
+  </data>
+  <data name="AtmPwdSetting_14" xml:space="preserve">
+    <value>등록된 카드가 없습니다. 카드등록 후 이용해주세요.</value>
+  </data>
+  <data name="AtmPwdSetting_15" xml:space="preserve">
+    <value>PTM 비밀번호를 등록하시겠습니까?</value>
+  </data>
+  <data name="AtmPwdSetting_16" xml:space="preserve">
+    <value>PTM 비밀번호 등록이 완료되었습니다.</value>
+  </data>
+  <data name="AtmPwdSetting_17" xml:space="preserve">
+    <value>PTM 비밀번호 복호화 오류가 발생했습니다.</value>
+  </data>
+  <data name="AtmPwdSetting_18" xml:space="preserve">
+    <value>이미 PTM 비밀번호가 등록되어 있습니다.</value>
+  </data>
+  <data name="AtmPwdSetting_19" xml:space="preserve">
+    <value>카드 비밀번호가 없습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_25" xml:space="preserve">
+    <value>등록된 카드가 없습니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_29" xml:space="preserve">
+    <value>1회 충전 한도는 {0} {1} 입니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_30" xml:space="preserve">
+    <value>1일 충전 한도는 {0} {1} 입니다.</value>
+  </data>
+  <data name="CoinTrading_Alert_47" xml:space="preserve">
+    <value>자동거래 설정이 변경되었습니다.</value>
+  </data>
+  <data name="Fee_29" xml:space="preserve">
+    <value>PTM 출금</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_41" xml:space="preserve">
+    <value>출금 가능 금액</value>
+  </data>
+  <data name="MemberInfo_2_11" xml:space="preserve">
+    <value>PIN번호 초기화  </value>
+  </data>
+  <data name="MemberInfo_Pop_14" xml:space="preserve">
+    <value>PIN번호를 초기화 하시겠습니까? </value>
+  </data>
+  <data name="MemberInfo_Pop_15" xml:space="preserve">
+    <value>초기화 할 경우,모바일에서 로그인 후
+PIN번호를 재설정 해주시기 바랍니다.</value>
+  </data>
+  <data name="MemberInfo_Pop_16" xml:space="preserve">
+    <value>PIN번호가 초기화 되어있습니다.</value>
+  </data>
+  <data name="MemberInfo_Pop_17" xml:space="preserve">
+    <value>모바일에서 로그인 후
+PIN번호를 재설정 해주시기 바랍니다.</value>
+  </data>
+  <data name="MemberInfo_Pop_18" xml:space="preserve">
+    <value>설정된 PIN번호가 없습니다.</value>
+  </data>
+  <data name="MemberInfo_Pop_19" xml:space="preserve">
+    <value>PIN번호가 초기화되었습니다.</value>
+  </data>
+  <data name="MemberInfo_Pop_20" xml:space="preserve">
+    <value>PIN번호 초기화에 실패하였습니다.</value>
+  </data>
+  <data name="CoinTrading_1_6" xml:space="preserve">
+    <value>현재 {0} 시세</value>
+  </data>
+  <data name="CoinTrading_Alert_48" xml:space="preserve">
+    <value>1회 {0} {1} 이하만 등록 가능합니다.</value>
+  </data>
+  <data name="CoinTrading_Alert_49" xml:space="preserve">
+    <value>1일 {0} {1} 이하만 등록 가능합니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_3_6" xml:space="preserve">
+    <value>2. '입력 주소지로 수령' 선택 후 결제 시 가입하신 이메일로 카드정보가 기재된 보안 메일이 발송 됩니다.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_17" xml:space="preserve">
+    <value>시스템 점검중입니다. 공지사항을 확인하시기 바랍니다.</value>
+  </data>
+  <data name="TradingHistory_1_15" xml:space="preserve">
+    <value>단말기결제</value>
+  </data>
+  <data name="TradingHistory_Common_3" xml:space="preserve">
+    <value>단말기 번호</value>
+  </data>
+  <data name="CoinTrading_Alert_50" xml:space="preserve">
+    <value>고객님께서는 판매를 이용할 수 없습니다.</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000001326" xml:space="preserve">
+    <value>SMS인증 해제 요청</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_42" xml:space="preserve">
+    <value>SMS 인증</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_43" xml:space="preserve">
+    <value>SMS 발송</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_44" xml:space="preserve">
+    <value>SMS인증이 필요합니다.
+[마이페이지&gt;회원정보]에서 휴대폰 번호를 등록해주시기 바랍니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_45" xml:space="preserve">
+    <value>SMS인증 번호가 발송됩니다. 
+SMS인증이 정상적으로 되지 않을 경우 [고객센터 &gt; 인증자료제출 &gt; 본인인증 &gt; SMS인증해제요청]을 통해 본인확인 요청을 접수해 주시기 바랍니다.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_18" xml:space="preserve">
+    <value>SMS인증이 완료되지 않았습니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_37" xml:space="preserve">
+    <value>SMS인증이 완료되지 않았습니다.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_19" xml:space="preserve">
+    <value>고객님께서는 출금을 이용할 수 없습니다.</value>
+  </data>
+  <data name="Main_Menu_4_4" xml:space="preserve">
+    <value>트러스트 신청</value>
+  </data>
+  <data name="TrustRequest_1_1" xml:space="preserve">
+    <value>TRUST는 거래소에 자신이 보유하고 있는 암호화폐 중 코인 트러스트를 진행하는 코인으로 지정된 암호화폐의 일부를 수탁하실 경우 투자한 암호화폐의 이자를 암호화폐로 지급하는 상품입니다.</value>
+  </data>
+  <data name="TrustRequest_1_10" xml:space="preserve">
+    <value>신청일</value>
+  </data>
+  <data name="TrustRequest_1_11" xml:space="preserve">
+    <value>만기일</value>
+  </data>
+  <data name="TrustRequest_1_12" xml:space="preserve">
+    <value>이용약관</value>
+  </data>
+  <data name="TrustRequest_1_12_1" xml:space="preserve">
+    <value>이용약관 [필수]</value>
+  </data>
+  <data name="TrustRequest_1_2" xml:space="preserve">
+    <value>통화</value>
+  </data>
+  <data name="TrustRequest_1_3" xml:space="preserve">
+    <value>최소 신청 수량</value>
+  </data>
+  <data name="TrustRequest_1_4" xml:space="preserve">
+    <value>보유 코인</value>
+  </data>
+  <data name="TrustRequest_1_5" xml:space="preserve">
+    <value>수량</value>
+  </data>
+  <data name="TrustRequest_1_6" xml:space="preserve">
+    <value>기간 선택</value>
+  </data>
+  <data name="TrustRequest_1_7" xml:space="preserve">
+    <value>이자율</value>
+  </data>
+  <data name="TrustRequest_1_8" xml:space="preserve">
+    <value>예상이자</value>
+  </data>
+  <data name="TrustRequest_1_9" xml:space="preserve">
+    <value>총 수령액(이자포함)</value>
+  </data>
+  <data name="TrustRequest_2" xml:space="preserve">
+    <value>트러스트 신청 내역</value>
+  </data>
+  <data name="TrustRequest_Alert_1" xml:space="preserve">
+    <value>신청 기간을 선택해 주세요.</value>
+  </data>
+  <data name="TrustRequest_Alert_2" xml:space="preserve">
+    <value>신청 수량을 입력해 주세요.</value>
+  </data>
+  <data name="TrustRequest_Alert_3" xml:space="preserve">
+    <value>보유 코인보다 많게는 신청 할 수 없습니다.</value>
+  </data>
+  <data name="TrustRequest_Alert_4" xml:space="preserve">
+    <value>신청 시 거래 및 출금이 제한됩니다. 신청하시겠습니까?</value>
+  </data>
+  <data name="TrustRequest_Alert_5" xml:space="preserve">
+    <value>만기 전 해지 시 이자지급이 되지 않습니다. 해지하시겠습니까?</value>
+  </data>
+  <data name="TrustRequest_1_6_1" xml:space="preserve">
+    <value>{0}개월</value>
+  </data>
+  <data name="TrustRequest_2_1" xml:space="preserve">
+    <value>신청일</value>
+  </data>
+  <data name="TrustRequest_2_2" xml:space="preserve">
+    <value>만기일</value>
+  </data>
+  <data name="TrustRequest_2_3" xml:space="preserve">
+    <value>통화</value>
+  </data>
+  <data name="TrustRequest_2_4" xml:space="preserve">
+    <value>수량</value>
+  </data>
+  <data name="TrustRequest_2_5" xml:space="preserve">
+    <value>이자</value>
+  </data>
+  <data name="TrustRequest_2_6" xml:space="preserve">
+    <value>총 수령액</value>
+  </data>
+  <data name="TrustRequest_2_7" xml:space="preserve">
+    <value>해지일</value>
+  </data>
+  <data name="TrustRequest_2_8" xml:space="preserve">
+    <value>상태</value>
+  </data>
+  <data name="TrustRequest_2_8_1" xml:space="preserve">
+    <value>만기</value>
+  </data>
+  <data name="TrustRequest_2_8_2" xml:space="preserve">
+    <value>신청완료</value>
+  </data>
+  <data name="TrustRequest_2_9" xml:space="preserve">
+    <value>비고</value>
+  </data>
+  <data name="TrustRequest_2_9_1" xml:space="preserve">
+    <value>해지하기</value>
+  </data>
+  <data name="TrustRequest_2_8_3" xml:space="preserve">
+    <value>해지</value>
+  </data>
+  <data name="TrustRequest_Alert_6" xml:space="preserve">
+    <value>최소 신청 수량보다 적게 신청할 수 없습니다.</value>
+  </data>
+  <data name="TrustRequest_Alert_7" xml:space="preserve">
+    <value>트러스트 신청이 완료되었습니다.</value>
+  </data>
+  <data name="TrustRequest_Alert_8" xml:space="preserve">
+    <value>해지되었습니다.</value>
+  </data>
+  <data name="TrustRequest_Alert_9" xml:space="preserve">
+    <value>이용약관에 동의 체크가 되어 있지 않습니다.</value>
+  </data>
+  <data name="AssetsMyPage_3_6" xml:space="preserve">
+    <value>트러스트</value>
+  </data>
+  <data name="TrustRequest_1_9_1" xml:space="preserve">
+    <value>이용약관을 확인 후 신청 해 주시기 바랍니다.</value>
+  </data>
+  <data name="DepositDepositWithdraw_Alert_1" xml:space="preserve">
+    <value>주소가 클립보드로 복사되었습니다.</value>
+  </data>
+  <data name="TradingHistory_1_16" xml:space="preserve">
+    <value>트러스트</value>
+  </data>
+  <data name="TradingHistory_Common_4" xml:space="preserve">
+    <value>이자 입금</value>
+  </data>
+  <data name="TradingHistory_Common_5" xml:space="preserve">
+    <value>신청일</value>
+  </data>
+  <data name="AssetsMyPage_3_7" xml:space="preserve">
+    <value>거래제한 금액</value>
+  </data>
+  <data name="TradingHistory_1_17" xml:space="preserve">
+    <value>코인입금</value>
+  </data>
+  <data name="TradingHistory_1_17_1" xml:space="preserve">
+    <value>거래제한</value>
+  </data>
+  <data name="TradingHistory_1_17_2" xml:space="preserve">
+    <value>입금</value>
+  </data>
+  <data name="Lending_1" xml:space="preserve">
+    <value>신청하기</value>
+  </data>
+  <data name="Lending_1_1" xml:space="preserve">
+    <value>렌딩 신청</value>
+  </data>
+  <data name="Lending_1_10" xml:space="preserve">
+    <value>예상이자</value>
+  </data>
+  <data name="Lending_1_11" xml:space="preserve">
+    <value>총 상환 금액</value>
+  </data>
+  <data name="Lending_1_12" xml:space="preserve">
+    <value>신청일</value>
+  </data>
+  <data name="Lending_1_13" xml:space="preserve">
+    <value>만기일 </value>
+  </data>
+  <data name="Lending_1_14" xml:space="preserve">
+    <value>이용약관</value>
+  </data>
+  <data name="Lending_1_14_1" xml:space="preserve">
+    <value>이용약관 [필수]</value>
+  </data>
+  <data name="Lending_1_15" xml:space="preserve">
+    <value>렌딩 신청 내역</value>
+  </data>
+  <data name="Lending_1_2" xml:space="preserve">
+    <value>Lending Service 는 거래소에서 사용할 수 있게 암호화폐 대출을 해주는 서비스입니다.</value>
+  </data>
+  <data name="Lending_1_3" xml:space="preserve">
+    <value>대출 원금 및 이자를 모두 상환해야 출금이 가능합니다. 상환 전까지는, 구매/판매 거래를 제외한 모든 출금이 불가합니다.</value>
+  </data>
+  <data name="Lending_1_4" xml:space="preserve">
+    <value>대출 이자는 월별로 상환됩니다.</value>
+  </data>
+  <data name="Lending_1_5" xml:space="preserve">
+    <value>통화</value>
+  </data>
+  <data name="Lending_1_6" xml:space="preserve">
+    <value>최소 신청 수량</value>
+  </data>
+  <data name="Lending_1_7" xml:space="preserve">
+    <value>기간</value>
+  </data>
+  <data name="Lending_1_7_1" xml:space="preserve">
+    <value>{0}개월</value>
+  </data>
+  <data name="Lending_1_8" xml:space="preserve">
+    <value>신청 수량</value>
+  </data>
+  <data name="Lending_1_9" xml:space="preserve">
+    <value>이자율</value>
+  </data>
+  <data name="Lending_1_9_1" xml:space="preserve">
+    <value>{0}%(월)</value>
+  </data>
+  <data name="Lending_Grid_1" xml:space="preserve">
+    <value>신청일</value>
+  </data>
+  <data name="Lending_Grid_10" xml:space="preserve">
+    <value>상환일시</value>
+  </data>
+  <data name="Lending_Grid_11" xml:space="preserve">
+    <value>연체여부</value>
+  </data>
+  <data name="Lending_Grid_11_1" xml:space="preserve">
+    <value>미연체</value>
+  </data>
+  <data name="Lending_Grid_11_2" xml:space="preserve">
+    <value>연체</value>
+  </data>
+  <data name="Lending_Grid_12" xml:space="preserve">
+    <value>비고</value>
+  </data>
+  <data name="Lending_Grid_12_1" xml:space="preserve">
+    <value>상환하기</value>
+  </data>
+  <data name="Lending_Grid_12_2" xml:space="preserve">
+    <value>연장하기</value>
+  </data>
+  <data name="Lending_Grid_2" xml:space="preserve">
+    <value>연장일</value>
+  </data>
+  <data name="Lending_Grid_3" xml:space="preserve">
+    <value>만기일 </value>
+  </data>
+  <data name="Lending_Grid_4" xml:space="preserve">
+    <value>구분</value>
+  </data>
+  <data name="Lending_Grid_4_1" xml:space="preserve">
+    <value>연장</value>
+  </data>
+  <data name="Lending_Grid_4_2" xml:space="preserve">
+    <value>일반</value>
+  </data>
+  <data name="Lending_Grid_5" xml:space="preserve">
+    <value>신청상태</value>
+  </data>
+  <data name="Lending_Grid_5_1" xml:space="preserve">
+    <value>중도상환</value>
+  </data>
+  <data name="Lending_Grid_5_2" xml:space="preserve">
+    <value>신청 완료</value>
+  </data>
+  <data name="Lending_Grid_5_3" xml:space="preserve">
+    <value>만기</value>
+  </data>
+  <data name="Lending_Grid_6" xml:space="preserve">
+    <value>통화</value>
+  </data>
+  <data name="Lending_Grid_7" xml:space="preserve">
+    <value>신청 수량</value>
+  </data>
+  <data name="Lending_Grid_8" xml:space="preserve">
+    <value>이자(월)</value>
+  </data>
+  <data name="Lending_Grid_9" xml:space="preserve">
+    <value>총 상환 금액</value>
+  </data>
+  <data name="Main_Menu_4_5" xml:space="preserve">
+    <value>렌딩</value>
+  </data>
+  <data name="Lending_2" xml:space="preserve">
+    <value>상환내역</value>
+  </data>
+  <data name="Lending_2_1" xml:space="preserve">
+    <value>신청 내역</value>
+  </data>
+  <data name="Lending_2_10" xml:space="preserve">
+    <value>연체여부</value>
+  </data>
+  <data name="Lending_2_10_1" xml:space="preserve">
+    <value>미연체</value>
+  </data>
+  <data name="Lending_2_10_2" xml:space="preserve">
+    <value>연체</value>
+  </data>
+  <data name="Lending_2_11" xml:space="preserve">
+    <value>연장일</value>
+  </data>
+  <data name="Lending_2_11_1" xml:space="preserve">
+    <value>연장하기</value>
+  </data>
+  <data name="Lending_2_12" xml:space="preserve">
+    <value>만기일 </value>
+  </data>
+  <data name="Lending_2_13" xml:space="preserve">
+    <value>렌딩 상환 내역</value>
+  </data>
+  <data name="Lending_2_2" xml:space="preserve">
+    <value>신청일</value>
+  </data>
+  <data name="Lending_2_3" xml:space="preserve">
+    <value>기간</value>
+  </data>
+  <data name="Lending_2_3_1" xml:space="preserve">
+    <value>{0}개월</value>
+  </data>
+  <data name="Lending_2_4" xml:space="preserve">
+    <value>상태</value>
+  </data>
+  <data name="Lending_2_4_1" xml:space="preserve">
+    <value>중도상환</value>
+  </data>
+  <data name="Lending_2_4_2" xml:space="preserve">
+    <value>신청 완료</value>
+  </data>
+  <data name="Lending_2_4_3" xml:space="preserve">
+    <value>만기</value>
+  </data>
+  <data name="Lending_2_5" xml:space="preserve">
+    <value>신청 수량</value>
+  </data>
+  <data name="Lending_2_6" xml:space="preserve">
+    <value>이자율</value>
+  </data>
+  <data name="Lending_2_6_1" xml:space="preserve">
+    <value>{0}%(월)</value>
+  </data>
+  <data name="Lending_2_7" xml:space="preserve">
+    <value>총 이자 수량</value>
+  </data>
+  <data name="Lending_2_8" xml:space="preserve">
+    <value>총 상환 금액</value>
+  </data>
+  <data name="Lending_2_9" xml:space="preserve">
+    <value>원금 상환일</value>
+  </data>
+  <data name="Lending_2_9_1" xml:space="preserve">
+    <value>상환하기</value>
+  </data>
+  <data name="Lending_Grid2_1" xml:space="preserve">
+    <value>구분</value>
+  </data>
+  <data name="Lending_Grid2_1_1" xml:space="preserve">
+    <value>연장</value>
+  </data>
+  <data name="Lending_Grid2_1_2" xml:space="preserve">
+    <value>일반</value>
+  </data>
+  <data name="Lending_Grid2_2" xml:space="preserve">
+    <value>상환일</value>
+  </data>
+  <data name="Lending_Grid2_3" xml:space="preserve">
+    <value>내용</value>
+  </data>
+  <data name="Lending_Grid2_3_1" xml:space="preserve">
+    <value>원금상환</value>
+  </data>
+  <data name="Lending_Grid2_3_2" xml:space="preserve">
+    <value>이자상환</value>
+  </data>
+  <data name="Lending_Grid2_4" xml:space="preserve">
+    <value>회차</value>
+  </data>
+  <data name="Lending_Grid2_4_1" xml:space="preserve">
+    <value>{0}회</value>
+  </data>
+  <data name="Lending_Grid2_5" xml:space="preserve">
+    <value>상환금액</value>
+  </data>
+  <data name="Lending_Grid2_6" xml:space="preserve">
+    <value>연체이자</value>
+  </data>
+  <data name="Lending_Grid2_7" xml:space="preserve">
+    <value>총 상환 금액</value>
+  </data>
+  <data name="Lending_Grid2_8" xml:space="preserve">
+    <value>상환여부  </value>
+  </data>
+  <data name="Lending_Grid2_8_1" xml:space="preserve">
+    <value>연체</value>
+  </data>
+  <data name="Lending_Grid2_8_2" xml:space="preserve">
+    <value>정상</value>
+  </data>
+  <data name="Lending_Grid2_8_3" xml:space="preserve">
+    <value>대기</value>
+  </data>
+  <data name="Lending_Grid2_9" xml:space="preserve">
+    <value>비고</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_31" xml:space="preserve">
+    <value>* 은행점검 시간에는 실명확인 입출금이 불가능합니다.
+점검시간 : 매일(KST 23:00~01:05) / 매달 3째주 월요일 00:00 ~ 05:00</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_38" xml:space="preserve">
+    <value>* 은행점검 시간에는 실명확인 입출금이 불가능합니다.
+점검시간 : 매일(KST 23:00~01:05) / 매달 3째주 월요일 00:00 ~ 05:00</value>
+  </data>
+  <data name="TradingHistory_1_18" xml:space="preserve">
+    <value>자동거래</value>
+  </data>
+  <data name="TradingHistory_Common_6" xml:space="preserve">
+    <value>상세보기</value>
+  </data>
+  <data name="TradingHistory_Common_7" xml:space="preserve">
+    <value>거래번호</value>
+  </data>
+  <data name="TradingHistory_Common_8" xml:space="preserve">
+    <value>주소</value>
+  </data>
+  <data name="TradingHistory_Common_9" xml:space="preserve">
+    <value>금액</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_46" xml:space="preserve">
+    <value>출금은 1만원 단위로만 신청이 가능하며, 신청 금액은 수수료가 포함된 금액으로 실수령액을 확인해 주시기 바랍니다.</value>
+  </data>
+  <data name="Lending_Alert_1" xml:space="preserve">
+    <value>연장하기</value>
+  </data>
+  <data name="Lending_Alert_1_1" xml:space="preserve">
+    <value>코인 Lending 1회에 한해서만 연장이 가능합니다.
+코인 Lending 기간을 연장하시겠습니까?</value>
+  </data>
+  <data name="Lending_Alert_1_2" xml:space="preserve">
+    <value>연장이자율 : {0}%(월)</value>
+  </data>
+  <data name="Lending_Alert_1_3" xml:space="preserve">
+    <value>만기일 </value>
+  </data>
+  <data name="Lending_Alert_2" xml:space="preserve">
+    <value>상환하기</value>
+  </data>
+  <data name="Lending_Alert_2_1" xml:space="preserve">
+    <value>원금</value>
+  </data>
+  <data name="Lending_Alert_2_2" xml:space="preserve">
+    <value>남은이자</value>
+  </data>
+  <data name="Lending_Alert_2_3" xml:space="preserve">
+    <value>총 상환 금액</value>
+  </data>
+  <data name="Lending_Alert_2_4" xml:space="preserve">
+    <value>상환일</value>
+  </data>
+  <data name="Login_26" xml:space="preserve">
+    <value>보다 안정적인 시스템 제공을 위헤 현재 긴급시스템 점검 중입니다.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_20" xml:space="preserve">
+    <value>송금한도</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_47" xml:space="preserve">
+    <value>출금한도</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_21" xml:space="preserve">
+    <value>최소송금</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1_5" xml:space="preserve">
+    <value>* 신분증 내 개인정보의 경우 직접 가려 주셔야 합니다.</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1_6" xml:space="preserve">
+    <value>* 요청 메모의 경우 손으로 작성 해주셔야 합니다.</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1_7" xml:space="preserve">
+    <value>* 그림판, 포토샵과 같은 편집 과정을 거칠 경우 처리가 불가합니다.</value>
+  </data>
+  <data name="CertifyMyPage_5_13" xml:space="preserve">
+    <value>* 신분증 내 개인정보의 경우 직접 가려 주셔야 합니다.</value>
+  </data>
+  <data name="CertifyMyPage_5_14" xml:space="preserve">
+    <value>* 요청 메모의 경우 손으로 작성 해주셔야 합니다.</value>
+  </data>
+  <data name="CertifyMyPage_5_15" xml:space="preserve">
+    <value>* 그림판, 포토샵과 같은 편집 과정을 거칠 경우 처리가 불가합니다.</value>
+  </data>
+  <data name="MemberInfo_Pop_21" xml:space="preserve">
+    <value>휴대폰 본인인증이 완료되었습니다.</value>
+  </data>
+  <data name="MemberInfo_Pop_22" xml:space="preserve">
+    <value>휴대폰 본인인증을 확인 해 주세요.</value>
+  </data>
+  <data name="MemberInfo_Pop_23" xml:space="preserve">
+    <value>은행계좌가 확인되지 않습니다.</value>
+  </data>
+  <data name="MemberInfo_Pop_24" xml:space="preserve">
+    <value>본인계좌인증을 진행 해 주시기 바랍니다.</value>
+  </data>
+  <data name="MemberInfo_Pop_25" xml:space="preserve">
+    <value>계좌 확인이 완료되었습니다.</value>
+  </data>
+  <data name="MemberInfo_Pop_26" xml:space="preserve">
+    <value>전화번호를 입력해 주세요.</value>
+  </data>
+  <data name="MemberInfo_Pop_27" xml:space="preserve">
+    <value>은행을 선택해 주세요.</value>
+  </data>
+  <data name="MemberInfo_Pop_28" xml:space="preserve">
+    <value>계좌번호를 입력해 주세요.</value>
+  </data>
+  <data name="MemberInfo_Pop_29" xml:space="preserve">
+    <value>계좌번호를 형식에 맞게 입력해주세요.</value>
+  </data>
+  <data name="MemberInfo_Pop_30" xml:space="preserve">
+    <value>사용자 이름이 존재하지 않습니다.</value>
+  </data>
+  <data name="MemberInfo_Pop_31" xml:space="preserve">
+    <value>예금주와 사용자 이름이 일치하지 않습니다.</value>
+  </data>
+  <data name="MemberInfo_Pop_32" xml:space="preserve">
+    <value>은행점검 중입니다.</value>
+  </data>
+  <data name="Common_Alert_23" xml:space="preserve">
+    <value>휴대폰 본인인증은 웹 또는 MTS에서 가능합니다.</value>
+  </data>
+  <data name="Lending_Alert_10" xml:space="preserve">
+    <value>신청 수량을 확인할 수 없습니다.</value>
+  </data>
+  <data name="Lending_Alert_11" xml:space="preserve">
+    <value>개월 수를 확인할 수 없습니다.</value>
+  </data>
+  <data name="Lending_Alert_12" xml:space="preserve">
+    <value>이미 렌딩을 신청한 회원입니다.</value>
+  </data>
+  <data name="Lending_Alert_13" xml:space="preserve">
+    <value>렌딩 신청에 실패하였습니다.</value>
+  </data>
+  <data name="Lending_Alert_14" xml:space="preserve">
+    <value>연장 하시겠습니까?</value>
+  </data>
+  <data name="Lending_Alert_15" xml:space="preserve">
+    <value>상환 하시겠습니까?</value>
+  </data>
+  <data name="Lending_Alert_3" xml:space="preserve">
+    <value>코인 Lending 신청 수량을 입력해 주세요.</value>
+  </data>
+  <data name="Lending_Alert_4" xml:space="preserve">
+    <value>최소 신청 가능 수량보다 적게는 신청할 수 없습니다.</value>
+  </data>
+  <data name="Lending_Alert_5" xml:space="preserve">
+    <value>최대 신청 가능 수량보다 많게는 신청할 수 없습니다.</value>
+  </data>
+  <data name="Lending_Alert_6" xml:space="preserve">
+    <value>신청 시 모든 출금이 제한 됩니다. 신청하시겠습니까?</value>
+  </data>
+  <data name="Lending_Alert_7" xml:space="preserve">
+    <value>이메일을 확인할 수 없습니다.</value>
+  </data>
+  <data name="Lending_Alert_8" xml:space="preserve">
+    <value>통화코드를 확인할 수 없습니다.</value>
+  </data>
+  <data name="Lending_Alert_9" xml:space="preserve">
+    <value>신청일을 확인할 수 없습니다.</value>
+  </data>
+  <data name="Common_Alert_24" xml:space="preserve">
+    <value>신청이 완료되었습니다.</value>
+  </data>
+  <data name="MemberInfo_Pop_33" xml:space="preserve">
+    <value>은행계좌가 확인되지 않습니다.</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_7" xml:space="preserve">
+    <value>* 자동거래 결제 후에는 취소 및 환불이 불가합니다.</value>
+  </data>
+  <data name="Common_Alert_25" xml:space="preserve">
+    <value>유의사항에 동의 해 주시기 바랍니다.</value>
+  </data>
+  <data name="MemberInfo_Pop_34" xml:space="preserve">
+    <value>[고객센터&gt;인증자료제출&gt;본인인증&gt;개인정보변경요청]에서 인증요청 후 완료 시 변경이 가능합니다.
+</value>
+  </data>
+  <data name="MemberInfo_Pop_35" xml:space="preserve">
+    <value>비밀번호가 맞지 않습니다.</value>
+  </data>
+  <data name="MemberInfo_Pop_36" xml:space="preserve">
+    <value>다시 확인 해 주시기 바랍니다.</value>
+  </data>
+  <data name="MemberInfo_Pop_37" xml:space="preserve">
+    <value>PIN번호 초기화를 위해 회원ID 비밀번호를 입력 해 주십시오.</value>
+  </data>
+  <data name="Lending_Grid2_3_3" xml:space="preserve">
+    <value>연장원금상환</value>
+  </data>
+  <data name="Lending_Grid2_3_4" xml:space="preserve">
+    <value>연장이자상환</value>
+  </data>
+  <data name="TradingHistory_1_19" xml:space="preserve">
+    <value>수수료 리워드</value>
+  </data>
+  <data name="CoinTrading_Alert_51" xml:space="preserve">
+    <value>구매가격은 {0} {1} 이상 입력할 수 있습니다.</value>
+  </data>
+  <data name="TradingHistory_1_20" xml:space="preserve">
+    <value>럭키박스 이벤트</value>
+  </data>
+  <data name="MemberInfo_1" xml:space="preserve">
+    <value>한번 등록한 내용은 변경이 불가합니다.</value>
+  </data>
+  <data name="MemberInfo_1_1" xml:space="preserve">
+    <value>[고객센터 &gt; 인증자료제출]에서 요청 해 주세요.</value>
+  </data>
+  <data name="DepositDepositWithdraw_Common_1" xml:space="preserve">
+    <value>{0} 전자지갑주소</value>
+  </data>
+  <data name="DepositDepositWithdraw_Common_2" xml:space="preserve">
+    <value>위 주소는 입금 전용 주소입니다.</value>
+  </data>
+  <data name="DepositDepositWithdraw_Common_3" xml:space="preserve">
+    <value>보유 {0}</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_1" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_10" xml:space="preserve">
+    <value>Email 인증</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_11" xml:space="preserve">
+    <value>{0} 송금 시 주의사항</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_12" xml:space="preserve">
+    <value>위 내용을 확인 했습니다.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_2" xml:space="preserve">
+    <value>모든 송금은 관리자 확인 후 진행됩니다.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_3" xml:space="preserve">
+    <value>송금 가능 코인</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_4" xml:space="preserve">
+    <value>1일 송금 한도</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_5" xml:space="preserve">
+    <value>송금할 주소</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_6" xml:space="preserve">
+    <value>송금 신청 금액</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_7" xml:space="preserve">
+    <value>{0} 수수료</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_8" xml:space="preserve">
+    <value>실제 출금 총액</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_9" xml:space="preserve">
+    <value>OTP 인증번호</value>
+  </data>
+  <data name="Common_Alert_26" xml:space="preserve">
+    <value>미사용</value>
+  </data>
+  <data name="AlramMyPage_2_4_3" xml:space="preserve">
+    <value>{0}충전</value>
+  </data>
+  <data name="AlramMyPage_2_4_4" xml:space="preserve">
+    <value>{0}출금</value>
+  </data>
+  <data name="AssetsMyPage_Common_1" xml:space="preserve">
+    <value>{0}마켓 기준입니다.</value>
+  </data>
+  <data name="AutoTradingAdditional_3_11" xml:space="preserve">
+    <value>30일 기준으로 10,000 {0}</value>
+  </data>
+  <data name="Common_Alert_4" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="Fee_26" xml:space="preserve">
+    <value>{0} 출금</value>
+  </data>
+  <data name="Main_Head_4" xml:space="preserve">
+    <value>합계({0})</value>
+  </data>
+  <data name="Main_Menu_3_1" xml:space="preserve">
+    <value>{0}충전</value>
+  </data>
+  <data name="Main_Menu_3_3" xml:space="preserve">
+    <value>{0}출금</value>
+  </data>
+  <data name="Main_QuickMenu_1" xml:space="preserve">
+    <value>{0}충전</value>
+  </data>
+  <data name="Main_QuickMenu_2" xml:space="preserve">
+    <value>{0}출금</value>
+  </data>
+  <data name="Main_QuickMenu_ToolTip_11" xml:space="preserve">
+    <value>{0} 충전</value>
+  </data>
+  <data name="Main_QuickMenu_ToolTip_12" xml:space="preserve">
+    <value>{0} 출금</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1_2" xml:space="preserve">
+    <value>*선불카드는 {0} 충전과 출금을 이용하실 수 있는 카드입니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1_3" xml:space="preserve">
+    <value>*선불카드 출금은 1회 2,000,000 {0}, 1일 100,000,000 {0} 한도입니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1_6" xml:space="preserve">
+    <value>*카드 발급비용은 국내용 카드 1회 10,000{0} 입니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_15" xml:space="preserve">
+    <value>(배송비 : {0} {1} 부과)</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_1" xml:space="preserve">
+    <value>{0} 충전 안내 및 주의 사항</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_22" xml:space="preserve">
+    <value>최소 입금 금액은 5,000{0}입니다.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_18" xml:space="preserve">
+    <value>1. {0}충전은 계좌입금으로 가능합니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_8" xml:space="preserve">
+    <value>보유 {0}</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_13" xml:space="preserve">
+    <value>{0} 출금 신청 시 주의사항</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_2" xml:space="preserve">
+    <value>{0} 충전 주의사항</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_7" xml:space="preserve">
+    <value>거래내용</value>
+  </data>
+  <data name="AlramMyPage_1_2_17" xml:space="preserve">
+    <value>OTP</value>
+  </data>
+  <data name="AlramMyPage_1_2_18" xml:space="preserve">
+    <value>휴대폰본인인증</value>
+  </data>
+  <data name="AlramMyPage_1_2_19" xml:space="preserve">
+    <value>계좌본인인증</value>
+  </data>
+  <data name="Login_27" xml:space="preserve">
+    <value>이메일</value>
+  </data>
+  <data name="Login_28" xml:space="preserve">
+    <value>패스워드</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_39" xml:space="preserve">
+    <value>1일 최고 송금액을 초과하였습니다.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_22" xml:space="preserve">
+    <value>판게아토큰 출금은 5월 27일(월)부터 가능합니다.</value>
+  </data>
+  <data name="TrustRequest_Alert_10" xml:space="preserve">
+    <value>만기 전 해지 시 이자지급이 되지 않으며, 
+이자의 150%가 위약금으로 발생합니다. 
+해지하시겠습니까</value>
+  </data>
+  <data name="TrustRequest_Alert_11" xml:space="preserve">
+    <value>트러스트 이자지급이 완료되었습니다</value>
+  </data>
+  <data name="TrustRequest_3" xml:space="preserve">
+    <value>이자지급내역</value>
+  </data>
+  <data name="TrustRequest_3_1" xml:space="preserve">
+    <value>이자 지급</value>
+  </data>
+  <data name="TrustRequest_3_2" xml:space="preserve">
+    <value>신청일</value>
+  </data>
+  <data name="TrustRequest_3_3" xml:space="preserve">
+    <value>만기일</value>
+  </data>
+  <data name="TrustRequest_3_4" xml:space="preserve">
+    <value>이자지급일</value>
+  </data>
+  <data name="TrustRequest_3_5" xml:space="preserve">
+    <value>통화</value>
+  </data>
+  <data name="TrustRequest_3_6" xml:space="preserve">
+    <value>수량</value>
+  </data>
+  <data name="TrustRequest_3_7" xml:space="preserve">
+    <value>이자</value>
+  </data>
+  <data name="TrustRequest_3_8" xml:space="preserve">
+    <value>총 수령액</value>
+  </data>
+  <data name="TrustRequest_3_9" xml:space="preserve">
+    <value>상태</value>
+  </data>
+  <data name="TrustRequest_3_9_1" xml:space="preserve">
+    <value>만기</value>
+  </data>
+  <data name="TrustRequest_3_9_2" xml:space="preserve">
+    <value>신청완료</value>
+  </data>
+  <data name="TrustRequest_3_9_3" xml:space="preserve">
+    <value>해지</value>
+  </data>
+  <data name="TradingHistory_1_21" xml:space="preserve">
+    <value>에어드랍</value>
+  </data>
+  <data name="TrustRequest_Alert_12" xml:space="preserve">
+    <value>HEC 이벤트 기간에는 해지하실 수 없습니다.</value>
+  </data>
+  <data name="TrustRequest_Alert_13" xml:space="preserve">
+    <value>(해지불가기간 : 2019.07.01 ~ 2019.07.08 18:00)</value>
+  </data>
+  <data name="CoinTrading_Alert_52" xml:space="preserve">
+    <value>50 {0} 이하는 구매(매수)할 수 없습니다.</value>
+  </data>
+  <data name="CoinTrading_Alert_53" xml:space="preserve">
+    <value>50 {0} 이하는 판매(매도)할 수 없습니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_1" xml:space="preserve">
+    <value>{0} 송금</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_10" xml:space="preserve">
+    <value>회원이메일</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_11" xml:space="preserve">
+    <value>전화번호</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_12" xml:space="preserve">
+    <value>받는이*</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_13" xml:space="preserve">
+    <value>송금 수량</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_14" xml:space="preserve">
+    <value>SMS 인증*</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_15" xml:space="preserve">
+    <value>송금신청일시</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_16" xml:space="preserve">
+    <value>회원ID</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_17" xml:space="preserve">
+    <value>회원명</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_18" xml:space="preserve">
+    <value>전화번호</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_19" xml:space="preserve">
+    <value>송금 수량</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_2" xml:space="preserve">
+    <value>{0} 거래소 내 송금 주의사항</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_20" xml:space="preserve">
+    <value>상태</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_21" xml:space="preserve">
+    <value>송금일</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_3" xml:space="preserve">
+    <value>송금은 본인의 회원 자산에서 거래소내 회원에게 전송이 됩니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_4" xml:space="preserve">
+    <value>{0} 입금 받으신 회원은 약 30분간 거래가 불가합니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_5" xml:space="preserve">
+    <value>회원이 실수로 잘못 송금한 경우 거래소에서 책임지지 않습니다.  </value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_6" xml:space="preserve">
+    <value>보유 {0}</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_7" xml:space="preserve">
+    <value>송금 최소 금액</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_8" xml:space="preserve">
+    <value>송금 한도</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_9" xml:space="preserve">
+    <value>구분</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_1" xml:space="preserve">
+    <value>회원이 실수로 잘못 송금한 경우 거래소에서 책임지지 않습니다. 
+해당 회원에게 송금 진행을 하시겠습니까? </value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_2" xml:space="preserve">
+    <value>확인이 되었습니다</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_3" xml:space="preserve">
+    <value>회원이 존재하지 않습니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_4" xml:space="preserve">
+    <value>받는이를 입력해 주세요</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_5" xml:space="preserve">
+    <value>SMS인증을 완료해 주세요</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_6" xml:space="preserve">
+    <value>잔액이 부족합니다 </value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_7" xml:space="preserve">
+    <value>{0} 입금을 받은지 30분이 되지 않아, 송금이 불가합니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_8" xml:space="preserve">
+    <value>잠시후 다시 시도해 주세요.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_9" xml:space="preserve">
+    <value>받는 이를 확인해주세요.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_40" xml:space="preserve">
+    <value>은행 서비스 시간이 아닙니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_41" xml:space="preserve">
+    <value>(출금 서비스 불가시간 : 23:30 ~ 00:30)</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_42" xml:space="preserve">
+    <value>은행 서비스 불가 시간에는 출금이 불가합니다. </value>
+  </data>
+  <data name="ArbitrageRequestPop_1" xml:space="preserve">
+    <value>아비트리지 결제</value>
+  </data>
+  <data name="ArbitrageRequestPop_2" xml:space="preserve">
+    <value>아비트리지 결제 후에는 취소 및 환불이 불가합니다.</value>
+  </data>
+  <data name="ArbitrageRequest_1" xml:space="preserve">
+    <value>아비트리지</value>
+  </data>
+  <data name="ArbitrageRequest_1_1" xml:space="preserve">
+    <value>ㆍArbitrage는 거래소에 자신이 보유하고 있는 암호화폐 중 일부를 시세차익이 가장 많이 나는 타 거래소의 시세와 비교하여 자유롭게 거래하실 수 있는 거래입니다.</value>
+  </data>
+  <data name="ArbitrageRequest_1_2" xml:space="preserve">
+    <value>ㆍArbitrage는 구매/판매를 선택하여 실시간으로 각 거래소 내 최고시세와 최저시세에 따른 차익을 보고 거래를 합니다.</value>
+  </data>
+  <data name="ArbitrageRequest_1_3" xml:space="preserve">
+    <value>ㆍ해당 서비스는 부가서비스이며, [HTS&gt;부가서비스&gt;아비트리지]에서 거래를 진행합니다.</value>
+  </data>
+  <data name="ArbitrageRequest_2_1" xml:space="preserve">
+    <value>아비트리지 신청 상태</value>
+  </data>
+  <data name="ArbitrageRequest_2_2" xml:space="preserve">
+    <value>아비트리지는</value>
+  </data>
+  <data name="ArbitrageRequest_2_3" xml:space="preserve">
+    <value>30일 기준 100,000 {0}</value>
+  </data>
+  <data name="Arbitrage_1" xml:space="preserve">
+    <value>아바트리지(재정거래)</value>
+  </data>
+  <data name="Arbitrage_1_1" xml:space="preserve">
+    <value>ㆍArbitrage는 거래소에 자신이 보유 하고 있는 암호화폐(BTC, ETH, PANGAEA)중 일부를 시세차익이 가장 많이 나는 타 거래소의 시세와 비교하여 자유롭게 거래 하실 수 있는 거래입니다.</value>
+  </data>
+  <data name="Arbitrage_1_2" xml:space="preserve">
+    <value>ㆍ아비트리지는 구매/판매를 선택하여 실시간으로 각 거래소 내 최고시세와 최저시세에 따른 차익을 보고 거래합니다.</value>
+  </data>
+  <data name="Arbitrage_1_3" xml:space="preserve">
+    <value>ㆍ해당 서비스는 부가서비스이며 [HTS &gt; 부가서비스 &gt; 아비트리지]에서 거래를 진행합니다.</value>
+  </data>
+  <data name="Arbitrage_2" xml:space="preserve">
+    <value>거래 선택</value>
+  </data>
+  <data name="Arbitrage_2_1" xml:space="preserve">
+    <value>매수</value>
+  </data>
+  <data name="Arbitrage_2_2" xml:space="preserve">
+    <value>매도</value>
+  </data>
+  <data name="Arbitrage_3_1" xml:space="preserve">
+    <value>거래소</value>
+  </data>
+  <data name="Arbitrage_3_2" xml:space="preserve">
+    <value>코인명</value>
+  </data>
+  <data name="Arbitrage_3_3" xml:space="preserve">
+    <value>보유 {0}</value>
+  </data>
+  <data name="Arbitrage_3_4" xml:space="preserve">
+    <value>현재시세</value>
+  </data>
+  <data name="Arbitrage_3_5" xml:space="preserve">
+    <value>차익</value>
+  </data>
+  <data name="Arbitrage_4" xml:space="preserve">
+    <value>ㆍArbitrage 이용시 주의사항</value>
+  </data>
+  <data name="Arbitrage_4_1" xml:space="preserve">
+    <value>ㆍ아비트리지 구매에 경우, 가장 높은 시세와 가장 낮은 시세의 거래소가 출력되며, 두 거래소 간 차익이 출력됩니다.</value>
+  </data>
+  <data name="Arbitrage_4_2" xml:space="preserve">
+    <value>ㆍ가장 낮은 시세의 거래소로 아비트리지 구매가 진행되며, 높은 시세의 거래소는 비교 참고용으로 이용 바랍니다.</value>
+  </data>
+  <data name="Arbitrage_4_3" xml:space="preserve">
+    <value>ㆍ로그인한 거래소의 시세와 로그인한 거래소 기준으로 시세 차익이 많이 나는 거래소가 출력됩니다.</value>
+  </data>
+  <data name="Arbitrage_4_4" xml:space="preserve">
+    <value>ㆍ새로고침시 거래소는 계속 변경될 수 있으므로 해당 거래소 내의 자산에 유의하여 거래를 진행하시기 바랍니다.</value>
+  </data>
+  <data name="Arbitrage_4_5" xml:space="preserve">
+    <value>ㆍ해당 사항을 어길 경우 발생하는 불이익은 거래소에서 책임지지 않습니다. 거래전에 반드시 확인하고 진행해주시기 바랍니다.</value>
+  </data>
+  <data name="Arbitrage_5_1" xml:space="preserve">
+    <value>위 내용을 확인했습니다.</value>
+  </data>
+  <data name="Arbitrage_6_1" xml:space="preserve">
+    <value>종류</value>
+  </data>
+  <data name="Arbitrage_6_2" xml:space="preserve">
+    <value>거래소명</value>
+  </data>
+  <data name="Arbitrage_6_3" xml:space="preserve">
+    <value>체결시각</value>
+  </data>
+  <data name="Arbitrage_6_4" xml:space="preserve">
+    <value>체결가</value>
+  </data>
+  <data name="Arbitrage_6_5" xml:space="preserve">
+    <value>체결금액</value>
+  </data>
+  <data name="Arbitrage_6_6" xml:space="preserve">
+    <value>수수료</value>
+  </data>
+  <data name="Arbitrage_SetMainExchange_1" xml:space="preserve">
+    <value>주거래소 설정</value>
+  </data>
+  <data name="Arbitrage_SetMainExchange_1_1" xml:space="preserve">
+    <value>주거래소 설정이란?</value>
+  </data>
+  <data name="Arbitrage_SetMainExchange_1_2" xml:space="preserve">
+    <value>아비트리지 거래를 통해 발생한 수익을 지정된 거래소로 자동 입금하여 자유롭게 출금 가능하게 하기 위해 설정하는 기능입니다. 로그인 한 거래소가 아닌 타 거래소로 주거래소 설정이 가능합니다.</value>
+  </data>
+  <data name="Arbitrage_SetMainExchange_1_3" xml:space="preserve">
+    <value>주거래소</value>
+  </data>
+  <data name="Arbitrage_SetMainExchange_1_4" xml:space="preserve">
+    <value>ㆍ유의사항 : 주거래소 미 설정 시, 로그인한 거래소로 주 거래소 설정되며, 처음 등록 후에는 변경이 불가하오니, 신중하게 등록하여 주시기 바랍니다.</value>
+  </data>
+  <data name="Arbitrage_SetMainExchange_Alert_1" xml:space="preserve">
+    <value>주거래소 설정이 완료되었습니다.</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_1" xml:space="preserve">
+    <value>통합 거래소 회원가입</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_1_1" xml:space="preserve">
+    <value>아비트리지 통합 거래소 가입</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_1_2" xml:space="preserve">
+    <value>거래소명</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_1_3" xml:space="preserve">
+    <value>가입여부</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_2_1" xml:space="preserve">
+    <value>ㆍ통합회원으로 가입하시면 등록된 모든 거래소의 시세별 차익 비교를 통해 아비트리지 기능을 이용 하실 수 있습니다.</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_2_2" xml:space="preserve">
+    <value>ㆍ로그인 하신 아이디로 가입이 처리됩니다.</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_2_3" xml:space="preserve">
+    <value>이용약관[필수]</value>
+  </data>
+  <data name="Arbitrage_TradePop_1" xml:space="preserve">
+    <value>아비트리지 실행</value>
+  </data>
+  <data name="Arbitrage_TradePop_1_1" xml:space="preserve">
+    <value>자산 선택</value>
+  </data>
+  <data name="Arbitrage_TradePop_1_1_1" xml:space="preserve">
+    <value>현 거래소</value>
+  </data>
+  <data name="Arbitrage_TradePop_1_1_2" xml:space="preserve">
+    <value>전체 거래소</value>
+  </data>
+  <data name="Arbitrage_TradePop_1_2" xml:space="preserve">
+    <value>보유금액</value>
+  </data>
+  <data name="Arbitrage_TradePop_1_3" xml:space="preserve">
+    <value>거래소</value>
+  </data>
+  <data name="Arbitrage_TradePop_1_4" xml:space="preserve">
+    <value>현재시세</value>
+  </data>
+  <data name="Arbitrage_TradePop_1_5" xml:space="preserve">
+    <value>시각</value>
+  </data>
+  <data name="Arbitrage_TradePop_2_1" xml:space="preserve">
+    <value>ㆍ보유 금액 전부를 이용하여 거래가 진행됩니다.</value>
+  </data>
+  <data name="Arbitrage_TradePop_2_2" xml:space="preserve">
+    <value>ㆍ거래 수익은 실시간 시세 변화로 인해 예상 수익과 다를 수 있습니다.</value>
+  </data>
+  <data name="Arbitrage_TradePop_2_3" xml:space="preserve">
+    <value>ㆍ거래를 진행하시겠습니까?</value>
+  </data>
+  <data name="Arbitrage_TradePop_3_1" xml:space="preserve">
+    <value>초</value>
+  </data>
+  <data name="Arbitrage_Alert_1" xml:space="preserve">
+    <value>통합거래소에 가입하여 주시기 바랍니다.</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_Alert_1" xml:space="preserve">
+    <value>아비트리지는 유료 서비스 입니다. 
+부가서비스 신청을 통해 아비트리지 가입을 신청해 주시기 바랍니다.</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_Alert_2" xml:space="preserve">
+    <value>통합회원으로 아비트리지 이용 가능한 모든 거래소에 자동 가입됩니다. 로그인 하신 아이디로 가입처리가 되며, 각 사이트에 로그인시 비밀번호 설정 및 인증이 필요합니다. 가입을 진행 하시겠습니까 ?</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_Alert_3" xml:space="preserve">
+    <value>회원가입을 취소 하시겠습니까?
+통합 거래소 회원가입을 진행하지 않으시면, 아비트리지 기능을 정상적으로 이용하실 수 없습니다.</value>
+  </data>
+  <data name="Arbitrage_TradePop_Alert_1" xml:space="preserve">
+    <value>거래를 진행하시겠습니까?
+한번 거래된 이후에 발생하는 불이익은 거래소에서 책임지지 않습니다.</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_43" xml:space="preserve">
+    <value>보이스피싱 및 이상 출금 방지를 위해 3시간 이내 연속 3회 이상 출금 신청 시 3시간 후 출금 신청이 가능합니다.</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_1_3_1" xml:space="preserve">
+    <value>가입</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_1_3_2" xml:space="preserve">
+    <value>미가입</value>
+  </data>
+  <data name="ArbitrageRequestPop_Alert_1" xml:space="preserve">
+    <value>결제수단을 선택해주세요.</value>
+  </data>
+  <data name="ArbitrageRequestPop_Alert_2" xml:space="preserve">
+    <value>결제금액이 부족합니다.</value>
+  </data>
+  <data name="ArbitrageRequestPop_Alert_3" xml:space="preserve">
+    <value>Arbitrage신청에 실패하였습니다.</value>
+  </data>
+  <data name="ArbitrageRequestPop_Alert_4" xml:space="preserve">
+    <value>Arbitrage를 신청한 회원입니다.</value>
+  </data>
+  <data name="Arbitrage_Term_1" xml:space="preserve">
+    <value>Arbitrage 서비스 이용약관 </value>
+  </data>
+  <data name="Arbitrage_Term_10" xml:space="preserve">
+    <value>회원이 개정약관의 적용에 동의하지 않는다는 명시적 의사를 표명한 경우 거래소는 개정 약관의 내용을 적용할 수 없으며, 이 경우 회원은 이용계약을 해지할 수 있습니다. 다만, 기존 약관을 적용할 수 없는 특별한 사정이 있는 경우에는 거래소는 이용계약을 해지할 수 있습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_100" xml:space="preserve">
+    <value>해제조건</value>
+  </data>
+  <data name="Arbitrage_Term_101" xml:space="preserve">
+    <value>정지효력</value>
+  </data>
+  <data name="Arbitrage_Term_102" xml:space="preserve">
+    <value>서비스 제한 로그인 외 서비스 이용불가</value>
+  </data>
+  <data name="Arbitrage_Term_103" xml:space="preserve">
+    <value>-아이디(이메일주소) 미확인</value>
+  </data>
+  <data name="Arbitrage_Term_104" xml:space="preserve">
+    <value>-해킹/사기 사고 발생</value>
+  </data>
+  <data name="Arbitrage_Term_105" xml:space="preserve">
+    <value>-사고회원 관련자(연락처 및 개인정보 일치)</value>
+  </data>
+  <data name="Arbitrage_Term_106" xml:space="preserve">
+    <value>-서비스 해지 신청</value>
+  </data>
+  <data name="Arbitrage_Term_107" xml:space="preserve">
+    <value>-기타: 관리자 판단 (정상적인 서비스 진행에 심각한 장애 유발 시)</value>
+  </data>
+  <data name="Arbitrage_Term_108" xml:space="preserve">
+    <value>-정지 사유 해결</value>
+  </data>
+  <data name="Arbitrage_Term_109" xml:space="preserve">
+    <value>로그인 이외의 거래 불가</value>
+  </data>
+  <data name="Arbitrage_Term_11" xml:space="preserve">
+    <value>제3조 (약관 외 준칙)</value>
+  </data>
+  <data name="Arbitrage_Term_110" xml:space="preserve">
+    <value>로그인 제한</value>
+  </data>
+  <data name="Arbitrage_Term_111" xml:space="preserve">
+    <value>-비밀번호 연속 오류</value>
+  </data>
+  <data name="Arbitrage_Term_112" xml:space="preserve">
+    <value>-명의 도용으로 의심되는 경우</value>
+  </data>
+  <data name="Arbitrage_Term_113" xml:space="preserve">
+    <value>-기타: 관리자 판단</value>
+  </data>
+  <data name="Arbitrage_Term_114" xml:space="preserve">
+    <value>-정지 사유 해결</value>
+  </data>
+  <data name="Arbitrage_Term_115" xml:space="preserve">
+    <value>로그인 불가</value>
+  </data>
+  <data name="Arbitrage_Term_116" xml:space="preserve">
+    <value>일부 서비스 제한</value>
+  </data>
+  <data name="Arbitrage_Term_117" xml:space="preserve">
+    <value>판단에 따라 특정 서비스 외 이용은 문제 없다고 판단될 경우 부분 제한으로 처리할 수 있음.</value>
+  </data>
+  <data name="Arbitrage_Term_118" xml:space="preserve">
+    <value>-정지 사유 해결</value>
+  </data>
+  <data name="Arbitrage_Term_119" xml:space="preserve">
+    <value>특정 서비스 이용불가</value>
+  </data>
+  <data name="Arbitrage_Term_12" xml:space="preserve">
+    <value>거래소는 서비스에 대하여 이 약관 외에 별도의 공지사항, 개별 약관, 개별 동의 사항, 이용안내, 운영정책, 세부지침 등(이하 통틀어 “세부지침”이라 합니다)을 정하여 이를 회원에게 알리거나 동의를 받을 수 있으며, “세부지침” 중 회원의 동의를 받은 내용이 이 약관과 상충할 경우에는 “세부지침”이 우선하여 적용됩니다.</value>
+  </data>
+  <data name="Arbitrage_Term_120" xml:space="preserve">
+    <value>제6장 개인정보 보호</value>
+  </data>
+  <data name="Arbitrage_Term_121" xml:space="preserve">
+    <value>제14조 (개인정보의 보호)</value>
+  </data>
+  <data name="Arbitrage_Term_122" xml:space="preserve">
+    <value>거래소는 관계 법령이 정하는 바에 따라 회원의 개인정보를 보호하기 위해 노력합니다. 회원의 개인정보는 서비스의 원활한 제공을 위하여 회원이 동의한 목적과 범위 내에서만 이용됩니다. 거래소는 법령에 의하거나 회원이 별도로 동의하지 아니하는 한, 회원의 개인정보를 제3자에게 제공하지 아니하며, 이에 대한 자세한 사항은 거래소 개인정보 처리방침에서 정합니다.</value>
+  </data>
+  <data name="Arbitrage_Term_123" xml:space="preserve">
+    <value>제7장 손해배상, 면책조항 및 환불정책</value>
+  </data>
+  <data name="Arbitrage_Term_124" xml:space="preserve">
+    <value>제15조 (거래소의 손해배상 책임)</value>
+  </data>
+  <data name="Arbitrage_Term_125" xml:space="preserve">
+    <value>거래소는 본 약관을 위반한 거래를 통해서 발생한 일체의 사고에 대해서 책임을 지지 않으며, 거래소의 고의 또는 중대한 과실이 없는 한 회원의 과실로 인해 발생한 분쟁에 대해서 책임을 지지 않습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_126" xml:space="preserve">
+    <value>제 3 자가 권한 없이 회원의 계정을 이용할 수 있음을 알았거나 쉽게 알 수 있었음에도 불구 하고 회원이 이를 즉시 회사에 알리지 않고 방치하거나 누설 또는 노출하여 손실이 발생한 부분에 대해 책임을 지지 않습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_127" xml:space="preserve">
+    <value>거래소가 보안강화를 위하여 요구하는 추가적인 보안조치를 회원이 정당한 사유 없이 거부하여 발생한 손해에 대해 거래소는 책임 지지 않습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_128" xml:space="preserve">
+    <value>거래소는 회원의 암호화폐 거래에 일절 관여하지 않으므로, 회원이 아비트리지서비스를 통하여 얻은 투자상 손실에 대하여 책임을 지지 않습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_129" xml:space="preserve">
+    <value>회원은 아비트리지 서비스에서 이용하는 거래가 투자 수익을 담보하지 못한다는 점을 이해하며 거래소는 회원이 아비트리지서비스를 통하여 얻은 투자상 손실에 대하여 책임을 지지 않습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_13" xml:space="preserve">
+    <value>이 약관에서 정하지 아니한 사항이나 해석에 대해서는 “세부지침” 및 관련 법령 또는 관례에 따릅니다.</value>
+  </data>
+  <data name="Arbitrage_Term_130" xml:space="preserve">
+    <value>거래소는 회원이 특정 암호화폐거래 사용 여부나 사용 시점, 사용 빈도 등의 선택에 일절 관여하지 아니하며, 이로 인하여 얻은 투자상 손실에 대하여 책임을 지지 않습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_131" xml:space="preserve">
+    <value>회원은 버그나 오류 등으로 인하여 거래불발, 거래지연 등 아비트리지 서비스에 하자가 있는 경우에도 그 하자로 인하여 투자에 수익이발생하는 경우와 손실이 발생하는 경우가 모두 있을 수 있음을 이해하며, 거래소는 아비트리지 서비스의 하자로 인하여 발생한 투자 손실에 대하여 책임을 지지 않습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_132" xml:space="preserve">
+    <value>거래소는 고의 또는 중대한 과실이 없는 한 본 약관에서 규정한 매매규칙을 벗어난 거래를 통해서 발생한 사고 및 회원의 과실로 인해 회원 간에 발생한 분쟁에 대해서 책임을 지지 않습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_133" xml:space="preserve">
+    <value>제16조 (면책조항)</value>
+  </data>
+  <data name="Arbitrage_Term_134" xml:space="preserve">
+    <value>거래소가 선량한 관리자의 주의의무를 다하였음에도 서비스를 제공할 당시 과학 기술 수준으로 아비트리지 서비스에 발생한 결함의 존재를 발견할 수 없는 경우에는 이로 인하여 발생한 손해에 대하여 책임을 지지 않으며, 다음 각 호에 해당하는 경우에도 책임을 지지 않습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_135" xml:space="preserve">
+    <value>① 전시, 사변, 천재지변 또는 이에 준하는 국가 비상 사태 등 불가항력적인 경우</value>
+  </data>
+  <data name="Arbitrage_Term_136" xml:space="preserve">
+    <value>② 회원의 고의 또는 과실로 인하여 손해가 발생한 경우</value>
+  </data>
+  <data name="Arbitrage_Term_137" xml:space="preserve">
+    <value>③ 전기통신사업법에 의한 타 기간 통신사업자가 제공하는 전기통신서비스 장애로 인한 경우</value>
+  </data>
+  <data name="Arbitrage_Term_138" xml:space="preserve">
+    <value>④ 거래소가 직접 제공하는 서비스가 아닌 제휴업체 등의 제3자를 이용하여 제공하는 서비스의 경우 제휴 업체 등의 제3자의 고의 또는 과실로 인한 경우 거래소는 회원 자신의 귀책 사유로 서비스를 이용하지 못할 경우에는 책임을 지지 아니합니다.</value>
+  </data>
+  <data name="Arbitrage_Term_139" xml:space="preserve">
+    <value>거래소는 고의 또는 중대한 과실이 없는 한 회원의 본 약관 및 관계법령위반행위로 인하여 제3자에게 발생한 손해에 대하여는 책임을 지지 아니합니다.</value>
+  </data>
+  <data name="Arbitrage_Term_14" xml:space="preserve">
+    <value>제2장 서비스 이용 신청 및 승낙</value>
+  </data>
+  <data name="Arbitrage_Term_140" xml:space="preserve">
+    <value>제17조 (대리 및 보증의 부인)</value>
+  </data>
+  <data name="Arbitrage_Term_141" xml:space="preserve">
+    <value>거래소를 통하여 제공하는 데이터 및 분석자료는 정보제공을 목적으로 하는 것이며, 암호화폐거래를 목적으로 하지 않습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_142" xml:space="preserve">
+    <value>거래소는 암호화폐거래에 관한 시장정보의 적시성 및 정확성 유지를 위해 항상 최선을 다하고 있으나 불가피한 정보의 오류 및 누락, 지연의 가능성이 있을 수 있습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_143" xml:space="preserve">
+    <value>거래소는 암호화폐를 판매하거나 구매하고자 하는 회원을 대리할 권한을 갖고 있지 않으며, 거래소의 어떠한 행위도 회원의 암호화폐 거래를 위한 대리 행위로 간주되지 않습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_144" xml:space="preserve">
+    <value>거래소는 회원간 또는 회원과 제3자간의 분쟁에 관여할 법적의무가 없으며, 이와 관련하여 어떠한 책임도 지지 않습니다. 다만, 이러한 분쟁의 발생이 거래소의 귀책사유로 인하여 발생한 경우를 제외 합니다.</value>
+  </data>
+  <data name="Arbitrage_Term_145" xml:space="preserve">
+    <value>제18조 (관할법원 및 준거법)</value>
+  </data>
+  <data name="Arbitrage_Term_146" xml:space="preserve">
+    <value>거래소와 회원 간 발생한 분쟁에 관한 소송은 제소 당시의 회원의 주소에 의하고, 주소가 없는 경우 거소를 관할하는 지방법원의 전속관할로 합니다. 단, 제소 당시 회원의 주소 또는 거소가 명확하지 아니한 경우의 관할법원은 서울중앙지방법원으로 합니다.</value>
+  </data>
+  <data name="Arbitrage_Term_147" xml:space="preserve">
+    <value>해외에 주소나 거소가 있는 회원의 경우 거래소와 회원 간 발생한 분쟁에 관한 소송은 전항에도 불구하고 대한민국 서울중앙지방법원을 관할법원으로 합니다.</value>
+  </data>
+  <data name="Arbitrage_Term_148" xml:space="preserve">
+    <value>서비스 이용과 관련하여 거래소와 회원 간의 소송에는 대한민국 법을 적용합니다.</value>
+  </data>
+  <data name="Arbitrage_Term_149" xml:space="preserve">
+    <value>본 약관은 2019년 07월 15일부터 적용됩니다.</value>
+  </data>
+  <data name="Arbitrage_Term_15" xml:space="preserve">
+    <value>제4조 (이용계약의 성립)</value>
+  </data>
+  <data name="Arbitrage_Term_16" xml:space="preserve">
+    <value>서비스가입을 원하는 이용자(이하 “서비스신청자”)는 본 약관의 내용에 동의를 한 다음, 서비스를 받을 수 있습니다. 약관에 동의 함으로써 거래소와 회원 간 이용계약이 체결됩니다.</value>
+  </data>
+  <data name="Arbitrage_Term_17" xml:space="preserve">
+    <value>거래소는 서비스신청자의 신청을 받아들이는 것을 원칙으로 하지만, 아래와 같은 경우 거래소는 서비스신청자의 서비스신청을 거절할 수 있습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_18" xml:space="preserve">
+    <value>1)    타인의 메일주소, 전화번호 등의 개인정보를 이용하여 서비스 신청을 하는 경우</value>
+  </data>
+  <data name="Arbitrage_Term_19" xml:space="preserve">
+    <value>2)    허위의 정보를 기재하거나, 거래소가 요구하는 회원정보를 전부 기재하지 않은 경우</value>
+  </data>
+  <data name="Arbitrage_Term_2" xml:space="preserve">
+    <value>제1장 총칙</value>
+  </data>
+  <data name="Arbitrage_Term_20" xml:space="preserve">
+    <value>3)    서비스신청자가 만19 세 미만인 경우</value>
+  </data>
+  <data name="Arbitrage_Term_21" xml:space="preserve">
+    <value>4)    자금세탁, 범죄 수익금 은닉 등 부당한 목적으로 서비스를 이용하려는 것이 합리적으로 의심될 경우</value>
+  </data>
+  <data name="Arbitrage_Term_22" xml:space="preserve">
+    <value>5)    거래소의 설비 부족, 기술적 문제의 발생, 기타 거래소의 사정으로 인하여 더 이상의 이용계약 체결이 회원에게 이롭지 않을 것으로 판단되는 경우</value>
+  </data>
+  <data name="Arbitrage_Term_23" xml:space="preserve">
+    <value>6)    기타 사회의 안녕질서 또는 공서양속을 해할 목적으로 서비스신청을 하는 경우</value>
+  </data>
+  <data name="Arbitrage_Term_24" xml:space="preserve">
+    <value>거래소는 본인확인에 필요한 경우 관계법령에 따라 서비스신청자에게 전문기관을 통한 실명 확인 및 본인인증을 요청할 수 있습니다. 거래소는 이 때 개별서비스의 이용 정도에 따라 서비스 신청자에게 요구하는 개인정보제공 및 본인인증수단의 정도 및 수준을 달리할 수 있습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_25" xml:space="preserve">
+    <value>서비스신청자가 본조 각호의 요청에 대한 정보제공 및 본인인증절차를 거부하여 발생하게 되는 불이익에 대하여 거래소는 책임을 지지 않습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_26" xml:space="preserve">
+    <value>제5조 (서비스 이용 신청 및 승낙)</value>
+  </data>
+  <data name="Arbitrage_Term_27" xml:space="preserve">
+    <value>회원은 서비스의 이용을 위하여 거래비밀번호 설정 등 회사가 요구 하는 절차에 응함으로써 서비스의 전부 또는 일부에 대한 이용을 신청할 수 있습니다. 이 때 거래소는 회원에게 해당 서비스 이용을 위한 추가적인 본인확인 수단을 요구할 수 있습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_28" xml:space="preserve">
+    <value>거래소가 회원의 개별 서비스 이용을 승낙한 이후에도 본 약관의 위배되는 행위를 하는 경우 회원의 서비스 전체 또는 일부의 이용을 영구적 또는 일시적으로 제한할 수 있습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_29" xml:space="preserve">
+    <value>제6조 (이용계약의 해제, 해지)</value>
+  </data>
+  <data name="Arbitrage_Term_3" xml:space="preserve">
+    <value>제1조 (목적)</value>
+  </data>
+  <data name="Arbitrage_Term_30" xml:space="preserve">
+    <value>회원은 언제든지 거래소의 고객센터를 통하여 이용계약 해지 신청을 할 수 있으며, 거래소는 관계법령 등이 정하는 바에 따라 이를 즉시 처리하여야 합니다. 단, 거래소는 다음의 경우 중 하나에 해당하는 경우, 이를 해결하기 위하여 필요한 최소의 시간만큼 서비스 해지 절차를 지연 할 수 있습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_31" xml:space="preserve">
+    <value>1)    현재 거래가 진행 중인 경우</value>
+  </data>
+  <data name="Arbitrage_Term_32" xml:space="preserve">
+    <value>2)    수사기관의 요청 또는 이상 거래 탐지를 위하여 서비스 해지 절차를 즉각적으로 처리하기 곤란한 경우</value>
+  </data>
+  <data name="Arbitrage_Term_33" xml:space="preserve">
+    <value>3)    본조 각 호 사유로 인하여 거래소의 손해배상액을 산정할 필요가 있거나 이와 관련한 수사기관을 포함한 규제감독기관의 자료 요청에 대비할 필요가 있는 경우</value>
+  </data>
+  <data name="Arbitrage_Term_34" xml:space="preserve">
+    <value>거래소는 제1항 단서조항에 의하여 서비스해지절차를 지연하는 경우에도 회원의 로그인 등을 포함한 계정 사용을 중지(이하 “계정정지”)할 수 있습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_35" xml:space="preserve">
+    <value>거래소는 다음 각 호에 해당하는 경우 회원과의 이용계약을 해지할 수 있습니다. 다만, 제8호의 경우 거래소가 회원에게 7일의 기간을 정하여 위반행위의 시정을 요구할 수 있고, 그럼에도 불구하고 시정하지 않는 경우 계약을 해지할 수 있습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_36" xml:space="preserve">
+    <value>1)    이름, 휴대전화번호, 은행계좌 등 타인의 개인정보를 도용 또는 사용하여 가입하는 경우</value>
+  </data>
+  <data name="Arbitrage_Term_37" xml:space="preserve">
+    <value>2)    타인의 아이디(ID), 비밀번호 등을 도용 또는 대여한 경우</value>
+  </data>
+  <data name="Arbitrage_Term_38" xml:space="preserve">
+    <value>3)    기타 가입한 회원의 회원정보와 실제 계정을 이용하는 사람의 개인정보가 다른 경우</value>
+  </data>
+  <data name="Arbitrage_Term_39" xml:space="preserve">
+    <value>4)    한 명의 회원이 복수의 계정을 사용하는 경우</value>
+  </data>
+  <data name="Arbitrage_Term_4" xml:space="preserve">
+    <value>이 약관은 주식회사 팩글로벌에서(이하 거래소)제공하는 아비트리지 관련 제반 서비스(이하: 서비스)의 이용조건 및 절차에 관한 거래소와 회원 간의 권리 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.</value>
+  </data>
+  <data name="Arbitrage_Term_40" xml:space="preserve">
+    <value>5)    회원이 만 19세 미만인 경우</value>
+  </data>
+  <data name="Arbitrage_Term_41" xml:space="preserve">
+    <value>6)    불법자금세탁, 범죄 수익금 은닉 등 부당한 목적으로 서비스를 이용하는 경우</value>
+  </data>
+  <data name="Arbitrage_Term_42" xml:space="preserve">
+    <value>7)    아비트리지를 이용하여 범죄와 결부되는 행위를 하는 경우</value>
+  </data>
+  <data name="Arbitrage_Term_43" xml:space="preserve">
+    <value>8)    서비스 이용 시 제 3자의 계정을 대신 운영하는 행위 또는 홍보 행위를 하는 경우</value>
+  </data>
+  <data name="Arbitrage_Term_44" xml:space="preserve">
+    <value>9)    회원이 제 8항을 위반하여 거래소 또는 제 3자에게 재산상 손해를 끼치게 하는 경우</value>
+  </data>
+  <data name="Arbitrage_Term_45" xml:space="preserve">
+    <value>10)  거래소 또는 제3자의 지적재산권을 침해하는 경우</value>
+  </data>
+  <data name="Arbitrage_Term_46" xml:space="preserve">
+    <value>11)  정부 및 관계기관의 방침, 암호화폐거래를 규율하는 법령의 변경, 또는 이를 준수하기 위하여 필요한 거래소의 서비스 정책의 변경으로 인하여 해당 회원이 회원으로서의 자격요건을 준수하지 못하게 된 경우</value>
+  </data>
+  <data name="Arbitrage_Term_47" xml:space="preserve">
+    <value>제7조 (서비스 거절 및 유보)</value>
+  </data>
+  <data name="Arbitrage_Term_48" xml:space="preserve">
+    <value>거래소는 아래와 같은 경우 고객의 서비스 신청을 승낙하지 않을 수 있고, 특히 미성년자 또는 제한능력자는 서비스를 신청할 수 없습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_49" xml:space="preserve">
+    <value>1)    거래소가 회원의 계정을 삭제한 경우</value>
+  </data>
+  <data name="Arbitrage_Term_5" xml:space="preserve">
+    <value>제2조 (약관의 명시, 설명과 개정)</value>
+  </data>
+  <data name="Arbitrage_Term_50" xml:space="preserve">
+    <value>2)    회원이 다른 사람의 명의나 이메일 주소 등 개인정보를 이용하여 계정을 생성하려 하는 경우</value>
+  </data>
+  <data name="Arbitrage_Term_51" xml:space="preserve">
+    <value>3)    서비스 신청 시 필요한 정보를 입력하지 아니하거나 허위의 정보를 입력한 경우</value>
+  </data>
+  <data name="Arbitrage_Term_52" xml:space="preserve">
+    <value>4)    회원의 거주지에서 효력이 있는 대한민국 외의 법률에 따라 본 서비스 이용행위가 해당 법률의 위반을 구성하거나 구성할 현저한 위험이 있는 경우</value>
+  </data>
+  <data name="Arbitrage_Term_53" xml:space="preserve">
+    <value>5)    미성년자 또는 제한능력자가 서비스 신청 한 것으로 확인되는 경우</value>
+  </data>
+  <data name="Arbitrage_Term_54" xml:space="preserve">
+    <value>6)    회원이 서비스를 이용하는 과정에서 대한민국의 법령을 위반한 것이 확인된 경우</value>
+  </data>
+  <data name="Arbitrage_Term_55" xml:space="preserve">
+    <value>7)    전기통신금융사기 등의 도구로 활용되었거나 전기통신금융사기 등으로 인한 피해 금원이 입금 또는 출금된 것으로 확인된 경우</value>
+  </data>
+  <data name="Arbitrage_Term_56" xml:space="preserve">
+    <value>8)    회원의 신청에 따른 서비스신청이 되었음에도 불구하고 탈퇴를 신청하거나, 탈퇴 처리가 완료되었음에도 동일한 계정을 신청하는 등의 경우</value>
+  </data>
+  <data name="Arbitrage_Term_57" xml:space="preserve">
+    <value>9)    회원의 개인정보가 유출되었거나 유출된 것으로 판단되는 경우</value>
+  </data>
+  <data name="Arbitrage_Term_58" xml:space="preserve">
+    <value>10)  회원이 서비스를 이용하는 과정에서 발생한 회원의 불법행위로 인하여 거래소에 손해가 발생한 경우</value>
+  </data>
+  <data name="Arbitrage_Term_59" xml:space="preserve">
+    <value>11)  대한민국 정부 및 산하기관의 정책 신설, 변경, 폐지 등으로 인하여 거래소가 신규 서비스를 받을 수 없는 경우</value>
+  </data>
+  <data name="Arbitrage_Term_6" xml:space="preserve">
+    <value>이 약관의 내용은 거래소의 서비스 신청 관련 사이트에 게시하거나 기타의 방법으로 이용자에게 공지하고, 이용자가 서비스를 신청하면서 이 약관에 동의함으로써 효력이 발생합니다.</value>
+  </data>
+  <data name="Arbitrage_Term_60" xml:space="preserve">
+    <value>12)  회원의 서비스신청을 승낙하는 거래소의 행위가 대한민국의 법률 위반 행위로 인식될 만한 현저한 우려가 있는 경우</value>
+  </data>
+  <data name="Arbitrage_Term_61" xml:space="preserve">
+    <value>회원이 제1항 각 호의 어느 하나에 위반하여 서비스신청한 것으로 판명된 때에는 거래소는 즉시 회원의 서비스 이용을 중단하는 등의 적절한 제한을 할 수 있습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_62" xml:space="preserve">
+    <value>거래소는 아래와 같은 경우 회원의 서비스 신청에도 불구하고 회원의 서비스 신청을 유보할 수 있습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_63" xml:space="preserve">
+    <value>1)    제공 서비스 설비 용량에 현실적인 여유가 없는 경우</value>
+  </data>
+  <data name="Arbitrage_Term_64" xml:space="preserve">
+    <value>2)    서비스 제공을 위한 기술적인 부분에 문제가 있다고 판단되는 경우</value>
+  </data>
+  <data name="Arbitrage_Term_65" xml:space="preserve">
+    <value>3)    기타 거래소가 재정적·기술적으로 유보가 필요하다고 인정하는 경우</value>
+  </data>
+  <data name="Arbitrage_Term_66" xml:space="preserve">
+    <value>제3장 회원의 의무</value>
+  </data>
+  <data name="Arbitrage_Term_67" xml:space="preserve">
+    <value>제8조 (회원 아이디와 비밀번호 관리에 대한 회원의 의무)</value>
+  </data>
+  <data name="Arbitrage_Term_68" xml:space="preserve">
+    <value>1)    회원은 자신의 아이디(ID)와 비밀번호 등을 타인이 알거나 쉽게 추측하지 못하도록 관리할 책임이 있습니다. 거래소에게 고의 또는 중대한 과실이 없는 한 회원에게 부여된 아이디(ID)와 비밀번호 관리소홀, 부정사용에 의하여 발생하는 결과에 대한 책임은 회원에게 있습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_69" xml:space="preserve">
+    <value>2)    회원은 자신의 계정, 아이디(ID), 비밀번호, 기타 개인정보가 부정하게 사용된 사실을 알게 될 경우 반드시 거래소에 그 사실을 통지하고 거래소의 안내에 따라야 합니다.</value>
+  </data>
+  <data name="Arbitrage_Term_7" xml:space="preserve">
+    <value>거래소는 “약관의 규제에 관한 법률”, “정보통신망 이용촉진 및 정보보호 등에 관한 법률” 등 관련법을 위배하지 않는 범위에서 이 약관을 개정할 수 있습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_70" xml:space="preserve">
+    <value>제2항의 경우에 해당 회원이 거래소에 그 사실을 통지하지 않거나, 통지한 경우에도 거래소의 안내에 따르지 않아 발생한 불이익에 대하여 거래소는 책임지지 않습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_71" xml:space="preserve">
+    <value>제9조 (아비트리지 이용에 대한 회원의 의무)</value>
+  </data>
+  <data name="Arbitrage_Term_72" xml:space="preserve">
+    <value>회원은 아비트리지를 이용함에 있어 본 약관을 포함한 거래소의 세부지침, 관계 법령 및/또는 기타 공서양속에 위배되는 행위를 하여서는 안됩니다.</value>
+  </data>
+  <data name="Arbitrage_Term_73" xml:space="preserve">
+    <value>제10조 (양도 및 질권설정의 금지)</value>
+  </data>
+  <data name="Arbitrage_Term_74" xml:space="preserve">
+    <value>회원은 자신의 계정을 타인에게 양도하거나, 이에 기반하여 거래소에 대하여 가지는 권리를 타인에게 양도할 수 없습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_75" xml:space="preserve">
+    <value>회원은 거래소의 명시적 동의 없이는 자신의 계정, 이에 기반하여 거래소에 대하여 가지는 권리에 대하여 질권을 설정할 수 없습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_76" xml:space="preserve">
+    <value>제4장 서비스 이용 총칙</value>
+  </data>
+  <data name="Arbitrage_Term_77" xml:space="preserve">
+    <value>제11조 (서비스의 종류)</value>
+  </data>
+  <data name="Arbitrage_Term_78" xml:space="preserve">
+    <value>거래소는 회원에게 아비트리지 관련 (거래소 시세확인, 재정거래 관련 서비스 등)서비스를 제공합니다. 단, 거래소가 제공하는 서비스의 종류는 거래소의 사정에 의하여 수시로 변경될 수 있으며, 제공되는 서비스에 대한 저작권 및 지적재산권은 거래소에 귀속됩니다.</value>
+  </data>
+  <data name="Arbitrage_Term_79" xml:space="preserve">
+    <value>거래소는 서비스와 관련하여 회원에게 거래소가 정한 이용조건에 따라 아비트리지 시스템 서비스 이용 툴만 부여하며, 이를 활용한 유사 서비스 제공 및 상업적 활동을 할 수 없습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_8" xml:space="preserve">
+    <value>거래소가 약관을 개정할 경우에는 적용일자 및 개정 사유를 명시하여 현행 약관과 함께 거래소 사이트의 초기화면이나 팝업 화면 또는 공지사항으로 그 적용일자 7일 이전부터 공지합니다. </value>
+  </data>
+  <data name="Arbitrage_Term_80" xml:space="preserve">
+    <value>거래소는 이용자에게 아래와 같은 컨텐츠 이용 서비스를 제공합니다.</value>
+  </data>
+  <data name="Arbitrage_Term_81" xml:space="preserve">
+    <value>1)    재정거래 시스템(아비트리지) </value>
+  </data>
+  <data name="Arbitrage_Term_82" xml:space="preserve">
+    <value>2)    아비트리지 관련 서비스 (주거래소 선택 등)</value>
+  </data>
+  <data name="Arbitrage_Term_83" xml:space="preserve">
+    <value>3)    기타 거래소가 자체 개발하거나 다른 거래소와의 협력을 통해 제공하는 컨텐츠</value>
+  </data>
+  <data name="Arbitrage_Term_84" xml:space="preserve">
+    <value>4)    각 거래소별 통합회원 가입 처리 기능</value>
+  </data>
+  <data name="Arbitrage_Term_85" xml:space="preserve">
+    <value>제5장 아비트리지 관련 서비스 이용</value>
+  </data>
+  <data name="Arbitrage_Term_86" xml:space="preserve">
+    <value>제12조(암호화폐 재정거래 등)</value>
+  </data>
+  <data name="Arbitrage_Term_87" xml:space="preserve">
+    <value>거래소는 암호화폐 재정거래와 관련하여 다음과 같은 서비스를 제공합니다.</value>
+  </data>
+  <data name="Arbitrage_Term_88" xml:space="preserve">
+    <value>·  시세확인 서비스</value>
+  </data>
+  <data name="Arbitrage_Term_89" xml:space="preserve">
+    <value>·  재정거래 매수,매도 서비스</value>
+  </data>
+  <data name="Arbitrage_Term_9" xml:space="preserve">
+    <value>거래소가 전항에 따라 개정약관을 공지하면서 회원에게 7일간의 기간 내에 의사 표시를 하지 않으면 의사표시가 표명된 것으로 본다는 뜻을 알리는 별도의 통지 및 명확하게 공지하였음에도 회원이 명시적으로 거부의 의사표시를 하지 아니한 경우 회원이 개정약관에 동의한 것으로 봅니다.</value>
+  </data>
+  <data name="Arbitrage_Term_90" xml:space="preserve">
+    <value>·  거래내역조회 서비스</value>
+  </data>
+  <data name="Arbitrage_Term_91" xml:space="preserve">
+    <value>·  기타 상기 서비스와 관련된 서비스</value>
+  </data>
+  <data name="Arbitrage_Term_92" xml:space="preserve">
+    <value>1)    거래소가 제공하는 재정거래 서비스를 통하여 암호화폐를 매도 또는 매수하고자 하는 회원은 거래소가 제공하는 유료서비스를 이용하여 거래하여야 합니다. 결제 비용: 10만PTC또는 이에 상응하는 거래소에서 거래되고 있는(BTC, ETH, BCH, XRP) 코인으로 결제 가능</value>
+  </data>
+  <data name="Arbitrage_Term_93" xml:space="preserve">
+    <value>2)    거래소는 회원과 회원간의 거래를 중개하지 않으며, 회원이 거래소에서 타인과 암호화폐를 재정거래 할 수 있도록 하는 서비스만을 제공합니다. 거래소는 회원이 서비스를 이용하는 거래소에서의 암호화폐 거래의 구체적인 내용에 대하여 회원이 설정한 항목 이외에는 알지 못하며 해당 거래를 변경하거나 취소할 수 없습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_94" xml:space="preserve">
+    <value>3)    회원은 거래소의 안내에 따라 자신이 계정을 보유하고 있는 거래소에서 서비스를 실행 할 수 있습니다. 회원이 거래소의 안내를 따르지 않고 서비스를 진행한 부분에 발생한 손해에 대하여 거래소는 책임지지 않습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_95" xml:space="preserve">
+    <value>4)    암호화폐 재정거래는 거래가 일어난 후에는 변경하거나 취소할 수 없습니다.</value>
+  </data>
+  <data name="Arbitrage_Term_96" xml:space="preserve">
+    <value>5)    회원은 각 거래소별 통합회원 가입이 완료 되어있어야 아비트리지 거래가 가능합니다.</value>
+  </data>
+  <data name="Arbitrage_Term_97" xml:space="preserve">
+    <value>제13조(서비스 이용제한)</value>
+  </data>
+  <data name="Arbitrage_Term_98" xml:space="preserve">
+    <value>구분</value>
+  </data>
+  <data name="Arbitrage_Term_99" xml:space="preserve">
+    <value>정지사유</value>
+  </data>
+  <data name="Arbitrage_TradePop_Alert_2" xml:space="preserve">
+    <value>보유 금액이 없습니다.</value>
+  </data>
+  <data name="Arbitrage_TradePop_Alert_3" xml:space="preserve">
+    <value>보유 수량이 없습니다.  </value>
+  </data>
+  <data name="CertifyMyPage_4_8" xml:space="preserve">
+    <value>QR 스캔</value>
+  </data>
+  <data name="CertifyMyPage_4_9" xml:space="preserve">
+    <value>직접입력</value>
+  </data>
+  <data name="MemberInfo_2_12" xml:space="preserve">
+    <value>형식 선택</value>
+  </data>
+  <data name="MemberInfo_2_13" xml:space="preserve">
+    <value>국가 선택</value>
+  </data>
+  <data name="MemberInfo_Pop_38" xml:space="preserve">
+    <value>생년월일 형식을 선택하세요.</value>
+  </data>
+  <data name="ArbitrageRequest_2_4" xml:space="preserve">
+    <value>사용중</value>
+  </data>
+  <data name="ArbitrageRequest_2_5" xml:space="preserve">
+    <value>이용기간</value>
+  </data>
+  <data name="Arbitrage_6_7" xml:space="preserve">
+    <value>차익(수수료 포함)</value>
+  </data>
+  <data name="Arbitrage_3_6" xml:space="preserve">
+    <value>수량</value>
+  </data>
+  <data name="Arbitrage_4_6" xml:space="preserve">
+    <value>ㆍ통합회원 가입 후 시세와 차익 출력은 바로 적용이 안될 수 있습니다.</value>
+  </data>
+  <data name="Arbitrage_4_7" xml:space="preserve">
+    <value>ㆍ매수,매도 진행시 체결 완료 후 출력 되는데 시간이 다소 소요 될 수 있습니다. (푸시가 오는지 꼭 확인해 주시기 바랍니다.)</value>
+  </data>
+  <data name="Arbitrage_4_8" xml:space="preserve">
+    <value>ㆍArbitrage 매수,매도 거래시 거래 완료 되지 않은 매수,매도의 경우 매수,매도 진행한 거래소에 미체결로 거래가 완료 되지 않은 상태로 남아 있을 수 있습니다.</value>
+  </data>
+  <data name="Arbitrage_1_4" xml:space="preserve">
+    <value>ㆍArbitrage 서비스는 유료 서비스이니 보다 신중하게 생각하신 후 진행 해주시기 바랍니다.</value>
+  </data>
+  <data name="Arbitrage_Alert_2" xml:space="preserve">
+    <value>아비트리지 거래가 실행되었습니다.</value>
+  </data>
+  <data name="Arbitrage_Alert_3" xml:space="preserve">
+    <value>아비트리지 거래가 체결완료되었습니다.
+하단의 아비트리지 내역에서 체결된 내역을
+확인하시기 바랍니다.</value>
+  </data>
+  <data name="Arbitrage_Alert_4" xml:space="preserve">
+    <value>아비트리지 거래가 실행 되었으나, 해당 시세로 체결량이 
+부족하여 거래가 완료 되지않았습니다.
+상대거래소에서 자산을 확인해주세요.</value>
+  </data>
+  <data name="Arbitrage_Alert_5" xml:space="preserve">
+    <value>아비트리지 거래가 상대거래소에 부분체결로 
+거래 되었습니다.
+완료된 내역은 하단의 아비트리지 내역을 참고하시고,
+체결이 되지 못한 일부금액은 상대거래소에서 확인해 주시기 바랍니다.</value>
+  </data>
+  <data name="Arbitrage_Alert_6" xml:space="preserve">
+    <value>아비트리지 거래가 실행 되었으나, 해당 시세로 체결량이 부족하여 거래가 완료 되지않았습니다. </value>
+  </data>
+  <data name="Arbitrage_Alert_7" xml:space="preserve">
+    <value>회원님은 아비트리지 거래가 불가능합니다.고객센터로 문의 하시기 바랍니다.</value>
+  </data>
+</root>

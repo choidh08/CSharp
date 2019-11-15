@@ -1,0 +1,239 @@
+﻿<Window x:Class="coinBlock.Views.CoinDayPirceTrading"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" 
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"             
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
+             xmlns:localization="clr-namespace:coinBlock.Localization"
+             xmlns:Model="clr-namespace:coinBlock.Model" 
+             xmlns:View="clr-namespace:coinBlock.Views.Common"
+             xmlns:ViewModels="clr-namespace:coinBlock.ViewModels"
+             mc:Ignorable="d"
+             DataContext="{dxmvvm:ViewModelSource Type=ViewModels:CoinDayPirceTradingViewModel}"
+             d:DesignHeight="500" d:DesignWidth="900" ResizeMode="NoResize" AllowsTransparency="False" >
+    <dxmvvm:Interaction.Behaviors>
+        <dxmvvm:EventToCommand EventName="Loaded" Command="{Binding LoadedCommand}"/>
+        <dxmvvm:EventToCommand EventName="Unloaded" Command="{Binding UnLoadedCommand}"/>
+    </dxmvvm:Interaction.Behaviors>
+    <Border BorderThickness="1" BorderBrush="Black">
+        <dx:LoadingDecorator IsSplashScreenShown="{Binding IsBusy}" OwnerLock="InputOnly" dx:ThemeManager.ThemeName="MetropolisLight" x:Name="decorator">
+            <Grid>
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="40"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="33"/>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="#0090d5" MouseLeftButtonDown="Border_MouseLeftButtonDown">
+                    <TextBlock Text="{Binding Title}" FontSize="14" Foreground="White"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="0">
+                    <Button Name="uiExit" Click="uiExit_Click" Width="20" Height="20">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Name="border">
+                                                <Border.Background>
+                                                    <ImageBrush ImageSource="/Images/btn_screen_close.png"/>
+                                                </Border.Background>
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" TargetName="border">
+                                                        <Setter.Value>
+                                                            <ImageBrush ImageSource="/Images/btn_screen_close_on.png" />
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+                    <Grid Margin="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition  Height="30"/>
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <!-- row 0 -->
+                        <Border Grid.Column="0" Grid.Row="0" Style="{StaticResource Border_Line_2_R}" >
+                            <TextBlock Text="{x:Static localization:Resource.CoinDayPirce_2}" Style="{StaticResource Header_1}" />
+                        </Border>
+                        <Border Grid.Column="1" Grid.Row="0" Style="{StaticResource Border_Line_1}" >
+                            <StackPanel Orientation="Horizontal" Margin="5,0,0,0">
+                                <DatePicker x:Name="dpFrom" Width="135" Height="25" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Center" SelectedDate="{Binding fromDate}"  Padding="0,2,0,0"/>
+                                <TextBlock Text="-" Style="{StaticResource Content_C}"  Margin="3,0,3,0"/>
+                                <DatePicker x:Name="dpTo" Width="135" Height="25" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Center" SelectedDate="{Binding toDate}"  Padding="0,2,0,0"/>
+                                <ItemsControl ItemsSource="{Binding Period}">
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <StackPanel Orientation="Horizontal"/>
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Button Width="59" Height="25"  Margin="3,0,0,0" Cursor="Hand" Command="{Binding RelativeSource={RelativeSource AncestorType=Window, Mode=FindAncestor}, Path=DataContext.CmdNumberCommand }" CommandParameter="{Binding imgName}" >
+                                                    <Button.Style>
+                                                        <Style TargetType="{x:Type Button}">
+                                                            <Setter Property="Template">
+                                                                <Setter.Value>
+                                                                    <ControlTemplate TargetType="{x:Type Button}">
+                                                                        <Border>
+                                                                            <Image Source="{Binding imgName, TargetNullValue={x:Null}}" />
+                                                                        </Border>
+                                                                    </ControlTemplate>
+                                                                </Setter.Value>
+                                                            </Setter>
+                                                        </Style>
+                                                    </Button.Style>
+                                                </Button>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                                <Button Width="59" Height="25" Cursor="Hand" Margin="3,0,0,0" Command="{Binding GetDataCommand}">
+                                    <Button.Style>
+                                        <Style TargetType="{x:Type Button}">
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="{x:Type Button}">
+                                                        <Grid>
+                                                            <Image Name="btnimg" Source="{Binding btn_search, TargetNullValue={x:Null}}"/>
+                                                        </Grid>
+                                                        <ControlTemplate.Triggers>
+                                                            <Trigger Property="IsMouseOver" Value="True">
+                                                                <Setter Property="Source" TargetName="btnimg" Value="{Binding btn_search_on}"/>
+                                                            </Trigger>
+                                                        </ControlTemplate.Triggers>
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </Button.Style>
+                                </Button>
+                            </StackPanel>
+                        </Border>
+                        
+                        <dxlc:LayoutGroup Grid.Column="0" Grid.Row="1"  Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="0,3,0,0">
+                            <StackPanel Orientation="Vertical">
+                                <Border Grid.Row="3" BorderBrush="#d8d8d8" BorderThickness="0.5">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="0.7*" />
+                                            <ColumnDefinition Width="1*"/>
+                                            <ColumnDefinition Width="1*"/>
+                                            <ColumnDefinition Width="1*"/>
+                                            <ColumnDefinition Width="1*"/>
+                                            <ColumnDefinition Width="0.8*"/>
+                                            <ColumnDefinition Width="1*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="30"/>
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+
+                                        <!-- row 0 -->
+                                        <Border Grid.Column="0" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                                            <TextBlock Text="{x:Static localization:Resource.CoinDayPirce_3}" Style="{StaticResource Header_1}"/>
+                                        </Border>
+                                        <Border Grid.Column="1" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                                            <TextBlock Text="{x:Static localization:Resource.CoinDayPirce_4}" Style="{StaticResource Header_1}"/>
+                                        </Border>
+                                        <Border Grid.Column="2" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                                            <TextBlock Text="{x:Static localization:Resource.CoinDayPirce_5}" Style="{StaticResource Header_1}"/>
+                                        </Border>
+                                        <Border Grid.Column="3" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                                            <TextBlock Text="{x:Static localization:Resource.CoinDayPirce_6}" Style="{StaticResource Header_1}"/>
+                                        </Border>
+                                        <Border Grid.Column="4" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                                            <TextBlock Text="{x:Static localization:Resource.CoinDayPirce_7}" Style="{StaticResource Header_1}"/>
+                                        </Border>
+                                        <Border Grid.Column="5" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                                            <TextBlock Text="{x:Static localization:Resource.CoinDayPirce_8}" Style="{StaticResource Header_1}"/>
+                                        </Border>
+                                        <Border Grid.Column="6" Grid.Row="0" Style="{StaticResource Border_Line_2_B}">
+                                            <TextBlock Text="{x:Static localization:Resource.CoinDayPirce_9}" Style="{StaticResource Header_1}"/>
+                                        </Border>
+
+                                        <!-- row 1 -->
+                                        <StackPanel Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="7" Orientation="Vertical">
+                                            <ItemsControl Visibility="{Binding listVisible}" ItemsSource="{Binding DayPrc}" HorizontalContentAlignment="Stretch">
+                                                <ItemsControl.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <StackPanel>
+                                                            <Grid Height="30"  Width="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Expander}}, Path=ActualWidth}">
+                                                                <Grid.ColumnDefinitions>
+                                                                    <ColumnDefinition Width="0.7*" />
+                                                                    <ColumnDefinition Width="1*"/>
+                                                                    <ColumnDefinition Width="1*"/>
+                                                                    <ColumnDefinition Width="1*"/>
+                                                                    <ColumnDefinition Width="1*"/>
+                                                                    <ColumnDefinition Width="0.8*"/>
+                                                                    <ColumnDefinition Width="1*"/>
+                                                                </Grid.ColumnDefinitions>
+                                                                <Border Grid.Column="0" Style="{StaticResource Border_Line_1_B}">
+                                                                    <TextBlock Text="{Binding day}" Style="{StaticResource Content_C}"/>
+                                                                </Border>
+                                                                <Border Grid.Column="1" Style="{StaticResource Border_Line_1_B}">
+                                                                    <TextBlock Text="{Binding openPrc}" Style="{StaticResource Content_R}"/>
+                                                                </Border>
+                                                                <Border Grid.Column="2" Style="{StaticResource Border_Line_1_B}">
+                                                                    <TextBlock  Text="{Binding lowPrc}"  Style="{StaticResource Content_R}"/>
+                                                                </Border>
+                                                                <Border Grid.Column="3" Style="{StaticResource Border_Line_1_B}">
+                                                                    <TextBlock Text="{Binding highPrc}"  Style="{StaticResource Content_R}" />
+                                                                </Border>
+                                                                <Border Grid.Column="4" Style="{StaticResource Border_Line_1_B}">
+                                                                    <TextBlock Text="{Binding endPrc}"  Style="{StaticResource Content_R}" />
+                                                                </Border>
+                                                                <Border Grid.Column="5" Style="{StaticResource Border_Line_1_B}">
+                                                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                                                        <TextBlock Text="{Binding prevContrast, StringFormat={}{0:n2}}" Foreground="{Binding prevContrastColor}" Style="{StaticResource Content_R}" />
+                                                                        <TextBlock Text="%" Foreground="{Binding prevContrastColor}" Style="{StaticResource Content_R}" />
+                                                                    </StackPanel>
+                                                                </Border>
+                                                                <Border Grid.Column="6" Style="{StaticResource Border_Line_1_B}">
+                                                                    <TextBlock Text="{Binding tradeAmount, StringFormat={}{0:n8}}" Style="{StaticResource Content_R}" />
+                                                                </Border>
+                                                            </Grid>
+                                                        </StackPanel>
+                                                    </DataTemplate>
+                                                </ItemsControl.ItemTemplate>
+                                            </ItemsControl>
+                                            <Border Height="30" Background="White" Visibility="{Binding emptyVisible}">
+                                                <TextBlock Text="{x:Static localization:Resource.Common_Alert_10}"  Style="{StaticResource Content_C}"   />
+                                            </Border>
+                                        </StackPanel>
+                                    </Grid>
+                                </Border>
+                                <Border Margin="0,30,0,10">
+                                    <View:Paging BaseUrl="CoinDayPrice" _firstNum="1" LastNum="{Binding pageSize}">
+                                        <dxmvvm:Interaction.Behaviors>
+                                            <dxmvvm:EventToCommand EventName="PageChanged" Command="{Binding CmdPageCallCommand}" PassEventArgsToCommand="True"/>
+                                        </dxmvvm:Interaction.Behaviors>
+                                    </View:Paging>
+                                </Border>
+                            </StackPanel>
+                        </dxlc:LayoutGroup>
+                    </Grid>
+                </Border>
+            </Grid>
+        </dx:LoadingDecorator>
+    </Border>
+</Window>

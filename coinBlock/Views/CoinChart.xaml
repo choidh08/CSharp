@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="coinBlock.Views.CoinChart"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        xmlns:local="clr-namespace:coinBlock.Views"        
+        mc:Ignorable="d" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <WindowsFormsHost Grid.Column="0" Name="wfh"/>
+    </Grid>
+</UserControl>

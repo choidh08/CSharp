@@ -1,0 +1,716 @@
+﻿<UserControl x:Class="coinBlock.Views.AdditionalService.LendingRequestAdditionalService"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" 
+             xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+             xmlns:localization="clr-namespace:coinBlock.Localization"             
+             xmlns:View="clr-namespace:coinBlock.Views.AdditionalService.Popup"
+             xmlns:ViewModels="clr-namespace:coinBlock.ViewModels.AdditionalService"
+             mc:Ignorable="d"
+             DataContext="{dxmvvm:ViewModelSource Type=ViewModels:LendingRequestAdditionalServiceViewModel}"
+             d:DesignHeight="600" d:DesignWidth="1010">
+    <dxmvvm:Interaction.Behaviors>
+        <dxmvvm:EventToCommand EventName="Loaded" Command="{Binding LoadedCommand}"/>
+        <dxmvvm:EventToCommand EventName="Unloaded" Command="{Binding UnLoadedCommand}"/>
+        <!--<dx:DialogService DialogWindowStartupLocation="CenterOwner">
+            <dx:DialogService.ViewTemplate>
+                <DataTemplate>
+                    <View:LendingRequestExtendPopup/>
+                </DataTemplate>
+            </dx:DialogService.ViewTemplate>
+            <dx:DialogService.DialogStyle>
+                <Style TargetType="dx:DXDialogWindow">
+                    <Setter Property="Width" Value="350" />
+                    <Setter Property="Height" Value="210" />
+                    <Setter Property="WindowStyle" Value="None" />
+                    <Setter Property="ResizeMode" Value="NoResize" />
+                    <Setter Property="Padding" Value="-30,-30,-30,0" />
+                    <Setter Property="CommandButtonStyle">
+                        <Setter.Value>
+                            <Style TargetType="Button">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate>
+                                            <Border CornerRadius="3" Background="#0090d5">                                                
+                                                <ContentPresenter TextBlock.Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </dx:DialogService.DialogStyle>
+        </dx:DialogService>-->
+        
+    </dxmvvm:Interaction.Behaviors>    
+    <dx:DXTabControl>
+        <dx:DXTabItem Header="{x:Static localization:Resource.Lending_1}">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Background="White" Margin="-9">
+                <dxlc:LayoutGroup Orientation="Vertical" ScrollViewer.VerticalScrollBarVisibility="Visible" VerticalAlignment="Top" ScrollBars="None">
+                    <dxlc:LayoutGroup>
+                        <StackPanel>
+                            <TextBlock Text="{x:Static localization:Resource.Lending_1_1}"  Style="{StaticResource Header_1}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,10,0,10"/>
+                            <Border Background="#e5e5e5">
+                                <StackPanel Orientation="Vertical" Margin="10">
+                                    <TextBlock Text="{x:Static localization:Resource.Lending_1_2}" TextWrapping="Wrap" Style="{StaticResource Content_L}"/>
+                                    <TextBlock Text="{x:Static localization:Resource.Lending_1_3}" Foreground="Red" TextWrapping="Wrap" Style="{StaticResource Content_L}"/>
+                                    <TextBlock Text="{x:Static localization:Resource.Lending_1_4}" TextWrapping="Wrap" Style="{StaticResource Content_L}"/>
+                                </StackPanel>
+                            </Border>
+                        </StackPanel>
+                    </dxlc:LayoutGroup>
+                    <dxlc:LayoutGroup Margin="0,20,0,0">
+                        <Border BorderBrush="#d8d8d8" BorderThickness="0.5" IsEnabled="{Binding allEnable}">
+                            <Grid Height="180">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="126"/>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition Width="126"/>
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <!-- row 0 -->
+                                <Border Grid.Column="0" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.Lending_1_5}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="1" Grid.Row="0" Style="{StaticResource Border_Line_1_BR}">
+                                    <dxe:ComboBoxEdit Height="26" Width="200" HorizontalContentAlignment="Right" HorizontalAlignment="Right" ItemsSource="{Binding curcyList}" SelectedItem="{Binding selCurcy}" DisplayMember="Name"  ValueMember="Value" Margin="0,0,5,0" />
+                                </Border>
+                                <Border Grid.Column="2" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.Lending_1_6}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="3" Grid.Row="0" Style="{StaticResource Border_Line_1_B}">
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0">
+                                        <TextBlock Text="{Binding minReqAmt, StringFormat='###,###,###,##0.########'}" Style="{StaticResource Content_C}"/>
+                                        <TextBlock Text="{Binding selCurcy.Name}" Style="{StaticResource Content_R}" Margin="5,0,0,0" />
+                                    </StackPanel>
+                                </Border>
+
+                                <!-- row 1 -->
+                                <Border Grid.Column="0" Grid.Row="1" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.Lending_1_7}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="1" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}">
+                                    <TextBlock Text="{Binding periodMonth}" Style="{StaticResource Content_R}"/>
+                                </Border>
+                                <Border Grid.Column="2" Grid.Row="1" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.Lending_1_8}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="3" Grid.Row="1" Style="{StaticResource Border_Line_1_B}">
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0">
+                                        <dxe:TextEdit Text="{Binding reqAmt, Mode=TwoWay}" Width="200" Height="26" HorizontalContentAlignment="Right" Mask="###,###,##0" MaskType="Numeric" >
+                                            <dxmvvm:Interaction.Triggers>
+                                                <dxmvvm:EventToCommand EventName="LostFocus" Command="{Binding OnReqAmtChangedCommand}"/>
+                                            </dxmvvm:Interaction.Triggers>
+                                        </dxe:TextEdit>
+                                        
+                                    </StackPanel>
+                                </Border>
+
+                                <!-- row 2 -->
+                                <Border Grid.Column="0" Grid.Row="2" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.Lending_1_9}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="1" Grid.Row="2" Style="{StaticResource Border_Line_1_BR}">
+                                    <TextBlock Text="{Binding strInterestRate}" Style="{StaticResource Content_R}"/>
+                                </Border>
+                                <Border Grid.Column="2" Grid.Row="2" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.Lending_1_10}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="3" Grid.Row="2" Style="{StaticResource Border_Line_1_B}">
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0">
+                                        <TextBlock Text="{Binding expectInterest, StringFormat='###,###,###,##0.########'}" Style="{StaticResource Content_C}"/>
+                                        <TextBlock Text="{Binding selCurcy.Name}" Style="{StaticResource Content_R}" Margin="5,0,0,0" />
+                                    </StackPanel>
+                                </Border>
+
+                                <!-- row 3 -->
+                                <Border Grid.Column="0" Grid.Row="3" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.Lending_1_11}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3" Style="{StaticResource Border_Line_1_B}">
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0">
+                                        <TextBlock Text="{Binding totalAmt, StringFormat='###,###,###,##0.########'}" Style="{StaticResource Content_C}"/>
+                                        <TextBlock Text="{Binding selCurcy.Name}" Style="{StaticResource Content_R}" Margin="5,0,0,0" />
+                                    </StackPanel>
+                                </Border>
+                                <!--<Border Grid.Column="2" Grid.Row="3" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.TrustRequest_1_9}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="3" Grid.Row="3" Style="{StaticResource Border_Line_1_B}">
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0">
+                                        <TextBlock Text="{Binding totalAmt, StringFormat={}{0:n8}}" Style="{StaticResource Content_C}"/>
+                                        <TextBlock Text="{Binding selCurcy.Name}" Style="{StaticResource Content_R}" Margin="5,0,0,0" />
+                                    </StackPanel>
+                                </Border>-->
+
+                                <!-- row 4 -->
+                                <Border Grid.Column="0" Grid.Row="4" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.TrustRequest_1_10}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="1" Grid.Row="4" Style="{StaticResource Border_Line_1_BR}">
+                                    <TextBlock Text="{Binding fromDate}" Style="{StaticResource Content_R}" />
+                                </Border>
+                                <Border Grid.Column="2" Grid.Row="4" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.TrustRequest_1_11}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="3" Grid.Row="4" Style="{StaticResource Border_Line_1_B}">
+                                    <TextBlock Text="{Binding toDate}" Style="{StaticResource Content_R}" />
+                                </Border>
+
+                                <!-- row 5 -->
+                                <Border Grid.Column="0" Grid.Row="5" Style="{StaticResource Border_Line_2_R}">
+                                    <TextBlock Text="{x:Static localization:Resource.Lending_1_14}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="3" Style="{StaticResource Border_Line_1}">
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0">
+                                        <CheckBox Content="{x:Static localization:Resource.Lending_1_14_1}" IsEnabled="{Binding termsEnable}" IsChecked="{Binding termsCheck}" VerticalAlignment="Center" />
+                                        <Button Width="105" Height="25" Cursor="Hand" HorizontalAlignment="Center" Command="{Binding TermsPopupCommand}" Margin="5,0,0,0">
+                                            <Button.Style>
+                                                <Style TargetType="{x:Type Button}">
+                                                    <Setter Property="Template">
+                                                        <Setter.Value>
+                                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                                <Border Name="border">
+                                                                    <Border.Background>
+                                                                        <ImageBrush ImageSource="{Binding btn_view_terms}"/>
+                                                                    </Border.Background>
+                                                                </Border>
+                                                                <ControlTemplate.Triggers>
+                                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                                        <Setter Property="Background" TargetName="border">
+                                                                            <Setter.Value>
+                                                                                <ImageBrush ImageSource="{Binding btn_view_terms_on}" />
+                                                                            </Setter.Value>
+                                                                        </Setter>
+                                                                    </Trigger>
+                                                                </ControlTemplate.Triggers>
+                                                            </ControlTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </Button.Style>
+                                        </Button>
+                                        <TextBlock Text="{x:Static localization:Resource.TrustRequest_1_9_1}" Style="{StaticResource Content_L}" />
+                                    </StackPanel>
+                                </Border>
+                            </Grid>
+                        </Border>
+                    </dxlc:LayoutGroup>
+                    <dxlc:LayoutGroup Margin="0,20,0,20">
+                        <Button Width="196" Height="30" Cursor="Hand" HorizontalAlignment="Center" IsEnabled="{Binding allEnable}" Command="{Binding LendingRequestCommand}">
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                <Border Name="border">
+                                                    <Border.Background>
+                                                        <ImageBrush ImageSource="{Binding btn_auto_request}"/>
+                                                    </Border.Background>
+                                                </Border>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Background" TargetName="border">
+                                                            <Setter.Value>
+                                                                <ImageBrush ImageSource="{Binding btn_auto_request_on}" />
+                                                            </Setter.Value>
+                                                        </Setter>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                    </dxlc:LayoutGroup>
+
+                    <dxlc:LayoutGroup>
+                        <TextBlock Text="{x:Static localization:Resource.Lending_1_15}" Style="{StaticResource Header_1}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                    </dxlc:LayoutGroup>
+
+                    <dxlc:LayoutGroup>
+                        <Grid Height="200">
+                            <Grid.Resources>
+                                <Style TargetType="{x:Type dxg:GridColumn}">
+                                    <Setter Property="HorizontalHeaderContentAlignment" Value="Center" />
+                                </Style>
+                                <Style TargetType="{x:Type dxg:GridColumnHeader}">
+                                    <Setter Property="Background" Value="#ececec"/>
+                                </Style>
+                            </Grid.Resources>
+                            <dxg:GridControl Grid.Row="1" ItemsSource="{Binding lendingReqList}"  dxlc:LayoutControl.AllowHorizontalSizing="True"  dxlc:LayoutControl.AllowVerticalSizing="True" SelectionMode="Row" dx:ThemeManager.Theme="Office2013LightGray">
+                                <dxg:GridControl.Resources>
+                                    <Style TargetType="{x:Type dxg:GridColumn}">
+                                        <Setter Property="HorizontalHeaderContentAlignment" Value="Center" />
+                                    </Style>
+                                </dxg:GridControl.Resources>
+                                <dxg:GridControl.View>
+                                    <dxg:TableView RowMinHeight="25" HeaderPanelMinHeight="22" VerticalScrollbarVisibility="Auto" HorizontalScrollbarVisibility="Auto" AllowPerPixelScrolling="True" ShowTotalSummary="False" ShowGroupPanel="False" AllowColumnFiltering="False" AllowFilterEditor="False" AllowColumnMoving="False" AllowEditing="False" AllowGrouping="False" AllowMoveColumnToDropArea="False" ShowAutoFilterRow="False" AutoWidth="True" NavigationStyle="None" ShowIndicator="False"/>
+                                </dxg:GridControl.View>
+                                <dxg:GridColumn Header="No" FieldName="no" Width="80">
+                                    <dxg:GridColumn.EditSettings>
+                                        <dxe:TextEditSettings HorizontalContentAlignment="Center"/>
+                                    </dxg:GridColumn.EditSettings>
+                                </dxg:GridColumn>
+                                <dxg:GridColumn Header="{x:Static localization:Resource.Lending_Grid_1}" FieldName="applyDt" Width="150">
+                                    <dxg:GridColumn.EditSettings>
+                                        <dxe:TextEditSettings HorizontalContentAlignment="Center"/>
+                                    </dxg:GridColumn.EditSettings>
+                                </dxg:GridColumn>
+                                <dxg:GridColumn Header="{x:Static localization:Resource.Lending_Grid_2}" FieldName="overDivDt" Width="150">
+                                    <dxg:GridColumn.EditSettings>
+                                        <dxe:TextEditSettings HorizontalContentAlignment="Center"/>
+                                    </dxg:GridColumn.EditSettings>
+                                </dxg:GridColumn>
+                                <dxg:GridColumn Header="{x:Static localization:Resource.Lending_Grid_3}" FieldName="expireDt" Width="150">
+                                    <dxg:GridColumn.EditSettings>
+                                        <dxe:TextEditSettings HorizontalContentAlignment="Center"/>
+                                    </dxg:GridColumn.EditSettings>
+                                </dxg:GridColumn>
+                                <dxg:GridColumn Header="{x:Static localization:Resource.Lending_Grid_4}" FieldName="renDiv" Width="150">
+                                    <dxg:GridColumn.EditSettings>
+                                        <dxe:TextEditSettings HorizontalContentAlignment="Center" DisplayTextConverter="{StaticResource RenDivToResourceConverter}"/>
+                                    </dxg:GridColumn.EditSettings>
+                                </dxg:GridColumn>
+                                <dxg:GridColumn Header="{x:Static localization:Resource.Lending_Grid_5}" FieldName="applyStatus" Width="150">
+                                    <dxg:GridColumn.EditSettings>
+                                        <dxe:TextEditSettings HorizontalContentAlignment="Center" DisplayTextConverter="{StaticResource LendingApplyStatusToResourceConverter}"/>
+                                    </dxg:GridColumn.EditSettings>
+                                </dxg:GridColumn>
+                                <dxg:GridColumn Header="{x:Static localization:Resource.Lending_Grid_6}" FieldName="cnKndNm">
+                                    <dxg:GridColumn.EditSettings>
+                                        <dxe:TextEditSettings HorizontalContentAlignment="Center"/>
+                                    </dxg:GridColumn.EditSettings>
+                                </dxg:GridColumn>
+                                <dxg:GridColumn Header="{x:Static localization:Resource.Lending_Grid_7}" FieldName="applyAmt">
+                                    <dxg:GridColumn.EditSettings>
+                                        <dxe:TextEditSettings HorizontalContentAlignment="Right"/>
+                                    </dxg:GridColumn.EditSettings>
+                                </dxg:GridColumn>
+                                <dxg:GridColumn Header="{x:Static localization:Resource.Lending_Grid_8}" FieldName="interestRate" Width="150">
+                                    <dxg:GridColumn.EditSettings>
+                                        <dxe:TextEditSettings HorizontalContentAlignment="Right"/>
+                                    </dxg:GridColumn.EditSettings>
+                                    <dxg:GridColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                                                <TextBlock Text="{Binding RowData.Row.interestRate}"/>
+                                                <TextBlock Text="%"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </dxg:GridColumn.CellTemplate>
+                                </dxg:GridColumn>
+                                <dxg:GridColumn Header="{x:Static localization:Resource.Lending_Grid_9}" FieldName="totRepayAmt" Width="150">
+                                    <dxg:GridColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                                                <TextBlock Text="{Binding RowData.Row.totRepayAmt}"/>
+                                                <TextBlock Text="{Binding RowData.Row.cnKndNm}" Margin="5,0,0,0"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </dxg:GridColumn.CellTemplate>
+                                </dxg:GridColumn>
+                                <dxg:GridColumn Header="{x:Static localization:Resource.Lending_Grid_10}" FieldName="repayDt" Width="150">
+                                    <dxg:GridColumn.EditSettings>
+                                        <dxe:TextEditSettings HorizontalContentAlignment="Center"/>
+                                    </dxg:GridColumn.EditSettings>
+                                </dxg:GridColumn>
+                                <dxg:GridColumn Header="{x:Static localization:Resource.Lending_Grid_11}" FieldName="extensionYn" Width="150">
+                                    <dxg:GridColumn.EditSettings>
+                                        <dxe:TextEditSettings HorizontalContentAlignment="Center" DisplayTextConverter="{StaticResource extensionYnToResourceConverter}"/>
+                                    </dxg:GridColumn.EditSettings>
+                                </dxg:GridColumn>
+                                <dxg:GridColumn Header="{x:Static localization:Resource.Lending_Grid_12}" FieldName="" Width="150">
+                                    <dxg:GridColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Grid>
+                                                <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="0,2,0,2">
+                                                    <Button Content="{x:Static localization:Resource.Lending_Grid_12_1}" Visibility="{Binding RowData.Row.repayVisible}" Width="60" Height="18" Command="{Binding DataContext.CmdRepayCommand, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" CommandParameter="{Binding RowData.Row}" >
+                                                        <Button.Style>
+                                                            <Style TargetType="{x:Type Button}">
+                                                                <Setter Property="Background" Value="#6e6e6d"/>
+                                                                <Setter Property="Foreground" Value="#fff"/>
+                                                                <Setter Property="Template">
+                                                                    <Setter.Value>
+                                                                        <ControlTemplate TargetType="{x:Type Button}">
+                                                                            <Border Background="{TemplateBinding Background}" CornerRadius="3">
+                                                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                                            </Border>
+                                                                        </ControlTemplate>
+                                                                    </Setter.Value>
+                                                                </Setter>
+                                                                <Style.Triggers>
+                                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                                        <Setter Property="Background" Value="DarkGray"/>
+                                                                    </Trigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </Button.Style>
+                                                    </Button>
+                                                    <Button Content="{x:Static localization:Resource.Lending_Grid_12_2}" Visibility="{Binding RowData.Row.extendVisible}" Width="60" Height="18"  Margin="0,2,0,0" Command="{Binding DataContext.CmdExtendCommand, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" CommandParameter="{Binding}" >
+                                                        <Button.Style>
+                                                            <Style TargetType="{x:Type Button}">
+                                                                <Setter Property="Background" Value="#6e6e6d"/>
+                                                                <Setter Property="Foreground" Value="#fff"/>
+                                                                <Setter Property="Template">
+                                                                    <Setter.Value>
+                                                                        <ControlTemplate TargetType="{x:Type Button}">
+                                                                            <Border Background="{TemplateBinding Background}" CornerRadius="3">
+                                                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                                            </Border>
+                                                                        </ControlTemplate>
+                                                                    </Setter.Value>
+                                                                </Setter>
+                                                                <Style.Triggers>
+                                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                                        <Setter Property="Background" Value="DarkGray"/>
+                                                                    </Trigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </Button.Style>
+                                                    </Button>
+                                                </StackPanel>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </dxg:GridColumn.CellTemplate>
+                                </dxg:GridColumn>
+                                <!--<dxg:GridColumn Header="{x:Static localization:Resource.WithdrawDepositWithdraw_1_26}" FieldName="F"/>-->
+                            </dxg:GridControl>
+                        </Grid>
+                    </dxlc:LayoutGroup>
+
+                    <dxlc:LayoutGroup>
+                        <Button Width="81" Height="28" IsEnabled="{Binding listEnable}" Cursor="Hand" HorizontalAlignment="Right" Margin="0,0,10,0" Command="{Binding MoreRequestListCommand}">
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                <Border Name="border">
+                                                    <Border.Background>
+                                                        <ImageBrush ImageSource="{Binding btn_more}"/>
+                                                    </Border.Background>
+                                                </Border>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Background" TargetName="border">
+                                                            <Setter.Value>
+                                                                <ImageBrush ImageSource="{Binding btn_more_on}" />
+                                                            </Setter.Value>
+                                                        </Setter>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                    </dxlc:LayoutGroup>
+                </dxlc:LayoutGroup>
+            </ScrollViewer>
+        </dx:DXTabItem>
+        <dx:DXTabItem Header="{x:Static localization:Resource.Lending_2}">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Background="White" Margin="-9">
+                <dxlc:LayoutGroup Orientation="Vertical" ScrollViewer.VerticalScrollBarVisibility="Visible" VerticalAlignment="Top" ScrollBars="None">
+                    <dxlc:LayoutGroup Margin="0,2,0,20">
+                        <Border BorderBrush="#d8d8d8" BorderThickness="0.5">
+                            <Grid Height="180">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="126"/>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition Width="126"/>
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <!-- row 0 -->
+                                <Border Grid.Column="0" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.Lending_2_1}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="1" Grid.Row="0" Style="{StaticResource Border_Line_1_BR}">
+                                    <dxe:ComboBoxEdit Height="26" Width="200" HorizontalContentAlignment="Right" HorizontalAlignment="Right" ItemsSource="{Binding cbxLendingReq}" SelectedItem="{Binding selLendingReq}" DisplayMember="Name"  ValueMember="Value" Margin="0,0,5,0" />
+                                </Border>
+                                <Border Grid.Column="2" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.Lending_2_2}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="3" Grid.Row="0" Style="{StaticResource Border_Line_1_B}">
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0">
+                                        <TextBlock Text="{Binding selLendingReq.Value.applyDt}" Style="{StaticResource Content_R}"/>                                        
+                                    </StackPanel>
+                                </Border>
+
+                                <!-- row 1 -->
+                                <Border Grid.Column="0" Grid.Row="1" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.Lending_2_3}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="1" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}">
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0">
+                                        <TextBlock Text="{Binding allMonth, StringFormat={x:Static localization:Resource.Lending_1_7_1}}" Style="{StaticResource Content_R}"/>                                        
+                                    </StackPanel>
+                                </Border>
+                                <Border Grid.Column="2" Grid.Row="1" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.Lending_2_4}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="3" Grid.Row="1" Style="{StaticResource Border_Line_1_B}">
+                                    <TextBlock Text="{Binding selLendingReq.Value.applyStatus, Converter={StaticResource LendingApplyStatusToResourceConverter}}"  Style="{StaticResource Content_R}"/>
+                                </Border>
+                                <!-- row 2 -->
+                                <Border Grid.Column="0" Grid.Row="2" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.Lending_2_5}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="1" Grid.Row="2" Style="{StaticResource Border_Line_1_BR}">
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0">
+                                        <TextBlock Text="{Binding selLendingReq.Value.applyAmt, StringFormat='###,###,###,##0.########'}" Style="{StaticResource Content_C}"/>
+                                        <TextBlock Text="{Binding selLendingReq.Value.cnKndNm}" Style="{StaticResource Content_R}" Margin="5,0,0,0" />
+                                    </StackPanel>
+                                </Border>
+                                <Border Grid.Column="2" Grid.Row="2" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.Lending_2_6}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="3" Grid.Row="2" Style="{StaticResource Border_Line_1_B}">
+                                    <TextBlock Text="{Binding selLendingReq.Value.interestRate, StringFormat={x:Static localization:Resource.Lending_2_6_1}}" Style="{StaticResource Content_R}" />
+                                </Border>
+
+                                <!-- row 3 -->
+                                <Border Grid.Column="0" Grid.Row="3" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.Lending_2_7}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="1" Grid.Row="3" Style="{StaticResource Border_Line_1_BR}">
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0">
+                                        <TextBlock Text="{Binding selLendingReq.Value.expInterest, StringFormat='###,###,###,##0.########'}" Style="{StaticResource Content_C}"/>
+                                        <TextBlock Text="{Binding selLendingReq.Value.cnKndNm}" Style="{StaticResource Content_R}" Margin="5,0,0,0" />
+                                    </StackPanel>
+                                </Border>
+                                <Border Grid.Column="2" Grid.Row="3" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.Lending_2_8}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="3" Grid.Row="3" Style="{StaticResource Border_Line_1_B}">
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0">
+                                        <TextBlock Text="{Binding selLendingReq.Value.totRepayAmt, StringFormat='###,###,###,##0.########'}" Style="{StaticResource Content_C}"/>
+                                        <TextBlock Text="{Binding selLendingReq.Value.cnKndNm}" Style="{StaticResource Content_R}" Margin="5,0,0,0" />
+                                    </StackPanel>
+                                </Border>
+
+                                <!-- row 4 -->
+                                <Border Grid.Column="0" Grid.Row="4" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.Lending_2_9}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="1" Grid.Row="4" Style="{StaticResource Border_Line_1_BR}">
+                                    <Button Content="{x:Static localization:Resource.Lending_Grid_12_1}" HorizontalAlignment="Right" Margin="0,0,5,0" Visibility="{Binding selLendingReq.Value.repayVisible}" Width="90"  Height="25" Command="{Binding CmdRepayCommand}" CommandParameter="{Binding selLendingReq.Value}" >
+                                        <Button.Style>
+                                            <Style TargetType="{x:Type Button}">
+                                                <Setter Property="Background" Value="#6e6e6d"/>
+                                                <Setter Property="Foreground" Value="#fff"/>
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="{x:Type Button}">
+                                                            <Border Background="{TemplateBinding Background}" CornerRadius="3">
+                                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                            </Border>
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                                <Style.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Background" Value="DarkGray"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Button.Style>
+                                    </Button>
+                                </Border>
+                                <Border Grid.Column="2" Grid.Row="4" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.Lending_2_10}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="3" Grid.Row="4" Style="{StaticResource Border_Line_1_B}">
+                                    <TextBlock Text="{Binding selLendingReq.Value.extensionYn, Converter={StaticResource extensionYnToResourceConverter}}" Style="{StaticResource Content_R}" />
+                                </Border>
+
+                                <!-- row 5 -->
+                                <Border Grid.Column="0" Grid.Row="5" Style="{StaticResource Border_Line_2_R}">
+                                    <TextBlock Text="{x:Static localization:Resource.Lending_2_11}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="1" Grid.Row="5" Style="{StaticResource Border_Line_1_R}">
+                                    <Button Content="{x:Static localization:Resource.Lending_Grid_12_2}" HorizontalAlignment="Right" Margin="0,0,5,0" Visibility="{Binding selLendingReq.Value.extendVisible}" Width="90" Height="25" Command="{Binding CmdExtendCommand}" CommandParameter="{Binding selLendingReq.Value}" >
+                                        <Button.Style>
+                                            <Style TargetType="{x:Type Button}">
+                                                <Setter Property="Background" Value="#6e6e6d"/>
+                                                <Setter Property="Foreground" Value="#fff"/>
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="{x:Type Button}">
+                                                            <Border Background="{TemplateBinding Background}" CornerRadius="3">
+                                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                            </Border>
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                                <Style.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Background" Value="DarkGray"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Button.Style>
+                                    </Button>
+                                </Border>
+                                <Border Grid.Column="2" Grid.Row="5" Style="{StaticResource Border_Line_2_R}">
+                                    <TextBlock Text="{x:Static localization:Resource.Lending_2_12}" Style="{StaticResource Content_L}" />
+                                </Border>
+                                <Border Grid.Column="3" Grid.Row="5" Style="{StaticResource Border_Line_1}">
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0">
+                                        <TextBlock Text="{Binding selLendingReq.Value.expireDt}" Style="{StaticResource Content_R}"/>
+                                    </StackPanel>
+                                </Border>
+                            </Grid>
+                        </Border>
+                    </dxlc:LayoutGroup>
+
+                    <dxlc:LayoutGroup>
+                        <TextBlock Text="{x:Static localization:Resource.Lending_2_13}" Style="{StaticResource Header_1}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                    </dxlc:LayoutGroup>
+
+                    <dxlc:LayoutGroup>
+                        <Grid Height="230">
+                            <Grid.Resources>
+                                <Style TargetType="{x:Type dxg:GridColumn}">
+                                    <Setter Property="HorizontalHeaderContentAlignment" Value="Center" />
+                                </Style>
+                                <Style TargetType="{x:Type dxg:GridColumnHeader}">
+                                    <Setter Property="Background" Value="#ececec"/>
+                                </Style>
+                            </Grid.Resources>
+                            <dxg:GridControl Grid.Row="1" ItemsSource="{Binding lendingRepayList}"  dxlc:LayoutControl.AllowHorizontalSizing="True"  dxlc:LayoutControl.AllowVerticalSizing="True" SelectionMode="Row" dx:ThemeManager.Theme="Office2013LightGray">
+                                <dxg:GridControl.Resources>
+                                    <Style TargetType="{x:Type dxg:GridColumn}">
+                                        <Setter Property="HorizontalHeaderContentAlignment" Value="Center" />
+                                    </Style>
+                                </dxg:GridControl.Resources>
+                                <dxg:GridControl.View>
+                                    <dxg:TableView RowMinHeight="22" HeaderPanelMinHeight="22" VerticalScrollbarVisibility="Auto" HorizontalScrollbarVisibility="Auto" AllowPerPixelScrolling="True" ShowTotalSummary="False" ShowGroupPanel="False" AllowColumnFiltering="False" AllowFilterEditor="False" AllowColumnMoving="False" AllowEditing="False" AllowGrouping="False" AllowMoveColumnToDropArea="False" ShowAutoFilterRow="False" AutoWidth="True" NavigationStyle="None" ShowIndicator="False"/>
+                                </dxg:GridControl.View>
+                                <dxg:GridColumn Header="No" FieldName="no" Width="80">
+                                    <dxg:GridColumn.EditSettings>
+                                        <dxe:TextEditSettings HorizontalContentAlignment="Center"/>
+                                    </dxg:GridColumn.EditSettings>
+                                </dxg:GridColumn>
+                                <dxg:GridColumn Header="{x:Static localization:Resource.Lending_Grid2_1}" FieldName="renDiv" Width="150">
+                                    <dxg:GridColumn.EditSettings>
+                                        <dxe:TextEditSettings HorizontalContentAlignment="Center" DisplayTextConverter="{StaticResource RenDivToResourceConverter}"/>
+                                    </dxg:GridColumn.EditSettings>
+                                </dxg:GridColumn>
+                                <dxg:GridColumn Header="{x:Static localization:Resource.Lending_Grid2_2}" FieldName="repayDt" Width="150">
+                                    <dxg:GridColumn.EditSettings>
+                                        <dxe:TextEditSettings HorizontalContentAlignment="Center"/>
+                                    </dxg:GridColumn.EditSettings>
+                                </dxg:GridColumn>
+                                <dxg:GridColumn Header="{x:Static localization:Resource.Lending_Grid2_3}" FieldName="interestDiv" Width="150">
+                                    <dxg:GridColumn.EditSettings>
+                                        <dxe:TextEditSettings HorizontalContentAlignment="Center" DisplayTextConverter="{StaticResource interestDivToResourceConverter}"/>
+                                    </dxg:GridColumn.EditSettings>
+                                </dxg:GridColumn>
+                                <dxg:GridColumn Header="{x:Static localization:Resource.Lending_Grid2_4}" FieldName="interestCnt" Width="150">
+                                    <dxg:GridColumn.EditSettings>
+                                        <dxe:TextEditSettings HorizontalContentAlignment="Center" DisplayFormat="{x:Static localization:Resource.Lending_Grid2_4_1}"/>
+                                    </dxg:GridColumn.EditSettings>
+                                </dxg:GridColumn>
+                                <dxg:GridColumn Header="{x:Static localization:Resource.Lending_Grid2_5}" FieldName="repayAmt" Width="150">
+                                    <dxg:GridColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                                <TextBlock Text="{Binding RowData.Row.repayAmt, StringFormat='###,###,###,##0.########'}"/>
+                                                <TextBlock Text="{Binding RowData.Row.cnKndNm}" Margin="5,0,0,0"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </dxg:GridColumn.CellTemplate>
+                                </dxg:GridColumn>
+                                <dxg:GridColumn Header="{x:Static localization:Resource.Lending_Grid2_6}" FieldName="overInterest">
+                                    <dxg:GridColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                                <TextBlock Text="{Binding RowData.Row.overInterest, StringFormat='###,###,###,##0.########'}"/>
+                                                <TextBlock Text="{Binding RowData.Row.cnKndNm}" Margin="5,0,0,0"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </dxg:GridColumn.CellTemplate>
+                                </dxg:GridColumn>
+                                <dxg:GridColumn Header="{x:Static localization:Resource.Lending_Grid2_7}" FieldName="totRepayAmt">
+                                    <dxg:GridColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                                <TextBlock Text="{Binding RowData.Row.totRepayAmt, StringFormat='###,###,###,##0.########'}"/>
+                                                <TextBlock Text="{Binding RowData.Row.cnKndNm}" Margin="5,0,0,0"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </dxg:GridColumn.CellTemplate>
+                                </dxg:GridColumn>
+                                <dxg:GridColumn Header="{x:Static localization:Resource.Lending_Grid2_8}" FieldName="repayYn" Width="150">
+                                    <dxg:GridColumn.EditSettings>
+                                        <dxe:TextEditSettings HorizontalContentAlignment="Center" DisplayTextConverter="{StaticResource repayYnToResourceConverter}"/>
+                                    </dxg:GridColumn.EditSettings>
+                                </dxg:GridColumn>
+                                <dxg:GridColumn Header="{x:Static localization:Resource.Lending_Grid2_9}" FieldName="memo" Width="150">
+                                    <dxg:GridColumn.EditSettings>
+                                        <dxe:TextEditSettings HorizontalContentAlignment="Center"/>
+                                    </dxg:GridColumn.EditSettings>
+                                </dxg:GridColumn>
+                            </dxg:GridControl>
+                        </Grid>
+                    </dxlc:LayoutGroup>
+
+                    <dxlc:LayoutGroup>
+                        <Button Width="81" Height="28" IsEnabled="{Binding rListEnable}" Cursor="Hand" HorizontalAlignment="Right" Margin="0,0,10,0" Command="{Binding MoreRepayListCommand}">
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                <Border Name="border">
+                                                    <Border.Background>
+                                                        <ImageBrush ImageSource="{Binding btn_more}"/>
+                                                    </Border.Background>
+                                                </Border>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Background" TargetName="border">
+                                                            <Setter.Value>
+                                                                <ImageBrush ImageSource="{Binding btn_more_on}" />
+                                                            </Setter.Value>
+                                                        </Setter>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                    </dxlc:LayoutGroup>
+                </dxlc:LayoutGroup>
+            </ScrollViewer>
+        </dx:DXTabItem>
+    </dx:DXTabControl>
+</UserControl>

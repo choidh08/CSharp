@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="coinBlock.Views.Wallet.WebSocketTest"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" 
+             xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui" 
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+             xmlns:Converter="clr-namespace:coinBlock.ViewModels"
+             xmlns:ViewModels="clr-namespace:coinBlock.ViewModels.Wallet"
+             xmlns:View="clr-namespace:coinBlock.Views.Wallet"
+             mc:Ignorable="d"
+             DataContext="{dxmvvm:ViewModelSource Type=ViewModels:WebSocketTestViewModel}"
+             d:DesignHeight="768" d:DesignWidth="1280">
+    <UserControl.Resources>
+        <Converter:FloatConvert x:Key="FloatConvert"/>
+    </UserControl.Resources>
+    <dxmvvm:Interaction.Behaviors>
+        <dxmvvm:DispatcherService DispatcherPriority="Send"/>
+        <dxmvvm:EventToCommand EventName="Loaded" Command="{Binding LoadedCommand}"/>
+    </dxmvvm:Interaction.Behaviors>
+
+    <Grid>
+        <dx:DXTabControl>
+            <dx:DXTabControl.View>
+                <dx:TabControlScrollView HeaderAutoFill="True" HeaderLocation="Top" HeaderOrientation="Horizontal"/>
+            </dx:DXTabControl.View>
+            <dx:DXTabItem Header="크롭테스트" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Center">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="{Binding AAA}"/>
+                    <TextBlock Text="{Binding BBB}"/>
+                    <TextBlock Text="{Binding CCC}"/>
+                    <TextBlock>
+                        <TextBlock.Text>
+                            <MultiBinding Converter="{StaticResource FloatConvert}">
+                                <Binding Path="value" />
+                                <Binding Path="floatformat" />
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                    <Button Content="CCCCCCbutton" Command="{Binding WebAddressChgCommand}" Height="50" />
+                </StackPanel>
+            </dx:DXTabItem>
+            <dx:DXTabItem Header="코인취소" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Center">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <StackPanel>
+                        <TextBlock Text="MainPAGE" />
+                        <TextBlock Text="{Binding AAA}" />
+                        <TextBlock Text="{Binding BtcData}" />
+                        <TextBlock Text="{Binding EthData}" />
+                        <Button Content="CCCCCCbutton" Command="{Binding CancelCommand}" Height="100" />
+                    </StackPanel>
+                </Grid>
+            </dx:DXTabItem>
+        </dx:DXTabControl>
+    </Grid>
+</UserControl>

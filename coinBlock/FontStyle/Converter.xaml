@@ -1,0 +1,238 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" 
+                    xmlns:localization="clr-namespace:coinBlock.Localization"
+                    xmlns:utillity="clr-namespace:coinBlock.Utility"
+                    xmlns:local="clr-namespace:coinBlock.FontStyle">
+    <dxmvvm:ObjectToObjectConverter x:Key="CodeToResourceConverter">
+        <dxmvvm:MapItem Source= "CMMC00000000204" Target="{x:Static utillity:CommonLib.StandardCurcyNm}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000205" Target="BTC"/>
+        <dxmvvm:MapItem Source= "CMMC00000000206" Target="ETH"/>
+        <dxmvvm:MapItem Source= "CMMC00000000207" Target="BCH"/>
+        <dxmvvm:MapItem Source= "CMMC00000000208" Target="XRP"/>
+        <dxmvvm:MapItem Source= "CMMC00000000447" Target="ADA"/>
+        <dxmvvm:MapItem Source= "CMMC00000000450" Target="OMG"/>
+        <dxmvvm:MapItem Source= "CMMC00000000451" Target="QTUM"/>
+        <dxmvvm:MapItem Source= "CMMC00000000685" Target="SGC"/>
+        <dxmvvm:MapItem Source= "CMMC00000000911" Target="EOS"/>
+        <dxmvvm:MapItem Source= "CMMC00000000926" Target="BTG"/>
+        <dxmvvm:MapItem Source= "CMMC00000000927" Target="DASH"/>
+        <dxmvvm:MapItem Source= "CMMC00000000928" Target="LTC"/>
+        <dxmvvm:MapItem Source= "CMMC00000001005" Target="BMC"/>
+        <dxmvvm:MapItem Source= "CMMC00000001066" Target="SECRET"/>
+        <dxmvvm:MapItem Source= "CMMC00000001086" Target="USDT"/>
+        <dxmvvm:MapItem Source= "CMMC00000001126" Target="HDAC"/>
+        <dxmvvm:MapItem Source= "CMMC00000001206" Target="VSTC"/>
+        <dxmvvm:MapItem Source= "CMMC00000001307" Target="YOA"/>
+        <dxmvvm:MapItem Source= "CMMC00000001467" Target="ADM"/>
+        <dxmvvm:MapItem Source= "CMMC00000001506" Target="BSV"/>
+        <dxmvvm:MapItem Source= "CMMC00000001507" Target="TRX"/>
+        <dxmvvm:MapItem Source= "CMMC00000001527" Target="XLM"/>
+        <dxmvvm:MapItem Source= "CMMC00000001547" Target="POLY"/>
+        <dxmvvm:MapItem Source= "CMMC00000001548" Target="WAVES"/>
+        <dxmvvm:MapItem Source= "CMMC00000001586" Target="MITH"/>
+        <dxmvvm:MapItem Source= "CMMC00000001587" Target="ICX"/>
+        <dxmvvm:MapItem Source= "CMMC00000001606" Target="XEM"/>
+        <dxmvvm:MapItem Source= "CMMC00000001650" Target="PAN"/>
+        <dxmvvm:MapItem Source= "CMMC00000001665" Target="XLAB"/>
+        <dxmvvm:MapItem Source= "CMMC10000000001" Target="HEC"/>
+        <dxmvvm:MapItem Source= "CMMC10000000003" Target="GIFO"/>
+        <dxmvvm:MapItem Source= "CMMC10000000004" Target="HAMA"/>
+        <dxmvvm:MapItem Source= "CMMC10000000008" Target="ERB"/>
+    </dxmvvm:ObjectToObjectConverter>
+
+    <dxmvvm:ObjectToObjectConverter x:Key="TransferStateToResourceConverter">
+        <dxmvvm:MapItem Source= "CMMC00000000096" Target="{x:Static localization:Resource.TransferDepositWithdraw_Common_Grid_5_1}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000097" Target="{x:Static localization:Resource.TransferDepositWithdraw_Common_Grid_5_2}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000098" Target="{x:Static localization:Resource.TransferDepositWithdraw_Common_Grid_5_3}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000099" Target="{x:Static localization:Resource.TransferDepositWithdraw_Common_Grid_5_4}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000100" Target="{x:Static localization:Resource.TransferDepositWithdraw_Common_Grid_5_5}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000101" Target="{x:Static localization:Resource.TransferDepositWithdraw_Common_Grid_5_6}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000446" Target="{x:Static localization:Resource.TransferDepositWithdraw_Common_Grid_5_7}"/>
+    </dxmvvm:ObjectToObjectConverter>
+
+    <dxmvvm:ObjectToObjectConverter x:Key="WithdrawStateToResourceConverter">
+        <dxmvvm:MapItem Source= "CMMC00000000091" Target="{x:Static localization:Resource.WithdrawDepositWithdraw_1_23_1}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000092" Target="{x:Static localization:Resource.WithdrawDepositWithdraw_1_23_2}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000093" Target="{x:Static localization:Resource.WithdrawDepositWithdraw_1_23_3}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000094" Target="{x:Static localization:Resource.WithdrawDepositWithdraw_1_23_4}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000095" Target="{x:Static localization:Resource.WithdrawDepositWithdraw_1_23_5}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000426" Target="{x:Static localization:Resource.WithdrawDepositWithdraw_1_23_6}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000845" Target="{x:Static localization:Resource.WithdrawDepositWithdraw_1_23_8}"/>
+    </dxmvvm:ObjectToObjectConverter>
+
+    <dxmvvm:ObjectToObjectConverter x:Key="PrepaidCardStateToResourceConverter">
+        <dxmvvm:MapItem Source= "01" Target="{x:Static localization:Resource.RechargeDepositWithdraw_Card_4_3_1}"/>
+        <dxmvvm:MapItem Source= "02" Target="{x:Static localization:Resource.RechargeDepositWithdraw_Card_4_3_5}"/>
+        <dxmvvm:MapItem Source= "03" Target="{x:Static localization:Resource.RechargeDepositWithdraw_Card_4_3_2}"/>
+        <dxmvvm:MapItem Source= "04" Target="{x:Static localization:Resource.RechargeDepositWithdraw_Card_4_3_3}"/>
+        <dxmvvm:MapItem Source= "05" Target="{x:Static localization:Resource.RechargeDepositWithdraw_Card_4_3_6}"/>
+        <dxmvvm:MapItem Source= "06" Target="{x:Static localization:Resource.RechargeDepositWithdraw_Card_4_3_7}"/>
+        <dxmvvm:MapItem Source= "07" Target="{x:Static localization:Resource.RechargeDepositWithdraw_Card_4_3_8}"/>
+        <dxmvvm:MapItem Source= "08" Target="{x:Static localization:Resource.RechargeDepositWithdraw_Card_4_3_9}"/>
+        <dxmvvm:MapItem Source= "99" Target="{x:Static localization:Resource.RechargeDepositWithdraw_Card_4_3_4}"/>
+    </dxmvvm:ObjectToObjectConverter>
+
+    <dxmvvm:ObjectToObjectConverter x:Key="BuySellToResourceConverter">
+        <dxmvvm:MapItem Source="B" Target="{x:Static localization:Resource.CoinTrading_8_2_1}"/>
+        <dxmvvm:MapItem Source="S" Target="{x:Static localization:Resource.CoinTrading_8_2_2}"/>
+        <dxmvvm:MapItem Source="L" Target="{x:Static localization:Resource.CoinTrading_8_2_2}"/>
+    </dxmvvm:ObjectToObjectConverter>
+
+    <dxmvvm:ObjectToObjectConverter x:Key="AutoStateToResourceConverter">
+        <dxmvvm:MapItem Source="B" Target="{x:Static localization:Resource.CoinTrading_8_3_1}"/>
+        <dxmvvm:MapItem Source="S" Target="{x:Static localization:Resource.CoinTrading_8_3_2}"/>
+        <dxmvvm:MapItem Source="L" Target="{x:Static localization:Resource.CoinTrading_8_3_3}"/>
+    </dxmvvm:ObjectToObjectConverter>
+
+    <dxmvvm:ObjectToObjectConverter x:Key="FlagToResourceConverter" >
+        <dxmvvm:MapItem Source="B" Target="{x:Static localization:Resource.TradingHistory_1_3}" />
+        <dxmvvm:MapItem Source="S" Target="{x:Static localization:Resource.TradingHistory_1_4}" />
+        <dxmvvm:MapItem Source="C" Target="{x:Static localization:Resource.TradingHistory_1_2}" />
+        <dxmvvm:MapItem Source="D" Target="{x:Static localization:Resource.TradingHistory_1_7}" />
+        <dxmvvm:MapItem Source="W" Target="{x:Static localization:Resource.TradingHistory_1_5}" />
+        <dxmvvm:MapItem Source="T" Target="{x:Static localization:Resource.TradingHistory_1_6}" />
+        <!--<dxmvvm:MapItem Source="CW" Target="{x:Static localization:Resource.TradingHistory_1_9}" />
+            <dxmvvm:MapItem Source="WW" Target="{x:Static localization:Resource.TradingHistory_1_10}" />-->
+        <dxmvvm:MapItem Source="AW" Target="{x:Static localization:Resource.TradingHistory_1_11}" />
+        <dxmvvm:MapItem Source="AC" Target="{x:Static localization:Resource.TradingHistory_1_12}" />
+        <dxmvvm:MapItem Source="CC" Target="{x:Static localization:Resource.TradingHistory_1_13}" />
+        <dxmvvm:MapItem Source="CW" Target="{x:Static localization:Resource.TradingHistory_1_14}" />
+        <dxmvvm:MapItem Source="P" Target="{x:Static localization:Resource.TradingHistory_1_15}" />
+        <dxmvvm:MapItem Source="R" Target="{x:Static localization:Resource.TradingHistory_1_16}" />
+        <dxmvvm:MapItem Source="L" Target="{x:Static localization:Resource.TradingHistory_1_17}" />
+        <dxmvvm:MapItem Source="A" Target="{x:Static localization:Resource.TradingHistory_1_18}" />
+        <dxmvvm:MapItem Source="AB" Target="{x:Static localization:Resource.ArbitrageRequest_1}" />
+        <dxmvvm:MapItem Source="O" Target="POINT" />
+        <dxmvvm:MapItem Source="LD" Target="{x:Static localization:Resource.Main_Menu_4_5}" />
+        <dxmvvm:MapItem Source="X" Target="{x:Static localization:Resource.TradingHistory_1_19}" />
+        <dxmvvm:MapItem Source="E" Target="{x:Static localization:Resource.TradingHistory_1_20}" />
+        <dxmvvm:MapItem Source="Z" Target="{x:Static localization:Resource.TradingHistory_1_21}" />
+    </dxmvvm:ObjectToObjectConverter>
+    
+    <dxmvvm:ObjectToObjectConverter x:Key="HisCodeToResourceConverter" >
+        <dxmvvm:MapItem Source= "CMMC00000000196" Target="{x:Static localization:Resource.TradingHistory_1_2}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000197" Target="{x:Static localization:Resource.TradingHistory_1_3}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000198" Target="{x:Static localization:Resource.TradingHistory_1_4}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000199" Target="{x:Static localization:Resource.TradingHistory_1_5}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000200" Target="{x:Static localization:Resource.TradingHistory_1_6}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000201" Target="{x:Static localization:Resource.TradingHistory_1_7}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000202" Target="{x:Static localization:Resource.TradingHistory_1_8}"/>
+    </dxmvvm:ObjectToObjectConverter>
+    
+    <dxmvvm:ObjectToObjectConverter x:Key="apntYnToResourceConverter" >
+        <dxmvvm:MapItem Source= "Y" Target="{x:Static localization:Resource.TradingHistory_7_1}"/>
+        <dxmvvm:MapItem Source= "N" Target="{x:Static localization:Resource.TradingHistory_7_2}"/>
+    </dxmvvm:ObjectToObjectConverter>
+
+    <dxmvvm:ObjectToObjectConverter x:Key="CompOrProcToResourceConverter">
+        <dxmvvm:MapItem Source= "Y" Target="{x:Static localization:Resource.RechargeDepositWithdraw_Krw_1_17_1}"/>
+        <dxmvvm:MapItem Source= "N" Target="{x:Static localization:Resource.RechargeDepositWithdraw_Krw_1_17_2}"/>
+    </dxmvvm:ObjectToObjectConverter>
+
+    <dxmvvm:ObjectToObjectConverter x:Key="CompOrSendToResourceConverter">
+        <dxmvvm:MapItem Source= "Y" Target="{x:Static localization:Resource.DepositDepositWithdraw_Grid_1_4_1}"/>
+        <dxmvvm:MapItem Source= "N" Target="{x:Static localization:Resource.DepositDepositWithdraw_Grid_1_4_2}"/>
+    </dxmvvm:ObjectToObjectConverter>
+
+    <dxmvvm:ObjectToObjectConverter x:Key="RechargeMethodToResourceConverter">
+        <dxmvvm:MapItem Source= "CMMC00000000039" Target="{x:Static localization:Resource.RechargeDepositWithdraw_Krw_1_15_1}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000805" Target="{x:Static localization:Resource.AlramMyPage_1_2_15}"/>
+    </dxmvvm:ObjectToObjectConverter>
+
+    <dxmvvm:ObjectToObjectConverter x:Key="PushListToResourceConverter">
+        <dxmvvm:MapItem Source= "CMMC00000000291" Target="{x:Static localization:Resource.AlramMyPage_1_2_1}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000290" Target="{x:Static localization:Resource.AlramMyPage_1_2_2}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000289" Target="{x:Static localization:Resource.AlramMyPage_1_2_3}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000288" Target="{x:Static localization:Resource.AlramMyPage_1_2_4}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000287" Target="{x:Static localization:Resource.AlramMyPage_1_2_5}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000286" Target="{x:Static localization:Resource.AlramMyPage_1_2_6}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000285" Target="{x:Static localization:Resource.AlramMyPage_1_2_7}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000284" Target="{x:Static localization:Resource.AlramMyPage_1_2_8}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000292" Target="{x:Static localization:Resource.AlramMyPage_1_2_9}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000405" Target="{x:Static localization:Resource.AlramMyPage_1_2_10}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000427" Target="{x:Static localization:Resource.AlramMyPage_1_2_11}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000428" Target="{x:Static localization:Resource.AlramMyPage_1_2_12}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000605" Target="{x:Static localization:Resource.AlramMyPage_1_2_13}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000651" Target="{x:Static localization:Resource.AlramMyPage_1_2_14}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000825" Target="{x:Static localization:Resource.AlramMyPage_1_2_15}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000945" Target="{x:Static localization:Resource.AlramMyPage_1_2_16}"/>
+        <dxmvvm:MapItem Source= "CMMC00000001627" Target="{x:Static localization:Resource.AlramMyPage_1_2_17}"/>
+        <dxmvvm:MapItem Source= "CMMC00000001628" Target="{x:Static localization:Resource.AlramMyPage_1_2_18}"/>
+        <dxmvvm:MapItem Source= "CMMC00000001629" Target="{x:Static localization:Resource.AlramMyPage_1_2_19}"/>
+        <dxmvvm:MapItem Source= "CMMC00000001745" Target="{x:Static localization:Resource.ArbitrageRequest_1}"/>
+    </dxmvvm:ObjectToObjectConverter>
+
+    <dxmvvm:ObjectToObjectConverter x:Key="CertifyGradeToResourceConverter">
+        <dxmvvm:MapItem Source= "CMMP00000000142" Target="{x:Static localization:Resource.CertificationDataSubmit_CMMP00000000142}"/>
+        <dxmvvm:MapItem Source= "CMMP00000000143" Target="{x:Static localization:Resource.CertificationDataSubmit_CMMP00000000143}"/>
+        <dxmvvm:MapItem Source= "CMMP00000000144" Target="{x:Static localization:Resource.CertificationDataSubmit_CMMP00000000144}"/>
+    </dxmvvm:ObjectToObjectConverter>
+
+    <dxmvvm:ObjectToObjectConverter x:Key="CertifySubGradeToResourceConverter">
+        <dxmvvm:MapItem Source= "CMMC00000000905" Target="{x:Static localization:Resource.CertificationDataSubmit_CMMC00000000905}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000906" Target="{x:Static localization:Resource.CertificationDataSubmit_CMMC00000000906}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000907" Target="{x:Static localization:Resource.CertificationDataSubmit_CMMC00000000907}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000908" Target="{x:Static localization:Resource.CertificationDataSubmit_CMMC00000000908}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000909" Target="{x:Static localization:Resource.CertificationDataSubmit_CMMC00000000909}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000910" Target="{x:Static localization:Resource.CertificationDataSubmit_CMMC00000000910}"/>
+        <dxmvvm:MapItem Source= "CMMC00000000986" Target="{x:Static localization:Resource.CertificationDataSubmit_CMMC00000000986}"/>
+        <dxmvvm:MapItem Source= "CMMC00000001146" Target="{x:Static localization:Resource.CertificationDataSubmit_CMMC00000001146}"/>
+        <dxmvvm:MapItem Source= "CMMC00000001326" Target="{x:Static localization:Resource.CertificationDataSubmit_CMMC00000001326}"/>
+    </dxmvvm:ObjectToObjectConverter>
+
+    <dxmvvm:ObjectToObjectConverter x:Key="CertifyAdminToResourceConverter">
+        <dxmvvm:MapItem Source= "1" Target="{x:Static localization:Resource.CertificationDataSubmit_3_10_4_1}"/>
+        <dxmvvm:MapItem Source= "2" Target="{x:Static localization:Resource.CertificationDataSubmit_3_10_4_2}"/>
+        <dxmvvm:MapItem Source= "3" Target="{x:Static localization:Resource.CertificationDataSubmit_3_10_4_3}"/>
+    </dxmvvm:ObjectToObjectConverter>
+
+    <dxmvvm:ObjectToObjectConverter x:Key="TrustStateToResourceConverter">
+        <dxmvvm:MapItem Source= "CMMC00000001346" Target="{x:Static localization:Resource.TrustRequest_2_8_2}"/>
+        <dxmvvm:MapItem Source= "CMMC00000001347" Target="{x:Static localization:Resource.TrustRequest_2_8_3}"/>
+        <dxmvvm:MapItem Source= "CMMC00000001348" Target="{x:Static localization:Resource.TrustRequest_2_8_1}"/>
+    </dxmvvm:ObjectToObjectConverter>
+
+    <dxmvvm:ObjectToObjectConverter x:Key="RenDivToResourceConverter">
+        <dxmvvm:MapItem Source= "0" Target="{x:Static localization:Resource.Lending_Grid_4_2}"/>
+        <dxmvvm:MapItem Source= "1" Target="{x:Static localization:Resource.Lending_Grid_4_1}"/>        
+    </dxmvvm:ObjectToObjectConverter>
+
+    <dxmvvm:ObjectToObjectConverter x:Key="LendingApplyStatusToResourceConverter">
+        <dxmvvm:MapItem Source= "CMMC00000001411" Target="{x:Static localization:Resource.Lending_Grid_5_2}"/>
+        <dxmvvm:MapItem Source= "CMMC00000001412" Target="{x:Static localization:Resource.Lending_Grid_5_1}"/>
+        <dxmvvm:MapItem Source= "CMMC00000001413" Target="{x:Static localization:Resource.Lending_Grid_5_3}"/>
+    </dxmvvm:ObjectToObjectConverter>
+
+    <dxmvvm:ObjectToObjectConverter x:Key="extensionYnToResourceConverter">
+        <dxmvvm:MapItem Source= "Y" Target="{x:Static localization:Resource.Lending_Grid_11_2}"/>
+        <dxmvvm:MapItem Source= "N" Target="{x:Static localization:Resource.Lending_Grid_11_1}"/>
+    </dxmvvm:ObjectToObjectConverter>
+
+
+    <dxmvvm:ObjectToObjectConverter x:Key="interestDivToResourceConverter">
+        <dxmvvm:MapItem Source= "0" Target="{x:Static localization:Resource.Lending_Grid2_3_2}"/>
+        <dxmvvm:MapItem Source= "1" Target="{x:Static localization:Resource.Lending_Grid2_3_1}"/>        
+    </dxmvvm:ObjectToObjectConverter>
+
+
+    <dxmvvm:ObjectToObjectConverter x:Key="repayYnToResourceConverter">
+        <dxmvvm:MapItem Source= "N" Target="{x:Static localization:Resource.Lending_Grid2_8_1}"/>
+        <dxmvvm:MapItem Source= "Y" Target="{x:Static localization:Resource.Lending_Grid2_8_2}"/>
+        <dxmvvm:MapItem Source= "R" Target="{x:Static localization:Resource.Lending_Grid2_8_3}"/>
+    </dxmvvm:ObjectToObjectConverter>
+
+
+    <dxmvvm:ObjectToObjectConverter x:Key="lendingKindOfRepayToResourceConverter" DefaultTarget="{}">
+        <dxmvvm:MapItem Source= "L1" Target="{x:Static localization:Resource.Lending_Grid2_3_1}"/>
+        <dxmvvm:MapItem Source= "L2" Target="{x:Static localization:Resource.Lending_Grid2_3_2}"/>
+        <dxmvvm:MapItem Source= "L3" Target="{x:Static localization:Resource.Lending_Grid2_3_3}"/>
+        <dxmvvm:MapItem Source= "L4" Target="{x:Static localization:Resource.Lending_Grid2_3_4}"/>        
+    </dxmvvm:ObjectToObjectConverter>
+
+    <dxmvvm:ObjectToObjectConverter x:Key="JoinYnToResourceConverter" DefaultTarget="{}">
+        <dxmvvm:MapItem Source= "Y" Target="{x:Static localization:Resource.Arbitrage_SignUpPop_1_3_1}"/>
+        <dxmvvm:MapItem Source= "N" Target="{x:Static localization:Resource.Arbitrage_SignUpPop_1_3_2}"/>
+    </dxmvvm:ObjectToObjectConverter>
+
+</ResourceDictionary>

@@ -1,0 +1,144 @@
+﻿<UserControl x:Class="coinBlock.Views.HelpDesk.NoticeHelpDesk"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" 
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
+             xmlns:Model="clr-namespace:coinBlock.Model"
+             xmlns:localization="clr-namespace:coinBlock.Localization"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:View="clr-namespace:coinBlock.Views.Common"
+             xmlns:ViewModels="clr-namespace:coinBlock.ViewModels.HelpDesk"
+             xmlns:Utility="clr-namespace:coinBlock.Utility"
+             mc:Ignorable="d"
+             DataContext="{dxmvvm:ViewModelSource Type=ViewModels:NoticeHelpDeskViewModel}"
+             d:DesignHeight="600" d:DesignWidth="1010">
+    <dxmvvm:Interaction.Behaviors>
+        <dxmvvm:EventToCommand EventName="Loaded" Command="{Binding LoadedCommand}"/>
+        <dxmvvm:EventToCommand EventName="Unloaded" Command="{Binding UnLoadedCommand}"/>
+    </dxmvvm:Interaction.Behaviors>
+    <dx:LoadingDecorator IsSplashScreenShown="{Binding IsBusy}" OwnerLock="InputOnly" dx:ThemeManager.ThemeName="MetropolisLight">
+        <dx:LoadingDecorator.SplashScreenTemplate>
+            <DataTemplate>
+                <dx:WaitIndicator DeferedVisibility="True" Content="Requesting data transfer.."/>
+            </DataTemplate>
+        </dx:LoadingDecorator.SplashScreenTemplate>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <dxlc:LayoutControl Orientation="Vertical" ScrollViewer.VerticalScrollBarVisibility="Visible" StretchContentVertically="False" VerticalAlignment="Top" Margin="-9" ScrollBars="None">
+                <dxlc:LayoutGroup VerticalAlignment="Top">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Border Grid.Row="0" BorderBrush="#d8d8d8" BorderThickness="0.5">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition  Width="66"/>
+                                </Grid.ColumnDefinitions>
+                                
+                                <dxe:TextEdit Text="{Binding SearchTxt}" Grid.Column="0" Height="25" Margin="0,0,0,0"/>
+
+                                <Button Grid.Column="2" Width="59" Height="25" Cursor="Hand" Command="{Binding CmdSearchContentCommand}">
+                                    <Button.Style>
+                                        <Style TargetType="{x:Type Button}">
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="{x:Type Button}">
+                                                        <Grid>
+                                                            <Image Name="btnImg" Source="{Binding btn_search, TargetNullValue={x:Null}}"/>
+                                                        </Grid>
+                                                        <ControlTemplate.Triggers>
+                                                            <Trigger Property="IsMouseOver" Value="True">
+                                                                <Setter Property="Source" TargetName="btnImg" Value="{Binding btn_search_on}"/>
+                                                            </Trigger>
+                                                        </ControlTemplate.Triggers>
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </Button.Style>
+                                </Button>
+                            </Grid>
+                        </Border>
+                        <Border Grid.Row="1" BorderBrush="#d8d8d8" BorderThickness="0.5">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="70" />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition Width="120"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="30"/>
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+
+                                <!-- row 0 -->
+                                <Border Grid.Column="0" Grid.Row="0" Style="{StaticResource ResourceKey=Border_Line_2_BR}">
+                                    <TextBlock Text="No" Style="{StaticResource ResourceKey=Header_1}"/>
+                                </Border>
+                                <Border Grid.Column="1" Grid.Row="0" Style="{StaticResource ResourceKey=Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.Notice_1}" Style="{StaticResource ResourceKey=Header_1}"/>
+                                </Border>
+                                <Border Grid.Column="2" Grid.Row="0" Style="{StaticResource ResourceKey=Border_Line_2_B}">
+                                    <TextBlock Text="{x:Static localization:Resource.Notice_2}" Style="{StaticResource ResourceKey=Header_1}"/>
+                                </Border>
+
+                                <!-- row 1 -->
+                                <ItemsControl Grid.Column="0" Grid.Row="1"  Grid.ColumnSpan="3" Visibility="{Binding listVisible}" ItemsSource="{Binding Notice}" HorizontalContentAlignment="Stretch">
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <Expander Background="White" VerticalContentAlignment="Center" Style="{StaticResource ResourceKey= ExpanderStyle1}">
+                                                <Expander.Header>
+                                                    <Grid Height="30" Width="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Expander}}, Path=ActualWidth}">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="60" />
+                                                            <ColumnDefinition />
+                                                            <ColumnDefinition Width="125"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <Border  Grid.Column="0" Style="{StaticResource ResourceKey=Border_Line_1_B}" >
+                                                            <TextBlock Text="{Binding num}" Style="{StaticResource ResourceKey=Content_C}"/>
+                                                        </Border>
+                                                        <Border  Grid.Column="1" Style="{StaticResource ResourceKey=Border_Line_1_B}">
+                                                            <TextBlock Text="{Binding title}" Style="{StaticResource ResourceKey=Content_L}"  Margin="10,0,0,0"/>
+                                                        </Border>
+                                                        <Border  Grid.Column="2" Style="{StaticResource ResourceKey=Border_Line_1_B}">
+                                                            <TextBlock Text="{Binding date}"  Style="{StaticResource ResourceKey=Content_C}"/>
+                                                        </Border>
+                                                    </Grid>
+                                                </Expander.Header>
+                                                <Expander.Content>
+                                                    <!--<WebBrowser ViewModels:BrowserBehavior.Html="{Binding content}" Height="Auto" HorizontalAlignment="Left" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="True" />-->
+                                                    <Border BorderBrush="#f4f4f4" Background="#f4f4f4">
+                                                        <Border Margin="0,5,0,5">
+                                                            <!--<RichTextBox Model:HtmlRichTextBoxBehavior.Text="{Binding content}"  SelectionBrush="#f4f4f4" Background="#f4f4f4" Margin="70,0,0,0" IsReadOnly="True" BorderBrush="#f4f4f4" IsDocumentEnabled="True"/>-->
+                                                            <Utility:TinyHtml Margin="70,0,0,0" Html="{Binding content}"/>
+                                                        </Border>
+                                                    </Border>
+                                                </Expander.Content>
+                                            </Expander>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                                <Border Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3"  Height="30" Background="White" Visibility="{Binding emptyVisible}">
+                                    <TextBlock Text="{x:Static localization:Resource.Common_Alert_10}"  Style="{StaticResource ResourceKey=Content_C}"   />
+                                </Border>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </dxlc:LayoutGroup>
+
+                <dxlc:LayoutGroup Height="25" Width="900" VerticalAlignment="Top" Margin="0,30,0,10" HorizontalAlignment="Center">
+                    <View:Paging BaseUrl="Notice" _firstNum="1" LastNum="{Binding pageSize}">
+                        <dxmvvm:Interaction.Behaviors>
+                            <dxmvvm:EventToCommand EventName="PageChanged" Command="{Binding CmdPageCallCommand}" PassEventArgsToCommand="True"/>
+                        </dxmvvm:Interaction.Behaviors>
+                    </View:Paging>
+                </dxlc:LayoutGroup>
+            </dxlc:LayoutControl>
+        </ScrollViewer>
+    </dx:LoadingDecorator>
+</UserControl>

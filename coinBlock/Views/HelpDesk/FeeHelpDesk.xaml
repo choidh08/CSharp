@@ -1,0 +1,385 @@
+﻿<UserControl x:Class="coinBlock.Views.HelpDesk.FeeHelpDesk"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" 
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+             xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
+             xmlns:localization="clr-namespace:coinBlock.Localization"
+             xmlns:ViewModels="clr-namespace:coinBlock.ViewModels.HelpDesk"
+             xmlns:wb="clr-namespace:coinBlock.ViewModels"
+             mc:Ignorable="d"
+             DataContext="{dxmvvm:ViewModelSource Type=ViewModels:FeeHelpDeskViewModel}"
+             d:DesignHeight="3200" d:DesignWidth="1010">
+    <dxmvvm:Interaction.Behaviors>
+        <dxmvvm:EventToCommand EventName="Loaded" Command="{Binding LoadedCommand}"/>
+        <dxmvvm:EventToCommand EventName="Unloaded" Command="{Binding UnLoadedCommand}"/>
+    </dxmvvm:Interaction.Behaviors>
+    <ScrollViewer>
+        <dxlc:LayoutControl Orientation="Vertical" ScrollViewer.VerticalScrollBarVisibility="Visible" StretchContentVertically="False"   Margin="0" ScrollBars="None">
+            <TextBlock Text="{x:Static localization:Resource.Fee_20}" FontSize="13" Margin="-5,0,0,10" Foreground="#333"/>
+            <Border BorderBrush="#d8d8d8" BorderThickness="0.5" VerticalAlignment="Top" Margin="-9">
+                <StackPanel Orientation="Vertical">
+                    <Grid Height="{Binding totalHeight}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.9*"/>
+                            <ColumnDefinition Width="0.4*"/>
+                            <ColumnDefinition Width="0.4*"/>
+                            <ColumnDefinition Width="0.4*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="2*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="{Binding totalSubHeight}"/>
+                            <RowDefinition Height="30"/>                   
+                        </Grid.RowDefinitions>
+
+                        <!-- row 0 -->
+                        <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4" Style="{StaticResource Border_Line_2_BR}">
+                            <TextBlock Text="{x:Static localization:Resource.Fee_1}" Style="{StaticResource Content_C}"/>
+                        </Border>
+                        <Border Grid.Column="4" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}" Background="#43b4bb">
+                            <TextBlock Text="Lv.1" Style="{StaticResource Content_C}" Foreground="#fff"/>
+                        </Border>
+                        <Border Grid.Column="5" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}" Background="#4d6dca">
+                            <TextBlock Text="Lv.2" Style="{StaticResource Content_C}" Foreground="#fff"/>
+                        </Border>
+                        <Border Grid.Column="6" Grid.Row="0" Style="{StaticResource Border_Line_2_B}" Background="#df50cc">
+                            <TextBlock Text="Lv.3" Style="{StaticResource Content_C}" Foreground="#fff"/>
+                        </Border>
+
+                        <!-- row 1 -->
+                        <Border Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Style="{StaticResource Border_Line_1_BR}">
+                            <TextBlock Text="{x:Static localization:Resource.Fee_2}" Style="{StaticResource Content_C}"/>
+                        </Border>
+                        <Border Grid.Column="4" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}">
+                            <TextBlock Text="{x:Static localization:Resource.Fee_3}" Style="{StaticResource Content_C}"/>
+                        </Border>
+                        <Border Grid.Column="5" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}">
+                            <TextBlock Text="{x:Static localization:Resource.Fee_4}" Style="{StaticResource Content_C}"/>
+                        </Border>
+                        <Border Grid.Column="6" Grid.Row="1" Style="{StaticResource Border_Line_1_B}">
+                            <TextBlock Text="{x:Static localization:Resource.Fee_5}" Style="{StaticResource Content_C}"/>
+                        </Border>
+
+                        <!-- row 2-3 -->
+                        <Border Grid.Column="0" Grid.Row="2" Grid.RowSpan="2" Style="{StaticResource Border_Line_1_BR}">
+                            <TextBlock Text="{x:Static localization:Resource.Fee_6}" Style="{StaticResource Content_C}"/>
+                        </Border>
+                        <Border Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" Style="{StaticResource Border_Line_1_BR}">
+                            <TextBlock Text="{x:Static localization:Resource.Fee_7}" Style="{StaticResource Content_C}"/>
+                        </Border>
+                        <Border Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3" Style="{StaticResource Border_Line_1_BR}">
+                            <TextBlock Text="{x:Static localization:Resource.Fee_8}" Style="{StaticResource Content_C}"/>
+                        </Border>
+                        <Border Grid.Column="4" Grid.Row="2" Style="{StaticResource Border_Line_1_BR}">
+                            <TextBlock Text="{x:Static localization:Resource.Fee_9}" Style="{StaticResource Content_C}"/>
+                        </Border>
+                        <Border Grid.Column="5" Grid.Row="2" Style="{StaticResource Border_Line_1_BR}">
+                            <TextBlock Text="{x:Static localization:Resource.Fee_9}" Style="{StaticResource Content_C}"/>
+                        </Border>
+                        <Border Grid.Column="6" Grid.Row="2" Style="{StaticResource Border_Line_1_B}">
+                            <TextBlock Text="{x:Static localization:Resource.Fee_9}" Style="{StaticResource Content_C}"/>
+                        </Border>
+                        <Border Grid.Column="4" Grid.Row="3" Style="{StaticResource Border_Line_1_BR}">
+                            <TextBlock Text="{x:Static localization:Resource.Fee_9}" Style="{StaticResource Content_C}"/>
+                        </Border>
+                        <Border Grid.Column="5" Grid.Row="3" Style="{StaticResource Border_Line_1_BR}">
+                            <TextBlock Text="{x:Static localization:Resource.Fee_9}" Style="{StaticResource Content_C}"/>
+                        </Border>
+                        <Border Grid.Column="6" Grid.Row="3" Style="{StaticResource Border_Line_1_B}">
+                            <TextBlock Text="{x:Static localization:Resource.Fee_9}" Style="{StaticResource Content_C}"/>
+                        </Border>
+
+                        
+                        <Border Grid.Column="0" Grid.Row="4" Style="{StaticResource Border_Line_1_BR}">
+                            <TextBlock Text="{x:Static localization:Resource.Fee_10}" Style="{StaticResource Content_C}"/>
+                        </Border>
+                       
+                        <ItemsControl Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="6" ItemsSource="{Binding FeeList}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="0.4*"/>
+                                            <ColumnDefinition Width="0.4*"/>
+                                            <ColumnDefinition Width="1*"/>
+                                            <ColumnDefinition Width="1*"/>
+                                            <ColumnDefinition Width="1*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition />
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <Border Grid.Column="0" Grid.Row="0"  Grid.RowSpan="2" Style="{StaticResource Border_Line_1_BR}">
+                                            <TextBlock Text="{Binding cnkndnm}" Style="{StaticResource Content_C}"/>
+                                        </Border>                                      
+                                        <Border Grid.Column="1" Grid.Row="0" Height="30" Style="{StaticResource Border_Line_1_BR}">
+                                            <TextBlock Text="{x:Static localization:Resource.Fee_11}" Style="{StaticResource Content_C}"/>
+                                        </Border>
+                                        <Border Grid.Column="1" Grid.Row="1" Height="30" Style="{StaticResource Border_Line_1_BR}">
+                                            <TextBlock Text="{x:Static localization:Resource.Fee_12}" Style="{StaticResource Content_C}"/>
+                                        </Border>
+                                        <Border Grid.Column="2" Grid.Row="0" Height="30" Style="{StaticResource Border_Line_1_BR}">
+                                            <TextBlock Text="0" Style="{StaticResource Content_C}"/>
+                                        </Border>
+                                        <Border Grid.Column="2" Grid.Row="1" Height="30" Style="{StaticResource Border_Line_1_BR}">
+                                            <TextBlock Text="0" Style="{StaticResource Content_C}"/>
+                                        </Border>
+                                        <Border Grid.Column="3" Grid.Row="0" Height="30" Style="{StaticResource Border_Line_1_BR}">
+                                            <TextBlock Text="{Binding maxAmt2, StringFormat='###,###,###,##0.########'}" Style="{StaticResource Content_C}"/>
+                                        </Border>
+                                        <Border Grid.Column="3" Grid.Row="1" Height="30" Style="{StaticResource Border_Line_1_BR}">
+                                            <TextBlock Text="{Binding maxAmtDay2, StringFormat='###,###,###,##0.########'}" Style="{StaticResource Content_C}"/>
+                                        </Border>
+                                        <Border Grid.Column="4" Grid.Row="0" Height="30" Style="{StaticResource Border_Line_1_BR}">
+                                            <TextBlock Text="{Binding maxAmt3, StringFormat='###,###,###,##0.########'}" Style="{StaticResource Content_C}"/>
+                                        </Border>
+                                        <Border Grid.Column="4" Grid.Row="1" Height="30" Style="{StaticResource Border_Line_1_BR}">
+                                            <TextBlock Text="{Binding maxAmtDay3, StringFormat='###,###,###,##0.########'}" Style="{StaticResource Content_C}"/>
+                                        </Border>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+
+                        <Border Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" Background="Transparent" Style="{StaticResource Border_Line_1_BR}">
+                            <Grid Background="Transparent">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="60"/>
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <Border Grid.Row="0"  Grid.ColumnSpan="2" Background="White" Style="{StaticResource Border_Line_1_B}">
+                                    <TextBlock Text="{Binding SC, StringFormat={x:Static localization:Resource.Common_Alert_4}}" Style="{StaticResource Content_C}"/>
+                                </Border>
+                                <Border Grid.Column="0" Grid.Row="1" Style="{StaticResource Border_Line_1_R}">
+                                    <TextBlock Text="{x:Static localization:Resource.Fee_8}" Style="{StaticResource Content_C}"/>
+                                </Border>
+                                <Border Grid.Column="1" Grid.Row="1" Background="Transparent"/>
+
+                            </Grid>
+                        </Border>
+
+
+
+                        <Border Grid.Column="0" Grid.Row="5" Style="{StaticResource Border_Line_1_BR}">
+                            <TextBlock Text="{x:Static localization:Resource.Fee_19}" Style="{StaticResource Content_C}"/>
+                        </Border>
+                        
+                        <ItemsControl Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="6" ItemsSource="{Binding FeeList}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1.2*"/>
+                                            <ColumnDefinition Width="3*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Border Grid.Column="0" Height="30" Style="{StaticResource Border_Line_1_BR}">
+                                            <TextBlock Text="{Binding cnkndnm}" Style="{StaticResource Content_C}"/>
+                                        </Border>
+                                        <Border Grid.Column="1" Height="30" Style="{StaticResource Border_Line_1_BR}">
+                                            <TextBlock Text="{Binding minAmt2, StringFormat='###,###,###,##0.########'}" Style="{StaticResource Content_C}"/>
+                                        </Border>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                        
+                        <Border Grid.Column="0" Grid.Row="6" Style="{StaticResource Border_Line_1_BR}">
+                            <TextBlock Text="{x:Static localization:Resource.Fee_15}" Style="{StaticResource Content_C}"/>
+                        </Border>
+                        <ItemsControl Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="6" ItemsSource="{Binding FeeNotKrwList}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1.2*"/>
+                                            <ColumnDefinition Width="3*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Border Grid.Column="0" Height="30" Style="{StaticResource Border_Line_1_BR}">
+                                            <TextBlock Text="{Binding cnkndnm}" Style="{StaticResource Content_C}"/>
+                                        </Border>
+                                        <Border Grid.Column="1" Height="30" Style="{StaticResource Border_Line_1_BR}">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="{Binding tradeMinAmt, StringFormat='###,###,###,##0.########'}" Style="{StaticResource Content_C}"/>
+                                                <TextBlock Text="{Binding cnkndnm}" Style="{StaticResource Content_L}"/>
+                                                <TextBlock Text="&amp;" Style="{StaticResource Content_C}" Margin="5,0,5,0"/>
+                                                <TextBlock Text="{Binding tradeMinPrc, StringFormat='###,###,###,##0.########'}" Style="{StaticResource Content_C}"/>
+                                                <TextBlock Text="{Binding DataContext.SC, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" Style="{StaticResource Content_L}"/>
+                                            </StackPanel>
+                                        </Border>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+
+                        <Border Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="4" Style="{StaticResource Border_Line_1_R}">
+                            <TextBlock Text="{x:Static localization:Resource.Fee_16}" Style="{StaticResource Content_C}"/>
+                        </Border>
+                        <Border Grid.Column="4" Grid.Row="7" Style="{StaticResource Border_Line_1_R}">
+                            <TextBlock Text="{x:Static localization:Resource.Fee_17}" Style="{StaticResource Content_C}"/>
+                        </Border>
+                        <StackPanel Grid.Column="5" Grid.Row="7" VerticalAlignment="Center">
+                            <Border Style="{StaticResource Border_Line_1_R}" Height="29" Visibility="{Binding Cert2Visible}">
+                                <Button Width="120" Height="25" Cursor="Hand" Command="{Binding CmdGoCertifyPageCommand}" >
+                                    <Button.Style>
+                                        <Style TargetType="Button">
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate>
+                                                        <Border  Background="#4d6dca">
+                                                            <TextBlock Text="{x:Static localization:Resource.Fee_18}" Foreground="White" Style="{StaticResource ResourceKey=Content_C}"/>
+                                                        </Border>
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </Button.Style>
+                                </Button>
+                            </Border>
+                            <Border Style="{StaticResource Border_Line_1_R}" Height="29" Visibility="{Binding Cert2CompVisible}">
+                                <TextBlock Text="{x:Static localization:Resource.Fee_17}" Style="{StaticResource Content_C}"/>
+                            </Border>
+                        </StackPanel>
+                        <StackPanel Grid.Column="6" Grid.Row="7" VerticalAlignment="Center">
+                            <Border Style="{StaticResource Border_Line_1_R}" Height="29" Visibility="{Binding Cert3Visible}">
+                                <Button Width="120" Height="25" Cursor="Hand" Command="{Binding CmdGoCertifyPageCommand}">
+                                    <Button.Style>
+                                        <Style TargetType="Button">
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate>
+                                                        <Border  Background="#df50cc">
+                                                            <TextBlock Text="{x:Static localization:Resource.Fee_18}" Foreground="White" Style="{StaticResource ResourceKey=Content_C}"/>
+                                                        </Border>
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </Button.Style>
+                                </Button>
+                            </Border>
+                            <Border Visibility="{Binding Cert3CompVisible}">
+                                <TextBlock Text="{x:Static localization:Resource.Fee_17}" Style="{StaticResource Content_C}"/>
+                            </Border>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+            </Border>
+
+            <TextBlock Text="{x:Static localization:Resource.Fee_21}" FontSize="13" Margin="-5,25,0,5" Foreground="#333"/>
+            <Border BorderBrush="#d8d8d8" BorderThickness="0.5"  VerticalAlignment="Top" Margin="-9,0,-9,0">
+                <StackPanel>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="300"/>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="70"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Border Grid.Column="0" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                            <TextBlock Text="{x:Static localization:Resource.Fee_22}" Style="{StaticResource Content_C}" />
+                        </Border>
+                        <Border Grid.Column="1" Grid.Row="0" Style="{StaticResource Border_Line_2_B}">
+                            <TextBlock Text="{x:Static localization:Resource.Fee_23}" Style="{StaticResource Content_C}" />
+                        </Border>
+                        <Border Grid.Column="0" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}">
+                            <TextBlock Text="{x:Static localization:Resource.Fee_24}" Style="{StaticResource Content_C}" />
+                        </Border>
+                        <Border Grid.Column="1" Grid.Row="1" Style="{StaticResource Border_Line_1_B}">
+                            <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                    <TextBlock Text="ㆍ" Style="{StaticResource Content_L}" Margin="5,0,0,0"/>
+                                    <TextBlock Text="{Binding SC}" Style="{StaticResource Content_L}" Margin="0"/>
+                                    <TextBlock Text="Market : " Style="{StaticResource Content_L}"/>
+                                    <TextBlock Text="{Binding mkKRW, StringFormat='{}{0:n2}%'}" Style="{StaticResource Content_C}" />
+                                    <TextBlock Text="{x:Static localization:Resource.Fee_25}" Style="{StaticResource Content_L}"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                    <TextBlock Text="ㆍETH Market : " Style="{StaticResource Content_L}" Margin="5,0,0,0"/>
+                                    <TextBlock Text="{Binding mkETH, StringFormat='{}{0:n2}%'}" Style="{StaticResource Content_C}" />
+                                    <TextBlock Text="{x:Static localization:Resource.Fee_25}" Style="{StaticResource Content_L}"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                    <TextBlock Text="ㆍUSDT Market : " Style="{StaticResource Content_L}" Margin="5,0,0,0"/>
+                                    <TextBlock Text="{Binding mkUSDT, StringFormat='{}{0:n2}%'}" Style="{StaticResource Content_C}" />
+                                    <TextBlock Text="{x:Static localization:Resource.Fee_25}" Style="{StaticResource Content_L}"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                    <TextBlock Text="ㆍBTC Market : " Style="{StaticResource Content_L}" Margin="5,0,0,0"/>
+                                    <TextBlock Text="{Binding mkBTC, StringFormat='{}{0:n2}%'}" Style="{StaticResource Content_C}" />
+                                    <TextBlock Text="{x:Static localization:Resource.Fee_25}" Style="{StaticResource Content_L}"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                        <Border Grid.Column="0" Grid.Row="2"  Style="{StaticResource Border_Line_1_BR}">
+                            <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                                <TextBlock Text="{Binding SC, StringFormat={x:Static localization:Resource.Fee_26}}" Style="{StaticResource Content_C}" Margin="0,0,0,5" />
+                                <TextBlock Text="{x:Static localization:Resource.Fee_29}" Style="{StaticResource Content_C}" />
+                            </StackPanel>
+                        </Border>
+                        <Border Grid.Column="1" Grid.Row="2" Style="{StaticResource Border_Line_1_B}">
+                            <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left"  Margin="0,0,0,5" >
+                                    <TextBlock Text="ㆍ" Style="{StaticResource Content_L}" Margin="5,0,0,0"/>
+                                    <TextBlock Text="{x:Static localization:Resource.Fee_27}" Style="{StaticResource Content_C}" />
+                                    <TextBlock Text=":" Style="{StaticResource Content_L}" Margin="5,0,5,0"/>
+                                    <TextBlock Text="{Binding krwFee, StringFormat={}{0:n0}}" Style="{StaticResource Content_C}" />
+                                    <TextBlock Text="{Binding SC, StringFormat={x:Static localization:Resource.Common_Alert_4}}" Style="{StaticResource Content_L}"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                    <TextBlock Text="ㆍ" Style="{StaticResource Content_L}" Margin="5,0,0,0"/>
+                                    <TextBlock Text="{x:Static localization:Resource.Fee_27}" Style="{StaticResource Content_C}" />
+                                    <TextBlock Text=":" Style="{StaticResource Content_L}" Margin="5,0,5,0"/>
+                                    <TextBlock Text="{Binding atmFee, StringFormat={}{0:n0}}" Style="{StaticResource Content_C}" />
+                                    <TextBlock Text="{Binding SC, StringFormat={x:Static localization:Resource.Common_Alert_4}}" Style="{StaticResource Content_L}"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                        <Border Grid.Column="0" Grid.Row="3"  Style="{StaticResource Border_Line_1_R}">
+                            <TextBlock Text="{x:Static localization:Resource.Fee_28}" Style="{StaticResource Content_C}" />
+                        </Border>
+                        <Border Grid.Column="1" Grid.Row="3" Style="{StaticResource Border_Line_1}">
+                            <ItemsControl Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="6" ItemsSource="{Binding FeeNotKrwList}">
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <StackPanel />
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,2,0,2">
+                                            <TextBlock Text="ㆍ" Style="{StaticResource Content_L}" Margin="5,0,0,0"/>
+                                            <TextBlock Text="{Binding cnkndnm}" Style="{StaticResource Content_L}"/>
+                                            <TextBlock Text=":" Style="{StaticResource Content_L}" Margin="5,0,5,0"/>
+                                            <TextBlock Text="{Binding cnSndFee}" Style="{StaticResource Content_C}" />
+                                            <TextBlock Text="{Binding cnkndnm}" Style="{StaticResource Content_L}"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </Border>
+                    </Grid>
+                </StackPanel>
+            </Border>
+        </dxlc:LayoutControl>
+    </ScrollViewer>
+</UserControl>

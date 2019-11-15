@@ -1,0 +1,586 @@
+﻿<UserControl x:Class="coinBlock.Views.MyPage.AssetsMyPage"             
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" 
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
+             xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+             xmlns:localization="clr-namespace:coinBlock.Localization"
+             xmlns:ViewModels="clr-namespace:coinBlock.ViewModels.MyPage"
+             xmlns:Converter="clr-namespace:coinBlock.ViewModels"
+             mc:Ignorable="d"
+             DataContext="{dxmvvm:ViewModelSource Type=ViewModels:AssetsMyPageViewModel}"
+             d:DesignHeight="2000" d:DesignWidth="1010">
+    <UserControl.Resources>
+        <Converter:NumberConverter x:Key="NumberConverter"/>
+    </UserControl.Resources>
+    <dxmvvm:Interaction.Behaviors>        
+        <dxmvvm:EventToCommand EventName="Loaded" Command="{Binding LoadedCommand}"/>
+        <dxmvvm:EventToCommand EventName="Unloaded" Command="{Binding UnLoadedCommand}"/>
+    </dxmvvm:Interaction.Behaviors>
+    <dx:LoadingDecorator IsSplashScreenShown="{Binding IsBusy}" OwnerLock="InputOnly" dx:ThemeManager.ThemeName="MetropolisLight">
+        <dx:LoadingDecorator.SplashScreenTemplate>
+            <DataTemplate>
+                <dx:WaitIndicator DeferedVisibility="True" Content="Requesting data transfer.."/>
+            </DataTemplate>
+        </dx:LoadingDecorator.SplashScreenTemplate>
+        <ScrollViewer>
+            <dxlc:LayoutControl Orientation="Vertical" ScrollViewer.VerticalScrollBarVisibility="Visible" StretchContentVertically="False" Margin="-9" ScrollBars="None">
+                <!--전자지갑주소-->
+                <dxlc:LayoutGroup Height="{Binding CoinAddressHeight}" VerticalAlignment="Top" Margin="0,10,0,10">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="13"/>
+                            <RowDefinition Height="22"/>
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Border Grid.Column="0" Grid.Row="0" Height="13" >
+                            <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_1}" Style="{StaticResource ResourceKey=Header_3_NM}" />
+                        </Border>
+                        <Border Grid.Column="0" Grid.Row="1">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+                                <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_1_1}" Style="{StaticResource ResourceKey=Content_L_NM}" Foreground ="#666" Margin="0,0,5,0"/>
+                                <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_1_2}" Style="{StaticResource ResourceKey=Content_L_NM}" Foreground="#f01c1c"/>
+                                <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_1_3}" Style="{StaticResource ResourceKey=Content_L_NM}" Foreground ="#666"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Grid.Column="0" Grid.Row="2" BorderBrush="#d8d8d8" BorderThickness="0.5"  Margin="0,10,0,0">
+                            <Grid>
+                                <Border>
+                                    <StackPanel Orientation="Vertical">
+                                        <ItemsControl ItemsSource="{Binding CoinAddressValue}" HorizontalContentAlignment="Stretch" Margin="0,0,0.4,0">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Grid Height="30">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="140"/>
+                                                            <ColumnDefinition />
+                                                        </Grid.ColumnDefinitions>
+                                                        <!-- row -->
+                                                        <Border Grid.Column="0" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                                                            <TextBlock Text="{Binding curcyNm}" Style="{StaticResource ResourceKey=Content_C}"/>
+                                                        </Border>
+                                                        <Border Grid.Column="1" Grid.Row="0" Style="{StaticResource Border_Line_1_B}">
+                                                            <StackPanel Orientation="Horizontal">
+                                                                <TextBlock Text="{Binding accNo}" Style="{StaticResource ResourceKey=Content_L}" Margin="5,0,10,0"/>                                                                                                                                
+                                                            </StackPanel>
+                                                        </Border>
+                                                    </Grid>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+                                    </StackPanel>
+                                </Border>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </dxlc:LayoutGroup>            
+
+                <!-- 사용자 자산 -->
+                <dxlc:LayoutGroup Height="{Binding AssetHeight}" VerticalAlignment="Top" Margin="0,10,0,10">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="13"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Border Grid.Column="0" Grid.Row="0" Height="13">
+                            <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_7}" Style="{StaticResource ResourceKey=Header_3_NM}"/>
+                        </Border>
+                        <Border Grid.Column="0" Grid.Row="1" BorderBrush="#d8d8d8" BorderThickness="0.5" Margin="0,10,0,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="90"/>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <!--<ColumnDefinition />-->
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="30"/>
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <Border Grid.Column="0" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_3_1}" Style="{StaticResource ResourceKey=Header_1}" />
+                                </Border>
+                                <Border Grid.Column="1" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_3_2}" Style="{StaticResource ResourceKey=Header_1}" />
+                                </Border>
+                                <Border Grid.Column="2" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_3_3}" Style="{StaticResource ResourceKey=Header_1}" />
+                                        <TextBlock Text="(POINT)" Style="{StaticResource ResourceKey=Header_1}" />
+                                    </StackPanel>
+                                </Border>
+                                <Border Grid.Column="3" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_3_4}" Style="{StaticResource ResourceKey=Header_1}" />
+                                </Border>
+                                <!--<Border Grid.Column="4" Grid.Row="0" Style="{StaticResource Border_Line_2_B}">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_3_6}" Style="{StaticResource ResourceKey=Header_1}" />
+                                </Border>-->
+                                <Border Grid.Column="4" Grid.Row="0" Style="{StaticResource Border_Line_2_B}">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_3_7}" Style="{StaticResource ResourceKey=Header_1}" />
+                                </Border>
+                                <Border Grid.Column="5" Grid.Row="0" Style="{StaticResource Border_Line_2_B}">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_3_5}" Style="{StaticResource ResourceKey=Header_1}" />
+                                </Border>
+
+                                <Border Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="7">
+                                    <StackPanel Orientation="Vertical">
+                                        <ItemsControl ItemsSource="{Binding AssetValue}" HorizontalContentAlignment="Stretch" Margin="0,0,0.4,0">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Grid Height="35">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="90"/>
+                                                            <ColumnDefinition />
+                                                            <ColumnDefinition />
+                                                            <ColumnDefinition />
+                                                            <ColumnDefinition />
+                                                            <ColumnDefinition />
+                                                            <!--<ColumnDefinition />-->
+                                                        </Grid.ColumnDefinitions>
+                                                        <!-- row -->
+                                                        <Border Grid.Column="0" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}">
+                                                            <TextBlock Text="{Binding curcyNm}" Style="{StaticResource ResourceKey=Content_C}"/>
+                                                        </Border>
+                                                        <Border Grid.Column="1" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}">
+                                                            <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                                                                <TextBlock Text="{Binding posCn}" Style="{StaticResource ResourceKey=Content_R}"/>
+                                                                <TextBlock Text="{Binding posExchange}" Visibility="{Binding ExchangeVisible}" Style="{StaticResource ResourceKey=Content_R}"/>
+                                                            </StackPanel>
+                                                        </Border>
+                                                        <Border Grid.Column="2" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}">
+                                                            <TextBlock Text="{Binding pntPrc, StringFormat={}{0:n0}}" Style="{StaticResource ResourceKey=Content_R}"/>
+                                                        </Border>
+                                                        <Border Grid.Column="3" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}">
+                                                            <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                                                                <TextBlock Text="{Binding impCn}" Style="{StaticResource ResourceKey=Content_R}"/>
+                                                                <TextBlock Text="{Binding impExchange}" Visibility="{Binding ExchangeVisible}" Style="{StaticResource ResourceKey=Content_R}"/>
+                                                            </StackPanel>
+                                                        </Border>
+                                                        <!--<Border Grid.Column="4" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}">
+                                                            <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                                                                <TextBlock Text="{Binding trustCn}" Style="{StaticResource ResourceKey=Content_R}"/>
+                                                                <TextBlock Text="{Binding trustExchange}" Visibility="{Binding ExchangeVisible}"  Style="{StaticResource ResourceKey=Content_R}"/>
+                                                            </StackPanel>
+                                                        </Border>-->
+                                                        <Border Grid.Column="4" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}">
+                                                            <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                                                                <TextBlock Text="{Binding trLimtCn}" Foreground="{Binding trLimtColor}" Style="{StaticResource ResourceKey=Content_R}"/>
+                                                                <!--<TextBlock Text="{Binding trustExchange}" Visibility="{Binding ExchangeVisible}"  Style="{StaticResource ResourceKey=Content_R}"/>-->
+                                                            </StackPanel>
+                                                        </Border>
+                                                        <Border Grid.Column="5" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}">
+                                                            <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                                                                <TextBlock Text="{Binding totCn}" Style="{StaticResource ResourceKey=Content_R}"/>
+                                                                <TextBlock Text="{Binding totExchange}" Visibility="{Binding ExchangeVisible}" Style="{StaticResource ResourceKey=Content_R}"/>
+                                                            </StackPanel>
+                                                        </Border>                                                      
+                                                    </Grid>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+                                    </StackPanel>
+                                </Border>    
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </dxlc:LayoutGroup>
+
+                <!-- 시세차익 -->
+                <dxlc:LayoutGroup Height="{Binding PlusHeight}" VerticalAlignment="Top" Margin="0,10,0,10">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="13"/>
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Border Grid.Column="0" Grid.Row="0" Height="13">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_4}" Style="{StaticResource ResourceKey=Header_3_NM}"/>
+                                <TextBlock Text="{Binding SC, StringFormat={x:Static localization:Resource.AssetsMyPage_Common_1}}" Style="{StaticResource ResourceKey=Header_3_NM}" Margin="5,0,0,0"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Grid.Column="0" Grid.Row="1" BorderBrush="#d8d8d8" BorderThickness="0.5" Margin="0,10,0,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="90"/>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="30"/>
+                                    <RowDefinition />
+                                    <RowDefinition Height="30"/>
+                                </Grid.RowDefinitions>
+                                <!-- Row 0 -->
+                                <Border Grid.Column="0" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_4_1}" Style="{StaticResource Header_1}" />
+                                </Border>
+                                <Border Grid.Column="1" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_4_2}" Style="{StaticResource Header_1}" />
+                                </Border>
+                                <Border Grid.Column="2" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_4_3}" Style="{StaticResource Header_1}" />
+                                </Border>
+                                <Border Grid.Column="3" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_4_4}" Style="{StaticResource Header_1}" />
+                                </Border>
+                                <Border Grid.Column="4" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_4_5}" Style="{StaticResource Header_1}" />
+                                </Border>
+                                <Border Grid.Column="5" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_4_6}" Style="{StaticResource Header_1}" />
+                                </Border>
+                                <Border Grid.Column="6" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_4_7}" Style="{StaticResource Header_1}" />
+                                </Border>
+                                <Border Grid.Column="7" Grid.Row="0" Style="{StaticResource Border_Line_2_B}">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_4_8}" Style="{StaticResource Header_1}" />
+                                </Border>
+                                <!-- Row 1 -->
+                                <Border Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="8">
+                                    <StackPanel Orientation="Vertical">
+                                        <ItemsControl ItemsSource="{Binding PlusValue}" HorizontalContentAlignment="Stretch" Margin="0,0,0.4,0">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Grid Height="30">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="90"/>
+                                                            <ColumnDefinition />
+                                                            <ColumnDefinition />
+                                                            <ColumnDefinition />
+                                                            <ColumnDefinition />
+                                                            <ColumnDefinition />
+                                                            <ColumnDefinition />
+                                                            <ColumnDefinition />
+                                                        </Grid.ColumnDefinitions>
+                                                        <!-- row -->
+                                                        <Border Grid.Column="0" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}">
+                                                            <TextBlock Text="{Binding cnkndnm}" Style="{StaticResource ResourceKey=Content_C}"/>
+                                                        </Border>
+                                                        <Border Grid.Column="1" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}">
+                                                            <TextBlock Text="{Binding posamt, StringFormat={}{0:n8}}" Style="{StaticResource ResourceKey=Content_R}"/>
+                                                        </Border>
+                                                        <Border Grid.Column="2" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}">
+                                                            <TextBlock  Style="{StaticResource ResourceKey=Content_R}">
+                                                                <TextBlock.Text>
+                                                                    <MultiBinding Converter="{StaticResource NumberConverter}">
+                                                                        <Binding Path="avgcnprc" />
+                                                                        <Binding Path="CommonFloat" />
+                                                                    </MultiBinding>
+                                                                </TextBlock.Text>
+                                                            </TextBlock>
+                                                        </Border>
+                                                        <Border Grid.Column="3" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}">
+                                                            <TextBlock  Style="{StaticResource ResourceKey=Content_R}">
+                                                                <TextBlock.Text>
+                                                                    <MultiBinding Converter="{StaticResource NumberConverter}">
+                                                                        <Binding Path="cshprc" />
+                                                                        <Binding Path="CommonFloat" />
+                                                                    </MultiBinding>
+                                                                </TextBlock.Text>
+                                                            </TextBlock>
+                                                        </Border>
+                                                        <Border Grid.Column="4" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}">
+                                                            <TextBlock  Style="{StaticResource ResourceKey=Content_R}">
+                                                                <TextBlock.Text>
+                                                                    <MultiBinding Converter="{StaticResource NumberConverter}">
+                                                                        <Binding Path="cnprc" />
+                                                                        <Binding Path="CommonFloat" />
+                                                                    </MultiBinding>
+                                                                </TextBlock.Text>
+                                                            </TextBlock>
+                                                        </Border>
+                                                        <Border Grid.Column="5" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}">
+                                                            <TextBlock  Style="{StaticResource ResourceKey=Content_R}">
+                                                                <TextBlock.Text>
+                                                                    <MultiBinding Converter="{StaticResource NumberConverter}">
+                                                                        <Binding Path="evalprc" />
+                                                                        <Binding Path="CommonFloat" />
+                                                                    </MultiBinding>
+                                                                </TextBlock.Text>
+                                                            </TextBlock>
+                                                        </Border>
+                                                        <Border Grid.Column="6" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}">
+                                                            <TextBlock  Style="{StaticResource ResourceKey=Content_R}">
+                                                                <TextBlock.Text>
+                                                                    <MultiBinding Converter="{StaticResource NumberConverter}">
+                                                                        <Binding Path="evalpnlprc" />
+                                                                        <Binding Path="CommonFloat" />
+                                                                    </MultiBinding>
+                                                                </TextBlock.Text>
+                                                            </TextBlock>
+                                                        </Border>
+                                                        <Border Grid.Column="7" Grid.Row="1" Style="{StaticResource Border_Line_1_B}">
+                                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                                                <TextBlock Text="{Binding marginRate, StringFormat={}{0:n3}}" Style="{StaticResource ResourceKey=Content_R}"/>
+                                                                <TextBlock Text="%" Style="{StaticResource Content_R}"/>
+                                                            </StackPanel>
+                                                        </Border>
+                                                    </Grid>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+                                    </StackPanel>
+                                </Border>
+                                <!-- Row 5 -->
+                                <Border Grid.Column="0" Grid.Row="2" Background="#dfe7f3" Style="{StaticResource Border_Line_1_R}">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_4_9}" Style="{StaticResource ResourceKey=Content_C}" />
+                                </Border>
+                                <Border Grid.Column="1" Grid.Row="5" Background="#dfe7f3" Style="{StaticResource Border_Line_1_R}"/>
+                                <Border Grid.Column="2" Grid.Row="5" Background="#dfe7f3" Style="{StaticResource Border_Line_1_R}"/>
+                                <Border Grid.Column="3" Grid.Row="5" Background="#dfe7f3" Style="{StaticResource Border_Line_1_R}">
+                                    <TextBlock Text="{Binding TotCshprc, StringFormat={}{0:n0}}" Style="{StaticResource ResourceKey=Content_R}"/>
+                                </Border>
+                                <Border Grid.Column="4" Grid.Row="5" Background="#dfe7f3" Style="{StaticResource Border_Line_1_R}"/>
+                                <Border Grid.Column="5" Grid.Row="5" Background="#dfe7f3" Style="{StaticResource Border_Line_1_R}">
+                                    <TextBlock Text="{Binding TotEvalprc, StringFormat={}{0:n0}}" Style="{StaticResource ResourceKey=Content_R}"/>
+                                </Border>
+                                <Border Grid.Column="6" Grid.Row="5" Background="#dfe7f3" Style="{StaticResource Border_Line_1_R}">
+                                    <TextBlock Text="{Binding TotEvalpnlprc, StringFormat={}{0:n0}}" Style="{StaticResource ResourceKey=Content_R}"/>
+                                </Border>
+                                <Border Grid.Column="7" Grid.Row="5" Background="#dfe7f3"/>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </dxlc:LayoutGroup>
+
+                <!--기간별 시세차익-->
+                <dxlc:LayoutGroup Height="{Binding TimeHeight}" VerticalAlignment="Top" Margin="0,10,0,10">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="23"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="5"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Border Grid.Column="0" Grid.Row="0" Height="23">
+                            <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_5}" Style="{StaticResource ResourceKey=Header_3_NM}" Margin="0,0,0,10"/>
+                        </Border>
+                        <Border Grid.Column="0" Grid.Row="1" BorderBrush="#d8d8d8" BorderThickness="0.5">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="90"/>
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Border Grid.Column="0" Style="{StaticResource Border_Line_2_R}">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_5_1}" Style="{StaticResource ResourceKey=Content_C}" />
+                                </Border>
+                                <StackPanel Grid.Column="1" Orientation="Horizontal" Margin="5,0,0,0">
+                                    <DatePicker x:Name="dpFrom" Width="150" Height="26" HorizontalAlignment="Left" VerticalAlignment="Center" SelectedDate="{Binding fromDate}"  Padding="0,3,0,0"/>
+                                    <TextBlock Text="-" Style="{StaticResource ResourceKey=Content_C}" Margin="3,0,3,0"/>
+                                    <DatePicker x:Name="dpTo" Width="150" Height="26" HorizontalAlignment="Left" VerticalAlignment="Center" SelectedDate="{Binding toDate}"  Padding="0,3,0,0"/>
+
+                                    <Button Grid.Column="2" Width="59" Height="25" Cursor="Hand" Command="{Binding GetTimePlusValueCommand}" Margin="3,0,0,0">
+                                        <Button.Style>
+                                            <Style TargetType="{x:Type Button}">
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="{x:Type Button}">
+                                                            <Grid>
+                                                                <Image Name="btnImg" Source="{Binding btn_search, TargetNullValue={x:Null}}"/>
+                                                            </Grid>
+                                                            <ControlTemplate.Triggers>
+                                                                <Trigger Property="IsMouseOver" Value="True">
+                                                                    <Setter Property="Source" TargetName="btnImg" Value="{Binding btn_search_on}"/>
+                                                                </Trigger>
+                                                            </ControlTemplate.Triggers>
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Style>
+                                        </Button.Style>
+                                    </Button>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Row="3" BorderBrush="#d8d8d8" BorderThickness="0.5">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="90"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="30"/>
+                                    <RowDefinition/>
+                                    <RowDefinition Height="30"/>
+                                </Grid.RowDefinitions>
+
+                                <!-- row 0 -->
+                                <Border Grid.Column="0" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_5_2}" Style="{StaticResource ResourceKey=Header_1}" />
+                                </Border>
+                                <Border Grid.Column="1" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}" Background="#fcf4f6">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_5_3}" Style="{StaticResource ResourceKey=Header_1}" />
+                                </Border>
+                                <Border Grid.Column="2" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}" Background="#fcf4f6">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_5_4}" Style="{StaticResource ResourceKey=Header_1}" />
+                                </Border>
+                                <Border Grid.Column="3" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}" Background="#fcf4f6">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_5_5}" Style="{StaticResource ResourceKey=Header_1}" />
+                                </Border>
+                                <Border Grid.Column="4" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}" Background="#e3f7fe">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_5_6}" Style="{StaticResource ResourceKey=Header_1}" />
+                                </Border>
+                                <Border Grid.Column="5" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}" Background="#e3f7fe">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_5_7}" Style="{StaticResource ResourceKey=Header_1}" />
+                                </Border>
+                                <Border Grid.Column="6" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}" Background="#e3f7fe">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_5_8}" Style="{StaticResource ResourceKey=Header_1}" />
+                                </Border>
+                                <Border Grid.Column="7" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}" Background="#e5e5e5">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_5_9}" Style="{StaticResource ResourceKey=Header_1}" />
+                                </Border>
+                                <Border Grid.Column="8" Grid.Row="0" Style="{StaticResource Border_Line_2_BR}" Background="#e5e5e5">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_5_10}" Style="{StaticResource ResourceKey=Header_1}" />
+                                </Border>
+                                <Border Grid.Column="9" Grid.Row="0" Style="{StaticResource Border_Line_2_B}" Background="#e5e5e5">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_5_11}" Style="{StaticResource ResourceKey=Header_1}" />
+                                </Border>
+
+                                <Border Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="10">
+                                    <StackPanel Orientation="Vertical">
+                                        <ItemsControl ItemsSource="{Binding TimePlusValue}" HorizontalContentAlignment="Stretch" Margin="0,0,0.4,0">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Grid Height="30">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="90"/>
+                                                            <ColumnDefinition/>
+                                                            <ColumnDefinition/>
+                                                            <ColumnDefinition/>
+                                                            <ColumnDefinition/>
+                                                            <ColumnDefinition/>
+                                                            <ColumnDefinition/>
+                                                            <ColumnDefinition/>
+                                                            <ColumnDefinition/>
+                                                            <ColumnDefinition/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <!-- row 1 -->
+                                                        <Border Grid.Column="0" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}">
+                                                            <TextBlock Text="{Binding cnkndnm}" Style="{StaticResource ResourceKey=Content_C}" />
+                                                        </Border>
+                                                        <Border Grid.Column="1" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}" Background="#fcf4f6">
+                                                            <TextBlock Text="{Binding buyamt, StringFormat={}{0:n8}}" Style="{StaticResource ResourceKey=Content_R}" />
+                                                        </Border>
+                                                        <Border Grid.Column="2" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}" Background="#fcf4f6">
+                                                            <TextBlock  Style="{StaticResource ResourceKey=Content_R}">
+                                                                <TextBlock.Text>
+                                                                    <MultiBinding Converter="{StaticResource NumberConverter}">
+                                                                        <Binding Path="buyavgprc" />
+                                                                        <Binding Path="CommonFloat" />
+                                                                    </MultiBinding>
+                                                                </TextBlock.Text>
+                                                            </TextBlock>                                                          
+                                                        </Border>
+                                                        <Border Grid.Column="3" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}" Background="#fcf4f6">
+                                                            <TextBlock  Style="{StaticResource ResourceKey=Content_R}">
+                                                                <TextBlock.Text>
+                                                                    <MultiBinding Converter="{StaticResource NumberConverter}">
+                                                                        <Binding Path="buyTotPrc" />
+                                                                        <Binding Path="CommonFloat" />
+                                                                    </MultiBinding>
+                                                                </TextBlock.Text>
+                                                            </TextBlock>                                                            
+                                                        </Border>
+                                                        <Border Grid.Column="4" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}" Background="#e3f7fe">                                                            
+                                                            <TextBlock Text="{Binding selAmt, StringFormat={}{0:n8}}" Style="{StaticResource ResourceKey=Content_R}" />
+                                                        </Border>
+                                                        <Border Grid.Column="5" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}" Background="#e3f7fe">
+                                                            <TextBlock  Style="{StaticResource ResourceKey=Content_R}">
+                                                                <TextBlock.Text>
+                                                                    <MultiBinding Converter="{StaticResource NumberConverter}">
+                                                                        <Binding Path="selavgprc" />
+                                                                        <Binding Path="CommonFloat" />
+                                                                    </MultiBinding>
+                                                                </TextBlock.Text>
+                                                            </TextBlock>
+                                                        </Border>
+                                                        <Border Grid.Column="6" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}" Background="#e3f7fe">
+                                                            <TextBlock  Style="{StaticResource ResourceKey=Content_R}">
+                                                                <TextBlock.Text>
+                                                                    <MultiBinding Converter="{StaticResource NumberConverter}">
+                                                                        <Binding Path="seltotprc" />
+                                                                        <Binding Path="CommonFloat" />
+                                                                    </MultiBinding>
+                                                                </TextBlock.Text>
+                                                            </TextBlock>
+                                                        </Border>
+                                                        <Border Grid.Column="7" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}" Background="#e5e5e5">
+                                                            <TextBlock  Style="{StaticResource ResourceKey=Content_R}">
+                                                                <TextBlock.Text>
+                                                                    <MultiBinding Converter="{StaticResource NumberConverter}">
+                                                                        <Binding Path="pnlprc" />
+                                                                        <Binding Path="CommonFloat" />
+                                                                    </MultiBinding>
+                                                                </TextBlock.Text>
+                                                            </TextBlock>
+                                                        </Border>
+                                                        <Border Grid.Column="8" Grid.Row="1" Style="{StaticResource Border_Line_1_BR}" Background="#e5e5e5">
+                                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                                                <TextBlock Text="{Binding marginrate, StringFormat={}{0:n3}}" Style="{StaticResource ResourceKey=Content_R}"/>
+                                                                <TextBlock Text="%" Style="{StaticResource Content_R}"/>
+                                                            </StackPanel>
+                                                        </Border>
+                                                        <Border Grid.Column="9" Grid.Row="1" Style="{StaticResource Border_Line_1_B}">
+                                                            <TextBlock  Style="{StaticResource ResourceKey=Content_R}">
+                                                                <TextBlock.Text>
+                                                                    <MultiBinding Converter="{StaticResource NumberConverter}">
+                                                                        <Binding Path="cnPrc" />
+                                                                        <Binding Path="CommonFloat" />
+                                                                    </MultiBinding>
+                                                                </TextBlock.Text>
+                                                            </TextBlock>
+                                                            <!--<TextBlock Text="{Binding cnPrc, StringFormat={}{0:n0}}" Style="{StaticResource ResourceKey=Content_R}" />-->
+                                                        </Border>
+                                                    </Grid>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+                                    </StackPanel>
+                                </Border>
+
+                                <!-- row 5 -->
+                                <Border Grid.Column="0" Grid.Row="5" Style="{StaticResource Border_Line_1_R}">
+                                    <TextBlock Text="{x:Static localization:Resource.AssetsMyPage_5_12}" Style="{StaticResource ResourceKey=Content_C}" />
+                                </Border>
+                                <Border Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="3" Style="{StaticResource Border_Line_1_R}" Background="#fcf4f6">
+                                    <TextBlock Text="{Binding TotBuyTotPrc, StringFormat={}{0:n0}}" Style="{StaticResource ResourceKey=Content_R}" />
+                                </Border>
+                                <Border Grid.Column="4" Grid.Row="5" Grid.ColumnSpan="3" Style="{StaticResource Border_Line_1_R}" Background="#e3f7fe">
+                                    <TextBlock Text="{Binding TotSeltotprc, StringFormat={}{0:n0}}" Style="{StaticResource ResourceKey=Content_R}" />
+                                </Border>
+                                <Border Grid.Column="7" Grid.Row="5"  Style="{StaticResource Border_Line_1}" Background="#e5e5e5">
+                                    <TextBlock Text="{Binding TotPnlprc, StringFormat={}{0:n0}}" Style="{StaticResource ResourceKey=Content_R}" />
+                                </Border>
+                                <Border Grid.Column="8" Grid.Row="5"  Style="{StaticResource Border_Line_1_R}" Background="#e5e5e5">
+                                </Border>
+                                <Border Grid.Column="9" Grid.Row="5" Background="#FFF"/>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </dxlc:LayoutGroup>
+                
+            </dxlc:LayoutControl>
+        </ScrollViewer>
+    </dx:LoadingDecorator>
+</UserControl>

@@ -1,0 +1,256 @@
+﻿<Window x:Class="coinBlock.Views.ExchangePopup"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" 
+             xmlns:ViewModels="clr-namespace:coinBlock.ViewModels"
+             xmlns:localization="clr-namespace:coinBlock.Localization"
+             DataContext="{dxmvvm:ViewModelSource Type=ViewModels:ExchangePopupViewModel}"
+             mc:Ignorable="d"             
+             Icon="/Images/blueshell.ico"
+             Title="{Binding title}" ResizeMode="NoResize"
+             WindowStyle="None" WindowStartupLocation="CenterScreen" Topmost="True"
+             Height="700" Width="600">
+    <dxmvvm:Interaction.Behaviors>
+        <dxmvvm:CurrentWindowService />
+        <dxmvvm:EventToCommand EventName="Loaded" Command="{Binding LoadedCommand}"/>
+        <dxmvvm:EventToCommand EventName="Unloaded" Command="{Binding UnLoadedCommand}"/>
+    </dxmvvm:Interaction.Behaviors>
+    <Window.Resources>
+        <Style x:Key="m0" TargetType="{x:Type Paragraph}">
+            <Setter Property="Margin" Value="0"/>
+        </Style>
+        <Style x:Key="m20" TargetType="{x:Type Paragraph}">
+            <Setter Property="Margin" Value="0,0,0,15"/>
+        </Style>
+    </Window.Resources>
+    <Border BorderBrush="#999" BorderThickness="1">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="33"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition />
+                <ColumnDefinition Width="40"/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="#0090d5">
+                <TextBlock Text="{Binding title}" FontSize="13" Foreground="White"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
+            </Border>
+            <Border Grid.Row="0" Grid.Column="1">
+                <!--<Button Click="uiExit_Click" Width="20" Height="20">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Name="border">
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="/Images/btn_screen_close.png"/>
+                                            </Border.Background>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" TargetName="border">
+                                                    <Setter.Value>
+                                                        <ImageBrush ImageSource="/Images/btn_screen_close_on.png" />
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>-->
+            </Border>
+            <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+                <StackPanel Margin="0">
+                    <RichTextBox Margin="10" Visibility="{Binding termsKorVisible}" BorderThickness="0">
+                        <FlowDocument>
+                            <Paragraph TextAlignment="Center" TextBlock.FontWeight="Bold" Style="{StaticResource m20}">
+                                CoinBlock 거래소 이용 유의사항
+                            </Paragraph>
+                            <Paragraph Style="{StaticResource m20}">
+                                안녕하세요. 암호화폐 국제거래소 CoinBlock 입니다.
+                            </Paragraph>
+                            <Paragraph Style="{StaticResource m20}">
+                                최근 암호화폐 거래소를 대상으로 한 피싱, 사기 전화 사례가 발생하고 있습니다. 거래소 및 수사기관 사칭에 따른 자금이체, 암호화폐 담보대출, 구매대행, 계정 대여 등 해당 사건에 연루될 경우 민, 형사상 책임이 발생하여 법적 처벌을 받을 수 있는 등 큰 피해가 발생될 수 있습니다.
+                            </Paragraph>
+                            <Paragraph Style="{StaticResource m0}">
+                                보다 건전하고 안전한 자산 거래를 위해 아래의 유의사항을 반드시 확인하고 유념해 주시기 바랍니다.
+                            </Paragraph>
+                            <Paragraph Style="{StaticResource m0}">
+                                모든 CoinBlock 서비스는 아래 유의사항에 동의 후 이용 가능합니다.
+                            </Paragraph>
+                        </FlowDocument>
+                    </RichTextBox>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto" Height="380" Visibility="{Binding termsKorVisible}">
+                        <RichTextBox Margin="10,0,10,10" BorderThickness="0">
+                            <FlowDocument>
+                                <Paragraph Style="{StaticResource m20}">
+                                    대출을 권유하는 형태의 명의도용, 구매대행 유도를 통한 피싱 사기 주의
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    1. 명의도용 및 피싱 피해에 주의하여 고객의 아이디, 비밀번호 등 개인정보를 타인에게 알려주어서는 안되며, 이로 인해 발생한 손실은 고객 본인에게 귀속됩니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    사례1. CoinBlock 직원으로 사칭하여 고객 지갑 등에 문제가 있어 발송되는 인증번호 또는 OTP번호를 알려달라는 경우
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    사례2. 기존에 사용하던 CoinBlock 계정을 활용하여 입출금을 대행하도록 유도하는 경우
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    사례3. 고객에게 유선 연락을 취한 후 카카오톡 상담을 통해 CoinBlock 계정을 만들도록 지시하는 경우
+                                </Paragraph>
+                                <Paragraph>
+                                    2. 불법 및 부정 거래가 의심되는 경우 이용이 제한될 수 있습니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    사례1. 암호화폐 투자를 권유하거나 암호화폐를 담보로 대출이 가능하다며 접근하는 경우
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    사례2. CoinBlock 계정 가입 후 원화 입금 시 수수료 지급 또는 원화를 계정에 입금해주고 암호화폐 매수/출금 시 수수료를 지급해주겠다는 방식으로 접근하는 경우
+                                </Paragraph>
+                                <Paragraph  Style="{StaticResource m20}">
+                                    3. 도박 자금 및 불법자금 세탁 등 불법적인 자금을 활용하기 위한 용도로 CoinBlock를 이용하여서는 안되며, 이로 인해 발생하는 법적, 금전적 책임은 고객 본인에게 귀속됩니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    암호화폐 투자 유의사항
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    1. 암호화폐에 대한 투자판단의 책임은 본인에게 있으며, 발생 가능한 손실도 투자자 본인에게 귀속됩니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    2. 암호화폐는 법정화폐가 아니며, 특정 주체가 가치를 보장하지 않습니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    3. 암호화폐는 365일 24시간 전 세계에서 거래되며, 투기적 수요 및 국내외 규제 환경 변화 등에 따라 급격한 시세 변동에 노출될 수 있습니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    피싱에 속아 피해를 보는 경우라도 CoinBlock 계정/계좌 등을 타인이 이용하도록 개인정보를 넘겨 범죄에 악용된다면 전자금융거래법 위반 및 형법상 사기방조죄에 따라 처벌 받을 수 있습니다
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    - 금융감독원 보이스피싱 지킴이: http://phishing-keeper.fss.or.kr
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    - 경찰 민원포털: https://minwon.police.go.kr
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    - CoinBlock 고객센터: help@coinblock (Tel. 1833-2478 운영시간 / 10:00 ~ 17:00(주말 및 공휴일 제외)
+                                </Paragraph>                              
+                            </FlowDocument>
+                        </RichTextBox>
+                    </ScrollViewer>
+                    
+                    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+                    
+                    <RichTextBox Margin="10" Visibility="{Binding termsEngVisible}" BorderThickness="0">
+                        <FlowDocument>
+                            <Paragraph TextAlignment="Center" TextBlock.FontWeight="Bold" Style="{StaticResource m20}">
+                                Notice on CoinBlock Exchange Usage
+                            </Paragraph>
+                            <Paragraph Style="{StaticResource m20}">
+                                Hello. This is CoinBlock International Cryptocurrency Exchange.
+                            </Paragraph>
+                            <Paragraph Style="{StaticResource m20}">
+                                Recently, phishing and phone fraud case have occurred for cryptocurrency exchange. If you are involved in a case such as fund transfers, cryptocurrency mortgage loans, purchasing agents, account leasing, etc., you may suffer civil and criminal liability and be subject to legal punishment.
+                            </Paragraph>
+                            <Paragraph Style="{StaticResource m0}">
+                                Please make sure that you pay attention to the following notice for safe and sound asset transactions.
+                            </Paragraph>
+                            <Paragraph Style="{StaticResource m0}">
+                                All CoinBlock service is available after agreeing to the following notice.
+                            </Paragraph>
+                        </FlowDocument>
+                    </RichTextBox>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto" Height="380" Visibility="{Binding termsEngVisible}">
+                        <RichTextBox Margin="10,0,10,10" BorderThickness="0">
+                            <FlowDocument>
+                                <Paragraph Style="{StaticResource m20}">
+                                    Phishing fraud through the use of identity theft to encourage loans and induce purchase
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    1. Be careful on identity theft and phishing damage, and do not inform other person of personal information such as ID, password, etc., the loss caused by it will be borne by the customer.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    Case 1. Impersonating as CoinBlock staff and asking your verification code or OTP numbers because of a problem such as customer wallet
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    Case 2. In case of using your previously used CoinBlock account to induce deposit / withdrawal
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    Case 3. Customer is instructed to create a CoinBlock account through Kakao Talk consultation after receiving a wired connection
+                                </Paragraph>
+                                <Paragraph>
+                                    2.	The use may be restricted if illegal or fraudulent transactions are suspected.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    Case 1. Approaching while encouraging a cryptocurrency investment or stating that you can use cryptocurrency as a collateral for loans
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    Case 2. Approaching while saying that they will pay for the KRW deposit fee after signing up for CoinBlock account or that they will pay for the cryptocurrency withdrawal fee after depositing KRW.
+                                </Paragraph>
+                                <Paragraph  Style="{StaticResource m20}">
+                                    Case 3. You should not use CoinBlock for the purpose of utilizing illegal funds such as gambling funds and illegal money laundering, the legal and monetary liability arising from this will be borne by the customer.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    Cryptocurrency Investment Notice
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    1.	You are responsible for making investment decisions on cryptocurrency, and any losses that may occur are your own responsibility.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    2.	Cryptocurrency is not legal currency, and certain entities do not guarantee value.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    3.	Cryptocurrency is traded around the world 24 hours a day, 365 days a year, and can be subject to drastic price fluctuations due to speculative demand and changes in domestic and international regulatory environment.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    Even if you suffer damage due to phishing, you can be punished for violating the Electronic Financial Transaction Act or for fraud if you transfer your personal information to someone else's use of your CoinBlock account.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    - Financial Supervisory Service Voice Phishing Keepers: http://phishing-keeper.fss.or.kr
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    - Police Portal: https://minwon.police.go.kr
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    - CoinBlock Customer Center: help@coinblock.kr (Tel. 1833-2478 Working Hours / 10:00 ~ 17:00 except weekends and holidays)
+                                </Paragraph>
+                            </FlowDocument>
+                        </RichTextBox>
+                    </ScrollViewer>
+                    
+                    <Border Margin="0,10,0,0">
+                        <Grid Height="60" Margin="15,0,10,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Border Grid.Row="0">
+                                <CheckBox x:Name="chx1"  Content="{Binding Check1}" FontSize="12"/>
+                            </Border>
+                            <Border Grid.Row="1">
+                                <CheckBox x:Name="chx2" Content="{Binding Check2}" FontSize="12"/>
+                            </Border>
+                        </Grid>
+                    </Border>
+
+                    <Button x:Name="Ok" Content="{x:Static localization:Resource.Alert_2}" Height="25" FontSize="13" HorizontalAlignment="Center" Click="Ok_Click" Cursor="Hand">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="3" Background="#0090d5">
+                                    <TextBlock Text="{TemplateBinding Content}" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="25,0,25,0"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

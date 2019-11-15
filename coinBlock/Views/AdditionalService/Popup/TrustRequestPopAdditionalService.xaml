@@ -1,0 +1,472 @@
+﻿<Window x:Class="coinBlock.Views.AdditionalService.Popup.TrustRequestPopAdditionalService"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" 
+             xmlns:ViewModels="clr-namespace:coinBlock.ViewModels.AdditionalService.Popup"
+             mc:Ignorable="d"
+             Icon="/Images/blueshell.ico"
+             DataContext="{dxmvvm:ViewModelSource Type=ViewModels:TrustRequestPopAdditionalServiceViewModel}"
+             Title="{Binding title}" ResizeMode="NoResize"
+             WindowStyle="None" WindowStartupLocation="CenterScreen" Topmost="True"
+             Height="800" Width="600">
+    <dxmvvm:Interaction.Behaviors>
+        <dxmvvm:CurrentWindowService />
+        <dxmvvm:EventToCommand EventName="Loaded" Command="{Binding LoadedCommand}"/>
+        <dxmvvm:EventToCommand EventName="Unloaded" Command="{Binding UnLoadedCommand}"/>
+    </dxmvvm:Interaction.Behaviors>
+    <Window.Resources>
+        <Style x:Key="m0" TargetType="{x:Type Paragraph}">
+            <Setter Property="Margin" Value="0"/>
+        </Style>
+        <Style x:Key="m20" TargetType="{x:Type Paragraph}">
+            <Setter Property="Margin" Value="0,0,0,15"/>
+        </Style>
+    </Window.Resources>
+    <Border BorderBrush="#999" BorderThickness="1">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="33"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition />
+                <ColumnDefinition Width="40"/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="#0090d5">
+                <TextBlock Text="{Binding title}" FontSize="13" Foreground="White"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
+            </Border>
+            <Border Grid.Row="0" Grid.Column="1">
+                <Button Click="uiExit_Click" Width="20" Height="20">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Name="border">
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="/Images/btn_screen_close.png"/>
+                                            </Border.Background>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" TargetName="border">
+                                                    <Setter.Value>
+                                                        <ImageBrush ImageSource="/Images/btn_screen_close_on.png" />
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </Border>
+            <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel Margin="0">
+                        <RichTextBox Margin="10" Visibility="{Binding termsKorVisible}">
+                            <FlowDocument>
+                                <Paragraph TextAlignment="Center" TextBlock.FontWeight="Bold" Style="{StaticResource m20}">
+                                    암호화폐수탁거래기본약관
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    Trust 암호화폐수탁거래 기본약관 (이하 &quot;약관&quot;이라 함)은 수탁자인 CoinBlock (이하 &quot;거래소&quot;라 함)와 수탁거래자인 위탁자 (이하 &quot;고객&quot;이라 함)가 서로 믿음을 바탕으로 고객의 이익증식 등을 위하여 계약한 암호화폐수탁(이하 &quot;수탁&quot;이라 함)거래를 신속·정확하게 처리하는 동시에 당사자 사이의 이해관계를 합리적으로 조정하기 위한 기본적이고 일반적인 사항을 정한 것입니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    거래소는 이 약관 및 수탁상품 약관을 거래소 홈페이지에 공개하고, 고객은 24시간 언제든지 열람하거나 교부를 청구할 수 있습니다. (단, 업데이트 및 오류로 인한 경우 제외)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    제 1 조 (적용범위) 이 약관은 거래소와 고객 사이의 운용방법을 지정하지 아니한 암호화폐수탁거래에 수탁상품 약관과 함께 적용합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    제 2 조 (수탁관계인)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① 이 약관에서 위탁자란 거래소에 암호화폐를 수탁한 자이며, 수탁자란 암호화폐를 인수한 자, 즉 거래소를 말합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ② 수익자란 원금 암호화폐 및 암호화폐 이자를 받는 자 즉 고객 및 위탁자를 말합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    제 3 조 (수탁 거래)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① 고객은 온라인,앱  수탁거래시 거래소에 가입한 내용과 거래자의 내용이 일치해야 합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ② 고객은 거래소가 거래 확인을 위해서 정보를 요청할 시 정보를 알려줘야 합니다.
+                                </Paragraph>
+                                <Paragraph>
+                                    제 4 조 (거래 방법) 고객은 거래소에서 교부한 방법에 의하여 거래하여야 합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    제 5 조 (수탁)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ① 고객은 CoinBlock 거래소에서 거래되는 암호화폐 중에서 코인트러스트를 진행하는 코인으로 지정된 암호화폐(이하 "코인트러스트 암호화폐"라 함)로 수탁할 수 있습니다.
+                                </Paragraph>
+                                <Paragraph  Style="{StaticResource m0}">
+                                    제 6 조 (수탁성립시기)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① 제 5 조 제 1 항에 따라 입금하는 경우에는 다음의 시기에 수탁이 성립합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ② 암호화폐로 입금하는 경우에는 거래소가 이를 받아 확인한 때를 일컫습니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    제 7 조 (수탁암호화폐의 운용)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① 수탁암호화폐는 관계약관 및 수탁업감독규정과 거래소가 정하는 방법으로 운용방법을 같이하는 다른 수탁암호화폐와 합동하여 운용합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ② 수탁암호화폐를 운용하여 취득한 수탁암호화폐는 다시 이를 담보로 수익자를 위하여 차입 할 수 있으며, 차입암호화폐는 원 수탁암호화폐와 같은 방법으로 운용합니다.
+                                </Paragraph>
+                                <Paragraph>
+                                    제 8 조 (수탁암호화폐의 표시) 수탁암호화폐에 대하여 수탁의 등기 또는 등록을 하여야 하며 등기 또는 등록을 할 수 없는 경우에는 수탁암호화폐임을 표시합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    제 9 조 (이자배당)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① 수탁이익은 제 8 조에 따라 수탁이 성립한 날로부터 배당일 전일까지의 기간에 대하여 별도 약정한 방법과 배당률로 계산하여 배당합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ② 제①항의 배당률이 관계약관 및 거래소감독규정 등에 따라 변경되는 경우에는 그에 따르기로 합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    제 10 조 (수수료)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① 고객이 온라인 (거래소 내)을 통해 수탁을 가입할 때 거래소는 사전에 안내한 송금수수료 등을 암호화폐로 받을 수 있습니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ② 제 1 항 관련한 송금수수료는 거래소의 인터넷 홈페이지, 온라인 거래를 위한 컴퓨터 화면, 그밖에 이와 유사한 전자통신매체에 비치 또는 게시합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    제 11 조 (수탁암호화폐의 지급)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① 수탁암호화폐 또는 수탁암호화폐이자의 지급은 거래소를 통해 만기 시 자동으로 지급되며, 자동 지급이 되지 않았을 경우 신청할 수 있다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ② 거래소는 제 1 항의 계산 승인을 요구하는 경우 “수익자는 최종 암호화폐지급 내용에 대하여 이의가 있는 경우 지급받은 때로부터 1 개월 이내에 이의를 제기할 수 있다. 그 기간 내에 이의를 제기하지 않으면 수익자가 최종 승인한 것으로 본다.
+                                </Paragraph>                              
+                                <Paragraph Style="{StaticResource m0}">
+                                    제 12 조 (중도해지)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① 수탁기간 만료 전에 수탁을 해지하고자 할 때는 위탁자 연서로써 해지를 신청할 수 있으며 거래소는 이자를 지급하지 아니한다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ② 특정 암호화폐 또는 데일리 계산을 하여 이자가 발생하는 암호화폐의 경우 중도해지 시 만기 전 해지 시 총 이자의 150%가 위약금으로 발생 합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    제 13 조 (사고·변경사항의 신고)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ① 고객은 거래소 아이디·비밀번호·성명·상호·대표자·대리인·주소·전화번호·전자우편주소 등 신고사항을 변경할 때는 지체 없이 거래소에 신고하여야 합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    제 14 조 (오류처리 등)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① 고객은 거래를 마친 때는 지체 없이 그 내용이 정확 한가를 확인하고 거래내용이 사실과 다르게 처리된 경우에는 그 정정을 요구할 수 있으며, 거래소는 그 사실을 확인하여 조치하여야 합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ② 거래소는 거래내용이 사실과 다르게 처리된 것을 발견한 때는 이를 정정 처리합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    제 15 조 (비밀보장) 거래소는 관계약관에서 정한 경우를 제외하고는 고객의 거래내용에 대한 자료나 정보를 타인에게 제공하거나 누설하지 아니합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    제 16 조 (거래정보 제공) 고객이 전화 등으로 암호화폐입금(송금 포함), 수탁암호화폐 암호화폐잔액 등에 관한 정보 제공을 요청하는 경우에 거래소는 명의인, 거래소 회원정보 아이디 및 비밀번호가 일치하면 정보의 제공요청자를 본인으로 간주하여 입금암호화폐, 수탁암호화폐잔액 등에 관한 정보를 제공할 수 있습니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    제 17 조 (통지방법)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① 거래소는 고객에게 통지할 사항이 있을 경우에는 신고된 연락처로 서면이나 전화,이메일 등 사전에 합의한 방법으로 통지합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ② 거래소가 제 1 항의 통지를 서면으로 했을 때는 거래소의 책임 있는 사유 없이 고객의 책임 있는 사유로 거래소에 대한 통지 등이 연착하거나 도착되지 아니하는 때에는 보통의 우송기간 후 도달한 것으로 봅니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ③ 거래소가 수탁의 해지 등 중요한 의사표시를 하는 때에는 그 통지가 고객에게 도달 되어야 의사표시의 효력이 발생합니다. 다만, 관계약관에 다른 규정이 있거나 거래소의 책임 있는 사유 없이 고객이 14 조에 의한 변경신고를 게을리하여 도달되지 않은 때에는 보통 우송기간 후 도달된 것으로 봅니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    제 18 조 (면책)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① 거래소는 고객의 부주의 혹은 실수로 도용·위조·변조, 비밀번호의 누설이나 그밖의 사고로 말미암아 고객에게 손해가 발생하여도 거래소의 책임 있는 사유가 없는 한 책임을 지지 아니합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ② 거래소는 전산통신기기 등의 이용이나 거래정보 등의 제공과 관련하여 거래소의 책임 없는 사유로 말미암아 아이디, 비밀번호 등이 누설됨으로써 고객에게 손해가 발생하여도 그 책임을 지지 아니합니다. 다만 거래소는 고객으로부터 아이디, 비밀번호 등의 누설을 통지 받은 때에는 그때부터 제 3 자가 아이디, 비밀번호를 사용하여 고객에게 발생한 손해를 배상할 책임을 집니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ③ 고객의 책임 있는 사유로 제 19 조의 신고를 지연하여 발생한 고객의 손해에 대하여 거래소는 거래소의 책임 있는 사유가 없는 한 그 책임을 지지 아니합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ④ 제 1 항내지 제 3 항에도 불구하고 전자금융거래시 접근매체(카드, 비밀번호 등)의 위조나 변조로 발생한 사고, 계약체결 또는 거래지시의 전자적 전송이나 처리과정에서 발생한 사고, 전자금융거래를 위한 전자적 장치 또는 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 제 2 조제 1 항제 1 호에 따른 정보통신망에 침입하여 거짓이나 그 밖의 부정한 방법으로 획득한 접근매체의 이용으로 발생한 사고로 인하여 고객에게 손해가 발생한 경우 거래소는 과실 여부를 불문하고 그 손해를 배상할 책임을 집니다. 다만, 고객의 고의나 중대한 과실이 있는 경우 등 전자금융거래기본약관에 정한 사유로 인한 경우에는 그러하지 아니합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ⑤ 제 1 항 내지 제 4 항에도 불구하고 관련 약관에 고객에게 유리하게 적용될 수 있는 규정이 있는 경우에는 그 약관을 우선 적용합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    제 19 조 (약관변경 등)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① 거래소는 약관을 변경하고자 하는 경우 변경내용을 변경되는 약관의 시행일 1 개월 전에 고객이 확인할 수 있도록 거래소의 인터넷 홈페이지, 온라인 거래를 위한 컴퓨터 화면, 그 밖에 이와 유사한 전자통신매체를 통하여 게시합니다. 다만, 관계 약관 또는 거래소업무규정의 재·개정에 따른 제도변경 등으로 약관이 변경되는 경우로서 본문에 따라 안내하기가 어려운 급박하고 부득이한 사정이 있는 경우에는 변경내용을 앞의 문장과 같은 방법으로 개정 약관의 시행일 전에 게시합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ② 제 1 항의 변경내용이 고객에게 불리한 경우 거래소는 이를 서면 등 고객과 사전에 합의한 방법으로 변경 전 최소 1 개월 전까지 고객에게 통지하여야 합니다. 다만, 고객에게 변경 전 내용이 그대로 적용되는 경우 또는 고객이 변경내용에 대한 통지를 받지 아니하겠다는 의사를명시적으로 표시한 경우에는 그러하지 아니합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ③ 거래소는 제 2 항의 통지를 할 경우 &quot;고객이 변경에 동의하지 아니한 경우 계약을 해지 할 수 있으며, 통지를 받은 날로부터 변경 예정일 전 영업일까지 계약해지의 의사표시를 하지 아니한 경우에는 변경에 동의한 것으로 봅니다&quot;라는 취지의 내용을 통지하여야 합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ④ 고객이 제 3 항의 통지를 받은 날부터 변경 예정일 전 영업일까지 계약해지의 의사표시를 하지 아니한 경우에는 변경에 동의한 것으로 봅니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ⑤ 거래소는 약관을 은행의 온라인이나 인터넷 홈페이지에 게시하여 고객이 요구할 경우 이를 교부하여야 하며, 인터넷 홈페이지, 온라인 거래를 위한 컴퓨터 화면, 그 밖에 이와 유사한 전자통신매체에 게시하여 고객이 약관을 조회하고 다운로드(화면출력 포함)받을 수 있도록 하여야 합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    제 20 조 (약관의 적용)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① 이 약관에 정한 사항과 수탁상품별 약관 및 별도 약정에 정한 사항이 다른 경우에는 수탁상품별 약관 및 별도약정을 우선 적용합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ② 이 약관이나 수탁상품별 약관에서 정하지 아니한 사항은 관계법령, 관련 감독규정 을 적용합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    부칙
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    제1조(시행일) 이 약관은 2018년 11월 05일부터 시행합니다.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    제2조(코인추가)  2019년 05월 23일부터 PAN 코인 추가
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    제3조 특정 암호화폐 중도해지시 위약금 명시 (2019년06월04일 추가)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    제4조(코인추가) 2019년 06월 07일부터 HEC 코인 추가
+                                </Paragraph>                                
+                            </FlowDocument>
+                        </RichTextBox>
+
+
+
+
+
+
+
+                        <RichTextBox Margin="10" Visibility="{Binding termsEngVisible}">
+                            <FlowDocument>
+                                <Paragraph TextAlignment="Center" TextBlock.FontWeight="Bold" Style="{StaticResource m20}">
+                                    Cryptocurrency Trust Transactions General Terms and Conditions
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    The Cryptocurrency Trust Transactions General Terms and Conditions (hereinafter referred to as the "Terms") establish basic and general points for processing quickly and accurately the agreed Cryptocurrency Trust (hereinafter referred to as "Trust") transactions based on mutual trust between the trustee, CoinBlock (hereinafter referred to as "Exchange") and the consignor (hereinafter referred to as the "Customer") to increase customer's profits, while at the same time making reasonable adjustments to the interests of the parties.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    The Exchange may disclose this Terms and the Trusted Goods Terms on the Exchange website, and the Customer can view or apply at any time for 24 hours. (Except for updates and errors)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    Article 1 (Scope of Application) This Terms applies in conjunction with the terms of cryptocurrency trust transaction’s trust goods that does not specify the method of operation between the Exchange and the Customer.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    Article 2 (Person Concerned in Trust)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① In this Terms, a consignor is a person who has entrusted cryptocurrency to the Exchange, and a trustee is a person who has acquired the cryptocurrency i.e. the exchange.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ② Beneficiary is a person who receives cryptocurrency principal and cryptocurrency interest, i.e. customer and consignor.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    Article 3 (Trust Transaction)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① The Customer details must match the details of Customer's registration to the Exchange when completing online or apps trust transaction.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ② The Customer must provide information to the Exchange if the Exchange requests it in order to confirm a transaction.
+                                </Paragraph>
+                                <Paragraph>
+                                    Article 4 (Transaction Method) The Customer must transact with the method issued by the Exchange.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    Article 5 (Deposit)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ①   Customers can entrust any of the cryptocurrency traded on Pacbit Exchange that is designated as Coin Trust coin (hereinafter referred to as a "Coin Trust Cryptocurrency").
+                                </Paragraph>
+                                <Paragraph  Style="{StaticResource m0}">
+                                    Article 6 (Trust Establishment Period)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① In case of depositing in accordance with Paragraph 1 of Article 5, the trust shall be established in the following period.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ② When depositing in cryptocurrency, it refers to the time when the Exchange has received and confirmed the deposit.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    Article 7 (Operation of Trusted Cryptocurrency)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① The trusted cryptocurrency is managed jointly with other trusted cryptocurrency that share the operation method in a manner specified by the relevant agreement and the trust business supervision regulations and the Exchange.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ② Trusted cryptocurrency acquired through the operation of trusted cryptocurrency can be borrowed again for the beneficiary as collateral, and the borrowed cryptocurrency operates in the same way as the original trusted cryptocurrency.
+                                </Paragraph>
+                                <Paragraph>
+                                    Article 8 (Trusted Cryptocurrency Mark) In relation with the trusted cryptocurrency, it shall be registered and if the registration cannot be made, it should be marked as trusted cryptocurrency.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    Article 9 (Interest Dividend)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① The trust profit shall be allocated in accordance with Article 8 by calculating it based on the dividend rate and the method agreed separately for the period from the date the trust was established until the day before the dividend date.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ② If the dividend rate in Paragraph 1 is changed in accordance with the relevant agreement and supervising regulations of the Exchange, the dividend rate shall be complied with.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    Article 10 (Commission)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① When the customers apply for trust via online (in the exchange), the Exchange can receive the transfer fee that was informed in advance in cryptocurrency.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ② Transfer fees related to Paragraph 1 shall be placed or posted on the internet homepage of the Exchange, on the computer screens for online transactions, and other similar electronic communications media.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    Article 11 (Payment of Trusted Cryptocurrency)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① If you are requesting payment of trusted cryptocurrency or trusted cryptocurrency interest, you must write down the ID and password that has been registered to the Exchange and submit it
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ② If the beneficiary does not approve the final account statement, the Exchange shall require the beneficiary to approve the final account statement, and the beneficiary shall notify the Exchange
+                                </Paragraph>                                
+                                <Paragraph Style="{StaticResource m0}">
+                                    Article 12 (Midway Termination)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① If consignor wants to terminate the trust before expiration of the trust period, the consignor can apply for termination as consignor’s consent and the Exchange does not pay interest.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ② In the case of a cryptocurrency in which interest is generated by a specific cryptocurrency or a daily calculation, 150% of the total interest will be charged as a penalty upon midway termination before expiry date.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    Article 13 (Reporting of Accidents and Changes)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ① The Customer must notify the Exchange without delay when making changes to the matters such as Exchange ID, password, name, trade name, representative, agent, address, telephone number, email address etc.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    Article 14 (Error Handling etc.)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① When the transaction is completed, the Customer shall confirm that the contents are correct without any delay, and if the transaction is different from the fact, the Customer can request the correction.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ② When the Exchange finds that the transaction contents are processed differently from the facts, the Exchange will correct it.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    Article 15 (Confidentiality) The Exchange shall not provide or disclose documents or information about the transactions of the Customer to others except as provided in the related terms and conditions.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    Article 16 (Provision of Transaction Information) If the Customer requests information such as cryptocurrency deposit (including transfer), trusted cryptocurrency balance, etc., by telephone, if the name, member information ID and password match, the requestor for the information shall be regarded as the person who requests the information and the Exchange will provide information on deposited cryptocurrency, trusted cryptocurrency balance etc.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    Article 17 (Notification Method)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① The Exchange shall notify the Customer in writing, telephone, email, etc., in a manner agreed in advance if there is any notice to the Customer.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ② When the Exchange makes a written notice under Paragraph 1, if the notice of the exchange is delayed or not received, it shall be deemed to have arrived after the normal mailing period due to the responsibility of the Customer and the Exchange shall not be liable for any reason.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ③ When the Exchange makes an important statement such as termination of the trust, the notice becomes effective only when the notice reaches the Customer. However, if there is any different provision in the relevant terms and conditions, or if the Customer fails to report the change by Article 14 negligibly without liability from the exchange, it shall be deemed to have arrived after the normal mailing period.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    Article 18 (Exemptions)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① The Exchange shall not be liable for any loss or damage caused by theft, forgery, alteration, password leakage or other accidents caused by carelessness or mistake of the Customer, unless the Exchange has a responsible cause.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ② The Exchange is not liable for damages caused by leakage of ID and password due to the non-responsibility of the Exchange in connection with the use of electronic communication devices or the provision of transaction information. However, when the Exchange is notified of the leakage of ID, password, etc., by the Customer, from then on the Exchange is responsible for compensating the Customer for any damage caused by the using of Customer’s ID and password by a third party.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ③ The Exchange shall not be liable for damages incurred by the Customer due to the delay of the report of Article 19 for the responsibility of the Customer, unless there is a liable cause of the Exchange.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ④ Notwithstanding the provisions of Paragraphs 1 to 3, in the case of electronic financial transactions, accidents caused by forgery or alteration of access media (cards, passwords, etc.), an accident caused by electronic transmission or processing of a contract or transaction order, electronic devices for electronic financial transactions accidents or accidents caused by the use of access media acquired by illegal or other illegal methods in the information communication network pursuant to Article 2, Paragraph 1, Item 1 of 『Act on the Promotion of Information and Communications Network Utilization and Information Protection』, the Exchange shall be liable to compensate for any loss or damage, whether negligent or not. However, this shall not apply in cases where there is an intention or serious negligence on the part of the Customer, or in cases where such failure is due to the reasons set forth in the Basic Terms of Electronic Financial Transactions.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ⑤ 	Notwithstanding the provisions of Paragraphs 1 to 4 above, if there is a provision that can be applied favorably to the Customer in the related terms, the terms shall be applied first.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    Article 19 (Change of Terms, etc.)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① If the Exchange wishes to change this Terms and Conditions, the Exchange will post the changes on the internet homepage of the Exchange, computer screens for online transactions, and other similar electronic communication media so that Customers can check the changes one month before the effective date of the terms. However, if there is an urgent and unavoidable circumstance in which the terms are changed due to the re-establishment of the related terms or regulations, the change shall be amended in the same way as the previous sentence.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ② In the event that the changes described in Paragraph 1 are disadvantageous to the Customer, the Exchange shall notify the Customer at least one month before the change in a method that has been agreed with the Customer in advance such as written notification etc. Provided, however, that this shall not apply to the Customer if the content prior to the change is applied as it is, or if the Customer has expressly indicated by the intention to not receive notification of the changes.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ③ When the Exchange makes a notice under Paragraph 2, the Exchange must notify with contents that said "If the Customer does not agree to the change, the contract can be terminated and if the Customer does not express the intention to terminate the contract from the day of notification until the business day before the scheduled date of change, it is deemed that the Customer agrees to the change.”
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ④ If the Customer has not indicated the intention to terminate the contract from the date of receiving the notice of Paragraph 3 until the business day before the scheduled date of change, he / she shall be deemed to have agreed to the change.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ⑤ The Exchange shall publish the Terms and Conditions on the Bank's online or internet homepage, if requested by the Customer, and post it on the internet homepage, the computer screen for online transactions, and other similar electronic communication media so that the Customer can view and download (including screen output) the terms.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    Article 20 (Application of Terms)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    ① If the items specified in these Terms are different from those set forth in a separate terms and conditions and agreements for each entrusted products, the separate terms and conditions and agreements for each entrusted product shall apply first.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    ② Any matters not specified in these terms and conditions of the entrusted products shall be governed by relevant laws and regulations and relevant supervisory regulations.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    Addendum
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    Article 1 (Payment of Trusted Cryptocurrency) This Terms and Conditions will be effective from November 5, 2018.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    Article 2 (Add Cyptocurrency) PAN Coin added from May 23, 2019.-
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    Article 3 Specifies specific cryptocurrency penalty upon midway termination (Jun 2019 04 added)
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    Article 4 (Add Cyptocurrency) HEC Coin added from Jun 07, 2019.
+                                </Paragraph>
+                            </FlowDocument>
+                        </RichTextBox>
+
+
+
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

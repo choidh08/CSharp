@@ -1,0 +1,163 @@
+﻿<Window x:Class="coinBlock.Views.CoinExchangePopUpTrading"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" 
+             xmlns:ViewModels="clr-namespace:coinBlock.ViewModels"
+             xmlns:localization="clr-namespace:coinBlock.Localization"  
+             mc:Ignorable="d"
+             Icon="/Images/blueshell.ico"
+             WindowStyle="None" WindowStartupLocation="CenterScreen"
+             DataContext="{dxmvvm:ViewModelSource Type=ViewModels:CoinExchangePopUpTradingViewModel}"
+            Width="250" Height="230" Topmost="False" ResizeMode="NoResize" AllowsTransparency="False">
+    <dxmvvm:Interaction.Behaviors>
+        <dxmvvm:CurrentWindowService />
+        <dxmvvm:DispatcherService DispatcherPriority="Normal"/>
+        <dxmvvm:EventToCommand EventName="Loaded" Command="{Binding LoadedCommand}"/>
+        <dxmvvm:EventToCommand EventName="Unloaded" Command="{Binding UnLoadedCommand}"/>
+    </dxmvvm:Interaction.Behaviors>
+    <Border BorderThickness="1" BorderBrush="Black">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="33"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition />
+                <ColumnDefinition Width="40"/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="#666">
+                <Image Source="{Binding img_text_coin_change_alert}" Height="12" HorizontalAlignment="Left" Margin="10,0,0,0" />
+            </Border>
+            <Border Grid.Row="0" Grid.Column="1">
+                <Button Width="20" Height="20" Click="uiExit_Click">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Name="border">
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="/Images/btn_screen_close.png"/>
+                                            </Border.Background>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" TargetName="border">
+                                                    <Setter.Value>
+                                                        <ImageBrush ImageSource="/Images/btn_screen_close_on.png" />
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </Border>
+            <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Vertical" Margin="10,20,10,20">
+                <TextBlock Text="보유코인 현재시세" Margin="0,0,0,3"/>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <TextBlock Text="{Binding SelCoin}" />
+                    <TextBlock Text="시세 : " />
+                    <TextBlock Text="{Binding CoinAutoTradeContent.selSetPrc}"/>
+                    <TextBlock Text="{Binding CoinAutoTradeContent.selSetRate, StringFormat='({0}%)'}"/>
+                </StackPanel>
+                <TextBlock Text="교환코인 현재시세" Margin="0,0,0,3"/>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <TextBlock Text="{Binding ChgCoin}" />
+                    <TextBlock Text="시세 : " />
+                    <TextBlock Text="{Binding CoinAutoTradeContent.chgSetPrc}"/>
+                    <TextBlock Text="{Binding CoinAutoTradeContent.chgSetRate, StringFormat='({0}%)'}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,18" Height="26">
+                    <TextBlock Text="시세일시 : " VerticalAlignment="Center"/>
+                    <TextBlock Text="{Binding nowTime}" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                    <Button Width="26" Height="26" Cursor="Hand" HorizontalAlignment="Center">
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Name="border">
+                                                <Border.Background>
+                                                    <ImageBrush ImageSource="/Images/btn_popup_refresh.png" />
+                                                </Border.Background>
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" TargetName="border">
+                                                        <Setter.Value>
+                                                            <ImageBrush ImageSource="/Images/btn_popup_refresh_on.png" />
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button Width="97" Height="30" Cursor="Hand" HorizontalAlignment="Center" Margin="0,0,5,0" Command="{Binding CmdExecuteNowTradeCommand}">
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Name="border">
+                                                <Border.Background>
+                                                    <ImageBrush ImageSource="{Binding btn_popup_trade_now}" />
+                                                </Border.Background>
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" TargetName="border">
+                                                        <Setter.Value>
+                                                            <ImageBrush ImageSource="{Binding btn_popup_trade_now_on}" />
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                    <Button Width="97" Height="30" Cursor="Hand" HorizontalAlignment="Center" Command="{Binding CmdMoveMenuCommand}">
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Name="border">
+                                                <Border.Background>
+                                                    <ImageBrush ImageSource="{Binding btn_popup_menu_move}" />
+                                                </Border.Background>
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" TargetName="border">
+                                                        <Setter.Value>
+                                                            <ImageBrush ImageSource="{Binding btn_popup_menu_move_on}" />
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

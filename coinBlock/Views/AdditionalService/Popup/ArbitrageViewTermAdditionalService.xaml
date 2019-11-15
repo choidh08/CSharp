@@ -1,0 +1,532 @@
+﻿<Window x:Class="coinBlock.Views.AdditionalService.Popup.ArbitrageViewTermAdditionalService"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" 
+             xmlns:ViewModels="clr-namespace:coinBlock.ViewModels.AdditionalService.Popup"
+             xmlns:localization="clr-namespace:coinBlock.Localization"
+             mc:Ignorable="d"
+             Icon="/Images/blueshell.ico"
+             DataContext="{dxmvvm:ViewModelSource Type=ViewModels:ArbitrageViewTermAdditionalServiceViewModel}"
+              Title="{Binding title}" ResizeMode="NoResize"
+             WindowStyle="None" WindowStartupLocation="CenterScreen" Topmost="True"
+             Height="800" Width="600">
+    <dxmvvm:Interaction.Behaviors>
+        <dxmvvm:CurrentWindowService />
+        <dxmvvm:EventToCommand EventName="Loaded" Command="{Binding LoadedCommand}"/>
+        <dxmvvm:EventToCommand EventName="Unloaded" Command="{Binding UnLoadedCommand}"/>
+    </dxmvvm:Interaction.Behaviors>
+    <Window.Resources>
+        <Style x:Key="m0" TargetType="{x:Type Paragraph}">
+            <Setter Property="Margin" Value="0"/>
+        </Style>
+        <Style x:Key="m20" TargetType="{x:Type Paragraph}">
+            <Setter Property="Margin" Value="0,0,0,15"/>
+        </Style>
+    </Window.Resources>
+    <Border BorderBrush="#999" BorderThickness="1">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="33"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition />
+                <ColumnDefinition Width="40"/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="#0090d5">
+                <TextBlock Text="{Binding title}" FontSize="13" Foreground="White"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
+            </Border>
+            <Border Grid.Row="0" Grid.Column="1">
+                <Button Click="uiExit_Click" Width="20" Height="20">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Name="border">
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="/Images/btn_screen_close.png"/>
+                                            </Border.Background>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" TargetName="border">
+                                                    <Setter.Value>
+                                                        <ImageBrush ImageSource="/Images/btn_screen_close_on.png" />
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </Border>
+            <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel Margin="0">
+                        <RichTextBox Margin="10" Visibility="{Binding termsKorVisible}">
+                            <FlowDocument>
+                                <Paragraph TextAlignment="Center" TextBlock.FontWeight="Bold" Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_1}" />
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_2}" />
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_3}" />
+                                </Paragraph>                                
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_4}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_5}" />
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_6}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_7}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_8}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_9}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_10}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_11}" />
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_12}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_13}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_14}" />
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_15}" />
+                                </Paragraph>
+                                <Paragraph  Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_16}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_17}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_18}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_19}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_20}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_21}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_22}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_23}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_24}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_25}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_26}" />
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_27}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_28}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_29}" />
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_30}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_31}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_32}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_33}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_34}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_35}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_36}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_37}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_38}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_39}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_40}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_41}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_42}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_43}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_44}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_45}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_46}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_47}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_48}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_49}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_50}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_51}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_52}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_53}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_54}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_55}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_56}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_57}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_58}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_59}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_60}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_61}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_62}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_63}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_64}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_65}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_66}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_67}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_68}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_69}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_70}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_71}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_72}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_73}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_74}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_75}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_76}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_77}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_78}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_79}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_80}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_81}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_82}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_83}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_84}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_85}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_86}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_87}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_88}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_89}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_90}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_91}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_92}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_93}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_94}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_95}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_96}" TextWrapping="Wrap"/>
+                                </Paragraph>
+
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_97}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_98}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_99}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_100}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_101}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_102}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_103}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_104}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_105}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_106}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_107}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_108}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_109}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_110}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_111}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_112}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_113}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_114}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_115}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_116}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_117}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_118}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_119}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_120}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_121}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_122}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_123}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_124}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_125}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_126}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_127}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_128}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_129}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_130}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_131}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_132}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_133}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_133}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_134}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_135}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_136}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m0}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_137}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_138}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_139}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_140}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_141}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_142}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_143}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_144}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_145}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_146}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_147}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_148}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource m20}">
+                                    <TextBlock Text="{x:Static localization:Resource.Arbitrage_Term_149}" TextWrapping="Wrap"/>
+                                </Paragraph>
+                            </FlowDocument>
+                        </RichTextBox>
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

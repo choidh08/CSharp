@@ -1,0 +1,662 @@
+﻿<UserControl x:Class="coinBlock.Views.Common.CoinTabs"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:coinBlock.Views.Common"
+      xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+      xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+      xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
+      xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+      xmlns:dxgt="http://schemas.devexpress.com/winfx/2008/xaml/grid/themekeys"         
+      xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+      xmlns:ViewModels="clr-namespace:coinBlock.ViewModels.Common"
+      xmlns:Converter="clr-namespace:coinBlock.ViewModels"
+      xmlns:localization="clr-namespace:coinBlock.Localization"  
+      DataContext="{dxmvvm:ViewModelSource Type={x:Type ViewModels:CoinTabsViewModel}}"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="300">
+    <UserControl.Resources>
+        <Converter:FloatConvert x:Key="FloatConvert"/>
+    </UserControl.Resources>
+    <dxmvvm:Interaction.Behaviors>
+        <dxmvvm:DispatcherService DispatcherPriority="Normal"  />
+        <dxmvvm:EventToCommand EventName="Loaded" Command="{Binding LoadedCommand}"/>
+        <dxmvvm:EventToCommand EventName="Unloaded" Command="{Binding UnLoadedCommand}"/>        
+    </dxmvvm:Interaction.Behaviors>
+    <Grid>
+        <dxlc:LayoutGroup>
+            <dx:DXTabControl>
+                <dxmvvm:Interaction.Behaviors>
+                    <dxmvvm:EventToCommand EventName="SelectionChanged" Command="{Binding CmdMenuSelectedCommand}" PassEventArgsToCommand="True" />
+                </dxmvvm:Interaction.Behaviors>
+                <dx:DXTabControl.View>
+                    <dx:TabControlScrollView HeaderLocation="Top" HeaderAutoFill="True" AutoHideScrollButtons="True" ScrollButtonsShowMode="Never"/>
+                </dx:DXTabControl.View>
+
+                <dx:DXTabItem Tag="CMMC00000000204">
+                    <dx:DXTabItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Images/ico_coinstatus_krw.png" Width="12" Height="10" Margin="0,0,3,0" />
+                            <TextBlock Text="{Binding SC}"/>
+                        </StackPanel>
+                    </dx:DXTabItem.Header>
+                    <Grid  Margin="-8">
+                        <Grid.Resources>
+                            <Style TargetType="{x:Type dxg:GridColumn}">
+                                <Setter Property="HorizontalHeaderContentAlignment" Value="Center" />
+                            </Style>
+                        </Grid.Resources>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="{Binding HeaderHeight}"/>
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Border Grid.Row="0" Visibility="{Binding HeaderVisible}" Background="White" BorderBrush="#d8d8d8" BorderThickness="1" Margin="0,0,0,5">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Border Grid.Column="0" >
+                                    <Image Source="{Binding img_main_coin, TargetNullValue={x:Null}}" Width="26" />
+                                </Border>
+
+                                <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                                    <TextBlock Text="Quotes" Foreground="#666"/>
+                                    <TextBlock Text="Rate" Foreground="#666"/>
+                                    <TextBlock Text="Volume" Foreground="#666"/>
+                                </StackPanel>
+
+                                <StackPanel Grid.Column="2" VerticalAlignment="Center">
+                                    <TextBlock Text="{Binding txt_Quotes, StringFormat={}{0:n0}}" Foreground="#666"/>
+                                    <TextBlock Text="{Binding txt_Rate, StringFormat='{}{0:n2}%'}" Foreground="#666"/>
+                                    <TextBlock Text="{Binding txt_Volume, StringFormat={}{0:n8}}" Foreground="#666"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+                        <dxg:GridControl Grid.Row="1" ItemsSource="{Binding CoinPriceData}" SelectedItem="{Binding SelectItem}" dxlc:LayoutControl.AllowHorizontalSizing="True" SelectionMode="Row" dx:ThemeManager.Theme="Office2013LightGray" >
+                            <dxg:GridControl.View>
+                                <dxg:TableView  RowMinHeight="28" HeaderPanelMinHeight="28"  VerticalScrollbarVisibility="Auto" HorizontalScrollbarVisibility="Auto" AllowPerPixelScrolling="True" ShowTotalSummary="False" ShowGroupPanel="False" AllowColumnFiltering="False" AllowFilterEditor="False" AllowColumnMoving="False" AllowEditing="False" AllowGrouping="False" AllowMoveColumnToDropArea="False" ShowAutoFilterRow="False" AutoWidth="True" NavigationStyle="None" ShowIndicator="False" ShowVerticalLines="False" AllowSorting="False">
+                                    <dxg:TableView.FormatConditions>
+                                        <dxg:FormatCondition Expression="[chgPrc] &gt; 0" FieldName="chgPrc">
+                                            <dx:Format Foreground="#fc7777"/>
+                                        </dxg:FormatCondition>
+                                        <dxg:FormatCondition Expression="[chgPrc] &lt; 0" FieldName="chgPrc">
+                                            <dx:Format Foreground="#0093cf"/>
+                                        </dxg:FormatCondition>
+                                        <!--<dxg:FormatCondition Expression="[coinNm] = 'ADM'" ApplyToRow="True">
+                                            <dx:Format Background="#c2deff"/>
+                                        </dxg:FormatCondition>-->
+                                        <dxg:IconSetFormatCondition FieldName="volume" >
+                                            <dxg:IconSetFormatCondition.Format>
+                                                <dxg:IconSetFormat ElementThresholdType="Number">
+                                                    <dxg:IconSetElement Threshold="0.00000001" ThresholdComparisonType="GreaterOrEqual">
+                                                        <dxg:IconSetElement.Icon>
+                                                            <BitmapImage  UriSource="/coinBlock;component/Images/ico_up_arr_red.png"/>
+                                                        </dxg:IconSetElement.Icon>
+                                                    </dxg:IconSetElement>
+                                                    <dxg:IconSetElement Threshold="0" ThresholdComparisonType="GreaterOrEqual">
+                                                        <dxg:IconSetElement.Icon>
+                                                            <BitmapImage  UriSource="/coinBlock;component/Images/ico_stop_change.png"/>
+                                                        </dxg:IconSetElement.Icon>
+                                                    </dxg:IconSetElement>
+                                                    <dxg:IconSetElement Threshold="-Infinity" ThresholdComparisonType="GreaterOrEqual" >
+                                                        <dxg:IconSetElement.Icon>
+                                                            <BitmapImage UriSource="/coinBlock;component/Images/ico_down_arr_blue.png"/>
+                                                        </dxg:IconSetElement.Icon>
+                                                    </dxg:IconSetElement>
+                                                </dxg:IconSetFormat>
+                                            </dxg:IconSetFormatCondition.Format>
+                                        </dxg:IconSetFormatCondition>
+                                    </dxg:TableView.FormatConditions>                                   
+                                </dxg:TableView>
+                            </dxg:GridControl.View>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_2}"  FieldName="coinNmView" Width="110">
+                                <dxg:GridColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                <Image Source="{Binding RowData.Row.coinImage}" Width="15" Height="15" Margin="2,0,2,0"/>
+                                                <dxe:HyperlinkEdit EditValue="{Binding RowData.Row.coinNmView}" Foreground="Black" FontWeight="{Binding RowData.Row.bold_Gb}"  Command="{Binding DataContext.CmdSelectCoinCommand, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" CommandParameter="{Binding RowData.Row}"  AllowAutoNavigate="True" HorizontalAlignment="Center" VerticalAlignment="Center" ShowError="False" ShowErrorToolTip="False" ShowNavigationUrlToolTip="False"/>
+                                                <!--<Image Source="{Binding RowData.Row.ieoImage}" Visibility="{Binding RowData.Row.ieoVisible}" Width="29" Height="17" Margin="2,0,2,0"/>-->
+                                            </StackPanel>
+                                        </Grid>
+                                    </DataTemplate>
+                                </dxg:GridColumn.CellTemplate>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_3}" FieldName="coinPrc">
+                                <dxg:GridColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <dxe:TextEdit ShowBorder="False" HorizontalAlignment="Right" VerticalAlignment="Center">
+                                            <dxe:TextEdit.Text>
+                                                <MultiBinding Converter="{StaticResource FloatConvert}">
+                                                    <Binding Path="RowData.Row.coinPrc" />
+                                                    <Binding Path="RowData.Row.floatFormat" />
+                                                </MultiBinding>
+                                            </dxe:TextEdit.Text>
+                                        </dxe:TextEdit>
+                                    </DataTemplate>
+                                </dxg:GridColumn.CellTemplate>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_4_1}" FieldName="chgPrc" Width="110"  Visible="False">
+                                <dxg:GridColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,5,0">
+                                            <TextBlock Text="{Binding RowData.Row.chgPrc, StringFormat={}{0:n0}}" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </dxg:GridColumn.CellTemplate>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_4_2}" FieldName="volume"  Width="90">
+                                <dxg:GridColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,18,0">
+                                            <TextBlock Text="{Binding RowData.Row.volume, StringFormat='{}{0:n2}%'}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </dxg:GridColumn.CellTemplate>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_5}" FieldName="svcTranAmt" Width="60" Visible="{Binding AmtVisible}">
+                                <dxg:GridColumn.EditSettings>
+                                    <dxe:TextEditSettings MaskType="Numeric" Mask="n8" HorizontalContentAlignment="Right" MaskUseAsDisplayFormat="True" />
+                                </dxg:GridColumn.EditSettings>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_6}" FieldName="svcTranPrc"  Visible="False">
+                                <dxg:GridColumn.EditSettings>
+                                    <dxe:TextEditSettings MaskType="Numeric" Mask="n2" MaskUseAsDisplayFormat="True" />
+                                </dxg:GridColumn.EditSettings>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_7}" Width="80" Visible="False">
+                                <dxg:GridColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Content="{x:Static localization:Resource.ExchangeDashoard_Gird_1_7}" Width="60" Height="18" Command="{Binding DataContext.TradePageCallCommand ,RelativeSource={RelativeSource Mode=FindAncestor ,AncestorType=UserControl}}" CommandParameter="{Binding RowData.Row.coinNm}">
+                                            <Button.Style>
+                                                <Style TargetType="{x:Type Button}">
+                                                    <Setter Property="Template">
+                                                        <Setter.Value>
+                                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                                <Grid>
+                                                                    <Image Name="btnImg" Source="{Binding Path=DataContext.btn_main_buysell, RelativeSource={RelativeSource FindAncestor, AncestorType=UserControl}, TargetNullValue={x:Null}}"/>
+                                                                </Grid>
+                                                                <ControlTemplate.Triggers>
+                                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                                        <Setter Property="Source" TargetName="btnImg" Value="{Binding Path=DataContext.btn_main_buysell_on, RelativeSource={RelativeSource FindAncestor, AncestorType=UserControl}, TargetNullValue={x:Null}}"/>
+                                                                    </Trigger>
+                                                                </ControlTemplate.Triggers>
+                                                            </ControlTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </Button.Style>
+                                        </Button>
+                                    </DataTemplate>
+                                </dxg:GridColumn.CellTemplate>
+                            </dxg:GridColumn>
+                        </dxg:GridControl>
+                    </Grid>
+                </dx:DXTabItem>
+                <dx:DXTabItem Tag="CMMC00000000206">
+                    <dx:DXTabItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Images/ico_nav_eth_v2.png" Width="12" Height="10" Margin="0,0,3,0" />
+                            <TextBlock Text="ETH"/>
+                        </StackPanel>
+                    </dx:DXTabItem.Header>
+                    <Grid  Margin="-8">
+                        <Grid.Resources>
+                            <Style TargetType="{x:Type dxg:GridColumn}">
+                                <Setter Property="HorizontalHeaderContentAlignment" Value="Center" />
+                            </Style>
+                        </Grid.Resources>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="{Binding HeaderHeight}"/>
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Border Grid.Row="0" Visibility="{Binding HeaderVisible}" Background="White" BorderBrush="#d8d8d8" BorderThickness="1" Margin="0,0,0,5">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Border Grid.Column="0" >
+                                    <Image Source="{Binding img_main_coin, TargetNullValue={x:Null}}" Width="26" />
+                                </Border>
+
+                                <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                                    <TextBlock Text="Quotes" Foreground="#666"/>
+                                    <TextBlock Text="Rate" Foreground="#666"/>
+                                    <TextBlock Text="Volume" Foreground="#666"/>
+                                </StackPanel>
+
+                                <StackPanel Grid.Column="2" VerticalAlignment="Center">
+                                    <TextBlock Text="{Binding txt_Quotes, StringFormat={}{0:n8}}" Foreground="#666"/>
+                                    <TextBlock Text="{Binding txt_Rate, StringFormat='{}{0:n2}%'}" Foreground="#666"/>
+                                    <TextBlock Text="{Binding txt_Volume, StringFormat={}{0:n8}}" Foreground="#666"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+                        <dxg:GridControl Grid.Row="1" ItemsSource="{Binding CoinPriceData}" SelectedItem="{Binding SelectItem}" dxlc:LayoutControl.AllowHorizontalSizing="True" SelectionMode="Row" dx:ThemeManager.Theme="Office2013LightGray" >
+                            <dxg:GridControl.View>
+                                <dxg:TableView  RowMinHeight="28" HeaderPanelMinHeight="28"  VerticalScrollbarVisibility="Auto" HorizontalScrollbarVisibility="Auto" AllowPerPixelScrolling="True" ShowTotalSummary="False" ShowGroupPanel="False" AllowColumnFiltering="False" AllowFilterEditor="False" AllowColumnMoving="False" AllowEditing="False" AllowGrouping="False" AllowMoveColumnToDropArea="False" ShowAutoFilterRow="False" AutoWidth="True" NavigationStyle="None" ShowIndicator="False" ShowVerticalLines="False" AllowSorting="False">
+                                    <dxg:TableView.FormatConditions>
+                                        <dxg:FormatCondition Expression="[chgPrc] &gt; 0" FieldName="chgPrc">
+                                            <dx:Format Foreground="#fc7777"/>
+                                        </dxg:FormatCondition>
+                                        <dxg:FormatCondition Expression="[chgPrc] &lt; 0" FieldName="chgPrc">
+                                            <dx:Format Foreground="#0093cf"/>
+                                        </dxg:FormatCondition>
+                                        <!--<dxg:FormatCondition Expression="[coinNm] = 'ADM'" ApplyToRow="True">
+                                            <dx:Format Background="#c2deff"/>
+                                        </dxg:FormatCondition>-->
+                                        <dxg:IconSetFormatCondition FieldName="volume" >
+                                            <dxg:IconSetFormatCondition.Format>
+                                                <dxg:IconSetFormat ElementThresholdType="Number">
+                                                    <dxg:IconSetElement Threshold="0.1" ThresholdComparisonType="GreaterOrEqual">
+                                                        <dxg:IconSetElement.Icon>
+                                                            <BitmapImage  UriSource="/coinBlock;component/Images/ico_up_arr_red.png"/>
+                                                        </dxg:IconSetElement.Icon>
+                                                    </dxg:IconSetElement>
+                                                    <dxg:IconSetElement Threshold="0" ThresholdComparisonType="GreaterOrEqual">
+                                                        <dxg:IconSetElement.Icon>
+                                                            <BitmapImage  UriSource="/coinBlock;component/Images/ico_stop_change.png"/>
+                                                        </dxg:IconSetElement.Icon>
+                                                    </dxg:IconSetElement>
+                                                    <dxg:IconSetElement Threshold="-Infinity" ThresholdComparisonType="GreaterOrEqual" >
+                                                        <dxg:IconSetElement.Icon>
+                                                            <BitmapImage UriSource="/coinBlock;component/Images/ico_down_arr_blue.png"/>
+                                                        </dxg:IconSetElement.Icon>
+                                                    </dxg:IconSetElement>
+                                                </dxg:IconSetFormat>
+                                            </dxg:IconSetFormatCondition.Format>
+                                        </dxg:IconSetFormatCondition>
+                                    </dxg:TableView.FormatConditions>
+                                </dxg:TableView>
+                            </dxg:GridControl.View>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_2}"  FieldName="coinNmView" Width="110">
+                                <dxg:GridColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                <Image Source="{Binding RowData.Row.coinImage}" Width="15" Height="15" Margin="2,0,2,0"/>
+                                                <dxe:HyperlinkEdit EditValue="{Binding RowData.Row.coinNmView}" Foreground="Black" FontWeight="{Binding RowData.Row.bold_Gb}" Command="{Binding DataContext.CmdSelectCoinCommand, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" CommandParameter="{Binding RowData.Row}"  AllowAutoNavigate="True" HorizontalAlignment="Center" ShowError="False" ShowErrorToolTip="False" ShowNavigationUrlToolTip="False"/>
+                                                <Image Source="{Binding RowData.Row.ieoImage}" Visibility="{Binding RowData.Row.ieoVisible}" Width="29" Height="17" Margin="2,0,2,0"/>
+                                            </StackPanel>
+                                        </Grid>
+                                    </DataTemplate>
+                                </dxg:GridColumn.CellTemplate>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_3}" FieldName="coinPrc">
+                                <dxg:GridColumn.EditSettings>
+                                    <dxe:TextEditSettings MaskType="Numeric" Mask="{Binding CommonFloat}" HorizontalContentAlignment="Right" MaskUseAsDisplayFormat="True" />
+                                </dxg:GridColumn.EditSettings>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_4_1}" FieldName="chgPrc" Width="110"  Visible="False">
+                                <dxg:GridColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,5,0">
+                                            <TextBlock Text="{Binding RowData.Row.chgPrc, StringFormat={}{0:n0}}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </dxg:GridColumn.CellTemplate>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_4_2}" FieldName="volume"  Width="90">
+                                <dxg:GridColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,18,0">
+                                            <TextBlock Text="{Binding RowData.Row.volume, StringFormat='{}{0:n2}%'}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </dxg:GridColumn.CellTemplate>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_5}" FieldName="svcTranAmt" Width="60" Visible="{Binding AmtVisible}">
+                                <dxg:GridColumn.EditSettings>
+                                    <dxe:TextEditSettings MaskType="Numeric" Mask="n8" HorizontalContentAlignment="Right" MaskUseAsDisplayFormat="True" />
+                                </dxg:GridColumn.EditSettings>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_6}" FieldName="svcTranPrc"  Visible="False">
+                                <dxg:GridColumn.EditSettings>
+                                    <dxe:TextEditSettings MaskType="Numeric" Mask="n2" MaskUseAsDisplayFormat="True" />
+                                </dxg:GridColumn.EditSettings>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_7}" Width="80" Visible="False">
+                                <dxg:GridColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Content="{x:Static localization:Resource.ExchangeDashoard_Gird_1_7}" Width="60" Height="18" Command="{Binding DataContext.TradePageCallCommand ,RelativeSource={RelativeSource Mode=FindAncestor ,AncestorType=UserControl}}" CommandParameter="{Binding RowData.Row.coinNm}">
+                                            <Button.Style>
+                                                <Style TargetType="{x:Type Button}">
+                                                    <Setter Property="Template">
+                                                        <Setter.Value>
+                                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                                <Grid>
+                                                                    <Image Name="btnImg" Source="{Binding Path=DataContext.btn_main_buysell, RelativeSource={RelativeSource FindAncestor, AncestorType=UserControl}, TargetNullValue={x:Null}}"/>
+                                                                </Grid>
+                                                                <ControlTemplate.Triggers>
+                                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                                        <Setter Property="Source" TargetName="btnImg" Value="{Binding Path=DataContext.btn_main_buysell_on, RelativeSource={RelativeSource FindAncestor, AncestorType=UserControl}, TargetNullValue={x:Null}}"/>
+                                                                    </Trigger>
+                                                                </ControlTemplate.Triggers>
+                                                            </ControlTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </Button.Style>
+                                        </Button>
+                                    </DataTemplate>
+                                </dxg:GridColumn.CellTemplate>
+                            </dxg:GridColumn>
+                        </dxg:GridControl>
+                    </Grid>
+                </dx:DXTabItem>
+                <dx:DXTabItem Tag="CMMC00000001086">
+                    <dx:DXTabItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Images/ico_nav_usdt.png" Width="12" Height="10" Margin="0,0,3,0" />
+                            <TextBlock Text="USDT"/>
+                        </StackPanel>
+                    </dx:DXTabItem.Header>
+                    <Grid  Margin="-8">
+                        <Grid.Resources>
+                            <Style TargetType="{x:Type dxg:GridColumn}">
+                                <Setter Property="HorizontalHeaderContentAlignment" Value="Center" />
+                            </Style>
+                        </Grid.Resources>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="{Binding HeaderHeight}"/>
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Border Grid.Row="0" Visibility="{Binding HeaderVisible}" Background="White" BorderBrush="#d8d8d8" BorderThickness="1" Margin="0,0,0,5">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Border Grid.Column="0" >
+                                    <Image Source="{Binding img_main_coin, TargetNullValue={x:Null}}" Width="26" />
+                                </Border>
+
+                                <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                                    <TextBlock Text="Quotes" Foreground="#666"/>
+                                    <TextBlock Text="Rate" Foreground="#666"/>
+                                    <TextBlock Text="Volume" Foreground="#666"/>
+                                </StackPanel>
+
+                                <StackPanel Grid.Column="2" VerticalAlignment="Center">
+                                    <TextBlock Text="{Binding txt_Quotes, StringFormat={}{0:n8}}" Foreground="#666"/>
+                                    <TextBlock Text="{Binding txt_Rate, StringFormat='{}{0:n2}%'}" Foreground="#666"/>
+                                    <TextBlock Text="{Binding txt_Volume, StringFormat={}{0:n8}}" Foreground="#666"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+                        <dxg:GridControl Grid.Row="1" ItemsSource="{Binding CoinPriceData}" SelectedItem="{Binding SelectItem}" dxlc:LayoutControl.AllowHorizontalSizing="True" SelectionMode="Row" dx:ThemeManager.Theme="Office2013LightGray" >
+                            <dxg:GridControl.View>
+                                <dxg:TableView  RowMinHeight="28" HeaderPanelMinHeight="28"  VerticalScrollbarVisibility="Auto" HorizontalScrollbarVisibility="Auto" AllowPerPixelScrolling="True" ShowTotalSummary="False" ShowGroupPanel="False" AllowColumnFiltering="False" AllowFilterEditor="False" AllowColumnMoving="False" AllowEditing="False" AllowGrouping="False" AllowMoveColumnToDropArea="False" ShowAutoFilterRow="False" AutoWidth="True" NavigationStyle="None" ShowIndicator="False" ShowVerticalLines="False" AllowSorting="False">
+                                    <dxg:TableView.FormatConditions>
+                                        <dxg:FormatCondition Expression="[chgPrc] &gt; 0" FieldName="chgPrc">
+                                            <dx:Format Foreground="#fc7777"/>
+                                        </dxg:FormatCondition>
+                                        <dxg:FormatCondition Expression="[chgPrc] &lt; 0" FieldName="chgPrc">
+                                            <dx:Format Foreground="#0093cf"/>
+                                        </dxg:FormatCondition>
+                                        <!--<dxg:FormatCondition Expression="[coinNm] = 'ADM'" ApplyToRow="True">
+                                            <dx:Format Background="#c2deff"/>
+                                        </dxg:FormatCondition>-->
+                                        <dxg:IconSetFormatCondition FieldName="volume" >
+                                            <dxg:IconSetFormatCondition.Format>
+                                                <dxg:IconSetFormat ElementThresholdType="Number">
+                                                    <dxg:IconSetElement Threshold="0.1" ThresholdComparisonType="GreaterOrEqual">
+                                                        <dxg:IconSetElement.Icon>
+                                                            <BitmapImage  UriSource="/coinBlock;component/Images/ico_up_arr_red.png"/>
+                                                        </dxg:IconSetElement.Icon>
+                                                    </dxg:IconSetElement>
+                                                    <dxg:IconSetElement Threshold="0" ThresholdComparisonType="GreaterOrEqual">
+                                                        <dxg:IconSetElement.Icon>
+                                                            <BitmapImage  UriSource="/coinBlock;component/Images/ico_stop_change.png"/>
+                                                        </dxg:IconSetElement.Icon>
+                                                    </dxg:IconSetElement>
+                                                    <dxg:IconSetElement Threshold="-Infinity" ThresholdComparisonType="GreaterOrEqual" >
+                                                        <dxg:IconSetElement.Icon>
+                                                            <BitmapImage UriSource="/coinBlock;component/Images/ico_down_arr_blue.png"/>
+                                                        </dxg:IconSetElement.Icon>
+                                                    </dxg:IconSetElement>
+                                                </dxg:IconSetFormat>
+                                            </dxg:IconSetFormatCondition.Format>
+                                        </dxg:IconSetFormatCondition>
+                                    </dxg:TableView.FormatConditions>
+                                </dxg:TableView>
+                            </dxg:GridControl.View>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_2}"  FieldName="coinNmView" Width="110">
+                                <dxg:GridColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                <Image Source="{Binding RowData.Row.coinImage}" Width="15" Height="15" Margin="2,0,2,0"/>
+                                                <dxe:HyperlinkEdit EditValue="{Binding RowData.Row.coinNmView}" Foreground="Black" FontWeight="{Binding RowData.Row.bold_Gb}" Command="{Binding DataContext.CmdSelectCoinCommand, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" CommandParameter="{Binding RowData.Row}"  AllowAutoNavigate="True" HorizontalAlignment="Center" ShowError="False" ShowErrorToolTip="False" ShowNavigationUrlToolTip="False"/>
+                                                <Image Source="{Binding RowData.Row.ieoImage}" Visibility="{Binding RowData.Row.ieoVisible}" Width="29" Height="17" Margin="2,0,2,0"/>
+                                            </StackPanel>
+                                        </Grid>
+                                    </DataTemplate>
+                                </dxg:GridColumn.CellTemplate>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_3}" FieldName="coinPrc">
+                                <dxg:GridColumn.EditSettings>
+                                    <dxe:TextEditSettings MaskType="Numeric" Mask="{Binding CommonFloat}" HorizontalContentAlignment="Right" MaskUseAsDisplayFormat="True" />
+                                </dxg:GridColumn.EditSettings>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_4_1}" FieldName="chgPrc" Width="110"  Visible="False">
+                                <dxg:GridColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,5,0">
+                                            <TextBlock Text="{Binding RowData.Row.chgPrc, StringFormat={}{0:n0}}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </dxg:GridColumn.CellTemplate>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_4_2}" FieldName="volume"  Width="90">
+                                <dxg:GridColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,18,0">
+                                            <TextBlock Text="{Binding RowData.Row.volume, StringFormat='{}{0:n2}%'}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </dxg:GridColumn.CellTemplate>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_5}" FieldName="svcTranAmt" Width="60" Visible="{Binding AmtVisible}">
+                                <dxg:GridColumn.EditSettings>
+                                    <dxe:TextEditSettings MaskType="Numeric" Mask="n8" HorizontalContentAlignment="Right" MaskUseAsDisplayFormat="True" />
+                                </dxg:GridColumn.EditSettings>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_6}" FieldName="svcTranPrc"  Visible="False">
+                                <dxg:GridColumn.EditSettings>
+                                    <dxe:TextEditSettings MaskType="Numeric" Mask="n2" MaskUseAsDisplayFormat="True" />
+                                </dxg:GridColumn.EditSettings>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_7}" Width="80" Visible="False">
+                                <dxg:GridColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Content="{x:Static localization:Resource.ExchangeDashoard_Gird_1_7}" Width="60" Height="18" Command="{Binding DataContext.TradePageCallCommand ,RelativeSource={RelativeSource Mode=FindAncestor ,AncestorType=UserControl}}" CommandParameter="{Binding RowData.Row.coinNm}">
+                                            <Button.Style>
+                                                <Style TargetType="{x:Type Button}">
+                                                    <Setter Property="Template">
+                                                        <Setter.Value>
+                                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                                <Grid>
+                                                                    <Image Name="btnImg" Source="{Binding Path=DataContext.btn_main_buysell, RelativeSource={RelativeSource FindAncestor, AncestorType=UserControl}, TargetNullValue={x:Null}}"/>
+                                                                </Grid>
+                                                                <ControlTemplate.Triggers>
+                                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                                        <Setter Property="Source" TargetName="btnImg" Value="{Binding Path=DataContext.btn_main_buysell_on, RelativeSource={RelativeSource FindAncestor, AncestorType=UserControl}, TargetNullValue={x:Null}}"/>
+                                                                    </Trigger>
+                                                                </ControlTemplate.Triggers>
+                                                            </ControlTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </Button.Style>
+                                        </Button>
+                                    </DataTemplate>
+                                </dxg:GridColumn.CellTemplate>
+                            </dxg:GridColumn>
+                        </dxg:GridControl>
+                    </Grid>
+                </dx:DXTabItem>
+                <dx:DXTabItem Tag="CMMC00000000205">
+                    <dx:DXTabItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Images/ico_nav_btc.png" Width="12" Height="10" Margin="0,0,3,0" />
+                            <TextBlock Text="BTC"/>
+                        </StackPanel>
+                    </dx:DXTabItem.Header>
+                    <Grid  Margin="-8">
+                        <Grid.Resources>
+                            <Style TargetType="{x:Type dxg:GridColumn}">
+                                <Setter Property="HorizontalHeaderContentAlignment" Value="Center" />
+                            </Style>
+                        </Grid.Resources>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="{Binding HeaderHeight}"/>
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Border Grid.Row="0" Visibility="{Binding HeaderVisible}" Background="White" BorderBrush="#d8d8d8" BorderThickness="1" Margin="0,0,0,5">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Border Grid.Column="0" >
+                                    <Image Source="{Binding img_main_coin, TargetNullValue={x:Null}}" Width="26" />
+                                </Border>
+
+                                <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                                    <TextBlock Text="Quotes" Foreground="#666"/>
+                                    <TextBlock Text="Rate" Foreground="#666"/>
+                                    <TextBlock Text="Volume" Foreground="#666"/>
+                                </StackPanel>
+
+                                <StackPanel Grid.Column="2" VerticalAlignment="Center">
+                                    <TextBlock Text="{Binding txt_Quotes, StringFormat={}{0:n8}}" Foreground="#666"/>
+                                    <TextBlock Text="{Binding txt_Rate, StringFormat='{}{0:n2}%'}" Foreground="#666"/>
+                                    <TextBlock Text="{Binding txt_Volume, StringFormat={}{0:n8}}" Foreground="#666"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+                        <dxg:GridControl Grid.Row="1" ItemsSource="{Binding CoinPriceData}" SelectedItem="{Binding SelectItem}" dxlc:LayoutControl.AllowHorizontalSizing="True" SelectionMode="Row" dx:ThemeManager.Theme="Office2013LightGray" >
+                            <dxg:GridControl.View>
+                                <dxg:TableView  RowMinHeight="28" HeaderPanelMinHeight="28"  VerticalScrollbarVisibility="Auto" HorizontalScrollbarVisibility="Auto" AllowPerPixelScrolling="True" ShowTotalSummary="False" ShowGroupPanel="False" AllowColumnFiltering="False" AllowFilterEditor="False" AllowColumnMoving="False" AllowEditing="False" AllowGrouping="False" AllowMoveColumnToDropArea="False" ShowAutoFilterRow="False" AutoWidth="True" NavigationStyle="None" ShowIndicator="False" ShowVerticalLines="False" AllowSorting="False">
+                                    <dxg:TableView.FormatConditions>
+                                        <dxg:FormatCondition Expression="[chgPrc] &gt; 0" FieldName="chgPrc">
+                                            <dx:Format Foreground="#fc7777"/>
+                                        </dxg:FormatCondition>
+                                        <dxg:FormatCondition Expression="[chgPrc] &lt; 0" FieldName="chgPrc">
+                                            <dx:Format Foreground="#0093cf"/>
+                                        </dxg:FormatCondition>
+                                        <!--<dxg:FormatCondition Expression="[coinNm] = 'ADM'" ApplyToRow="True">
+                                            <dx:Format Background="#c2deff"/>
+                                        </dxg:FormatCondition>-->
+                                        <dxg:IconSetFormatCondition FieldName="volume" >
+                                            <dxg:IconSetFormatCondition.Format>
+                                                <dxg:IconSetFormat ElementThresholdType="Number">
+                                                    <dxg:IconSetElement Threshold="0.1" ThresholdComparisonType="GreaterOrEqual">
+                                                        <dxg:IconSetElement.Icon>
+                                                            <BitmapImage  UriSource="/coinBlock;component/Images/ico_up_arr_red.png"/>
+                                                        </dxg:IconSetElement.Icon>
+                                                    </dxg:IconSetElement>
+                                                    <dxg:IconSetElement Threshold="0" ThresholdComparisonType="GreaterOrEqual">
+                                                        <dxg:IconSetElement.Icon>
+                                                            <BitmapImage  UriSource="/coinBlock;component/Images/ico_stop_change.png"/>
+                                                        </dxg:IconSetElement.Icon>
+                                                    </dxg:IconSetElement>
+                                                    <dxg:IconSetElement Threshold="-Infinity" ThresholdComparisonType="GreaterOrEqual" >
+                                                        <dxg:IconSetElement.Icon>
+                                                            <BitmapImage UriSource="/coinBlock;component/Images/ico_down_arr_blue.png"/>
+                                                        </dxg:IconSetElement.Icon>
+                                                    </dxg:IconSetElement>
+                                                </dxg:IconSetFormat>
+                                            </dxg:IconSetFormatCondition.Format>
+                                        </dxg:IconSetFormatCondition>
+                                    </dxg:TableView.FormatConditions>                                 
+                                </dxg:TableView>
+                            </dxg:GridControl.View>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_2}"  FieldName="coinNmView" Width="110">
+                                <dxg:GridColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                <Image Source="{Binding RowData.Row.coinImage}" Width="15" Height="15" Margin="2,0,2,0"/>
+                                                <dxe:HyperlinkEdit EditValue="{Binding RowData.Row.coinNmView}" Foreground="Black" FontWeight="{Binding RowData.Row.bold_Gb}" Command="{Binding DataContext.CmdSelectCoinCommand, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" CommandParameter="{Binding RowData.Row}"  AllowAutoNavigate="True" HorizontalAlignment="Center" ShowError="False" ShowErrorToolTip="False" ShowNavigationUrlToolTip="False"/>
+                                                <Image Source="{Binding RowData.Row.ieoImage}" Visibility="{Binding RowData.Row.ieoVisible}" Width="29" Height="17" Margin="2,0,2,0"/>
+                                            </StackPanel>
+                                        </Grid>
+                                    </DataTemplate>
+                                </dxg:GridColumn.CellTemplate>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_3}" FieldName="coinPrc">
+                                <dxg:GridColumn.EditSettings>
+                                    <dxe:TextEditSettings MaskType="Numeric" Mask="{Binding CommonFloat}" HorizontalContentAlignment="Right" MaskUseAsDisplayFormat="True" />
+                                </dxg:GridColumn.EditSettings>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_4_1}" FieldName="chgPrc" Width="110"  Visible="False">
+                                <dxg:GridColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,5,0">
+                                            <TextBlock Text="{Binding RowData.Row.chgPrc, StringFormat={}{0:n0}}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </dxg:GridColumn.CellTemplate>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_4_2}" FieldName="volume"  Width="90">
+                                <dxg:GridColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,18,0">
+                                            <TextBlock Text="{Binding RowData.Row.volume, StringFormat='{}{0:n2}%'}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </dxg:GridColumn.CellTemplate>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_5}" FieldName="svcTranAmt" Width="60" Visible="{Binding AmtVisible}">
+                                <dxg:GridColumn.EditSettings>
+                                    <dxe:TextEditSettings MaskType="Numeric" Mask="n8" HorizontalContentAlignment="Right" MaskUseAsDisplayFormat="True" />
+                                </dxg:GridColumn.EditSettings>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_6}" FieldName="svcTranPrc"  Visible="False">
+                                <dxg:GridColumn.EditSettings>
+                                    <dxe:TextEditSettings MaskType="Numeric" Mask="n2" MaskUseAsDisplayFormat="True" />
+                                </dxg:GridColumn.EditSettings>
+                            </dxg:GridColumn>
+                            <dxg:GridColumn Header="{x:Static localization:Resource.ExchangeDashoard_Gird_1_7}" Width="80" Visible="False">
+                                <dxg:GridColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Content="{x:Static localization:Resource.ExchangeDashoard_Gird_1_7}" Width="60" Height="18" Command="{Binding DataContext.TradePageCallCommand ,RelativeSource={RelativeSource Mode=FindAncestor ,AncestorType=UserControl}}" CommandParameter="{Binding RowData.Row.coinNm}">
+                                            <Button.Style>
+                                                <Style TargetType="{x:Type Button}">
+                                                    <Setter Property="Template">
+                                                        <Setter.Value>
+                                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                                <Grid>
+                                                                    <Image Name="btnImg" Source="{Binding Path=DataContext.btn_main_buysell, RelativeSource={RelativeSource FindAncestor, AncestorType=UserControl}, TargetNullValue={x:Null}}"/>
+                                                                </Grid>
+                                                                <ControlTemplate.Triggers>
+                                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                                        <Setter Property="Source" TargetName="btnImg" Value="{Binding Path=DataContext.btn_main_buysell_on, RelativeSource={RelativeSource FindAncestor, AncestorType=UserControl}, TargetNullValue={x:Null}}"/>
+                                                                    </Trigger>
+                                                                </ControlTemplate.Triggers>
+                                                            </ControlTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </Button.Style>
+                                        </Button>
+                                    </DataTemplate>
+                                </dxg:GridColumn.CellTemplate>
+                            </dxg:GridColumn>
+                        </dxg:GridControl>
+                    </Grid>
+                </dx:DXTabItem>
+
+            </dx:DXTabControl>
+        </dxlc:LayoutGroup>
+    </Grid>
+</UserControl>

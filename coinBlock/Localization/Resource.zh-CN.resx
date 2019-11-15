@@ -1,0 +1,5139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Alert_1" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="Alert_2" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="Alert_3" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="Alert_4" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="AlramMyPage_1_1" xml:space="preserve">
+    <value>提醒</value>
+  </data>
+  <data name="AlramMyPage_1_2" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="AlramMyPage_1_2_1" xml:space="preserve">
+    <value>按价格</value>
+  </data>
+  <data name="AlramMyPage_1_2_10" xml:space="preserve">
+    <value>自动交易登记</value>
+  </data>
+  <data name="AlramMyPage_1_2_11" xml:space="preserve">
+    <value>IP属性</value>
+  </data>
+  <data name="AlramMyPage_1_2_12" xml:space="preserve">
+    <value>帐户锁定</value>
+  </data>
+  <data name="AlramMyPage_1_2_13" xml:space="preserve">
+    <value>硬币交换自动交易执行</value>
+  </data>
+  <data name="AlramMyPage_1_2_2" xml:space="preserve">
+    <value>按时间</value>
+  </data>
+  <data name="AlramMyPage_1_2_3" xml:space="preserve">
+    <value>1:1问答</value>
+  </data>
+  <data name="AlramMyPage_1_2_4" xml:space="preserve">
+    <value>附加服务</value>
+  </data>
+  <data name="AlramMyPage_1_2_5" xml:space="preserve">
+    <value>存取款</value>
+  </data>
+  <data name="AlramMyPage_1_2_6" xml:space="preserve">
+    <value>买入/卖出</value>
+  </data>
+  <data name="AlramMyPage_1_2_7" xml:space="preserve">
+    <value>公告通知</value>
+  </data>
+  <data name="AlramMyPage_1_2_8" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="AlramMyPage_1_2_9" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="AlramMyPage_1_3" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="AlramMyPage_1_4" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="AlramMyPage_1_5" xml:space="preserve">
+    <value>了解更多</value>
+  </data>
+  <data name="AlramMyPage_2_1" xml:space="preserve">
+    <value>提醒设置</value>
+  </data>
+  <data name="AlramMyPage_2_2" xml:space="preserve">
+    <value>基本设置</value>
+  </data>
+  <data name="AlramMyPage_2_2_1" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="AlramMyPage_2_2_2" xml:space="preserve">
+    <value>公告通知</value>
+  </data>
+  <data name="AlramMyPage_2_2_3" xml:space="preserve">
+    <value>附加服务设置</value>
+  </data>
+  <data name="AlramMyPage_2_2_4" xml:space="preserve">
+    <value>1:1问答</value>
+  </data>
+  <data name="AlramMyPage_2_3" xml:space="preserve">
+    <value>买入/卖出</value>
+  </data>
+  <data name="AlramMyPage_2_3_1" xml:space="preserve">
+    <value>订购买入</value>
+  </data>
+  <data name="AlramMyPage_2_3_2" xml:space="preserve">
+    <value>成交买入</value>
+  </data>
+  <data name="AlramMyPage_2_3_3" xml:space="preserve">
+    <value>订购卖出</value>
+  </data>
+  <data name="AlramMyPage_2_3_4" xml:space="preserve">
+    <value>成交卖出</value>
+  </data>
+  <data name="AlramMyPage_2_4" xml:space="preserve">
+    <value>存取款</value>
+  </data>
+  <data name="AlramMyPage_2_4_1" xml:space="preserve">
+    <value>转入加密货币</value>
+  </data>
+  <data name="AlramMyPage_2_4_2" xml:space="preserve">
+    <value>转出加密货币</value>
+  </data>
+  <data name="AlramMyPage_2_5" xml:space="preserve">
+    <value>选择加密货币</value>
+  </data>
+  <data name="AlramMyPage_2_6" xml:space="preserve">
+    <value>通知时间</value>
+  </data>
+  <data name="AlramMyPage_2_6_1" xml:space="preserve">
+    <value>~点到</value>
+  </data>
+  <data name="AlramMyPage_2_6_2" xml:space="preserve">
+    <value>~点</value>
+  </data>
+  <data name="AlramMyPage_2_7" xml:space="preserve">
+    <value>通知间隔</value>
+  </data>
+  <data name="AlramMyPage_2_7_1" xml:space="preserve">
+    <value>小时接收一次通知</value>
+  </data>
+  <data name="AlramMyPage_2_8_1" xml:space="preserve">
+    <value>当前市价</value>
+  </data>
+  <data name="AlramMyPage_2_8_10" xml:space="preserve">
+    <value>重复通知</value>
+  </data>
+  <data name="AlramMyPage_2_8_11" xml:space="preserve">
+    <value>每30分钟通知</value>
+  </data>
+  <data name="AlramMyPage_2_8_12" xml:space="preserve">
+    <value>每1小时通知</value>
+  </data>
+  <data name="AlramMyPage_2_8_3" xml:space="preserve">
+    <value>最高价</value>
+  </data>
+  <data name="AlramMyPage_2_8_4" xml:space="preserve">
+    <value>~元以上</value>
+  </data>
+  <data name="AlramMyPage_2_8_5" xml:space="preserve">
+    <value>最低价</value>
+  </data>
+  <data name="AlramMyPage_2_8_6" xml:space="preserve">
+    <value>~元以下</value>
+  </data>
+  <data name="AlramMyPage_2_8_7" xml:space="preserve">
+    <value>重复设置</value>
+  </data>
+  <data name="AlramMyPage_2_8_8" xml:space="preserve">
+    <value>只通知一次</value>
+  </data>
+  <data name="AlramMyPage_2_8_9" xml:space="preserve">
+    <value>重复通知</value>
+  </data>
+  <data name="AlramMyPage_Alert_1" xml:space="preserve">
+    <value>终止时间需大于开始时间。</value>
+  </data>
+  <data name="AlramMyPage_Alert_2" xml:space="preserve">
+    <value>设置指定间隔时间需小于通知时间。</value>
+  </data>
+  <data name="AlramMyPage_Common_1" xml:space="preserve">
+    <value>基本通知</value>
+  </data>
+  <data name="AlramMyPage_Common_2" xml:space="preserve">
+    <value>按时间设置价格通知</value>
+  </data>
+  <data name="AlramMyPage_Common_3" xml:space="preserve">
+    <value>按金额设置价格通知</value>
+  </data>
+  <data name="AssetsMyPage_1" xml:space="preserve">
+    <value>电子钱包地址</value>
+  </data>
+  <data name="AssetsMyPage_1_1" xml:space="preserve">
+    <value>您可以在</value>
+  </data>
+  <data name="AssetsMyPage_1_2" xml:space="preserve">
+    <value>[HTS，MTS&gt; 存取款管理&gt; 转入加密货币]</value>
+  </data>
+  <data name="AssetsMyPage_1_3" xml:space="preserve">
+    <value>中生成电子钱包地址。</value>
+  </data>
+  <data name="AssetsMyPage_2" xml:space="preserve">
+    <value>资产现状</value>
+  </data>
+  <data name="AssetsMyPage_2_1" xml:space="preserve">
+    <value>加密货币资产</value>
+  </data>
+  <data name="AssetsMyPage_2_2" xml:space="preserve">
+    <value>总资产</value>
+  </data>
+  <data name="AssetsMyPage_3_1" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="AssetsMyPage_3_2" xml:space="preserve">
+    <value>可交易</value>
+  </data>
+  <data name="AssetsMyPage_3_3" xml:space="preserve">
+    <value>可交易</value>
+  </data>
+  <data name="AssetsMyPage_3_4" xml:space="preserve">
+    <value>等待交易</value>
+  </data>
+  <data name="AssetsMyPage_3_5" xml:space="preserve">
+    <value>合计</value>
+  </data>
+  <data name="AssetsMyPage_4" xml:space="preserve">
+    <value>市场差价</value>
+  </data>
+  <data name="AssetsMyPage_4_1" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="AssetsMyPage_4_2" xml:space="preserve">
+    <value>持有数量</value>
+  </data>
+  <data name="AssetsMyPage_4_3" xml:space="preserve">
+    <value>买入平均价</value>
+  </data>
+  <data name="AssetsMyPage_4_4" xml:space="preserve">
+    <value>买入金额</value>
+  </data>
+  <data name="AssetsMyPage_4_5" xml:space="preserve">
+    <value>当前市价</value>
+  </data>
+  <data name="AssetsMyPage_4_6" xml:space="preserve">
+    <value>评估金额</value>
+  </data>
+  <data name="AssetsMyPage_4_7" xml:space="preserve">
+    <value>评估利润</value>
+  </data>
+  <data name="AssetsMyPage_4_8" xml:space="preserve">
+    <value>收益率</value>
+  </data>
+  <data name="AssetsMyPage_4_9" xml:space="preserve">
+    <value>合计</value>
+  </data>
+  <data name="AssetsMyPage_5" xml:space="preserve">
+    <value>按期市场差价</value>
+  </data>
+  <data name="AssetsMyPage_5_1" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="AssetsMyPage_5_10" xml:space="preserve">
+    <value>收益率</value>
+  </data>
+  <data name="AssetsMyPage_5_11" xml:space="preserve">
+    <value>当前市价</value>
+  </data>
+  <data name="AssetsMyPage_5_12" xml:space="preserve">
+    <value>合计</value>
+  </data>
+  <data name="AssetsMyPage_5_2" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="AssetsMyPage_5_3" xml:space="preserve">
+    <value>买入数量</value>
+  </data>
+  <data name="AssetsMyPage_5_4" xml:space="preserve">
+    <value>买入平均价</value>
+  </data>
+  <data name="AssetsMyPage_5_5" xml:space="preserve">
+    <value>买入总额</value>
+  </data>
+  <data name="AssetsMyPage_5_6" xml:space="preserve">
+    <value>卖出数量</value>
+  </data>
+  <data name="AssetsMyPage_5_7" xml:space="preserve">
+    <value>卖出平均价</value>
+  </data>
+  <data name="AssetsMyPage_5_8" xml:space="preserve">
+    <value>卖出总金额</value>
+  </data>
+  <data name="AssetsMyPage_5_9" xml:space="preserve">
+    <value>差价</value>
+  </data>
+  <data name="AssetsMyPage_6" xml:space="preserve">
+    <value>加密货币资产</value>
+  </data>
+  <data name="AssetsMyPage_6_1" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="AssetsMyPage_6_2" xml:space="preserve">
+    <value>Bitcoin(BTC)</value>
+  </data>
+  <data name="AssetsMyPage_6_3" xml:space="preserve">
+    <value>Ethereum(ETH)</value>
+  </data>
+  <data name="AssetsMyPage_6_4" xml:space="preserve">
+    <value>Bitcoin Cash(BCH)</value>
+  </data>
+  <data name="AssetsMyPage_6_5" xml:space="preserve">
+    <value>Ripple(XRP)</value>
+  </data>
+  <data name="AssetsMyPage_6_6" xml:space="preserve">
+    <value>可交易</value>
+  </data>
+  <data name="AssetsMyPage_6_7" xml:space="preserve">
+    <value>等待交易</value>
+  </data>
+  <data name="AssetsMyPage_6_8" xml:space="preserve">
+    <value>合计</value>
+  </data>
+  <data name="AutoTradingAdditional_1" xml:space="preserve">
+    <value>自动交易</value>
+  </data>
+  <data name="AutoTradingAdditional_1_1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AutoTradingAdditional_1_10" xml:space="preserve">
+    <value>买入/卖出。</value>
+  </data>
+  <data name="AutoTradingAdditional_1_2" xml:space="preserve">
+    <value>ㆍCoinBlock是唯一提供</value>
+  </data>
+  <data name="AutoTradingAdditional_1_3" xml:space="preserve">
+    <value>自动交易功能的交易所，</value>
+  </data>
+  <data name="AutoTradingAdditional_1_4" xml:space="preserve">
+    <value>ㆍ自动交易是可以同时为损益订购的交易。</value>
+  </data>
+  <data name="AutoTradingAdditional_1_5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AutoTradingAdditional_1_6" xml:space="preserve">
+    <value>*自动交易可以设置买入价/卖出价，每当市场价达到设置价格时将自动进行交易。</value>
+  </data>
+  <data name="AutoTradingAdditional_1_7" xml:space="preserve">
+    <value>*止损交易是卖出价下降时设置止损价格（将损失降至最低的价格）。</value>
+  </data>
+  <data name="AutoTradingAdditional_1_8" xml:space="preserve">
+    <value>*此服务是附加服务， 可在[HTS, MTS, WEB &gt;买入币/卖出币]菜单的自动交易， 止损自动交易选项卡中设置。</value>
+  </data>
+  <data name="AutoTradingAdditional_1_9" xml:space="preserve">
+    <value>只有PC交易所处于登录状态时（即HTS正在运行），才能自动进行设置的买入/卖出交易。</value>
+  </data>
+  <data name="AutoTradingAdditional_2" xml:space="preserve">
+    <value>加密货币间自动兑换交易</value>
+  </data>
+  <data name="AutoTradingAdditional_2_1" xml:space="preserve">
+    <value>“加密货币间自动兑换交易”可以设定持有币和兑换币的变动率，如果超过设定的比率则发送推送通知。</value>
+  </data>
+  <data name="AutoTradingAdditional_2_2" xml:space="preserve">
+    <value>自动交易功能可以在[HTS&gt;买入币/卖出币&gt;加密货币间自动兑换交易]中的[设置加密货币间兑换交易]中设置后，在[进行加密货币间兑换交易]中进行交易。</value>
+  </data>
+  <data name="AutoTradingAdditional_3" xml:space="preserve">
+    <value>自动交易申请状态</value>
+  </data>
+  <data name="AutoTradingAdditional_3_1" xml:space="preserve">
+    <value>未申请</value>
+  </data>
+  <data name="AutoTradingAdditional_3_10" xml:space="preserve">
+    <value>服务，</value>
+  </data>
+  <data name="AutoTradingAdditional_3_12" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AutoTradingAdditional_3_2" xml:space="preserve">
+    <value>申请</value>
+  </data>
+  <data name="AutoTradingAdditional_3_3" xml:space="preserve">
+    <value>付款方式</value>
+  </data>
+  <data name="AutoTradingAdditional_3_4" xml:space="preserve">
+    <value>每月（30日）</value>
+  </data>
+  <data name="AutoTradingAdditional_3_5" xml:space="preserve">
+    <value>自动交易是</value>
+  </data>
+  <data name="AutoTradingAdditional_3_6" xml:space="preserve">
+    <value>付费</value>
+  </data>
+  <data name="Bookmark_1" xml:space="preserve">
+    <value>全部快捷菜单</value>
+  </data>
+  <data name="Bookmark_2" xml:space="preserve">
+    <value>已选的快捷菜单</value>
+  </data>
+  <data name="Bookmark_3" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="Bookmark_4" xml:space="preserve">
+    <value>可以通过拖放操作</value>
+  </data>
+  <data name="Bookmark_5" xml:space="preserve">
+    <value>更改顺序。</value>
+  </data>
+  <data name="Bookmark_6" xml:space="preserve">
+    <value>快捷菜单至少要选择一个或以上。</value>
+  </data>
+  <data name="Bookmark_7" xml:space="preserve">
+    <value>我的收藏</value>
+  </data>
+  <data name="Bookmark_8" xml:space="preserve">
+    <value>设置我的收藏</value>
+  </data>
+  <data name="CertificationDataSubmit_1" xml:space="preserve">
+    <value>充值证明</value>
+  </data>
+  <data name="CertificationDataSubmit_1_2" xml:space="preserve">
+    <value>请向客服发送</value>
+  </data>
+  <data name="CertificationDataSubmit_1_3" xml:space="preserve">
+    <value>充值证明邮件。</value>
+  </data>
+  <data name="CertificationDataSubmit_1_5" xml:space="preserve">
+    <value>邮箱地址：help@coinblock.kr</value>
+  </data>
+  <data name="CertificationDataSubmit_1_6" xml:space="preserve">
+    <value>邮件标题 / 充值证明文件 / 提交充值证明邮件格式</value>
+  </data>
+  <data name="CertificationDataSubmit_1_7" xml:space="preserve">
+    <value>充值证明邮件格式</value>
+  </data>
+  <data name="CertificationDataSubmit_2" xml:space="preserve">
+    <value>身份认证</value>
+  </data>
+  <data name="CertificationDataSubmit_2_2" xml:space="preserve">
+    <value>提交认证邮件方法</value>
+  </data>
+  <data name="CertificationDataSubmit_2_3" xml:space="preserve">
+    <value>邮箱地址：help@coinblock.kr</value>
+  </data>
+  <data name="CertificationDataSubmit_2_4" xml:space="preserve">
+    <value>邮件标题：提交身份认证文件</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1" xml:space="preserve">
+    <value>身份证照片</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1_1" xml:space="preserve">
+    <value>请遮挡身份证号的后7位数与地址的后半部分。</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1_2" xml:space="preserve">
+    <value>请遮挡请遮挡驾驶证号码和护照号码。 </value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1_3" xml:space="preserve">
+    <value>提交身份证照片时， 请在贴纸上写好认证目的， 认证手机号码，认证邮箱，申请日期等信息后贴在身份证上再提交。</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1_4" xml:space="preserve">
+    <value>(身份认证证件：身份证， 驾驶证，护照)</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_2" xml:space="preserve">
+    <value>手持身份证照片</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_2_1" xml:space="preserve">
+    <value>您提交的信息仅用于非面对面认证。
+请将认证目的，认证手机号码，认证邮箱地址贴在身份证后再拍摄手持身份证照片。身份证照片与认证内容必须清晰。</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_2_2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CertificationDataSubmit_Common_3" xml:space="preserve">
+    <value>交易明细复印件</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_3_1" xml:space="preserve">
+    <value>请提供标有收款人， 金额， 日期与交易明细复印件。</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_3_2" xml:space="preserve">
+    <value>可以截屏或拍摄手机银行交易记录后提交。</value>
+  </data>
+  <data name="CertifyMyPage_1" xml:space="preserve">
+    <value>邮箱认证</value>
+  </data>
+  <data name="CertifyMyPage_1_1" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="CertifyMyPage_2" xml:space="preserve">
+    <value>手机认证</value>
+  </data>
+  <data name="CertifyMyPage_2_1" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="CertifyMyPage_2_1_1" xml:space="preserve">
+    <value>请输入真实姓名。</value>
+  </data>
+  <data name="CertifyMyPage_2_2" xml:space="preserve">
+    <value>国籍</value>
+  </data>
+  <data name="CertifyMyPage_2_3" xml:space="preserve">
+    <value>出生年月日</value>
+  </data>
+  <data name="CertifyMyPage_2_3_1" xml:space="preserve">
+    <value>如) 19960101</value>
+  </data>
+  <data name="CertifyMyPage_2_4" xml:space="preserve">
+    <value>性别</value>
+  </data>
+  <data name="CertifyMyPage_2_4_1" xml:space="preserve">
+    <value>男</value>
+  </data>
+  <data name="CertifyMyPage_2_4_2" xml:space="preserve">
+    <value>女</value>
+  </data>
+  <data name="CertifyMyPage_2_5" xml:space="preserve">
+    <value>手机号码</value>
+  </data>
+  <data name="CertifyMyPage_2_5_1" xml:space="preserve">
+    <value>如) 01012345678</value>
+  </data>
+  <data name="CertifyMyPage_2_6" xml:space="preserve">
+    <value>认证号码</value>
+  </data>
+  <data name="CertifyMyPage_3" xml:space="preserve">
+    <value>绑定银行账户</value>
+  </data>
+  <data name="CertifyMyPage_3_1" xml:space="preserve">
+    <value>银行账号</value>
+  </data>
+  <data name="CertifyMyPage_3_2" xml:space="preserve">
+    <value>银行账号</value>
+  </data>
+  <data name="CertifyMyPage_4" xml:space="preserve">
+    <value>Google OTP</value>
+  </data>
+  <data name="CertifyMyPage_4_1" xml:space="preserve">
+    <value>Google OTP设置方法</value>
+  </data>
+  <data name="CertifyMyPage_4_2" xml:space="preserve">
+    <value>请您用手机安装“Google OTP”应用程序。</value>
+  </data>
+  <data name="CertifyMyPage_4_3" xml:space="preserve">
+    <value>启动“Google OTP”应用程序后选择“扫描条形码”。</value>
+  </data>
+  <data name="CertifyMyPage_4_4" xml:space="preserve">
+    <value>请扫描QR码</value>
+  </data>
+  <data name="CertifyMyPage_4_5" xml:space="preserve">
+    <value>请在下面输入“Google OTP”所示的号码。</value>
+  </data>
+  <data name="CertifyMyPage_4_6" xml:space="preserve">
+    <value>OTP 号码</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_1" xml:space="preserve">
+    <value>自动交易服务只能在PC交易所设置，设置后可以在PC交易所或手机APP进行交易。</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_10" xml:space="preserve">
+    <value>卖出数量</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_11" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_12" xml:space="preserve">
+    <value>满足以下条件时卖出。</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_12_1" xml:space="preserve">
+    <value>当前市价</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_13" xml:space="preserve">
+    <value>设置市价：</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_14_1" xml:space="preserve">
+    <value>可使用余额</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_14_2" xml:space="preserve">
+    <value>）</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_15_1" xml:space="preserve">
+    <value>预定通知</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_15_2" xml:space="preserve">
+    <value>取消通知</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_16" xml:space="preserve">
+    <value>兑换货币变动率</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_17" xml:space="preserve">
+    <value>预计兑换金额</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_18" xml:space="preserve">
+    <value>预定日期</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_19" xml:space="preserve">
+    <value>满足以下条件时买入。</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_2" xml:space="preserve">
+    <value>如持有货币与兑换货币的设置变动率有异常，将发送通知到PC交易所或手机APP。</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_20" xml:space="preserve">
+    <value>设置市价：</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_21" xml:space="preserve">
+    <value>预定通知</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_22" xml:space="preserve">
+    <value>取消通知</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_3" xml:space="preserve">
+    <value>交易时如少于订购数量， 将按持有货币剩余金额进行交易。</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_4" xml:space="preserve">
+    <value>在[设置加密货币间兑换交易]中设置后可使用服务。</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_5" xml:space="preserve">
+    <value>查询日期与交易日期不同时交易金额可能有所差异。</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_6" xml:space="preserve">
+    <value>进行交易时将支付手续费。</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_7" xml:space="preserve">
+    <value>进行交易后在[设置加密货币间兑换交易]中重新设置。</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_8" xml:space="preserve">
+    <value>设置加密货币间自动兑换交易</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_1_9" xml:space="preserve">
+    <value>持有货币变动率</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_1" xml:space="preserve">
+    <value>进行加密货币间兑换交易</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_10" xml:space="preserve">
+    <value>进行交易</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_11" xml:space="preserve">
+    <value>（设置变动率=</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_12" xml:space="preserve">
+    <value>%以上）</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_13" xml:space="preserve">
+    <value>可使用余额</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_14" xml:space="preserve">
+    <value>）</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_2" xml:space="preserve">
+    <value>持有货币价格</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_3" xml:space="preserve">
+    <value>持有货币现价</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_4" xml:space="preserve">
+    <value>卖出数量</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_5" xml:space="preserve">
+    <value>设置变动率</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_6" xml:space="preserve">
+    <value>可使用余额</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_7" xml:space="preserve">
+    <value>兑换货币价格</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_8" xml:space="preserve">
+    <value>兑换货币现价</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_2_9" xml:space="preserve">
+    <value>预计兑换金额</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_Alert_1" xml:space="preserve">
+    <value>兑换货币不能与持有货币相同。</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_Alert_2" xml:space="preserve">
+    <value>超出可使用数量。</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_Alert_3" xml:space="preserve">
+    <value>不能超过100％。</value>
+  </data>
+  <data name="CoinExchangeReservationTrading_Alert_4" xml:space="preserve">
+    <value>进行加密货币间兑换交易通知</value>
+  </data>
+  <data name="CoinInfo_1" xml:space="preserve">
+    <value>首次发行</value>
+  </data>
+  <data name="CoinInfo_2" xml:space="preserve">
+    <value>发行方式</value>
+  </data>
+  <data name="CoinInfo_3" xml:space="preserve">
+    <value>市价总额</value>
+  </data>
+  <data name="CoinInfo_4" xml:space="preserve">
+    <value>当前总发行量</value>
+  </data>
+  <data name="CoinInfo_5" xml:space="preserve">
+    <value>最多发行量</value>
+  </data>
+  <data name="CoinInfo_6" xml:space="preserve">
+    <value>官方网站</value>
+  </data>
+  <data name="CoinInfo_7" xml:space="preserve">
+    <value>加密货币简介</value>
+  </data>
+  <data name="CoinInfo_8" xml:space="preserve">
+    <value>加密货币特点</value>
+  </data>
+  <data name="CoinTrading_1" xml:space="preserve">
+    <value>买入/卖出</value>
+  </data>
+  <data name="CoinTrading_1_1" xml:space="preserve">
+    <value>买入</value>
+  </data>
+  <data name="CoinTrading_1_1_1" xml:space="preserve">
+    <value>买入价格</value>
+  </data>
+  <data name="CoinTrading_1_1_2" xml:space="preserve">
+    <value>购买（买入）数量</value>
+  </data>
+  <data name="CoinTrading_1_1_3" xml:space="preserve">
+    <value>购买（买入）金额</value>
+  </data>
+  <data name="CoinTrading_1_1_4" xml:space="preserve">
+    <value>可买入</value>
+  </data>
+  <data name="CoinTrading_1_1_5" xml:space="preserve">
+    <value>）</value>
+  </data>
+  <data name="CoinTrading_1_2" xml:space="preserve">
+    <value>卖出</value>
+  </data>
+  <data name="CoinTrading_1_2_1" xml:space="preserve">
+    <value>卖出价格</value>
+  </data>
+  <data name="CoinTrading_1_2_2" xml:space="preserve">
+    <value>卖出数量</value>
+  </data>
+  <data name="CoinTrading_1_2_3" xml:space="preserve">
+    <value>卖出金额</value>
+  </data>
+  <data name="CoinTrading_1_2_4" xml:space="preserve">
+    <value>可卖出</value>
+  </data>
+  <data name="CoinTrading_1_2_5" xml:space="preserve">
+    <value>）</value>
+  </data>
+  <data name="CoinTrading_1_3" xml:space="preserve">
+    <value>成交交易时将支付手续费。</value>
+  </data>
+  <data name="CoinTrading_1_4" xml:space="preserve">
+    <value>购买订单价格：设置的价格高于未成交最低销售价时，按市场价成交。</value>
+  </data>
+  <data name="CoinTrading_1_5" xml:space="preserve">
+    <value>销售订单价格：设置的价格低于未成交最高购买价时，按市场价成交。</value>
+  </data>
+  <data name="CoinTrading_2" xml:space="preserve">
+    <value>市场价交易</value>
+  </data>
+  <data name="CoinTrading_2_1" xml:space="preserve">
+    <value>市场价买入</value>
+  </data>
+  <data name="CoinTrading_2_1_1" xml:space="preserve">
+    <value>买入价格</value>
+  </data>
+  <data name="CoinTrading_2_1_2" xml:space="preserve">
+    <value>购买（买入）预计数量</value>
+  </data>
+  <data name="CoinTrading_2_1_3" xml:space="preserve">
+    <value>可买入</value>
+  </data>
+  <data name="CoinTrading_2_1_4" xml:space="preserve">
+    <value>）</value>
+  </data>
+  <data name="CoinTrading_2_2" xml:space="preserve">
+    <value>市场价卖出</value>
+  </data>
+  <data name="CoinTrading_2_2_1" xml:space="preserve">
+    <value>卖出数量</value>
+  </data>
+  <data name="CoinTrading_2_2_2" xml:space="preserve">
+    <value>销售（卖出）预计金额</value>
+  </data>
+  <data name="CoinTrading_2_2_3" xml:space="preserve">
+    <value>可卖出</value>
+  </data>
+  <data name="CoinTrading_2_2_4" xml:space="preserve">
+    <value>）</value>
+  </data>
+  <data name="CoinTrading_2_3" xml:space="preserve">
+    <value>市场价买入按未成交卖出金额从低到高的顺序购买，</value>
+  </data>
+  <data name="CoinTrading_2_4" xml:space="preserve">
+    <value>而实际收到的数量可能根据购买金额有所变动。</value>
+  </data>
+  <data name="CoinTrading_2_5" xml:space="preserve">
+    <value>市场价卖出按未成交买入金额从高到低的顺序卖出，</value>
+  </data>
+  <data name="CoinTrading_2_6" xml:space="preserve">
+    <value>而实际收到的金额可能根据卖出数量有所变动。</value>
+  </data>
+  <data name="CoinTrading_3" xml:space="preserve">
+    <value>自动交易</value>
+  </data>
+  <data name="CoinTrading_3_1" xml:space="preserve">
+    <value>自动交易</value>
+  </data>
+  <data name="CoinTrading_3_1_1" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="CoinTrading_3_1_1_1" xml:space="preserve">
+    <value>自动买入</value>
+  </data>
+  <data name="CoinTrading_3_1_1_2" xml:space="preserve">
+    <value>自动卖出</value>
+  </data>
+  <data name="CoinTrading_3_1_1_3" xml:space="preserve">
+    <value>止损卖出</value>
+  </data>
+  <data name="CoinTrading_3_1_2" xml:space="preserve">
+    <value>顺序1</value>
+  </data>
+  <data name="CoinTrading_3_1_3" xml:space="preserve">
+    <value>顺序2</value>
+  </data>
+  <data name="CoinTrading_3_1_4" xml:space="preserve">
+    <value>顺序3</value>
+  </data>
+  <data name="CoinTrading_3_1_5" xml:space="preserve">
+    <value>可买入金额</value>
+  </data>
+  <data name="CoinTrading_3_1_6" xml:space="preserve">
+    <value>可卖出金额</value>
+  </data>
+  <data name="CoinTrading_3_2" xml:space="preserve">
+    <value>止损自动交易</value>
+  </data>
+  <data name="CoinTrading_4" xml:space="preserve">
+    <value>市场未成交明细</value>
+  </data>
+  <data name="CoinTrading_4_1" xml:space="preserve">
+    <value>出价</value>
+  </data>
+  <data name="CoinTrading_4_2" xml:space="preserve">
+    <value>卖出价（销售）订购量</value>
+  </data>
+  <data name="CoinTrading_4_3" xml:space="preserve">
+    <value>买入价（购买）订购量</value>
+  </data>
+  <data name="CoinTrading_4_4" xml:space="preserve">
+    <value>成交价</value>
+  </data>
+  <data name="CoinTrading_4_5" xml:space="preserve">
+    <value>交易量</value>
+  </data>
+  <data name="CoinTrading_4_6_1" xml:space="preserve">
+    <value>当前市价</value>
+  </data>
+  <data name="CoinTrading_4_6_2" xml:space="preserve">
+    <value>前一天终价</value>
+  </data>
+  <data name="CoinTrading_4_6_3" xml:space="preserve">
+    <value>当天最高价</value>
+  </data>
+  <data name="CoinTrading_4_6_4" xml:space="preserve">
+    <value>当天最低价</value>
+  </data>
+  <data name="CoinTrading_4_6_5" xml:space="preserve">
+    <value>今日总交易量</value>
+  </data>
+  <data name="CoinTrading_4_6_6" xml:space="preserve">
+    <value>前一天总交易量</value>
+  </data>
+  <data name="CoinTrading_4_6_7" xml:space="preserve">
+    <value>今日交易额</value>
+  </data>
+  <data name="CoinTrading_4_6_8" xml:space="preserve">
+    <value>前一天交易额</value>
+  </data>
+  <data name="CoinTrading_5" xml:space="preserve">
+    <value>图表</value>
+  </data>
+  <data name="CoinTrading_6" xml:space="preserve">
+    <value>我的未成交订单</value>
+  </data>
+  <data name="CoinTrading_6_1" xml:space="preserve">
+    <value>种类</value>
+  </data>
+  <data name="CoinTrading_6_1_1" xml:space="preserve">
+    <value>买入</value>
+  </data>
+  <data name="CoinTrading_6_1_2" xml:space="preserve">
+    <value>卖出</value>
+  </data>
+  <data name="CoinTrading_6_2" xml:space="preserve">
+    <value>货币类型</value>
+  </data>
+  <data name="CoinTrading_6_3" xml:space="preserve">
+    <value>订购时间</value>
+  </data>
+  <data name="CoinTrading_6_4" xml:space="preserve">
+    <value>订购量</value>
+  </data>
+  <data name="CoinTrading_6_5" xml:space="preserve">
+    <value>订购价格</value>
+  </data>
+  <data name="CoinTrading_6_6" xml:space="preserve">
+    <value>成交量</value>
+  </data>
+  <data name="CoinTrading_6_7" xml:space="preserve">
+    <value>平均成交价</value>
+  </data>
+  <data name="CoinTrading_6_8" xml:space="preserve">
+    <value>部分成交</value>
+  </data>
+  <data name="CoinTrading_6_9" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="CoinTrading_7" xml:space="preserve">
+    <value>最近交易明细</value>
+  </data>
+  <data name="CoinTrading_7_1" xml:space="preserve">
+    <value>种类</value>
+  </data>
+  <data name="CoinTrading_7_1_1" xml:space="preserve">
+    <value>买入</value>
+  </data>
+  <data name="CoinTrading_7_1_2" xml:space="preserve">
+    <value>卖出</value>
+  </data>
+  <data name="CoinTrading_7_2" xml:space="preserve">
+    <value>成交时间</value>
+  </data>
+  <data name="CoinTrading_7_3" xml:space="preserve">
+    <value>成交量</value>
+  </data>
+  <data name="CoinTrading_7_4" xml:space="preserve">
+    <value>成交价</value>
+  </data>
+  <data name="CoinTrading_7_5" xml:space="preserve">
+    <value>成交金额</value>
+  </data>
+  <data name="CoinTrading_7_6" xml:space="preserve">
+    <value>手续费</value>
+  </data>
+  <data name="CoinTrading_8" xml:space="preserve">
+    <value>自动交易设置明细</value>
+  </data>
+  <data name="CoinTrading_8_1" xml:space="preserve">
+    <value>加密货币</value>
+  </data>
+  <data name="CoinTrading_8_2" xml:space="preserve">
+    <value>买入/卖出</value>
+  </data>
+  <data name="CoinTrading_8_2_1" xml:space="preserve">
+    <value>买入</value>
+  </data>
+  <data name="CoinTrading_8_2_2" xml:space="preserve">
+    <value>卖出</value>
+  </data>
+  <data name="CoinTrading_8_3" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="CoinTrading_8_3_1" xml:space="preserve">
+    <value>自动买入</value>
+  </data>
+  <data name="CoinTrading_8_3_2" xml:space="preserve">
+    <value>自动卖出</value>
+  </data>
+  <data name="CoinTrading_8_3_3" xml:space="preserve">
+    <value>止损卖出</value>
+  </data>
+  <data name="CoinTrading_8_4" xml:space="preserve">
+    <value>顺序</value>
+  </data>
+  <data name="CoinTrading_8_5" xml:space="preserve">
+    <value>金额</value>
+  </data>
+  <data name="CoinTrading_8_6" xml:space="preserve">
+    <value>误差率</value>
+  </data>
+  <data name="CoinTrading_8_7" xml:space="preserve">
+    <value>下限价格</value>
+  </data>
+  <data name="CoinTrading_8_8" xml:space="preserve">
+    <value>上限价格</value>
+  </data>
+  <data name="CoinTrading_8_9" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="CoinTrading_Alert_1" xml:space="preserve">
+    <value>您确定要购买吗？</value>
+  </data>
+  <data name="CoinTrading_Alert_10" xml:space="preserve">
+    <value>最小输入数量是【10】</value>
+  </data>
+  <data name="CoinTrading_Alert_11" xml:space="preserve">
+    <value>最小使用金额是【{0}】 {1}</value>
+  </data>
+  <data name="CoinTrading_Alert_15" xml:space="preserve">
+    <value>您的金额超出可订购金额。</value>
+  </data>
+  <data name="CoinTrading_Alert_16_1" xml:space="preserve">
+    <value>由于当前访问人数过多，导致服务暂时缓慢。</value>
+  </data>
+  <data name="CoinTrading_Alert_16_2" xml:space="preserve">
+    <value>请务必确认[我的交易明细]后再试。</value>
+  </data>
+  <data name="CoinTrading_Alert_17" xml:space="preserve">
+    <value>超出可购买金额。</value>
+  </data>
+  <data name="CoinTrading_Alert_18" xml:space="preserve">
+    <value>请输入订购金额</value>
+  </data>
+  <data name="CoinTrading_Alert_19" xml:space="preserve">
+    <value>请确认可卖出数量</value>
+  </data>
+  <data name="CoinTrading_Alert_2" xml:space="preserve">
+    <value>您确定要卖出吗？</value>
+  </data>
+  <data name="CoinTrading_Alert_20" xml:space="preserve">
+    <value>超出可卖出数量。</value>
+  </data>
+  <data name="CoinTrading_Alert_21" xml:space="preserve">
+    <value>超出可订购的货币数量。</value>
+  </data>
+  <data name="CoinTrading_Alert_22" xml:space="preserve">
+    <value>超出可购买货币数量。</value>
+  </data>
+  <data name="CoinTrading_Alert_23" xml:space="preserve">
+    <value>取消止损交易设置后，才可以进行自动交易设置。</value>
+  </data>
+  <data name="CoinTrading_Alert_24" xml:space="preserve">
+    <value>取消自动交易设置后，才可以进行止损交易设置。</value>
+  </data>
+  <data name="CoinTrading_Alert_25" xml:space="preserve">
+    <value>您确定要设置自动交易吗？</value>
+  </data>
+  <data name="CoinTrading_Alert_26" xml:space="preserve">
+    <value>自动交易设置失败</value>
+  </data>
+  <data name="CoinTrading_Alert_27" xml:space="preserve">
+    <value>您确定要取消自动交易吗？</value>
+  </data>
+  <data name="CoinTrading_Alert_28" xml:space="preserve">
+    <value>自动交易取消失败</value>
+  </data>
+  <data name="CoinTrading_Alert_29" xml:space="preserve">
+    <value>您确定要设置止损卖出吗？</value>
+  </data>
+  <data name="CoinTrading_Alert_3" xml:space="preserve">
+    <value>无未成交购买明细</value>
+  </data>
+  <data name="CoinTrading_Alert_30" xml:space="preserve">
+    <value>止损卖出设置失败</value>
+  </data>
+  <data name="CoinTrading_Alert_31" xml:space="preserve">
+    <value>您确定要取消止损卖出吗？</value>
+  </data>
+  <data name="CoinTrading_Alert_32" xml:space="preserve">
+    <value>止损卖出设置失败</value>
+  </data>
+  <data name="CoinTrading_Alert_33" xml:space="preserve">
+    <value>请选择自动买入误差率</value>
+  </data>
+  <data name="CoinTrading_Alert_34" xml:space="preserve">
+    <value>请选择自动卖出误差率</value>
+  </data>
+  <data name="CoinTrading_Alert_35" xml:space="preserve">
+    <value>请选择止损卖出误差率</value>
+  </data>
+  <data name="CoinTrading_Alert_36" xml:space="preserve">
+    <value>它应设置为低于当前购买价格。</value>
+  </data>
+  <data name="CoinTrading_Alert_37" xml:space="preserve">
+    <value>它应设置为高于当前销售价格。</value>
+  </data>
+  <data name="CoinTrading_Alert_38" xml:space="preserve">
+    <value>请输入高于顺序【{0}】的价格</value>
+  </data>
+  <data name="CoinTrading_Alert_39" xml:space="preserve">
+    <value>请输入低于顺序【{0}】的价格</value>
+  </data>
+  <data name="CoinTrading_Alert_4" xml:space="preserve">
+    <value>无未成交销售明细</value>
+  </data>
+  <data name="CoinTrading_Alert_40" xml:space="preserve">
+    <value>请先设置顺序【{0}】</value>
+  </data>
+  <data name="CoinTrading_Alert_41" xml:space="preserve">
+    <value>无法在顺序【{0}】误差范围内设置金额。</value>
+  </data>
+  <data name="CoinTrading_Alert_42" xml:space="preserve">
+    <value>您输入的金额超过顺序【{0}】误差范围内金额。</value>
+  </data>
+  <data name="CoinTrading_Alert_43" xml:space="preserve">
+    <value>您输入的金额超过顺序【{0}】误差范围内金额。</value>
+  </data>
+  <data name="CoinTrading_Alert_44" xml:space="preserve">
+    <value>请输入自动买入数量</value>
+  </data>
+  <data name="CoinTrading_Alert_45" xml:space="preserve">
+    <value>请输入自动卖出数量</value>
+  </data>
+  <data name="CoinTrading_Alert_46" xml:space="preserve">
+    <value>请输入止损卖出数量</value>
+  </data>
+  <data name="CoinTrading_Alert_6" xml:space="preserve">
+    <value>您确定要取消订购吗？</value>
+  </data>
+  <data name="CoinTrading_Alert_7" xml:space="preserve">
+    <value>已取消订购</value>
+  </data>
+  <data name="CoinTrading_Alert_8" xml:space="preserve">
+    <value>最小输入数量是【{0}】</value>
+  </data>
+  <data name="CoinTrading_Alert_9" xml:space="preserve">
+    <value>最小输入数量是【0.01】</value>
+  </data>
+  <data name="CoinTrading_BL_T1" xml:space="preserve">
+    <value>什么是自动买入？</value>
+  </data>
+  <data name="CoinTrading_BL_T10" xml:space="preserve">
+    <value>每达到设置金额时自动成交。</value>
+  </data>
+  <data name="CoinTrading_BL_T2" xml:space="preserve">
+    <value>自动买入是指设置的价格低于市场未成交价中的最高买入价，</value>
+  </data>
+  <data name="CoinTrading_BL_T3" xml:space="preserve">
+    <value>每当市价达到您设置的价格(在误差范围内)时</value>
+  </data>
+  <data name="CoinTrading_BL_T4" xml:space="preserve">
+    <value>按市场价自动进行买入。</value>
+  </data>
+  <data name="CoinTrading_BL_T5" xml:space="preserve">
+    <value>*如果剩余金额少于订单金额，</value>
+  </data>
+  <data name="CoinTrading_BL_T6" xml:space="preserve">
+    <value>则按剩余金额成交。</value>
+  </data>
+  <data name="CoinTrading_BL_T7" xml:space="preserve">
+    <value>点击“取消自动交易”按钮可取消服务。</value>
+  </data>
+  <data name="CoinTrading_BL_T8" xml:space="preserve">
+    <value>只有PC交易所处于登录状态时系统才能进行自动交易。</value>
+  </data>
+  <data name="CoinTrading_BL_T9" xml:space="preserve">
+    <value>按设置中的第一交易金额到后的顺序成交。</value>
+  </data>
+  <data name="CoinTrading_SH_T1" xml:space="preserve">
+    <value>什么是止损卖出？</value>
+  </data>
+  <data name="CoinTrading_SH_T10" xml:space="preserve">
+    <value>只有PC交易所处于登录状态时系统才能进行自动交易。</value>
+  </data>
+  <data name="CoinTrading_SH_T11" xml:space="preserve">
+    <value>按设置中的第一到后的顺序进行交易，</value>
+  </data>
+  <data name="CoinTrading_SH_T12" xml:space="preserve">
+    <value>如未改变设置，每次达到设置金额时可持续交易。</value>
+  </data>
+  <data name="CoinTrading_SH_T2" xml:space="preserve">
+    <value>止损卖出交易是指市场价下降时设定止损卖出价，</value>
+  </data>
+  <data name="CoinTrading_SH_T3" xml:space="preserve">
+    <value>以尽量减少损失。</value>
+  </data>
+  <data name="CoinTrading_SH_T4" xml:space="preserve">
+    <value>设置的价格低于市场未成交价中的最高买入价，</value>
+  </data>
+  <data name="CoinTrading_SH_T5" xml:space="preserve">
+    <value>每当市价达到您设置的价格(在误差范围内)时</value>
+  </data>
+  <data name="CoinTrading_SH_T6" xml:space="preserve">
+    <value>按市场价自动进行交易。</value>
+  </data>
+  <data name="CoinTrading_SH_T7" xml:space="preserve">
+    <value>*如果剩余数量小于订单数量，</value>
+  </data>
+  <data name="CoinTrading_SH_T8" xml:space="preserve">
+    <value>则按剩余数量成交。</value>
+  </data>
+  <data name="CoinTrading_SH_T9" xml:space="preserve">
+    <value>点击"取消止损“按钮取消服务。</value>
+  </data>
+  <data name="CoinTrading_SL_T1" xml:space="preserve">
+    <value>什么是自动卖出？</value>
+  </data>
+  <data name="CoinTrading_SL_T10" xml:space="preserve">
+    <value>如未改变设置，每次达到设置金额时可持续成交。</value>
+  </data>
+  <data name="CoinTrading_SL_T2" xml:space="preserve">
+    <value>自动卖出是指设置的价格高于市场未成交价中的最低卖出价，</value>
+  </data>
+  <data name="CoinTrading_SL_T3" xml:space="preserve">
+    <value>每当市价达到您设置的价格(在误差范围内)时</value>
+  </data>
+  <data name="CoinTrading_SL_T4" xml:space="preserve">
+    <value>按市场价自动进行卖出。</value>
+  </data>
+  <data name="CoinTrading_SL_T5" xml:space="preserve">
+    <value>剩余货币数量少于订购数量时</value>
+  </data>
+  <data name="CoinTrading_SL_T6" xml:space="preserve">
+    <value>将按剩余数量成交。</value>
+  </data>
+  <data name="CoinTrading_SL_T7" xml:space="preserve">
+    <value>点击“取消自动交易”按钮可取消服务。</value>
+  </data>
+  <data name="CoinTrading_SL_T8" xml:space="preserve">
+    <value>只有PC交易所处于登录状态时系统才能进行自动交易。</value>
+  </data>
+  <data name="CoinTrading_SL_T9" xml:space="preserve">
+    <value>按设置中的第一交易金额到后的顺序成交。</value>
+  </data>
+  <data name="Common_Alert_1" xml:space="preserve">
+    <value>服务正在准备中</value>
+  </data>
+  <data name="Common_Alert_10" xml:space="preserve">
+    <value>无上传信息。</value>
+  </data>
+  <data name="Common_Alert_2" xml:space="preserve">
+    <value>已保存</value>
+  </data>
+  <data name="Common_Alert_3" xml:space="preserve">
+    <value>只有进行认证后才能使用本交易所的所有服务， 请在 [我的主页&gt;认证中心]进行认证。</value>
+  </data>
+  <data name="Common_Alert_5" xml:space="preserve">
+    <value>HTS程序已在运行。</value>
+  </data>
+  <data name="Common_Alert_6" xml:space="preserve">
+    <value>您确定要取消吗？</value>
+  </data>
+  <data name="Common_Alert_7" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="Common_Alert_8" xml:space="preserve">
+    <value>请输入充值金额。</value>
+  </data>
+  <data name="Common_Alert_9" xml:space="preserve">
+    <value>最近交易明细</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_1" xml:space="preserve">
+    <value>最近交易明细</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_2" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_3" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_4" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_4_1" xml:space="preserve">
+    <value>对比</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_4_2" xml:space="preserve">
+    <value>变动</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_5" xml:space="preserve">
+    <value>完成日期</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_6" xml:space="preserve">
+    <value>种类</value>
+  </data>
+  <data name="DepositDepositWithdraw_Top_1_1" xml:space="preserve">
+    <value>如果您是新注册会员，请单击“生成电子钱包地址”按钮生成电子钱包地址。</value>
+  </data>
+  <data name="DepositDepositWithdraw_Top_1_2" xml:space="preserve">
+    <value>经过区块链核准后，反映在存取款电子钱包地址里。 转入需要大约10~30分钟。</value>
+  </data>
+  <data name="ExchangeChartDashboard_1" xml:space="preserve">
+    <value>交易所图表</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_1" xml:space="preserve">
+    <value>交易所实时行情</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_2" xml:space="preserve">
+    <value>加密货币</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_3" xml:space="preserve">
+    <value>实时行情</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_4_1" xml:space="preserve">
+    <value>变动率</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_4_2" xml:space="preserve">
+    <value>变动率</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_5" xml:space="preserve">
+    <value>交易量</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_6" xml:space="preserve">
+    <value>交易金额</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_7" xml:space="preserve">
+    <value>买入/卖出</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_1_8" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_3_1" xml:space="preserve">
+    <value>全部订购明细</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_3_2" xml:space="preserve">
+    <value>订购量</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_3_3" xml:space="preserve">
+    <value>买入（购买）价</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_3_4" xml:space="preserve">
+    <value>卖出（销售）价</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_3_5" xml:space="preserve">
+    <value>订购量</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_4_1" xml:space="preserve">
+    <value>全部成交明细</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_4_2" xml:space="preserve">
+    <value>成交时间</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_4_3" xml:space="preserve">
+    <value>1个加密货币价格</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_4_4" xml:space="preserve">
+    <value>金额</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_4_5" xml:space="preserve">
+    <value>成交数量</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_ComboboxTime_1_1" xml:space="preserve">
+    <value>24小时</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_ComboboxTime_1_2" xml:space="preserve">
+    <value>12小时</value>
+  </data>
+  <data name="ExchangeDashoard_Gird_ComboboxTime_1_3" xml:space="preserve">
+    <value>1小时</value>
+  </data>
+  <data name="Faq_1" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="Faq_2" xml:space="preserve">
+    <value>买入/卖出</value>
+  </data>
+  <data name="Faq_3" xml:space="preserve">
+    <value>转入/取款/转出</value>
+  </data>
+  <data name="Faq_4" xml:space="preserve">
+    <value>会员指南</value>
+  </data>
+  <data name="Faq_5" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="Faq_7" xml:space="preserve">
+    <value>标题</value>
+  </data>
+  <data name="Faq_8" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="Fee_1" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="Fee_10" xml:space="preserve">
+    <value>取款限额</value>
+  </data>
+  <data name="Fee_11" xml:space="preserve">
+    <value>1次</value>
+  </data>
+  <data name="Fee_12" xml:space="preserve">
+    <value>1日</value>
+  </data>
+  <data name="Fee_13" xml:space="preserve">
+    <value>0月</value>
+  </data>
+  <data name="Fee_14" xml:space="preserve">
+    <value>0元</value>
+  </data>
+  <data name="Fee_15" xml:space="preserve">
+    <value>最少订购数量</value>
+  </data>
+  <data name="Fee_16" xml:space="preserve">
+    <value>认证状态</value>
+  </data>
+  <data name="Fee_17" xml:space="preserve">
+    <value>认证完成</value>
+  </data>
+  <data name="Fee_18" xml:space="preserve">
+    <value>进行认证</value>
+  </data>
+  <data name="Fee_2" xml:space="preserve">
+    <value>认证方法</value>
+  </data>
+  <data name="Fee_3" xml:space="preserve">
+    <value>邮箱认证</value>
+  </data>
+  <data name="Fee_4" xml:space="preserve">
+    <value>Google OTP</value>
+  </data>
+  <data name="Fee_5" xml:space="preserve">
+    <value>KYC Authentication</value>
+  </data>
+  <data name="Fee_6" xml:space="preserve">
+    <value>存款限额</value>
+  </data>
+  <data name="Fee_7" xml:space="preserve">
+    <value>所有货币</value>
+  </data>
+  <data name="Fee_8" xml:space="preserve">
+    <value>加密货币</value>
+  </data>
+  <data name="Fee_9" xml:space="preserve">
+    <value>无限额</value>
+  </data>
+  <data name="IP_Registration_1_1" xml:space="preserve">
+    <value>首次登录此电脑时，会自动注册相应的IP信息。 </value>
+  </data>
+  <data name="IP_Registration_1_2" xml:space="preserve">
+    <value>你确定要注册吗？</value>
+  </data>
+  <data name="IP_Registration_1_3" xml:space="preserve">
+    <value>进行IP注册后才能登录HTS</value>
+  </data>
+  <data name="IP_Registration_2_1" xml:space="preserve">
+    <value>您的PC已完成IP注册</value>
+  </data>
+  <data name="IP_Registration_2_2" xml:space="preserve">
+    <value>注册信息可在[我的主页&gt;访问记录&gt;HTS IP注册]中</value>
+  </data>
+  <data name="IP_Registration_2_3" xml:space="preserve">
+    <value>查看。</value>
+  </data>
+  <data name="IP_Registration_3_1" xml:space="preserve">
+    <value>您登录的PC未注册IP信息。</value>
+  </data>
+  <data name="IP_Registration_3_2" xml:space="preserve">
+    <value>点击确认可转到IP注册页面。</value>
+  </data>
+  <data name="IP_Registration_3_3" xml:space="preserve">
+    <value>只有注册的IP才能登录HTS。</value>
+  </data>
+  <data name="IP_Registration_4_1" xml:space="preserve">
+    <value>只有注册过IP的PC才能使用HTS，并且在注册时需要邮箱认证。</value>
+  </data>
+  <data name="IP_Registration_4_10" xml:space="preserve">
+    <value>邮箱认证</value>
+  </data>
+  <data name="IP_Registration_4_11" xml:space="preserve">
+    <value>认证完成</value>
+  </data>
+  <data name="IP_Registration_4_12" xml:space="preserve">
+    <value>您的验证邮件已发送至您的注册邮箱, 请在10分钟内输入.</value>
+  </data>
+  <data name="IP_Registration_4_13" xml:space="preserve">
+    <value>认证已完成。</value>
+  </data>
+  <data name="IP_Registration_4_14" xml:space="preserve">
+    <value>已重新发送认证号码。</value>
+  </data>
+  <data name="IP_Registration_4_15" xml:space="preserve">
+    <value>先进行邮件认证后才能注册ip地址。</value>
+  </data>
+  <data name="IP_Registration_4_16_1" xml:space="preserve">
+    <value>您输入的认证码有误, </value>
+  </data>
+  <data name="IP_Registration_4_16_2" xml:space="preserve">
+    <value>请重新输入认证码。</value>
+  </data>
+  <data name="IP_Registration_4_17_1" xml:space="preserve">
+    <value>输入已超时（3分）</value>
+  </data>
+  <data name="IP_Registration_4_17_2" xml:space="preserve">
+    <value>请点击"重新发送"按钮再次发送。</value>
+  </data>
+  <data name="IP_Registration_4_19" xml:space="preserve">
+    <value>您的验证邮件已发送至您的注册邮箱,</value>
+  </data>
+  <data name="IP_Registration_4_2" xml:space="preserve">
+    <value>如果您想暂时注册您的IP，可以指定期限后在指定的时段内使用注册的IP登录。</value>
+  </data>
+  <data name="IP_Registration_4_3" xml:space="preserve">
+    <value>注册状态可以在[我的主页&gt;访问记录里的 {HTS IP 注册信息}里确认。</value>
+  </data>
+  <data name="IP_Registration_4_4" xml:space="preserve">
+    <value>访问 IP</value>
+  </data>
+  <data name="IP_Registration_4_5" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="IP_Registration_4_6" xml:space="preserve">
+    <value>使用期限</value>
+  </data>
+  <data name="IP_Registration_4_7" xml:space="preserve">
+    <value>设置期限</value>
+  </data>
+  <data name="IP_Registration_4_8" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="IP_Registration_4_9" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="IP_Registration_Common_1" xml:space="preserve">
+    <value>HTS IP 注册方法</value>
+  </data>
+  <data name="IP_Registration_Common_2" xml:space="preserve">
+    <value>未注册IP的PC指南</value>
+  </data>
+  <data name="LoginHistory_1" xml:space="preserve">
+    <value>访问记录</value>
+  </data>
+  <data name="LoginHistory_1_1" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="LoginHistory_1_2" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="LoginHistory_1_3" xml:space="preserve">
+    <value>型号</value>
+  </data>
+  <data name="LoginHistory_1_4" xml:space="preserve">
+    <value>使用服务</value>
+  </data>
+  <data name="LoginHistory_1_5" xml:space="preserve">
+    <value>位置</value>
+  </data>
+  <data name="LoginHistory_1_6" xml:space="preserve">
+    <value>结果</value>
+  </data>
+  <data name="LoginHistory_2" xml:space="preserve">
+    <value>HTS IP 注册信息</value>
+  </data>
+  <data name="LoginHistory_2_1" xml:space="preserve">
+    <value>如果您不想使用已注册的IP，请按下面（取消注册）按钮。</value>
+  </data>
+  <data name="LoginHistory_2_2" xml:space="preserve">
+    <value>使用期限</value>
+  </data>
+  <data name="LoginHistory_2_3" xml:space="preserve">
+    <value>最近访问日期</value>
+  </data>
+  <data name="LoginHistory_2_4" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="LoginHistory_2_5" xml:space="preserve">
+    <value>取消注册</value>
+  </data>
+  <data name="Login_1" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="Login_10" xml:space="preserve">
+    <value>您已登录*BitKREX“</value>
+  </data>
+  <data name="Login_11" xml:space="preserve">
+    <value>请输入邮箱地址</value>
+  </data>
+  <data name="Login_12" xml:space="preserve">
+    <value>请输入密码</value>
+  </data>
+  <data name="Login_13" xml:space="preserve">
+    <value>此邮箱不存在</value>
+  </data>
+  <data name="Login_14" xml:space="preserve">
+    <value>您输入的密码不一致</value>
+  </data>
+  <data name="Login_15" xml:space="preserve">
+    <value>未注册的 IP地址</value>
+  </data>
+  <data name="Login_16" xml:space="preserve">
+    <value>此用户名不可用</value>
+  </data>
+  <data name="Login_17" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Login_18" xml:space="preserve">
+    <value>根据您的要求，该账户被处理为冻结状态。</value>
+  </data>
+  <data name="Login_19" xml:space="preserve">
+    <value>已向您发送认证邮件， 请您在24小时内按照邮件里的步骤重置密码。</value>
+  </data>
+  <data name="Login_2" xml:space="preserve">
+    <value>保存用户名</value>
+  </data>
+  <data name="Login_20" xml:space="preserve">
+    <value>锁定账户指南</value>
+  </data>
+  <data name="Login_3" xml:space="preserve">
+    <value>您确定要退出吗？</value>
+  </data>
+  <data name="Login_4" xml:space="preserve">
+    <value>登录失败次数超过5次，已被停止使用。</value>
+  </data>
+  <data name="Login_5" xml:space="preserve">
+    <value>请确认用户名</value>
+  </data>
+  <data name="Login_6" xml:space="preserve">
+    <value>请确认密码</value>
+  </data>
+  <data name="Login_7" xml:space="preserve">
+    <value>用户不存在或密码有误。</value>
+  </data>
+  <data name="Login_8" xml:space="preserve">
+    <value>系统错误</value>
+  </data>
+  <data name="Login_9" xml:space="preserve">
+    <value>登录失败</value>
+  </data>
+  <data name="Main_Head_1" xml:space="preserve">
+    <value>加密货币总资产</value>
+  </data>
+  <data name="Main_Head_2" xml:space="preserve">
+    <value>可交易</value>
+  </data>
+  <data name="Main_Head_3" xml:space="preserve">
+    <value>等待交易</value>
+  </data>
+  <data name="Main_Head_5" xml:space="preserve">
+    <value>市价</value>
+  </data>
+  <data name="Main_Menu_1" xml:space="preserve">
+    <value>主页</value>
+  </data>
+  <data name="Main_Menu_1_1" xml:space="preserve">
+    <value>交易所现状</value>
+  </data>
+  <data name="Main_Menu_2" xml:space="preserve">
+    <value>买入币/卖出币</value>
+  </data>
+  <data name="Main_Menu_2_1" xml:space="preserve">
+    <value>Bitcoin</value>
+  </data>
+  <data name="Main_Menu_2_2" xml:space="preserve">
+    <value>Ethereum</value>
+  </data>
+  <data name="Main_Menu_2_3" xml:space="preserve">
+    <value>Bitcoin Cash</value>
+  </data>
+  <data name="Main_Menu_2_4" xml:space="preserve">
+    <value>Ripple</value>
+  </data>
+  <data name="Main_Menu_2_5" xml:space="preserve">
+    <value>加密货币间自动兑换交易</value>
+  </data>
+  <data name="Main_Menu_2_6" xml:space="preserve">
+    <value>交易现状</value>
+  </data>
+  <data name="Main_Menu_3" xml:space="preserve">
+    <value>存取款管理</value>
+  </data>
+  <data name="Main_Menu_3_2" xml:space="preserve">
+    <value>转入加密货币/电子钱包</value>
+  </data>
+  <data name="Main_Menu_3_4" xml:space="preserve">
+    <value>转出加密货币</value>
+  </data>
+  <data name="Main_Menu_4" xml:space="preserve">
+    <value>附加服务</value>
+  </data>
+  <data name="Main_Menu_4_1" xml:space="preserve">
+    <value>优惠券</value>
+  </data>
+  <data name="Main_Menu_4_2" xml:space="preserve">
+    <value>市价通知</value>
+  </data>
+  <data name="Main_Menu_4_3" xml:space="preserve">
+    <value>自动交易</value>
+  </data>
+  <data name="Main_Menu_5" xml:space="preserve">
+    <value>客服中心</value>
+  </data>
+  <data name="Main_Menu_5_1" xml:space="preserve">
+    <value>公告通知</value>
+  </data>
+  <data name="Main_Menu_5_2" xml:space="preserve">
+    <value>常见问题</value>
+  </data>
+  <data name="Main_Menu_5_3" xml:space="preserve">
+    <value>1:1问答</value>
+  </data>
+  <data name="Main_Menu_5_4" xml:space="preserve">
+    <value>手续费及存取款额度</value>
+  </data>
+  <data name="Main_Menu_5_5" xml:space="preserve">
+    <value>Market Cap</value>
+  </data>
+  <data name="Main_Menu_5_7" xml:space="preserve">
+    <value>提交认证信息</value>
+  </data>
+  <data name="Main_Menu_5_8" xml:space="preserve">
+    <value>加密货币简介</value>
+  </data>
+  <data name="Main_Menu_6" xml:space="preserve">
+    <value>我的主页</value>
+  </data>
+  <data name="Main_Menu_6_1" xml:space="preserve">
+    <value>会员信息管理</value>
+  </data>
+  <data name="Main_Menu_6_2" xml:space="preserve">
+    <value>认证中心</value>
+  </data>
+  <data name="Main_Menu_6_3" xml:space="preserve">
+    <value>访问记录</value>
+  </data>
+  <data name="Main_Menu_6_4" xml:space="preserve">
+    <value>资产现状</value>
+  </data>
+  <data name="Main_Menu_6_5" xml:space="preserve">
+    <value>我的交易明细</value>
+  </data>
+  <data name="Main_Menu_6_6" xml:space="preserve">
+    <value>提醒</value>
+  </data>
+  <data name="Main_QuickMenu_10" xml:space="preserve">
+    <value>资产现状</value>
+  </data>
+  <data name="Main_QuickMenu_11" xml:space="preserve">
+    <value>存取款明细</value>
+  </data>
+  <data name="Main_QuickMenu_12" xml:space="preserve">
+    <value>1:1问答</value>
+  </data>
+  <data name="Main_QuickMenu_13" xml:space="preserve">
+    <value>我的收藏</value>
+  </data>
+  <data name="Main_QuickMenu_7" xml:space="preserve">
+    <value>转入加密货币</value>
+  </data>
+  <data name="Main_QuickMenu_8" xml:space="preserve">
+    <value>转出加密货币</value>
+  </data>
+  <data name="Main_QuickMenu_9" xml:space="preserve">
+    <value>我的交易明细</value>
+  </data>
+  <data name="MemberInfo_2_1" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="MemberInfo_2_2" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="MemberInfo_2_3" xml:space="preserve">
+    <value>推荐人编号</value>
+  </data>
+  <data name="MemberInfo_2_4" xml:space="preserve">
+    <value>更改密码</value>
+  </data>
+  <data name="MemberInfo_3_1" xml:space="preserve">
+    <value>注销账号</value>
+  </data>
+  <data name="MemberInfo_3_10" xml:space="preserve">
+    <value>3. 注销会员账号方法</value>
+  </data>
+  <data name="MemberInfo_3_11" xml:space="preserve">
+    <value>需要注销账号的会员，请联系客服中心。</value>
+  </data>
+  <data name="MemberInfo_3_2" xml:space="preserve">
+    <value>之前，请先确认以下内容。.</value>
+  </data>
+  <data name="MemberInfo_3_3" xml:space="preserve">
+    <value>1. 无法申请注销情况</value>
+  </data>
+  <data name="MemberInfo_3_4" xml:space="preserve">
+    <value>如有以下一种或多种情况，则无法注销账号：</value>
+  </data>
+  <data name="MemberInfo_3_5" xml:space="preserve">
+    <value>资产里有余额或有正在进行中的交易</value>
+  </data>
+  <data name="MemberInfo_3_6" xml:space="preserve">
+    <value>删除会员信息</value>
+  </data>
+  <data name="MemberInfo_3_7" xml:space="preserve">
+    <value>注销会员账号同时您的全部个人信息将被删除，且无法恢复。</value>
+  </data>
+  <data name="MemberInfo_3_8" xml:space="preserve">
+    <value>但根据“商业法”，“电子商务消费者保护法”等相关法律有必要保存会员信息的情况， </value>
+  </data>
+  <data name="MemberInfo_3_9" xml:space="preserve">
+    <value>本公司按照有关法律法规将会员资料保存一段时间。 这种情况下，公司仅将信息用于存档，且保存期限为5年。</value>
+  </data>
+  <data name="NoticePopup_1" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="NoticePopup_2" xml:space="preserve">
+    <value>充值时注意事项</value>
+  </data>
+  <data name="NoticePopup_3" xml:space="preserve">
+    <value>HTS IP 注册方法</value>
+  </data>
+  <data name="NoticePopup_4" xml:space="preserve">
+    <value>未注册IP的PC指南</value>
+  </data>
+  <data name="Notice_1" xml:space="preserve">
+    <value>标题</value>
+  </data>
+  <data name="Notice_2" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="QnaWrite_1" xml:space="preserve">
+    <value>客服确认您咨询的问题后再与您联系。</value>
+  </data>
+  <data name="QnaWrite_2" xml:space="preserve">
+    <value>咨询类型</value>
+  </data>
+  <data name="QnaWrite_3" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="QnaWrite_4" xml:space="preserve">
+    <value>标题</value>
+  </data>
+  <data name="QnaWrite_5" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="QnaWrite_6" xml:space="preserve">
+    <value>请填写手机号</value>
+  </data>
+  <data name="Qna_1" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="Qna_2" xml:space="preserve">
+    <value>咨询类型</value>
+  </data>
+  <data name="Qna_3" xml:space="preserve">
+    <value>标题</value>
+  </data>
+  <data name="Qna_4" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="Qna_5" xml:space="preserve">
+    <value>答复状态</value>
+  </data>
+  <data name="Qna_6" xml:space="preserve">
+    <value>等待答复</value>
+  </data>
+  <data name="Qna_7" xml:space="preserve">
+    <value>已答复</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_1" xml:space="preserve">
+    <value>{0}充值</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_10" xml:space="preserve">
+    <value>银行</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_11" xml:space="preserve">
+    <value>银行账号</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_12" xml:space="preserve">
+    <value>账户持有人</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_13" xml:space="preserve">
+    <value>收款人账户备注</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_14" xml:space="preserve">
+    <value>完成日期</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_15" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_15_1" xml:space="preserve">
+    <value>虚拟账户充值</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_15_2" xml:space="preserve">
+    <value>转账</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_16" xml:space="preserve">
+    <value>充值金额</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_17" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_17_1" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_17_2" xml:space="preserve">
+    <value>未完成</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_2" xml:space="preserve">
+    <value>2. 转账后反映时间大约需要2~30分钟。（银行检测， 计算机网络故障等紧急情况除外）</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_4" xml:space="preserve">
+    <value>3. 以下情况无法确认充值。请按照 [客服中心&gt;提交认证信息]步骤提交充值证明后才能完成充值。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_5" xml:space="preserve">
+    <value>未使用已注册的银行账户进行充值的情况。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_6" xml:space="preserve">
+    <value>使用已注册的本人银行账户充值， 但备注有误的情况。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_6_1" xml:space="preserve">
+    <value>备注：在银行账户备注信息中输入下面显示的信息内容。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_7" xml:space="preserve">
+    <value>充值金额较大的情况</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_8" xml:space="preserve">
+    <value>请务必用您注册的本人账户进行充值。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_9" xml:space="preserve">
+    <value>注， 使用已注册的本人银行账户充值， 但备注有误的情况无法正常充值。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_1" xml:space="preserve">
+    <value>收款人账户备注</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_2" xml:space="preserve">
+    <value>以下情况无法进行充值。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_3" xml:space="preserve">
+    <value>没有使用已注册的本人账户进行充值的情况。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_4" xml:space="preserve">
+    <value>使用已注册的本人银行账户充值， </value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_5" xml:space="preserve">
+    <value>但备注有误的情况。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_6" xml:space="preserve">
+    <value>充值未成功的情况， 请按照 [客服中心&gt;提交认证信息]步骤</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_7" xml:space="preserve">
+    <value>在提交认证信息菜单提交存款证明才能完成存款。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Pop_8" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TradeHistoryTrading_1_1" xml:space="preserve">
+    <value>Bitcoin</value>
+  </data>
+  <data name="TradeHistoryTrading_1_10" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="TradeHistoryTrading_1_11" xml:space="preserve">
+    <value>订购价格</value>
+  </data>
+  <data name="TradeHistoryTrading_1_12" xml:space="preserve">
+    <value>成交时间</value>
+  </data>
+  <data name="TradeHistoryTrading_1_13" xml:space="preserve">
+    <value>市价</value>
+  </data>
+  <data name="TradeHistoryTrading_1_14" xml:space="preserve">
+    <value>交易量</value>
+  </data>
+  <data name="TradeHistoryTrading_1_15" xml:space="preserve">
+    <value>成交金额</value>
+  </data>
+  <data name="TradeHistoryTrading_1_16" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="TradeHistoryTrading_1_2" xml:space="preserve">
+    <value>Ethereum</value>
+  </data>
+  <data name="TradeHistoryTrading_1_3" xml:space="preserve">
+    <value>Bitcoin Cash</value>
+  </data>
+  <data name="TradeHistoryTrading_1_4" xml:space="preserve">
+    <value>Ripple</value>
+  </data>
+  <data name="TradeHistoryTrading_1_5" xml:space="preserve">
+    <value>市场未成交买入</value>
+  </data>
+  <data name="TradeHistoryTrading_1_6" xml:space="preserve">
+    <value>市场未成交卖出</value>
+  </data>
+  <data name="TradeHistoryTrading_1_7" xml:space="preserve">
+    <value>市场成交状况（完成交易）</value>
+  </data>
+  <data name="TradeHistoryTrading_1_8" xml:space="preserve">
+    <value>查看更多</value>
+  </data>
+  <data name="TradeHistoryTrading_1_9" xml:space="preserve">
+    <value>累计数量</value>
+  </data>
+  <data name="TradingCommonTooltip_1_1" xml:space="preserve">
+    <value>指定价买入（购买）是指将买入价（购买价）设定为低于市场未成交价中的最低卖出价格。当设定的价格高于市场未成交最低卖出价，交易将立即成交。</value>
+  </data>
+  <data name="TradingCommonTooltip_1_2" xml:space="preserve">
+    <value>指定价卖出（销售）是指将卖出价（销售价）设定为高于市场未成交价中的最高买入价格。当设定的价格低于市场未成交最高购买价，交易将立即成交。</value>
+  </data>
+  <data name="TradingCommonTooltip_1_3" xml:space="preserve">
+    <value>市场价买入（购买）是按右侧的未成交卖出金额从低到高的顺序购买，而实际收到的数量可能根据购买金额有所变动。</value>
+  </data>
+  <data name="TradingCommonTooltip_1_4" xml:space="preserve">
+    <value>市场价卖出（销售）时按右侧的未成交买入金额从高到低的顺序卖出，而实际收到的金额可能根据卖出数量有所变动。</value>
+  </data>
+  <data name="TradingCommonTooltip_1_5" xml:space="preserve">
+    <value>市场未成交明细是指，所有指定价买入/卖出出价中尚未成交的明细。 未成交卖出（销售）明细按卖出价从下到上的顺序排序。 未成交买入（购买）明细按买入价从上到下的顺序排序。</value>
+  </data>
+  <data name="TradingHistory_1_1" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="TradingHistory_1_2" xml:space="preserve">
+    <value>充值</value>
+  </data>
+  <data name="TradingHistory_1_3" xml:space="preserve">
+    <value>买入</value>
+  </data>
+  <data name="TradingHistory_1_4" xml:space="preserve">
+    <value>卖出</value>
+  </data>
+  <data name="TradingHistory_1_5" xml:space="preserve">
+    <value>取款</value>
+  </data>
+  <data name="TradingHistory_1_6" xml:space="preserve">
+    <value>转出</value>
+  </data>
+  <data name="TradingHistory_1_7" xml:space="preserve">
+    <value>转入</value>
+  </data>
+  <data name="TradingHistory_1_8" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="TradingHistory_2_1" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="TradingHistory_2_2" xml:space="preserve">
+    <value>货币</value>
+  </data>
+  <data name="TradingHistory_2_3" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="TradingHistory_2_3_1" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="TradingHistory_2_3_2" xml:space="preserve">
+    <value>正在处理</value>
+  </data>
+  <data name="TradingHistory_3_1" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="TradingHistory_3_2" xml:space="preserve">
+    <value>成交日期</value>
+  </data>
+  <data name="TradingHistory_3_3" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="TradingHistory_3_4" xml:space="preserve">
+    <value>货币</value>
+  </data>
+  <data name="TradingHistory_3_5" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="TradingHistory_3_6" xml:space="preserve">
+    <value>金额</value>
+  </data>
+  <data name="TradingHistory_3_7" xml:space="preserve">
+    <value>手续费</value>
+  </data>
+  <data name="TradingHistory_3_8" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_10" xml:space="preserve">
+    <value>不是有效地址， 请确认后重新输入。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_11" xml:space="preserve">
+    <value>请咨询管理员。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_12" xml:space="preserve">
+    <value>转出失败</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_8" xml:space="preserve">
+    <value>已完成转出。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_9" xml:space="preserve">
+    <value>无限</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_1" xml:space="preserve">
+    <value>转出代码</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_2" xml:space="preserve">
+    <value>申请时间</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_3" xml:space="preserve">
+    <value>转出金额</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_4" xml:space="preserve">
+    <value>手续费</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5_1" xml:space="preserve">
+    <value>等待确认</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5_2" xml:space="preserve">
+    <value>确认中</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5_3" xml:space="preserve">
+    <value>完成确认</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5_4" xml:space="preserve">
+    <value>完成转出</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5_5" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5_6" xml:space="preserve">
+    <value>取消确认</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_5_7" xml:space="preserve">
+    <value>转出失败</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_6" xml:space="preserve">
+    <value>转出时间</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Grid_7" xml:space="preserve">
+    <value>交易明细</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_10" xml:space="preserve">
+    <value>取款金额（扣除手续费）</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_11" xml:space="preserve">
+    <value>银行</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_12" xml:space="preserve">
+    <value>邮箱认证</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_13" xml:space="preserve">
+    <value>申请认证</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_14" xml:space="preserve">
+    <value>银行账号</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_15" xml:space="preserve">
+    <value>OTP 认证</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_16" xml:space="preserve">
+    <value>账户持有人</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_17" xml:space="preserve">
+    <value>服务器忙时反映可能会暂时缓慢。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_18" xml:space="preserve">
+    <value>银行检测时间无法申请 (23:30 ~ 01:00)</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_19" xml:space="preserve">
+    <value>所有货币转出将经过管理员确认后转出。确认时间需30分~1天。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_2" xml:space="preserve">
+    <value>取款只能通过本人账户进行。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_21" xml:space="preserve">
+    <value>申请取款日期</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_22" xml:space="preserve">
+    <value>取款金额</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_1" xml:space="preserve">
+    <value>等待确认</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_2" xml:space="preserve">
+    <value>确认中</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_3" xml:space="preserve">
+    <value>完成确认</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_4" xml:space="preserve">
+    <value>取消确认</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_5" xml:space="preserve">
+    <value>等待取款</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_6" xml:space="preserve">
+    <value>完成取款</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_24" xml:space="preserve">
+    <value>完成确认日期</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_25" xml:space="preserve">
+    <value>取款日期</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_26" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_27" xml:space="preserve">
+    <value>如果您还没有进行OTP注册，需在[认证中心&gt; OTP注册]进行注册后才能申请取款。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_5" xml:space="preserve">
+    <value>手续费</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_6" xml:space="preserve">
+    <value>取款最小金额</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_7" xml:space="preserve">
+    <value>取款最大金额</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_9" xml:space="preserve">
+    <value>申请取款金额</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_1" xml:space="preserve">
+    <value>无账户信息</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_10" xml:space="preserve">
+    <value>OTP 认证失败</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_11" xml:space="preserve">
+    <value>请输入OTP认证号码。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_12" xml:space="preserve">
+    <value>输入的金额需小于最高取款额。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_2" xml:space="preserve">
+    <value>请输入申请取款的金额</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_3" xml:space="preserve">
+    <value>实际取款额小于可取款最低金额。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_4" xml:space="preserve">
+    <value>还未完成邮箱认证。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_5" xml:space="preserve">
+    <value>请确认OTP认证号码。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_6" xml:space="preserve">
+    <value>申请取款金额不能高于已持有金额。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_7" xml:space="preserve">
+    <value>已完成取款申请。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_8" xml:space="preserve">
+    <value>已完成OTP认证。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_9" xml:space="preserve">
+    <value>您还未注册OTP。</value>
+  </data>
+  <data name="Qna_10" xml:space="preserve">
+    <value>转入/取款/转出</value>
+  </data>
+  <data name="Qna_11" xml:space="preserve">
+    <value>会员指南</value>
+  </data>
+  <data name="Qna_12" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="Qna_8" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="Qna_9" xml:space="preserve">
+    <value>买入/卖出</value>
+  </data>
+  <data name="CoinDayPirce_1" xml:space="preserve">
+    <value>交易所每日行情</value>
+  </data>
+  <data name="CoinDayPirce_2" xml:space="preserve">
+    <value>查询日期</value>
+  </data>
+  <data name="CoinDayPirce_3" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="CoinDayPirce_4" xml:space="preserve">
+    <value>开盘价</value>
+  </data>
+  <data name="CoinDayPirce_5" xml:space="preserve">
+    <value>最低价</value>
+  </data>
+  <data name="CoinDayPirce_6" xml:space="preserve">
+    <value>最高价</value>
+  </data>
+  <data name="CoinDayPirce_7" xml:space="preserve">
+    <value>收盘价</value>
+  </data>
+  <data name="CoinDayPirce_8" xml:space="preserve">
+    <value>前一日相比</value>
+  </data>
+  <data name="CoinDayPirce_9" xml:space="preserve">
+    <value>交易量</value>
+  </data>
+  <data name="Faq_6" xml:space="preserve">
+    <value>提交认证信息</value>
+  </data>
+  <data name="Qna_13" xml:space="preserve">
+    <value>提交认证信息</value>
+  </data>
+  <data name="Fee_19" xml:space="preserve">
+    <value>最低转出数量</value>
+  </data>
+  <data name="Main_Menu_5_6" xml:space="preserve">
+    <value>加密货币趋势</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_1" xml:space="preserve">
+    <value>支付自动交易费用</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_2_1" xml:space="preserve">
+    <value>支付金额</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_2_2" xml:space="preserve">
+    <value>预计支付数量</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_3" xml:space="preserve">
+    <value>付款方式</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_4" xml:space="preserve">
+    <value>每月（30日）</value>
+  </data>
+  <data name="CertifyMyPage_4_7" xml:space="preserve">
+    <value>完成注册</value>
+  </data>
+  <data name="CertifyMyPage_Alert_1" xml:space="preserve">
+    <value>请输入出生年月日</value>
+  </data>
+  <data name="CertifyMyPage_Alert_2" xml:space="preserve">
+    <value>请按格式输入</value>
+  </data>
+  <data name="CertifyMyPage_Alert_3" xml:space="preserve">
+    <value>请输入手机号码</value>
+  </data>
+  <data name="CertifyMyPage_Alert_4" xml:space="preserve">
+    <value>请输入银行账号</value>
+  </data>
+  <data name="CertifyMyPage_Alert_5" xml:space="preserve">
+    <value>请输入OTP号码</value>
+  </data>
+  <data name="Common_Alert_11" xml:space="preserve">
+    <value>未生成</value>
+  </data>
+  <data name="MemberInfo_2_5" xml:space="preserve">
+    <value>辅助邮箱</value>
+  </data>
+  <data name="MemberInfo_2_5_1" xml:space="preserve">
+    <value>什么是辅助邮箱？</value>
+  </data>
+  <data name="MemberInfo_2_5_2" xml:space="preserve">
+    <value>如果您注册的邮箱无法收到交易所发送的邮件， 则可以用辅助邮箱接收邮件。</value>
+  </data>
+  <data name="MemberInfo_2_5_3" xml:space="preserve">
+    <value>有关辅助邮箱注册，请咨询客服中心。</value>
+  </data>
+  <data name="Common_Alert_12" xml:space="preserve">
+    <value>加密货币兑换交易可在[附加服务&gt;自动交易]菜单中申请。</value>
+  </data>
+  <data name="Common_Alert_13" xml:space="preserve">
+    <value>自动交易可在[附加服务&gt;自动交易]中申请后使用。</value>
+  </data>
+  <data name="LevelPopup_1" xml:space="preserve">
+    <value>当前是LV.1（邮箱认证）阶段。</value>
+  </data>
+  <data name="LevelPopup_2" xml:space="preserve">
+    <value>请您先进行手机认证后再使用。</value>
+  </data>
+  <data name="MemberInfo_Pop_1" xml:space="preserve">
+    <value>已发送查找密码的邮件， 请您在24小时内按照邮件里的步骤重置密码。</value>
+  </data>
+  <data name="MemberInfo_Pop_2" xml:space="preserve">
+    <value>发送邮件</value>
+  </data>
+  <data name="MemberInfo_Pop_3" xml:space="preserve">
+    <value>已发送设置密码的邮件</value>
+  </data>
+  <data name="CoinTrading_2_7" xml:space="preserve">
+    <value>当前市价</value>
+  </data>
+  <data name="Faq_9" xml:space="preserve">
+    <value>咨询类型</value>
+  </data>
+  <data name="MemberInfo_Pop_4" xml:space="preserve">
+    <value>19周岁以上才可进行认证。</value>
+  </data>
+  <data name="Common_Alert_14" xml:space="preserve">
+    <value>您确定要删除吗？</value>
+  </data>
+  <data name="Common_Alert_15" xml:space="preserve">
+    <value>已删除。</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_5" xml:space="preserve">
+    <value>当前加密货无市场价格， 请用其他加密货币或进行付款。</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_6" xml:space="preserve">
+    <value>没有足够的付款。</value>
+  </data>
+  <data name="IP_Registration_4_7_1" xml:space="preserve">
+    <value>未指定</value>
+  </data>
+  <data name="IP_Registration_4_7_2" xml:space="preserve">
+    <value>指定</value>
+  </data>
+  <data name="LoginHistory_2_6" xml:space="preserve">
+    <value>已取消Ip注册</value>
+  </data>
+  <data name="Main_Head_6" xml:space="preserve">
+    <value>无加密货币余额</value>
+  </data>
+  <data name="CertifyMyPage_5" xml:space="preserve">
+    <value>KYC 认证</value>
+  </data>
+  <data name="CertifyMyPage_5_1" xml:space="preserve">
+    <value>上传前请先确认{我的主页&gt;会员信息}里的姓名，出生年月日和国籍是否正确， 如有误请修改正确信息。 如与上传的照片不同，则认证将被拒绝。</value>
+  </data>
+  <data name="CertifyMyPage_5_10" xml:space="preserve">
+    <value>申请认证</value>
+  </data>
+  <data name="CertifyMyPage_5_11" xml:space="preserve">
+    <value>管理员确认中</value>
+  </data>
+  <data name="CertifyMyPage_5_12" xml:space="preserve">
+    <value>完成认证</value>
+  </data>
+  <data name="CertifyMyPage_5_2" xml:space="preserve">
+    <value>上传身份证</value>
+  </data>
+  <data name="CertifyMyPage_5_3" xml:space="preserve">
+    <value>请遮挡身份证号的后七位数， 遮挡驾驶证与护照号码。</value>
+  </data>
+  <data name="CertifyMyPage_5_4" xml:space="preserve">
+    <value>请附上验证目的， 认证电话号码， 认证邮箱，申请日期便签和遮挡个人信息的身份证照片。</value>
+  </data>
+  <data name="CertifyMyPage_5_5" xml:space="preserve">
+    <value>（身份证明：身份证，驾驶证， 护照）</value>
+  </data>
+  <data name="CertifyMyPage_5_6" xml:space="preserve">
+    <value>请上传附件</value>
+  </data>
+  <data name="CertifyMyPage_5_7" xml:space="preserve">
+    <value>添加附件</value>
+  </data>
+  <data name="CertifyMyPage_5_8" xml:space="preserve">
+    <value>上传手持身份证照片</value>
+  </data>
+  <data name="CertifyMyPage_5_9" xml:space="preserve">
+    <value>请在身份证贴上带有认证目的，认证手机号， 认证邮件， 申请日期的贴纸后手持该身份证拍照。身份证与信息必须清晰。收到的身份证信息照片仅用于非面对面认证。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_19" xml:space="preserve">
+    <value>存款金额</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_20" xml:space="preserve">
+    <value>存款货币</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_21" xml:space="preserve">
+    <value>汇率（1KRW）</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_22" xml:space="preserve">
+    <value>存款货币</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_28" xml:space="preserve">
+    <value>汇率（1KRW）</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_29" xml:space="preserve">
+    <value>实际收款额</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_30" xml:space="preserve">
+    <value>申请取款货币</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_31" xml:space="preserve">
+    <value>手续费</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_32" xml:space="preserve">
+    <value>汇率（1KRW）</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_33" xml:space="preserve">
+    <value>实际收款额</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_34" xml:space="preserve">
+    <value>取款货币</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_14" xml:space="preserve">
+    <value>您确定要取款吗？</value>
+  </data>
+  <data name="CertifyMyPage_6_1" xml:space="preserve">
+    <value>请上传附件</value>
+  </data>
+  <data name="CertifyMyPage_6_2" xml:space="preserve">
+    <value>您的认证申请已完成</value>
+  </data>
+  <data name="Paging_1" xml:space="preserve">
+    <value>第一页</value>
+  </data>
+  <data name="Paging_2" xml:space="preserve">
+    <value>最后一页</value>
+  </data>
+  <data name="CertifyMyPage_6_3" xml:space="preserve">
+    <value>只能上传小于2MB的文件</value>
+  </data>
+  <data name="AssetsMyPage_6_9" xml:space="preserve">
+    <value>StarGram(SGC)</value>
+  </data>
+  <data name="TradeHistoryTrading_1_17" xml:space="preserve">
+    <value>StarGram</value>
+  </data>
+  <data name="Fee_20" xml:space="preserve">
+    <value>入出金限度</value>
+  </data>
+  <data name="Fee_21" xml:space="preserve">
+    <value>手数料案内</value>
+  </data>
+  <data name="Fee_22" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="Fee_23" xml:space="preserve">
+    <value>手数料</value>
+  </data>
+  <data name="Fee_24" xml:space="preserve">
+    <value>交易 (买入/卖出)</value>
+  </data>
+  <data name="Fee_25" xml:space="preserve">
+    <value>(适用于所有加密货币)</value>
+  </data>
+  <data name="Fee_27" xml:space="preserve">
+    <value>每次</value>
+  </data>
+  <data name="Fee_28" xml:space="preserve">
+    <value>转出加密货币</value>
+  </data>
+  <data name="AlramMyPage_1_2_14" xml:space="preserve">
+    <value>交易申请失败</value>
+  </data>
+  <data name="Login_21" xml:space="preserve">
+    <value>请设置密码后登录</value>
+  </data>
+  <data name="Login_22" xml:space="preserve">
+    <value>重新发送</value>
+  </data>
+  <data name="Login_23" xml:space="preserve">
+    <value>已发送设置密码的邮件</value>
+  </data>
+  <data name="CertifyMyPage_Alert_6" xml:space="preserve">
+    <value>请选择银行。</value>
+  </data>
+  <data name="CertifyMyPage_Alert_7" xml:space="preserve">
+    <value>请确认图片格式。 (.jpg .jpeg, .gif, .bmp, .png)</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1" xml:space="preserve">
+    <value>预付卡充值</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1" xml:space="preserve">
+    <value>预付卡申请及现状</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1_1" xml:space="preserve">
+    <value>预付卡申请及使用方法</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1_4" xml:space="preserve">
+    <value>*每人最多可申请5个预付卡</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1_5" xml:space="preserve">
+    <value>*申请后在收件人地址或加盟店领取卡，收到卡后点击本页面的“注册预付卡”按钮注册使用。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1" xml:space="preserve">
+    <value>预付卡申请</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_1" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_10" xml:space="preserve">
+    <value>在实体加盟店领取</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_11" xml:space="preserve">
+    <value>申请费用</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_12" xml:space="preserve">
+    <value>付款方法</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_13" xml:space="preserve">
+    <value>转账</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_14" xml:space="preserve">
+    <value>付款人姓名（备注）</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_2" xml:space="preserve">
+    <value>出生年月日</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_3" xml:space="preserve">
+    <value>联系电话</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_4" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_5" xml:space="preserve">
+    <value>邮政编码</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_6" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_7" xml:space="preserve">
+    <value>详细地址</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_8" xml:space="preserve">
+    <value>预付卡领取方法</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_9" xml:space="preserve">
+    <value>按收件人地址领取</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_3_1" xml:space="preserve">
+    <value>* 申请费用转账时注意事项</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_3_2" xml:space="preserve">
+    <value>1. 选择“按收件人地址领取”的情况， 可访问附近加盟店领取您的卡。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_3_3" xml:space="preserve">
+    <value>3. 发送预付卡后，无法取消申请且无法更改接收地址。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_3_4" xml:space="preserve">
+    <value>4. 每人只能申请1张预付卡， 即使使用他人账号申请也无法使用。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_3_5" xml:space="preserve">
+    <value>5. 预付卡配送后到达时间需要大约2周。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_2" xml:space="preserve">
+    <value>申请时间</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3" xml:space="preserve">
+    <value>申请状态</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_1" xml:space="preserve">
+    <value>完成申请</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_2" xml:space="preserve">
+    <value>完成发送</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_3" xml:space="preserve">
+    <value>完成注册</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_4" xml:space="preserve">
+    <value>完成注销</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_4" xml:space="preserve">
+    <value>发送时间</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_5" xml:space="preserve">
+    <value>卡号</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_6" xml:space="preserve">
+    <value>注册日期</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_7" xml:space="preserve">
+    <value>注销日期</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_1" xml:space="preserve">
+    <value>*预付卡充值时在充值金额内收取5%的手续费。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_10" xml:space="preserve">
+    <value>实际充值金额</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_2" xml:space="preserve">
+    <value>预付卡选择</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_3" xml:space="preserve">
+    <value>有效期限</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_3_1" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_3_2" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_4" xml:space="preserve">
+    <value>CVC号码</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_5" xml:space="preserve">
+    <value>预付卡密码</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_6" xml:space="preserve">
+    <value>预付卡余额</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_7" xml:space="preserve">
+    <value>充值金额</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_8" xml:space="preserve">
+    <value>手续费</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_5_9" xml:space="preserve">
+    <value>汇率</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_2" xml:space="preserve">
+    <value>完成时间</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_3" xml:space="preserve">
+    <value>预付卡卡号</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_4" xml:space="preserve">
+    <value>充值金额</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_5" xml:space="preserve">
+    <value>付款货币</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_6" xml:space="preserve">
+    <value>手续费</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_7" xml:space="preserve">
+    <value>汇率</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_8" xml:space="preserve">
+    <value>实际充值金额</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_9" xml:space="preserve">
+    <value>充值货币</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_6_1" xml:space="preserve">
+    <value>预付卡充值明细</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_1" xml:space="preserve">
+    <value>预付卡申请明细</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_13" xml:space="preserve">
+    <value>只有具有韩国国籍的会员才能申请。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_1" xml:space="preserve">
+    <value>请输入邮政编码。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_10" xml:space="preserve">
+    <value>预付卡申请已完成。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_11" xml:space="preserve">
+    <value>请确认密码。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_12" xml:space="preserve">
+    <value>请确认卡号。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_2" xml:space="preserve">
+    <value>请输入地址。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_3" xml:space="preserve">
+    <value>请输入详细地址。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_4" xml:space="preserve">
+    <value>发生其他错误。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_5" xml:space="preserve">
+    <value>您输入的邮箱地址无法确认。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_6" xml:space="preserve">
+    <value>您输入的邮政编码无法确认。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_7" xml:space="preserve">
+    <value>未确认的地址。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_8" xml:space="preserve">
+    <value>未确认的详细地址。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_9" xml:space="preserve">
+    <value>最多可申请1张预付卡。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_15" xml:space="preserve">
+    <value>请选择预付卡。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_16" xml:space="preserve">
+    <value>请输入卡号。</value>
+  </data>
+  <data name="Common_Alert_16" xml:space="preserve">
+    <value>请选择。</value>
+  </data>
+  <data name="Common_Alert_17" xml:space="preserve">
+    <value>已受理。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_17" xml:space="preserve">
+    <value>请选择需要取款的预付卡。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_3" xml:space="preserve">
+    <value>请输入有效期限（月）。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_4" xml:space="preserve">
+    <value>请输入有效期限（年）。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_5" xml:space="preserve">
+    <value>请输入CVC号码。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_6" xml:space="preserve">
+    <value>请输入预付卡密码。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_7" xml:space="preserve">
+    <value>您的预付卡余额不足， 请重新确认。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_8" xml:space="preserve">
+    <value>您确定要充值吗？</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_9" xml:space="preserve">
+    <value>已完成充值。</value>
+  </data>
+  <data name="TradingHistory_1_10" xml:space="preserve">
+    <value>账户取款 / 预付卡取款  </value>
+  </data>
+  <data name="TradingHistory_1_11" xml:space="preserve">
+    <value>交易明细</value>
+  </data>
+  <data name="TradingHistory_1_12" xml:space="preserve">
+    <value>账户取款</value>
+  </data>
+  <data name="TradingHistory_1_13" xml:space="preserve">
+    <value>账户充值</value>
+  </data>
+  <data name="TradingHistory_1_14" xml:space="preserve">
+    <value>预付卡充值</value>
+  </data>
+  <data name="TradingHistory_1_9" xml:space="preserve">
+    <value>账户充值 / 预付卡充值</value>
+  </data>
+  <data name="TradingHistory_Common_1" xml:space="preserve">
+    <value>预付卡取款  </value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_7" xml:space="preserve">
+    <value>完成取款</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_23_8" xml:space="preserve">
+    <value>拒绝取款</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_35" xml:space="preserve">
+    <value>预付卡卡号</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_36" xml:space="preserve">
+    <value>申请取款金额</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_37" xml:space="preserve">
+    <value>申请取款货币</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_38" xml:space="preserve">
+    <value>预付卡选择</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_39" xml:space="preserve">
+    <value>预付卡取款</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_40" xml:space="preserve">
+    <value>预付卡取款明细</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_10" xml:space="preserve">
+    <value>请选择需要充值的预付卡。</value>
+  </data>
+  <data name="CertifyMyPage_Alert_8" xml:space="preserve">
+    <value>请注册Google OTP。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_11" xml:space="preserve">
+    <value>在加盟店现金支付</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_12" xml:space="preserve">
+    <value>请确认预付卡信息。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_13" xml:space="preserve">
+    <value>无法确认此邮箱。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_14" xml:space="preserve">
+    <value>无充值金额。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_15" xml:space="preserve">
+    <value>无卡号。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_16" xml:space="preserve">
+    <value>无预付卡密码。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_17" xml:space="preserve">
+    <value>无预付卡CVC编码。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_18" xml:space="preserve">
+    <value>无预付卡有效期限。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_19" xml:space="preserve">
+    <value>卡公司发生API错误。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_20" xml:space="preserve">
+    <value>不是会员本人的卡信息。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_18" xml:space="preserve">
+    <value>无法确认此邮箱。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_19" xml:space="preserve">
+    <value>无取款金额。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_20" xml:space="preserve">
+    <value>无取款手续费。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_21" xml:space="preserve">
+    <value>无法确认您的IP地址。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_22" xml:space="preserve">
+    <value>无法确认取款类型。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_23" xml:space="preserve">
+    <value>Test ID 无法申请取款。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_24" xml:space="preserve">
+    <value>您的转出金额低于最小转出金额。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_25" xml:space="preserve">
+    <value>已超出每次可转出的最高金额。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_26" xml:space="preserve">
+    <value>不是本人的会员卡。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_27" xml:space="preserve">
+    <value>发生其他错误。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_5" xml:space="preserve">
+    <value>存款完成</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_14" xml:space="preserve">
+    <value>请您申请预付卡后进行预付卡注册。</value>
+  </data>
+  <data name="TradingHistory_Common_2" xml:space="preserve">
+    <value>拒绝事由</value>
+  </data>
+  <data name="AutoTradingAdditional_Pop_1" xml:space="preserve">
+    <value>只有PC交易所处于登录状态时， 系统才能进行交易。
+按设置中的第一交易金额开始成交，如未改变设置，每次达到设置金额时可持续成交。</value>
+  </data>
+  <data name="CertificationDataSubmit_1_1" xml:space="preserve">
+    <value>充值未到账的情况， 请点击[提交认证信息]选项卡后提交您的存款证明信息。</value>
+  </data>
+  <data name="CertificationDataSubmit_1_4" xml:space="preserve">
+    <value>提交充值证明方法</value>
+  </data>
+  <data name="CertificationDataSubmit_2_1" xml:space="preserve">
+    <value>如需要单独认证您的身份时， 请点击[提交认证信息]选项卡上传您的认证信息。</value>
+  </data>
+  <data name="CertificationDataSubmit_2_5" xml:space="preserve">
+    <value>提交本人认证信息方法</value>
+  </data>
+  <data name="CertificationDataSubmit_3" xml:space="preserve">
+    <value>提交认证信息</value>
+  </data>
+  <data name="CertificationDataSubmit_3_1" xml:space="preserve">
+    <value>申请更改个人信息</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10" xml:space="preserve">
+    <value>认证信息提交明细</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_1" xml:space="preserve">
+    <value>申请时间</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_2" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_3" xml:space="preserve">
+    <value>详细区分</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_4" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_5" xml:space="preserve">
+    <value>失败事由</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_6" xml:space="preserve">
+    <value>完成时间</value>
+  </data>
+  <data name="CertificationDataSubmit_3_2" xml:space="preserve">
+    <value>上传信息前请先确认会员信息是否正确， 如与上传的照片不同，则认证将被拒绝。</value>
+  </data>
+  <data name="CertificationDataSubmit_3_3" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="CertificationDataSubmit_3_4" xml:space="preserve">
+    <value>ID（邮箱）</value>
+  </data>
+  <data name="CertificationDataSubmit_3_5" xml:space="preserve">
+    <value>手机号码</value>
+  </data>
+  <data name="CertificationDataSubmit_3_6" xml:space="preserve">
+    <value>申请内容</value>
+  </data>
+  <data name="CertificationDataSubmit_3_7" xml:space="preserve">
+    <value>上传身份证照片</value>
+  </data>
+  <data name="CertificationDataSubmit_3_7_1" xml:space="preserve">
+    <value>请遮挡身份证号的后7位数与地址的后半部分。 
+提交身份认证照片时， 请将认证目的，认证手机号码，认证邮箱，申请日期等信息后贴在身份证后再拍照提交。
+(身份认证证件：身份证， 驾驶证，护照)</value>
+  </data>
+  <data name="CertificationDataSubmit_3_8" xml:space="preserve">
+    <value>上传手持身份证照片</value>
+  </data>
+  <data name="CertificationDataSubmit_3_8_1" xml:space="preserve">
+    <value>请在身份证贴上带有认证目的，认证手机号， 认证邮件， 申请日期的贴纸后拍摄手持该身份证照片。
+身份证与信息必须清晰。收到的身份证信息照片仅用于非面对面认证。</value>
+  </data>
+  <data name="CertificationDataSubmit_3_9" xml:space="preserve">
+    <value>其他文件</value>
+  </data>
+  <data name="CertificationDataSubmit_3_9_1" xml:space="preserve">
+    <value>改名时请上传相关证明。</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000000905" xml:space="preserve">
+    <value>申请更改个人信息</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000000906" xml:space="preserve">
+    <value>申请注册辅助邮箱</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000000907" xml:space="preserve">
+    <value>申请账号冻结/解冻</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000000908" xml:space="preserve">
+    <value>注销会员</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000000909" xml:space="preserve">
+    <value>存款证明</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000000910" xml:space="preserve">
+    <value>取款证明</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMP00000000142" xml:space="preserve">
+    <value>本人认证</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMP00000000143" xml:space="preserve">
+    <value>申请注销会员</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMP00000000144" xml:space="preserve">
+    <value>存取取款证明</value>
+  </data>
+  <data name="CertificationDataSubmit_Pop_1" xml:space="preserve">
+    <value>认证申请已完成， 经管理员确认后完成认证。</value>
+  </data>
+  <data name="CertificationDataSubmit_Pop_2" xml:space="preserve">
+    <value>请选择详细区分。</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_4_1" xml:space="preserve">
+    <value>认证完成</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_4_2" xml:space="preserve">
+    <value>认证失败</value>
+  </data>
+  <data name="CertificationDataSubmit_3_10_4_3" xml:space="preserve">
+    <value>管理员确认中</value>
+  </data>
+  <data name="CertificationDataSubmit_Pop_3" xml:space="preserve">
+    <value>[请输入500字以内的字符。]</value>
+  </data>
+  <data name="QnaWrite_Pop_1" xml:space="preserve">
+    <value>请输入标题</value>
+  </data>
+  <data name="QnaWrite_Pop_2" xml:space="preserve">
+    <value>请输入咨询内容</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_1" xml:space="preserve">
+    <value>每次转出限额为 {0} ~ {1} 。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_2" xml:space="preserve">
+    <value>超出可转出加密货币数量。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_3" xml:space="preserve">
+    <value>请输入电子钱包地址。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_4" xml:space="preserve">
+    <value>请确认{0}.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_5" xml:space="preserve">
+    <value>您还未进行邮箱认证。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_6" xml:space="preserve">
+    <value>请确认OTP号码。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_7" xml:space="preserve">
+    <value>请确认内容后，在[同意]打钩。</value>
+  </data>
+  <data name="CertifyMyPage_Alert_9" xml:space="preserve">
+    <value>请重新输入OTP号码。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_8" xml:space="preserve">
+    <value>存款时间</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_13" xml:space="preserve">
+    <value>一次性汇款限额</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_12_1" xml:space="preserve">
+    <value>预付卡支付</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_12_2" xml:space="preserve">
+    <value>虚拟账户</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_6" xml:space="preserve">
+    <value>等待存款</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_7" xml:space="preserve">
+    <value>取消付款</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_8" xml:space="preserve">
+    <value>付款失败</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_21" xml:space="preserve">
+    <value>付款完成同时，将卡信息发送到您的邮箱地址里。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_28" xml:space="preserve">
+    <value>预付卡取款限额为每日2,000,000KRW。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_29" xml:space="preserve">
+    <value>不是会员本人信息。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_30" xml:space="preserve">
+    <value>已超出每次取款限额。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_31" xml:space="preserve">
+    <value>已超出每日取款限额。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_32" xml:space="preserve">
+    <value>无充值金额。</value>
+  </data>
+  <data name="MemberInfo_Pop_5" xml:space="preserve">
+    <value>此手机号码已被注册。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_14" xml:space="preserve">
+    <value>请重新确认最低转出限额。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_15" xml:space="preserve">
+    <value>超出每次转出限额。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_16" xml:space="preserve">
+    <value>超出每日转出限额。  </value>
+  </data>
+  <data name="Main_Menu_3_5" xml:space="preserve">
+    <value>预付卡</value>
+  </data>
+  <data name="CertifyMyPage_Alert_10" xml:space="preserve">
+    <value>在6月29日后才可进行OTP更改。</value>
+  </data>
+  <data name="Login_24" xml:space="preserve">
+    <value>密码错误第{0}回。</value>
+  </data>
+  <data name="Login_25" xml:space="preserve">
+    <value>输入5回错误密码时，登录会被受限。</value>
+  </data>
+  <data name="CertifyMyPage_Alert_11" xml:space="preserve">
+    <value>进行KYC认证后才能更改OTP。</value>
+  </data>
+  <data name="CertifyMyPage_Alert_12" xml:space="preserve">
+    <value>请在[客服中心&gt;提交认证信息&gt;提交认证信息]菜单中的区分选择“更改OTP”。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_33" xml:space="preserve">
+    <value>请注意，预付卡存款后48小时内可能无法取款。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_34" xml:space="preserve">
+    <value>预付卡存款后， 在48小时内无法取款。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_35" xml:space="preserve">
+    <value>汇率按照apilayer.com网页提供的汇率信息适用，可能与国内的市价有所差异。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_23" xml:space="preserve">
+    <value>10~20分钟后可确认预付卡充值信息。</value>
+  </data>
+  <data name="AlramMyPage_1_2_15" xml:space="preserve">
+    <value>预付卡</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_36" xml:space="preserve">
+    <value>已超出预付卡可取款金额。</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000000986" xml:space="preserve">
+    <value>OTP初始化</value>
+  </data>
+  <data name="AlramMyPage_1_2_16" xml:space="preserve">
+    <value>提交认证信息</value>
+  </data>
+  <data name="MemberInfo_Pop_6" xml:space="preserve">
+    <value>请选择推荐人国家</value>
+  </data>
+  <data name="MemberInfo_Pop_7" xml:space="preserve">
+    <value>请选择推荐人所在区</value>
+  </data>
+  <data name="MemberInfo_Pop_8" xml:space="preserve">
+    <value>请选择推荐人</value>
+  </data>
+  <data name="MemberInfo_2_6" xml:space="preserve">
+    <value>注册推荐人</value>
+  </data>
+  <data name="MemberInfo_2_7" xml:space="preserve">
+    <value>推荐人国家</value>
+  </data>
+  <data name="MemberInfo_2_8" xml:space="preserve">
+    <value>地区</value>
+  </data>
+  <data name="MemberInfo_2_9" xml:space="preserve">
+    <value>推荐人</value>
+  </data>
+  <data name="Common_Alert_18" xml:space="preserve">
+    <value>选择</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_24" xml:space="preserve">
+    <value>(促销)</value>
+  </data>
+  <data name="MemberInfo_Pop_10" xml:space="preserve">
+    <value>你想保存吗？</value>
+  </data>
+  <data name="MemberInfo_Pop_9" xml:space="preserve">
+    <value>您的帐号未注册。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_25" xml:space="preserve">
+    <value>请在[我的页面&gt;会员信息管理]中注册您的帐号和手机号码。</value>
+  </data>
+  <data name="MemberInfo_2_10" xml:space="preserve">
+    <value>邮件/推送语言</value>
+  </data>
+  <data name="TradingHistory_2_4" xml:space="preserve">
+    <value>Market</value>
+  </data>
+  <data name="CoinTrading_Alert_18_1" xml:space="preserve">
+    <value>请输入订购金额。</value>
+  </data>
+  <data name="TradingHistory_3_9" xml:space="preserve">
+    <value>订购价</value>
+  </data>
+  <data name="Main_Menu_2_7" xml:space="preserve">
+    <value>买入/卖出</value>
+  </data>
+  <data name="Main_QuickMenu_20" xml:space="preserve">
+    <value>买入/卖出</value>
+  </data>
+  <data name="MemberInfo_Pop_11" xml:space="preserve">
+    <value>认证号码已发送到您的手机。请确认后输入认证号码。</value>
+  </data>
+  <data name="MemberInfo_Pop_12" xml:space="preserve">
+    <value>无法确认您的手机号码。</value>
+  </data>
+  <data name="MemberInfo_Pop_13" xml:space="preserve">
+    <value>SMS发送失败， 请稍后再试。</value>
+  </data>
+  <data name="Common_Alert_19" xml:space="preserve">
+    <value>还未完成邮箱认证。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_26" xml:space="preserve">
+    <value>预付卡充值方法</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_27" xml:space="preserve">
+    <value>充值方法可在[moacard网站(</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_28" xml:space="preserve">
+    <value>) &gt; 持有卡]中确认。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1_7" xml:space="preserve">
+    <value>*每人可申请1张卡。</value>
+  </data>
+  <data name="Common_Alert_20" xml:space="preserve">
+    <value>请在[我的主页 &gt; 注册推荐人]菜单里更改分店及推荐人。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_15" xml:space="preserve">
+    <value>The commission rate can not be used during readjustment.</value>
+  </data>
+  <data name="Common_Alert_21" xml:space="preserve">
+    <value>基准</value>
+  </data>
+  <data name="TradingHistory_7_1" xml:space="preserve">
+    <value>(指定价)</value>
+  </data>
+  <data name="TradingHistory_7_2" xml:space="preserve">
+    <value>(市场价)</value>
+  </data>
+  <data name="AssetsMyPage_7" xml:space="preserve">
+    <value>资产</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_16" xml:space="preserve">
+    <value>请在收到您的卡后注册。</value>
+  </data>
+  <data name="CoinTrading_2_8" xml:space="preserve">
+    <value>最低订购金额</value>
+  </data>
+  <data name="CoinTrading_2_9" xml:space="preserve">
+    <value>手续费</value>
+  </data>
+  <data name="Common_Alert_22" xml:space="preserve">
+    <value>没有细节</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_17" xml:space="preserve">
+    <value>已用该姓名与手机号注册过预付卡， 每人只能申请1个预付卡， 无法使用其他账号再次申请。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_18" xml:space="preserve">
+    <value>您要申请预付卡吗？</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_19" xml:space="preserve">
+    <value>预付卡可以在[Gangnam, Seoul]或在[Seolleung, Seoul]店领取。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_20" xml:space="preserve">
+    <value>加盟店位置可在[服客中心&gt;加盟店信息]菜单里确认。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_21" xml:space="preserve">
+    <value>预付卡将在大约2周内发送到您输入的接收地址。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_22" xml:space="preserve">
+    <value>您确定要取消预付卡申请吗？</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_23" xml:space="preserve">
+    <value>已完成取消。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_24" xml:space="preserve">
+    <value>状态为[申请完成]或[等待存款]时才能取消。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_4_3_9" xml:space="preserve">
+    <value>取消申请</value>
+  </data>
+  <data name="AtmPwdSetting_1" xml:space="preserve">
+    <value>PTM密码注册  </value>
+  </data>
+  <data name="AtmPwdSetting_10" xml:space="preserve">
+    <value>注册</value>
+  </data>
+  <data name="AtmPwdSetting_11" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="AtmPwdSetting_12" xml:space="preserve">
+    <value>密码只能设置为4位数字。</value>
+  </data>
+  <data name="AtmPwdSetting_2" xml:space="preserve">
+    <value>PTM密码可使用在自动存取款机的存/取款服务中, 与预付卡使用密码不同。</value>
+  </data>
+  <data name="AtmPwdSetting_3" xml:space="preserve">
+    <value>未注册的用户无法使用PTM机的存/取款服务。
+* PTM是CoinBlock专用自动存取款机。</value>
+  </data>
+  <data name="AtmPwdSetting_4" xml:space="preserve">
+    <value>卡密码</value>
+  </data>
+  <data name="AtmPwdSetting_5" xml:space="preserve">
+    <value>输入密码</value>
+  </data>
+  <data name="AtmPwdSetting_6" xml:space="preserve">
+    <value>确认密码</value>
+  </data>
+  <data name="AtmPwdSetting_7" xml:space="preserve">
+    <value>您已注册PTM密码</value>
+  </data>
+  <data name="AtmPwdSetting_8" xml:space="preserve">
+    <value>丢失密码的用户，请联系客服中心。</value>
+  </data>
+  <data name="AtmPwdSetting_9" xml:space="preserve">
+    <value>请输入4位数字</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000001146" xml:space="preserve">
+    <value>PTM密码</value>
+  </data>
+  <data name="AtmPwdSetting_13" xml:space="preserve">
+    <value>请输入密码。</value>
+  </data>
+  <data name="AtmPwdSetting_14" xml:space="preserve">
+    <value>您还没有注册卡， 请您先注册后再使用。</value>
+  </data>
+  <data name="AtmPwdSetting_15" xml:space="preserve">
+    <value>您要注册PTM密码吗？</value>
+  </data>
+  <data name="AtmPwdSetting_16" xml:space="preserve">
+    <value>已完成PTM密码注册。</value>
+  </data>
+  <data name="AtmPwdSetting_17" xml:space="preserve">
+    <value>发生PTM密码解密错误。</value>
+  </data>
+  <data name="AtmPwdSetting_18" xml:space="preserve">
+    <value>已注册PTM密码。</value>
+  </data>
+  <data name="AtmPwdSetting_19" xml:space="preserve">
+    <value>您还没有设置卡密码。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_Pop_25" xml:space="preserve">
+    <value>您还没有注册预付卡。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_29" xml:space="preserve">
+    <value>1次充值限额为{0}{1}。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_30" xml:space="preserve">
+    <value>1日充值限额为{0}{1}。</value>
+  </data>
+  <data name="CoinTrading_Alert_47" xml:space="preserve">
+    <value>已完成自动交易设置</value>
+  </data>
+  <data name="Fee_29" xml:space="preserve">
+    <value>PTM取款</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_41" xml:space="preserve">
+    <value>可取款金额</value>
+  </data>
+  <data name="MemberInfo_2_11" xml:space="preserve">
+    <value>初始化PIN码  </value>
+  </data>
+  <data name="MemberInfo_Pop_14" xml:space="preserve">
+    <value>您确定要初始化PIN码吗？</value>
+  </data>
+  <data name="MemberInfo_Pop_15" xml:space="preserve">
+    <value>初始化后，请使用手机登录并重置PIN码。</value>
+  </data>
+  <data name="MemberInfo_Pop_16" xml:space="preserve">
+    <value>您已初始化PIN码。</value>
+  </data>
+  <data name="MemberInfo_Pop_17" xml:space="preserve">
+    <value>请使用手机登录后重置PIN码。</value>
+  </data>
+  <data name="MemberInfo_Pop_18" xml:space="preserve">
+    <value>您还没有设置PIN码。</value>
+  </data>
+  <data name="MemberInfo_Pop_19" xml:space="preserve">
+    <value>已完成PIN码初始化。</value>
+  </data>
+  <data name="MemberInfo_Pop_20" xml:space="preserve">
+    <value>PIN码初始化失败。</value>
+  </data>
+  <data name="CoinTrading_1_6" xml:space="preserve">
+    <value>当前{0}市价</value>
+  </data>
+  <data name="CoinTrading_Alert_48" xml:space="preserve">
+    <value>1次可交易{0} {1} 以下数量。 </value>
+  </data>
+  <data name="CoinTrading_Alert_49" xml:space="preserve">
+    <value>1日可交易{0} {1} 以下数量。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_3_6" xml:space="preserve">
+    <value>2. 选择 '按收件人地址领取'并完成付款时将发送预付卡信息到您的邮箱地址。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_17" xml:space="preserve">
+    <value>System maintenance is in progress. Please check the notice.</value>
+  </data>
+  <data name="TradingHistory_1_15" xml:space="preserve">
+    <value>刷卡机付款</value>
+  </data>
+  <data name="TradingHistory_Common_3" xml:space="preserve">
+    <value>刷卡机编号</value>
+  </data>
+  <data name="CoinTrading_Alert_50" xml:space="preserve">
+    <value>您无法进行卖出交易。</value>
+  </data>
+  <data name="CertificationDataSubmit_CMMC00000001326" xml:space="preserve">
+    <value>申请解除SMS认证</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_42" xml:space="preserve">
+    <value>SMS认证</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_43" xml:space="preserve">
+    <value>发送SMS</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_44" xml:space="preserve">
+    <value>需要进行SMS认证。
+请进入[我的主页&gt;会员信息}页面注册手机号码。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_45" xml:space="preserve">
+    <value>已发送SMS认证号。
+无法正常进行SMS认证的会员， 请进入[客服中心&gt;提交认证信息&gt;本人认证&gt;申请解除SMS认证]菜单申请本人认证。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_18" xml:space="preserve">
+    <value>您还未进行SMS认证。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_37" xml:space="preserve">
+    <value>您还未进行SMS认证。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_19" xml:space="preserve">
+    <value>您无法使用取款及加密货币转出服务。</value>
+  </data>
+  <data name="Main_Menu_4_4" xml:space="preserve">
+    <value>Trust申请</value>
+  </data>
+  <data name="TrustRequest_1_1" xml:space="preserve">
+    <value>TRUST是向交易所委托自己持有且被指定为进行TRUST的加密货币中的一部分加密货币时，以加密货币支付投资利息的商品。</value>
+  </data>
+  <data name="TrustRequest_1_10" xml:space="preserve">
+    <value>申请时间</value>
+  </data>
+  <data name="TrustRequest_1_11" xml:space="preserve">
+    <value>截止时间</value>
+  </data>
+  <data name="TrustRequest_1_12" xml:space="preserve">
+    <value>使用条款</value>
+  </data>
+  <data name="TrustRequest_1_12_1" xml:space="preserve">
+    <value>使用条款[必选]</value>
+  </data>
+  <data name="TrustRequest_1_2" xml:space="preserve">
+    <value>货币</value>
+  </data>
+  <data name="TrustRequest_1_3" xml:space="preserve">
+    <value>最小申请数量</value>
+  </data>
+  <data name="TrustRequest_1_4" xml:space="preserve">
+    <value>持有加密货币</value>
+  </data>
+  <data name="TrustRequest_1_5" xml:space="preserve">
+    <value>申请数量</value>
+  </data>
+  <data name="TrustRequest_1_6" xml:space="preserve">
+    <value>选择时间</value>
+  </data>
+  <data name="TrustRequest_1_7" xml:space="preserve">
+    <value>利率</value>
+  </data>
+  <data name="TrustRequest_1_8" xml:space="preserve">
+    <value>预计利率</value>
+  </data>
+  <data name="TrustRequest_1_9" xml:space="preserve">
+    <value>总获取数量（包括利息）</value>
+  </data>
+  <data name="TrustRequest_2" xml:space="preserve">
+    <value>Trust申请明细</value>
+  </data>
+  <data name="TrustRequest_Alert_1" xml:space="preserve">
+    <value>请选择申请时间</value>
+  </data>
+  <data name="TrustRequest_Alert_2" xml:space="preserve">
+    <value>请输入申请数量</value>
+  </data>
+  <data name="TrustRequest_Alert_3" xml:space="preserve">
+    <value>申请数量不能高于持有数量。</value>
+  </data>
+  <data name="TrustRequest_Alert_4" xml:space="preserve">
+    <value>申请时交易及取款将受限。 您确定要申请码？</value>
+  </data>
+  <data name="TrustRequest_Alert_5" xml:space="preserve">
+    <value>如果在到期之前取消就无法获取利息。您确定要取消吗？</value>
+  </data>
+  <data name="TrustRequest_1_6_1" xml:space="preserve">
+    <value>{0}个月</value>
+  </data>
+  <data name="TrustRequest_2_1" xml:space="preserve">
+    <value>申请时间</value>
+  </data>
+  <data name="TrustRequest_2_2" xml:space="preserve">
+    <value>截止时间</value>
+  </data>
+  <data name="TrustRequest_2_3" xml:space="preserve">
+    <value>货币</value>
+  </data>
+  <data name="TrustRequest_2_4" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="TrustRequest_2_5" xml:space="preserve">
+    <value>利息</value>
+  </data>
+  <data name="TrustRequest_2_6" xml:space="preserve">
+    <value>总获取数量</value>
+  </data>
+  <data name="TrustRequest_2_7" xml:space="preserve">
+    <value>取消日期</value>
+  </data>
+  <data name="TrustRequest_2_8" xml:space="preserve">
+    <value>状態</value>
+  </data>
+  <data name="TrustRequest_2_8_1" xml:space="preserve">
+    <value>到期</value>
+  </data>
+  <data name="TrustRequest_2_8_2" xml:space="preserve">
+    <value>完成申请</value>
+  </data>
+  <data name="TrustRequest_2_9" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="TrustRequest_2_9_1" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="TrustRequest_2_8_3" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="TrustRequest_Alert_6" xml:space="preserve">
+    <value>申请数量不能少于最小申请数量。</value>
+  </data>
+  <data name="TrustRequest_Alert_7" xml:space="preserve">
+    <value>已完成TRUST申请。</value>
+  </data>
+  <data name="TrustRequest_Alert_8" xml:space="preserve">
+    <value>已取消。</value>
+  </data>
+  <data name="TrustRequest_Alert_9" xml:space="preserve">
+    <value>您还没有同意使用条款。</value>
+  </data>
+  <data name="AssetsMyPage_3_6" xml:space="preserve">
+    <value>Trust</value>
+  </data>
+  <data name="TrustRequest_1_9_1" xml:space="preserve">
+    <value>请确认使用条款后申请。</value>
+  </data>
+  <data name="DepositDepositWithdraw_Alert_1" xml:space="preserve">
+    <value>复制地址到剪贴板</value>
+  </data>
+  <data name="TradingHistory_1_16" xml:space="preserve">
+    <value>Trust</value>
+  </data>
+  <data name="TradingHistory_Common_4" xml:space="preserve">
+    <value>利息存款</value>
+  </data>
+  <data name="TradingHistory_Common_5" xml:space="preserve">
+    <value>申请时间</value>
+  </data>
+  <data name="AssetsMyPage_3_7" xml:space="preserve">
+    <value>交易受限</value>
+  </data>
+  <data name="TradingHistory_1_17" xml:space="preserve">
+    <value>转入加密货币</value>
+  </data>
+  <data name="TradingHistory_1_17_1" xml:space="preserve">
+    <value>交易受限</value>
+  </data>
+  <data name="TradingHistory_1_17_2" xml:space="preserve">
+    <value>转入</value>
+  </data>
+  <data name="Lending_1" xml:space="preserve">
+    <value>申请</value>
+  </data>
+  <data name="Lending_1_1" xml:space="preserve">
+    <value>申请Lending</value>
+  </data>
+  <data name="Lending_1_10" xml:space="preserve">
+    <value>预计利息</value>
+  </data>
+  <data name="Lending_1_11" xml:space="preserve">
+    <value>总偿还金额</value>
+  </data>
+  <data name="Lending_1_12" xml:space="preserve">
+    <value>申请日期</value>
+  </data>
+  <data name="Lending_1_13" xml:space="preserve">
+    <value>截止日期</value>
+  </data>
+  <data name="Lending_1_14" xml:space="preserve">
+    <value>使用条约</value>
+  </data>
+  <data name="Lending_1_14_1" xml:space="preserve">
+    <value>使用条约（必选）</value>
+  </data>
+  <data name="Lending_1_15" xml:space="preserve">
+    <value>Lending申请明细</value>
+  </data>
+  <data name="Lending_1_2" xml:space="preserve">
+    <value>Lending是一项交易所加密货币贷款服务。</value>
+  </data>
+  <data name="Lending_1_3" xml:space="preserve">
+    <value>偿还本金与利息才可进行取款。在还款之前，不允许进行除买入/卖出交易之外的所有取款。</value>
+  </data>
+  <data name="Lending_1_4" xml:space="preserve">
+    <value>贷款利息可按月偿还。</value>
+  </data>
+  <data name="Lending_1_5" xml:space="preserve">
+    <value>货币</value>
+  </data>
+  <data name="Lending_1_6" xml:space="preserve">
+    <value>最少申请数量</value>
+  </data>
+  <data name="Lending_1_7" xml:space="preserve">
+    <value>期限</value>
+  </data>
+  <data name="Lending_1_7_1" xml:space="preserve">
+    <value>{0}个月</value>
+  </data>
+  <data name="Lending_1_8" xml:space="preserve">
+    <value>申请数量</value>
+  </data>
+  <data name="Lending_1_9" xml:space="preserve">
+    <value>利率</value>
+  </data>
+  <data name="Lending_1_9_1" xml:space="preserve">
+    <value>{0})%（月）</value>
+  </data>
+  <data name="Lending_Grid_1" xml:space="preserve">
+    <value>申请日期</value>
+  </data>
+  <data name="Lending_Grid_10" xml:space="preserve">
+    <value>偿还日期</value>
+  </data>
+  <data name="Lending_Grid_11" xml:space="preserve">
+    <value>是否拖欠</value>
+  </data>
+  <data name="Lending_Grid_11_1" xml:space="preserve">
+    <value>未拖欠</value>
+  </data>
+  <data name="Lending_Grid_11_2" xml:space="preserve">
+    <value>拖欠</value>
+  </data>
+  <data name="Lending_Grid_12" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="Lending_Grid_12_1" xml:space="preserve">
+    <value>偿还</value>
+  </data>
+  <data name="Lending_Grid_12_2" xml:space="preserve">
+    <value>延长</value>
+  </data>
+  <data name="Lending_Grid_2" xml:space="preserve">
+    <value>延长日期</value>
+  </data>
+  <data name="Lending_Grid_3" xml:space="preserve">
+    <value>截止日期</value>
+  </data>
+  <data name="Lending_Grid_4" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="Lending_Grid_4_1" xml:space="preserve">
+    <value>延长</value>
+  </data>
+  <data name="Lending_Grid_4_2" xml:space="preserve">
+    <value>一般</value>
+  </data>
+  <data name="Lending_Grid_5" xml:space="preserve">
+    <value>申请状态</value>
+  </data>
+  <data name="Lending_Grid_5_1" xml:space="preserve">
+    <value>中途偿还</value>
+  </data>
+  <data name="Lending_Grid_5_2" xml:space="preserve">
+    <value>申请完成</value>
+  </data>
+  <data name="Lending_Grid_5_3" xml:space="preserve">
+    <value>到期</value>
+  </data>
+  <data name="Lending_Grid_6" xml:space="preserve">
+    <value>货币</value>
+  </data>
+  <data name="Lending_Grid_7" xml:space="preserve">
+    <value>申请数量</value>
+  </data>
+  <data name="Lending_Grid_8" xml:space="preserve">
+    <value>利息（月）</value>
+  </data>
+  <data name="Lending_Grid_9" xml:space="preserve">
+    <value>总偿还金额</value>
+  </data>
+  <data name="Main_Menu_4_5" xml:space="preserve">
+    <value>Lending</value>
+  </data>
+  <data name="Lending_2" xml:space="preserve">
+    <value>偿还明细</value>
+  </data>
+  <data name="Lending_2_1" xml:space="preserve">
+    <value>申请明细</value>
+  </data>
+  <data name="Lending_2_10" xml:space="preserve">
+    <value>是否拖欠</value>
+  </data>
+  <data name="Lending_2_10_1" xml:space="preserve">
+    <value>未拖欠</value>
+  </data>
+  <data name="Lending_2_10_2" xml:space="preserve">
+    <value>拖欠</value>
+  </data>
+  <data name="Lending_2_11" xml:space="preserve">
+    <value>延长日期</value>
+  </data>
+  <data name="Lending_2_11_1" xml:space="preserve">
+    <value>延长</value>
+  </data>
+  <data name="Lending_2_12" xml:space="preserve">
+    <value>截止日期</value>
+  </data>
+  <data name="Lending_2_13" xml:space="preserve">
+    <value>Lending偿还明细</value>
+  </data>
+  <data name="Lending_2_2" xml:space="preserve">
+    <value>申请日期</value>
+  </data>
+  <data name="Lending_2_3" xml:space="preserve">
+    <value>期限</value>
+  </data>
+  <data name="Lending_2_3_1" xml:space="preserve">
+    <value>{0}个月</value>
+  </data>
+  <data name="Lending_2_4" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="Lending_2_4_1" xml:space="preserve">
+    <value>中途偿还</value>
+  </data>
+  <data name="Lending_2_4_2" xml:space="preserve">
+    <value>申请完成</value>
+  </data>
+  <data name="Lending_2_4_3" xml:space="preserve">
+    <value>到期</value>
+  </data>
+  <data name="Lending_2_5" xml:space="preserve">
+    <value>申请数量</value>
+  </data>
+  <data name="Lending_2_6" xml:space="preserve">
+    <value>利率</value>
+  </data>
+  <data name="Lending_2_6_1" xml:space="preserve">
+    <value>{0})%（月）</value>
+  </data>
+  <data name="Lending_2_7" xml:space="preserve">
+    <value>总利息数量</value>
+  </data>
+  <data name="Lending_2_8" xml:space="preserve">
+    <value>总偿还金额</value>
+  </data>
+  <data name="Lending_2_9" xml:space="preserve">
+    <value>本金偿还日期</value>
+  </data>
+  <data name="Lending_2_9_1" xml:space="preserve">
+    <value>偿还</value>
+  </data>
+  <data name="Lending_Grid2_1" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="Lending_Grid2_1_1" xml:space="preserve">
+    <value>延长</value>
+  </data>
+  <data name="Lending_Grid2_1_2" xml:space="preserve">
+    <value>一般</value>
+  </data>
+  <data name="Lending_Grid2_2" xml:space="preserve">
+    <value>偿还日期</value>
+  </data>
+  <data name="Lending_Grid2_3" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="Lending_Grid2_3_1" xml:space="preserve">
+    <value>偿还本金</value>
+  </data>
+  <data name="Lending_Grid2_3_2" xml:space="preserve">
+    <value>偿还利息</value>
+  </data>
+  <data name="Lending_Grid2_4" xml:space="preserve">
+    <value>次数</value>
+  </data>
+  <data name="Lending_Grid2_4_1" xml:space="preserve">
+    <value>{0}次</value>
+  </data>
+  <data name="Lending_Grid2_5" xml:space="preserve">
+    <value>偿还金额</value>
+  </data>
+  <data name="Lending_Grid2_6" xml:space="preserve">
+    <value>拖欠利息</value>
+  </data>
+  <data name="Lending_Grid2_7" xml:space="preserve">
+    <value>总偿还金额</value>
+  </data>
+  <data name="Lending_Grid2_8" xml:space="preserve">
+    <value>是否偿还</value>
+  </data>
+  <data name="Lending_Grid2_8_1" xml:space="preserve">
+    <value>拖欠</value>
+  </data>
+  <data name="Lending_Grid2_8_2" xml:space="preserve">
+    <value>正常</value>
+  </data>
+  <data name="Lending_Grid2_8_3" xml:space="preserve">
+    <value>等待</value>
+  </data>
+  <data name="Lending_Grid2_9" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="TradingHistory_1_18" xml:space="preserve">
+    <value>自动交易</value>
+  </data>
+  <data name="TradingHistory_Common_6" xml:space="preserve">
+    <value>了解更多</value>
+  </data>
+  <data name="TradingHistory_Common_7" xml:space="preserve">
+    <value>交易号码</value>
+  </data>
+  <data name="TradingHistory_Common_8" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="TradingHistory_Common_9" xml:space="preserve">
+    <value>的金额</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_46" xml:space="preserve">
+    <value>提款只能以10,000韩元为单位。申请费包括费用。请检查实际收据金额。</value>
+  </data>
+  <data name="Lending_Alert_1" xml:space="preserve">
+    <value>延长</value>
+  </data>
+  <data name="Lending_Alert_1_1" xml:space="preserve">
+    <value>加密货币Lendig期限只能延长一次。
+您确定要延长Lendig期限吗？</value>
+  </data>
+  <data name="Lending_Alert_1_2" xml:space="preserve">
+    <value>延长利息率: (0)%（月）</value>
+  </data>
+  <data name="Lending_Alert_1_3" xml:space="preserve">
+    <value>截止日期</value>
+  </data>
+  <data name="Lending_Alert_2" xml:space="preserve">
+    <value>偿还</value>
+  </data>
+  <data name="Lending_Alert_2_1" xml:space="preserve">
+    <value>本金</value>
+  </data>
+  <data name="Lending_Alert_2_2" xml:space="preserve">
+    <value>剩余利息</value>
+  </data>
+  <data name="Lending_Alert_2_3" xml:space="preserve">
+    <value>总偿还金额</value>
+  </data>
+  <data name="Lending_Alert_2_4" xml:space="preserve">
+    <value>偿还日期</value>
+  </data>
+  <data name="Login_26" xml:space="preserve">
+    <value>We are currently undergoing an emergency system maintenance to provide a more stable system.</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_20" xml:space="preserve">
+    <value>转出限额</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_47" xml:space="preserve">
+    <value>取款限额</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_21" xml:space="preserve">
+    <value>取消转出</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1_5" xml:space="preserve">
+    <value>* 必须遮挡身份证上的个人信息。</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1_6" xml:space="preserve">
+    <value>* 备注必须亲自手写。</value>
+  </data>
+  <data name="CertificationDataSubmit_Common_1_7" xml:space="preserve">
+    <value>* 如使用Paint或Photoshop等编辑器经过编辑，则无法处理。</value>
+  </data>
+  <data name="CertifyMyPage_5_13" xml:space="preserve">
+    <value>* 必须遮挡身份证上的个人信息。</value>
+  </data>
+  <data name="CertifyMyPage_5_14" xml:space="preserve">
+    <value>* 备注必须亲自手写。</value>
+  </data>
+  <data name="CertifyMyPage_5_15" xml:space="preserve">
+    <value>* 如使用Paint或Photoshop等编辑器经过编辑，则无法处理。</value>
+  </data>
+  <data name="MemberInfo_Pop_21" xml:space="preserve">
+    <value>已完成手机本人认证。</value>
+  </data>
+  <data name="MemberInfo_Pop_22" xml:space="preserve">
+    <value>请确认手机本人认证。</value>
+  </data>
+  <data name="MemberInfo_Pop_23" xml:space="preserve">
+    <value>无法确认您的银行账户。</value>
+  </data>
+  <data name="MemberInfo_Pop_24" xml:space="preserve">
+    <value>请进行本人账户认证。</value>
+  </data>
+  <data name="MemberInfo_Pop_25" xml:space="preserve">
+    <value>已完成账户认证。</value>
+  </data>
+  <data name="MemberInfo_Pop_26" xml:space="preserve">
+    <value>请输入手机号码。</value>
+  </data>
+  <data name="MemberInfo_Pop_27" xml:space="preserve">
+    <value>请选择银行。</value>
+  </data>
+  <data name="MemberInfo_Pop_28" xml:space="preserve">
+    <value>请输入银行账号。</value>
+  </data>
+  <data name="MemberInfo_Pop_29" xml:space="preserve">
+    <value>请根据格式输入账号。</value>
+  </data>
+  <data name="MemberInfo_Pop_30" xml:space="preserve">
+    <value>用户名不存在。</value>
+  </data>
+  <data name="MemberInfo_Pop_31" xml:space="preserve">
+    <value>账户持有人姓名和用户姓名不匹配。</value>
+  </data>
+  <data name="MemberInfo_Pop_32" xml:space="preserve">
+    <value>银行检测中。</value>
+  </data>
+  <data name="Common_Alert_23" xml:space="preserve">
+    <value>手机本人认证可在WEB或MTS上进行。</value>
+  </data>
+  <data name="Lending_Alert_10" xml:space="preserve">
+    <value>无法确认申请数量。</value>
+  </data>
+  <data name="Lending_Alert_11" xml:space="preserve">
+    <value>无法确认申请月数。</value>
+  </data>
+  <data name="Lending_Alert_12" xml:space="preserve">
+    <value>您已申请Lending。</value>
+  </data>
+  <data name="Lending_Alert_13" xml:space="preserve">
+    <value>Lending申请失败。</value>
+  </data>
+  <data name="Lending_Alert_14" xml:space="preserve">
+    <value>您确定要延长时间吗？</value>
+  </data>
+  <data name="Lending_Alert_15" xml:space="preserve">
+    <value>您要偿还加密货币吗？</value>
+  </data>
+  <data name="Lending_Alert_3" xml:space="preserve">
+    <value>请输入加密货币Lending申请数量。</value>
+  </data>
+  <data name="Lending_Alert_4" xml:space="preserve">
+    <value>无法申请小于最小限额以内的数量。</value>
+  </data>
+  <data name="Lending_Alert_5" xml:space="preserve">
+    <value>无法申请大于最大限额以外的数量。</value>
+  </data>
+  <data name="Lending_Alert_6" xml:space="preserve">
+    <value>申请时所有取款将受限制。 您确定要申请吗？</value>
+  </data>
+  <data name="Lending_Alert_7" xml:space="preserve">
+    <value>无法确认您的邮箱。</value>
+  </data>
+  <data name="Lending_Alert_8" xml:space="preserve">
+    <value>无法确认货币类型。</value>
+  </data>
+  <data name="Lending_Alert_9" xml:space="preserve">
+    <value>无法确认申请日期。</value>
+  </data>
+  <data name="Common_Alert_24" xml:space="preserve">
+    <value>已完成申请。</value>
+  </data>
+  <data name="MemberInfo_Pop_33" xml:space="preserve">
+    <value>无法确认您的银行账号。</value>
+  </data>
+  <data name="AutoTradingAdditionalPop_7" xml:space="preserve">
+    <value>支付自动交易费用后无法取消或退款。</value>
+  </data>
+  <data name="Common_Alert_25" xml:space="preserve">
+    <value>请同意注意事项。</value>
+  </data>
+  <data name="MemberInfo_Pop_34" xml:space="preserve">
+    <value>需在[客服中心&gt;提交认证信息&gt;本人认证&gt;申请更改个人信息]菜单中申请后才可更改。</value>
+  </data>
+  <data name="MemberInfo_Pop_35" xml:space="preserve">
+    <value>密码有误。</value>
+  </data>
+  <data name="MemberInfo_Pop_36" xml:space="preserve">
+    <value>请重新确认。</value>
+  </data>
+  <data name="MemberInfo_Pop_37" xml:space="preserve">
+    <value>请输入您的会员ID密码以初始化PIN码。</value>
+  </data>
+  <data name="Lending_Grid2_3_3" xml:space="preserve">
+    <value>延长本金还款</value>
+  </data>
+  <data name="Lending_Grid2_3_4" xml:space="preserve">
+    <value>偿还延长利息</value>
+  </data>
+  <data name="TradingHistory_1_19" xml:space="preserve">
+    <value>手续费奖励</value>
+  </data>
+  <data name="CoinTrading_Alert_51" xml:space="preserve">
+    <value>输入的买入价格需大于 {0} {1} 。</value>
+  </data>
+  <data name="TradingHistory_1_20" xml:space="preserve">
+    <value>Lucky Box Event</value>
+  </data>
+  <data name="MemberInfo_1" xml:space="preserve">
+    <value>註冊後，無法更改。</value>
+  </data>
+  <data name="MemberInfo_1_1" xml:space="preserve">
+    <value>需要更改的会员请在[认证中心 &gt; 提交认证信息]菜单中申请</value>
+  </data>
+  <data name="DepositDepositWithdraw_Common_1" xml:space="preserve">
+    <value>{0} 电子钱包地址</value>
+  </data>
+  <data name="DepositDepositWithdraw_Common_2" xml:space="preserve">
+    <value>此地址是充值专用地址。</value>
+  </data>
+  <data name="DepositDepositWithdraw_Common_3" xml:space="preserve">
+    <value>持有 {0}</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_1" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_10" xml:space="preserve">
+    <value>邮箱认证</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_11" xml:space="preserve">
+    <value>{0} 转出时注意事项</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_12" xml:space="preserve">
+    <value>已确认上述内容。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_2" xml:space="preserve">
+    <value>所有货币转出将经过管理员确认后进行。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_3" xml:space="preserve">
+    <value>可转出金额</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_4" xml:space="preserve">
+    <value>每日转出限额</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_5" xml:space="preserve">
+    <value>转出加密货币地址</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_6" xml:space="preserve">
+    <value>转出申请金额</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_7" xml:space="preserve">
+    <value>{0} 手续费</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_8" xml:space="preserve">
+    <value>实际取款金额合计</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_Content_1_9" xml:space="preserve">
+    <value>OTP认证号码</value>
+  </data>
+  <data name="Common_Alert_26" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="AlramMyPage_2_4_3" xml:space="preserve">
+    <value>{0}充值</value>
+  </data>
+  <data name="AlramMyPage_2_4_4" xml:space="preserve">
+    <value>{0}取款</value>
+  </data>
+  <data name="AssetsMyPage_Common_1" xml:space="preserve">
+    <value> 按{0}市场标准。</value>
+  </data>
+  <data name="AutoTradingAdditional_3_11" xml:space="preserve">
+    <value>每月（30日）10,000{0}</value>
+  </data>
+  <data name="Common_Alert_4" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="Fee_26" xml:space="preserve">
+    <value>{0}取款</value>
+  </data>
+  <data name="Main_Head_4" xml:space="preserve">
+    <value>合计（{0})</value>
+  </data>
+  <data name="Main_Menu_3_1" xml:space="preserve">
+    <value>{0} 充值</value>
+  </data>
+  <data name="Main_Menu_3_3" xml:space="preserve">
+    <value>{0} 取款</value>
+  </data>
+  <data name="Main_QuickMenu_1" xml:space="preserve">
+    <value>{0} 充值</value>
+  </data>
+  <data name="Main_QuickMenu_2" xml:space="preserve">
+    <value>{0} 取款</value>
+  </data>
+  <data name="Main_QuickMenu_ToolTip_11" xml:space="preserve">
+    <value>{0} 充值</value>
+  </data>
+  <data name="Main_QuickMenu_ToolTip_12" xml:space="preserve">
+    <value>{0} 取款</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1_2" xml:space="preserve">
+    <value>*预付卡可用于{0}充值与取款。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1_3" xml:space="preserve">
+    <value>*预付款取款限额为，一次2,000,000 {0}，一日100,000,000 {0}。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_1_1_6" xml:space="preserve">
+    <value>*韩国国内卡申请费用为每张10,000{0}.</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Card_2_1_15" xml:space="preserve">
+    <value>( 运费：{0} {1})</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_1" xml:space="preserve">
+    <value>{0} 充值及注意事项</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_22" xml:space="preserve">
+    <value>最少存款金额为5000{0}。</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Krw_1_18" xml:space="preserve">
+    <value>1. {0}只能通过银行转账充值。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_1_8" xml:space="preserve">
+    <value>持有 {0}</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_13" xml:space="preserve">
+    <value>{0} 取款时注意事项</value>
+  </data>
+  <data name="RechargeDepositWithdraw_Common_2" xml:space="preserve">
+    <value>{0} 充值时注意事项</value>
+  </data>
+  <data name="DepositDepositWithdraw_Grid_1_7" xml:space="preserve">
+    <value>交易明细</value>
+  </data>
+  <data name="AlramMyPage_1_2_17" xml:space="preserve">
+    <value>OTP</value>
+  </data>
+  <data name="AlramMyPage_1_2_18" xml:space="preserve">
+    <value>手机本人认证</value>
+  </data>
+  <data name="AlramMyPage_1_2_19" xml:space="preserve">
+    <value>账户本人认证</value>
+  </data>
+  <data name="Login_27" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Login_28" xml:space="preserve">
+    <value>PassWord</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_39" xml:space="preserve">
+    <value>已超出每日可转出的最高金额。</value>
+  </data>
+  <data name="TransferDepositWithdraw_Common_22" xml:space="preserve">
+    <value>可从5月27日开始使用PANGAEA TOKEN取款服务。</value>
+  </data>
+  <data name="TrustRequest_Alert_10" xml:space="preserve">
+    <value>如果您在到期日前取消，将无法收到利息，且需要支付150％的违约金。
+您确定要取消吗？</value>
+  </data>
+  <data name="TrustRequest_Alert_11" xml:space="preserve">
+    <value>已完成Trust利息支付。</value>
+  </data>
+  <data name="TrustRequest_3" xml:space="preserve">
+    <value>支付利息明细</value>
+  </data>
+  <data name="TrustRequest_3_1" xml:space="preserve">
+    <value>支付利息</value>
+  </data>
+  <data name="TrustRequest_3_2" xml:space="preserve">
+    <value>申请时间</value>
+  </data>
+  <data name="TrustRequest_3_3" xml:space="preserve">
+    <value>截止时间</value>
+  </data>
+  <data name="TrustRequest_3_4" xml:space="preserve">
+    <value>支付利息时间</value>
+  </data>
+  <data name="TrustRequest_3_5" xml:space="preserve">
+    <value>货币</value>
+  </data>
+  <data name="TrustRequest_3_6" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="TrustRequest_3_7" xml:space="preserve">
+    <value>利息</value>
+  </data>
+  <data name="TrustRequest_3_8" xml:space="preserve">
+    <value>总获取数量</value>
+  </data>
+  <data name="TrustRequest_3_9" xml:space="preserve">
+    <value>状態</value>
+  </data>
+  <data name="TrustRequest_3_9_1" xml:space="preserve">
+    <value>到期</value>
+  </data>
+  <data name="TrustRequest_3_9_2" xml:space="preserve">
+    <value>完成申请</value>
+  </data>
+  <data name="TrustRequest_3_9_3" xml:space="preserve">
+    <value>注销</value>
+  </data>
+  <data name="TradingHistory_1_21" xml:space="preserve">
+    <value>Air Drop</value>
+  </data>
+  <data name="TrustRequest_Alert_12" xml:space="preserve">
+    <value>HEC活动期间无法取消。</value>
+  </data>
+  <data name="TrustRequest_Alert_13" xml:space="preserve">
+    <value>（不可取消时间：2019.07.01 ~ 2019.07.08 18:00)</value>
+  </data>
+  <data name="CoinTrading_Alert_52" xml:space="preserve">
+    <value>50 {0}以下无法买入(购买)。</value>
+  </data>
+  <data name="CoinTrading_Alert_53" xml:space="preserve">
+    <value>50 {0}以下无法卖出(销售)。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_1" xml:space="preserve">
+    <value>{0}转出</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_10" xml:space="preserve">
+    <value>会员邮箱</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_11" xml:space="preserve">
+    <value>电话号码</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_12" xml:space="preserve">
+    <value>收款人</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_13" xml:space="preserve">
+    <value>转出数量</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_14" xml:space="preserve">
+    <value>SMS认证</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_15" xml:space="preserve">
+    <value>转出申请时间</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_16" xml:space="preserve">
+    <value>会员ID</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_17" xml:space="preserve">
+    <value>会员名</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_18" xml:space="preserve">
+    <value>电话号码</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_19" xml:space="preserve">
+    <value>转出数量</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_2" xml:space="preserve">
+    <value>交易所内转出{0}时注意事项</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_20" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_21" xml:space="preserve">
+    <value>转出时间</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_3" xml:space="preserve">
+    <value>转出时将从您本人的会员资产转给交易所内的其他会员。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_4" xml:space="preserve">
+    <value>收到{0}的会员在收到后30分钟内无法进行交易。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_5" xml:space="preserve">
+    <value>因会员本人失误造成的转出错误， 交易所将不承担责任。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_6" xml:space="preserve">
+    <value>持有{0}</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_7" xml:space="preserve">
+    <value>最低转出金额</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_8" xml:space="preserve">
+    <value>转出限额</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_9" xml:space="preserve">
+    <value>分类</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_1" xml:space="preserve">
+    <value>因会员本人失误造成的转出错误， 交易所将不承担责任。
+您确定要转给此会员吗？</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_2" xml:space="preserve">
+    <value>已确认</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_3" xml:space="preserve">
+    <value>会员不存在。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_4" xml:space="preserve">
+    <value>请输入收款人。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_5" xml:space="preserve">
+    <value>请完成SMS认证。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_6" xml:space="preserve">
+    <value>余额不足。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_7" xml:space="preserve">
+    <value>收到{0}后30分钟内无法进行转出。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_8" xml:space="preserve">
+    <value>请稍后再试。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_T_Common_9" xml:space="preserve">
+    <value>请确认收款人。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_40" xml:space="preserve">
+    <value>现在是非银行服务时间。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_41" xml:space="preserve">
+    <value>（无法进行取款时间：23:30 ~ 00:30）</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_42" xml:space="preserve">
+    <value>在非银行服务时间内无法取款。</value>
+  </data>
+  <data name="ArbitrageRequestPop_1" xml:space="preserve">
+    <value>Arbitrage付款</value>
+  </data>
+  <data name="ArbitrageRequestPop_2" xml:space="preserve">
+    <value>Arbitrage付款后无法取消或退款。</value>
+  </data>
+  <data name="ArbitrageRequest_1" xml:space="preserve">
+    <value>Arbitrage</value>
+  </data>
+  <data name="ArbitrageRequest_1_1" xml:space="preserve">
+    <value>ㆍArbitrage是将自己在交易所持有的加密货币中的一部分与市价差额最大的其他交易所市价进行比较后进行自由交易的交易。</value>
+  </data>
+  <data name="ArbitrageRequest_1_2" xml:space="preserve">
+    <value>ㆍArbitrage可选择买入/卖出，实时确认交易所内最高市价和最低市价， 按其差价进行交易。</value>
+  </data>
+  <data name="ArbitrageRequest_1_3" xml:space="preserve">
+    <value>ㆍ该服务为附加服务，可在[HTS &gt; 附加服务 &gt; Arbitrage]进行交易。</value>
+  </data>
+  <data name="ArbitrageRequest_2_1" xml:space="preserve">
+    <value>Arbitrage 申请状态</value>
+  </data>
+  <data name="ArbitrageRequest_2_2" xml:space="preserve">
+    <value>Arbitrage是</value>
+  </data>
+  <data name="ArbitrageRequest_2_3" xml:space="preserve">
+    <value>30日 100，000 {0}</value>
+  </data>
+  <data name="Arbitrage_1" xml:space="preserve">
+    <value>Arbitrage（套利交易）</value>
+  </data>
+  <data name="Arbitrage_1_1" xml:space="preserve">
+    <value>ㆍArbitrage是将自己在交易所持有的加密货币(BTC， ETH， PANGAEA)中的一部分与市价差额最大的其他交易所市价进行比较后进行自由交易的交易。</value>
+  </data>
+  <data name="Arbitrage_1_2" xml:space="preserve">
+    <value>ㆍArbitrage可选择买入/卖出，实时确认交易所内最高市价和最低市价， 按其差价进行交易。</value>
+  </data>
+  <data name="Arbitrage_1_3" xml:space="preserve">
+    <value>ㆍ该服务为附加服务，可在[HTS &gt; 附加服务 &gt; Arbitrage]进行交易。</value>
+  </data>
+  <data name="Arbitrage_2" xml:space="preserve">
+    <value>选择交易</value>
+  </data>
+  <data name="Arbitrage_2_1" xml:space="preserve">
+    <value>买入</value>
+  </data>
+  <data name="Arbitrage_2_2" xml:space="preserve">
+    <value>卖出</value>
+  </data>
+  <data name="Arbitrage_3_1" xml:space="preserve">
+    <value>交易所</value>
+  </data>
+  <data name="Arbitrage_3_2" xml:space="preserve">
+    <value>加密货币</value>
+  </data>
+  <data name="Arbitrage_3_3" xml:space="preserve">
+    <value>持有{0}</value>
+  </data>
+  <data name="Arbitrage_3_4" xml:space="preserve">
+    <value>当前市价</value>
+  </data>
+  <data name="Arbitrage_3_5" xml:space="preserve">
+    <value>差价</value>
+  </data>
+  <data name="Arbitrage_4" xml:space="preserve">
+    <value>ㆍArbitrage 使用注意事项</value>
+  </data>
+  <data name="Arbitrage_4_1" xml:space="preserve">
+    <value>ㆍ在Arbitrage购买的情况下，将显示市价最高与市价最低的交易所，并显示两个交易所之间的差价。</value>
+  </data>
+  <data name="Arbitrage_4_2" xml:space="preserve">
+    <value>ㆍ以最低市价的交易所进行Arbitrage购买，使用市价高的交易所进行比较参考。</value>
+  </data>
+  <data name="Arbitrage_4_3" xml:space="preserve">
+    <value>ㆍ按登录的交易所市价行情为基准，显示与其交易所差价较大的交易所。</value>
+  </data>
+  <data name="Arbitrage_4_4" xml:space="preserve">
+    <value>ㆍ刷新时交易所可能会发生变动， 请注意确认交易所中的资产后继续进行交易。</value>
+  </data>
+  <data name="Arbitrage_4_5" xml:space="preserve">
+    <value>ㆍ违反该事项时发生的损失，交易所不承担任何责任。交易前请务必确认后进行。</value>
+  </data>
+  <data name="Arbitrage_5_1" xml:space="preserve">
+    <value>已确认上述内容。</value>
+  </data>
+  <data name="Arbitrage_6_1" xml:space="preserve">
+    <value>种类</value>
+  </data>
+  <data name="Arbitrage_6_2" xml:space="preserve">
+    <value>交易所名</value>
+  </data>
+  <data name="Arbitrage_6_3" xml:space="preserve">
+    <value>成交时间</value>
+  </data>
+  <data name="Arbitrage_6_4" xml:space="preserve">
+    <value>成交价</value>
+  </data>
+  <data name="Arbitrage_6_5" xml:space="preserve">
+    <value>成交金额</value>
+  </data>
+  <data name="Arbitrage_6_6" xml:space="preserve">
+    <value>手续费</value>
+  </data>
+  <data name="Arbitrage_SetMainExchange_1" xml:space="preserve">
+    <value>设置主交易所</value>
+  </data>
+  <data name="Arbitrage_SetMainExchange_1_1" xml:space="preserve">
+    <value>什么是主交易所？</value>
+  </data>
+  <data name="Arbitrage_SetMainExchange_1_2" xml:space="preserve">
+    <value>通过Abitrige交易产生的收益将自动转入指定交易所，这是为方便取款而设定的功能。 可用登录的交易所设置为主交易所， 也可将其他交易所设定为主交易所。</value>
+  </data>
+  <data name="Arbitrage_SetMainExchange_1_3" xml:space="preserve">
+    <value>主交易所</value>
+  </data>
+  <data name="Arbitrage_SetMainExchange_1_4" xml:space="preserve">
+    <value>ㆍ注意事项：未设置主交易所时，登录的交易所被设为主交易所。设置完成后无法变更，设置时请慎重。</value>
+  </data>
+  <data name="Arbitrage_SetMainExchange_Alert_1" xml:space="preserve">
+    <value>完成主交易所设置</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_1" xml:space="preserve">
+    <value>综合交易所会员注册</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_1_1" xml:space="preserve">
+    <value>注册Arbitrage综合交易所</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_1_2" xml:space="preserve">
+    <value>交易所名</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_1_3" xml:space="preserve">
+    <value>是否注册</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_2_1" xml:space="preserve">
+    <value>ㆍ注册为综合会员，可通过比较所有交易所的市价差异，使用Arbitrage功能。</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_2_2" xml:space="preserve">
+    <value>ㆍ使用您登录的账号进行注册。</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_2_3" xml:space="preserve">
+    <value>使用条款[必须]</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_Alert_1" xml:space="preserve">
+    <value>Arbitrage是付费服务， 
+请在附加服务中申请注册Arbitrage。</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_Alert_2" xml:space="preserve">
+    <value>以综合会员身份自动注册为所有可使用Arbitrage的交易所。 将使用您登录的用户名进行注册，登录各网站时需设置密码，进行认证。您确定要注册吗?</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_Alert_3" xml:space="preserve">
+    <value>您确定要取消会员注册吗？
+如果不进行综合交易所会员注册， 就无法正常使用Arbitrage功能。</value>
+  </data>
+  <data name="Arbitrage_TradePop_1" xml:space="preserve">
+    <value>运行Arbitrage</value>
+  </data>
+  <data name="Arbitrage_TradePop_1_1" xml:space="preserve">
+    <value>选择资产</value>
+  </data>
+  <data name="Arbitrage_TradePop_1_1_1" xml:space="preserve">
+    <value>当前交易所</value>
+  </data>
+  <data name="Arbitrage_TradePop_1_1_2" xml:space="preserve">
+    <value>全部交易所</value>
+  </data>
+  <data name="Arbitrage_TradePop_1_2" xml:space="preserve">
+    <value>持有金额</value>
+  </data>
+  <data name="Arbitrage_TradePop_1_3" xml:space="preserve">
+    <value>交易所</value>
+  </data>
+  <data name="Arbitrage_TradePop_1_4" xml:space="preserve">
+    <value>当前市价</value>
+  </data>
+  <data name="Arbitrage_TradePop_1_5" xml:space="preserve">
+    <value>时刻</value>
+  </data>
+  <data name="Arbitrage_TradePop_2_1" xml:space="preserve">
+    <value>ㆍ使用全部的持有金额进行交易。</value>
+  </data>
+  <data name="Arbitrage_TradePop_2_2" xml:space="preserve">
+    <value>ㆍ因市价行情实时变动， 交易收益可能与预计收益有所不同。</value>
+  </data>
+  <data name="Arbitrage_TradePop_2_3" xml:space="preserve">
+    <value>您确定要进行交易吗？</value>
+  </data>
+  <data name="Arbitrage_TradePop_3_1" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="Arbitrage_TradePop_Alert_1" xml:space="preserve">
+    <value>您确定要进行交易吗?
+交易后发生的损失，交易所不承担任何责任。</value>
+  </data>
+  <data name="WithdrawDepositWithdraw_Common_43" xml:space="preserve">
+    <value>为防止电话诈骗及非正常取款等， 三个小时内连续申请取款超过3次时，三个小时后可再次申请取款。</value>
+  </data>
+  <data name="ArbitrageRequestPop_Alert_1" xml:space="preserve">
+    <value>请选择付款方式。</value>
+  </data>
+  <data name="ArbitrageRequestPop_Alert_2" xml:space="preserve">
+    <value>您的付款金额不足。</value>
+  </data>
+  <data name="ArbitrageRequestPop_Alert_3" xml:space="preserve">
+    <value>套利申请失败。</value>
+  </data>
+  <data name="ArbitrageRequestPop_Alert_4" xml:space="preserve">
+    <value>我是申请套利的会员。</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_1_3_1" xml:space="preserve">
+    <value>注册</value>
+  </data>
+  <data name="Arbitrage_SignUpPop_1_3_2" xml:space="preserve">
+    <value>不包括在内</value>
+  </data>
+  <data name="Arbitrage_Alert_1" xml:space="preserve">
+    <value>请注册综合交易所。</value>
+  </data>
+  <data name="Arbitrage_Term_1" xml:space="preserve">
+    <value>Arbitrage服务使用条款</value>
+  </data>
+  <data name="Arbitrage_Term_10" xml:space="preserve">
+    <value>如果会员表示不同意适用修改条款的明确意思时，交易所就无法适用修改条款的内容，在这种情况下会员可以终止使用合同。但是，如果有无法适用现有条款的特殊情况，交易所可以终止使用合同。</value>
+  </data>
+  <data name="Arbitrage_Term_100" xml:space="preserve">
+    <value>解除条件</value>
+  </data>
+  <data name="Arbitrage_Term_101" xml:space="preserve">
+    <value>停止效力</value>
+  </data>
+  <data name="Arbitrage_Term_102" xml:space="preserve">
+    <value>服务受限，除登录以外无法使用其他服务</value>
+  </data>
+  <data name="Arbitrage_Term_103" xml:space="preserve">
+    <value>-无法确认用户名(邮箱)</value>
+  </data>
+  <data name="Arbitrage_Term_104" xml:space="preserve">
+    <value>-发生黑客/欺诈事件</value>
+  </data>
+  <data name="Arbitrage_Term_105" xml:space="preserve">
+    <value>-事件相关会员(联系方式及个人信息一致)</value>
+  </data>
+  <data name="Arbitrage_Term_106" xml:space="preserve">
+    <value>-申请终止服务</value>
+  </data>
+  <data name="Arbitrage_Term_107" xml:space="preserve">
+    <value>-其他:管理员判断(在正常服务进行过程中引发严重障碍时)</value>
+  </data>
+  <data name="Arbitrage_Term_108" xml:space="preserve">
+    <value>-解决停止事由</value>
+  </data>
+  <data name="Arbitrage_Term_109" xml:space="preserve">
+    <value>除登录以外无法进行交易</value>
+  </data>
+  <data name="Arbitrage_Term_11" xml:space="preserve">
+    <value>第3条 (条款外准则)</value>
+  </data>
+  <data name="Arbitrage_Term_110" xml:space="preserve">
+    <value>登录限制</value>
+  </data>
+  <data name="Arbitrage_Term_111" xml:space="preserve">
+    <value>-密码连续错误</value>
+  </data>
+  <data name="Arbitrage_Term_112" xml:space="preserve">
+    <value>-被怀疑为盗用名义的情况</value>
+  </data>
+  <data name="Arbitrage_Term_113" xml:space="preserve">
+    <value>-其他:管理员判断</value>
+  </data>
+  <data name="Arbitrage_Term_114" xml:space="preserve">
+    <value>-解决停止事由</value>
+  </data>
+  <data name="Arbitrage_Term_115" xml:space="preserve">
+    <value>无法登录</value>
+  </data>
+  <data name="Arbitrage_Term_116" xml:space="preserve">
+    <value>限制部分服务</value>
+  </data>
+  <data name="Arbitrage_Term_117" xml:space="preserve">
+    <value>根据判断，除特定服务外其他使用中不存在问题，可处理为部分限制。</value>
+  </data>
+  <data name="Arbitrage_Term_118" xml:space="preserve">
+    <value>-解决停止事由</value>
+  </data>
+  <data name="Arbitrage_Term_119" xml:space="preserve">
+    <value>无法使用特定服务</value>
+  </data>
+  <data name="Arbitrage_Term_12" xml:space="preserve">
+    <value>对于服务，交易所除本条款外，可另行制定其他公告事项，个别条款，个别同意事项，使用指南，运营政策，详细方针等(以下统称为"详细方针")，可向会员通知或获得同意。 
+"详细方针"中经会员同意的内容与本条款相冲突时，"则优先适用"详细方针"。</value>
+  </data>
+  <data name="Arbitrage_Term_120" xml:space="preserve">
+    <value>第六章 个人信息保护</value>
+  </data>
+  <data name="Arbitrage_Term_121" xml:space="preserve">
+    <value>第14条 (个人信息保护)</value>
+  </data>
+  <data name="Arbitrage_Term_122" xml:space="preserve">
+    <value>交易所根据有关法令的规定，为保护会员的个人信息而努力。为确保服务的顺畅，会员信息仅在会员同意的目的和范围内使用。除法律另有规定或会员另行同意的情况，交易所不会向任何第三方提供会员的个人信息， 详情请参阅交易所的隐私政策。</value>
+  </data>
+  <data name="Arbitrage_Term_123" xml:space="preserve">
+    <value>第七章 损失赔偿，免责条款与退款政策</value>
+  </data>
+  <data name="Arbitrage_Term_124" xml:space="preserve">
+    <value>第15条 (交易所的损失赔偿责任)</value>
+  </data>
+  <data name="Arbitrage_Term_125" xml:space="preserve">
+    <value>交易所对违反本条款进行交易发生的一切事故不承担任何责任，除非交易所故意或存在重大过失，否则对会员过失引起的纠纷不承担任何责任。</value>
+  </data>
+  <data name="Arbitrage_Term_126" xml:space="preserve">
+    <value>明知他人不经授权轻易使用会员账号或轻易知道会员账号，而会员不及时告知公司，放任不管，泄露或暴露造成损失的部分，不承担任何责任。</value>
+  </data>
+  <data name="Arbitrage_Term_127" xml:space="preserve">
+    <value>交易所为加强安全采取进一步安全措施，对此如会员无正当理由拒绝而造成的损失，交易所不承担任何责任。</value>
+  </data>
+  <data name="Arbitrage_Term_128" xml:space="preserve">
+    <value>交易所不干预会员的加密货币交易，因此对会员通过Arbitrage服务造成的投资损失不承担任何责任。</value>
+  </data>
+  <data name="Arbitrage_Term_129" xml:space="preserve">
+    <value>会员需理解使用Arbitrage服务进行的交易不保证投资收益， 交易所对于会员使用Arbitrage服务造成的投资损失不承担任何责任。</value>
+  </data>
+  <data name="Arbitrage_Term_13" xml:space="preserve">
+    <value>对本条款中未规定的事项或解释，请遵循“详细方针”及相关法令或惯例。</value>
+  </data>
+  <data name="Arbitrage_Term_130" xml:space="preserve">
+    <value>交易所概不参与会员是否使用特定加密货币交易，使用时间，使用频率等选择，并对于由此造成的投资损失不承担任何责任。</value>
+  </data>
+  <data name="Arbitrage_Term_131" xml:space="preserve">
+    <value>会员需理解，因缺陷或出现错误等原因导致交易中断，交易延误等在Arbitrage服务上存在缺陷时，也可能存在因其缺陷而使投资产生收益或损失的情况，交易所对因Arbitrage服务的缺陷而造成的投资损失不承担任何责任。</value>
+  </data>
+  <data name="Arbitrage_Term_132" xml:space="preserve">
+    <value>除非交易所故意或存在重大过失，否则对违反本条款规定的买卖规则进行交易发生的事故，以及会员之间因会员的过失引起的纠纷，交易所不承担任何责任。</value>
+  </data>
+  <data name="Arbitrage_Term_133" xml:space="preserve">
+    <value>第16条 (免责条款)</value>
+  </data>
+  <data name="Arbitrage_Term_134" xml:space="preserve">
+    <value>即使交易所尽到了善良管理人的注意义务，如果在提供服务时在当时科学技术层面上无法找到Arbitrage服务中存在的缺陷时，对其造成的损失，交易所不承担任何责任。有符合下列情形之一的，也不承担任何责任。</value>
+  </data>
+  <data name="Arbitrage_Term_135" xml:space="preserve">
+    <value>① 战时，事变，自然灾害或相应的国家紧急事态等不可避免的情况</value>
+  </data>
+  <data name="Arbitrage_Term_136" xml:space="preserve">
+    <value>② 因会员故意或过失造成损失的情况</value>
+  </data>
+  <data name="Arbitrage_Term_137" xml:space="preserve">
+    <value>③ 根据电气通信事业法，因其他通信运营商提供的电信服务发生障碍的情况</value>
+  </data>
+  <data name="Arbitrage_Term_138" xml:space="preserve">
+    <value>④ 如果是非交易所直接提供的服务，而利用合作企业等第三方提供的服务，因合作企业等第三方的故意或过失，因会员自身原因无法使用服务等情况，交易所不承担任何责任。</value>
+  </data>
+  <data name="Arbitrage_Term_139" xml:space="preserve">
+    <value>除非交易所故意或存在重大过失，否则对会员违反本条款及有关法令的行为给第三方造成的损失，交易所不承担任何责任。</value>
+  </data>
+  <data name="Arbitrage_Term_14" xml:space="preserve">
+    <value>第2章 服务使用申请与同意</value>
+  </data>
+  <data name="Arbitrage_Term_140" xml:space="preserve">
+    <value>第17条 (代理及免责声明)</value>
+  </data>
+  <data name="Arbitrage_Term_141" xml:space="preserve">
+    <value>通过交易所提供的数据及分析资料是以提供信息为目的，不以加密货币交易为目的。</value>
+  </data>
+  <data name="Arbitrage_Term_142" xml:space="preserve">
+    <value>交易所一直致力于保持有关加密货币交易市场信息的及时性和准确性，但可能存在不可避免的信息错误及遗漏，延迟。</value>
+  </data>
+  <data name="Arbitrage_Term_143" xml:space="preserve">
+    <value>交易所无权代理会员销售或购买加密货币，交易所的任何行为均不得视为为会员进行加密货币交易的代理行为。</value>
+  </data>
+  <data name="Arbitrage_Term_144" xml:space="preserve">
+    <value>交易所不存在参与会员间或会员与第三方之间纠纷的法律义务，不承担任何与此相关的责任。 但排除因交易所的归责事由而发生此类纠纷的情况。</value>
+  </data>
+  <data name="Arbitrage_Term_145" xml:space="preserve">
+    <value>第18条 (管辖法院和准据法)</value>
+  </data>
+  <data name="Arbitrage_Term_146" xml:space="preserve">
+    <value>关于交易所和会员之间发生纠纷的诉讼，根据起诉当时的会员地址，如没有地址，则由管辖住所的地方法院管辖。 但起诉当时会员地址或住所不明确的，由首尔中央地方法院管辖。</value>
+  </data>
+  <data name="Arbitrage_Term_147" xml:space="preserve">
+    <value>地址或住所在海外的会员，有关交易所和会员间发生的纠纷诉讼，不论前项如何，都将由大韩民国首尔中央地方法院作为管辖法院。</value>
+  </data>
+  <data name="Arbitrage_Term_148" xml:space="preserve">
+    <value>关于本服务的使用，交易所与会员间的诉讼适用韩国法律。</value>
+  </data>
+  <data name="Arbitrage_Term_149" xml:space="preserve">
+    <value>本条款自2019年07月15日起适用。</value>
+  </data>
+  <data name="Arbitrage_Term_15" xml:space="preserve">
+    <value>第4条 (使用合同的成立)</value>
+  </data>
+  <data name="Arbitrage_Term_16" xml:space="preserve">
+    <value>有意注册此服务的用户(以下简称"服务申请人")在同意本条款内容后，即可使用此服务。通过同意条款， 交易所与会员间被视为签订合同。</value>
+  </data>
+  <data name="Arbitrage_Term_17" xml:space="preserve">
+    <value>交易所在原则上接受服务申请人的申请，但在下列情况下，交易所可拒绝申请人的服务申请。</value>
+  </data>
+  <data name="Arbitrage_Term_18" xml:space="preserve">
+    <value>1) 利用他人邮箱地址，电话号码等个人信息申请服务时</value>
+  </data>
+  <data name="Arbitrage_Term_19" xml:space="preserve">
+    <value>2) 使用虚假信息或未记录交易所要求的全部会员信息时</value>
+  </data>
+  <data name="Arbitrage_Term_2" xml:space="preserve">
+    <value>第一章 总则</value>
+  </data>
+  <data name="Arbitrage_Term_20" xml:space="preserve">
+    <value>3) 申请服务用户未满19周岁时</value>
+  </data>
+  <data name="Arbitrage_Term_21" xml:space="preserve">
+    <value>4) 被怀疑涉嫌以洗钱，隐藏犯罪收益等不正当目的使用服务时</value>
+  </data>
+  <data name="Arbitrage_Term_22" xml:space="preserve">
+    <value>5) 由于交易所设备不足，发生技术性问题，因其他交易所的情况，被判断为进一步签订使用合同不利于会员时</value>
+  </data>
+  <data name="Arbitrage_Term_23" xml:space="preserve">
+    <value>6) 破坏其他社会安宁秩序或公序良俗为目的申请服务时</value>
+  </data>
+  <data name="Arbitrage_Term_24" xml:space="preserve">
+    <value>交易所需要确认本人的情况，可根据相关法令， 可要求申请人通过专门机关确认实名及进行本人认证。此时，交易所可根据个人服务使用程度，对申请人要求的个人信息及本人认证手续方式不同。</value>
+  </data>
+  <data name="Arbitrage_Term_25" xml:space="preserve">
+    <value>因服务申请人拒绝提供本条各项要求的信息及本人认证程序而产生的不利影响，交易所不承担任何责任。</value>
+  </data>
+  <data name="Arbitrage_Term_26" xml:space="preserve">
+    <value>第5条 (服务使用申请与同意申请)</value>
+  </data>
+  <data name="Arbitrage_Term_27" xml:space="preserve">
+    <value>会员为使用服务，可根据交易密码设置等公司要求的程序，申请对全部或部分服务的使用。使用此服务时，交易所可向会员要求进一步的本人确认方式。</value>
+  </data>
+  <data name="Arbitrage_Term_28" xml:space="preserve">
+    <value>即使交易所同意使用会员个别服务，如有违反本条款的行为，则可永久或暂时限制会员使用全部或部分服务。</value>
+  </data>
+  <data name="Arbitrage_Term_29" xml:space="preserve">
+    <value>第6条 (使用合同解除与终止)</value>
+  </data>
+  <data name="Arbitrage_Term_3" xml:space="preserve">
+    <value>第1条 (目的)</value>
+  </data>
+  <data name="Arbitrage_Term_30" xml:space="preserve">
+    <value>会员可随时通过交易所的客服中心提出终止合同的申请，交易所应根据相关法令等规定及时进行处理。但是，如果有下列情形之一，交易所为解决此情形， 可以在一定的时间内延迟终止服务程序时间。</value>
+  </data>
+  <data name="Arbitrage_Term_31" xml:space="preserve">
+    <value>1) 目前正在进行交易时</value>
+  </data>
+  <data name="Arbitrage_Term_32" xml:space="preserve">
+    <value>2) 有调查机关要求或为探测异常交易而难以立即办理服务终止程序的情况</value>
+  </data>
+  <data name="Arbitrage_Term_33" xml:space="preserve">
+    <value>3) 因本条各项事由需要计算交易所的损失赔偿金额或需要应对监管机构(包括相关调查机关)要求的相关材料的情况</value>
+  </data>
+  <data name="Arbitrage_Term_34" xml:space="preserve">
+    <value>交易所根据第1项条款，在延迟服务终止程序时，也可锁定(以下简称"账户锁定")使用会员账户， 包括会员登录等。</value>
+  </data>
+  <data name="Arbitrage_Term_35" xml:space="preserve">
+    <value>交易所在符合以下各项的情况下，可以终止与会员的使用条款。但，在第8项的情况，交易所可要求会员在限期7天内纠正违规行为，但如果违规行为没有得到纠正，可以终止合同。</value>
+  </data>
+  <data name="Arbitrage_Term_36" xml:space="preserve">
+    <value>1) 盗用或使用他人姓名，手机号码，银行账户等个人信息注册的情况</value>
+  </data>
+  <data name="Arbitrage_Term_37" xml:space="preserve">
+    <value>2) 盗用或借用他人用户名(ID)，密码等的情况</value>
+  </data>
+  <data name="Arbitrage_Term_38" xml:space="preserve">
+    <value>3) 其他注册会员的会员信息与实际使用账户人的个人信息不同的情况</value>
+  </data>
+  <data name="Arbitrage_Term_39" xml:space="preserve">
+    <value>4) 一名会员使用多个账户的情况</value>
+  </data>
+  <data name="Arbitrage_Term_4" xml:space="preserve">
+    <value>该条款目的为规定关于股份公司PACT Global(以下简称交易所)提供的Arbitrage相关服务(以下简称服务)使用条件及程序中交易所与会员之间的权利义务及责任事项，以及其他必要的事项。</value>
+  </data>
+  <data name="Arbitrage_Term_40" xml:space="preserve">
+    <value>5) 会员未满19周岁的情况</value>
+  </data>
+  <data name="Arbitrage_Term_41" xml:space="preserve">
+    <value>6) 非法洗钱，隐藏犯罪收益等以不正当目的使用服务的情况</value>
+  </data>
+  <data name="Arbitrage_Term_42" xml:space="preserve">
+    <value>7) 利用Arbitrage进行与犯罪相关行为的情况</value>
+  </data>
+  <data name="Arbitrage_Term_43" xml:space="preserve">
+    <value>8) 使用服务时代理运营第三方账号的行为或有宣传行为的情况</value>
+  </data>
+  <data name="Arbitrage_Term_44" xml:space="preserve">
+    <value>9) 会员违反第8项导致交易所或第三方财产损失的情况</value>
+  </data>
+  <data name="Arbitrage_Term_45" xml:space="preserve">
+    <value>10) 侵害交易所或第三方知识产权的情况</value>
+  </data>
+  <data name="Arbitrage_Term_46" xml:space="preserve">
+    <value>11) 因政府及相关机关的政策，规范加密货币交易的法令变更， 或者为遵守其所需的交易所服务政策的变更，导致该会员无法遵守其会员资格条件的情况</value>
+  </data>
+  <data name="Arbitrage_Term_47" xml:space="preserve">
+    <value>第7条 (服务拒绝与保留)</value>
+  </data>
+  <data name="Arbitrage_Term_48" xml:space="preserve">
+    <value>在下列情况下，交易所可以不接受客户的服务申请，特别是未成年人或具有限制能力者无法申请服务:</value>
+  </data>
+  <data name="Arbitrage_Term_49" xml:space="preserve">
+    <value>1) 交易所删除会员账号的情况</value>
+  </data>
+  <data name="Arbitrage_Term_5" xml:space="preserve">
+    <value>第2条 (条款的明确规定，说明与修改)</value>
+  </data>
+  <data name="Arbitrage_Term_50" xml:space="preserve">
+    <value>2) 会员试图利用他人名义或邮箱地址等个人信息生成账户的情况</value>
+  </data>
+  <data name="Arbitrage_Term_51" xml:space="preserve">
+    <value>3) 申请服务时未输入必要信息或输入虚假信息的情况</value>
+  </data>
+  <data name="Arbitrage_Term_52" xml:space="preserve">
+    <value>4) 根据在会员居住地有效的除韩国以外的法律，本服务的使用行为构成违反或将明显构成违反行为的情况</value>
+  </data>
+  <data name="Arbitrage_Term_53" xml:space="preserve">
+    <value>5) 被确认为未成年人或具有限制能力者申请服务的情况</value>
+  </data>
+  <data name="Arbitrage_Term_54" xml:space="preserve">
+    <value>6) 会员在使用服务过程中被确认为违反韩国法令的情况</value>
+  </data>
+  <data name="Arbitrage_Term_55" xml:space="preserve">
+    <value>7) 被用作电话金融诈骗等工具或因电话金融诈骗等损失的金额被确认为已被转入或转出的情况</value>
+  </data>
+  <data name="Arbitrage_Term_56" xml:space="preserve">
+    <value>8) 会员已申请服务后申请退出，退出处理结束后使用同一账户申请的情况</value>
+  </data>
+  <data name="Arbitrage_Term_57" xml:space="preserve">
+    <value>9) 会员个人信息泄露或被判断为泄露的情况</value>
+  </data>
+  <data name="Arbitrage_Term_58" xml:space="preserve">
+    <value>10) 会员在使用服务过程中由于会员非法行为导致交易所遭受损失的情况</value>
+  </data>
+  <data name="Arbitrage_Term_59" xml:space="preserve">
+    <value>11) 因韩国政府及下属机构的政策新设，变更，废除等原因，交易所无法接收新服务的情况</value>
+  </data>
+  <data name="Arbitrage_Term_6" xml:space="preserve">
+    <value>本条款的内容在交易所的相关服务申请网站上发布或通过其他方式通知用户，用户在申请服务时同意该条款时被视为条款生效。</value>
+  </data>
+  <data name="Arbitrage_Term_60" xml:space="preserve">
+    <value>12) 交易所同意会员服务申请的行为，被视为明显存在违反韩国法律行为的情况</value>
+  </data>
+  <data name="Arbitrage_Term_61" xml:space="preserve">
+    <value>如发现会员违反任何一项规定申请服务时，交易所可立即采取终止会员服务使用等适当的限制措施。</value>
+  </data>
+  <data name="Arbitrage_Term_62" xml:space="preserve">
+    <value>在下列情况下，即便会员申请服务，交易所也可以保留会员的服务申请。</value>
+  </data>
+  <data name="Arbitrage_Term_63" xml:space="preserve">
+    <value>1) 提供服务设备容量不足的情况</value>
+  </data>
+  <data name="Arbitrage_Term_64" xml:space="preserve">
+    <value>2) 提供服务的技术部分被判断为存在问题的情况</value>
+  </data>
+  <data name="Arbitrage_Term_65" xml:space="preserve">
+    <value>3) 其他交易所在财政、技术方面认为有必要保留的情况</value>
+  </data>
+  <data name="Arbitrage_Term_66" xml:space="preserve">
+    <value>第三章 会员的义务</value>
+  </data>
+  <data name="Arbitrage_Term_67" xml:space="preserve">
+    <value>第8条 (会员对用户名和密码管理的义务)</value>
+  </data>
+  <data name="Arbitrage_Term_68" xml:space="preserve">
+    <value>会员有责任管理自己的账号(ID)和密码等，防止他人知道或被轻易推测。 除非交易所故意或存在重大过失，否则会员对账号和密码的管理疏忽，以及使用不当导致的结果，应由会员负责。</value>
+  </data>
+  <data name="Arbitrage_Term_69" xml:space="preserve">
+    <value>2) 会员发现自己的帐号(ID)，密码，其他个人信息被不正当使用时，必须通知交易所，并遵照交易所的指示。</value>
+  </data>
+  <data name="Arbitrage_Term_7" xml:space="preserve">
+    <value>交易所可以在不违反"有关条款规则的法律"，"信息通信网利用促进及信息保护等法律"等相关法律的前提下可修改该条款。</value>
+  </data>
+  <data name="Arbitrage_Term_70" xml:space="preserve">
+    <value>对于第二项的情况，该会员未向交易所通知其事实或通知后未按照交易所的指示而发生的不利后果，交易所不承担任何责任。</value>
+  </data>
+  <data name="Arbitrage_Term_71" xml:space="preserve">
+    <value>第9条 (会员对使用Arbitrage的义务)</value>
+  </data>
+  <data name="Arbitrage_Term_72" xml:space="preserve">
+    <value>会员在使用Arbitrage时，不得有违反包括本条款在内的交易所详细方针，有关法令及/或其他公序良俗的行为。</value>
+  </data>
+  <data name="Arbitrage_Term_73" xml:space="preserve">
+    <value>第10条 (禁止转让和设立质权)</value>
+  </data>
+  <data name="Arbitrage_Term_74" xml:space="preserve">
+    <value>会员不得将自己的帐号转让给他人，或将对交易所享有的权利转让给他人。</value>
+  </data>
+  <data name="Arbitrage_Term_75" xml:space="preserve">
+    <value>会员未经交易所明确同意，不得对自己的帐号，对交易所享有的权利设立质权。</value>
+  </data>
+  <data name="Arbitrage_Term_76" xml:space="preserve">
+    <value>第四章 服务使用总则</value>
+  </data>
+  <data name="Arbitrage_Term_77" xml:space="preserve">
+    <value>第11条 (服务种类)</value>
+  </data>
+  <data name="Arbitrage_Term_78" xml:space="preserve">
+    <value>交易所向会员提供与Arbitrage相关的(交易所行情确认，套利交易相关服务等)服务。 但，交易所提供的服务种类可根据交易所的情况随时变更，所提供的服务著作权及知识产权归交易所所有。</value>
+  </data>
+  <data name="Arbitrage_Term_79" xml:space="preserve">
+    <value>交易所根据交易所规定的服务使用条件，只向会员提供Arbitrage系统的服务使用工具，不得提供与之类似的服务及从事商业活动。</value>
+  </data>
+  <data name="Arbitrage_Term_8" xml:space="preserve">
+    <value>交易所修改条款时，应明示适用日期及修改事由，与现行条款一同在交易所网站首页，弹出页面或在公告栏通知，应于适用日期7日之前开始公告。</value>
+  </data>
+  <data name="Arbitrage_Term_80" xml:space="preserve">
+    <value>交易所向用户提供以下Contents使用服务:</value>
+  </data>
+  <data name="Arbitrage_Term_81" xml:space="preserve">
+    <value>1) 套利交易系统(Arbitrage)</value>
+  </data>
+  <data name="Arbitrage_Term_82" xml:space="preserve">
+    <value>2) Arbitrage相关服务(选择主要交易所等)</value>
+  </data>
+  <data name="Arbitrage_Term_83" xml:space="preserve">
+    <value>3) 其他交易所自行开发或通过与其他交易所合作提供的Contents</value>
+  </data>
+  <data name="Arbitrage_Term_84" xml:space="preserve">
+    <value>4) 各交易所的综合会员注册处理功能</value>
+  </data>
+  <data name="Arbitrage_Term_85" xml:space="preserve">
+    <value>第五章 使用Arbitrage相关服务</value>
+  </data>
+  <data name="Arbitrage_Term_86" xml:space="preserve">
+    <value>第12条 (加密货币套利交易等)</value>
+  </data>
+  <data name="Arbitrage_Term_87" xml:space="preserve">
+    <value>交易所对加密货币套利交易提供以下服务。</value>
+  </data>
+  <data name="Arbitrage_Term_88" xml:space="preserve">
+    <value>- 确认行情服务</value>
+  </data>
+  <data name="Arbitrage_Term_89" xml:space="preserve">
+    <value>- 套利交易买入，卖出服务</value>
+  </data>
+  <data name="Arbitrage_Term_9" xml:space="preserve">
+    <value>交易所根据前项内容给会员公布修改条款，并另行通知及明确通知（会员在7天时间内未做意向表明， 可视为已同意。）,但会员没有明确表明拒绝意向时，可视为会员同意修改的条款。</value>
+  </data>
+  <data name="Arbitrage_Term_90" xml:space="preserve">
+    <value>- 交易明细查询服务</value>
+  </data>
+  <data name="Arbitrage_Term_91" xml:space="preserve">
+    <value>- 其他与上述服务相关的服务</value>
+  </data>
+  <data name="Arbitrage_Term_92" xml:space="preserve">
+    <value>1) 要使用交易所提供的Arbitrage服务买入或卖出加密货币的会员，需利用交易所提供的收费服务进行交易。 结算费用: 10万PTC或与之相应交易所的加密货币(BTC， ETH， BCH， XRP)进行付款。</value>
+  </data>
+  <data name="Arbitrage_Term_93" xml:space="preserve">
+    <value>交易所不提供会员与会员之间的交易中介服务，只提供会员在交易所与他人进行加密货币套利交易的服务。 交易所除会员设定的项目外，不知晓会员使用服务的交易所内加密货币交易的具体内容， 且无法变更或取消该交易。</value>
+  </data>
+  <data name="Arbitrage_Term_94" xml:space="preserve">
+    <value>会员可根据交易所的指引，在自己持有账户的交易所内使用服务。 对于会员不遵守交易所指引使用服务时发生的损失， 交易所不承担任何责任。</value>
+  </data>
+  <data name="Arbitrage_Term_95" xml:space="preserve">
+    <value>加密货币套利交易发生后，无法更改或取消。</value>
+  </data>
+  <data name="Arbitrage_Term_96" xml:space="preserve">
+    <value>会员需完成各交易所的综合会员注册才能进行Arbitrage交易。</value>
+  </data>
+  <data name="Arbitrage_Term_97" xml:space="preserve">
+    <value>第13条(服务使用限制)</value>
+  </data>
+  <data name="Arbitrage_Term_98" xml:space="preserve">
+    <value>分类</value>
+  </data>
+  <data name="Arbitrage_Term_99" xml:space="preserve">
+    <value>停止事由</value>
+  </data>
+  <data name="Arbitrage_TradePop_Alert_2" xml:space="preserve">
+    <value>无持有金额。</value>
+  </data>
+  <data name="Arbitrage_TradePop_Alert_3" xml:space="preserve">
+    <value>无持有数量。</value>
+  </data>
+  <data name="CertifyMyPage_4_8" xml:space="preserve">
+    <value>扫描QR码</value>
+  </data>
+  <data name="CertifyMyPage_4_9" xml:space="preserve">
+    <value>直接输入</value>
+  </data>
+  <data name="MemberInfo_2_12" xml:space="preserve">
+    <value>选择类型</value>
+  </data>
+  <data name="MemberInfo_2_13" xml:space="preserve">
+    <value>选择国家</value>
+  </data>
+  <data name="MemberInfo_Pop_38" xml:space="preserve">
+    <value>请选择出生日期格式。</value>
+  </data>
+  <data name="ArbitrageRequest_2_4" xml:space="preserve">
+    <value>使用中</value>
+  </data>
+  <data name="ArbitrageRequest_2_5" xml:space="preserve">
+    <value>使用期间</value>
+  </data>
+  <data name="Arbitrage_6_7" xml:space="preserve">
+    <value>差价（包括手续费）</value>
+  </data>
+  <data name="Arbitrage_3_6" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="Arbitrage_4_6" xml:space="preserve">
+    <value>ㆍ加入综合会员后可能无法马上显示市价与差价。</value>
+  </data>
+  <data name="Arbitrage_4_7" xml:space="preserve">
+    <value>ㆍ买入、卖出成交后显示时需要一定的时间。(请务必确认是否收到推送通知)。</value>
+  </data>
+  <data name="Arbitrage_4_8" xml:space="preserve">
+    <value>ㆍ进行Arbitrage买入、卖出交易时还未完成的交易可能保持未完成的状态并留在该交易所的未成交栏。</value>
+  </data>
+  <data name="Arbitrage_1_4" xml:space="preserve">
+    <value>ㆍArbitrage 服务是收费服务， 请慎重考虑后再进行。</value>
+  </data>
+  <data name="Arbitrage_Alert_2" xml:space="preserve">
+    <value>已开始Arbitrage交易。</value>
+  </data>
+  <data name="Arbitrage_Alert_3" xml:space="preserve">
+    <value>Arbitrage交易已成交。
+请在下方Arbitrage明细中确认成交内容。</value>
+  </data>
+  <data name="Arbitrage_Alert_4" xml:space="preserve">
+    <value>已执行Arbitrage交易，但由于该市价的成交量不足而未能完成交易。</value>
+  </data>
+  <data name="Arbitrage_Alert_5" xml:space="preserve">
+    <value>Arbitrage交易在中完成部分成交。
+已完成的交易请参考下方Arbitrage明细， 部分还未成交的金额请在中确认。</value>
+  </data>
+  <data name="Arbitrage_Alert_6" xml:space="preserve">
+    <value>已执行Arbitrage交易，但由于该市价的成交量不足而未能完成交易。</value>
+  </data>
+  <data name="Arbitrage_Alert_7" xml:space="preserve">
+    <value>您无权进行套利交易。
+请联系客服。</value>
+  </data>
+</root>
